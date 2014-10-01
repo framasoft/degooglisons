@@ -1,0 +1,138 @@
+body {
+    font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
+    color:#333;
+    background:#eee;
+}
+
+body > .row {
+    margin-left:0;
+    margin-right:0;
+}
+
+body > .row:first-child,
+body > .row:last-child {
+    padding-top:20px;
+}
+
+#mainHeader {
+    margin-top:30px;
+}
+#bloc-carte {
+    margin-bottom:30px;
+}
+
+header {
+    padding: 2em 1em 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: PTSansCaption, GillSans, sans-serif;
+    font-weight: bold;
+    color: #5b5e64;
+}
+
+h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; }
+
+header .lead {
+    color: #666;
+    font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
+    padding-top: 1.65em;
+    margin-bottom: 0.5em;
+}
+
+.violet{color: #6A5687;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
+.orange{color: #D2703A;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
+.vert{color: #849551;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
+
+.trait {
+    background-color: #EEE;
+    height: 11px;
+    margin:0 0 10px;
+}
+
+.ombre {
+    background-color: #FFF;
+    box-shadow: -4px 6px 9px rgba(50, 50, 50, 0.5);
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.away { position: absolute; top:-10000px}
+
+.c-text {
+    min-height:464px;
+    padding-bottom:200px; /* (hauteur de l'image en background) */
+    background: url(../img/steve.png) no-repeat bottom right;
+}
+.c-text.fight {
+    background: url(../img/fight.png) no-repeat bottom right;
+}
+.c-text.potion {
+    background: url(../img/potion.png) no-repeat bottom right;
+}
+#t-village {
+    background: url(../img/village.png) no-repeat bottom right;
+
+}
+#t-nsa {
+    background: url(../img/nsa.png) no-repeat bottom right;
+}
+
+#t-fermetum, #t-centralisum, #t-espionnum, #t-privatum {
+    background: url(../img/legion.png) no-repeat bottom right;
+}
+
+#enjeux {
+    background:#849551;
+}
+
+#dangers {
+    background:#A81400;
+}
+
+#solutions {
+    background:#366F86;
+}
+
+#concret {
+    background:#6A5687;
+}
+
+#enjeux .container,
+#dangers .container,
+#solutions .container,
+#concret .container {
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:30px;
+}
+
+
+.btn-soutenir {
+    font-size:24px;
+    font-weight:bold;
+    background:#C48A1B;
+    border:1px solid #B5914C;
+    margin-bottom:20px;
+}
+
+.btn-soutenir:focus,
+.btn-soutenir:hover {
+    background:#9F6B0A;
+    border:1px solid #8F6E31;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6A5687;
+    border-color: #5D497A;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #583C66;
+    border-color: #50294B;
+}
