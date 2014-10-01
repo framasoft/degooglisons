@@ -1,0 +1,359 @@
+/* Default style
+* {
+    -moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    transition:all 0.5s;
+}*/
+
+body {
+  font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
+  color:#333;
+  background:#eee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: PTSansCaption, GillSans, sans-serif;
+    font-weight: bold;
+    color: #5b5e64;
+}
+
+h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; }
+
+.trait { /* hr */
+    background-color: #EEE;
+    height: 11px;
+    margin:15px 0px;
+    border:none;
+}
+
+body > .row {
+    padding-top:20px;
+    margin-left:0;
+    margin-right:0;
+}
+
+.ombre {
+    background-color: #FFF;
+    box-shadow: -4px 6px 9px rgba(50, 50, 50, 0.5);
+}
+
+a {
+    color: #0C5B7A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #18a5d9;
+}
+
+p {
+    color: #333;
+    font-size: 1em;
+}
+
+/* Header style */
+header {
+    padding: 2em 1em 0.5em;
+}
+
+header .lead {
+    color: #666;
+    font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
+    padding-top: 1.65em;
+    margin-bottom: 0.5em;
+}
+
+.violet{color: #6A5687;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
+.orange{color: #D2703A;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
+.vert{color: #849551;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
+
+#sticky .btn-soutenir {
+    font-size:24px;
+    font-weight:bold;
+}
+
+.btn-soutenir {
+    background:#C48A1B;
+    border:1px solid #B5914C;
+}
+
+.btn-soutenir:focus,
+.btn-soutenir:hover {
+    background:#9F6B0A;
+    border:1px solid #8F6E31;
+}
+
+a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
+
+/* End header style */
+
+.leds {
+    background: #366F86;
+    border-radius:0 !important;
+    display:none;
+    margin: 30px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.leds .close {
+    float:right;
+    right:auto;
+    top:auto;
+    margin-top:-10px;
+}
+
+#leds {
+    top: -140px;
+}
+
+#tips {
+    margin-left:0;
+    margin-right:0;
+}
+
+#tips .container {
+    padding:20px 0;
+}
+
+#sticky {
+    z-index:1;
+    top: 0px;
+    padding: 5px 15px;
+    margin:0 -29px;
+    background: none repeat scroll 0% 0% #FFF;
+    box-shadow: 0px 20px 15px -10px #FFF;
+}
+.nav-year {
+    margin:0;
+    border:none;
+}
+.nav-year .navbar-collapse {
+    padding:0;
+    border:none;
+}
+
+.year {
+    margin:0 5px;
+}
+.year h2 {
+    text-align:center;
+}
+
+main {
+    margin-bottom:30px;
+}
+
+.soft_frama {
+    font-weight:bold;
+    font-size:80%;
+    color:#555;
+}
+
+.tips .front .pull-right,
+.tips .back .pull-right {
+    margin-top:-20px;
+    font-size:24px;
+    margin-right:-20px;
+}
+
+/* Tips */
+.tips {
+    float: left;
+    list-style: none;
+    padding: 0px;
+}
+
+.tips > li {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 140px;
+    float:left;
+    background-color: white;
+    border-top: 1px solid #EEE;
+    box-shadow: 0px 9px 15px -10px rgba(0, 0, 0, 0.7);
+    margin: 12px 10px 25px 10px;
+}
+
+/* gris */
+.tips > li .front,
+.tips > li .back {
+    border-bottom: 3px solid #C4C4C4;
+    background:#F3F3F3;
+}
+
+/* bleu */
+.tips > li.objectifs .front,
+.tips > li.objectifs .back {
+    border-bottom: 3px solid #6A5687;
+    background:#E2D8F0;
+}
+
+/* orange */
+.tips > li.potion .front,
+.tips > li.potion .back {
+    border-bottom: 3px solid #D2703A;
+    background:#FCECE3;
+}
+
+/* jaune */
+.tips > li.casque .front,
+.tips > li.casque .back {
+    border-bottom: 3px solid #0C5B7A;
+    background:#D9EFF7;
+}
+
+/* rouge
+    border-bottom: 3px solid #CC2D18;
+    background:#FCE6E3;
+*/
+/* vert */
+.tips > li.fight .front,
+.tips > li.fight .back {
+    border-bottom: 3px solid #849551;
+    background:#EAF0D8;
+}
+
+.tips h3, .tips h4 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.front_old {
+    margin-bottom: 12px;
+}
+
+.tip-content {
+    position: absolute;
+    width: 270px;
+    height: 280px;
+    top: 0px;
+
+    -webkit-transition: all 400ms ease 0s;
+       -moz-transition: all 400ms ease 0s;
+         -o-transition: all 400ms ease 0s;
+            transition: all 400ms ease 0s;
+}
+
+.front, .back {
+    padding: 20px;
+    height: 140px;
+}
+
+.tips > li.objectifs:hover .tip-content,
+.tips > li.casque:hover .tip-content,
+.tips > li.fight:hover .tip-content,
+.tips > li.potion:hover .tip-content {
+    top: -140px;
+}
+
+.show-back {
+    top: -140px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6A5687;
+    border-color: #5D497A;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #583C66;
+    border-color: #50294B;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #366F86;
+    border-color: #265F76;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #1E576E;
+    border-color: #134C63;
+}
+
+.modal-dialog h4 {
+    font-size: 24px;
+}
+
+@media (min-width:768px) {
+    .modal-dialog {
+        margin: 100px auto;
+    }
+}
+
+.modal-body {
+    padding:15px 30px;
+
+}
+
+.modal-body li,
+.modal-body p {
+    color:#767676;
+    font-size:19px;
+    line-height:30px;
+}
+
+.precisions {
+    font-size:14px;
+    float:left;
+    color:#767676;
+    margin-left:15px;
+}
+
+h1 a, h3 a, h4 a,
+h1 a:hover, h3 a:hover, h4 a:hover,
+h1 a:focus, h3 a:focus, h4 a:focus {
+    text-decoration:none;
+}
+
+.k-fg {
+    position:absolute;
+}
+
+.tips .logo {
+    position:absolute;
+    font-family: FontAwesome;
+    top:40px;
+    right:20px;
+    opacity:0.2;
+    font-size:70px;
+
+}
+.tips .fight .logo {
+   color:#849551;
+}
+
+.tips .potion .logo {
+   color:#D2703A;
+}
+
+.framindmap .logo:before { content: "\f0e8"; }
+.framindmap .logo {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.framadate .logo:before { content: "\f073"; }
+.framapad .logo:before { content: "\f036"; }
+.framacalc .logo:before { content: "\f00a"; }
+.framavectoriel .logo:before { content: "\f1fc"; }
+.framanews .logo:before { content: "\f1ea"; }
+.framabag .logo:before { content: "\f0b1"; }
+.framasphere .logo:before { content: "D"; }
+.framatube .logo:before { content: "\f008"; }
