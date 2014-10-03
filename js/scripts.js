@@ -12,12 +12,6 @@ $(document).ready(function() {
     // Description du camps au clic sur la carte
     $('area').on('click', function() {
         var areaId = $(this).attr('id');
-        // Affiche la colone de droite 1 fois
-        // au premier clic sur la carte ou au focus sur le select
-        if ($('.description').hasClass('away')) {
-            $('.description').hide().removeClass('away').animate({width:'toggle'},200);
-            $('.map').removeClass('col-md-offset-2');
-        }
 
         $('.c-text').hide();
         $('#'+$(this).attr('id').replace('a-','t-')).fadeIn('slow');
@@ -35,9 +29,6 @@ $(document).ready(function() {
         }
 
     });
-    
-    // on ouvre par défaut le village libriste
-    $('#a-village').trigger("click");
 
     // Description du camps à la selection dans le menu
     $('#c-select').on('change', function() {
@@ -48,12 +39,6 @@ $(document).ready(function() {
             $('.c-text').hide();
             $('#'+$(this).attr('id').replace('o-','t-')).fadeIn('slow');
         });
-    });
-    $('#c-select').on('focus', function() {
-        if ($('.description').hasClass('away')) {
-            $('.description').hide().removeClass('away').animate({width:'toggle'},200);
-            $('.map').removeClass('col-md-offset-2');
-        }
     });
 
     // Scroll sur Dangers

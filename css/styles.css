@@ -57,8 +57,6 @@ header .lead {
     padding-bottom:15px;
 }
 
-.away { position: absolute; top:-10000px}
-
 .c-text {
     min-height:464px;
     padding-bottom:200px; /* (hauteur de l'image en background) */
@@ -140,24 +138,69 @@ header .lead {
 .btn-enjeux {
     color: #fff;
     background-color: #849551;
-    border-color: #5D497A;
-    margin-bottom: 5px;
+    border-color: #768A3E;
 }
-.btn-dangers {
+
+.btn-enjeux:hover,
+.btn-enjeux:focus,
+.btn-enjeux:active {
     color: #fff;
-    background-color: #A81400;
-    border-color: #5D497A;
-    margin-bottom: 5px;
+    background-color: #667832;
+    border-color: #4F5E23;
 }
+
+.btn-dangers {
+  color: #fff;
+  background-color: #CC2D18;
+  border-color: #BC1D08;
+}
+.btn-dangers:hover,
+.btn-dangers:focus,
+.btn-dangers:active {
+  color: #fff;
+  background-color: #B41500;
+  border-color: #A81400;
+}
+
+
 .btn-solutions {
     color: #fff;
     background-color: #366F86;
-    border-color: #5D497A;
-    margin-bottom: 5px;
+    border-color: #265F76;
 }
+
+.btn-solutions:hover,
+.btn-solutions:focus,
+.btn-solutions:active {
+    color: #fff;
+    background-color: #1E576E;
+    border-color: #134C63;
+}
+
 .btn-concret {
     color: #fff;
     background-color: #6A5687;
     border-color: #5D497A;
-    margin-bottom: 5px;
+}
+
+.btn-concret:hover,
+.btn-concret:focus,
+.btn-concret:active {
+    color: #fff;
+    background-color: #583C66;
+    border-color: #50294B;
+}
+
+.btn-liste {
+    color: #fff;
+    background-color: #D2703A;
+    border-color: #D16328;
+}
+
+.btn-liste:hover,
+.btn-liste:focus,
+.btn-liste:active {
+    color: #fff;
+    background-color: #B5521D;
+    border-color: #9C4211;
 }

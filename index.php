@@ -61,12 +61,6 @@ foreach ($data as $k => $v) {
                 $text .= (strlen($v['date_frama'])==4) ? '(sortie prévue <a href="/liste/#'.$v['date_frama'].'">en '.$v['date_frama'].'</a>)' : $v['date_frama'];
                 $text .= '
             </p>
-  <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
-  </p>
          </div>';
     }
 }
@@ -109,7 +103,7 @@ foreach ($data as $k => $v) {
 
         <div class="row" id="bloc-carte">
             <div class="container ombre">
-                <div class="col-md-8 col-md-offset-2 map">
+                <div class="col-md-8 map">
                     <div class="well">
                         <img src="img/carte-full.jpg" alt="Nous sommes en 2014 après Jésus-Christ. Toute la toile est occupée par des services centralisés... Toute ? Non ! Une communauté peuplée d'irreductibles libristes résite encore et toujours à l'envahisseur. Et la vie n'est pas facile pour les garnisons des camps retranchés de Fermetum, Centralisum, Espionnum et Privatum..." style="width:100%" id="carte" usemap="#cartemap" />
                         <map id="cartemap" name="cartemap">
@@ -117,7 +111,7 @@ foreach ($data as $k => $v) {
                         </map>
                     </div>
                 </div>
-                <div class="col-md-4 description away">
+                <div class="col-md-4 description">
 
                     <p class="text-center"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
 
@@ -135,31 +129,19 @@ pour un Web ouvert et respectueux des internautes.</p>
                             <p>En plus de Framasoft, association loi 1901
 qui mène la présente campagne, nous pouvons citer l'April, la
 Quadrature du Net ou encore l'Aful. Ces associations vivent de vos dons,
-n'oubliez pas de les soutenir&nbsp!</p>
- <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
- </p>
+ n'oubliez pas de les soutenir !</p>
                         </div>
                         <!-- Big camps -->
                         <div id="t-fermetum" class="c-text">
                             <h2>Fermetum</h2>
                             <p>Les services en ligne sont souvent fermés :
 une fois que vous avez commencé à les utiliser, il est très difficile de
- s'en séparer car ces entreprises font tout pour vous garder captifs en 
+ s'en séparer car ces entreprises font tout pour vous garder captifs en
  vous empêchant, par exemple, de migrer vos données ailleurs facilement.</p>
                             <p>Utiliser des services en ligne ouverts, c'est
  s'assurer qu'on ne sera jamais captif d'un site particulier et qu'il
 sera toujours possible d'aller voir ailleurs.
                             <a href="#t2-fermetum">En savoir plus</a></p>
-  <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
- </p>
                         </div>
                         <div id="t-centralisum" class="c-text">
                             <h2>Centralisum</h2>
@@ -171,12 +153,6 @@ leur exploitation par des tiers.</p>
  c'est avoir le choix entre utiliser une instance en ligne comme celle
 proposée par Framasoft ou installer le service chez soi.
                             <a href="#t2-centralisum">En savoir plus</a></p>
-   <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
-   </p>
                         </div>
                         <div id="t-espionnum" class="c-text">
                             <h2>Espionnum</h2>
@@ -191,12 +167,6 @@ Europe, c'est s'assurer de ne pas être dépendant des lois d'un autre
 continent. De plus, en hébergeant vous-même le service, plus aucun tiers
  ne peut violer votre vie privée.
                             <a href="#t2-espionnum">En savoir plus</a></p>
-   <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
-   </p>
                         </div>
                         <div id="t-privatum" class="c-text">
                             <h2>Privatum</h2>
@@ -210,12 +180,6 @@ avoir l'assurance d'un contrôle sur le fonctionnement du logiciel par la
  communauté et la possibilité de le modifier, de l'installer ailleurs,
 etc.
                             <a href="#t2-privatum">En savoir plus</a></p>
-   <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
-   </p>
                         </div>
                         <!-- NSA -->
                         <div id="t-nsa" class="c-text">
@@ -227,15 +191,24 @@ de masse de la vie privée des internautes étaient fondées.</p>
 aujourd'hui à offrir sur un plateau ses données personnelles aux
 organisations de surveillance sans aucun moyen de contrôler l'usage qui
 en est fait.</p>
-   <p>
-	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
-	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
-	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>
-	 <a href="#concret" class="btn btn-concret btn-xs" title="Concrètement">Concrètement</a>
-   </p>
                         </div>
                         <!-- Little camps -->
                         <?php echo $text; ?>
+                    </div>
+                    <div id="menu">
+                        <div class="col-md-6 col-sm-3 col-xs-6">
+                            <p><a href="#enjeux" class="btn btn-enjeux btn-block" title="Les enjeux">Les enjeux</a></p>
+                        </div>
+                        <div class="col-md-6 col-sm-3 col-xs-6">
+                            <p><a href="#dangers" class="btn btn-dangers btn-block" title="Les dangers">Les dangers</a></p>
+                        </div>
+                        <div class="col-md-6 col-sm-3 col-xs-6">
+                            <p><a href="#solutions" class="btn btn-solutions btn-block" title="Nos propositions">Nos propositions</a></p>
+                        </div>
+                        <div class="col-md-6 col-sm-3 col-xs-6">
+                            <p><a href="#concret" class="btn btn-concret btn-block" title="Concrètement">Concrètement</a></p>
+                        </div>
+                        <p class="text-center"><a class="btn btn-liste btn-lg" href="liste/"> Liste des services</a></p>
                     </div>
                 </div>
             </div>
@@ -542,7 +515,7 @@ son association, son entreprise).</p>
  ces services, nous souhaitons juste proposer un espace numérique
 neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
                 <p><strong>Accéder à la <a href="http://degooglisons-internet.org/liste/" title="Liste des services Framasoft.">liste des services</a> que nous proposons déjà (et ceux en préparation)</strong></p>
-                <p class="text-center"><img src="img/cloud.jpg" alt="" /></p>
+                <p class="text-center"><img src="img/cloud.jpg" alt="" class="img-responsive" /></p>
             </div>
             <div class="col-md-4">
                 <div class="well">
