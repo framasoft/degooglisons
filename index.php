@@ -271,9 +271,15 @@ d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                                   <div class="modal-body">
                                     <p>
                                         </p><ul>
-                                            <li>Numérama, le xx/yy/zzzz : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">La NSA accusée d'avoir piégé les routeurs américains</a></li>
-                                            <li>Numérama, le xx/yy/zzzz : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">Yahoo révèle le chantage des USA pour espionner les internautes</a></li>
-                                            <li>Numérama, le xx/yy/zzzz : <a href="http://www.numerama.com/magazine/26435-prism-l-allemagne-qui-espionne-aussi-deconseille-le-web-americain.html">PRISM : l'Allemagne, qui espionne aussi, déconseille le web américain</a></li>
+                                            <li>Numérama, le 13/05/2014 : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">La NSA accusée d'avoir piégé les routeurs américains</a></li>
+                                            <li>Numérama, le 12/09/2014 : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">Yahoo révèle le chantage des USA pour espionner les internautes</a></li>
+                                            <li>Numérama, le 04/07/2013 : <a href="http://www.numerama.com/magazine/26435-prism-l-allemagne-qui-espionne-aussi-deconseille-le-web-americain.html">PRISM : l'Allemagne, qui espionne aussi, déconseille le web américain</a></li>
+                                            <li>Le Monde, le 27/06/2013: <a href="http://www.lemonde.fr/sciences/article/2013/06/27/il-est-temps-de-parler-des-metadonnees_3437125_1650684.html">Il est temps de parler des métadonnées</a></li>
+                                            <li>Atlantico, le 25/11/2013, <a href="http://www.atlantico.fr/pepites/espionnage-etat-veut-attaquer-nos-donnees-personnelles-908758.html">Espionnage : l'Etat veut s'attaquer à nos données personnelles</a></li>
+                                            <li>Le Monde, le 20/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/20/dgse-orange-des-liaisons-incestueuses_4386264_3210.html">Espionnage : comment Orange et les services secrets coopèrent</a></li>
+                                            <li>Le Monde, le 15/09/2014: <a href="http://www.lemonde.fr/proche-orient/article/2014/09/15/terrorisme-un-projet-de-loi-dangereux_4487639_3218.html">Terrorisme : un projet de loi dangereux</a></li>
+                                            <li>Présumés Terroristes, septembre 2014 : <a href="https://presumes-terroristes.fr/">Loi Terrorisme. Sacrifier les libertés sous prétexte de lutte contre le terrorisme ? NON !</a></li>
+                                            <li>Europe1, le 12/02/2014 : <a href="http://www.europe1.fr/high-tech/et-si-samsung-se-mettait-a-espionner-ses-propres-smartphones-1799713">Et si Samsung se mettait à "espionner" ses propres smartphones?</a></li>
                                         </ul>
                                     <p></p>
                                   </div>
@@ -531,7 +537,6 @@ Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d'autres sont des
 nous ont rendus dépendants. Framasoft souhaite entrer en résistance, et
 propose un plan de mise en place d'applications alternatives sur
 plusieurs années.</p>
-                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" title="Accéder à la liste des services que nous proposons déjà (et ceux en préparation)" >Liste des services Framasoft</a></p>
                 <p>Ces services sont libres, gratuits, ouverts à
 tous (dans la limite de nos capacités techniques et financières), tels
 des biens communs numériques. Dans un souci de décentralisation
@@ -541,6 +546,8 @@ son association, son entreprise).</p>
                 <p>Evidemment, nous n'avons pas la prétention de <em>concurrencer</em>
  ces services, nous souhaitons juste proposer un espace numérique
 neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
+                <p><strong>Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :</strong></p>
+                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" >Liste des services Framasoft</a></p>
                 <p><img src="img/cloud.jpg" alt="" class="center-block img-responsive" /></p>
             </div>
             <div class="col-md-4">
