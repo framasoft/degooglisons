@@ -136,3 +136,28 @@ header .lead {
     background-color: #583C66;
     border-color: #50294B;
 }
+
+.btn-enjeux {
+    color: #fff;
+    background-color: #849551;
+    border-color: #5D497A;
+    margin-bottom: 5px;
+}
+.btn-dangers {
+    color: #fff;
+    background-color: #A81400;
+    border-color: #5D497A;
+    margin-bottom: 5px;
+}
+.btn-solutions {
+    color: #fff;
+    background-color: #366F86;
+    border-color: #5D497A;
+    margin-bottom: 5px;
+}
+.btn-concret {
+    color: #fff;
+    background-color: #6A5687;
+    border-color: #5D497A;
+    margin-bottom: 5px;
+}

@@ -1146,6 +1146,35 @@ $data = [
                             </p>',
         'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p>'
     ],
+        'gmail' => [
+        'name'          => 'Google Mail',
+        'wkp'           => 'Gmail',
+        'description'   => 'Service de messagerie',
+        'editeur'       => 'Google',
+        'wkp_editeur'   => 'Google',
+        'similaire'     => '',
+        'alt_online'    => '',
+        'alt_offline'   => '<a href="http://mozilla.org/thunderbird">Thunderbird</a>',
+        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">mail</span>',
+        'date_frama'    => '2017',
+        'coordonnees'   => '',
+        'class'         => 'fight',
+        'soft_frama'    => 'caliop',
+        'long_desc'     => 'Vos mails, sans la NSA dedans',
+        'url_frama'     => 'https://framamail',
+        'id_frama'      => 'framamail',
+        'modale_title'  => 'Votre courrier, dans une enveloppe blindée',
+        'modale_body'   => '<p>
+                                <a href="http://framadate.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
+                            </p>
+                            <p>
+                                <span class="violet">Fonctionnement :</span> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
+                                Comment faire plus simple ?
+                            </p>',
+        'modale_footer' => '<p class="precisions">Framamail est une instance basée sur <a href="https://www.caliopen.org/">Caliopen</a></p>'
+
+    ],
+
 ];
 
 ?>

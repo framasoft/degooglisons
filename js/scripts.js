@@ -35,6 +35,9 @@ $(document).ready(function() {
         }
 
     });
+    
+    // on ouvre par défaut le village libriste
+    $('#a-village').trigger("click");
 
     // Description du camps à la selection dans le menu
     $('#c-select').on('change', function() {
@@ -54,7 +57,7 @@ $(document).ready(function() {
     });
 
     // Scroll sur Dangers
-    $('a[href="#dangers"],a[href="#t2-espionnum"],a[href="#t2-fermetum"],a[href="#t2-privatum"],a[href="#t2-centralisum"],a[href="#leds"]').on('click', function() {
+    $('a[href="#dangers"],a[href="#t2-espionnum"],a[href="#t2-fermetum"],a[href="#t2-privatum"],a[href="#t2-centralisum"],a[href="#leds"],a[href="#enjeux"],a[href="#solutions"],a[href="#concret"]').on('click', function() {
         var offset = $($(this).attr('href')).offset();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
