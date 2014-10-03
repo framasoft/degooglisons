@@ -174,7 +174,7 @@ $data = [
                                 Sur les réseaux sociaux et le microblogging, disposer d’une adresse raccourcie permet d’économiser de l’espace et gagner en clarté.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et raccourcissez-la.
+                                <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Framashort la raccourcira.
                             </p>',
         'modale_footer' => '<p class="precisions">Framashort est une instance basée sur <a href="http://lstu.fiat-tux.fr/">Lstu</a></p>'
 
@@ -402,7 +402,7 @@ $data = [
         'coordonnees'   => '620,1110,80',
         'class'         => 'potion',
         'soft_frama'    => 'Gitlab',
-        'long_desc'     => 'Du code libre, c\'est bien. Sur une plateforme libre, c\'est mieux&nbsp;!',
+        'long_desc'     => 'Du code libre c\'est bien. Sur une plateforme libre c\'est mieux&nbsp;!',
         'url_frama'     => '',
         'id_frama'      => 'framagit',
         'modale_title'  => 'Hébergement de code libre',
@@ -414,7 +414,7 @@ $data = [
                             <p>
                                 <span class="violet">Avancement</span> La plateforme git est actuellement en cours d\'évaluation. Les premiers comptes « externes » devraient pouvoir être accueillis dès la fin de l\'année 2014. Vous pouvez nous contacter si vous pensez avoir l\'utilité de Framagit (en lieu et place de Github, par exemple).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
+        'modale_footer' => '<p class="precisions">Framagit est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
     ],
     'gagenda' => [
         'name'          => 'Google Agenda',
@@ -458,14 +458,11 @@ $data = [
         'coordonnees'   => '1240,410,80',
         'class'         => 'potion',
         'soft_frama'    => 'Framabook OPDS',
-        'long_desc'     => 'Une bibliothèque de plusieurs milliers d\'ouvrages accessibles à tous',
+        'long_desc'     => 'Une bibliothèque de plusieurs milliers d\'ouvrages',
         'url_frama'     => '',
         'id_frama'      => 'framaopds',
         'modale_title'  => 'Catalogue d\'ouvrages accessibles pour tous',
         'modale_body'   => '<p>
-                                <a href="###">Framabookin</a> est un 
-                            </p>
-                            <p>
                                 <span class="violet">Framabookin</span> est le catalogue OPDS de Framasoft. « Euh... Oui, mais encore ? », nous direz-vous. Un catalogue OPDS est un fichier que vous pouvez charger dans votre ordinateur, votre tablette ou votre liseuse, et qui vous donne très simplement accès à des oeuvres numériques (livres au format epub, par exemple).
                             </p>
                             <p>Le catalogue OPDS de Framasoft (en cours d\'élaboration) vous donnera accès à des milliers d\'ouvrages non protégés par « copyright ».</p>',
@@ -586,7 +583,7 @@ $data = [
         'id_frama'      => 'framanews',
         'modale_title'  => 'Toujours au courant, jamais en retard',
         'modale_body'   => '<p>
-                                <a href="http://framadate.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
+                                <a href="http://framanews.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
                             </p>
                             <p>
                                 <span class="violet">Fonctionnement :</span> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
@@ -709,12 +706,12 @@ $data = [
         'coordonnees'   => '835,180,80',
         'class'         => 'potion',
         'soft_frama'    => 'Lut.im',
-        'long_desc'     => '',
+        'long_desc'     => 'Partagez vos images anonymement',
         'url_frama'     => 'http://lut.im',
         'id_frama'      => 'framalutim',
         'modale_title'  => 'Partagez vos images facilement',
         'modale_body'   => '<p>
-                                <a href="###">Framapic</a> vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou ... Framasphère !
+                                <a href="http://lut.im">Framapic</a> vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou ... Framasphère !
                             </p>
                             <p>Attention, ce service n\'est pas un équivalent de flickr ou instagram : il ne s\'agit pas d\'un service d\'hébergement de photos d\'utilisateurs, mais bien d\'un service d\'hébergement d\'images anonymes (même nous, nous n\'avons pas accès au contenu, qui est chiffré).</p>
                             <p>
@@ -1100,7 +1097,10 @@ $data = [
                                 <li>modification du sondage en cours</li>
                                 <li>planification d’une dead-line</li>
                                 <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
-                            </ul>',
+                            </ul>
+                            <p>
+                                <span class="violet">Mise à jour</span> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L\'interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
+                            </p>',
         'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p>'
 
     ],
@@ -1140,7 +1140,10 @@ $data = [
                                 <li>Historique des versions</li>
                                 <li>Exporter votre travail</li>
                                 <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
-                            </ul>',
+                            </ul>
+                            <p>
+                                <span class="violet">Mise à jour</span> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d\'instances dédiées (par exemple à l\education ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
+                            </p>',
         'modale_footer' => '<p class="precisions">Framapad est une instance basée sur <a href="http://etherpad.org/">Etherpad</a></p>'
 
     ],
@@ -1208,6 +1211,9 @@ $data = [
                             <p>
                                 <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
+                            </p>
+                            <p>
+                                <span class="violet">Mise à jour</span> : le logiciel qui propulse Framaindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d\'enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
                             </p>',
         'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p>'
     ],
