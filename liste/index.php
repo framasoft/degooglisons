@@ -176,6 +176,9 @@ foreach($timeline as $k => $v) {
                     $('.tip-content').removeClass('show-back');
                     $(this).parent().parent().parent('.tip-content').addClass('show-back');
                 });
+                $('.tips .back a,.tips .back button').on('focusout', function() {
+                    $('.tip-content').removeClass('show-back');
+                });
                 // Remove link in the front
                 $('.front a').contents().unwrap();
                 // Slide up on click for tablet/mobile
