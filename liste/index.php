@@ -145,7 +145,7 @@ foreach($timeline as $k => $v) {
 ?><!DOCTYPE html>
 <html lang="fr" dir="ltr">
     <head>
-        <title>Internet en commun</title>
+        <title>Dégooglisons Internet</title>
         <meta charset="utf-8" />
         <meta name="title" content="Internet en commun" />
         <meta name="description" content="Plan de Libération du Monde de Framasoft" />
