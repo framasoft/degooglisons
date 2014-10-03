@@ -92,7 +92,7 @@ foreach ($data as $k => $v) {
                         <p class="lead col-md-6">
                             Une initiative du réseau <span class="violet">Frama</span><span class="orange">soft</span>
                             en faveur d'un internet <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
-                            <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>. <small><strong><a href="#enjeux" title="Quel est l'enjeu ?">Quel est l'enjeu&nbsp;?</a></strong></small>
+                            <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>.
                         </p>
                     </div>
 
@@ -215,7 +215,7 @@ en est fait.</p>
         </div>
         <div class="row" id="enjeux">
             <div class="container ombre">
-                <h2>Quel est l’enjeu ?</h2>
+                <h2>Quel sont les enjeux ?</h2>
                 <p>Ces dernières années ont vu se généraliser une
 concentration des acteurs d’Internet (Youtube appartient à Google,
 WhatsApp à Facebook, Skype à Microsoft, etc). Cette centralisation est
@@ -479,13 +479,13 @@ indésirable, etc).
                             <p><strong>Framasoft s'engage à promouvoir le respect et l'autonomie de ces utilisateurs (tant que la réciproque sera vraie).</strong></p>
                     </div>
                     <div class="col-sm-12">
-                        <div class="well">
+                        <div class="well text-center">
                             <h3>Services et Charte</h3>
-                            <p>Vous pouvez retrouver en ligne :</p>
-                            <ul>
-                                <li>la <a href="http://degooglisons-internet.org/liste/" title="Liste des services Framasoft.">liste des services</a> que nous proposons déjà (et ceux en préparation) ;</li>
-                                <li>notre <a href="http://degooglisons-internet.org/nav/html/charte.html" title="Charte des Services L.E.D.S.">Charte des Services L.E.D.S.</a>.</li>
-                            </ul>
+                            <p>Vous pouvez retrouver en ligne la  que nous proposons déjà (et ceux en préparation) ainsi que notre charte :</p>
+                            <p>
+                                <a href="http://degooglisons-internet.org/liste/" class="btn btn-liste">Liste des services Framasoft</a>
+                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des Services L.E.D.S.</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -514,7 +514,8 @@ son association, son entreprise).</p>
                 <p>Evidemment, nous n'avons pas la prétention de <em>concurrencer</em>
  ces services, nous souhaitons juste proposer un espace numérique
 neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
-                <p><strong>Accéder à la <a href="http://degooglisons-internet.org/liste/" title="Liste des services Framasoft.">liste des services</a> que nous proposons déjà (et ceux en préparation)</strong></p>
+                <p><strong>Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :</strong></p>
+                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" >Liste des services Framasoft</a></p>
                 <p class="text-center"><img src="img/cloud.jpg" alt="" class="img-responsive" /></p>
             </div>
             <div class="col-md-4">
