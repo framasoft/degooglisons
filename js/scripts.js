@@ -35,6 +35,9 @@ $(document).ready(function() {
         }
 
     });
+    
+    // on ouvre par défaut le village libriste
+    $('#a-village').trigger("click");
 
     // Description du camps à la selection dans le menu
     $('#c-select').on('change', function() {
