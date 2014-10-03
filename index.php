@@ -92,7 +92,7 @@ foreach ($data as $k => $v) {
                         <p class="lead col-md-6">
                             Une initiative du réseau <span class="violet">Frama</span><span class="orange">soft</span>
                             en faveur d'un internet <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
-                            <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>
+                            <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>. <small><strong><a href="#enjeux" title="Quel est l'enjeu ?">Quel est l'enjeu&nbsp;?</a></strong></small>
                         </p>
                     </div>
 
