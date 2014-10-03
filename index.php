@@ -531,6 +531,7 @@ Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d'autres sont des
 nous ont rendus dépendants. Framasoft souhaite entrer en résistance, et
 propose un plan de mise en place d'applications alternatives sur
 plusieurs années.</p>
+                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" title="Accéder à la liste des services que nous proposons déjà (et ceux en préparation)" >Liste des services Framasoft</a></p>
                 <p>Ces services sont libres, gratuits, ouverts à
 tous (dans la limite de nos capacités techniques et financières), tels
 des biens communs numériques. Dans un souci de décentralisation
@@ -540,8 +541,6 @@ son association, son entreprise).</p>
                 <p>Evidemment, nous n'avons pas la prétention de <em>concurrencer</em>
  ces services, nous souhaitons juste proposer un espace numérique
 neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
-                <p><strong>Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :</strong></p>
-                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" >Liste des services Framasoft</a></p>
                 <p><img src="img/cloud.jpg" alt="" class="center-block img-responsive" /></p>
             </div>
             <div class="col-md-4">
