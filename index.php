@@ -137,6 +137,7 @@ qui mène la présente campagne, nous pouvons citer l'April, la
 Quadrature du Net ou encore l'Aful. Ces associations vivent de vos dons,
  n'oubliez pas de les soutenir&nbsp;!</p>
  <p>
+	 <a href="/liste/" class="btn btn-liste btn-lg" title="Liste des projets">Voir la liste des services</a><br/>
 	 <a href="#enjeux" class="btn btn-enjeux btn-xs" title="Les enjeux">Les enjeux</a>
 	 <a href="#dangers" class="btn btn-dangers btn-xs" title="Les dangers">Les dangers</a><br/>
 	 <a href="#solutions" class="btn btn-solutions btn-xs" title="Nos propositions">Nos propositions</a>

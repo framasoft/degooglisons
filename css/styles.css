@@ -161,3 +161,10 @@ header .lead {
     border-color: #5D497A;
     margin-bottom: 5px;
 }
+
+.btn-liste {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    margin-bottom: 5px;
+}
