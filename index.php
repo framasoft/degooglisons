@@ -171,7 +171,7 @@ continent. De plus, en hébergeant vous-même le service, plus aucun tiers
                         <div id="t-privatum" class="c-text">
                             <h2>Privatum</h2>
                             <p>Les services privateurs
-(«&nbsp;propriétaires&nbsp;» dans le langage courant) ont une
+(«&nbsp;propriétaires&nbsp;» dans le langage courant) ont un
 fonctionnement totalement opaque : il est impossible de savoir
 exactement ce que fait le logiciel de vos données. Seul l'éditeur en a
 le contrôle.</p>
