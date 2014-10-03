@@ -113,8 +113,10 @@ foreach ($data as $k => $v) {
                 </div>
                 <div class="col-md-4 description">
 
+                    <p class="text-center"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
+
                     <div class="well">
-                        <p><select id="c-select" title="Choisir le camps" class="form-control">
+                        <p><select id="c-select" title="Choisir le camp" class="form-control">
                             <?php echo $options; ?>
                         </select></p>
 
@@ -123,9 +125,9 @@ foreach ($data as $k => $v) {
                             <h2>Village libriste</h2>
                             <p>Au milieu des multinationales tentaculaires,
 quelques organisations non-lucratives continuent de lutter activement
-pour un web ouvert et respectueux des internautes.</p>
+pour un Web ouvert et respectueux des internautes.</p>
                             <p>En plus de Framasoft, association loi 1901
-qui mène cette présente campagne, nous pouvons citer l'April, la
+qui mène la présente campagne, nous pouvons citer l'April, la
 Quadrature du Net ou encore l'Aful. Ces associations vivent de vos dons,
  n'oubliez pas de les soutenir !</p>
                         </div>
@@ -135,7 +137,7 @@ Quadrature du Net ou encore l'Aful. Ces associations vivent de vos dons,
                             <p>Les services en ligne sont souvent fermés :
 une fois que vous avez commencé à les utiliser, il est très difficile de
  s'en séparer car ces entreprises font tout pour vous garder captifs en
-empêchant, par exemple, de migrer ses données ailleurs facilement.</p>
+ vous empêchant, par exemple, de migrer vos données ailleurs facilement.</p>
                             <p>Utiliser des services en ligne ouverts, c'est
  s'assurer qu'on ne sera jamais captif d'un site particulier et qu'il
 sera toujours possible d'aller voir ailleurs.
@@ -157,7 +159,7 @@ proposée par Framasoft ou installer le service chez soi.
                             <p>«&nbsp;Si c'est gratuit, c'est que vous êtes
 le produit&nbsp;» : de nombreux services en ligne vivent de
 l'exploitation de vos données personnelles en les revendant à des
-sociétés publicitaires. De plus, la plupart sont basés aux États-Unis et
+sociétés publicitaires. De plus, la plupart de ces services sont basés aux États-Unis et
  obéissent aux lois américaines de type PATRIOT ACT qui nient totalement
  votre droit à la vie privée.</p>
                             <p>Utiliser des services en ligne hébergés en
@@ -187,7 +189,7 @@ programme PRISM de la NSA ont montré que les craintes sur la violation
 de masse de la vie privée des internautes étaient fondées.</p>
                             <p>Utiliser des services centralisés revient
 aujourd'hui à offrir sur un plateau ses données personnelles aux
-organisation de surveillance sans aucun moyen de contrôler l'usage qui
+organisations de surveillance sans aucun moyen de contrôler l'usage qui
 en est fait.</p>
                         </div>
                         <!-- Little camps -->
@@ -206,7 +208,7 @@ en est fait.</p>
                         <div class="col-md-6 col-sm-3 col-xs-6">
                             <p><a href="#concret" class="btn btn-concret btn-block" title="Concrètement">Concrètement</a></p>
                         </div>
-                        <p class="text-center"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
+                        <p class="text-center"><a class="btn btn-liste btn-lg" href="liste/"> Liste des services</a></p>
                     </div>
                 </div>
             </div>
@@ -214,7 +216,7 @@ en est fait.</p>
         <div class="row" id="enjeux">
             <div class="container ombre">
                 <h2>Quel est l’enjeu ?</h2>
-                <p>Ces dernières années ont vues se généraliser une
+                <p>Ces dernières années ont vu se généraliser une
 concentration des acteurs d’Internet (Youtube appartient à Google,
 WhatsApp à Facebook, Skype à Microsoft, etc). Cette centralisation est
 nuisible, non seulement parce qu’elle freine l’innovation, mais surtout
@@ -222,7 +224,7 @@ parce qu'elle entraîne une perte de liberté des utilisateurs de ces
 services. Ces derniers ne contrôlent plus leur vie numérique : leurs
 comportements sont disséqués en permanence afin de mieux être ciblés par
 la publicité, et leurs données - pourtant privées (sites visités, mails
-échangés, vidéos regardées, etc) - peuvent être analysées par des
+échangés, vidéos regardées, etc.) - peuvent être analysées par des
 services gouvernementaux.</p>
                 <p>La réponse que souhaite apporter Framasoft à
 cette problématique est simple : mettre en valeur, pour chacun de ces
@@ -246,14 +248,14 @@ Apple ou Microsoft mettent en danger nos vies numériques.</p>
                         <p>
                             Ces services nous pistent en permanence.
 Sous le prétexte de fournir une «&nbsp;meilleure expérience
-utilisateur&nbsp;», nos comportements sur internet sont espionnés en
+utilisateur&nbsp;», nos comportements sur Internet sont espionnés en
 permanence. Ces informations peuvent servir à afficher de la publicité
-ciblée, mais les révélations de l'affaire Snowden ont aussi prouvées que
+ciblée, mais les révélations de l'affaire Snowden ont aussi prouvé que
  les géants de l'Internet étaient contraints de communiquer ces données
 (parfois extrêmement privées : emails échangés sur GMail, photos
 partagées sur Facebook, conversations Skype, géolocalisation des
 téléphones, etc) à des services gouvernementaux. Sous prétexte de lutte
-contre le terrorisme, les états sont aujourd'hui d'obtenir bien plus
+contre le terrorisme, les états sont capables aujourd'hui d'obtenir bien plus
 d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                         </p>
                         <p>
@@ -285,8 +287,7 @@ d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                     <div class="col-sm-6">
                         <h3 id="t2-privatum"><span class="fa fa-fw fa-user"></span> Vie privée</h3>
                         <p>
-                            Nos données sont une extension de nous
-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre
+                            Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre
 orientation politique ou sexuelle, les sites que nous avons visités,
 notre recette préférée, les sujets qui nous interessent, etc. <br>
                             Si une donnée seule, prise indépendamment,
@@ -343,7 +344,7 @@ multiples problèmes : que se passera-t-il si Facebook met la clé sous la
                             Nous devenont peu à peu dépendants de
 services fournis par un petit nombre d'acteurs. Par exemple, Apple
 (iPhone), Google (Android) et Microsoft (Windows Phone) se partagent la
-quasi-totalité du marché des systèmes d'exploitations pour smartphones.<br>
+quasi-totalité du marché des systèmes d'exploitation pour smartphones.<br>
                             Par ailleurs, la taille de ces acteurs bride
  l'innovation : difficile de lancer une start-up face à Apple ou Google
 (respectivement première et deuxième capitalisations boursières
@@ -352,7 +353,7 @@ mondiale).<br>
 leur donne aussi la possibilité non seulement de collecter facilement
 des informations personnelles, mais aussi d'altérer l'information
 qu'elles diffuse (une recherche Google sur le mot "nucléaire"
-n'affichera pas les mêmes liens suivant que Google vous percoive comme
+n'affichera pas les mêmes liens suivant que Google vous perçoive comme
 un militant écologiste ou un pro-nucléaire).
                         </p>
                         <p>
@@ -384,7 +385,7 @@ un militant écologiste ou un pro-nucléaire).
                         <h3 id="t2-fermetum"><span class="fa fa-fw fa-lock"></span> Fermeture</h3>
                         <p>
                             Les services web affichés sur votre
-ordinateurs ou votre smartphones sont généralement exécutés dans le
+ordinateur ou votre smartphone sont généralement exécutés dans le
 «&nbsp;cloud&nbsp;» : des serveurs dispersés sur la planète, stockant à
 la fois vos données (mails, photos, fichiers, etc) mais aussi le code
 des applications.<br>
@@ -395,10 +396,10 @@ récupérer l'ensemble de vos photos sur Facebook ou Picasa, et les
 réinsérer avec les commentaires dans un autre service ?). <br>
                             Pour les applications, cela implique que
 vous êtes à la merci de changements selon le bon vouloir du fournisseur
-(ajout de publicité, modification de l'interface, etc), mais surtout que
+(ajout de publicité, modification de l'interface, etc.), mais surtout que
  vous n'avez quasiment aucun contrôle sur ce que l'application peut
 faire. Ce sont des «&nbsp;boîtes noires&nbsp;» qui peuvent agir de façon
- malveillante (envoyer des SMS à votre insu, executer du code
+ malveillante (envoyer des SMS à votre insu, exécuter du code
 indésirable, etc).
                         <br>Bref, ces sociétés nous enferment dans des cages dorées, certes, mais des cages malgré tout !
                         </p>
@@ -441,8 +442,8 @@ indésirable, etc).
                             Sa popularité et son potentiel font aussi des envieux, et de grandes entreprises
                             aimeraient s'en attribuer le contrôle en imposant du code fermé dans des systèmes
                             verrouillés et non-interopérables.</p>
-                            <p>Pour qu'Internet reste fidèle à ses principes fondateurs qui l'ont conduits à
-                            son succès, nous devons y trouver des applications libres, c'est à dire dont le
+                            <p>Pour qu'Internet reste fidèle à ses principes fondateurs qui l'ont conduit à
+                            son succès, nous devons y trouver des applications libres, c'est-à-dire dont le
                             code source est ouvert, accessible et sous licences libres.</p>
                             <p><strong>Framasoft s'engage à n'utiliser que des logiciels au code source «&nbsp;libre&nbsp;».</strong></p>
                     </div>
@@ -452,7 +453,7 @@ indésirable, etc).
                             <p>L'exploitation, la surveillance, la censure et l'appropriation des données sont
                             des valeurs que nous refusons au profit de la transparence (la probité), de l'exposition
                             claire des conditions d'utilisation des services, et du refus des discriminations.</p>
-                            <p><strong>Framasoft s'engage à ne pas exploiter les données des utilisateurs de ses services, et à promouvoir un web ouvert et équitable.</strong></p>
+                            <p><strong>Framasoft s'engage à ne pas exploiter les données des utilisateurs de ses services, et à promouvoir un Web ouvert et équitable.</strong></p>
                     </div>
                 </div>
                 <div class="row">
@@ -471,7 +472,7 @@ indésirable, etc).
                             <p>À travers les services que nous déployons, nous promouvons un modèle économique
                             fondé sur la mutualisation des coûts, le partage des ressources, et l'accessibilité
                             au plus grand nombre.</p>
-                            <p>Pour cette raisons les abus seront évités car nous avons tous conscience de la communauté des biens.</p>
+                            <p>Pour cette raison les abus seront évités car nous avons tous conscience de la communauté des biens.</p>
                             <p>Ce modèle possède aussi un caractère éducatif car nous pensons qu'en documentant
                             le déploiement des services, un grand nombre d'utilisateurs seront en mesure de partager
                             à leur tour ces ressources.</p>
@@ -510,9 +511,9 @@ des biens communs numériques. Dans un souci de décentralisation
 d'internet et de promotion de l'auto-hébergement, nous ferons le maximum
  afin que chacun puisse installer ses propres services (pour soi, pour
 son association, son entreprise).</p>
-                <p>Evidemment, nous n'avons pas prétention de <em>concurrencer</em>
+                <p>Evidemment, nous n'avons pas la prétention de <em>concurrencer</em>
  ces services, nous souhaitons juste proposer un espace numérique
-neutre, non-commercial et non-aggressif envers ses utilisateurs.</p>
+neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
                 <p><strong>Accéder à la <a href="http://degooglisons-internet.org/liste/" title="Liste des services Framasoft.">liste des services</a> que nous proposons déjà (et ceux en préparation)</strong></p>
                 <p class="text-center"><img src="img/cloud.jpg" alt="" class="img-responsive" /></p>
             </div>

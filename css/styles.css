@@ -190,3 +190,17 @@ header .lead {
     background-color: #583C66;
     border-color: #50294B;
 }
+
+.btn-liste {
+    color: #fff;
+    background-color: #D2703A;
+    border-color: #D16328;
+}
+
+.btn-liste:hover,
+.btn-liste:focus,
+.btn-liste:active {
+    color: #fff;
+    background-color: #B5521D;
+    border-color: #9C4211;
+}

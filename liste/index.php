@@ -253,7 +253,7 @@ foreach($timeline as $k => $v) {
                         <h3 id="internet-libre"><span class="fa fa-fw fa-unlock"></span> Libre</h3>
                         <p>L'histoire d'Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés. Sa popularité et son potentiel font
                         aussi des envieux, et de grandes entreprises aimeraient s'en attribuer le contrôle en imposant du code fermé dans des systèmes verrouillés et non-interopérables. Pour qu'Internet
-                        reste fidèle à ses principes fondateurs qui l'ont conduits à son succès, nous devons y trouver des applications libres, c'est à dire dont le code source est ouvert, accessible et
+                        reste fidèle à ses principes fondateurs qui l'ont conduit à son succès, nous devons y trouver des applications libres, c'est à dire dont le code source est ouvert, accessible et
                         sous licences libres.</p>
                     </div>
                     <div class="col-md-6">
@@ -272,7 +272,7 @@ foreach($timeline as $k => $v) {
                     <div class="col-md-6">
                         <h3 id="internet-solidaire"><span class="fa fa-fw fa-group"></span> Solidaire</h3>
                         <p>À travers les services que nous déployons, nous promouvons un modèle économique fondé sur la mutualisation des coûts, le partage des ressources, et l'accessibilité au plus grand
-                            nombre. Pour cette raisons les abus seront évités car nous avons tous conscience de la communauté des biens. Ce modèle possède aussi un caractère éducatif car nous pensons
+                            nombre. Pour cette raison les abus seront évités car nous avons tous conscience de la communauté des biens. Ce modèle possède aussi un caractère éducatif car nous pensons
                             qu'en documentant le déploiement des services, un grand nombre d'utilisateurs seront en mesure de partager à leur tour ces ressources.</p>
                     </div>
                 </div>
