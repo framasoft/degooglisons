@@ -463,7 +463,7 @@ $data = [
         'id_frama'      => 'framaopds',
         'modale_title'  => 'Catalogue d\'ouvrages accessibles pour tous',
         'modale_body'   => '<p>
-                                <span class="violet">Framabookin</span> est le catalogue OPDS de Framasoft. « Euh... Oui, mais encore ? », nous direz-vous. Un catalogue OPDS est un fichier que vous pouvez charger dans votre ordinateur, votre tablette ou votre liseuse, et qui vous donne très simplement accès à des oeuvres numériques (livres au format epub, par exemple).
+                                <span class="violet">Framabookin</span> est le catalogue OPDS de Framasoft. « Euh... Oui, mais encore ? », nous direz-vous. Un catalogue OPDS est un site auquel vous pouvez vous abonner avec un logiciel supportant cette fonctionnalité (certaines liseuses en embarquent un, pour Android, il existe Aldiko et bien d\'autres), vous donnant accès rapidement et simplement à tout une bibliothèque depuis votre ordinateur, smartphone ou tablette.
                             </p>
                             <p>Le catalogue OPDS de Framasoft (en cours d\'élaboration) vous donnera accès à des milliers d\'ouvrages non protégés par « copyright ».</p>',
         'modale_footer' => '<p class="precisions">Framabookin fournit un catalogue généré par le logiciel <a href="http://calibre-ebook.com/">Calibre</a></p>'
