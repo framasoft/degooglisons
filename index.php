@@ -305,7 +305,7 @@ d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                         <p>
                             Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre
 orientation politique ou sexuelle, les sites que nous avons visités,
-notre recette préférée, les sujets qui nous interessent, etc. <br>
+notre recette préférée, les sujets qui nous intéressent, etc. <br>
                             Si une donnée seule, prise indépendamment,
 n'est pas forcément sensible, un ensemble de données peut le devenir
 (par exemple si vous avez fait des recherches sur le cancer avant de
@@ -387,7 +387,7 @@ mondiale).<br>
 leur donne aussi la possibilité non seulement de collecter facilement
 des informations personnelles, mais aussi d'altérer l'information
 qu'elles diffuse (une recherche Google sur le mot "nucléaire"
-n'affichera pas les mêmes liens suivant que Google vous perçoive comme
+n'affichera pas les mêmes liens suivant que Google vous perçoit comme
 un militant écologiste ou un pro-nucléaire).
                         </p>
                         <p>
@@ -521,7 +521,7 @@ indésirable, etc).
                 <div class="row">
                     <div class="col-sm-6">
                             <h3><span class="fa fa-fw fa-share-alt"></span> Décentralisation</h3>
-                            <p> L'intelligence d'Internet doit se situer à la périphérie du réseau dans une
+                            <p> L'intelligence d'Internet doit reposer sur chaque acteur du réseau dans une
                             dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0.</p>
                             <p>Pour assurer l'égalité de tous, citoyens comme entrepreneurs, les monopoles doivent
                             non seulement être évités, mais empêchés de s'accaparer les données personnelles ou publiques.</p>
@@ -534,10 +534,10 @@ indésirable, etc).
                             <p>À travers les services que nous déployons, nous promouvons un modèle économique
                             fondé sur la mutualisation des coûts, le partage des ressources, et l'accessibilité
                             au plus grand nombre.</p>
-                            <p>Pour cette raison les abus seront évités car nous avons tous conscience de la communauté des biens.</p>
                             <p>Ce modèle possède aussi un caractère éducatif car nous pensons qu'en documentant
                             le déploiement des services, un grand nombre d'utilisateurs seront en mesure de partager
                             à leur tour ces ressources.</p>
+                            <p>Nous pensons que ne pas infantiliser les utilisateurs et faire partager la responsabilité de l'utilisation des services permettra de réguler les abus.</p>
                             <p><strong>Framasoft s'engage à promouvoir le respect et l'autonomie de ces utilisateurs (tant que la réciproque sera vraie).</strong></p>
                     </div>
                     <div class="col-sm-12">
@@ -546,7 +546,7 @@ indésirable, etc).
                             <p>Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :</p>
                             <p>
                                 <a href="http://degooglisons-internet.org/liste/" class="btn btn-liste">Liste des services Framasoft</a>
-                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des Services L.E.D.S.</a>
+                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des Services Framasoft</a>
                             </p>
                         </div>
                     </div>
