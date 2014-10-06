@@ -546,7 +546,7 @@ indésirable, etc).
                             <p>Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :</p>
                             <p>
                                 <a href="http://degooglisons-internet.org/liste/" class="btn btn-liste">Liste des services Framasoft</a>
-                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des Services Framasoft</a>
+                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des services Framasoft</a>
                             </p>
                         </div>
                     </div>
