@@ -602,5 +602,6 @@ réussite de ce projet ambitieux. Framasoft est une association d'intérêt
             </div>
         </div>
     </div>
+    <a href="#" id="back-to-top" title="Retour en haut" ><span class="fa fa-fw fa-arrow-up"></span><span class="sr-only">Retour en haut</span></a>
 </body>
 </html>

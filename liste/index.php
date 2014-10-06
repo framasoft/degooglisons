@@ -145,10 +145,10 @@ foreach($timeline as $k => $v) {
 ?><!DOCTYPE html>
 <html lang="fr" dir="ltr">
     <head>
-        <title>Dégooglisons Internet</title>
+        <title>Dégooglisons Internet - Liste des services - Framasoft</title>
         <meta charset="utf-8" />
-        <meta name="title" content="Internet en commun" />
-        <meta name="description" content="Plan de Libération du Monde de Framasoft" />
+        <meta name="title" content="Dégooglisons Internet - Liste des services - Framasoft" />
+        <meta name="description" content="Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet" />
         <meta name="author" content="Framasoft" />
         <link href="/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
         <link href="../css/liste.css" rel="stylesheet" type="text/css" />

@@ -109,15 +109,15 @@ header .lead {
 .btn-soutenir {
     font-size:24px;
     font-weight:bold;
-    background:#C48A1B;
-    border:1px solid #B5914C;
+    background:#DBA306;
+    border:1px solid #C28F00;
     margin-bottom:20px;
 }
 
 .btn-soutenir:focus,
 .btn-soutenir:hover {
-    background:#9F6B0A;
-    border:1px solid #8F6E31;
+    background:#CF9800;
+    border:1px solid  #B38300;
 }
 
 .btn-primary {
@@ -203,4 +203,26 @@ header .lead {
     color: #fff;
     background-color: #B5521D;
     border-color: #9C4211;
+}
+
+#back-to-top {
+    display:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    font-size: 3em;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #767676;
+    opacity:0.4;
+    color: #FFF;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+    opacity:1;
+}
+
+#framanav_donation {
+    display:none !important;
 }

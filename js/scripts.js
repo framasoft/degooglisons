@@ -48,7 +48,19 @@ $(document).ready(function() {
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
     });
+    $('a[href="#"]').on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+});
 
+$(window).scroll(function() {
+    if($(window).scrollTop() > $(window).height()) {
+        $("#back-to-top").show();
+    } else {
+        $("#back-to-top").hide();
+    };
 });
 
 /* Coordonnées de la souris sur l'image
