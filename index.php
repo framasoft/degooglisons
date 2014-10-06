@@ -126,9 +126,9 @@ foreach ($data as $k => $v) {
                             <p>Au milieu des multinationales tentaculaires,
 quelques organisations non-lucratives continuent de lutter activement
 pour un Web ouvert et respectueux des internautes.</p>
-                            <p>En plus de Framasoft, association loi 1901
-qui mène la présente campagne, nous pouvons citer l'April, la
-Quadrature du Net ou encore l'Aful. Ces associations vivent de vos dons,
+                            <p>En plus de <a href="http://framasoft.org" title="Framasoft">Framasoft</a>, association loi 1901
+qui mène la présente campagne, nous pouvons citer <a href="http://april.org" title="April">l'April</a>, <a href="http://laquadrature.net" title="La Quadrature du Net">la
+Quadrature du Net</a> ou encore <a href="http://aful.org" title="AFUL">l'Aful</a>. Ces associations vivent de vos dons,
  n'oubliez pas de les soutenir !</p>
                         </div>
                         <!-- Big camps -->
@@ -217,11 +217,11 @@ en est fait.</p>
             <div class="container ombre">
                 <h2>Quel sont les enjeux ?</h2>
                 <p>Ces dernières années ont vu se généraliser une
-concentration des acteurs d’Internet (Youtube appartient à Google,
-WhatsApp à Facebook, Skype à Microsoft, etc). Cette centralisation est
+<strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
+WhatsApp à Facebook, Skype à Microsoft, etc.). Cette centralisation est
 nuisible, non seulement parce qu’elle freine l’innovation, mais surtout
-parce qu'elle entraîne une perte de liberté des utilisateurs de ces
-services. Ces derniers ne contrôlent plus leur vie numérique : leurs
+parce qu'elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces
+services derniers ne contrôlent plus leur vie numérique</strong> : leurs
 comportements sont disséqués en permanence afin de mieux être ciblés par
 la publicité, et leurs données - pourtant privées (sites visités, mails
 échangés, vidéos regardées, etc.) - peuvent être analysées par des
@@ -254,8 +254,8 @@ ciblée, mais les révélations de l'affaire Snowden ont aussi prouvé que
  les géants de l'Internet étaient contraints de communiquer ces données
 (parfois extrêmement privées : emails échangés sur GMail, photos
 partagées sur Facebook, conversations Skype, géolocalisation des
-téléphones, etc) à des services gouvernementaux. Sous prétexte de lutte
-contre le terrorisme, les états sont capables aujourd'hui d'obtenir bien plus
+téléphones, etc.) à des services gouvernementaux. <strong>Sous prétexte de lutte
+contre le terrorisme</strong>, les états sont capables aujourd'hui d'obtenir bien plus
 d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                         </p>
                         <p>
@@ -311,9 +311,9 @@ n'est pas forcément sensible, un ensemble de données peut le devenir
 (par exemple si vous avez fait des recherches sur le cancer avant de
 souscrire à une assurance-vie).<br>
                             Dans un monde où tout devient numérique
-(lecture, TV, téléphonie, musique, réseau social, etc), notre vie privée
+(lecture, TV, téléphonie, musique, réseau social, etc.), <strong>notre vie privée
  est un élément essentiel de ce qui fait de nous une personne
-singulière. Une personne malveillante qui aurait accès à votre
+singulière</strong>. Une personne malveillante qui aurait accès à votre
 smartphone peut en apprendre suffisamment sur vous en quelques minutes
 pour vous causer des torts très importants (usurpation d'identité sur
 Facebook, détournement d'informations professionnelles, achats effectués
@@ -375,8 +375,8 @@ devenus de véritables pieuvres : Facebook possède WhatsApp et Instagram,
                             Cette concentration des acteurs pose de
 multiples problèmes : que se passera-t-il si Facebook met la clé sous la
  porte ? Comment faire des recherches si Google subit une panne ?
-                            Nous devenont peu à peu dépendants de
-services fournis par un petit nombre d'acteurs. Par exemple, Apple
+                            <strong>Nous devenons peu à peu dépendants de
+services fournis par un petit nombre d'acteurs.</strong> Par exemple, Apple
 (iPhone), Google (Android) et Microsoft (Windows Phone) se partagent la
 quasi-totalité du marché des systèmes d'exploitation pour smartphones.<br>
                             Par ailleurs, la taille de ces acteurs bride
@@ -429,7 +429,7 @@ un militant écologiste ou un pro-nucléaire).
                             Les services web affichés sur votre
 ordinateur ou votre smartphone sont généralement exécutés dans le
 «&nbsp;cloud&nbsp;» : des serveurs dispersés sur la planète, stockant à
-la fois vos données (mails, photos, fichiers, etc) mais aussi le code
+la fois vos données (mails, photos, fichiers, etc.) mais aussi le code
 des applications.<br>
                             Pour les données, cela pose le problème de
 leur pérennité (que deviennent vos fichiers si Dropbox ferme demain ?)
@@ -437,12 +437,12 @@ mais aussi de votre capacité à changer de services (comment faire pour
 récupérer l'ensemble de vos photos sur Facebook ou Picasa, et les
 réinsérer avec les commentaires dans un autre service ?). <br>
                             Pour les applications, cela implique que
-vous êtes à la merci de changements selon le bon vouloir du fournisseur
+<strong>vous êtes à la merci de changements impromptus selon le bon vouloir du fournisseur</strong>
 (ajout de publicité, modification de l'interface, etc.), mais surtout que
  vous n'avez quasiment aucun contrôle sur ce que l'application peut
 faire. Ce sont des «&nbsp;boîtes noires&nbsp;» qui peuvent agir de façon
  malveillante (envoyer des SMS à votre insu, exécuter du code
-indésirable, etc).
+indésirable, etc.).
                         <br>Bref, ces sociétés nous enferment dans des cages dorées, certes, mais des cages malgré tout !
                         </p>
                         <p>
@@ -558,18 +558,18 @@ indésirable, etc).
             <div class="col-md-8">
                 <h2>Concrètement</h2>
                 <p>Le projet « Dégooglisons Internet » - qui ne
-s'adresse d'ailleurs pas qu'à Google - consiste à proposer des services
+concerne d'ailleurs pas que Google - consiste à <strong>proposer des services
 alternatifs face à un maximum de services que nous évaluons comme
-menaçants pour nos vies numériques.</p>
+menaçants pour nos vies numériques</strong>.</p>
                 <p>Google Docs, Skype, Dropbox, Facebook, Twitter,
 Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d'autres sont des
- services extrêment pratiques, mais ils sont devenus bien trop gros et
-nous ont rendus dépendants. Framasoft souhaite entrer en résistance, et
+ services extrêment pratiques, mais <strong>ils sont devenus bien trop gros et
+nous ont rendus dépendants</strong>. Framasoft souhaite entrer en résistance, et
 propose un plan de mise en place d'applications alternatives sur
 plusieurs années.</p>
                 <p>Ces services sont libres, gratuits, ouverts à
 tous (dans la limite de nos capacités techniques et financières), tels
-des biens communs numériques. Dans un souci de décentralisation
+des <strong><a href="http://fr.wikipedia.org/wiki/Biens_communs" title="Bien communs">biens communs</a> numériques</strong>. Dans un souci de décentralisation
 d'internet et de promotion de l'auto-hébergement, nous ferons le maximum
  afin que chacun puisse installer ses propres services (pour soi, pour
 son association, son entreprise).</p>
