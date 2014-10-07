@@ -110,14 +110,14 @@ header .lead {
     font-size:24px;
     font-weight:bold;
     background:#DBA306;
-    border:1px solid #C28F00;
+    border:1px solid #CC9600;
     margin-bottom:20px;
 }
 
 .btn-soutenir:focus,
 .btn-soutenir:hover {
     background:#CF9800;
-    border:1px solid  #B38300;
+    border:1px solid  #BD8A00;
 }
 
 .btn-primary {
