@@ -75,13 +75,13 @@ header .lead {
 
 .btn-soutenir {
     background:#DBA306;
-    border:1px solid #C28F00;
+    border:1px solid #CC9600;
 }
 
 .btn-soutenir:focus,
 .btn-soutenir:hover {
     background:#CF9800;
-    border:1px solid  #B38300;
+    border:1px solid  #BD8A00;
 }
 
 a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
@@ -355,5 +355,5 @@ h1 a:focus, h3 a:focus, h4 a:focus {
 .framavectoriel .logo:before { content: "\f1fc"; }
 .framanews .logo:before { content: "\f1ea"; }
 .framabag .logo:before { content: "\f0b1"; }
-.framasphere .logo:before { content: "D"; }
+.framasphere .logo:before { content: "\f069"; }
 .framatube .logo:before { content: "\f008"; }

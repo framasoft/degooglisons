@@ -71,7 +71,7 @@ foreach ($data as $k => $v) {
     <meta charset="utf-8">
     <title>Dégooglisons Internet</title>
     <meta charset="utf-8" />
-
+    <link rel="shortcut icon" href="img/favicon.png">
     <link href="/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
     <link href="css/styles.css" media="all" rel="stylesheet">
 
@@ -261,12 +261,12 @@ d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-espionnage-modal-lg">Des exemples ?</button>
                         </p>
-                            <div class="modal fade bs-espionnage-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade bs-espionnage-modal-lg" id="espionnageModal" tabindex="-1" role="dialog" aria-labelledby="espionnageLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></span><span class="sr-only">Fermer</span></button>
-                                    <h4 class="modal-title" id="myModalLabel">Espionnage</h4>
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></button>
+                                    <h4 class="modal-title" id="espionnageLabel">Espionnage</h4>
                                   </div>
                                   <div class="modal-body">
                                     <p>
@@ -322,12 +322,12 @@ Facebook, détournement d'informations professionnelles, achats effectués
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-vie-privee-modal-lg">Des exemples ?</button>
                         </p>
-                            <div class="modal fade bs-vie-privee-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade bs-vie-privee-modal-lg" id="viePriveeModal" tabindex="-1" role="dialog" aria-labelledby="viePriveeLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></span><span class="sr-only">Fermer</span></button>
-                                    <h4 class="modal-title" id="myModalLabel">Vie privée</h4>
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></button>
+                                    <h4 class="modal-title" id="viePriveeLabel">Vie privée</h4>
                                   </div>
                                   <div class="modal-body">
                                     <p>
@@ -393,12 +393,12 @@ un militant écologiste ou un pro-nucléaire).
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-centralisation-modal-lg">Des exemples ?</button>
                         </p>
-                            <div class="modal fade bs-centralisation-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade bs-centralisation-modal-lg" id="centralisationModal" tabindex="-1" role="dialog" aria-labelledby="centralisationLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></span><span class="sr-only">Fermer</span></button>
-                                    <h4 class="modal-title" id="myModalLabel">Centralisation</h4>
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></button>
+                                    <h4 class="modal-title" id="centralisationLabel">Centralisation</h4>
                                   </div>
                                   <div class="modal-body">
                                     <p>
@@ -448,12 +448,12 @@ indésirable, etc.).
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-fermeture-modal-lg">Des exemples ?</button>
                         </p>
-                            <div class="modal fade bs-fermeture-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade bs-fermeture-modal-lg" id="fermetureModal" tabindex="-1" role="dialog" aria-labelledby="fermetureLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></span><span class="sr-only">Fermer</span></button>
-                                    <h4 class="modal-title" id="myModalLabel">Fermeture</h4>
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Fermer</span></button>
+                                    <h4 class="modal-title" id="fermetureLabel">Fermeture</h4>
                                   </div>
                                   <div class="modal-body">
 

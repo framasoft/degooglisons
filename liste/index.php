@@ -46,7 +46,11 @@ foreach ($data as $k => $v) {
 
     /* Back */
     if($v['class']=='fight' || $v['class']=='casque' || $v['class']=='potion') {
-
+        $utiliser_back = ''; $utiliser_modale = '';
+        if($v['url_frama']!='') {
+            $utiliser_back = '<a href="'.$v['url_frama'].'" class="btn btn-xs btn-primary btn-block">Utiliser</a>';
+            $utiliser_modale = '<a href="'.$v['url_frama'].'" class="btn btn-primary">Utiliser</a>';
+        }
         $back = '
             <div class="back">
                 <p class="pull-right">'.$icon.'</p>
@@ -54,7 +58,7 @@ foreach ($data as $k => $v) {
                 <p class="back_content">'.$v['long_desc'].'</p>
 
                 <div class="col-xs-6">
-                    <a href="'.$v['url_frama'].'" class="btn btn-xs btn-primary btn-block">Utiliser</a>
+                    '.$utiliser_back.'
                 </div>
                 <div class="col-xs-6">
                     <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$v['id_frama'].'">+ d’infos</button>
@@ -71,7 +75,7 @@ foreach ($data as $k => $v) {
                                     '.$v['modale_body'].'
                             </div>
                             <div class="modal-footer clearfix">
-                                '.$v['modale_footer'].'<a href="'.$v['url_frama'].'" class="btn btn-primary">Utiliser</a><button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                '.$v['modale_footer'].$utiliser_modale.'<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                     </div>
@@ -150,6 +154,7 @@ foreach($timeline as $k => $v) {
         <meta name="title" content="Dégooglisons Internet - Liste des services - Framasoft" />
         <meta name="description" content="Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet" />
         <meta name="author" content="Framasoft" />
+        <link rel="shortcut icon" href="../img/favicon.png">
         <link href="/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
         <link href="../css/liste.css" rel="stylesheet" type="text/css" />
         <link href="../css/colors.css" rel="stylesheet" type="text/css" />
@@ -182,7 +187,7 @@ foreach($timeline as $k => $v) {
                 // Remove link in the front
                 $('.front a').contents().unwrap();
                 // Slide up on click for tablet/mobile
-                $('.front').on('click', function() {
+                $('.objectifs .front,.potion .front,.casque .front, .fight .front').on('click', function() {
                     $(this).parent('.tip-content').addClass('show-back');
                 });
             });
