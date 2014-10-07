@@ -228,7 +228,7 @@ $data = [
         'modale_body'   => '<p>
                                 <a href="http://framindmap.org/">Framindmap</a> vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
                             </p>
-							   <p><video controls="controls" preload="metadata"
+							   <p><video controls="controls" preload="none"
 								width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
 								<source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
 								<source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
@@ -1032,7 +1032,7 @@ $data = [
 
 									</ul>
 									<div style="text-align:center">
-									<video controls="controls" preload="metadata" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
+									<video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
 										<source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
 										<source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
 									</video>
