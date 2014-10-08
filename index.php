@@ -241,7 +241,7 @@ Décentralisée et Solidaire. <a href="#dangers">En savoir plus…</a></p>
                         <h2>Dangers</h2>
                         <p>Les services en ligne toujours plus
 centralisés de géants tentaculaires comme Google, Amazon, Facebook,
-Apple ou Microsoft mettent en danger nos vies numériques.</p>
+Apple ou Microsoft (GAFAM) mettent en danger nos vies numériques.</p>
                     </div>
                     <div class="col-sm-6">
                         <h3 id="t2-espionnum"><span class="fa fa-fw fa-eye"></span> Espionnage</h3>
