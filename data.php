@@ -20,9 +20,9 @@ $data = [
         'id_frama'      => 'tip2017',
         'modale_title'  => 'Nos objectifs pour 2017',
         'modale_body'   => '<p>Nous toucherons au but ! Il restera encore des services « sensibles » à mettre en place, notamment les services liés à la messagerie (liste de diffusion, et bien entendu emails).</p>
-							<p>Non seulement ces services sont les plus coûteux à mettre en place (il est plus simple de gérer un site qui fait un million de visites par jour que de gérer 10 000 boîtes mails), mais il faudra aussi (surtout !) assurer le bon fonctionnement (maintenance, mise à jour, support, etc.) des projets mis en place depuis 2011.</p>
-							<p>Cela nécessitera le recrutement de 3 nouvelles personnes (essentiellement sur les aspects techniques).</p>
-							<p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d\'autoroute, ou 0,0006% du C.A. annuel de Google</p>
+                            <p>Non seulement ces services sont les plus coûteux à mettre en place (il est plus simple de gérer un site qui fait un million de visites par jour que de gérer 10 000 boîtes mails), mais il faudra aussi (surtout !) assurer le bon fonctionnement (maintenance, mise à jour, support, etc.) des projets mis en place depuis 2011.</p>
+                            <p>Cela nécessitera le recrutement de 3 nouvelles personnes (essentiellement sur les aspects techniques).</p>
+                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d\'autoroute, ou 0,0006% du C.A. annuel de Google</p>
 
 ',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
@@ -46,17 +46,17 @@ $data = [
         'id_frama'      => 'tip2016',
         'modale_title'  => 'Nos objectifs pour 2016',
         'modale_body'   => '<p>Début 2016, Framasoft comptera déjà plus d\'une vingtaine de services en ligne. Mais nous ne comptons pas nous arrêter là&nbsp;! Nous souhaitons en effet proposer de nouvelles alternatives libres aux applications des géants d\'Internet. Notamment&nbsp;:
-								<ul>
-									<li>un service d\'agenda partagé (en alternative à Google Agenda)</li>
-									<li>un service de microblogging (en alternative à Twitter)</li>
-									<li>un service d\'hébergement de vidéos libres (en alternative à Youtube)</li>
-								</ul>
-							</p>
-							<p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin de recruter 3 nouvelles personnes (un développeur, un second adminsys, et un administrateur). </p>
-							<p>Afin de ne pas systématiquement solliciter nos gentils donnateurs, une partie de la somme nécessaire pourra provenir de subventions.</p>
-							<p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d\'autoroute, ou 0,0004% du C.A. annuel de Google</p>
+                                <ul>
+                                    <li>un service d\'agenda partagé (en alternative à Google Agenda)</li>
+                                    <li>un service de microblogging (en alternative à Twitter)</li>
+                                    <li>un service d\'hébergement de vidéos libres (en alternative à Youtube)</li>
+                                </ul>
+                            </p>
+                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin de recruter 3 nouvelles personnes (un développeur, un second adminsys, et un administrateur). </p>
+                            <p>Afin de ne pas systématiquement solliciter nos gentils donnateurs, une partie de la somme nécessaire pourra provenir de subventions.</p>
+                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d\'autoroute, ou 0,0004% du C.A. annuel de Google</p>
 
-							',
+                            ',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2015' => [
@@ -78,16 +78,16 @@ $data = [
         'id_frama'      => 'tip2015',
         'modale_title'  => 'Nos objectifs pour 2015',
         'modale_body'   => '<p>Framasoft souhaite mettre à disposition plusieurs services en ligne importants en 2015&nbsp;:
-								<ul>
-									<li>un service de d\'hébergement de documents (en alternative à Dropbox)</li>
-									<li>un service d\'envoi de gros fichiers (en alternative à WeTransfer)</li>
-									<li>un service de présentations/diaporama en ligne (un « PowerPoint en ligne », si vous préférez)</li>
-									<li>un service de visioconférence (en alternative à Skype), directement depuis votre navigateur, sans installation de logiciel</li>
-								</ul>
-							</p>
-							<p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin d\'embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
-							<p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d\'autoroute, ou 0,0002% du C.A. annuel de Google</p>
-							',
+                                <ul>
+                                    <li>un service de d\'hébergement de documents (en alternative à Dropbox)</li>
+                                    <li>un service d\'envoi de gros fichiers (en alternative à WeTransfer)</li>
+                                    <li>un service de présentations/diaporama en ligne (un « PowerPoint en ligne », si vous préférez)</li>
+                                    <li>un service de visioconférence (en alternative à Skype), directement depuis votre navigateur, sans installation de logiciel</li>
+                                </ul>
+                            </p>
+                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin d\'embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
+                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d\'autoroute, ou 0,0002% du C.A. annuel de Google</p>
+                            ',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2014' => [
@@ -111,13 +111,13 @@ $data = [
         'modale_body'   => '<p>L\'année 2014 aura été une année particulièrement chargée pour l\'association Framasoft, puisqu\'il aura fallu mettre au point notre plan de bataille pour vous permettre de résister à Google, Facebook et autres…</p>
         <p>L\'association à notamment investi (en temps et en argent) dans l\'infrastructure technique qui permet d\'héberger les services actuels et nous permettront d\'accueillir confortablement les applications que nous vous proposeront dans les prochaines années.</p>
         <p>Nous avons besoin de votre aide pour :
-			<ul>
-				<li>accroître la taille de notre infrastructure technique (augmenter la puissance de calcul et le stockage de notre cluster de machines virtuelles)</li>
-				<li>assurer les salaires de nos deux permanents</li>
-				<li>permettre l\'embauche d\'un troisième salarié (chargé de communication)</li>
-				<li>financer le développement d\'améliorations de certains services proposés (Framadate et Framaindmap, notamment)</li>
-				<li>assurer la coordination de l\'ensemble du projet "Dégooglisons Internet"</li>
-			</ul>
+            <ul>
+                <li>accroître la taille de notre infrastructure technique (augmenter la puissance de calcul et le stockage de notre cluster de machines virtuelles)</li>
+                <li>assurer les salaires de nos deux permanents</li>
+                <li>permettre l\'embauche d\'un troisième salarié (chargé de communication)</li>
+                <li>financer le développement d\'améliorations de certains services proposés (Framadate et Framaindmap, notamment)</li>
+                <li>assurer la coordination de l\'ensemble du projet "Dégooglisons Internet"</li>
+            </ul>
         </p>
         <p>L\'objectif fixé est de passer de 400 à 550 donateurs récurrents, ainsi que de récolter 35 000€ en dons ponctuels sur l\'année.</p>
         <p>Nous vous rappelons que Framasoft est une association largement autofinancée par ses donateurs. Pour vous donner une échelle de nos besoins, notre objectif 2014 (35 000€ et 550 donateurs récurrents) représente le coût de 8 mètres d\'autoroute, ou 0,000083% du C.A. annuel de Google.</p>',
@@ -228,14 +228,14 @@ $data = [
         'modale_body'   => '<p>
                                 <a href="http://framindmap.org/">Framindmap</a> vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
                             </p>
-							   <p><video controls="controls" preload="none"
-								width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
-								<source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
-								<source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
-								  </video>
-							   </p>
-							   <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>                           
-                            
+                               <p><video controls="controls" preload="none"
+                                width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
+                                <source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
+                                <source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
+                                  </video>
+                               </p>
+                               <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
+
                             <p>
                                 <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
@@ -281,8 +281,8 @@ $data = [
         'editeur'       => 'Dropbox',
         'wkp_editeur'   => 'Dropbox',
         'similaire'     => 'Google Drive, iCloud Drive',
-        'alt_online'    => '',
-        'alt_offline'   => '',
+        'alt_online'    => '<a href="http://owncloud.org/providers/#free">OwnCloud</a>, <a href="https://seacloud.cc">Seacloud</a>',
+        'alt_offline'   => '<a href="https://pyd.io/">Pyd.io</a>, <a href="http://owncloud.org/">OwnCloud</a>, <a href="http://www.seafile.com">Seafile</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">drive</span>',
         'date_frama'    => '2015',
         'coordonnees'   => '1120,1180,80',
@@ -896,8 +896,8 @@ $data = [
         'editeur'       => 'Microsoft',
         'wkp_editeur'   => 'Microsoft',
         'similaire'     => 'Google Hangouts',
-        'alt_online'    => '',
-        'alt_offline'   => '',
+        'alt_online'    => '<a href="http://hibuddy.monkeypatch.me/">Hi Buddy</a> (WebRTC)',
+        'alt_offline'   => '<a href="https://jitsi.org/">Jitsi</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">talk</span>',
         'date_frama'    => '2015',
         'coordonnees'   => '450,910,80',
@@ -1020,25 +1020,25 @@ $data = [
         'modale_body'   => '<p>
                                 <a href="http://framavectoriel.org">framavectoriel</a>, est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
                             </p>
-                            <p>    
+                            <p>
                                 <span class="violet">Fonctionnalité :</span>
-                            
-									<ul>
-										<li>Utilisable en ligne, sans installation</li>
-										<li>Pas d\'inscription requise</li>
-										<li>Possibilité d\'exporter votre document sous forme d\'image bitmap ou vectorielles</li>
-										<li>Logiciel libre et gratuit, ouvert à tous</li>
-										<li>Ethique : aucune conservation de vos données</li>
 
-									</ul>
-									<div style="text-align:center">
-									<video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
-										<source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
-										<source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
-									</video>
-									</div>
-									<p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l\'instant la vidéo est en anglais. Désolé.)</small></p>
-							</p>',
+                                    <ul>
+                                        <li>Utilisable en ligne, sans installation</li>
+                                        <li>Pas d\'inscription requise</li>
+                                        <li>Possibilité d\'exporter votre document sous forme d\'image bitmap ou vectorielles</li>
+                                        <li>Logiciel libre et gratuit, ouvert à tous</li>
+                                        <li>Ethique : aucune conservation de vos données</li>
+
+                                    </ul>
+                                    <div style="text-align:center">
+                                    <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
+                                        <source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
+                                        <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
+                                    </video>
+                                    </div>
+                                    <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l\'instant la vidéo est en anglais. Désolé.)</small></p>
+                            </p>',
         'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p>'
     ],
     'loomio' => [
