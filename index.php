@@ -386,7 +386,7 @@ mondiale).<br>
                             Enfin, le manque de diversité de ces géants
 leur donne aussi la possibilité non seulement de collecter facilement
 des informations personnelles, mais aussi d'altérer l'information
-qu'elles diffuse (une recherche Google sur le mot "nucléaire"
+qu'ils diffusent (une recherche Google sur le mot "nucléaire"
 n'affichera pas les mêmes liens suivant que Google vous perçoit comme
 un militant écologiste ou un pro-nucléaire).
                         </p>
@@ -588,10 +588,10 @@ neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
 administrateur système, etc, vous pouvez nous contacter pour participer
 activement au projet.</p>
                     <p class="text-center">
-                        <a href="http://contact.framasoft.org/" class="btn btn-primary"><span class="fa fa-fw fa-envelope"></span> Contacter Framasoft</a>
+                        <a href="http://contact.framasoft.org/participer" class="btn btn-primary"><span class="fa fa-fw fa-envelope"></span> Contacter Framasoft</a>
                     </p>
                     <p>Mais le moyen le plus simple et le plus rapide de
- nous soutenir reste de nous soutenir financièrement : cela nous permet
+ nous aider reste de nous soutenir financièrement : cela nous permet
 de payer l'infrastructure (serveurs), et les permanents dédiés à la
 réussite de ce projet ambitieux. Framasoft est une association d'intérêt
  général : un don de 100€ vous reviendra, après défiscalisation, à 34€.</p>
