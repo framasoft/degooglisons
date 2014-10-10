@@ -285,6 +285,20 @@ main {
     border-color: #134C63;
 }
 
+.btn-install {
+    color: #fff;
+    background-color: #849551;
+    border-color: #768A3E;
+}
+
+.btn-install:hover,
+.btn-install:focus,
+.btn-install:active {
+    color: #fff;
+    background-color: #667832;
+    border-color: #4F5E23;
+}
+
 .modal-dialog h4 {
     font-size: 24px;
 }

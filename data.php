@@ -2,7 +2,7 @@
 
 $data = [
     'tip2017' => [
-        'name'          => '180 000€ (1 250 DR)',                                          /* Dons */
+        'name'          => '180 000€ + 1 250 donateurs récurrents',                                          /* Dons */
         'wkp'           => '',
         'description'   => 'Objectifs',
         'editeur'       => '',
@@ -28,7 +28,7 @@ $data = [
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2016' => [
-        'name'          => '130 000€ (1 080 DR)',
+        'name'          => '130 000€ + 1 080 donateurs récurrents',
         'wkp'           => '',
         'description'   => 'Objectifs',
         'editeur'       => '',
@@ -60,7 +60,7 @@ $data = [
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2015' => [
-        'name'          => '70 000€ (780 DR)',
+        'name'          => '70 000€ + 780 donateurs récurrents',
         'wkp'           => '',
         'description'   => 'Objectifs',
         'editeur'       => '',
@@ -91,7 +91,7 @@ $data = [
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2014' => [
-        'name'          => '35 000€ (550 DR)',
+        'name'          => '35 000€ + 550 donateurs récurrents',
         'wkp'           => '',
         'description'   => 'Objectifs',
         'editeur'       => '',
@@ -115,7 +115,7 @@ $data = [
                 <li>accroître la taille de notre infrastructure technique (augmenter la puissance de calcul et le stockage de notre cluster de machines virtuelles)</li>
                 <li>assurer les salaires de nos deux permanents</li>
                 <li>permettre l\'embauche d\'un troisième salarié (chargé de communication)</li>
-                <li>financer le développement d\'améliorations de certains services proposés (Framadate et Framaindmap, notamment)</li>
+                <li>financer le développement d\'améliorations de certains services proposés (Framadate et Framindmap, notamment)</li>
                 <li>assurer la coordination de l\'ensemble du projet "Dégooglisons Internet"</li>
             </ul>
         </p>
@@ -241,7 +241,7 @@ $data = [
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                             </p>
                             ',
-        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p>'
+        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'doodle' => [
         'name'          => 'Doodle',
@@ -272,7 +272,7 @@ $data = [
                                 <li>planification d’une dead-line</li>
                                 <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p>'
+        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'dropbox' => [
         'name'          => 'Dropbox',
@@ -369,7 +369,7 @@ $data = [
         'alt_online'    => '<a href="http://pods.jasonrobinson.me/">liste de pods Diaspora*</a>, <a href="https://pod.movim.eu">liste de pods Movim</a>',
         'alt_offline'   => '<a href="https://diasporafoundation.org/">Diaspora*</a>, <a href="https://movim.eu/">Movim</a>',
         'alt_frama'     => '<a href="http://framasphere.org"><span class="violet">Frama</span><span class="vert">sphère</span></a>',
-        'date_frama'    => '(sortie en octobre 2014)',
+        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>)',
         'coordonnees'   => '735,630,80',
         'class'         => 'fight',
         'soft_frama'    => 'Diaspora*',
@@ -1101,7 +1101,7 @@ $data = [
                             <p>
                                 <span class="violet">Mise à jour</span> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L\'interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p>'
+        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
 
     ],
     'mypads' => [
@@ -1213,9 +1213,9 @@ $data = [
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                             </p>
                             <p>
-                                <span class="violet">Mise à jour</span> : le logiciel qui propulse Framaindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d\'enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
+                                <span class="violet">Mise à jour</span> : le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d\'enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p>'
+        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
         'gmail' => [
         'name'          => 'Google Mail',
