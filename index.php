@@ -599,6 +599,7 @@ réussite de ce projet ambitieux. Framasoft est une association d'intérêt
                         <a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Faire un don<br />à Framasoft</a>
                     </p>
                 </div>
+                <p class="signature text-right small">Campagne commencée le 07/10/2014<br/>Dernière modification le 04/11/2014</p>
             </div>
         </div>
     </div>
