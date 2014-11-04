@@ -292,8 +292,10 @@ foreach($timeline as $k => $v) {
         <div id="tips" class="row">
             <div class="container ombre">
                 <?php echo $tips; ?>
+                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 04/11/2014</p>
             </div>
         </div>
+
         </main>
     </body>
 </html>
