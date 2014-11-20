@@ -334,7 +334,7 @@ Facebook, détournement d'informations professionnelles, achats effectués
                                         </p><ul>
                                             <li>Numérama, le 17/05/2014 : <a href="http://www.numerama.com/magazine/29400-et-maintenant-google-lit-vos-factures.html">Et maintenant Google lit vos factures</a></li>
                                             <li>Numérama, le 06/02/2014 : <a href="http://www.numerama.com/magazine/28299-yahoo-transfere-votre-vie-privee-en-irlande.html">Yahoo transfère votre vie privée en Irlande</a></li>
-                                             <li>L'Expansion, le 16/01/2014 : <a href="http://lexpansion.lexpress.fr/high-tech/e-commerce-vos-donnees-personnelles-sont-en-danger_1326103.html">E-commerce: vos données personnelles sont en danger</a></li>
+                                            <li>L'Expansion, le 16/01/2014 : <a href="http://lexpansion.lexpress.fr/high-tech/e-commerce-vos-donnees-personnelles-sont-en-danger_1326103.html">E-commerce: vos données personnelles sont en danger</a></li>
                                             <li>Numérama, le 21/02/2014 : <a href="http://www.numerama.com/magazine/28515-donnees-personnelles-la-chute-de-confiance.html">Données personnelles : la chute de confiance</a></li>
                                             <li>INRIA, le 12/04/2013 : <a href="http://hal.inria.fr/hal-00812734">Internet du futur : performances et respect de la vie privée</a></li>
                                             <li>Numérama, le 04/08/2014 : <a href="http://www.numerama.com/magazine/30187-google-a-signale-un-usager-qui-avait-envoye-des-photos-pedopornographiques-par-mail.html">Google a signalé un usager qui avait envoyé des photos pédopornographiques par mail</a></li>
@@ -354,6 +354,7 @@ Facebook, détournement d'informations professionnelles, achats effectués
                                             <li>LDN, le 17/04/2014 : <a href="http://ldn-fai.net/je-nai-rien-a-cacher/">Je n'ai rien à cacher</a></li>
                                             <li>Numerama, le 26/09/2014 : <a href="http://www.numerama.com/magazine/30707-facebook-sait-ou-vous-passez-votre-lune-de-miel-maj.html">Même si vous dites rien, Facebook sait où vous passez votre lune de miel</a></li>
                                             <li>Journal du Net, le 16/07/14 : <a href="http://www.journaldunet.com/ebusiness/le-net/informations-rassemblees-par-google.shtml">Soyons honnêtes, la quantité  d'informations que Google rassemble à notre sujet est effrayante</a></li>
+                                            <li>Big Browser, le 18/11/14 : <a href="http://bigbrowser.blog.lemonde.fr/2014/11/18/comment-avoir-bonne-presse-un-dirigeant-duber-propose-de-fouiller-la-vie-privee-des-journalistes-trop-critiques/">Comment avoir bonne presse ? Un dirigeant d’Uber propose de fouiller la vie privée des journalistes trop critiques</a></li>
                                             </ul>
                                     <p></p>
                                   </div>
