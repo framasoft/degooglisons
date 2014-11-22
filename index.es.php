@@ -90,9 +90,9 @@ foreach ($data as $k => $v) {
                     <div class="row">
                         <h1 class="col-md-6"><span class="violet">Dégooglisons</span> <span class="orange">Internet</span></h1>
                         <p class="lead col-md-6">
-                            Une initiative du réseau <span class="violet">Frama</span><span class="orange">soft</span>
-                            en faveur d'un internet <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
-                            <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>.
+                            Una iniciativa de la red <span class="violet">Frama</span><span class="orange">soft</span>,
+                            por un Internet <a href="#leds">libre</a>, <a href="#leds">descentralizado</a>,
+                            <a href="#leds">ético</a> y <a href="#leds">solidario</a>.
                         </p>
                     </div>
 
@@ -113,124 +113,126 @@ foreach ($data as $k => $v) {
                 </div>
                 <div class="col-md-4 description">
 
-                    <p class="text-center"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
+                    <p class="text-center"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span>Apoya este proyecto</a></p>
 
                     <div class="well">
                         <p><select id="c-select" title="Choisir le camp" class="form-control">
                             <?php echo $options; ?>
                         </select></p>
 
-                        <!-- Village -->
+                        <!-- Aldea -->
                         <div id="t-village" class="c-text">
-                            <h2>Village libriste</h2>
-                            <p>Au milieu des multinationales tentaculaires,
-quelques organisations non-lucratives continuent de lutter activement
-pour un Web ouvert et respectueux des internautes.</p>
-                            <p>En plus de <a href="http://framasoft.org" title="Framasoft">Framasoft</a>, association loi 1901
-qui mène la présente campagne, nous pouvons citer <a href="http://april.org" title="April">l'April</a>, <a href="http://laquadrature.net" title="La Quadrature du Net">la
-Quadrature du Net</a> ou encore <a href="http://aful.org" title="AFUL">l'Aful</a>. Ces associations vivent de vos dons,
- n'oubliez pas de les soutenir !</p>
+                            <h2>Aldea librista</h2>
+                            <p>En medio de los tentáculos de las
+multinacionales, unas cuantas organizaciones sin ánimo de lucro siguen
+luchando con empeño por una Red abierta et que respete a sus usuarios
+y usuarias.</p>
+                            <p>Además de <a href="http://framasoft.org" title="Framasoft">Framasoft</a>,
+asociación francesa amparada bajo la ley de 1901 que lidera esta camapaña,
+existen estas otras asociaciones <a href="http://april.org" title="April">l'April</a>,
+<a href="http://laquadrature.net" title="La Quadrature du Net">la Quadrature du Net</a>
+y también <a href="http://aful.org" title="AFUL">l'Aful</a>.
+Ellas viven de sus donaciones, así que no olviden apoyarlas!</p>
                         </div>
                         <!-- Big camps -->
                         <div id="t-fermetum" class="c-text">
-                            <h2>Fermetum</h2>
-                            <p>Les services en ligne sont souvent fermés :
-une fois que vous avez commencé à les utiliser, il est très difficile de
- s'en séparer car ces entreprises font tout pour vous garder captifs en
- vous empêchant, par exemple, de migrer vos données ailleurs facilement.</p>
-                            <p>Utiliser des services en ligne ouverts, c'est
- s'assurer qu'on ne sera jamais captif d'un site particulier et qu'il
-sera toujours possible d'aller voir ailleurs.
-                            <a href="#t2-fermetum">En savoir plus</a></p>
+                            <h2>Cerratum</h2>
+                            <p>Los servicios en línea son con frecuencia cerrados :
+una vez que los hemos empezado a utilizar, es muy difícil
+separase de ellos, ya que estas empresas hacen todo lo posible para
+mantenernos cautivos impidiéndonos, por ejemplo, migrar nuestros datos
+a otra parte fácilmente.</p>
+                            <p>Utilizar servicios en línea abiertos,es
+ asegurarse que nunca seremos prisioneros de un único sitio y que
+siempre será posible buscar algún otro.
+                            <a href="#t2-fermetum">Más información</a></p>
                         </div>
                         <div id="t-centralisum" class="c-text">
                             <h2>Centralisum</h2>
-                            <p>Les services centralisés posent de nombreux
-problèmes : ils rendent vos données très vulnérables (un seul site
-indisponible et plus rien n'est accessible) et facilitent énormément
-leur exploitation par des tiers.</p>
-                            <p>Utiliser des services en ligne décentralisés,
- c'est avoir le choix entre utiliser une instance en ligne comme celle
-proposée par Framasoft ou installer le service chez soi.
-                            <a href="#t2-centralisum">En savoir plus</a></p>
+                            <p>Los servicios centralizados plantean muchos
+problemas : hacen tus datos sean muy vulnerables (un sólo sitio no
+disponible y todo queda bloquado) y facilitan muchísimo su explotación
+por terceros.</p>
+                            <p>Utilizar servicios en línea descentralizados
+como los que propone Framasoft, es tener la opción entre usarlos en
+línea o instalar el sericio en local.
+                            <a href="#t2-centralisum">Más información</a></p>
                         </div>
                         <div id="t-espionnum" class="c-text">
                             <h2>Espionnum</h2>
-                            <p>«&nbsp;Si c'est gratuit, c'est que vous êtes
-le produit&nbsp;» : de nombreux services en ligne vivent de
-l'exploitation de vos données personnelles en les revendant à des
-sociétés publicitaires. De plus, la plupart de ces services sont basés aux États-Unis et
- obéissent aux lois américaines de type PATRIOT ACT qui nient totalement
- votre droit à la vie privée.</p>
-                            <p>Utiliser des services en ligne hébergés en
-Europe, c'est s'assurer de ne pas être dépendant des lois d'un autre
-continent. De plus, en hébergeant vous-même le service, plus aucun tiers
- ne peut violer votre vie privée.
-                            <a href="#t2-espionnum">En savoir plus</a></p>
+                            <p>«&nbsp;Si es gratis es que tú eres el
+producto&nbsp;»: muchos servicios en línea se financian gracias al uso y
+ la explotación de tus datos personales, por ejemplo vendiéndolos a empresas
+publicitarias. Además, la mayoría de los servicios están basados en los
+Estados Unidos y obedecen a las leyes estadounidenses como la PATRIOT ACT
+ que niegan completamente tus derechos a la vida privada.</p>
+                            <p>Usar servicios en línea albergados en
+Europa es asegurarse de no depender de legislaciones de otro continente.
+ Además, albergando tú mismo los servicios que usas, ningún tercero
+ podrá violar tu vida privada.
+                            <a href="#t2-espionnum">Más información</a></p>
                         </div>
                         <div id="t-privatum" class="c-text">
                             <h2>Privatum</h2>
-                            <p>Les services privateurs
-(«&nbsp;propriétaires&nbsp;» dans le langage courant) ont un
-fonctionnement totalement opaque : il est impossible de savoir
-exactement ce que fait le logiciel de vos données. Seul l'éditeur en a
-le contrôle.</p>
-                            <p>Utiliser des services en ligne libres, c'est
-avoir l'assurance d'un contrôle sur le fonctionnement du logiciel par la
- communauté et la possibilité de le modifier, de l'installer ailleurs,
-etc.
-                            <a href="#t2-privatum">En savoir plus</a></p>
+                            <p>Los servicios privativos
+(«&nbsp;propietarios&nbsp;» en el lenguaje común y corriente)tienen un
+funcionamiento secreto: es imposible saber exactamente lo que hará un
+programa con tus datos. Sólo quién lo edita posee el control.</p>
+                            <p>Usar servicios en línea libres es asegurarse
+que la comunidad tiene control sobre el funcionamiento de un programa y
+que siempre será posible modificarlo e instalarlo en otro lugar por ejemplo.
+                            <a href="#t2-privatum">Más información</a></p>
                         </div>
                         <!-- NSA -->
                         <div id="t-nsa" class="c-text">
                             <h2>NSA</h2>
-                            <p>Les révélations d'Edward Snowden sur le
-programme PRISM de la NSA ont montré que les craintes sur la violation
-de masse de la vie privée des internautes étaient fondées.</p>
-                            <p>Utiliser des services centralisés revient
-aujourd'hui à offrir sur un plateau ses données personnelles aux
-organisations de surveillance sans aucun moyen de contrôler l'usage qui
-en est fait.</p>
+                            <p>Las revelaciones de Edward Snowden acerca
+del programa PRISM de la NSA (National Security Agency de los EE.UU)
+demostraron que el miedo a la incursión masiva en la vida privada de l@s
+usuari@s de internet tenian su razón de ser.</p>
+                            <p>Usar servicios centralizados es como servir
+en bandeja de plata tus datos personales a los organismos de espionaje y
+monitoreo sin poder tener ningún tipo de control sobre el uso que van a
+hacer de ellos.</p>
                         </div>
                         <!-- Little camps -->
                         <?php echo $text; ?>
                     </div>
                     <div id="menu">
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#enjeux" class="btn btn-enjeux btn-block" title="Les enjeux">Les enjeux</a></p>
+                            <p><a href="#enjeux" class="btn btn-enjeux btn-block" title="Los desafíos">Los desafíos</a></p>
                         </div>
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#dangers" class="btn btn-dangers btn-block" title="Les dangers">Les dangers</a></p>
+                            <p><a href="#dangers" class="btn btn-dangers btn-block" title="Los peligros">Los peligros</a></p>
                         </div>
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#solutions" class="btn btn-solutions btn-block" title="Nos propositions">Nos propositions</a></p>
+                            <p><a href="#solutions" class="btn btn-solutions btn-block" title="Nuestras propuestas">Nuestras propuestas</a></p>
                         </div>
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#concret" class="btn btn-concret btn-block" title="Concrètement">Concrètement</a></p>
+                            <p><a href="#concret" class="btn btn-concret btn-block" title="En concreto">En concreto</a></p>
                         </div>
-                        <p class="text-center"><a class="btn btn-liste btn-lg" href="liste/"> Liste des services</a></p>
+                        <p class="text-center"><a class="btn btn-liste btn-lg" href="liste/">Lista de servicios</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row" id="enjeux">
             <div class="container ombre">
-                <h2>Quel sont les enjeux ?</h2>
-                <p>Ces dernières années ont vu se généraliser une
-<strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
-WhatsApp à Facebook, Skype à Microsoft, etc.). Cette centralisation est
-nuisible, non seulement parce qu’elle freine l’innovation, mais surtout
-parce qu'elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces
-services derniers ne contrôlent plus leur vie numérique</strong> : leurs
-comportements sont disséqués en permanence afin de mieux être ciblés par
-la publicité, et leurs données - pourtant privées (sites visités, mails
-échangés, vidéos regardées, etc.) - peuvent être analysées par des
-services gouvernementaux.</p>
-                <p>La réponse que souhaite apporter Framasoft à
-cette problématique est simple : mettre en valeur, pour chacun de ces
-services privateur de liberté, une alternative Libre, Ethique,
-Décentralisée et Solidaire. <a href="#dangers">En savoir plus…</a></p>
-
+                <h2>¿ Cuáles son nuestros desafíos ?</h2>
+                <p>Durante estos últimos años se ha generalizado una
+<strong>concentración de los actores de Internet</strong> (Youtube le pertenece a Google,
+WhatsApp a Facebook, Skype a Microsoft, etc.). Este tipo de centralización
+es nociva, no solamente frena la innovación sino que sobretodo convella
+a la pérdida de libertad para los interesados. <strong>Los usuarios de estos
+servicios dejan de controlar su vida digital</strong>  : sus comportamientos son
+desmenuzados permanentemente para que sean mejores blancos para la
+publicidad y sus datos - a pesar de ser privados (por ejemplo los sitios
+ visitados, los correos intercambiados, los videos vistos, etc.) -
+ pueden ser analizados por los servicios del estado.</p>
+                <p>La repuesta de Framasoft a este problema es simple :
+fomentar, para cada uno de estos servicios que impiden la libertad,
+una alternativa Libre, Ética, Descentralizada y Solidaria.
+                <a href="#dangers">Más información ...</a></p>
             </div>
         </div>
 
@@ -238,25 +240,25 @@ Décentralisée et Solidaire. <a href="#dangers">En savoir plus…</a></p>
             <div class="container ombre">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2>Dangers</h2>
-                        <p>Les services en ligne toujours plus
-centralisés de géants tentaculaires comme Google, Amazon, Facebook,
-Apple ou Microsoft (GAFAM) mettent en danger nos vies numériques.</p>
+                        <h2>Peligros</h2>
+                        <p>Los servicios en línea están cada vez más
+centralizado por los gigantes tentaculares como Google, Amazon, Facebook,
+Apple o Microsoft (GAFAM) y ponen en peligro nuestras vidas digitales.</p>
                     </div>
                     <div class="col-sm-6">
-                        <h3 id="t2-espionnum"><span class="fa fa-fw fa-eye"></span> Espionnage</h3>
-                        <p>
-                            Ces services nous pistent en permanence.
-Sous le prétexte de fournir une «&nbsp;meilleure expérience
-utilisateur&nbsp;», nos comportements sur Internet sont espionnés en
-permanence. Ces informations peuvent servir à afficher de la publicité
-ciblée, mais les révélations de l'affaire Snowden ont aussi prouvé que
- les géants de l'Internet étaient contraints de communiquer ces données
-(parfois extrêmement privées : emails échangés sur GMail, photos
-partagées sur Facebook, conversations Skype, géolocalisation des
-téléphones, etc.) à des services gouvernementaux. <strong>Sous prétexte de lutte
-contre le terrorisme</strong>, les états sont capables aujourd'hui d'obtenir bien plus
-d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
+                        <h3 id="t2-espionnum"><span class="fa fa-fw fa-eye"></span>Espionaje</h3>
+                        <p>Estos servicios nos espían constantemente.
+    Bajo el pretexto de ofrecer una "mejor experiencia de l@s usuari@s",
+nuestros comportamientos en Internet son espiados constantamente.
+Esas informaciones pueden ser utilizadas para mostrar publicidad adaptada
+a l@s usuari@s, pero las revelaciones del caso Snowden también
+demostraron que los gigantes de Internet se vieron obligados a proporcionar
+estos datos (a veces extremadamente privados: los correos electrónicos enviados
+por GMail, fotos compartidas en Facebook, conversaciones vía Skype, o incluso
+la geolocalización de teléfonos entre otras) a los servicios del gobierno.
+<strong>Con el pretexto de la lucha contra el terrorismo</strong>, los
+estados ahora son capaces de obtener más información de la que el
+mismo "Gran Hermano" hubiera podido soñar.
                         </p>
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-espionnage-modal-lg">Des exemples ?</button>
@@ -301,23 +303,24 @@ d'informations qu'un «&nbsp;Big Brother&nbsp;» ne l'aurait jamais rếvé.
                             </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3 id="t2-privatum"><span class="fa fa-fw fa-user"></span> Vie privée</h3>
+                        <h3 id="t2-privatum"><span class="fa fa-fw fa-user"></span>Vida privada</h3>
                         <p>
-                            Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre
-orientation politique ou sexuelle, les sites que nous avons visités,
-notre recette préférée, les sujets qui nous intéressent, etc. <br>
-                            Si une donnée seule, prise indépendamment,
-n'est pas forcément sensible, un ensemble de données peut le devenir
-(par exemple si vous avez fait des recherches sur le cancer avant de
-souscrire à une assurance-vie).<br>
-                            Dans un monde où tout devient numérique
-(lecture, TV, téléphonie, musique, réseau social, etc.), <strong>notre vie privée
- est un élément essentiel de ce qui fait de nous une personne
-singulière</strong>. Une personne malveillante qui aurait accès à votre
-smartphone peut en apprendre suffisamment sur vous en quelques minutes
-pour vous causer des torts très importants (usurpation d'identité sur
-Facebook, détournement d'informations professionnelles, achats effectués
- sans votre accord, etc.).
+                            Nuestros datos son una extensión
+de nosotr@s mism@s. Ellos pueden indicar en donde estamos,
+nuestra orientación política o sexual, los sitios en los que navegamos,
+nuestra receta favorita, los temas que nos interesan, etc.<br>
+                            Si un dato aislado, no es particularmente
+sensible, un conjunto de datos sí puede llegar a serlo (por ejemplo,
+si has hecho alguna búsqueda sobre el cáncer antes de comprar una póliza
+de seguro de vida). <br>
+                            En un mundo donde todo es digital
+(la lectura, la televisión, el teléfono, la música, las redes sociales,
+ etc. ), <strong>nuestra privacidad es una parte esencial de lo que nos hace una
+ persona única</strong>. Una persona malintencionada que tenga acceso a su
+smartphone puede saber en unos minutos lo suficiente sobre tí como
+para causarte un daño muy importante (el robo de identidad en Facebook,
+apropiación indebida de información profesional o hacer compras sin tu
+consentimiento, entre otros).
                         </p>
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-vie-privee-modal-lg">Des exemples ?</button>
@@ -367,28 +370,30 @@ Facebook, détournement d'informations professionnelles, achats effectués
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3 id="t2-centralisum"><span class="fa fa-fw fa-dot-circle-o"></span> Centralisation</h3>
+                        <h3 id="t2-centralisum"><span class="fa fa-fw fa-dot-circle-o"></span>Centralización</h3>
                         <p>
-                            Les acteurs majeurs de l'internet sont
-devenus de véritables pieuvres : Facebook possède WhatsApp et Instagram,
- Google détient Youtube et Waze, Microsoft distribue Skype, etc.<br>
-                            Cette concentration des acteurs pose de
-multiples problèmes : que se passera-t-il si Facebook met la clé sous la
- porte ? Comment faire des recherches si Google subit une panne ?
-                            <strong>Nous devenons peu à peu dépendants de
-services fournis par un petit nombre d'acteurs.</strong> Par exemple, Apple
-(iPhone), Google (Android) et Microsoft (Windows Phone) se partagent la
-quasi-totalité du marché des systèmes d'exploitation pour smartphones.<br>
+                            Los  principales actores de Internet se
+han convirtido en auténticos pulpos: Facebook compró WhatsApp e
+Instagram, Youtube y Google  tienen Waze, Microsoft distribuye
+a Skype, etc. <br>
+                            Esta concentración es nociva:
+¿Qué pasaría si Facebook quiebra? ¿Cómo hacer búsquedas si Google no
+ funciona? <strong>Poco a poco nos volvemos dependientes de los servicios
+ prestados por una pequeña cantidad de actores.</strong> Por ejemplo,
+ Apple (iPhone), Google (Android) y Microsoft (Windows Phone) poseen
+ casi todo el mercado de sistemas operativos para teléfonos
+ inteligentes a nivel mundial.<br>
+
                             Par ailleurs, la taille de ces acteurs bride
  l'innovation : difficile de lancer une start-up face à Apple ou Google
 (respectivement première et deuxième capitalisations boursières
 mondiale).<br>
-                            Enfin, le manque de diversité de ces géants
-leur donne aussi la possibilité non seulement de collecter facilement
-des informations personnelles, mais aussi d'altérer l'information
-qu'ils diffusent (une recherche Google sur le mot "nucléaire"
-n'affichera pas les mêmes liens suivant que Google vous perçoit comme
-un militant écologiste ou un pro-nucléaire).
+                            Por  último, la falta de diversidad de estos
+ gigantes también les da la oportunidad no sólo para recoger fácilmente
+ datos personales, sino también para alterar la información que
+ proporcionan (una búsqueda en Google de la palabra "nuclear"
+ no te muestra los mismos enlaces si Google te ve como un ecologista
+ militante o como un pronuclear).
                         </p>
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-centralisation-modal-lg">Des exemples ?</button>
@@ -424,26 +429,25 @@ un militant écologiste ou un pro-nucléaire).
                             </div>
                     </div>
                     <div class="col-sm-6">
-                        <h3 id="t2-fermetum"><span class="fa fa-fw fa-lock"></span> Fermeture</h3>
+                        <h3 id="t2-fermetum"><span class="fa fa-fw fa-lock"></span>Aprisionamiento</h3>
                         <p>
-                            Les services web affichés sur votre
-ordinateur ou votre smartphone sont généralement exécutés dans le
-«&nbsp;cloud&nbsp;» : des serveurs dispersés sur la planète, stockant à
-la fois vos données (mails, photos, fichiers, etc.) mais aussi le code
-des applications.<br>
-                            Pour les données, cela pose le problème de
-leur pérennité (que deviennent vos fichiers si Dropbox ferme demain ?)
-mais aussi de votre capacité à changer de services (comment faire pour
-récupérer l'ensemble de vos photos sur Facebook ou Picasa, et les
-réinsérer avec les commentaires dans un autre service ?). <br>
-                            Pour les applications, cela implique que
-<strong>vous êtes à la merci de changements impromptus selon le bon vouloir du fournisseur</strong>
-(ajout de publicité, modification de l'interface, etc.), mais surtout que
- vous n'avez quasiment aucun contrôle sur ce que l'application peut
-faire. Ce sont des «&nbsp;boîtes noires&nbsp;» qui peuvent agir de façon
- malveillante (envoyer des SMS à votre insu, exécuter du code
-indésirable, etc.).
-                        <br>Bref, ces sociétés nous enferment dans des cages dorées, certes, mais des cages malgré tout !
+Los servicios web disponibles en tu computadora o en tu smartphone
+funcionan en general en modo "nube" : servidores repartidos por todo
+ el planeta que almacenan tanto los datos (mensajes, fotos, archivos, etc.)
+como el código de la aplicación. <br>
+                            Para los datos, se plantea la cuestión de
+su perpetuidad (¿Qué pasaría con tus archivos si Dropbox desapareciera mañana?)
+ pero también se plantea tu capacidad para cambiar de servicio (¿Cómo recuperar
+ todas tus fotos de Facebook o Picasa y reinsertarlas con los comentarios
+ en otro servicio?).<br>
+                            Para las aplicaciones, esto significa que
+<strong>estás a merced de cambios súbitos según la voluntad del proveedor</strong>
+ (agregar publicidad, cambiar la interfaz, etc.), pero sobre todo que
+ no tienes prácticamente ningún control sobre lo que aplicación puede
+ hacer. Es como si fueran "cajas negras" que pueden actuar
+ malintencionadamente (enviar mensajes de texto sin que lo sepas,
+ ejecutar código no deseado, etc.).
+                        <br>En pocas palabras, estas empresas nos encierran en jaulas, que aunque sean de oro, ¡No dejan de ser jaulas!
                         </p>
                         <p>
                             <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-fermeture-modal-lg">Des exemples ?</button>
@@ -492,61 +496,66 @@ indésirable, etc.).
             <div class="container ombre">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2><a id="leds"></a>Ce que nous proposons</h2>
-                            <p>Framasoft souhaite faire face à ces dangers
-    menaçant nos vies numériques en proposant des services libres, éthiques,
-     décentralisés et solidaires.</p>
+                        <h2><a id="leds"></a>Nuestras propuestas</h2>
+                            <p>Framasoft quiere hacer frente a los
+peligros que amenazan nuestras vidas digitales ofreciendo
+servicios libres, éticos, descentralizados y solidarios. </p>
                     </div>
                     <div class="col-sm-6">
-                            <h3><span class="fa fa-fw fa-unlock"></span> Liberté</h3>
-                            <p> L'histoire d'Internet elle-même est une histoire de logiciels libres,
-                            tant du point de vue des standards que des protocoles employés.
-                            Sa popularité et son potentiel font aussi des envieux, et de grandes entreprises
-                            aimeraient s'en attribuer le contrôle en imposant du code fermé dans des systèmes
-                            verrouillés et non-interopérables.</p>
-                            <p>Pour qu'Internet reste fidèle à ses principes fondateurs qui l'ont conduit à
-                            son succès, nous devons y trouver des applications libres, c'est-à-dire dont le
-                            code source est ouvert, accessible et sous licences libres.</p>
-                            <p><strong>Framasoft s'engage à n'utiliser que des logiciels au code source «&nbsp;libre&nbsp;».</strong></p>
+                            <h3><span class="fa fa-fw fa-unlock"></span> Libertad</h3>
+                            <p> La historia de Internet es  también la historia de los softwares libres,
+                             tanto desde el punto de vista de los estándares  que de los  protocolos empleados.
+                              Su popularidad y su potencial despiertan envidias, y las grandes corporaciones quisieran
+                                acaparárselos imponiéndoles un código cerrado en sistemas
+                            cerrados y no interoperables.</p>
+                            <p>Para que Internet siga fiel a sus principios fundadores
+                             que lo llevaron al éxito, tenemos que encontrar aplicaciones libres,
+                             es decir cuyo código fuente es abierto, accesible y libre.</p>
+                            <p><strong> Framasoft se compromete a utilizar únicamente programas de código fuente "libre".</strong></p>
                     </div>
                     <div class="col-sm-6">
-                            <h3><span class="fa fa-fw fa-eye-slash"></span> Éthique</h3>
-                            <p>Nous plébiscitons un Internet fait de partage et d'indépendance.</p>
-                            <p>L'exploitation, la surveillance, la censure et l'appropriation des données sont
-                            des valeurs que nous refusons au profit de la transparence (la probité), de l'exposition
-                            claire des conditions d'utilisation des services, et du refus des discriminations.</p>
-                            <p><strong>Framasoft s'engage à ne pas exploiter les données des utilisateurs de ses services, et à promouvoir un Web ouvert et équitable.</strong></p>
+                            <h3><span class="fa fa-fw fa-eye-slash"></span> Ética</h3>
+                            <p>Apoyamos un Internet hecho de intercambios y de independencia.</p>
+                            <p>La explotación, el monitoreo, la censura y la apropiación de los
+                            datos son valores que rechazamos en pro de la transparencia (la probidad),
+                             de la clara exposición de las condiciones de uso de los servicios y
+                             del rechazo de las discriminaciones.</p>
+                            <p><strong>Framasoft se compromete a no explotar los datos de l@s usuari@s de sus servicios y a promover una Red abierta y equitativa.</strong></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                            <h3><span class="fa fa-fw fa-share-alt"></span> Décentralisation</h3>
-                            <p> L'intelligence d'Internet doit reposer sur chaque acteur du réseau dans une
-                            dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0.</p>
-                            <p>Pour assurer l'égalité de tous, citoyens comme entrepreneurs, les monopoles doivent
-                            non seulement être évités, mais empêchés de s'accaparer les données personnelles ou publiques.</p>
+                            <h3><span class="fa fa-fw fa-share-alt"></span> Descentralización</h3>
+                            <p> La inteligencia de Internet debe residir en cada protagonista de la red,
+                             en una dinámica de intercambios entre pares para evitar que se convierta en un Minitel
+                              2.0*. (https://es.wikipedia.org/wiki/Minitel)</p>
+                            <p>PLos monopolios no sólo deben ser evitados sino que se debe impedir la recolección
+                             de datos personales o públicos, para garantizar la igualdad de tod@s, tanto
+                              ciudadan@s como empresari@s.</p>
+                            <!--
                             <p>En expliquant, par des tutoriels, comment multiplier les solutions libres permettant un
                             Internet plus équitable, nous facilitons l'essaimage du code et diversifions les usages.</p>
                             <p><strong>Framasoft s'engage à faciliter l'auto-hébergement et l'interopérabilité, afin de ne pas «&nbsp;enfermer&nbsp;» ses utilisateurs.</strong></p>
+                            -->
                     </div>
                     <div class="col-sm-6">
-                            <h3><span class="fa fa-fw fa-users"></span> Solidarité</h3>
-                            <p>À travers les services que nous déployons, nous promouvons un modèle économique
-                            fondé sur la mutualisation des coûts, le partage des ressources, et l'accessibilité
-                            au plus grand nombre.</p>
-                            <p>Ce modèle possède aussi un caractère éducatif car nous pensons qu'en documentant
-                            le déploiement des services, un grand nombre d'utilisateurs seront en mesure de partager
-                            à leur tour ces ressources.</p>
-                            <p>Nous pensons que ne pas infantiliser les utilisateurs et faire partager la responsabilité de l'utilisation des services permettra de réguler les abus.</p>
-                            <p><strong>Framasoft s'engage à promouvoir le respect et l'autonomie de ces utilisateurs (tant que la réciproque sera vraie).</strong></p>
+                            <h3><span class="fa fa-fw fa-users"></span> Solidaridad</h3>
+                            <p>Gracias a los servicios que desarrollamos, promovemos un modelo
+                            económico basado en la mutualización de costes, compartir los
+                            recursos y el acceso para todas y todos.</p>
+                            <p>Este modelo posee un caracter educativo ya que creemos
+                            que documentando el desarrollo de nuestros servicios la mayoría
+                            de l@s usuari@s podrán compartir a su vez estos recursos.</p>
+                            <p>Creemos que no infantilizar a l@s usuari@s y compartir la responsabilidad de la utlización de los servicios permitirá regular los abusos.</p>
+                            <p><strong>Framasoft se compromete a promover el respeto y la autonomía de estos usuari@s (siempre y cuando ell@s se comprometan a lo mismo).</strong></p>
                     </div>
                     <div class="col-sm-12">
                         <div class="well text-center">
-                            <h3>Services et Charte</h3>
-                            <p>Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :</p>
+                            <h3>Servicios y Declaración</h3>
+                            <p>Puedes encontrar una lista de los servicios en línea ya disponibles (y los que están aún en preparación), así como nuestra Declaración :</p>
                             <p>
-                                <a href="http://degooglisons-internet.org/liste/" class="btn btn-liste">Liste des services Framasoft</a>
-                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des services Framasoft</a>
+                                <a href="http://degooglisons-internet.org/liste/" class="btn btn-liste">Lista de los servicios de Framasoft</a>
+                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Declaración de los servicios de Framasoft</a>
                             </p>
                         </div>
                     </div>
@@ -556,50 +565,52 @@ indésirable, etc.).
     <div class="row" id="concret">
         <div class="container ombre">
             <div class="col-md-8">
-                <h2>Concrètement</h2>
-                <p>Le projet « Dégooglisons Internet » - qui ne
-concerne d'ailleurs pas que Google - consiste à <strong>proposer des services
-alternatifs face à un maximum de services que nous évaluons comme
-menaçants pour nos vies numériques</strong>.</p>
+                <h2>En concreto </h2>
+                <p>El proyecto “Dégooglicemos Internet” - que no se limita
+a Google - consiste en proporcionar servicios alternativos a
+ la mayor parte de servicios que evaluamos como amenazas a nuestras vidas
+ digitales. </p>
                 <p>Google Docs, Skype, Dropbox, Facebook, Twitter,
-Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d'autres sont des
- services extrêment pratiques, mais <strong>ils sont devenus bien trop gros et
-nous ont rendus dépendants</strong>. Framasoft souhaite entrer en résistance, et
-propose un plan de mise en place d'applications alternatives sur
-plusieurs années.</p>
-                <p>Ces services sont libres, gratuits, ouverts à
-tous (dans la limite de nos capacités techniques et financières), tels
-des <strong><a href="http://fr.wikipedia.org/wiki/Biens_communs" title="Bien communs">biens communs</a> numériques</strong>. Dans un souci de décentralisation
-d'internet et de promotion de l'auto-hébergement, nous ferons le maximum
- afin que chacun puisse installer ses propres services (pour soi, pour
-son association, son entreprise).</p>
-                <p>Evidemment, nous n'avons pas la prétention de <em>concurrencer</em>
- ces services, nous souhaitons juste proposer un espace numérique
-neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
-                <p><strong>Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :</strong></p>
+Google Calendar, YouTube, Doodle, Yahoo! Groups y muchos
+otros servicios son muy útiles pero
+<strong>se han vuelto demasiado grandes y
+nos han hecho dependientes de ellos</strong>. Framasoft desea entrar en la
+lucha y propone un plan de implantación de aplicaciones
+alternativas escalonado durante varios años.</p>
+                <p>Estos servicios son libres, gratuitos, y
+abiertos a tod@s (dentro de los límites de nuestra capacidad
+técnica y financiera) y son  <strong> bienes comunes digitales</strong>.
+ En aras de una Internet descentralizada y de la fomentar el
+ propio alojamiento de datos, haremos todo lo posible para que tod@s
+ puedan instalar sus propios servicios (para sí mism@s, para su asociación
+  o su negocio).</p>
+                <p>Obviamente, no pretendemos hacerle competencia
+a estos servicios, sólo queremos ofrecer un espacio digital neutro,
+no comercial y no invasivo a l@s usuari@s. </p>
+                <p><strong>Acceso a la lista de servicios que ya ofrecemos (y los que están en preparación) :</strong></p>
                 <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" >Liste des services Framasoft</a></p>
                 <p><img src="img/cloud.jpg" alt="" class="center-block img-responsive" /></p>
             </div>
             <div class="col-md-4">
                 <div class="well">
-                    <h2>Soutenir</h2>
-                    <p>Un projet d'une telle envergure ne peut se faire sans <strong>votre soutien</strong>.</p>
-                    <p>Si vous êtes développeur, graphiste, ergonome,
-administrateur système, etc, vous pouvez nous contacter pour participer
-activement au projet.</p>
+                    <h2>Apóyanos</h2>
+                    <p>Un proyecto de esta magnitud no se puede hacer sin tu apoyo.</p>
+                    <p>Si eres desarrollador@, diseñador@, ergónom@,
+administrador@ de sistemas, etc., puedes contactarnos
+para participar activamente en el proyecto.  </p>
                     <p class="text-center">
-                        <a href="http://contact.framasoft.org/participer" class="btn btn-primary"><span class="fa fa-fw fa-envelope"></span> Contacter Framasoft</a>
+                        <a href="http://contact.framasoft.org/participer" class="btn btn-primary"><span class="fa fa-fw fa-envelope"></span>Contactar a Framasoft</a>
                     </p>
-                    <p>Mais le moyen le plus simple et le plus rapide de
- nous aider reste de nous soutenir financièrement : cela nous permet
-de payer l'infrastructure (serveurs), et les permanents dédiés à la
-réussite de ce projet ambitieux. Framasoft est une association d'intérêt
- général : un don de 100€ vous reviendra, après défiscalisation, à 34€.</p>
+                    <p>Pero la forma más fácil y rápida de ayudarnos es apoyarnos económicamente:
+esto nos permite pagar por la infraestructura (servidores) y a las personas que empleamos para
+ que este ambicioso proyecto sea un éxito. Framasoft es una asociación “d'intérêt général”
+  (de interés general) según la legislación francesa y por esta razón una donación de 100 €,
+   después de la desgravación fiscal, te cuesta 34 € si pagas impuestos en Francia.</p>
                     <p class="text-center">
-                        <a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Faire un don<br />à Framasoft</a>
+                        <a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span>Donar<br />a Framasoft</a>
                     </p>
                 </div>
-                <p class="signature text-right small">Campagne commencée le 07/10/2014<br/>Dernière modification le 04/11/2014</p>
+                <p class="signature text-right small">Campaña iniciada le 07/10/2014<br/>Última actualización le 04/11/2014</p>
             </div>
         </div>
     </div>
