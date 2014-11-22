@@ -2,137 +2,135 @@
 
 $data = [
     'tip2017' => [
-        'name'          => '180 000€ + 1 250 donateurs récurrents',                                          /* Dons */
+        'name'          => '180.000 € + 1.250 donantes frecuentes',                                          /* Dons */
         'wkp'           => '',
-        'description'   => 'Objectifs',
+        'description'   => 'Objetivos',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '',
-        'alt_frama'     => '11 permanents',                                          /* Salariés */
+        'alt_frama'     => '11 emplead@s',                                          /* Salariés */
         'date_frama'    => '2017',
         'coordonnees'   => '',
-        'class'         => 'objectifs',
+        'class'         => 'objetivos',
         'soft_frama'    => '',
-        'long_desc'     => 'Pour mener à bien ces projets, nos besoins représente 2,27 sec de CA quotidien de Google', /* Comparaison Google CA */
+        'long_desc'     => 'Para lograr estos proyectos, nuestro presupuesto equivale a 2,27 segundos de los ingresos de un sólo día de Google', /* Comparaison Google CA */
         'url_frama'     => '',
         'id_frama'      => 'tip2017',
-        'modale_title'  => 'Nos objectifs pour 2017',
-        'modale_body'   => '<p>Nous toucherons au but ! Il restera encore des services « sensibles » à mettre en place, notamment les services liés à la messagerie (liste de diffusion, et bien entendu emails).</p>
-                            <p>Non seulement ces services sont les plus coûteux à mettre en place (il est plus simple de gérer un site qui fait un million de visites par jour que de gérer 10 000 boîtes mails), mais il faudra aussi (surtout !) assurer le bon fonctionnement (maintenance, mise à jour, support, etc.) des projets mis en place depuis 2011.</p>
-                            <p>Cela nécessitera le recrutement de 3 nouvelles personnes (essentiellement sur les aspects techniques).</p>
-                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d\'autoroute, ou 0,0006% du C.A. annuel de Google</p>
-
+        'modale_title'  => 'Nuestros objetivos para el 2017',
+        'modale_body'   => '<p>¡Lograremos nuestra meta! Nos faltarán algunos servicios "delicados" por implementar, sobre todo los de mensajería (listas de difusión y por supuesto de correo electrónico).</p>
+                            <p>No sólo estos servicios son los más caros de poner en marcha (es más sencillo administrar un sitio que tiene un millón de visitas diarias que gestionar 10.000 correos electrónicos), sino que también (¡sobre todo!) habrá que asegurarse que funcionen bien (mantenimiento, actualización y soporte técnico entre otros) todos los proyectos lanzados desde el 2011.</p>
+                            <p>Para esto necesitaremos contratar 3 personas más (esencialmente para los aspectos técnicos).</p>
+                            <p>Para dar una idea de la magnitud de lo que necesitamos, nuestro objetivo para el 2017 (180.000 € y 1.250 donantes frecuentes) equivale al coste de 54 metros de autopista, o al 0,0006% del volumen de facturación anual de Google</p>
 ',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soportar</a>'
     ],
     'tip2016' => [
-        'name'          => '130 000€ + 1 080 donateurs récurrents',
+        'name'          => '130.000 € + 1.080 donantes frecuentes',
         'wkp'           => '',
-        'description'   => 'Objectifs',
+        'description'   => 'Objetivos',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '',
-        'alt_frama'     => '8 permanents',
+        'alt_frama'     => '8 emplead@s',
         'date_frama'    => '2016',
         'coordonnees'   => '',
-        'class'         => 'objectifs',
+        'class'         => 'objetivos',
         'soft_frama'    => '',
-        'long_desc'     => 'Pour mener à bien ces projets, nos besoins représentent 2,27 sec de CA quotidien de Google',
+        'long_desc'     => 'Para logar estos proyectos, nuestros presupuesto equivale a 2,27 segundos de los ingresos de un sólo día de Google',
         'url_frama'     => '',
         'id_frama'      => 'tip2016',
-        'modale_title'  => 'Nos objectifs pour 2016',
-        'modale_body'   => '<p>Début 2016, Framasoft comptera déjà plus d\'une vingtaine de services en ligne. Mais nous ne comptons pas nous arrêter là&nbsp;! Nous souhaitons en effet proposer de nouvelles alternatives libres aux applications des géants d\'Internet. Notamment&nbsp;:
+        'modale_title'  => 'Nuestros objetivos para el 2016',
+        'modale_body'   => '<p>A principios del 2016, Framasoft ya contará con una veintena de servicios en línea. Pero no pensamos quedarnos ahí&nbsp;! Realmente queremos ofrecer nuevas alternativas libres a las aplicaciones de los gigantes de Internet.   Especialmente&nbsp;:
                                 <ul>
-                                    <li>un service d\'agenda partagé (en alternative à Google Agenda)</li>
-                                    <li>un service de microblogging (en alternative à Twitter)</li>
-                                    <li>un service d\'hébergement de vidéos libres (en alternative à Youtube)</li>
+                                    <li>un servicio de agenda compartida (como alternativa a Google Agenda)</li>
+                                    <li>un servicio de microblogging (como alternativa a Twitter)</li>
+                                    <li>un servicio libre de alojamiento de vídeos (como alternativa a Youtube)</li>
                                 </ul>
                             </p>
-                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin de recruter 3 nouvelles personnes (un développeur, un second adminsys, et un administrateur). </p>
-                            <p>Afin de ne pas systématiquement solliciter nos gentils donnateurs, une partie de la somme nécessaire pourra provenir de subventions.</p>
-                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d\'autoroute, ou 0,0004% du C.A. annuel de Google</p>
-
+                            <p>Para garantizar la puesta en funcionamiento de estos proyectos así como para mantener los ya existentes, la asociación necesitará contratar a 3 personas más (un desarrollador, otro administrador de sistemas, y un administrador).</p>
+                            <p>Para no tener que solicitar sistemáticamente a nuestros amables donantes, una parte del dinero necesario podría provenir de subvenciones.</p>
+                            <p>Para dar una idea de la magnitud de lo que necesitamos,nuestro objetivo para el 2016 (130.000 € y 1.080 donantes frecuentes) equivale al coste de 38 metros de autopista, o al 0,0004% del volumen de facturación anual de Google</p>
                             ',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soportar</a>'
     ],
     'tip2015' => [
-        'name'          => '70 000€ + 780 donateurs récurrents',
+        'name'          => '70.000€ + 780 donantes frecuentes',
         'wkp'           => '',
-        'description'   => 'Objectifs',
+        'description'   => 'Objetivos',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '',
-        'alt_frama'     => '5 permanents',
+        'alt_frama'     => '5 emplead@s',
         'date_frama'    => '2015',
         'coordonnees'   => '',
-        'class'         => 'objectifs',
+        'class'         => 'objetivos',
         'soft_frama'    => '',
-        'long_desc'     => 'Pour mener à bien ces projets, nos besoins représentent 2,27 sec de CA quotidien de Google',
+        'long_desc'     => 'Para logar estos proyectos, nuestros presupuesto equivale a 2,27 segundos de los ingresos de un sólo día de Google',
         'url_frama'     => '',
         'id_frama'      => 'tip2015',
-        'modale_title'  => 'Nos objectifs pour 2015',
-        'modale_body'   => '<p>Framasoft souhaite mettre à disposition plusieurs services en ligne importants en 2015&nbsp;:
-                                <ul>
-                                    <li>un service de d\'hébergement de documents (en alternative à Dropbox)</li>
-                                    <li>un service d\'envoi de gros fichiers (en alternative à WeTransfer)</li>
-                                    <li>un service de présentations/diaporama en ligne (un « PowerPoint en ligne », si vous préférez)</li>
-                                    <li>un service de visioconférence (en alternative à Skype), directement depuis votre navigateur, sans installation de logiciel</li>
+        'modale_title'  => 'Nuestros objetivos para el 2015',
+        'modale_body'   => '<p>Framasoft desea poner a disposición varios servicios en linea muy importantes desde 2015&nbsp;:
+                               <ul>
+                                    <li>un servcio de almacenamiento de documentos(como alternativa a Dropbox)</li>
+                                    <li>un servicio de envio de ficheros pesados(como alternativa a WeTransfer)</li>
+                                      <li>un servicio de presentaciones/diaporama en línea (como si fuera un "PowerPoint en línea")</li>
+                                      <li>un servicio de videoconferencia (como alternativa a Skype)que se lanza directamente desde tu navegador sin tener que instalar ningún programa</li>
                                 </ul>
                             </p>
-                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin d\'embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
-                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d\'autoroute, ou 0,0002% du C.A. annuel de Google</p>
+                            <p>Para lograr lanzar estos proyectos y mantener los que ya existen, la asociación necesita contratar a más además de l@s colaborador@s con l@s que cuenta hoy en día, un@ administrador@ de sistemas a tiempo completo y por lo menos a dos personas en prácticas. </p>
+                            <p>Para darles una idea de nuestras necesidades nuestro objetivo para el 2015 (osea 70 000€ y 780 donantes fij@s) equivale al costo de 21 metros de una autopista o mejor, al 0,0002% de los ingresos anuales de Google</p>
                             ',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soportar</a>'
     ],
     'tip2014' => [
-        'name'          => '35 000€ + 550 donateurs récurrents',
+        'name'          => '35.000€ + 550 donantes frecuentes',
         'wkp'           => '',
-        'description'   => 'Objectifs',
+        'description'   => 'Objetivos',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '',
-        'alt_frama'     => '3 permanents',
+        'alt_frama'     => '3 emplead@s',
         'date_frama'    => '2014',
         'coordonnees'   => '',
-        'class'         => 'objectifs',
+        'class'         => 'objetivos',
         'soft_frama'    => '',
-        'long_desc'     => 'Pour mener à bien ces projets, nous avons besoin de votre aide&nbsp;!',
+        'long_desc'     => 'Para logar estos proyectos, necesitamos vuestra ayuda&nbsp;!',
         'url_frama'     => '',
         'id_frama'      => 'tip2014',
-        'modale_title'  => 'Nos objectifs pour 2014',
-        'modale_body'   => '<p>L\'année 2014 aura été une année particulièrement chargée pour l\'association Framasoft, puisqu\'il aura fallu mettre au point notre plan de bataille pour vous permettre de résister à Google, Facebook et autres…</p>
-        <p>L\'association à notamment investi (en temps et en argent) dans l\'infrastructure technique qui permet d\'héberger les services actuels et nous permettront d\'accueillir confortablement les applications que nous vous proposeront dans les prochaines années.</p>
-        <p>Nous avons besoin de votre aide pour :
+        'modale_title'  => 'Nuestros objetivos para el 2014',
+        'modale_body'   => '<p>El 2014 ha sido un año bastante ajetreado para Framasoft porque hemos tenido que planear nuestra estrategia para poder resistir frentre a Google,a Facebook y otros tantos más…</p>
+        <p>La asociación invirtió (tiempo y dinero) en la infraestructura técnica que permite albergar nuestros servicios actuales y que nos van a permitir hospedar en buenas condiciones las aplicaciones que les propondremos durante los próximos años.</p>
+        <p>Necesitamos la ayuda de tod@s ustedes para:
             <ul>
-                <li>accroître la taille de notre infrastructure technique (augmenter la puissance de calcul et le stockage de notre cluster de machines virtuelles)</li>
-                <li>assurer les salaires de nos deux permanents</li>
-                <li>permettre l\'embauche d\'un troisième salarié (chargé de communication)</li>
-                <li>financer le développement d\'améliorations de certains services proposés (Framadate et Framindmap, notamment)</li>
-                <li>assurer la coordination de l\'ensemble du projet "Dégooglisons Internet"</li>
+                <li>Mejorar nuestra infrastructura técnica (aumentar la capacidad de cálculo y de almacenamiento de nuestro clúster de máquinas virtuales)</li>
+                <li>Garantizar los sueldos de nuestr@s dos emplead@s</li>
+                <li>Permitir la contratación de una tercera persona (encargad@ de comunicación)</li>
+                <li>Financiar la mejora de los servicios ofrecidos (especialmente Framadate y Framindmap)</li>
+                <li>Garantizar la coordinación del proyecto "Degooglicemos Internet"</li>
             </ul>
         </p>
-        <p>L\'objectif fixé est de passer de 400 à 550 donateurs récurrents, ainsi que de récolter 35 000€ en dons ponctuels sur l\'année.</p>
-        <p>Nous vous rappelons que Framasoft est une association largement autofinancée par ses donateurs. Pour vous donner une échelle de nos besoins, notre objectif 2014 (35 000€ et 550 donateurs récurrents) représente le coût de 8 mètres d\'autoroute, ou 0,000083% du C.A. annuel de Google.</p>',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        <p>El objetivo es pasar de 400 a 550 donantes frecuentes y recaudar 35.000 € en donaciones puntuales a lo largo del año.</p>
+        <p>Os recordamos que Framasoft es una asociación autofinanciada por sus donantes. Para darles una idea de nuestras necesidades, nuestro objetivo para el 2014 (35.000 € y 550 donantes frecuentes) equivale al costo de 8 metros de autopista o al 0,000083 % de los ingresos anuales de Google.</p>',
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soportar</a>'
     ],
-    'avaaz' => [                                                        // id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte)
+    'avaaz' => [                                                          // id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte)
         'name'          => 'Avaaz',                                       // h2, alt, options
         'wkp'           => 'Avaaz.org',                                   // optionnel
-        'description'   => 'Pétitions',
+        'description'   => 'Peticiones',
         'editeur'       => 'Avaaz',
         'wkp_editeur'   => 'Avaaz.org',                                   // optionnel
         'similaire'     => 'Change.org',
         'alt_online'    => '',
         'alt_offline'   => '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>…',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">pétition</span>',
+        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">petición</span>',
         'date_frama'    => '2015',                                        // si chiffre → ( sortie prévue [2015](lien plm) )
         'coordonnees'   => '595,900,80',
         'class'         => '',                                            // fight ou potion
@@ -142,19 +140,19 @@ $data = [
         'id_frama'      => 'framapetition',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="https://github.com/WhiteHouse/petitions">WeThePeople</a></p>'
+                           </p>',
+        'modale_footer' => '<p class="precisions">Framaxxxx es una aplicación basada en <a href="https://github.com/WhiteHouse/petitions">WeThePeople</a></p>'
     ],
     'bitly' => [
         'name'          => 'Bit.ly',
         'wkp'           => 'Bit.ly',
-        'description'   => 'Réduction d’URL',
+        'description'   => 'Reductor de URL',
         'editeur'       => 'Bitly',
         'wkp_editeur'   => 'Bit.ly',
         'similaire'     => 'goo.gl, t.co, tinyurl.com…',
@@ -165,24 +163,23 @@ $data = [
         'coordonnees'   => '460,1050,80',
         'class'         => 'potion',
         'soft_frama'    => 'LSTU',
-        'long_desc'     => 'Des adresses plus courtes en toute discrétion',
+        'long_desc'     => 'Direcciones más cortas y nada más que eso',
         'url_frama'     => '',
         'id_frama'      => 'framashort',
-        'modale_title'  => 'Finies les adresses trop longues',
+        'modale_title'  => '¡No más direcciones súper largas!',
         'modale_body'   => '<p>
-                                Avec <a href="###">Framashort</a>, il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
-                                Sur les réseaux sociaux et le microblogging, disposer d’une adresse raccourcie permet d’économiser de l’espace et gagner en clarté.
+                                Con <a href="###">Framashort</a>, es posible reducirlas direcciones largas sin restrear su uso.
+                                En las redes sociales y en el microblogueo es clave tener enlaces cortos para ganar espacio y claridad.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Framashort la raccourcira.
+                                <span class="violet">Funcionamiento:</span> entra la dirección original y Framashort la reducirá.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framashort est une instance basée sur <a href="http://lstu.fiat-tux.fr/">Lstu</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framashort es una aplicación basada en <a href="http://lstu.fiat-tux.fr/">Lstu</a></p>'
     ],
     'blogger' => [
         'name'          => 'Blogger',
         'wkp'           => 'Blogger',
-        'description'   => 'Hébergement de sites',
+        'description'   => 'Albergue de sitios web',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => 'sites.pages-jaunes.fr, OverBlog, Skyblog…',
@@ -198,86 +195,81 @@ $data = [
         'id_frama'      => 'framasites',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="http://www.pluxml.org/">Pluxml</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxxx es una aplicación basada en <a href="http://www.pluxml.org/">Pluxml</a></p>'
     ],
     'bubblus' => [
         'name'          => 'Bubbl.us',
         'wkp'           => '',
-        'description'   => 'Cartes heuristiques',
+        'description'   => 'Mapa mental',
         'editeur'       => 'LKCollab',
         'wkp_editeur'   => '',
         'similaire'     => '',
         'alt_online'    => '<a href="http://wisemapping.com/">Wisemapping.com</a>, <a href="https://www.mindmup.com">Mindmup</a>',
         'alt_offline'   => '<a href="http://wisemapping.com/">Wisemapping</a>, <a href="https://github.com/drichard/mindmaps">Mindmaps</a>, <a href="https://github.com/mindmup/mindmup">Mindmup</a>',
         'alt_frama'     => '<a href="http://framindmap.org"><span class="violet">Fram</span><span class="vert">indmap</span></a>',
-        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">octobre 2012</a>)',
+        'date_frama'    => '(desde <a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">Octubre 2012</a>)',
         'coordonnees'   => '920,1130,80',
         'class'         => 'fight',
         'soft_frama'    => 'Wisemapping',
-        'long_desc'     => 'Fabriquez vos cartes mentales',
+        'long_desc'     => 'Crea tu mapa mental',
         'url_frama'     => 'http://framindmap.org',
         'id_frama'      => 'framindmap',
-        'modale_title'  => 'Pourquoi créer une carte mentale ?',
+        'modale_title'  => '¿Para qué sirve un mapa mental?',
         'modale_body'   => '<p>
-                                <a href="http://framindmap.org/">Framindmap</a> vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
+                                <a href="http://framindmap.org/">Framindmap</a> te permite organizar una lluvia de ideas, ordenarlas en grupo, aprender y ayudar a aprenderse las lecciones, hacer clasificaciones, identificar elementos importantes.
                             </p>
-                               <p><video controls="controls" preload="none"
+                            <p><video controls="controls" preload="none"
                                 width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
                                 <source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
                                 <source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
                                   </video>
-                               </p>
-                               <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
-
-                            <p>
-                                <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
-                                votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                             </p>
+                            <p><small><em>Tutorial realizado por Claire Cassaigne</em> - El <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> en formato webm</small></p>
+                            <p>
+                                <span class="violet">Por qué utilizar Framindmap?</span> Se puede usar en linea sin ninguna instalación, no se requiere ninguna inscripción y la puedes exportar en forma de imagen. Los datos te pertenecen.</p>
                             ',
-        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framindmap es una aplicación basada en <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Instalar</a>'
     ],
     'doodle' => [
         'name'          => 'Doodle',
         'wkp'           => 'Doodle.com',
-        'description'   => 'Réunions et sondages',
+        'description'   => 'Reuniones y sondeos',
         'editeur'       => 'Doodle AG',
         'wkp_editeur'   => 'Doodle.com',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>, <a href="http://www.peacefrogs.net/papillon">Papillon</a>',
         'alt_frama'     => '<a href="http://framadate.org"><span class="violet">Frama</span><span class="vert">date</span></a>',
-        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">juin 2011</a>)',
+        'date_frama'    => '(desde <a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">junio del 2011</a>)',
         'coordonnees'   => '1190,570,80',
         'class'         => 'fight',
         'soft_frama'    => 'Studs',
-        'long_desc'     => 'Convenir d’une réunion et créer un sondage',
+        'long_desc'     => 'Concertar una reunión y crear un sondeo',
         'url_frama'     => 'http://framadate.org',
         'id_frama'      => 'framadate',
-        'modale_title'  => 'Organiser des rendez-vous simplement et librement',
+        'modale_title'  => 'Organización de las citas de manera simple y libre',
         'modale_body'   => '<p>
-                                Avec <a href="http://framadate.org">Framadate</a> vous serez en mesure de planifier un rendez-vous à plusieurs ou créer un sondage en ligne. Framadate ne stocke
-                                pas vos données !
-                            </p>
-                            <p class="violet">Fonctionnalités :</p>
+                                Con <a href="http://framadate.org">Framadate</a> se puede planificar una cita entre varias personas o crear un sondeo en línea. Framadate no almacena tus datos!</p>
+                            <p class="violet">Funcionalidades:</p>
                             <ul>
-                                <li>envoi de courriel à chaque réponse</li>
-                                <li>modification du sondage en cours</li>
-                                <li>planification d’une dead-line</li>
-                                <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
+                                <li>envío de un mail a cada respuesta</li>
+                                <li>modificación del sondeo en curso</li>
+                                <li>planificación de una dead-line</li>
+                                <li>renombrado del sondeo y envío de la dirección a los colaboradores</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framadate es una aplicación basada en <a href="http://studs.u-strasbg.fr/">Studs</a> bastante retocada</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Instalar</a>'
     ],
     'dropbox' => [
         'name'          => 'Dropbox',
         'wkp'           => 'Dropbox',
-        'description'   => 'Stockage de documents',
+        'description'   => 'Almacenamiento de documentos',
         'editeur'       => 'Dropbox',
         'wkp_editeur'   => 'Dropbox',
         'similaire'     => 'Google Drive, iCloud Drive',
@@ -293,20 +285,20 @@ $data = [
         'id_frama'      => 'framadrive',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '
-                            <p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                           <p>
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                            </p>
-                            <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                           </p>
+                           <p>
+                               <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framadrive est une instance basée sur <a href="http://pyd.io/">Pyd.io</a></p>'
+                           </p>',
+        'modale_footer' => '<p class="precisions">Framadrive es una aplicación basada en <a href="http://pyd.io/">Pyd.io</a></p>'
     ],
     'dropsend' => [
         'name'          => 'Dropsend',
         'wkp'           => 'Dropsend',
-        'description'   => 'Envoi de gros fichiers',
+        'description'   => 'Envío de archivos grandes',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => 'Wetransfer',
@@ -322,19 +314,19 @@ $data = [
         'id_frama'      => 'framadrop',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="######">Lufi</a></p>'
+          'modale_footer' => '<p class="precisions">Framaxxxx es una aplicación basada en <a href="######">Lufi</a></p>'
     ],
     'evernote' => [
         'name'          => 'Evernote',
         'wkp'           => 'Evernote',
-        'description'   => 'Prise de notes',
+        'description'   => 'Toma de notas',
         'editeur'       => 'Evernote',
         'wkp_editeur'   => 'Evernote',
         'similaire'     => '',
@@ -350,48 +342,47 @@ $data = [
         'id_frama'      => 'framanotes',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framanote est une instance basée sur <a href="https://laverna.cc/">Laverna</a></p>'
+        'modale_footer' => '<p class="precisions">Framanote es una aplicación basada en <a href="https://laverna.cc/">Laverna</a></p>'
     ],
     'facebook' => [
         'name'          => 'Facebook',
         'wkp'           => 'Facebook',
-        'description'   => 'Réseau social',
+        'description'   => 'Red social',
         'editeur'       => 'Facebook',
         'wkp_editeur'   => 'Facebook',
         'similaire'     => 'LinkedIn, Viadeo, Google+',
-        'alt_online'    => '<a href="http://pods.jasonrobinson.me/">liste de pods Diaspora*</a>, <a href="https://pod.movim.eu">liste de pods Movim</a>',
+        'alt_online'    => '<a href="http://pods.jasonrobinson.me/">lista de pods Diaspora*</a>, <a href="https://pod.movim.eu">lista de pods Movim</a>',
         'alt_offline'   => '<a href="https://diasporafoundation.org/">Diaspora*</a>, <a href="https://movim.eu/">Movim</a>',
         'alt_frama'     => '<a href="http://framasphere.org"><span class="violet">Frama</span><span class="vert">sphère</span></a>',
-        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>)',
+        'date_frama'    => '(desde <a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octubre 2014</a>)',
         'coordonnees'   => '735,630,80',
         'class'         => 'fight',
         'soft_frama'    => 'Diaspora*',
-        'long_desc'     => 'Un réseau social éthique et décentralisé',
+        'long_desc'     => 'Una red social ética y descentralizada',
         'url_frama'     => 'https://framasphere.org',
         'id_frama'      => 'framasphere',
-        'modale_title'  => 'Rejoignez vos amis en zone libre',
+        'modale_title'  => 'Reúnete con tus amigos en zona libre',
         'modale_body'   => '<p>
-                                Sur <a href="http://framasphere.org">Framasphere</a>, vous pouvez retrouver un réseau social qui respecte vos données. Framasphère est un nœud (appelé <i>pod</i>)
-                                du réseau social libre Diaspora*.
+                                <a href="http://framasphere.org">Framasphere</a>, es una red social que respeta tus datos. Framasphère es un servidor (llamado <i>pod</i>)
+                                de la red social libre Diaspora*.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> échanger des messages et photos avec n’importe quelle autre personne du réseau Diaspora*, gérer vos contacts, tags,
-                                mentions, repartages… Vous pouvez aussi publier sur d’autres réseaux sociaux (Facebook, Twitter, Tumblr ou Wordpress).
+                                  <span class="violet">Funcionamiento:</span> intercambiar mensajes y fotos cualquier otra persona de la red Diaspora*, gestionar tus contactos, etiquetar fotos,
+                                  citaciones, compartir contenidos… También puedes publicar en otras redes sociales (Facebook, Twitter, Tumblr o Wordpress).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framasphere est une instance basée sur <a href="https://diasporafoundation.org/">Diaspora*</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framasphere es una aplicación basada en <a href="https://diasporafoundation.org/">Diaspora*</a></p>'
     ],
     'github' => [
         'name'          => 'GitHub',
         'wkp'           => 'GitHub',
-        'description'   => 'Hébergement de code',
+        'description'   => 'Alojamiento online de código',
         'editeur'       => 'GitHub',
         'wkp_editeur'   => 'GitHub',
         'similaire'     => 'Google Code, SourceForge',
@@ -402,24 +393,24 @@ $data = [
         'coordonnees'   => '620,1110,80',
         'class'         => 'potion',
         'soft_frama'    => 'Gitlab',
-        'long_desc'     => 'Du code libre c\'est bien. Sur une plateforme libre c\'est mieux&nbsp;!',
+        'long_desc'     => 'El código libre está bien. Y si está en una plataforma libre, mucho mejor&nbsp;!',
         'url_frama'     => '',
         'id_frama'      => 'framagit',
-        'modale_title'  => 'Hébergement de code libre',
+        'modale_title'  => 'Alojamiento de código libre',
         'modale_body'   => '<p>
-                                <a href="http://git.framasoft.org">Framagit</a> héberge aujourd\'hui les sources de plusieurs projets Framasoft, qu\'il s\'agisse de simples bouts de code, ou du « fork » d\'applications plus lourdes.
+                                <a href="http://git.framasoft.org">Framagit</a> aloja hoy en día el código fuente de varios proyectos Framasoft,  tanto aplicaciones sencillas como "forks" de aplicaciones más grandes.
                             </p>
-                            <p>Ce qui est certain, c\'est que vous n\'y trouverez que du code libre !</p>
-                            <p>Pour l\'instant, le dépôt de code n\'est autorisé que pour les projets Framasoft, mais dès que nous aurons validé la stabilité de la plateforme, nous l\'ouvrirons progressivement à d\'autres communautés.</p>
+                            <p>Lo que es seguro, es que aquí sólo encontrarás código libre!</p>
+                              <p>De momento, sólo está permitido el alojamiento de código de los proyectos Framasoft, pero desde que hayamos podido validar la estabilidad de la plataforma, lo abriremos progresivamente para otras comunidades.</p>
                             <p>
-                                <span class="violet">Avancement</span> La plateforme git est actuellement en cours d\'évaluation. Les premiers comptes « externes » devraient pouvoir être accueillis dès la fin de l\'année 2014. Vous pouvez nous contacter si vous pensez avoir l\'utilité de Framagit (en lieu et place de Github, par exemple).
+                                <span class="violet">Progreso</span> La plataforma git se encuentra actualmente en curso de evaluación. Las primeras cuentas "externas" deberían poder crearse a finales de 2014. Podéis contactarnos si pensáis hacer uso de Framagit (en lugar de Github, por ejemplo).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framagit est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
+        'modale_footer' => '<p class="precisions">Framagit es una aplicación basada en <a href="https://about.gitlab.com/">Gitlab</a></p>'
     ],
     'gagenda' => [
         'name'          => 'Google Agenda',
         'wkp'           => 'Google_Agenda',
-        'description'   => 'Agenda partagé',
+        'description'   => 'Agenda compartida',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -435,19 +426,19 @@ $data = [
         'id_frama'      => 'framagenda',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framagenda est une instance basée sur <a href="http://www.k5n.us/webcalendar.php">Webcalendar</a></p>'
+        'modale_footer' => '<p class="precisions">Framagenda es una aplicación basada en <a href="http://www.k5n.us/webcalendar.php">Webcalendar</a></p>'
     ],
     'gbooks' => [
         'name'          => 'Google Books',
         'wkp'           => 'Google_Livres',
-        'description'   => 'Livres en ligne',
+        'description'   => 'Libros en línea',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -458,20 +449,20 @@ $data = [
         'coordonnees'   => '1240,410,80',
         'class'         => 'potion',
         'soft_frama'    => 'Framabook OPDS',
-        'long_desc'     => 'Une bibliothèque de plusieurs milliers d\'ouvrages',
+        'long_desc'     => 'Una biblioteca con varios miles de obras',
         'url_frama'     => '',
         'id_frama'      => 'framaopds',
-        'modale_title'  => 'Catalogue d\'ouvrages accessibles pour tous',
+        'modale_title'  => 'Catálogo de libros accesibles a tod@s',
         'modale_body'   => '<p>
-                                <span class="violet">Framabookin</span> est le catalogue OPDS de Framasoft. « Euh... Oui, mais encore ? », nous direz-vous. Un catalogue OPDS est un site auquel vous pouvez vous abonner avec un logiciel supportant cette fonctionnalité (certaines liseuses en embarquent un, pour Android, il existe Aldiko et bien d\'autres), vous donnant accès rapidement et simplement à tout une bibliothèque depuis votre ordinateur, smartphone ou tablette.
+                                <span class="violet">Framabookin</span> es el catálogo OPDS de Framasoft. "Vale... y?", nos diréis vosotros. Un catálogo OPDS es un sitio al que podéis abonaros con un programa que soporte esta funcionalidad (ciertos lectores lo traen de base, para Android hay Aldiko y muchos otros), dándoos acceso de manera rápida y simple a toda una biblioteca desde vuestro ordenador, smartphone o tablet.
                             </p>
-                            <p>Le catalogue OPDS de Framasoft (en cours d\'élaboration) vous donnera accès à des milliers d\'ouvrages non protégés par « copyright ».</p>',
-        'modale_footer' => '<p class="precisions">Framabookin fournit un catalogue généré par le logiciel <a href="http://calibre-ebook.com/">Calibre</a></p>'
+                            <p>El catálogo OPDS de Framasoft (en curso de preparación) os dará acceso a miles de libros no protegidos por "copyright".</p>',
+        'modale_footer' => '<p class="precisions">Framabookin es un catálogo generado con la aplicación <a href="http://calibre-ebook.com/">Calibre</a></p>'
     ],
     'gdocs' => [
         'name'          => 'Google Docs',
         'wkp'           => 'Google_Drive',
-        'description'   => 'Rédaction collaborative',
+        'description'   => 'Redacción colaborativa',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -482,36 +473,34 @@ $data = [
         'coordonnees'   => '730,125,80',
         'class'         => 'fight',
         'soft_frama'    => 'Etherpad',
-        'long_desc'     => 'Du traitement de texte en ligne et à plusieurs !',
+        'long_desc'     => 'Procesador de texto en línea que permite escribir de forma simultánea a varias personas!',
         'url_frama'     => 'https://framapad.org',
         'id_frama'      => 'framapad',
-        'modale_title'  => 'Outil de rédaction collaborative',
+        'modale_title'  => 'Herramienta de redacción colaborativa',
         'modale_body'   => '<p>
-                                <a href="https://framapad.org">Framapad</a> est un service de rédaction collaborative en ligne basé sur le logiciel
+                                <a href="https://framapad.org">Framapad</a> es un servicio de redacción colaborativa en línea y en tiempo real, basado en la aplicación
                                 <a href="http://etherpad.org/">Etherpad</a>.
                             </p>
                             <p>
-                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
-                                utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
+                                Un "pad" es un editor de texto en línea. Su mayor valor añadido es la edición colaborativa: las contribuciones de cada usuario aparecen inmediatamente en los pads de todos los participantes, marcados con un color.
                             </p>
-                            <p class="violet">Fonctionnalités :</p>
+                            <p class="violet">Funcionalidades:</p>
                             <ul>
-                                <li>Ouvrir un pad public ou privé</li>
-                                <li>Rédiger votre document</li>
-                                <li>Inviter des collaborateurs</li>
-                                <li>Un code couleur pour chacun</li>
-                                <li>Tchat intégré</li>
-                                <li>Historique des versions</li>
-                                <li>Exporter votre travail</li>
-                                <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
+                                <li>Abrir un pad público o privado</li>
+                                <li>Redactar un documento</li>
+                                <li>Invitar a colaboradores</li>
+                                <li>Un código de color para cada uno</li>
+                                <li>Chat integrado</li>
+                                <li>Historial de versiones</li>
+                                <li>Exportar el trabajo</li>
+                                <li>Y próximamente: gestionar sesiones y grupos con MyPads!</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framapad est une instance basée sur <a href="http://etherpad.org/">Etherpad</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framapad es una aplicación basada en <a href="http://etherpad.org/">Etherpad</a></p>'
     ],
     'gforms' => [
         'name'          => 'Google Forms',
         'wkp'           => '',
-        'description'   => 'Questionnaires en ligne',
+        'description'   => 'Cuestionarios en línea',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -527,19 +516,19 @@ $data = [
         'id_frama'      => 'framaforms',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaforms est une instance basée sur <a href="https://github.com/spiral-project/daybed">DayBed</a></p>'
+        'modale_footer' => '<p class="precisions">Framaforms es una aplicación basada en  <a href="https://github.com/spiral-project/daybed">DayBed</a></p>'
     ],
     'ggroups' => [
         'name'          => 'Google Groupes',
         'wkp'           => 'Google_Groupes',
-        'description'   => 'Listes de diffusion',
+        'description'   => 'Listas de correo electrónico',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -555,19 +544,21 @@ $data = [
         'id_frama'      => 'framalistes',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framalistes est une instance basée sur <a href="http://www.sympa.org/">Sympa</a></p>'
+
+            'modale_footer' => '<p class="precisions">Framalistes es una aplicación basada en<a href="http://www.sympa.org/">Sympa</a></p>'
+
     ],
     'greader' => [
         'name'          => 'Google Reader',
         'wkp'           => 'Google_Reader',
-        'description'   => 'Lecteur de flux',
+        'description'   => 'Lector de RSS',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -578,19 +569,17 @@ $data = [
         'coordonnees'   => '375,1205,80',
         'class'         => 'fight',
         'soft_frama'    => 'TinyTinyRSS',
-        'long_desc'     => 'Suivez l’actualité et faites vos choix librement',
+        'long_desc'     => 'Sigue la actualidad y decide libremente',
         'url_frama'     => 'https://framanews.org',
         'id_frama'      => 'framanews',
-        'modale_title'  => 'Toujours au courant, jamais en retard',
+        'modale_title'  => 'Siempre al corriente, nunca con retraso',
         'modale_body'   => '<p>
-                                <a href="http://framanews.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
+                                <a href="http://framanews.org">Framanews</a> es un lector de flujo en línea para poder estar siempre al corriente de la actualidad mediante los flujos RSS de tus sitios preferidos!
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
-                                Comment faire plus simple ?
+                                <span class="violet">Funcionamiento:</span> una vez creada tu cuenta, introduce tus flujos RSS y síguelos. No puede ser más fácil!
                             </p>',
-        'modale_footer' => '<p class="precisions">Framanews est une instance basée sur <a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">tt-rss</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framanews es una aplicación basada en <a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">tt-rss</a></p>'
     ],
     'gsearch' => [
         'name'          => 'Google Search',
@@ -606,23 +595,23 @@ $data = [
         'coordonnees'   => '680,480,80',
         'class'         => 'potion',
         'soft_frama'    => 'Searx',
-        'long_desc'     => 'Et si vos recherches n\'étaient plus fichées par Google ?',
+        'long_desc'     => '¿ Y si tus búsquedas en línea dejaran de estar fichadas por Google ?',
         'url_frama'     => '',
         'id_frama'      => 'framasearch',
-        'modale_title'  => 'Une recherche anonyme',
+        'modale_title'  => 'Una búsqueda anónima',
         'modale_body'   => '<p>
-                                <a href="http://searx.framasoft.org/">Framasearch</a> est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d\'être affichées dans votre navigateur. L\'intérêt, c\'est que c\'est notre moteur qui fait alors office d\'intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n\'est donc pas enregistrée chez eux. </p>
-                                <p>Evidemment, vous devez avoir confiance en Framasoft/Framasearch si vous souhaitez l\'utiliser, c\'est pourquoi nous proposons une <a href="/nav/html/charte" title="charte">charte</a>.
+                                <a href="http://searx.framasoft.org/">Framasearch</a> es un metamotor anónimo para la búsqueda en línea. Eso significa que las búsquedas que haces van a ser enviadas a varios motores antes de mostrarlas en tu pantalla. Lo interesante es que nuestro motor hace las veces de intermediario entre tú y Google(o los otros motores). Tu IP no va a quedar regristrada en esos motores. </p>
+                                <p> Para ello está claro que debes confiar en Framasoft/Framasearch si quieres usarlo, y es por ello que te proponemos una declaración donde plasmamos nuestros valores<a href="/nav/html/charte"   title="charte">charte</a>.
                             </p>
                             <p>
-                                <span class="violet">Framasearch</span> sera bientôt disponible. En attendant, vous pouvez par exemple utiliser <a href="https://duckduckgo.com/">DuckDuckGo</a> ou <a href="https://www.ixquick.com/">Ixquick</a>
+                                <span class="violet">Framasearch</span> estará disponible dentro de poco. Mientras tanto puedes usar <a href="https://duckduckgo.com/">DuckDuckGo</a> o <a href="https://www.ixquick.com/">Ixquick</a>
                             </p>',
-        'modale_footer' => '<p class="precisions">Framasearch est une instance basée sur <a href="https://searx.0x2a.tk/">Searx</a></p>'
+        'modale_footer' => '<p class="precisions">Framasearch es una aplicación basada en  <a href="https://searx.0x2a.tk/">Searx</a></p>'
     ],
     'gslides' => [
         'name'          => 'Google Slides',
         'wkp'           => 'Google_Drive',
-        'description'   => 'Présentations',
+        'description'   => 'Presentaciones',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -633,28 +622,24 @@ $data = [
         'coordonnees'   => '1250,1090,80',
         'class'         => '',
         'soft_frama'    => 'Strut.io',
-        'long_desc'     => 'Des diaporamas de haute qualité sans se fatiguer',
+        'long_desc'     => 'Diaporamas de alta calidad sin esfuerzo',
         'url_frama'     => '',
         'id_frama'      => 'framimpress',
-        'modale_title'  => 'Une application pour vos diaporamas',
+        'modale_title'  => 'Una aplicación para tus diaporamas',
         'modale_body'   => '<p>
-                                <a href="###">Framimpress</a> vous permettra
-                                de réaliser facilement et intuitivement vos diaporamas.
-                                Grâce à cette application dans votre navigateur, nul besoin
-                                de charger des logiciels lourds et compliqués.
+                                <a href="###">Framimpress</a> te permitirá realizar fácil e intuitivamente tus diaporamas. Con esta aplicación en tu navegador no es necesario cargar programas pesados y complicados.
                             </p>
-                            <p class="violet">Fonctionnalités :</p>
+                            <p class="violet">Funciones :</p>
                             <ul>
-                                <li>une interface claire et intuitive &mdash; insertion facile de texte, d’images, de vidéos et de site web</li>
-                                <li>sauvegarde en local de la version HTML prête à l’emploi.</li>
+                                <li>una interfaz clara e intuitiva; fácil inserción de texto, imágenes, vídeos y sitios</li>
+                                <li>Graba en local una version HTML lista para usarla.</li>
                             </ul>
-                            <p><span class="violet">Pour plus tard,</span> si nos finances le permettent :</p>
+                            <p><span class="violet">Más tarde,</span> si nuestras finanzas nos lo permiten:</p>
                             <ul>
-                                <li>la sauvegarde dans les nuages dans une boîte privée</li>
-                                <li>une fonction d’édition collaborative…</li>
+                                <li>podremos proponerte guardarlo en línea en la nube con una cuenta privada</li>
+                                <li>una función de edición colaborativa…</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framimpress est une instance basée sur <a href="http://strut.io/">Strut.io</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framimpress es una aplicación basada en <a href="http://strut.io/">Strut.io</a></p>'
     ],
     'gspreadsheet' => [
         'name'          => 'Google Spreadsheet',
@@ -666,36 +651,33 @@ $data = [
         'alt_online'    => '',
         'alt_offline'   => '<a href="https://ethercalc.org/">Ethercalc</a>, <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">calc</span>',
-        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octobre 2012</a>)',
+        'date_frama'    => '(desde <a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octubre 2012</a>)',
         'coordonnees'   => '730,1300,80',
         'class'         => 'fight',
         'soft_frama'    => 'Ethercalc',
-        'long_desc'     => 'Partagez vos tableaux et collaborez !',
+        'long_desc'     => '¡Comparte tus hojas de cálculo y trabaja con otr@s!',
         'url_frama'     => 'http://framacalc.org',
         'id_frama'      => 'framacalc',
-        'modale_title'  => 'Un tableur en ligne',
+        'modale_title'  => 'Hojas de cálculo en línea',
         'modale_body'   => '<p>
-                                Avec <a href="https://framacalc.org">Framacalc</a>, vos données sont automatiquement sauvegardées sur Internet. Vous et vos collaborateurs pouvez collaborer sur
-                                le document en même temps. Visualisez tous les changements en temps réel et travaillez ensemble sur vos inventaires, vos calculs, vos données, vos statistiques,
-                                et bien plus !
+                                Con <a href="https://framacalc.org">Framacalc</a>, tus datos van a ser salvaguardados en línea de manera automática. Tu y tus colaborador@s podrán colaborar sobre el documento al mismo tiempo. Visualiza todos los cambios en tiempo real y trabaja sobre tus inventarios, cálculos, datos, estadísticas ¡Y aún más!
                             </p>
-                            <p class="violet">Fonctionnalités :</p>
+                            <p class="violet">Funciones :</p>
                             <ul>
-                                <li>Édition collaborative (plusieurs utilisateurs connectés à la même feuille de calcul)</li>
-                                <li>Nombreuses fonctions disponibles (statistiques, financières, mathématiques, texte, etc.)</li>
-                                <li>Possibilité de commenter des cellules</li>
-                                <li>Sauvegarde automatique</li>
-                                <li>Graphiques de base (histogramme, lignes, points)</li>
-                                <li>Export HTML</li>
-                                <li>Taille du document : jusqu’à 100 000 lignes.</li>
+                                <li>Edición colaborativa(vari@s usuari@s conectad@s à la misma hoja de cálculo)</li>
+                                <li>Varias funciones disponibles (estadísticas, financieras, matemáticas, texto, etc.)</li>
+                                <li>Posibilidad de comentar las celdas</li>
+                                <li>Guardar automáticamente</li>
+                                <li>Gráficos de base (histograma, líneas, puntos)</li>
+                                <li>Exportar HTML</li>
+                                <li>Tamaño del documento: hasta 100.000 líneas.</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framacalc est une instance basée sur <a href="https://www.ethercalc.org/">Ethercalc</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framacalc es una aplicación basada en <a href="https://www.ethercalc.org/">Ethercalc</a></p>'
     ],
     'imgur' => [
         'name'          => 'Img.ur',
         'wkp'           => 'Imgur',
-        'description'   => 'Envoi d’images',
+        'description'   => 'Envío de imágenes',
         'editeur'       => 'Imgur',
         'wkp_editeur'   => 'Imgur',
         'similaire'     => '',
@@ -706,23 +688,23 @@ $data = [
         'coordonnees'   => '835,180,80',
         'class'         => 'potion',
         'soft_frama'    => 'Lut.im',
-        'long_desc'     => 'Partagez vos images anonymement',
+        'long_desc'     => 'Comparte tus imágenes de manera anónima',
         'url_frama'     => 'http://lut.im',
         'id_frama'      => 'framalutim',
-        'modale_title'  => 'Partagez vos images facilement',
+        'modale_title'  => 'Comparte tus imágenes fácilmente',
         'modale_body'   => '<p>
-                                <a href="http://lut.im">Framapic</a> vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou ... Framasphère !
+                                <a href="http://lut.im">Framapic</a> te permite compartir fácilmente las imágenes en Twitter, Facebook, o en ...¡Framasphère!
                             </p>
-                            <p>Attention, ce service n\'est pas un équivalent de flickr ou instagram : il ne s\'agit pas d\'un service d\'hébergement de photos d\'utilisateurs, mais bien d\'un service d\'hébergement d\'images anonymes (même nous, nous n\'avons pas accès au contenu, qui est chiffré).</p>
+                            <p>Ojo, este servicio no es un equivalente de flickr o de instagram: no se trata de un servicio para albergar fotos de usuari@s sino más bien de un servicio para albergar imágenes anónimas (incluso nosotr@s no tenemos aceso al contenido, ya que está cifrado).</p>
                             <p>
-                                <span class="violet">Framapic</span> permet d\'envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
+                                <span class="violet">Framapic</span> te permite enviar imágenes de manera anónima. Podrás decidir cuando quieres suprimirlas(desde la primera vez que haya sido vista hasta 24 horas/ 7 dias/ 30 dias / 1 año después de su publicación).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a>, développé par un membre de Framasoft</p>'
+        'modale_footer' => '<p class="precisions">Framapic es una aplicación basada en  <a href="https://lut.im/">Lut.im</a>, développé par un membre de Framasoft</p>'
     ],
     'jsfiddle' => [
         'name'          => 'jsFiddle',
         'wkp'           => '',
-        'description'   => 'Partage de code',
+        'description'   => 'Compartir código',
         'editeur'       => 'jsFiddle',
         'wkp_editeur'   => '',
         'similaire'     => 'Codepen',
@@ -738,19 +720,19 @@ $data = [
         'id_frama'      => 'framajscode',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="http://jsbin.com">jsbin</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxxx es una aplicación basada en  <a href="http://jsbin.com">jsbin</a></p>'
     ],
     'kanban' => [
         'name'          => 'Kanban',
         'wkp'           => '',
-        'description'   => 'Gestion de tâches',
+        'description'   => 'Gestión de tareas',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -766,19 +748,19 @@ $data = [
         'id_frama'      => 'framaboard',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="http://kanboard.net/">Kanboard</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxxx es una aplicación basada en  <a href="http://kanboard.net/">Kanboard</a></p>'
     ],
     'padlet' => [
         'name'          => 'Padlet',
         'wkp'           => '',
-        'description'   => 'Organisation d’idées',
+        'description'   => 'Organizador de ideas',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -794,19 +776,19 @@ $data = [
         'id_frama'      => 'framascrumblr',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="http://scrumblr.ca/">Scrumblr</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxxx es una aplicación basada en  <a href="http://scrumblr.ca/">Scrumblr</a></p>'
     ],
     'pastebin' => [
         'name'          => 'Pastebin',
         'wkp'           => 'Pastebin',
-        'description'   => 'Notes anonymes',
+        'description'   => 'Notas anónimas',
         'editeur'       => 'Pastebin',
         'wkp_editeur'   => 'Pastebin',
         'similaire'     => '',
@@ -817,54 +799,47 @@ $data = [
         'coordonnees'   => '710,300,80',
         'class'         => 'potion',
         'soft_frama'    => 'Zerobin',
-        'long_desc'     => 'Rédigez et partagez en toute discrétion',
+        'long_desc'     => 'Redacta y comparte de manera discreta',
         'url_frama'     => 'https://framalab.org/zerobin',
         'id_frama'      => 'framabin',
-        'modale_title'  => 'Communiquez des données chiffrées',
+        'modale_title'  => 'Comunica datos cifrados',
         'modale_body'   => '<p>
-                                Avec <a href="###">Framabin</a> vous pouvez partager des informations dont seuls vous et votre correspondant aurez le pouvoir de déchiffrer, et surtout de
-                                manière très simple. Vous pouvez même choisir la durée de validité de l’accès !
+                                Con <a href="###">Framabin</a> podrás compartir informaciones que únicamente tú y tus corresponsales podrán descifrar y sobretodo de manera muy simple. ¡Podrás incluso elegir hasta cuándo será válida!
                             </p>
                             <p>
-                                <span class="violet">Pour quels usages ?</span> Vous pouvez avoir besoin de communiquer une ou plusieurs informations sans vouloir passer par la voie classique
-                                du courriel ou du petit bout de papier. Framabin vous permet d’envoyer une adresse et donner accès à ces informations en toute sécurité et simplicité. Le
-                                serveur stocke des données illisibles pour lui.
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framabin est une instance basée sur <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a></p>'
+                                <span class="violet">¿Para qué usos?</span> Es posible que necesites comunicar con una o varias personas ciertas informaciones sin querer utilizar un canal clásico del correo o un papelito. Framabin te permitirá enviar una dirección y dar acceso a esas informaciones de manera segura y simple. El servidor guardará esos datos, pero serán ilegibles por éste último.</p>',
+        'modale_footer' => '<p class="precisions">Framabin es una aplicación basada en  <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a></p>'
     ],
     'pocket' => [
         'name'          => 'Pocket',
         'wkp'           => 'Pocket_%28application%29',
-        'description'   => 'Sauvegarde de contenu',
+        'description'   => 'Guarda contenido',
         'editeur'       => 'Read It Later',
         'wkp_editeur'   => 'Pocket_%28application%29',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '<a href="https://www.wallabag.org/">Wallabag</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bag</span>',
-        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">février 2014</a>)',
+        'date_frama'    => '(desde <a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">Febrero 2014</a>)',
         'coordonnees'   => '550,1240,80',
         'class'         => 'fight',
         'soft_frama'    => 'Wallabag',
-        'long_desc'     => 'Sauvegardez et lisez plus tard',
+        'long_desc'     => 'Guarda y lee más tarde',
         'url_frama'     => 'http://framabag.org',
         'id_frama'      => 'framabag',
-        'modale_title'  => 'Sauvegardez, lisez plus tard',
+        'modale_title'  => 'Guarda y lee más tarde',
         'modale_body'   => '<p>
-                                Avec <a href="https://www.framabag.org/">Framabag</a>, vous ne perdrez plus les contenus du Web qui vous intéressent mais que vous n’avez pas le temps de
-                                parcourir. D’un clic, vous enregistrez votre sélection et vous la lirez quand vous voudrez. L’application sauvegarde votre sélection pour vous permettre d’en
-                                profiter quand vous en aurez le temps.
+                                Con <a href="https://www.framabag.org/">Framabag</a>, ya no perderás los contenidos web que te interesan pero que no tienes tiempo de ver ahí mismo. Con un sólo clic podrás guardar tu selección y podrás leerla cuando quieras. La aplicación guardará tu selección para que puedas tenerla a tu diposición cuando tengas tiempo.
                             </p>
                             <p>
-                                Framabag est un <span class="violet">service de sauvegarde de pages web</span>. Vous stockez sur le serveur les contenus qui vous intéressent, textes et images
-                                comprises. Vous pouvez aussi partager vos articles et utiliser des extensions pour Firefox, Chrome, Android…
+                                Framabag es un <span class="violet">servicio para "leer después" páginas web</span>. Podrás guardar en el servidor los contenidos que te interesan incluyendo textos e imágenes. También podrás compartir tus artículos usando las extensiones para Firefox, Chrome, Android…
                             </p>',
-        'modale_footer' => '<p class="precisions">Framabag est une instance basée sur <a href="https://www.wallabag.org/">Wallabag</a></p>'
+        'modale_footer' => '<p class="precisions">Framabag es una aplicación basada en  <a href="https://www.wallabag.org/">Wallabag</a></p>'
     ],
     'scribd' => [
         'name'          => 'Scribd',
         'wkp'           => '',
-        'description'   => 'Partage de PDF/ODP',
+        'description'   => 'Compartir PDF/ODP',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -880,19 +855,19 @@ $data = [
         'id_frama'      => 'framaopdf',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="http://webodf.org/">WebODF</a> ou <a href="https://pdf.yt/">PDFy</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxx es una aplicación basada en <a href="http://webodf.org/">WebODF</a> ou <a href="https://pdf.yt/">PDFy</a></p>'
     ],
     'skype' => [
         'name'          => 'Skype',
         'wkp'           => 'Skype',
-        'description'   => 'Visioconférence',
+        'description'   => 'Visioconferencia ',
         'editeur'       => 'Microsoft',
         'wkp_editeur'   => 'Microsoft',
         'similaire'     => 'Google Hangouts',
@@ -908,19 +883,19 @@ $data = [
         'id_frama'      => 'framatalk',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framatalk est une instance basée sur <a href="http://www.webrtc.org/">WebRTC</a></p>'
+        'modale_footer' => '<p class="precisions">Framatalk es una aplicación basada en  <a href="http://www.webrtc.org/">WebRTC</a></p>'
     ],
     'twitter' => [
         'name'          => 'Twitter',
         'wkp'           => 'Twitter',
-        'description'   => 'Microblogging',
+        'description'   => 'Microblogueo',
         'editeur'       => 'Twitter',
         'wkp_editeur'   => 'Twitter',
         'similaire'     => '',
@@ -931,22 +906,22 @@ $data = [
         'coordonnees'   => '810,410,80',
         'class'         => '',
         'soft_frama'    => 'Twister',
-        'long_desc'     => 'Gazouillez sur Internet',
+        'long_desc'     => '¡Trina en internet!',
         'url_frama'     => '',
         'id_frama'      => 'framatweet',
-        'modale_title'  => 'Le microblogage libre',
+        'modale_title'  => 'El microblogueo libre',
         'modale_body'   => '<p>
-                                <a href="###">Framatweet</a> vous permet de suivre des flux de microblogage et entretenir vos propres flux de manière décentralisée en utilisant le protocole P2P.
+                                <a href="###">Framatweet</a> te permite seguir flujos de microblogueo y crear tus propios flujos de manera descentralizada con el protocolo P2P.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> utilisez un client de connexion, ouvrez un compte, abonnez-vous à des flux et tweetez à votre tour.
+                                <span class="violet">Funcionamiento:</span> utiliza un cliente de conexión, hazte una cuenta, sigue contenidos y tuitea tú también.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framatweet est une instance basée sur <a href="http://twister.net.co/">Twister</a></p>'
+        'modale_footer' => '<p class="precisions">Framatweet es una aplicación basada en  <a href="http://twister.net.co/">Twister</a></p>'
     ],
 /*    'youporn' => [
         'name'          => 'Youporn',
         'wkp'           => 'Youporn',
-        'description'   => 'Les codes du porno',
+        'description'   => 'Los códigos del porno',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -962,19 +937,19 @@ $data = [
         'id_frama'      => 'framaporn',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">xxxxx xxxxxxxx xxxx</span>   xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="#######">xxxxxx</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxx  es una aplicación basada en <a href="#######">xxxxxx</a></p>'
     ],*/
     'youtube' => [
         'name'          => 'Youtube',
         'wkp'           => 'Youtube',
-        'description'   => 'Hébergement de vidéos',
+        'description'   => 'Alojamiento de vídeos',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => 'Vimeo, Dailymotion…',
@@ -985,66 +960,64 @@ $data = [
         'coordonnees'   => '980,940,80',
         'class'         => 'potion',
         'soft_frama'    => 'Mediagoblin',
-        'long_desc'     => 'Partagez vos vidéos et conservez vos droits',
+        'long_desc'     => 'Comparte tus vídeos y conserva tus derechos',
         'url_frama'     => 'http://framatube.org',
         'id_frama'      => 'framatube',
         'modale_title'  => 'Libérez vos vidéos',
         'modale_body'   => '<p>
-                                Sur <a href="http://framatube.org">Framatube</a>, vous pouvez télécharger vos vidéos, les partager avec votre entourage ou les ouvrir en lecture publique.
-                                C’est le meilleur moyen de partager des vidéos sans céder vos droits.
+                                Con <a href="http://framatube.org">Framatube</a>, puedes subir tus vídeos, compartirlos sólo con tu entorno o hacerlos públicos.
+                                Es el mejor medio de compartir vídeos sin perder tus derechos.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> ouvrez un compte et téléchargez vos vidéos. Vous gardez vos droits et la liberté de modifier vos téléchargements.
+                                <span class="violet">Funcionamiento:</span> hazte una cuenta y sube tus vídeos. Conservarás tus derechos y la libertad de modificar lo que has subido.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framatube est une instance basée sur <a href="http://mediagoblin.org/">Mediagoblin</a></p>'
+        'modale_footer' => '<p class="precisions">Framatube es una aplicación basada en  <a href="http://mediagoblin.org/">Mediagoblin</a></p>'
     ],
     // Pas de concurrent
     'framavectoriel' => [
         'name'          => 'Pixlr',
         'wkp'           => '',
-        'description'   => 'Dessin vectoriel',
+        'description'   => 'Dibujo vectorial',
         'editeur'       => 'Autodesk',
         'wkp_editeur'   => 'Autodesk',
         'similaire'     => 'Picozu',
         'alt_online'    => '',
         'alt_offline'   => '',
         'alt_frama'     => '<a href="http://framavectoriel.org"><span class="violet">Frama</span><span class="vert">vectoriel</span></a>',
-        'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/23/framavectoriel">octobre 2012</a>)',
+        'date_frama'    => '(desde <a href="http://www.framablog.org/index.php/post/2012/10/23/framavectoriel">octubre 2012</a>)',
         'coordonnees'   => '',
         'class'         => 'fight',
         'soft_frama'    => 'SVG-Edit',
-        'long_desc'     => 'Créez rapidement des images vectorielles au format SVG',
+        'long_desc'     => 'Crea rápidamente imágenes vectoriales en formato SVG',
         'url_frama'     => 'http://framavectoriel.org',
         'id_frama'      => 'framavectoriel',
-        'modale_title'  => 'Créez rapidement des images vectorielles au format SVG',
+        'modale_title'  => 'Crea rápidamente imágenes vectoriales en formato SVG',
         'modale_body'   => '<p>
-                                <a href="http://framavectoriel.org">framavectoriel</a>, est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
+                                <a href="http://framavectoriel.org">framavectoriel</a>, es un programa de dibujo extremadamente sencillo (quién ha dicho simplista?).
                             </p>
                             <p>
-                                <span class="violet">Fonctionnalité :</span>
-
-                                    <ul>
-                                        <li>Utilisable en ligne, sans installation</li>
-                                        <li>Pas d\'inscription requise</li>
-                                        <li>Possibilité d\'exporter votre document sous forme d\'image bitmap ou vectorielles</li>
-                                        <li>Logiciel libre et gratuit, ouvert à tous</li>
-                                        <li>Ethique : aucune conservation de vos données</li>
-
-                                    </ul>
-                                    <div style="text-align:center">
-                                    <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
-                                        <source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
-                                        <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
-                                    </video>
-                                    </div>
-                                    <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l\'instant la vidéo est en anglais. Désolé.)</small></p>
+                                <span class="violet">Funcionalidad:</span>
+                                <ul>
+                                    <li>Utilizable en línea, sin instalación</li>
+                                    <li>Sin necesidad de inscripción</li>
+                                    <li>Posibilidad de exportar tus documentos como imágenes bitmap o vectoriales</li>
+                                    <li>Programa libre y gratuito, abierto a tod@s</li>
+                                    <li>Etica: no conservamos tus datos</li>
+                                </ul>
+                                <div style="text-align:center">
+                                <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
+                                    <source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
+                                    <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
+                                </video>
+                                </div>
+                                <p> El<a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vídeo</a> en formato webm <small>(Por el momento el vídeo está en inglés. Lo sentimos.)</small></p>
                             </p>',
-        'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p>'
+        'modale_footer' => '<p class="precisions">Framavectoriel es una aplicación basada en  <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p>'
     ],
     'loomio' => [
         'name'          => '',
         'wkp'           => '',
-        'description'   => 'Prise de décision',
+        'description'   => 'Toma de decisiones',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -1060,19 +1033,19 @@ $data = [
         'id_frama'      => 'framaloomio',
         'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx   xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx   xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
                                 xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> ouvrez un compte et téléchargez vos vidéos. Vous gardez vos droits et la liberté de modifier vos téléchargements.
+                                <span class="violet">Funcionamiento:</span> 
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="https://www.loomio.org">loomio</a></p>'
+        'modale_footer' => '<p class="precisions">Framaxxx es una aplicación basada en <a href="https://www.loomio.org">loomio</a></p>'
     ],
     // Mises à jour
     'framadate2' => [
-        'name'          => 'Développement axé sur l’ergonomie et l’accessibilité',
+        'name'          => 'Desarrollo centrado en la ergonomía y la accesibilidad',
         'wkp'           => '',
-        'description'   => 'Réunions et sondages',
+        'description'   => 'Reuniones y sondeos',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -1083,31 +1056,29 @@ $data = [
         'coordonnees'   => '',
         'class'         => 'casque',
         'soft_frama'    => 'Studs',
-        'long_desc'     => 'Convenir d’une réunion et créer un sondage',
+        'long_desc'     => 'Concertar una reunión y crear un sondeo',
         'url_frama'     => 'http://framadate.org',
         'id_frama'      => 'framadate2',
-        'modale_title'  => 'Organiser des rendez-vous simplement et librement',
+        'modale_title'  => 'Organización de las citas de manera simple y libre',
         'modale_body'   => '<p>
-                                Avec <a href="http://framadate.org">Framadate</a> vous serez en mesure de planifier un rendez-vous à plusieurs ou créer un sondage en ligne. Framadate ne stocke
-                                pas vos données !
+                                Avec <a href="http://framadate.org">Framadate</a> se puede planificar una cita entre varias personas o crear un sondeo en línea. Framadate no almacena tus datos!
                             </p>
-                            <p class="violet">Fonctionnalités :</p>
+                            <p class="violet">Funciones:</p>
                             <ul>
-                                <li>envoi de courriel à chaque réponse</li>
-                                <li>modification du sondage en cours</li>
-                                <li>planification d’une dead-line</li>
-                                <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
+                                <li>envío de un mail a cada respuesta</li>
+                                <li>modificación del sondeo en curso</li>
+                                <li>planificación de una dead-line</li>
+                                <li>renombrado del sondeo y envío de la dirección a los colaboradores</li>
                             </ul>
                             <p>
-                                <span class="violet">Mise à jour</span> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L\'interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
+                                <span class="violet">Actualización</span>: la actualización de Framadate concierne las partes gráfica y técnica del servicio. La interfaz es más clara, más ergonómica. Y a partir de ahora se puede responder "quizás" a un sondeo.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
-
+        'modale_footer' => '<p class="precisions">Framadate es una aplicación basada en <a href="http://studs.u-strasbg.fr/">Studs</a> bastante retocada</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Instalar</a>'
     ],
     'mypads' => [
-        'name'          => 'Développement et intégration du plugin Mypads',
+        'name'          => 'Desarrollo e integración del plugin Mypads',
         'wkp'           => '',
-        'description'   => 'Rédaction collaborative',
+        'description'   => 'Redacción colaborativa',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -1118,39 +1089,37 @@ $data = [
         'coordonnees'   => '',
         'class'         => 'casque',
         'soft_frama'    => 'Etherpad',
-        'long_desc'     => 'Du traitement de texte en ligne et à plusieurs !',
+        'long_desc'     => 'Procesador de texto en línea que permite escribir de forma simultánea a varias personas!',
         'url_frama'     => 'https://framapad.org',
         'id_frama'      => 'framapad',
-        'modale_title'  => 'Outil de rédaction collaborative',
+        'modale_title'  => 'Herramienta de redacción colaborativa',
         'modale_body'   => '<p>
-                                <a href="https://framapad.org">Framapad</a> est un service de rédaction collaborative en ligne basé sur le logiciel
+                                <a href="https://framapad.org">Framapad</a>es un servicio de redacción colaborativa en línea y en tiempo real, basado en la aplicación
                                 <a href="http://etherpad.org/">Etherpad</a>.
                             </p>
                             <p>
-                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
-                                utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
+                                Un "pad" es un editor de texto en línea. Su mayor valor añadido es la edición colaborativa: las contribuciones de cada usuario aparecen inmediatamente en los pads de todos los participantes, marcados con un color.
                             </p>
-                            <p class="violet">Fonctionnalités :</p>
+                            <p class="violet">Funcionalidades:</p>
                             <ul>
-                                <li>Ouvrir un pad public ou privé</li>
-                                <li>Rédiger votre document</li>
-                                <li>Inviter des collaborateurs</li>
-                                <li>Un code couleur pour chacun</li>
-                                <li>Tchat intégré</li>
-                                <li>Historique des versions</li>
-                                <li>Exporter votre travail</li>
-                                <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
+                                <li>Abrir un pad público o privado</li>
+                                <li>Redactar un documento</li>
+                                <li>Invitar a colaboradores</li>
+                                <li>Un código de color para cada uno</li>
+                                <li>Chat integrado</li>
+                                <li>Historial de versiones</li>
+                                <li>Exportar el trabajo</li>
+                                <li>Y próximamente: gestionar sesiones y grupos con MyPads!</li>
                             </ul>
                             <p>
-                                <span class="violet">Mise à jour</span> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d\'instances dédiées (par exemple à l\education ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
+                                <span class="violet">Actualización</span>: esta actualización de Framapad será importante, ya que además de tener instancias específicas (por ejemplo para la educación o las ciencias), podrás (por fin!) hacer pads privados (administración por grupo o por contraseña).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framapad est une instance basée sur <a href="http://etherpad.org/">Etherpad</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framapad es una aplicación basada en  <a href="http://etherpad.org/">Etherpad</a></p>'
     ],
     'padlite' => [
-        'name'          => 'Remplacement d’Etherpad par la version « Lite » pour les pads publics',
+        'name'          => 'Para los pads públicos, sustitución de Etherpad por la version "Lite"',
         'wkp'           => '',
-        'description'   => 'Rédaction collaborative',
+        'description'   => 'Redacción colaborativa',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -1161,36 +1130,34 @@ $data = [
         'coordonnees'   => '',
         'class'         => 'casque',
         'soft_frama'    => 'Etherpad',
-        'long_desc'     => 'Du traitement de texte en ligne et à plusieurs !',
+        'long_desc'     => 'Procesador de texto en línea que permite escribir de forma simultánea a varias personas!',
         'url_frama'     => 'https://framapad.org',
         'id_frama'      => 'framapad',
-        'modale_title'  => 'Outil de rédaction collaborative',
+        'modale_title'  => 'Herramienta de redacción colaborativa',
         'modale_body'   => '<p>
-                                <a href="https://framapad.org">Framapad</a> est un service de rédaction collaborative en ligne basé sur le logiciel
+                                <a href="https://framapad.org">Framapad</a> es un servicio de redacción colaborativa en línea y en tiempo real, basado en la aplicación
                                 <a href="http://etherpad.org/">Etherpad</a>.
                             </p>
                             <p>
-                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
-                                utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
+                                Un "pad"  es un editor de texto en línea. Su mayor valor añadido es la edición  colaborativa: las contribuciones de cada usuario aparecen inmediatamente  en los pads de todos los participantes, marcados con un color.
                             </p>
-                            <p class="violet">Fonctionnalités :</p>
+                            <p class="violet">Funcionalidades:</p>
                             <ul>
-                                <li>Ouvrir un pad public ou privé</li>
-                                <li>Rédiger votre document</li>
-                                <li>Inviter des collaborateurs</li>
-                                <li>Un code couleur pour chacun</li>
-                                <li>Tchat intégré</li>
-                                <li>Historique des versions</li>
-                                <li>Exporter votre travail</li>
-                                <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
+                                <li>Abrir un pad público o privado</li>
+                                <li>Redactar un documento</li>
+                                <li>Invitar a colaboradores</li>
+                                <li>Un código de color para cada uno</li>
+                                <li>Chat integrado</li>
+                                <li>Historial de versiones</li>
+                                <li>Exportar el trabajo</li>
+                                <li>Y próximamente: gestionar sesiones y grupos con MyPads!</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framapad est une instance basée sur <a href="http://etherpad.org/">Etherpad</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framapad es una aplicación basada en <a href="http://etherpad.org/">Etherpad</a></p>'
     ],
     'framindmap2' => [
-        'name'          => 'Mindmaps remplacé par Wisemapping',
+        'name'          => 'Sustitución de Mindmaps por Wisemapping',
         'wkp'           => '',
-        'description'   => 'Cartes heuristiques',
+        'description'   => 'Mapa mental',
         'editeur'       => '',
         'wkp_editeur'   => '',
         'similaire'     => '',
@@ -1201,26 +1168,25 @@ $data = [
         'coordonnees'   => '',
         'class'         => 'casque',
         'soft_frama'    => 'Wisemapping',
-        'long_desc'     => 'Fabriquez vos cartes mentales',
+        'long_desc'     => 'Crea tu mapa mental',
         'url_frama'     => 'http://framindmap.org',
         'id_frama'      => 'framindmap2',
-        'modale_title'  => 'Pourquoi créer une carte mentale ?',
+        'modale_title'  => '¿Para qué sirve un mapa mental?',
         'modale_body'   => '<p>
-                                <a href="http://framindmap.org/">Framindmap</a> vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
+                                <a href="http://framindmap.org/">Framindmap</a> te permite organizar una lluvia de ideas, ordenarlas en grupo, aprender y ayudar a aprenderse las lecciones, hacer clasificaciones, identificar elementos importantes.
                             </p>
                             <p>
-                                <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
-                                votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
+                                <span class="violet">Por qué utilizar Framindmap?</span> Se puede usar en linea sin ninguna instalación, no se requiere ninguna inscripción y la puedes exportar en forma de imagen. Los datos te pertenecen.
                             </p>
                             <p>
-                                <span class="violet">Mise à jour</span> : le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d\'enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
+                                <span class="violet">Actualización</span>: la aplicación que propulsa Framindmap pasará a ser Wisemapping (en vez de Mindmaps). Ce  logiciel  est plus complet, permet de lier des documents aux noeuds ou   d\'enregistrer vos cartes pour les retrouver et les partager facilement   sur internet.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framindmap es una aplicación basada en <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Instalar</a>'
     ],
         'gmail' => [
         'name'          => 'Google Mail',
         'wkp'           => 'Gmail',
-        'description'   => 'Service de messagerie',
+        'description'   => 'Servicio de correo electrónico',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
@@ -1231,21 +1197,18 @@ $data = [
         'coordonnees'   => '',
         'class'         => '',
         'soft_frama'    => 'caliop',
-        'long_desc'     => 'Vos mails, sans la NSA dedans',
+        'long_desc'     => 'Tus correos, pero sin las narices de la NSA',
         'url_frama'     => 'https://framamail',
         'id_frama'      => 'framamail',
-        'modale_title'  => 'Votre courrier, dans une enveloppe blindée',
+        'modale_title'  => 'Tus correos en un sobre blindado',
         'modale_body'   => '<p>
-                                <a href="http://framadate.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
+                                <a href="http://framadate.org">Framanews</a> te propone un servicio de flujos  vous propose un lecteur de flux RSS en ligne, vous permettant d’être   toujours au courant de l’actualité à partir des flux RSS de vos sites   préférés !
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
+                                <span class="violet">Fonctionnement :</span> après avoir   créé votre compte, enregistrez vos flux RSS et suivez-les.
                                 Comment faire plus simple ?
                             </p>',
-        'modale_footer' => '<p class="precisions">Framamail est une instance basée sur <a href="https://www.caliopen.org/">Caliopen</a></p>'
-
+        'modale_footer' => '<p class="precisions">Framamail est una aplicación basada en <a href="https://www.caliopen.org/">Caliopen</a></p>'
     ],
-
 ];
-
 ?>
