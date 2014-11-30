@@ -1202,13 +1202,13 @@ $data = [
         'id_frama'      => 'framamail',
         'modale_title'  => 'Tus correos en un sobre blindado',
         'modale_body'   => '<p>
-                                <a href="http://framadate.org">Framanews</a> te propone un servicio de flujos  vous propose un lecteur de flux RSS en ligne, vous permettant d’être   toujours au courant de l’actualité à partir des flux RSS de vos sites   préférés !
+                                <a href="http://framadate.org">Framanews</a> es un lector de flujo en línea para poder estar siempre al corriente de la actualidad mediante los flujos RSS de tus sitios preferidos!
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> après avoir   créé votre compte, enregistrez vos flux RSS et suivez-les.
-                                Comment faire plus simple ?
+                                <span class="violet">Funcionamiento:</span> una vez creada tu cuenta, introduce tus flujos RSS y síguelos. 
+								No puede ser más fácil!
                             </p>',
-        'modale_footer' => '<p class="precisions">Framamail est una aplicación basada en <a href="https://www.caliopen.org/">Caliopen</a></p>'
+        'modale_footer' => '<p class="precisions">Framamail es una aplicación basada en <a href="https://www.caliopen.org/">Caliopen</a></p>'
     ],
 ];
 ?>
