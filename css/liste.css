@@ -343,7 +343,7 @@ h1 a:focus, h3 a:focus, h4 a:focus {
     font-family: FontAwesome;
     top:40px;
     right:20px;
-    opacity:0.2;
+    opacity:0.25;
     font-size:70px;
 
 }
@@ -371,3 +371,7 @@ h1 a:focus, h3 a:focus, h4 a:focus {
 .framabag .logo:before { content: "\f0b1"; }
 .framasphere .logo:before { content: "\f069"; }
 .framatube .logo:before { content: "\f008"; }
+.framashort .logo:before { content: "\f0c1"; }
+.framagit .logo:before { content: "\f1d3"; }
+.framalutim .logo:before { content: "\f03e"; }
+.framabin .logo:before { content: "\f0ea"; }

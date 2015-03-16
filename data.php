@@ -22,7 +22,7 @@ $data = [
         'modale_body'   => '<p>Nous toucherons au but ! Il restera encore des services « sensibles » à mettre en place, notamment les services liés à la messagerie (liste de diffusion, et bien entendu emails).</p>
                             <p>Non seulement ces services sont les plus coûteux à mettre en place (il est plus simple de gérer un site qui fait un million de visites par jour que de gérer 10 000 boîtes mails), mais il faudra aussi (surtout !) assurer le bon fonctionnement (maintenance, mise à jour, support, etc.) des projets mis en place depuis 2011.</p>
                             <p>Cela nécessitera le recrutement de 3 nouvelles personnes (essentiellement sur les aspects techniques).</p>
-                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d\'autoroute, ou 0,0006% du C.A. annuel de Google</p>
+                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d’autoroute, ou 0,0006% du C.A. annuel de Google</p>
 
 ',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
@@ -45,16 +45,16 @@ $data = [
         'url_frama'     => '',
         'id_frama'      => 'tip2016',
         'modale_title'  => 'Nos objectifs pour 2016',
-        'modale_body'   => '<p>Début 2016, Framasoft comptera déjà plus d\'une vingtaine de services en ligne. Mais nous ne comptons pas nous arrêter là&nbsp;! Nous souhaitons en effet proposer de nouvelles alternatives libres aux applications des géants d\'Internet. Notamment&nbsp;:
+        'modale_body'   => '<p>Début 2016, Framasoft comptera déjà plus d’une vingtaine de services en ligne. Mais nous ne comptons pas nous arrêter là&nbsp;! Nous souhaitons en effet proposer de nouvelles alternatives libres aux applications des géants d’Internet. Notamment&nbsp;:
                                 <ul>
-                                    <li>un service d\'agenda partagé (en alternative à Google Agenda)</li>
+                                    <li>un service d’agenda partagé (en alternative à Google Agenda)</li>
                                     <li>un service de microblogging (en alternative à Twitter)</li>
-                                    <li>un service d\'hébergement de vidéos libres (en alternative à Youtube)</li>
+                                    <li>un service d’hébergement de vidéos libres (en alternative à Youtube)</li>
                                 </ul>
                             </p>
-                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin de recruter 3 nouvelles personnes (un développeur, un second adminsys, et un administrateur). </p>
+                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l’association aura besoin de recruter 3 nouvelles personnes (un développeur, un second adminsys, et un administrateur). </p>
                             <p>Afin de ne pas systématiquement solliciter nos gentils donnateurs, une partie de la somme nécessaire pourra provenir de subventions.</p>
-                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d\'autoroute, ou 0,0004% du C.A. annuel de Google</p>
+                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d’autoroute, ou 0,0004% du C.A. annuel de Google</p>
 
                             ',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
@@ -79,14 +79,14 @@ $data = [
         'modale_title'  => 'Nos objectifs pour 2015',
         'modale_body'   => '<p>Framasoft souhaite mettre à disposition plusieurs services en ligne importants en 2015&nbsp;:
                                 <ul>
-                                    <li>un service de d\'hébergement de documents (en alternative à Dropbox)</li>
-                                    <li>un service d\'envoi de gros fichiers (en alternative à WeTransfer)</li>
+                                    <li>un service de d’hébergement de documents (en alternative à Dropbox)</li>
+                                    <li>un service d’envoi de gros fichiers (en alternative à WeTransfer)</li>
                                     <li>un service de présentations/diaporama en ligne (un « PowerPoint en ligne », si vous préférez)</li>
                                     <li>un service de visioconférence (en alternative à Skype), directement depuis votre navigateur, sans installation de logiciel</li>
                                 </ul>
                             </p>
-                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l\'association aura besoin d\'embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
-                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d\'autoroute, ou 0,0002% du C.A. annuel de Google</p>
+                            <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l’association aura besoin d’embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
+                            <p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d’autoroute, ou 0,0002% du C.A. annuel de Google</p>
                             ',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
@@ -108,19 +108,19 @@ $data = [
         'url_frama'     => '',
         'id_frama'      => 'tip2014',
         'modale_title'  => 'Nos objectifs pour 2014',
-        'modale_body'   => '<p>L\'année 2014 aura été une année particulièrement chargée pour l\'association Framasoft, puisqu\'il aura fallu mettre au point notre plan de bataille pour vous permettre de résister à Google, Facebook et autres…</p>
-        <p>L\'association à notamment investi (en temps et en argent) dans l\'infrastructure technique qui permet d\'héberger les services actuels et nous permettront d\'accueillir confortablement les applications que nous vous proposeront dans les prochaines années.</p>
+        'modale_body'   => '<p>L’année 2014 aura été une année particulièrement chargée pour l’association Framasoft, puisqu’il aura fallu mettre au point notre plan de bataille pour vous permettre de résister à Google, Facebook et autres…</p>
+        <p>L’association à notamment investi (en temps et en argent) dans l’infrastructure technique qui permet d’héberger les services actuels et nous permettront d’accueillir confortablement les applications que nous vous proposeront dans les prochaines années.</p>
         <p>Nous avons besoin de votre aide pour :
             <ul>
                 <li>accroître la taille de notre infrastructure technique (augmenter la puissance de calcul et le stockage de notre cluster de machines virtuelles)</li>
                 <li>assurer les salaires de nos deux permanents</li>
-                <li>permettre l\'embauche d\'un troisième salarié (chargé de communication)</li>
-                <li>financer le développement d\'améliorations de certains services proposés (Framadate et Framindmap, notamment)</li>
-                <li>assurer la coordination de l\'ensemble du projet "Dégooglisons Internet"</li>
+                <li>permettre l’embauche d’un troisième salarié (chargé de communication)</li>
+                <li>financer le développement d’améliorations de certains services proposés (Framadate et Framindmap, notamment)</li>
+                <li>assurer la coordination de l’ensemble du projet "Dégooglisons Internet"</li>
             </ul>
         </p>
-        <p>L\'objectif fixé est de passer de 400 à 550 donateurs récurrents, ainsi que de récolter 35 000€ en dons ponctuels sur l\'année.</p>
-        <p>Nous vous rappelons que Framasoft est une association largement autofinancée par ses donateurs. Pour vous donner une échelle de nos besoins, notre objectif 2014 (35 000€ et 550 donateurs récurrents) représente le coût de 8 mètres d\'autoroute, ou 0,000083% du C.A. annuel de Google.</p>',
+        <p>L’objectif fixé est de passer de 400 à 550 donateurs récurrents, ainsi que de récolter 35 000€ en dons ponctuels sur l’année.</p>
+        <p>Nous vous rappelons que Framasoft est une association largement autofinancée par ses donateurs. Pour vous donner une échelle de nos besoins, notre objectif 2014 (35 000€ et 550 donateurs récurrents) représente le coût de 8 mètres d’autoroute, ou 0,000083% du C.A. annuel de Google.</p>',
         'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'avaaz' => [                                                        // id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte)
@@ -134,7 +134,7 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>…',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">pétition</span>',
         'date_frama'    => '2015',                                        // si chiffre → ( sortie prévue [2015](lien plm) )
-        'coordonnees'   => '595,900,80',
+        'coordonnees'   => '305,460,40',
         'class'         => '',                                            // fight ou potion
         'soft_frama'    => 'WeThePeople',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -160,23 +160,23 @@ $data = [
         'similaire'     => 'goo.gl, t.co, tinyurl.com…',
         'alt_online'    => '<a href="http://lstu.fr/">lstu.fr</a>, <a href="http://ur1.ca/">ur1.ca</a>',
         'alt_offline'   => '<a href="http://lstu.fr/">LSTU</a>, <a href="http://yourls.org/">YOURLS</a>, <a href="http://lilurl.sourceforge.net/">LilURL</a>…',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">short</span>',
-        'date_frama'    => '2014',
-        'coordonnees'   => '460,1050,80',
-        'class'         => 'potion',
+        'alt_frama'     => '<a href="https://frama.link"><span class="violet">Frama</span>.<span class="vert">link</span></a> ou <a href="https://huit.re"><span class="violet">Huit</span>.<span class="vert">re</span></a>',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
+        'coordonnees'   => '233,535,40',
+        'class'         => 'fight',
         'soft_frama'    => 'LSTU',
         'long_desc'     => 'Des adresses plus courtes en toute discrétion',
-        'url_frama'     => '',
+        'url_frama'     => 'https://frama.link',
         'id_frama'      => 'framashort',
         'modale_title'  => 'Finies les adresses trop longues',
         'modale_body'   => '<p>
-                                Avec <a href="###">Framashort</a>, il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
+                                Avec <a href="https://frama.link">Frama.link</a> ou <a href="https://huit.re">Huit.re</a>, il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
                                 Sur les réseaux sociaux et le microblogging, disposer d’une adresse raccourcie permet d’économiser de l’espace et gagner en clarté.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Framashort la raccourcira.
+                                <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Frama.link la raccourcira.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framashort est une instance basée sur <a href="http://lstu.fiat-tux.fr/">Lstu</a></p>'
+        'modale_footer' => '<p class="precisions">Frama.link est une instance basée sur <a href="http://lstu.fiat-tux.fr/"><abbr>LSTU</abbr></a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-lstu/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
 
     ],
     'blogger' => [
@@ -190,7 +190,7 @@ $data = [
         'alt_offline'   => '<a href="http://www.pluxml.org/">PluXML</a>, <a href="http://wordpress.org">Wordpress</a>…',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">sites</span>',
         'date_frama'    => '2016',
-        'coordonnees'   => '1130,780,80',
+        'coordonnees'   => '575,400,40',
         'class'         => '',
         'soft_frama'    => 'Pluxml',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -218,13 +218,13 @@ $data = [
         'alt_offline'   => '<a href="http://wisemapping.com/">Wisemapping</a>, <a href="https://github.com/drichard/mindmaps">Mindmaps</a>, <a href="https://github.com/mindmup/mindmup">Mindmup</a>',
         'alt_frama'     => '<a href="http://framindmap.org"><span class="violet">Fram</span><span class="vert">indmap</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">octobre 2012</a>)',
-        'coordonnees'   => '920,1130,80',
+        'coordonnees'   => '465,575,40',
         'class'         => 'fight',
         'soft_frama'    => 'Wisemapping',
         'long_desc'     => 'Fabriquez vos cartes mentales',
         'url_frama'     => 'http://framindmap.org',
         'id_frama'      => 'framindmap',
-        'modale_title'  => 'Pourquoi créer une carte mentale ?',
+        'modale_title'  => 'Pourquoi créer une carte mentale ?',
         'modale_body'   => '<p>
                                 <a href="http://framindmap.org/">Framindmap</a> vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
                             </p>
@@ -237,7 +237,7 @@ $data = [
                                <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
 
                             <p>
-                                <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
+                                <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                             </p>
                             ',
@@ -254,7 +254,7 @@ $data = [
         'alt_offline'   => '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>, <a href="http://www.peacefrogs.net/papillon">Papillon</a>',
         'alt_frama'     => '<a href="http://framadate.org"><span class="violet">Frama</span><span class="vert">date</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">juin 2011</a>)',
-        'coordonnees'   => '1190,570,80',
+        'coordonnees'   => '605,295,40',
         'class'         => 'fight',
         'soft_frama'    => 'Studs',
         'long_desc'     => 'Convenir d’une réunion et créer un sondage',
@@ -285,7 +285,7 @@ $data = [
         'alt_offline'   => '<a href="https://pyd.io/">Pyd.io</a>, <a href="http://owncloud.org/">OwnCloud</a>, <a href="http://www.seafile.com">Seafile</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">drive</span>',
         'date_frama'    => '2015',
-        'coordonnees'   => '1120,1180,80',
+        'coordonnees'   => '570,600,40',
         'class'         => '',
         'soft_frama'    => 'Pyd.io',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -342,7 +342,7 @@ $data = [
         'alt_offline'   => '<a href="https://laverna.cc/">Laverna</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">notes</span>',
         'date_frama'    => '2017',
-        'coordonnees'   => '1160,940,80',
+        'coordonnees'   => '590,480,40',
         'class'         => '',
         'soft_frama'    => 'Laverna',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -370,7 +370,7 @@ $data = [
         'alt_offline'   => '<a href="https://diasporafoundation.org/">Diaspora*</a>, <a href="https://movim.eu/">Movim</a>',
         'alt_frama'     => '<a href="http://framasphere.org"><span class="violet">Frama</span><span class="vert">sphère</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>)',
-        'coordonnees'   => '735,630,80',
+        'coordonnees'   => '375,325,40',
         'class'         => 'fight',
         'soft_frama'    => 'Diaspora*',
         'long_desc'     => 'Un réseau social éthique et décentralisé',
@@ -395,25 +395,23 @@ $data = [
         'editeur'       => 'GitHub',
         'wkp_editeur'   => 'GitHub',
         'similaire'     => 'Google Code, SourceForge',
-        'alt_online'    => '<a href="https://gitorious.org/">Gitorious</a>',
-        'alt_offline'   => '<a href="http://gitlab.org">Gitlab</a>, <a href="https://gitorious.org/">Gitorious</a>',
+        'alt_online'    => '<a href="http://savannah.gnu.org/">Savannah</a><a href="http://gna.org/">Gna!</a>, <a href="http://tuxfamily.org/">TuxFamilly</a>, l’<a href="https://adullact.net/">Adullact</a>, <a href="http://gitlab.org">Gitlab</a>',
+        'alt_offline'   => '<a href="http://gitlab.org">Gitlab</a>',
         'alt_frama'     => '<a href="http://git.framasoft.org"><span class="violet">Frama</span><span class="vert">git</span></a>',
-        'date_frama'    => '2014',
-        'coordonnees'   => '620,1110,80',
-        'class'         => 'potion',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">mars 2015</a>)',
+        'coordonnees'   => '320,565,40',
+        'class'         => 'fight',
         'soft_frama'    => 'Gitlab',
-        'long_desc'     => 'Du code libre c\'est bien. Sur une plateforme libre c\'est mieux&nbsp;!',
-        'url_frama'     => '',
+        'long_desc'     => 'Du code libre c’est bien. Sur une plateforme libre c’est mieux&nbsp;!',
+        'url_frama'     => 'http://git.framasoft.org',
         'id_frama'      => 'framagit',
         'modale_title'  => 'Hébergement de code libre',
         'modale_body'   => '<p>
-                                <a href="http://git.framasoft.org">Framagit</a> héberge aujourd\'hui les sources de plusieurs projets Framasoft, qu\'il s\'agisse de simples bouts de code, ou du « fork » d\'applications plus lourdes.
+                                <a href="http://git.framasoft.org">Framagit</a> est un outil qui s’adresse avant tout aux développeurs. Il permet la création de 42 dépôts maximum par compte (si vous avez besoin de plus, songez sérieusement à vous auto-héberger). Et, petit plus par rapport à GitHub, vous pouvez créer des dépôts privés.</p>
                             </p>
-                            <p>Ce qui est certain, c\'est que vous n\'y trouverez que du code libre !</p>
-                            <p>Pour l\'instant, le dépôt de code n\'est autorisé que pour les projets Framasoft, mais dès que nous aurons validé la stabilité de la plateforme, nous l\'ouvrirons progressivement à d\'autres communautés.</p>
-                            <p>
-                                <span class="violet">Avancement</span> La plateforme git est actuellement en cours d\'évaluation. Les premiers comptes « externes » devraient pouvoir être accueillis dès la fin de l\'année 2014. Vous pouvez nous contacter si vous pensez avoir l\'utilité de Framagit (en lieu et place de Github, par exemple).
-                            </p>',
+                            <p>Il est également possible de « mirrorer » automatiquement vos dépôts sur GitHub : vous continuez à « engraisser la bête », mais vous êtes déjà moins dépendant, et vous conservez une visibilité auprès des presque 10 millions d’inscrits sur GitHub. Votre dépôt sur notre Framagit est automatiquement poussé sur votre dépôt Github. C’est d’ailleurs la solution retenue par Framasoft, qui dispose toujours d’un compte GitHub, alors que les développements sont réalisés sur notre forge.
+                            </p>
+                            ',
         'modale_footer' => '<p class="precisions">Framagit est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
     ],
     'gagenda' => [
@@ -427,7 +425,7 @@ $data = [
         'alt_offline'   => '<a href="http://www.k5n.us/webcalendar.php">webcalendar</a>, <a href="http://www.zkoss.org/product/">ZK Calendar</a>…',
         'alt_frama'     => '<span class="violet">Fram</span><span class="vert">agenda</span>',
         'date_frama'    => '2016',
-        'coordonnees'   => '790,1020,80',
+        'coordonnees'   => '400,520,40',
         'class'         => '',
         'soft_frama'    => 'Webcalendar',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -455,17 +453,17 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bookin</span>',
         'date_frama'    => '2014',
-        'coordonnees'   => '1240,410,80',
+        'coordonnees'   => '630,205,40',
         'class'         => 'potion',
         'soft_frama'    => 'Framabook OPDS',
-        'long_desc'     => 'Une bibliothèque de plusieurs milliers d\'ouvrages',
+        'long_desc'     => 'Une bibliothèque de plusieurs milliers d’ouvrages',
         'url_frama'     => '',
         'id_frama'      => 'framaopds',
-        'modale_title'  => 'Catalogue d\'ouvrages accessibles pour tous',
+        'modale_title'  => 'Catalogue d’ouvrages accessibles pour tous',
         'modale_body'   => '<p>
-                                <span class="violet">Framabookin</span> est le catalogue OPDS de Framasoft. « Euh... Oui, mais encore ? », nous direz-vous. Un catalogue OPDS est un site auquel vous pouvez vous abonner avec un logiciel supportant cette fonctionnalité (certaines liseuses en embarquent un, pour Android, il existe Aldiko et bien d\'autres), vous donnant accès rapidement et simplement à tout une bibliothèque depuis votre ordinateur, smartphone ou tablette.
+                                <span class="violet">Framabookin</span> est le catalogue OPDS de Framasoft. « Euh... Oui, mais encore ? », nous direz-vous. Un catalogue OPDS est un site auquel vous pouvez vous abonner avec un logiciel supportant cette fonctionnalité (certaines liseuses en embarquent un, pour Android, il existe Aldiko et bien d’autres), vous donnant accès rapidement et simplement à tout une bibliothèque depuis votre ordinateur, smartphone ou tablette.
                             </p>
-                            <p>Le catalogue OPDS de Framasoft (en cours d\'élaboration) vous donnera accès à des milliers d\'ouvrages non protégés par « copyright ».</p>',
+                            <p>Le catalogue OPDS de Framasoft (en cours d’élaboration) vous donnera accès à des milliers d’ouvrages non protégés par « copyright ».</p>',
         'modale_footer' => '<p class="precisions">Framabookin fournit un catalogue généré par le logiciel <a href="http://calibre-ebook.com/">Calibre</a></p>'
     ],
     'gdocs' => [
@@ -477,9 +475,9 @@ $data = [
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '<a href="http://etherpad.org/">Etherpad</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">pad</span>',
+        'alt_frama'     => '<a href="https://framapad.org"><span class="violet">Frama</span><span class="vert">pad</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2011/03/28/framapad-collaboration-en-ligne">mars 2011</a>)',
-        'coordonnees'   => '730,125,80',
+        'coordonnees'   => '370,65,40',
         'class'         => 'fight',
         'soft_frama'    => 'Etherpad',
         'long_desc'     => 'Du traitement de texte en ligne et à plusieurs !',
@@ -491,7 +489,7 @@ $data = [
                                 <a href="http://etherpad.org/">Etherpad</a>.
                             </p>
                             <p>
-                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
+                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
                                 utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
                             </p>
                             <p class="violet">Fonctionnalités :</p>
@@ -519,7 +517,7 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/spiral-project/daybed">DayBed</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">forms</span>',
         'date_frama'    => '2017',
-        'coordonnees'   => '980,745,80',
+        'coordonnees'   => '500,380,40',
         'class'         => '',
         'soft_frama'    => 'DayBed',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -547,7 +545,7 @@ $data = [
         'alt_offline'   => '<a href="http://www.gnu.org/software/mailman/">mailman</a>, <a href="http://www.sympa.org/">sympa</a>…',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">listes</span>',
         'date_frama'    => '2017',
-        'coordonnees'   => '1210,1430,80',
+        'coordonnees'   => '615,725,40',
         'class'         => '',
         'soft_frama'    => 'Sympa',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -570,12 +568,12 @@ $data = [
         'description'   => 'Lecteur de flux',
         'editeur'       => 'Google',
         'wkp_editeur'   => 'Google',
-        'similaire'     => '',
+        'similaire'     => 'Feedly',
         'alt_online'    => '',
         'alt_offline'   => '<a href="http://tt-rss.org/">TinyTinyRSS</a>, <a href="http://freshrss.org/">FreshRSS</a>…',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">news</span>',
+        'alt_frama'     => '<a href="https://framanews.org"><span class="violet">Frama</span><span class="vert">news</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2013/06/27/framanews-rss-google-reader">juin 2013</a>)',
-        'coordonnees'   => '375,1205,80',
+        'coordonnees'   => '190,610,40',
         'class'         => 'fight',
         'soft_frama'    => 'TinyTinyRSS',
         'long_desc'     => 'Suivez l’actualité et faites vos choix librement',
@@ -587,7 +585,7 @@ $data = [
                             </p>
                             <p>
                                 <span class="violet">Fonctionnement :</span> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
-                                Comment faire plus simple ?
+                                Comment faire plus simple ?
                             </p>',
         'modale_footer' => '<p class="precisions">Framanews est une instance basée sur <a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">tt-rss</a></p>'
 
@@ -603,16 +601,16 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/asciimoo/searx">Searx</a>, <a href="http://codingteam.net/project/mysearch">MySearch</a>, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">search</span>',
         'date_frama'    => '2014',
-        'coordonnees'   => '680,480,80',
+        'coordonnees'   => '350,245,40',
         'class'         => 'potion',
         'soft_frama'    => 'Searx',
-        'long_desc'     => 'Et si vos recherches n\'étaient plus fichées par Google ?',
+        'long_desc'     => 'Et si vos recherches n’étaient plus fichées par Google ?',
         'url_frama'     => '',
         'id_frama'      => 'framasearch',
         'modale_title'  => 'Une recherche anonyme',
         'modale_body'   => '<p>
-                                <a href="http://searx.framasoft.org/">Framasearch</a> est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d\'être affichées dans votre navigateur. L\'intérêt, c\'est que c\'est notre moteur qui fait alors office d\'intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n\'est donc pas enregistrée chez eux. </p>
-                                <p>Evidemment, vous devez avoir confiance en Framasoft/Framasearch si vous souhaitez l\'utiliser, c\'est pourquoi nous proposons une <a href="/nav/html/charte" title="charte">charte</a>.
+                                <a href="http://searx.framasoft.org/">Framasearch</a> est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d’être affichées dans votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait alors office d’intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n’est donc pas enregistrée chez eux. </p>
+                                <p>Evidemment, vous devez avoir confiance en Framasoft/Framasearch si vous souhaitez l’utiliser, c’est pourquoi nous proposons une <a href="/nav/html/charte.html">charte</a>.
                             </p>
                             <p>
                                 <span class="violet">Framasearch</span> sera bientôt disponible. En attendant, vous pouvez par exemple utiliser <a href="https://duckduckgo.com/">DuckDuckGo</a> ou <a href="https://www.ixquick.com/">Ixquick</a>
@@ -630,7 +628,7 @@ $data = [
         'alt_offline'   => '<a href="http://strut.io/">Strut.io</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">slides</span>',
         'date_frama'    => '2015',
-        'coordonnees'   => '1250,1090,80',
+        'coordonnees'   => '635,555,40',
         'class'         => '',
         'soft_frama'    => 'Strut.io',
         'long_desc'     => 'Des diaporamas de haute qualité sans se fatiguer',
@@ -665,9 +663,9 @@ $data = [
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '<a href="https://ethercalc.org/">Ethercalc</a>, <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">calc</span>',
+        'alt_frama'     => '<a href="https://framacalc.org"><span class="violet">Frama</span><span class="vert">calc</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octobre 2012</a>)',
-        'coordonnees'   => '730,1300,80',
+        'coordonnees'   => '375,660,40',
         'class'         => 'fight',
         'soft_frama'    => 'Ethercalc',
         'long_desc'     => 'Partagez vos tableaux et collaborez !',
@@ -699,25 +697,25 @@ $data = [
         'editeur'       => 'Imgur',
         'wkp_editeur'   => 'Imgur',
         'similaire'     => '',
-        'alt_online'    => '',
-        'alt_offline'   => '<a href="http://lut.im">Lut.im</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">pic</span>',
-        'date_frama'    => '2014',
-        'coordonnees'   => '835,180,80',
-        'class'         => 'potion',
-        'soft_frama'    => 'Lut.im',
+        'alt_online'    => '<a href="http://pix.toile-libre.org/">Toile libre</a>, <a href="https://lut.im">Lut.im</a>',
+        'alt_offline'   => '<a href="https://lut.im">Lut.im</a>, <a href="https://coquelicot.potager.org/">Coquelicot</a>',
+        'alt_frama'     => '<a href="https://framapic.org"><span class="violet">Frama</span><span class="vert">pic</span></a>',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
+        'coordonnees'   => '430,90,40',
+        'class'         => 'fight',
+        'soft_frama'    => 'Framapic',
         'long_desc'     => 'Partagez vos images anonymement',
-        'url_frama'     => 'http://lut.im',
+        'url_frama'     => 'https://framapic.org',
         'id_frama'      => 'framalutim',
         'modale_title'  => 'Partagez vos images facilement',
         'modale_body'   => '<p>
-                                <a href="http://lut.im">Framapic</a> vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou ... Framasphère !
+                                <a href="https://framapic.org">Framapic</a> vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou ... Framasphère !
                             </p>
-                            <p>Attention, ce service n\'est pas un équivalent de flickr ou instagram : il ne s\'agit pas d\'un service d\'hébergement de photos d\'utilisateurs, mais bien d\'un service d\'hébergement d\'images anonymes (même nous, nous n\'avons pas accès au contenu, qui est chiffré).</p>
+                            <p>Attention, ce service n’est pas un équivalent de flickr ou instagram : il ne s’agit pas d’un service d’hébergement de photos d’utilisateurs, mais bien d’un service d’hébergement d’images anonymes (même nous, nous n’avons pas accès au contenu, qui est chiffré).</p>
                             <p>
-                                <span class="violet">Framapic</span> permet d\'envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
+                                <span class="violet">Framapic</span> permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a>, développé par un membre de Framasoft</p>'
+        'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-lutim/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'jsfiddle' => [
         'name'          => 'jsFiddle',
@@ -730,7 +728,7 @@ $data = [
         'alt_offline'   => '<a href="http://jsbin.com/">JS Bin</a>, <a href="http://dabblet.com/">Dabblet</a>…',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">xxx</span>',
         'date_frama'    => '2017',
-        'coordonnees'   => '1040,580,80',
+        'coordonnees'   => '530,300,40',
         'class'         => '',
         'soft_frama'    => 'jsbin',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -812,25 +810,25 @@ $data = [
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '<a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zérobin</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bin</span>',
-        'date_frama'    => '2014',
-        'coordonnees'   => '710,300,80',
-        'class'         => 'potion',
+        'alt_frama'     => '<a href="https://framabin.org"><span class="violet">Frama</span><span class="vert">bin</span></a>',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
+        'coordonnees'   => '360,150,40',
+        'class'         => 'fight',
         'soft_frama'    => 'Zerobin',
         'long_desc'     => 'Rédigez et partagez en toute discrétion',
-        'url_frama'     => 'https://framalab.org/zerobin',
+        'url_frama'     => 'https://framabin.org',
         'id_frama'      => 'framabin',
         'modale_title'  => 'Communiquez des données chiffrées',
         'modale_body'   => '<p>
-                                Avec <a href="###">Framabin</a> vous pouvez partager des informations dont seuls vous et votre correspondant aurez le pouvoir de déchiffrer, et surtout de
+                                Avec <a href="https://framapin.org">Framabin</a> vous pouvez partager des informations dont seuls vous et votre correspondant aurez le pouvoir de déchiffrer, et surtout de
                                 manière très simple. Vous pouvez même choisir la durée de validité de l’accès !
                             </p>
                             <p>
-                                <span class="violet">Pour quels usages ?</span> Vous pouvez avoir besoin de communiquer une ou plusieurs informations sans vouloir passer par la voie classique
+                                <span class="violet">Pour quels usages ?</span> Vous pouvez avoir besoin de communiquer une ou plusieurs informations sans vouloir passer par la voie classique
                                 du courriel ou du petit bout de papier. Framabin vous permet d’envoyer une adresse et donner accès à ces informations en toute sécurité et simplicité. Le
                                 serveur stocke des données illisibles pour lui.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framabin est une instance basée sur <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a></p>'
+        'modale_footer' => '<p class="precisions">Framabin est une instance basée sur <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-zerobin/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'pocket' => [
         'name'          => 'Pocket',
@@ -841,9 +839,9 @@ $data = [
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '<a href="https://www.wallabag.org/">Wallabag</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bag</span>',
+        'alt_frama'     => '<a href="https://framabag.org"><span class="violet">Frama</span><span class="vert">bag</span></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">février 2014</a>)',
-        'coordonnees'   => '550,1240,80',
+        'coordonnees'   => '280,630,40',
         'class'         => 'fight',
         'soft_frama'    => 'Wallabag',
         'long_desc'     => 'Sauvegardez et lisez plus tard',
@@ -900,7 +898,7 @@ $data = [
         'alt_offline'   => '<a href="https://jitsi.org/">Jitsi</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">talk</span>',
         'date_frama'    => '2015',
-        'coordonnees'   => '450,910,80',
+        'coordonnees'   => '230,460,40',
         'class'         => '',
         'soft_frama'    => 'WebRTC',
         'long_desc'     => '',
@@ -928,7 +926,7 @@ $data = [
         'alt_offline'   => '<a href="http://twister.net.co/">Twister</a>, <a href="http://status.net/">StatusNet</a>',
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">tweet</span>',
         'date_frama'    => '2016',
-        'coordonnees'   => '810,410,80',
+        'coordonnees'   => '415,205,40',
         'class'         => '',
         'soft_frama'    => 'Twister',
         'long_desc'     => 'Gazouillez sur Internet',
@@ -982,7 +980,7 @@ $data = [
         'alt_offline'   => '<a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>,<a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>',
         'alt_frama'     => '<a href="http://framatube.org"><span class="violet">Frama</span><span class="vert">tube</span></a>',
         'date_frama'    => '2016',
-        'coordonnees'   => '980,940,80',
+        'coordonnees'   => '500,480,40',
         'class'         => 'potion',
         'soft_frama'    => 'Mediagoblin',
         'long_desc'     => 'Partagez vos vidéos et conservez vos droits',
@@ -1018,15 +1016,15 @@ $data = [
         'id_frama'      => 'framavectoriel',
         'modale_title'  => 'Créez rapidement des images vectorielles au format SVG',
         'modale_body'   => '<p>
-                                <a href="http://framavectoriel.org">framavectoriel</a>, est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
+                                <a href="http://framavectoriel.org">framavectoriel</a>, est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
                             </p>
                             <p>
                                 <span class="violet">Fonctionnalité :</span>
 
                                     <ul>
                                         <li>Utilisable en ligne, sans installation</li>
-                                        <li>Pas d\'inscription requise</li>
-                                        <li>Possibilité d\'exporter votre document sous forme d\'image bitmap ou vectorielles</li>
+                                        <li>Pas d’inscription requise</li>
+                                        <li>Possibilité d’exporter votre document sous forme d’image bitmap ou vectorielles</li>
                                         <li>Logiciel libre et gratuit, ouvert à tous</li>
                                         <li>Ethique : aucune conservation de vos données</li>
 
@@ -1037,9 +1035,9 @@ $data = [
                                         <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
                                     </video>
                                     </div>
-                                    <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l\'instant la vidéo est en anglais. Désolé.)</small></p>
+                                    <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>
                             </p>',
-        'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p>'
+        'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'loomio' => [
         'name'          => '',
@@ -1099,7 +1097,7 @@ $data = [
                                 <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
                             </ul>
                             <p>
-                                <span class="violet">Mise à jour</span> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L\'interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
+                                <span class="violet">Mise à jour</span> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L’interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
                             </p>',
         'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
 
@@ -1127,7 +1125,7 @@ $data = [
                                 <a href="http://etherpad.org/">Etherpad</a>.
                             </p>
                             <p>
-                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
+                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
                                 utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
                             </p>
                             <p class="violet">Fonctionnalités :</p>
@@ -1142,7 +1140,7 @@ $data = [
                                 <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
                             </ul>
                             <p>
-                                <span class="violet">Mise à jour</span> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d\'instances dédiées (par exemple à l\education ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
+                                <span class="violet">Mise à jour</span> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d’instances dédiées (par exemple à l\education ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
                             </p>',
         'modale_footer' => '<p class="precisions">Framapad est une instance basée sur <a href="http://etherpad.org/">Etherpad</a></p>'
 
@@ -1170,7 +1168,7 @@ $data = [
                                 <a href="http://etherpad.org/">Etherpad</a>.
                             </p>
                             <p>
-                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
+                                Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
                                 utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
                             </p>
                             <p class="violet">Fonctionnalités :</p>
@@ -1204,16 +1202,16 @@ $data = [
         'long_desc'     => 'Fabriquez vos cartes mentales',
         'url_frama'     => 'http://framindmap.org',
         'id_frama'      => 'framindmap2',
-        'modale_title'  => 'Pourquoi créer une carte mentale ?',
+        'modale_title'  => 'Pourquoi créer une carte mentale ?',
         'modale_body'   => '<p>
                                 <a href="http://framindmap.org/">Framindmap</a> vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
                             </p>
                             <p>
-                                <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
+                                <span class="violet">Pourquoi utiliser Framindmap ?</span> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                             </p>
                             <p>
-                                <span class="violet">Mise à jour</span> : le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d\'enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
+                                <span class="violet">Mise à jour</span> : le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d’enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
                             </p>',
         'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
@@ -1240,7 +1238,7 @@ $data = [
                             </p>
                             <p>
                                 <span class="violet">Fonctionnement :</span> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
-                                Comment faire plus simple ?
+                                Comment faire plus simple ?
                             </p>',
         'modale_footer' => '<p class="precisions">Framamail est une instance basée sur <a href="https://www.caliopen.org/">Caliopen</a></p>'
 

@@ -211,7 +211,7 @@ foreach($timeline as $k => $v) {
                         <h1 class="col-md-6"><a href="../"><span class="violet">Dégooglisons</span> <span class="orange">Internet</span></a></h1>
                         <p class="lead col-md-6">
                             Une initiative du réseau <span class="violet">Frama</span><span class="orange">soft</span>
-                            en faveur d'un internet <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
+                            en faveur d’un internet <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
                             <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>
                         </p>
                     </div>
@@ -259,29 +259,29 @@ foreach($timeline as $k => $v) {
                 <div class="row col-xs-12">
                     <div class="col-md-6">
                         <h3 id="internet-libre"><span class="fa fa-fw fa-unlock"></span> Libre</h3>
-                        <p>L'histoire d'Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés. Sa popularité et son potentiel font
-                        aussi des envieux, et de grandes entreprises aimeraient s'en attribuer le contrôle en imposant du code fermé dans des systèmes verrouillés et non-interopérables. Pour qu'Internet
-                        reste fidèle à ses principes fondateurs qui l'ont conduit à son succès, nous devons y trouver des applications libres, c'est à dire dont le code source est ouvert, accessible et
+                        <p>L’histoire d’Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés. Sa popularité et son potentiel font
+                        aussi des envieux, et de grandes entreprises aimeraient s’en attribuer le contrôle en imposant du code fermé dans des systèmes verrouillés et non-interopérables. Pour qu’Internet
+                        reste fidèle à ses principes fondateurs qui l’ont conduit à son succès, nous devons y trouver des applications libres, c’est à dire dont le code source est ouvert, accessible et
                         sous licences libres.</p>
                     </div>
                     <div class="col-md-6">
                         <h3 id="internet-decentralise"><span class="fa fa-fw fa-share-alt"></span> Décentralisé</h3>
-                        <p>L'intelligence d'Internet doit se situer à la périphérie du réseau dans une dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0. Pour assurer l'égalité
-                            de tous, citoyens comme entrepreneurs, les monopoles doivent non seulement être évités, mais empêchés de s'accaparer les données personnelles ou publiques. En expliquant,
-                            par des tutoriels, comment multiplier les solutions libres permettant un Internet plus équitable, nous facilitons l'essaimage du code et diversifions les usages.</p>
+                        <p>L’intelligence d’Internet doit se situer à la périphérie du réseau dans une dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0. Pour assurer l’égalité
+                            de tous, citoyens comme entrepreneurs, les monopoles doivent non seulement être évités, mais empêchés de s’accaparer les données personnelles ou publiques. En expliquant,
+                            par des tutoriels, comment multiplier les solutions libres permettant un Internet plus équitable, nous facilitons l’essaimage du code et diversifions les usages.</p>
                     </div>
                 </div>
                 <div class="row col-xs-12">
                     <div class="col-md-6">
                         <h3 id="internet-ethique"><span class="fa fa-fw fa-eye-slash"></span> Éthique</h3>
-                        <p>Nous plébiscitons un Internet fait de partage et d'indépendance. L'exploitation, la surveillance, la censure et l'appropriation des données sont des valeurs que nous refusons
-                        au profit de la transparence (la probité), de l'exposition claire des conditions d'utilisation des services, et du refus des discriminations.</p>
+                        <p>Nous plébiscitons un Internet fait de partage et d’indépendance. L’exploitation, la surveillance, la censure et l’appropriation des données sont des valeurs que nous refusons
+                        au profit de la transparence (la probité), de l’exposition claire des conditions d’utilisation des services, et du refus des discriminations.</p>
                     </div>
                     <div class="col-md-6">
                         <h3 id="internet-solidaire"><span class="fa fa-fw fa-group"></span> Solidaire</h3>
-                        <p>À travers les services que nous déployons, nous promouvons un modèle économique fondé sur la mutualisation des coûts, le partage des ressources, et l'accessibilité au plus grand
+                        <p>À travers les services que nous déployons, nous promouvons un modèle économique fondé sur la mutualisation des coûts, le partage des ressources, et l’accessibilité au plus grand
                             nombre. Pour cette raison les abus seront évités car nous avons tous conscience de la communauté des biens. Ce modèle possède aussi un caractère éducatif car nous pensons
-                            qu'en documentant le déploiement des services, un grand nombre d'utilisateurs seront en mesure de partager à leur tour ces ressources.</p>
+                            qu’en documentant le déploiement des services, un grand nombre d’utilisateurs seront en mesure de partager à leur tour ces ressources.</p>
                     </div>
                 </div>
                 <div class="row col-xs-12">
@@ -292,7 +292,7 @@ foreach($timeline as $k => $v) {
         <div id="tips" class="row">
             <div class="container ombre">
                 <?php echo $tips; ?>
-                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 04/11/2014</p>
+                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 16/03/2015</p>
             </div>
         </div>
 

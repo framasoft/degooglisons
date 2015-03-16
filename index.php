@@ -3,14 +3,14 @@ require('data.php');
 
 $areas = '
     <!-- Village -->
-    <area id="a-village" coords="320,230,130" class="village" alt="Village libriste" title="Village libriste" shape="circle" data-maphilight=\'{"strokeColor":"6A5687","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-village" coords="160,120,60" class="village" alt="Village libriste" title="Village libriste" shape="circle" data-maphilight=\'{"strokeColor":"6A5687","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
     <!-- Big camps -->
-    <area id="a-fermetum" coords="180,410,100" alt="Fermetum" title="Fermetum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
-    <area id="a-centralisum" coords="310,490,100" alt="Centralisum" title="Centralisum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
-    <area id="a-espionnum" coords="460,455,100" alt="Espionnum" title="Espionnum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
-    <area id="a-privatum" coords="510,280,100" alt="Privatum" title="Privatum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-fermetum" coords="95,210,50" alt="Fermetum" title="Fermetum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-centralisum" coords="160,250,50" alt="Centralisum" title="Centralisum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-espionnum" coords="235,230,50" alt="Espionnum" title="Espionnum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-privatum" coords="252,142,50" alt="Privatum" title="Privatum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
     <!-- NSA -->
-    <area id="a-nsa" coords="900,600,90" alt="NSA" title="NSA"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1" >
+    <area id="a-nsa" coords="460,300,45" alt="NSA" title="NSA"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1" >
     <!-- Little camps -->';
 
 $options = '
@@ -600,7 +600,7 @@ réussite de ce projet ambitieux. Framasoft est une association d'intérêt
                         <a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Faire un don<br />à Framasoft</a>
                     </p>
                 </div>
-                <p class="signature text-right small">Campagne commencée le 07/10/2014<br/>Dernière modification le 04/11/2014</p>
+                <p class="signature text-right small">Campagne commencée le 07/10/2014<br/>Dernière modification le 16/03/2015</p>
             </div>
         </div>
     </div>
