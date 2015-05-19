@@ -81,7 +81,7 @@ header .lead {
 }
 
 #enjeux {
-    background:#849551;
+    background:#366F86;
 }
 
 #dangers {
@@ -89,7 +89,7 @@ header .lead {
 }
 
 #solutions {
-    background:#366F86;
+    background:#677835;
 }
 
 #concret {
@@ -109,100 +109,7 @@ header .lead {
 .btn-soutenir {
     font-size:24px;
     font-weight:bold;
-    background:#DBA306;
-    border:1px solid #CC9600;
     margin-bottom:20px;
-}
-
-.btn-soutenir:focus,
-.btn-soutenir:hover {
-    background:#CF9800;
-    border:1px solid  #BD8A00;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #6A5687;
-    border-color: #5D497A;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #583C66;
-    border-color: #50294B;
-}
-
-.btn-enjeux {
-    color: #fff;
-    background-color: #849551;
-    border-color: #768A3E;
-}
-
-.btn-enjeux:hover,
-.btn-enjeux:focus,
-.btn-enjeux:active {
-    color: #fff;
-    background-color: #667832;
-    border-color: #4F5E23;
-}
-
-.btn-dangers {
-  color: #fff;
-  background-color: #CC2D18;
-  border-color: #BC1D08;
-}
-.btn-dangers:hover,
-.btn-dangers:focus,
-.btn-dangers:active {
-  color: #fff;
-  background-color: #B41500;
-  border-color: #A81400;
-}
-
-
-.btn-solutions {
-    color: #fff;
-    background-color: #366F86;
-    border-color: #265F76;
-}
-
-.btn-solutions:hover,
-.btn-solutions:focus,
-.btn-solutions:active {
-    color: #fff;
-    background-color: #1E576E;
-    border-color: #134C63;
-}
-
-.btn-concret {
-    color: #fff;
-    background-color: #6A5687;
-    border-color: #5D497A;
-}
-
-.btn-concret:hover,
-.btn-concret:focus,
-.btn-concret:active {
-    color: #fff;
-    background-color: #583C66;
-    border-color: #50294B;
-}
-
-.btn-liste {
-    color: #fff;
-    background-color: #D2703A;
-    border-color: #D16328;
-}
-
-.btn-liste:hover,
-.btn-liste:focus,
-.btn-liste:active {
-    color: #fff;
-    background-color: #B5521D;
-    border-color: #9C4211;
 }
 
 #back-to-top {
