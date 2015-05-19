@@ -113,7 +113,7 @@ foreach ($data as $k => $v) {
                 </div>
                 <div class="col-md-4 description">
 
-                    <p class="text-center"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
+                    <p class="text-center"><a class="btn btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
 
                     <div class="well">
                         <p><select id="c-select" title="Choisir le camp" class="form-control">
@@ -197,18 +197,18 @@ en est fait.</p>
                     </div>
                     <div id="menu">
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#enjeux" class="btn btn-enjeux btn-block" title="Les enjeux">Les enjeux</a></p>
+                            <p><a href="#enjeux" class="btn btn-info btn-block" title="Les enjeux">Les enjeux</a></p>
                         </div>
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#dangers" class="btn btn-dangers btn-block" title="Les dangers">Les dangers</a></p>
+                            <p><a href="#dangers" class="btn btn-danger btn-block" title="Les dangers">Les dangers</a></p>
                         </div>
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#solutions" class="btn btn-solutions btn-block" title="Nos propositions">Nos propositions</a></p>
+                            <p><a href="#solutions" class="btn btn-success btn-block" title="Nos propositions">Nos propositions</a></p>
                         </div>
                         <div class="col-md-6 col-sm-3 col-xs-6">
-                            <p><a href="#concret" class="btn btn-concret btn-block" title="Concrètement">Concrètement</a></p>
+                            <p><a href="#concret" class="btn btn-primary btn-block" title="Concrètement">Concrètement</a></p>
                         </div>
-                        <p class="text-center"><a class="btn btn-liste btn-lg" href="liste/"> Liste des services</a></p>
+                        <p class="text-center"><a class="btn btn-warning btn-lg" href="liste/"> Liste des services</a></p>
                     </div>
                 </div>
             </div>
@@ -546,7 +546,7 @@ indésirable, etc.).
                             <h3>Services et Charte</h3>
                             <p>Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :</p>
                             <p>
-                                <a href="http://degooglisons-internet.org/liste/" class="btn btn-liste">Liste des services Framasoft</a>
+                                <a href="http://degooglisons-internet.org/liste/" class="btn btn-warning">Liste des services Framasoft</a>
                                 <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des services Framasoft</a>
                             </p>
                         </div>
@@ -578,7 +578,7 @@ son association, son entreprise).</p>
  ces services, nous souhaitons juste proposer un espace numérique
 neutre, non-commercial et non-agressif envers ses utilisateurs.</p>
                 <p><strong>Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :</strong></p>
-                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-liste btn-lg" >Liste des services Framasoft</a></p>
+                <p class="text-center"><a href="http://degooglisons-internet.org/liste/" class="btn btn-warning btn-lg" >Liste des services Framasoft</a></p>
                 <p><img src="img/cloud.jpg" alt="" class="center-block img-responsive" /></p>
             </div>
             <div class="col-md-4">
@@ -597,10 +597,10 @@ de payer l'infrastructure (serveurs), et les permanents dédiés à la
 réussite de ce projet ambitieux. Framasoft est une association d'intérêt
  général : un don de 100€ vous reviendra, après défiscalisation, à 34€.</p>
                     <p class="text-center">
-                        <a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Faire un don<br />à Framasoft</a>
+                        <a class="btn btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Faire un don<br />à Framasoft</a>
                     </p>
                 </div>
-                <p class="signature text-right small">Campagne commencée le 07/10/2014<br/>Dernière modification le 16/03/2015</p>
+                <p class="signature text-right small">Campagne commencée le 07/10/2014<br/>Dernière modification le 19/05/2015</p>
             </div>
         </div>
     </div>

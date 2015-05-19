@@ -25,7 +25,7 @@ $data = [
                             <p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d’autoroute, ou 0,0006% du C.A. annuel de Google</p>
 
 ',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2016' => [
         'name'          => '130 000€ + 1 080 donateurs récurrents',
@@ -57,7 +57,7 @@ $data = [
                             <p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d’autoroute, ou 0,0004% du C.A. annuel de Google</p>
 
                             ',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2015' => [
         'name'          => '70 000€ + 780 donateurs récurrents',
@@ -88,7 +88,7 @@ $data = [
                             <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l’association aura besoin d’embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
                             <p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d’autoroute, ou 0,0002% du C.A. annuel de Google</p>
                             ',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'tip2014' => [
         'name'          => '35 000€ + 550 donateurs récurrents',
@@ -121,7 +121,7 @@ $data = [
         </p>
         <p>L’objectif fixé est de passer de 400 à 550 donateurs récurrents, ainsi que de récolter 35 000€ en dons ponctuels sur l’année.</p>
         <p>Nous vous rappelons que Framasoft est une association largement autofinancée par ses donateurs. Pour vous donner une échelle de nos besoins, notre objectif 2014 (35 000€ et 550 donateurs récurrents) représente le coût de 8 mètres d’autoroute, ou 0,000083% du C.A. annuel de Google.</p>',
-        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-warning btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
+        'modale_footer' => '<a href="http://soutenir.framasoft.org" class="btn btn-soutenir"><span class="fa fa-fw fa-heart"></span> Soutenir</a>'
     ],
     'avaaz' => [                                                        // id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte)
         'name'          => 'Avaaz',                                       // h2, alt, options
@@ -176,7 +176,7 @@ $data = [
                             <p>
                                 <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Frama.link la raccourcira.
                             </p>',
-        'modale_footer' => '<p class="precisions">Frama.link est une instance basée sur <a href="http://lstu.fiat-tux.fr/"><abbr>LSTU</abbr></a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-lstu/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Frama.link est une instance basée sur <a href="http://lstu.fiat-tux.fr/"><abbr>LSTU</abbr></a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-lstu/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
 
     ],
     'blogger' => [
@@ -241,7 +241,7 @@ $data = [
                                 votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                             </p>
                             ',
-        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'doodle' => [
         'name'          => 'Doodle',
@@ -272,7 +272,7 @@ $data = [
                                 <li>planification d’une dead-line</li>
                                 <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
                             </ul>',
-        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'dropbox' => [
         'name'          => 'Dropbox',
@@ -287,7 +287,7 @@ $data = [
         'date_frama'    => '2015',
         'coordonnees'   => '570,600,40',
         'class'         => '',
-        'soft_frama'    => 'Pyd.io',
+        'soft_frama'    => 'Owncloud',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
         'url_frama'     => '',
         'id_frama'      => 'framadrive',
@@ -301,7 +301,7 @@ $data = [
                                 <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                                 xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
                             </p>',
-        'modale_footer' => '<p class="precisions">Framadrive est une instance basée sur <a href="http://pyd.io/">Pyd.io</a></p>'
+        'modale_footer' => '<p class="precisions">Framadrive est une instance basée sur <a href="http://owncloud/">Owncloud</a></p>'
     ],
     'dropsend' => [
         'name'          => 'Dropsend',
@@ -450,12 +450,12 @@ $data = [
         'wkp_editeur'   => 'Google',
         'similaire'     => '',
         'alt_online'    => '<a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>, <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>…',
-        'alt_offline'   => '<a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bookin</span>',
-        'date_frama'    => '2014',
+        'alt_offline'   => '<a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>, <a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>',
+        'alt_frama'     => '<span class="violet">Frama</span><span class="vert rouge">bookin</span>',
+        'date_frama'    => '2015',
         'coordonnees'   => '630,205,40',
         'class'         => 'potion',
-        'soft_frama'    => 'Framabook OPDS',
+        'soft_frama'    => 'BicBucStriim',
         'long_desc'     => 'Une bibliothèque de plusieurs milliers d’ouvrages',
         'url_frama'     => '',
         'id_frama'      => 'framaopds',
@@ -599,23 +599,20 @@ $data = [
         'similaire'     => '',
         'alt_online'    => '<a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://www.ixquick.com/">Ixquick</a>',
         'alt_offline'   => '<a href="https://github.com/asciimoo/searx">Searx</a>, <a href="http://codingteam.net/project/mysearch">MySearch</a>, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">search</span>',
-        'date_frama'    => '2014',
+        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bee</span>',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">2015</a>',
         'coordonnees'   => '350,245,40',
-        'class'         => 'potion',
+        'class'         => 'fight',
         'soft_frama'    => 'Searx',
         'long_desc'     => 'Et si vos recherches n’étaient plus fichées par Google ?',
-        'url_frama'     => '',
-        'id_frama'      => 'framasearch',
+        'url_frama'     => 'https://framabee.org',
+        'id_frama'      => 'framabee',
         'modale_title'  => 'Une recherche anonyme',
         'modale_body'   => '<p>
-                                <a href="http://searx.framasoft.org/">Framasearch</a> est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d’être affichées dans votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait alors office d’intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n’est donc pas enregistrée chez eux. </p>
-                                <p>Evidemment, vous devez avoir confiance en Framasoft/Framasearch si vous souhaitez l’utiliser, c’est pourquoi nous proposons une <a href="/nav/html/charte.html">charte</a>.
-                            </p>
-                            <p>
-                                <span class="violet">Framasearch</span> sera bientôt disponible. En attendant, vous pouvez par exemple utiliser <a href="https://duckduckgo.com/">DuckDuckGo</a> ou <a href="https://www.ixquick.com/">Ixquick</a>
+                                <a href="https://framabee.org/">Framabee</a> est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d’être affichées dans votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait alors office d’intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n’est donc pas enregistrée chez eux. </p>
+                                <p>Evidemment, vous devez avoir confiance en Framasoft/Framabee si vous souhaitez l’utiliser, c’est pourquoi nous proposons une <a href="/nav/html/charte.html">charte</a>.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framasearch est une instance basée sur <a href="https://searx.0x2a.tk/">Searx</a></p>'
+        'modale_footer' => '<p class="precisions">Framabee est une instance basée sur <a href="https://searx.0x2a.tk/">Searx</a></p>'
     ],
     'gslides' => [
         'name'          => 'Google Slides',
@@ -629,7 +626,7 @@ $data = [
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">slides</span>',
         'date_frama'    => '2015',
         'coordonnees'   => '635,555,40',
-        'class'         => '',
+        'class'         => 'potion',
         'soft_frama'    => 'Strut.io',
         'long_desc'     => 'Des diaporamas de haute qualité sans se fatiguer',
         'url_frama'     => '',
@@ -703,7 +700,7 @@ $data = [
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
         'coordonnees'   => '430,90,40',
         'class'         => 'fight',
-        'soft_frama'    => 'Framapic',
+        'soft_frama'    => 'Lut.im',
         'long_desc'     => 'Partagez vos images anonymement',
         'url_frama'     => 'https://framapic.org',
         'id_frama'      => 'framalutim',
@@ -715,7 +712,7 @@ $data = [
                             <p>
                                 <span class="violet">Framapic</span> permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-lutim/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-lutim/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'jsfiddle' => [
         'name'          => 'jsFiddle',
@@ -828,7 +825,7 @@ $data = [
                                 du courriel ou du petit bout de papier. Framabin vous permet d’envoyer une adresse et donner accès à ces informations en toute sécurité et simplicité. Le
                                 serveur stocke des données illisibles pour lui.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framabin est une instance basée sur <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-zerobin/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framabin est une instance basée sur <a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-zerobin/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'pocket' => [
         'name'          => 'Pocket',
@@ -1037,7 +1034,7 @@ $data = [
                                     </div>
                                     <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>
                             </p>',
-        'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
     'loomio' => [
         'name'          => '',
@@ -1099,7 +1096,7 @@ $data = [
                             <p>
                                 <span class="violet">Mise à jour</span> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L’interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framadate est une instance basée sur <a href="http://studs.u-strasbg.fr/">Studs</a> largement remaniée</p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-framadate/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
 
     ],
     'mypads' => [
@@ -1213,7 +1210,7 @@ $data = [
                             <p>
                                 <span class="violet">Mise à jour</span> : le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d’enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-install"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
+        'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-success"><span class="glyphicon glyphicon-tree-deciduous"></span> Installer</a>'
     ],
         'gmail' => [
         'name'          => 'Google Mail',

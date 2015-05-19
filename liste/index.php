@@ -88,7 +88,7 @@ foreach ($data as $k => $v) {
                 <p class="back_content">'.$v['long_desc'].'</p>
 
                 <div class="col-xs-6">
-                    <a href="http://soutenir.framasoft.org" class="btn btn-xs btn-warning btn-soutenir btn-block"><span class="fa fa-w fa-heart"></span> Soutenir</a>
+                    <a href="http://soutenir.framasoft.org" class="btn btn-xs btn-soutenir btn-block"><span class="fa fa-w fa-heart"></span> Soutenir</a>
                 </div>
                 <div class="col-xs-6">
                     <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$v['id_frama'].'">+ d’infos</button>
@@ -157,7 +157,6 @@ foreach($timeline as $k => $v) {
         <link rel="shortcut icon" href="../img/favicon.png">
         <link href="/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
         <link href="../css/liste.css" rel="stylesheet" type="text/css" />
-        <link href="../css/colors.css" rel="stylesheet" type="text/css" />
         <script src="/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
         <script src="/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script type="text/javascript">
@@ -244,7 +243,7 @@ foreach($timeline as $k => $v) {
                         </nav>
 
                         <div class="col-md-6 hidden-sm">
-                            <p class="text-center" style="margin:0"><a class="btn btn-warning btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
+                            <p class="text-center" style="margin:0"><a class="btn btn-lg btn-soutenir" href="http://soutenir.framasoft.org"><span class="fa fa-w fa-heart"></span> Soutenir ce projet</a></p>
                         </div>
 
                     </div>
@@ -292,7 +291,7 @@ foreach($timeline as $k => $v) {
         <div id="tips" class="row">
             <div class="container ombre">
                 <?php echo $tips; ?>
-                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 16/03/2015</p>
+                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 19/05/2015</p>
             </div>
         </div>
 
