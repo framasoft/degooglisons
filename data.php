@@ -456,7 +456,7 @@ $data = [
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">bookin</span>',
         'date_frama'    => '2014',
         'coordonnees'   => '1240,410,80',
-        'class'         => 'potion',
+        'class'         => 'figth',
         'soft_frama'    => 'Framabook OPDS',
         'long_desc'     => 'Une bibliothèque de plusieurs milliers d\'ouvrages',
         'url_frama'     => '',
