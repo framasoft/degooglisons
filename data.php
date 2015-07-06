@@ -1053,19 +1053,18 @@ $data = [
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">xxx</span>',
         'date_frama'    => '2016',
         'coordonnees'   => '',
-        'class'         => '',
+        'class'         => 'potion',
         'soft_frama'    => 'loomio',
-        'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
+        'long_desc'     => 'Un outil pour mieux gérer les prises de décisions collectives',
         'url_frama'     => '',
         'id_frama'      => 'framaloomio',
-        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
+        'modale_title'  => 'Décidez ensembles,',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
-                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <a href="###">Framaloomio</a> vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d\'accord et passez à l\'action, le tout dans les délais que vous fixés au départ.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> ouvrez un compte et téléchargez vos vidéos. Vous gardez vos droits et la liberté de modifier vos téléchargements.
-                            </p>',
+                                 <span class="violet">Fonctionnement :</span> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s\'exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
+                            </p >',
         'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="https://www.loomio.org">loomio</a></p>'
     ],
     // Mises à jour
