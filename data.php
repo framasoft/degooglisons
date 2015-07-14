@@ -411,8 +411,8 @@ $data = [
                             <p>Pour l\'instant, le dépôt de code n\'est autorisé que pour les projets Framasoft, mais dès que nous aurons validé la stabilité de la plateforme, nous l\'ouvrirons progressivement à d\'autres communautés.</p>
                             <p>
                                 <span class="violet">Avancement</span> La plateforme git est actuellement en cours d\'évaluation. Les premiers comptes « externes » devraient pouvoir être accueillis dès la fin de l\'année 2014. Vous pouvez nous contacter si vous pensez avoir l\'utilité de Framagit (en lieu et place de Github, par exemple).
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framagit est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
+                              </p>',
+        'modale_  footer' => '<p class="precisions">Framagit est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
     ],
     'gagenda' => [
         'name'          => 'Google Agenda',
@@ -518,21 +518,19 @@ $data = [
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">forms</span>',
         'date_frama'    => '2017',
         'coordonnees'   => '980,745,80',
-        'class'         => '',
-        'soft_frama'    => 'DayBed',
-        'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
+        'class'         => 'potion',
+        'soft_frama'    => 'Drupal + Webform',
+        'long_desc'     => 'Créez simplement des questionnaires',
         'url_frama'     => '',
         'id_frama'      => 'framaforms',
-        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
+        'modale_title'  => 'Création de questionaires',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
-                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <a href="###">Framaforms</a> vous permet de créer les questionaires dont vous avez besoin, que ce soit dans un cadre scolaire, familial ou associatif. Créez vos questions en fonction de vos besoins, des formulaires à choix multiples aux champs de texte libre.
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                                xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">Fonctionnement : </span> créez un compte sur Framaforms et lancez-vous dans la création des questionnaires, en fonction de vos besoins. Vos sondés n\'ont pas besoin de s\'inscrire pour pouvoir répondre. Vous disposez d\'une synthèse des réponses.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaforms est une instance basée sur <a href="https://github.com/spiral-project/daybed">DayBed</a></p>'
+        'modale_footer' => '<p class="precisions">Framaforms est une instance basée sur <a href="https://www.drupal.org/">Drupal</a> et son module <a href="https://www.drupal.org/project/webform">Webform</p>'
     ],
     'ggroups' => [
         'name'          => 'Google Groupes',
