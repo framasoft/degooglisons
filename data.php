@@ -135,7 +135,7 @@ $data = [
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">pétition</span>',
         'date_frama'    => '2015',                                        // si chiffre → ( sortie prévue [2015](lien plm) )
         'coordonnees'   => '595,900,80',
-        'class'         => '',                                            // fight ou potion
+        'class'         => 'potion',                                            // fight ou potion
         'soft_frama'    => 'Drupal + Webform',
         'long_desc'     => 'Lancez vos pétitions sans offrir les adresses de vos soutiens',
         'url_frama'     => '',
@@ -713,7 +713,7 @@ $data = [
                             <p>
                                 <span class="violet">Framapic</span> permet d\'envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
                             </p>',
-        'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a>, développé par un membre de Framasoft</p>'
+            'modale_footer' => '<p class="precisions">Framapic est une instance basée sur <a href="https://lut.im/">Lut.im</a>, développé par un membre de Framasoft</p>'
     ],
     'jsfiddle' => [
         'name'          => 'jsFiddle',
@@ -897,21 +897,19 @@ $data = [
         'alt_frama'     => '<span class="violet">Frama</span><span class="vert">talk</span>',
         'date_frama'    => '2015',
         'coordonnees'   => '450,910,80',
-        'class'         => '',
-        'soft_frama'    => 'WebRTC',
-        'long_desc'     => '',
+        'class'         => 'potion',
+        'soft_frama'    => 'Jitsi Meet',
+        'long_desc'     => 'Discutez librement avec vos amis',
         'url_frama'     => '',
         'id_frama'      => 'framatalk',
-        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
+        'modale_title'  => 'Vidéoconférence',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
-                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <a href="###">Framatalk</a> vous permet de discuter simplement avec vos amis, sans installation complexe de logiciel. Vous discutez simplement, sans aucune analyse des données liées aux conversations. Tout se passe entre vous et vos amis.
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                                xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">Fonctionnement :</span> Directement à partir de votre navigateur web, vous êtes mis en relation avec vos amis, sans devoir installer de logiciel supplémentaire. Une fois connecté, donnez l\'autorisation à votre navigateur d\'utiliser votre micro et votre webcam, et profitez de la discussion en toute simplicité.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framatalk est une instance basée sur <a href="http://www.webrtc.org/">WebRTC</a></p>'
+        'modale_footer' => '<p class="precisions">Framatalk est une instance basée sur <a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a></p>'
     ],
     'twitter' => [
         'name'          => 'Twitter',
