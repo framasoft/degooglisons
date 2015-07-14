@@ -136,23 +136,21 @@ $data = [
         'date_frama'    => '2015',                                        // si chiffre → ( sortie prévue [2015](lien plm) )
         'coordonnees'   => '595,900,80',
         'class'         => '',                                            // fight ou potion
-        'soft_frama'    => 'WeThePeople',
-        'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
+        'soft_frama'    => 'Drupal + Webform',
+        'long_desc'     => 'Lancez vos pétitions sans offrir les adresses de vos soutiens',
         'url_frama'     => '',
         'id_frama'      => 'framapetition',
-        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
+        'modale_title'  => 'Libérez vos pétitions',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
-                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <a href="###">Framapétition</a> vous permet de lancer des pétitions sur les sujets qui vous tiennent à cœur. En quelques clics, votre pétition est lancée, et les adresses de vos soutiens ne seront pas exploités par des régies publicitaires.
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                                xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="https://github.com/WhiteHouse/petitions">WeThePeople</a></p>'
+                                <span class="violet">Fonctionnement :</span> Inscrivez-vous, lancez une nouvelle pétition en suivant les instructions. Votre sondage sera créé. Vos soutiens n\aurons pas besoin de s\'inscrire pour pouvoir y participer.
+                            </p   >',
+        'modale_footer' => '<p class="precisions">Framapétition est une instance basée sur le logiciel libre <a href="https://www.drupal.org/">Drupal</a> et son module <a href="https://www.drupal.org/project/webform">WebForm (en)</p>'
     ],
     'bitly' => [
-        'name'          => 'Bit.ly',
+        'name'            => 'Bit.ly',
         'wkp'           => 'Bit.ly',
         'description'   => 'Réduction d’URL',
         'editeur'       => 'Bitly',
@@ -171,11 +169,11 @@ $data = [
         'modale_title'  => 'Finies les adresses trop longues',
         'modale_body'   => '<p>
                                 Avec <a href="###">Framashort</a>, il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
-                                Sur les réseaux sociaux et le microblogging, disposer d’une adresse raccourcie permet d’économiser de l’espace et gagner en clarté.
+                                  Sur les réseaux sociaux et le microblogging, disposer d’une adresse raccourcie permet d’économiser de l’espace et gagner en clarté.
                             </p>
                             <p>
-                                <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Framashort la raccourcira.
-                            </p>',
+                                  <span class="violet">Fonctionnement :</span> entrez l’adresse dans sa version originale et Framashort la raccourcira.
+                              </p>',
         'modale_footer' => '<p class="precisions">Framashort est une instance basée sur <a href="http://lstu.fiat-tux.fr/">Lstu</a></p>'
 
     ],
