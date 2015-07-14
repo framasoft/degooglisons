@@ -991,6 +991,32 @@ $data = [
         'modale_footer' => '<p class="precisions">Framatube est une instance basée sur <a href="http://mediagoblin.org/">Mediagoblin</a></p>'
     ],
     // Pas de concurrent
+    'Framagame' => [
+        'name'          => 'Framagames',
+        'wkp'           => 'Framagames',
+        'description'   => 'Jeux',
+        'editeur'       => '',
+        'wkp_editeur'   => '',
+        'similaire'     => '',
+        'alt_online'    => '',
+        'alt_offline'   => '',
+        'alt_frama'     => '<a href="http://framagames.org"><span class="violet">Frama</span><span class="vert">games</span></a>',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">juin 2015</a>)',
+        'coordonnees'   => '',
+        'class'         => 'fight',
+        'soft_frama'    => 'Diaspora*',
+        'long_desc'     => 'Un réseau social éthique et décentralisé',
+        'url_frama'     => 'http://framagames.org',
+        'id_frama'      => 'framagames',
+        'modale_title'  => 'Faites une pose, jouez quelques instants',
+        'modale_body'   => '<p>
+                                <a href="http://framagames.org">Framagames</a>, vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu\'hors ligne. Faites une pause et profitez de l\'un des jeux proposés.
+                            </p>
+                            <p>
+                                <span class="violet">Fonctionnement :</span> Chacun des jeux proposé sur Framagames est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
+                            </p>',
+'modale_footer' => '<p class="precisions">Framagames est une compilation de jeu libres répondant au critère d\utilisation en ligne et hors ligne. Ces jeux ne sont pas développés par Framasoft, et les crédits des jeux respectifs sont indiqués sur le site.</p>'
+    ],
     'framavectoriel' => [
         'name'          => 'Pixlr',
         'wkp'           => '',
