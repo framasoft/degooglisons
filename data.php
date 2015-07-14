@@ -744,32 +744,30 @@ $data = [
         'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="http://jsbin.com">jsbin</a></p>'
     ],
     'kanban' => [
-        'name'          => 'Kanban',
-        'wkp'           => '',
+        'name'          => 'Trello',
+        'wkp'           => 'Trello',
         'description'   => 'Gestion de tâches',
-        'editeur'       => '',
-        'wkp_editeur'   => '',
+        'editeur'       => 'Trello Inc',
+        'wkp_editeur'   => 'Trello Inc',
         'similaire'     => '',
-        'alt_online'    => '',
+        'alt_online'    => 'Libreboard',
         'alt_offline'   => '',
-        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">xxx</span>',
+        'alt_frama'     => '<span class="violet">Frama</span><span class="vert">board</span>',
         'date_frama'    => '2016',
         'coordonnees'   => '',
-        'class'         => '',
+        'class'         => 'potion',
         'soft_frama'    => 'Kanboard',
-        'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
+        'long_desc'     => 'Gestionnaire de projets',
         'url_frama'     => '',
         'id_frama'      => 'framaboard',
-        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxx',
+        'modale_title'  => 'Gestionnaire de projets',
         'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
-                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                 <a href="###">Framaboard</a> est un gétionnaire de tâches visuel. Il permet de gérer des projets de manière collaborative, en suivant la méthode Kanban. Son système visuel permet de s\'y retrouver au premier coup d\'oeil, quelque soit votre habitude à utiliser ce genre d\'outil.
                             </p>
                             <p>
-                                <span class="violet">xxxxx xxxxxxxx xxxx</span> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                                xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                <span class="violet">Fonctionnement :</span> Lancez votre projet, et commencez à le gérer collectivement, tâche par tâche. Assignez une personne à chaque tache, définissez des fonctions, des avancements et des délais. Cette gestion visuelle vous permettra de voir l\'état du projet en un coup d\'œil.
                             </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="http://kanboard.net/">Kanboard</a></p>'
+        'modale_footer' => '<p class="precisions">Framaboard est une instance basée sur <a href="http://kanboard.net/">Kanboard</a></p>'
     ],
     'padlet' => [
         'name'          => 'Padlet',
