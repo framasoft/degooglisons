@@ -291,7 +291,7 @@ foreach($timeline as $k => $v) {
         <div id="tips" class="row">
             <div class="container ombre">
                 <?php echo $tips; ?>
-                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 19/05/2015</p>
+                <p class="signature text-right small" style="margin-right:20px">Campagne commencée le 07/10/2014<br>Dernière modification le 17/07/2015</p>
             </div>
         </div>
 
