@@ -72,18 +72,18 @@ foreach ($data as $k => $v) {
     <title>Dégooglisons Internet</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="img/favicon.png">
-    <link href="/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
     <link href="css/styles.css" media="all" rel="stylesheet">
 
-    <script src="/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="https://n4.framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
     <script src="js/jquery.maphilight.js" type="text/javascript"></script>
     <script src="js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
 </head>
 <body>
-    <script src="/nav/nav.js" type="text/javascript"></script>
+    <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
         <div class="row" id="mainHeader">
             <div class="container ombre">
                 <header>
@@ -547,7 +547,7 @@ indésirable, etc.).
                             <p>Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :</p>
                             <p>
                                 <a href="http://degooglisons-internet.org/liste/" class="btn btn-warning">Liste des services Framasoft</a>
-                                <a href="http://degooglisons-internet.org/nav/html/charte.html" class="btn btn-primary">Charte des services Framasoft</a>
+                                <a href="https://n4.framasoft.org/nav/html/charte.html" class="btn btn-primary">Charte des services Framasoft</a>
                             </p>
                         </div>
                     </div>
