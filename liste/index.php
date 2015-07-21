@@ -155,10 +155,10 @@ foreach($timeline as $k => $v) {
         <meta name="description" content="Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet" />
         <meta name="author" content="Framasoft" />
         <link rel="shortcut icon" href="../img/favicon.png">
-        <link href="/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
+        <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
         <link href="../css/liste.css" rel="stylesheet" type="text/css" />
-        <script src="/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="https://n4.framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('a[href="#leds"]').on('click', function() {
@@ -202,7 +202,7 @@ foreach($timeline as $k => $v) {
         </script>
     </head>
     <body data-spy="scroll" data-target=".nav-year">
-        <script src="/nav/nav.js" type="text/javascript"></script>
+        <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
         <div class="row" id="mainHeader">
             <div class="container ombre">
                 <header class="header">
@@ -284,7 +284,7 @@ foreach($timeline as $k => $v) {
                     </div>
                 </div>
                 <div class="row col-xs-12">
-                    <p class="text-center well">Pour en savoir plus, consultez <strong><a href="http://degooglisons-internet.org/nav/html/charte.html">notre charte</a></strong> détaillée.</p>
+                    <p class="text-center well">Pour en savoir plus, consultez <strong><a href="https://n4.framasoft.org/nav/html/charte.html">notre charte</a></strong> détaillée.</p>
                 </div>
             </div>
         </div>
