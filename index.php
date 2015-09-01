@@ -57,7 +57,7 @@ foreach ($data as $k => $v) {
                 $text .= ($v['alt_online']!='') ? 'Alternative(s) en ligne : '.$v['alt_online'].'<br />' : '';
                 $text .= 'Alternative(s) à installer : '.$v['alt_offline'].'
             </p>
-            <p>Service Framasoft : '.$v['alt_frama'].'<br />';
+            <p>Service Framasoft : <span class="h4">'.$v['alt_frama'].'</span><br />';
                 $text .= (strlen($v['date_frama'])==4) ? '(sortie prévue <a href="/liste/#'.$v['date_frama'].'">en '.$v['date_frama'].'</a>)' : $v['date_frama'];
                 $text .= '
             </p>
