@@ -126,7 +126,7 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>…',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">pétition</b>',
         'date_frama'    => '2015',                                        // si chiffre → ( sortie prévue [2015](lien plm) )
-        'coordonnees'   => '305,460,40',
+        'coordonnees'   => '190,595,40',
         'class'         => 'potion',                                      // fight ou potion
         'soft_frama'    => 'Drupal + Webform',
         'long_desc'     => 'Lancez vos pétitions sans offrir les adresses de vos soutiens',
@@ -152,7 +152,7 @@ $data = [
         'alt_offline'   => '<a href="http://lstu.fr/">LSTU</a>, <a href="http://yourls.org/">YOURLS</a>, <a href="http://lilurl.sourceforge.net/">LilURL</a>…',
         'alt_frama'     => '<a href="https://frama.link"><b class="violet">Frama</b>.<b class="vert">link</b></a> ou <a href="https://huit.re"><b class="violet">Huit</b>.<b class="vert">re</b></a>',
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
-        'coordonnees'   => '233,535,40',
+        'coordonnees'   => '545,300,40',
         'class'         => 'fight',
         'soft_frama'    => 'LSTU',
         'long_desc'     => 'Des adresses plus courtes en toute discrétion',
@@ -179,7 +179,7 @@ $data = [
         'alt_offline'   => '<a href="http://www.pluxml.org/">PluXML</a>, <a href="http://wordpress.org">Wordpress</a>…',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">sites</b>',
         'date_frama'    => '2016',
-        'coordonnees'   => '575,400,40',
+        'coordonnees'   => '605,480,40',
         'class'         => '',
         'soft_frama'    => 'Pluxml',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -207,7 +207,7 @@ $data = [
         'alt_offline'   => '<a href="http://wisemapping.com/">Wisemapping</a>, <a href="https://github.com/drichard/mindmaps">Mindmaps</a>, <a href="https://github.com/mindmup/mindmup">Mindmup</a>',
         'alt_frama'     => '<a href="http://framindmap.org"><b class="violet">Fram</b><b class="vert">indmap</b></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">octobre 2012</a>)',
-        'coordonnees'   => '465,575,40',
+        'coordonnees'   => '360,145,40',
         'class'         => 'fight',
         'soft_frama'    => 'Wisemapping',
         'long_desc'     => 'Fabriquez vos cartes mentales',
@@ -243,7 +243,7 @@ $data = [
         'alt_offline'   => '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>, <a href="http://www.peacefrogs.net/papillon">Papillon</a>',
         'alt_frama'     => '<a href="http://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">juin 2011</a>)',
-        'coordonnees'   => '605,295,40',
+        'coordonnees'   => '415,190,40',
         'class'         => 'fight',
         'soft_frama'    => 'Studs',
         'long_desc'     => 'Convenir d’une réunion et créer un sondage',
@@ -274,7 +274,7 @@ $data = [
         'alt_offline'   => '<a href="https://pyd.io/">Pyd.io</a>, <a href="http://owncloud.org/">OwnCloud</a>, <a href="http://www.seafile.com">Seafile</a>',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">drive</b>',
         'date_frama'    => '2015',
-        'coordonnees'   => '570,600,40',
+        'coordonnees'   => '325,550,40',
         'class'         => 'potion',
         'soft_frama'    => 'Owncloud',
         'long_desc'     => 'Héberger ses documents en ligne',
@@ -287,34 +287,6 @@ $data = [
                             </p>',
         'modale_footer' => '<p class="precisions">Framadrive est une instance basée sur <a href="http://owncloud/">Owncloud</a></p>'
     ],
-    'dropsend' => [
-        'name'          => 'Dropsend',
-        'wkp'           => 'Dropsend',
-        'description'   => 'Envoi de gros fichiers',
-        'editeur'       => '',
-        'wkp_editeur'   => '',
-        'similaire'     => 'Wetransfer',
-        'alt_online'    => '',
-        'alt_offline'   => '',
-        'alt_frama'     => '<b class="violet">Frama</b><b class="vert">drop</b>',
-        'date_frama'    => '2015',
-        'coordonnees'   => '',
-        'class'         => '',
-        'soft_frama'    => 'LUFI',
-        'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
-        'url_frama'     => '',
-        'id_frama'      => 'framadrop',
-        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
-        'modale_body'   => '<p>
-                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
-                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                            </p>
-                            <p>
-                                <b class="violet">xxxxx xxxxxxxx xxxx</b> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                                xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="######">Lufi</a></p>'
-    ],
     'evernote' => [
         'name'          => 'Evernote',
         'wkp'           => 'Evernote',
@@ -326,7 +298,7 @@ $data = [
         'alt_offline'   => '<a href="https://laverna.cc/">Laverna</a>',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">notes</b>',
         'date_frama'    => '2017',
-        'coordonnees'   => '590,480,40',
+        'coordonnees'   => '560,600,40',
         'class'         => '',
         'soft_frama'    => 'Laverna',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -354,7 +326,7 @@ $data = [
         'alt_offline'   => '<a href="https://diasporafoundation.org/">Diaspora*</a>, <a href="https://movim.eu/">Movim</a>',
         'alt_frama'     => '<a href="http://framasphere.org"><b class="violet">Frama</b><b class="vert">sphère</b></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>)',
-        'coordonnees'   => '375,325,40',
+        'coordonnees'   => '240,440,40',
         'class'         => 'fight',
         'soft_frama'    => 'Diaspora*',
         'long_desc'     => 'Un réseau social éthique et décentralisé',
@@ -383,7 +355,7 @@ $data = [
         'alt_offline'   => '<a href="http://gitlab.org">Gitlab</a>',
         'alt_frama'     => '<a href="http://git.framasoft.org"><b class="violet">Frama</b><b class="vert">git</b></a>',
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">mars 2015</a>)',
-        'coordonnees'   => '320,565,40',
+        'coordonnees'   => '505,380,40',
         'class'         => 'fight',
         'soft_frama'    => 'Gitlab',
         'long_desc'     => 'Du code libre c’est bien. Sur une plateforme libre c’est mieux !',
@@ -398,6 +370,33 @@ $data = [
                             ',
         'modale_footer' => '<p class="precisions">Framagit est une instance basée sur <a href="https://about.gitlab.com/">Gitlab</a></p>'
     ],
+    'gmail' => [
+        'name'          => 'GMail',
+        'wkp'           => 'Gmail',
+        'description'   => 'Service de messagerie',
+        'editeur'       => 'Google',
+        'wkp_editeur'   => 'Google',
+        'similaire'     => 'Outlook, Yahoo Mail, Orange…',
+        'alt_online'    => '<a href="https://openmailbox.org">OpenMailBox</a>, <a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>,… ',
+        'alt_offline'   => '<a href="http://mozilla.org/thunderbird">Thunderbird</a>',
+        'alt_frama'     => '<b class="violet">Frama</b><b class="vert">mail</b>',
+        'date_frama'    => '2017',
+        'coordonnees'   => '615,680,40',
+        'class'         => '',
+        'soft_frama'    => 'caliop',
+        'long_desc'     => 'Vos mails, sans la NSA dedans',
+        'url_frama'     => 'https://framamail',
+        'id_frama'      => 'framamail',
+        'modale_title'  => 'Votre courrier, dans une enveloppe blindée',
+        'modale_body'   => '<p>
+                                <a href="http://framadate.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
+                            </p>
+                            <p>
+                                <b class="violet">Fonctionnement :</b> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
+                                Comment faire plus simple ?
+                            </p>',
+        'modale_footer' => '<p class="precisions">Framamail est une instance basée sur <a href="https://www.caliopen.org/">Caliopen</a></p>'
+    ],
     'gagenda' => [
         'name'          => 'Google Agenda',
         'wkp'           => 'Google_Agenda',
@@ -409,7 +408,7 @@ $data = [
         'alt_offline'   => '<a href="http://www.k5n.us/webcalendar.php">webcalendar</a>, <a href="http://www.zkoss.org/product/">ZK Calendar</a>…',
         'alt_frama'     => '<b class="violet">Fram</b><b class="vert">agenda</b>',
         'date_frama'    => '2016',
-        'coordonnees'   => '400,520,40',
+        'coordonnees'   => '540,530,40',
         'class'         => '',
         'soft_frama'    => 'Webcalendar',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -437,7 +436,7 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>, <a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>',
         'alt_frama'     => '<a href="http://framabookin.org"><b class="violet">Frama</b><b class="rouge">bookin</b></a>',
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon">juin 2015</a>)',
-        'coordonnees'   => '630,205,40',
+        'coordonnees'   => '590,400,40',
         'class'         => 'fight',
         'soft_frama'    => 'BicBucStriim',
         'long_desc'     => 'Une bibliothèque de plusieurs milliers d’ouvrages',
@@ -501,7 +500,7 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/spiral-project/daybed">DayBed</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">forms</b>',
         'date_frama'    => '2017',
-        'coordonnees'   => '500,380,40',
+        'coordonnees'   => '277,618,40',
         'class'         => 'potion',
         'soft_frama'    => 'Drupal + Webform',
         'long_desc'     => 'Créez simplement des questionnaires',
@@ -527,7 +526,7 @@ $data = [
         'alt_offline'   => '<a href="http://www.gnu.org/software/mailman/">mailman</a>, <a href="http://www.sympa.org/">sympa</a>…',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">listes</b>',
         'date_frama'    => '2017',
-        'coordonnees'   => '615,725,40',
+        'coordonnees'   => '615,750,40',
         'class'         => '',
         'soft_frama'    => 'Sympa',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -555,7 +554,7 @@ $data = [
         'alt_offline'   => '<a href="http://tt-rss.org/">TinyTinyRSS</a>, <a href="http://freshrss.org/">FreshRSS</a>…',
         'alt_frama'     => '<a href="https://framanews.org"><b class="violet">Frama</b><b class="vert">news</b></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2013/06/27/framanews-rss-google-reader">juin 2013</a>)',
-        'coordonnees'   => '190,610,40',
+        'coordonnees'   => '430,80,40',
         'class'         => 'fight',
         'soft_frama'    => 'TinyTinyRSS',
         'long_desc'     => 'Suivez l’actualité et faites vos choix librement',
@@ -583,7 +582,7 @@ $data = [
         'alt_offline'   => '<a href="https://github.com/asciimoo/searx">Searx</a>, <a href="http://codingteam.net/project/mysearch">MySearch</a>, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>',
         'alt_frama'     => '<a href="https://framabee.org"><b class="violet">Frama</b><b class="vert">bee</b></a>',
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">mai 2015</a>)',
-        'coordonnees'   => '350,245,40',
+        'coordonnees'   => '370,330,40',
         'class'         => 'fight',
         'soft_frama'    => 'Searx',
         'long_desc'     => 'Et si vos recherches n’étaient plus fichées par Google ?',
@@ -607,7 +606,7 @@ $data = [
         'alt_offline'   => '<a href="http://strut.io/">Strut.io</a>',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">slides</b>',
         'date_frama'    => '2015',
-        'coordonnees'   => '635,555,40',
+        'coordonnees'   => '490,465,40',
         'class'         => 'potion',
         'soft_frama'    => 'Strut.io',
         'long_desc'     => 'Des diaporamas de haute qualité sans se fatiguer',
@@ -644,7 +643,7 @@ $data = [
         'alt_offline'   => '<a href="https://ethercalc.org/">Ethercalc</a>, <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>',
         'alt_frama'     => '<a href="https://framacalc.org"><b class="violet">Frama</b><b class="vert">calc</b></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octobre 2012</a>)',
-        'coordonnees'   => '375,660,40',
+        'coordonnees'   => '365,255,40',
         'class'         => 'fight',
         'soft_frama'    => 'Ethercalc',
         'long_desc'     => 'Partagez vos tableaux et collaborez !',
@@ -680,7 +679,7 @@ $data = [
         'alt_offline'   => '<a href="https://lut.im">Lut.im</a>, <a href="https://coquelicot.potager.org/">Coquelicot</a>',
         'alt_frama'     => '<a href="https://framapic.org"><b class="violet">Frama</b><b class="vert">pic</b></a>',
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
-        'coordonnees'   => '430,90,40',
+        'coordonnees'   => '630,190,40',
         'class'         => 'fight',
         'soft_frama'    => 'Lut.im',
         'long_desc'     => 'Partagez vos images anonymement',
@@ -707,7 +706,7 @@ $data = [
         'alt_offline'   => '<a href="http://jsbin.com/">JS Bin</a>, <a href="http://dabblet.com/">Dabblet</a>…',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">xxx</b>',
         'date_frama'    => '2017',
-        'coordonnees'   => '530,300,40',
+        'coordonnees'   => '',
         'class'         => '',
         'soft_frama'    => 'jsbin',
         'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
@@ -735,7 +734,7 @@ $data = [
         'alt_offline'   => '',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">board</b>',
         'date_frama'    => '2016',
-        'coordonnees'   => '',
+        'coordonnees'   => '420,510,40',
         'class'         => 'potion',
         'soft_frama'    => 'Kanboard',
         'long_desc'     => 'Gestionnaire de projets',
@@ -749,6 +748,33 @@ $data = [
                                 <b class="violet">Fonctionnement :</b> Lancez votre projet, et commencez à le gérer collectivement, tâche par tâche. Assignez une personne à chaque tache, définissez des fonctions, des avancements et des délais. Cette gestion visuelle vous permettra de voir l’état du projet en un coup d’œil.
                             </p>',
         'modale_footer' => '<p class="precisions">Framaboard est une instance basée sur <a href="http://kanboard.net/">Kanboard</a></p>'
+    ],
+    'framagames' => [
+        'name'          => 'Kongregate',
+        'wkp'           => '',
+        'description'   => 'Jeux',
+        'editeur'       => '',
+        'wkp_editeur'   => '',
+        'similaire'     => '',
+        'alt_online'    => '',
+        'alt_offline'   => '',
+        'alt_frama'     => '<a href="http://framagames.org"><b class="violet">Frama</b><b class="vert">games</b></a>',
+        'date_frama'    => '(depuis <a href="http://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">juin 2015</a>)',
+        'coordonnees'   => '365,420,40',
+        'class'         => 'fight',
+        'soft_frama'    => 'divers',
+        'long_desc'     => 'Une compilation de jeux libre',
+        'url_frama'     => 'http://framagames.org',
+        'id_frama'      => 'framagames',
+        'modale_title'  => 'Faites une pose, jouez quelques instants',
+        'modale_body'   => '<p>
+                                <a href="http://framagames.org"><b class="violet">Frama</b><b class="vert">games</b></a>, vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu’hors ligne. Faites une pause et profitez de l’un des jeux proposés.
+                                <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">contrairement à Angry Birds</a>, la NSA ne vous espionnera pas ;) )</small>
+                            </p>
+                            <p>
+                                <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
+                            </p>',
+'modale_footer' => '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>'
     ],
     'padlet' => [
         'name'          => 'Padlet',
@@ -789,7 +815,7 @@ $data = [
         'alt_offline'   => '<a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zérobin</a>',
         'alt_frama'     => '<a href="https://framabin.org"><b class="violet">Frama</b><b class="vert">bin</b></a>',
         'date_frama'    => '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)',
-        'coordonnees'   => '360,150,40',
+        'coordonnees'   => '620,255,40',
         'class'         => 'fight',
         'soft_frama'    => 'Zerobin',
         'long_desc'     => 'Rédigez et partagez en toute discrétion',
@@ -818,7 +844,7 @@ $data = [
         'alt_offline'   => '<a href="https://www.wallabag.org/">Wallabag</a>',
         'alt_frama'     => '<a href="https://framabag.org"><b class="violet">Frama</b><b class="vert">bag</b></a>',
         'date_frama'    => '(depuis <a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">février 2014</a>)',
-        'coordonnees'   => '280,630,40',
+        'coordonnees'   => '320,480,40',
         'class'         => 'fight',
         'soft_frama'    => 'Wallabag',
         'long_desc'     => 'Sauvegardez et lisez plus tard',
@@ -875,7 +901,7 @@ $data = [
         'alt_offline'   => '<a href="https://jitsi.org/">Jitsi</a>',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">talk</b>',
         'date_frama'    => '2015',
-        'coordonnees'   => '230,460,40',
+        'coordonnees'   => '370,660,40',
         'class'         => 'potion',
         'soft_frama'    => 'Jitsi Meet',
         'long_desc'     => 'Discutez librement avec vos amis',
@@ -901,7 +927,7 @@ $data = [
         'alt_offline'   => '<a href="http://twister.net.co/">Twister</a>, <a href="http://status.net/">StatusNet</a>',
         'alt_frama'     => '<b class="violet">Frama</b><b class="vert">tweet</b>',
         'date_frama'    => '2016',
-        'coordonnees'   => '415,205,40',
+        'coordonnees'   => '475,575,40',
         'class'         => '',
         'soft_frama'    => 'Twister',
         'long_desc'     => 'Gazouillez sur Internet',
@@ -915,6 +941,34 @@ $data = [
                                 <b class="violet">Fonctionnement :</b> utilisez un client de connexion, ouvrez un compte, abonnez-vous à des flux et tweetez à votre tour.
                             </p>',
         'modale_footer' => '<p class="precisions">Framatweet est une instance basée sur <a href="http://twister.net.co/">Twister</a></p>'
+    ],
+    'wetransfert' => [
+        'name'          => 'Wetransfer',
+        'wkp'           => '',
+        'description'   => 'Envoi de gros fichiers',
+        'editeur'       => '',
+        'wkp_editeur'   => '',
+        'similaire'     => 'Dropsend',
+        'alt_online'    => '',
+        'alt_offline'   => '',
+        'alt_frama'     => '<b class="violet">Frama</b><b class="vert">drop</b>',
+        'date_frama'    => '2015',
+        'coordonnees'   => '240,520,40',
+        'class'         => '',
+        'soft_frama'    => 'LUFI',
+        'long_desc'     => 'xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx',
+        'url_frama'     => '',
+        'id_frama'      => 'framadrop',
+        'modale_title'  => 'xxxxxxxx xxxxxxx xxxxxxx',
+        'modale_body'   => '<p>
+                                <a href="###">Framaxxx</a> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx
+                                xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                            </p>
+                            <p>
+                                <b class="violet">xxxxx xxxxxxxx xxxx</b> xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                                xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxx xxxxxx
+                            </p>',
+        'modale_footer' => '<p class="precisions">Framaxxxx est une instance basée sur <a href="######">Lufi</a></p>'
     ],
 /*    'youporn' => [
         'name'          => 'Youporn',
@@ -955,7 +1009,7 @@ $data = [
         'alt_offline'   => '<a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>,<a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>',
         'alt_frama'     => '<a href="http://framatube.org"><b class="violet">Frama</b><b class="rouge">tube</b></a>',
         'date_frama'    => '2016',
-        'coordonnees'   => '500,480,40',
+        'coordonnees'   => '635,560,40',
         'class'         => 'potion',
         'soft_frama'    => 'Mediagoblin',
         'long_desc'     => 'Partagez vos vidéos et conservez vos droits',
@@ -971,33 +1025,31 @@ $data = [
                             </p>',
         'modale_footer' => '<p class="precisions">Framatube est une instance basée sur <a href="http://mediagoblin.org/">Mediagoblin</a></p>'
     ],
-    // Pas de concurrent
-    'framagames' => [
-        'name'          => 'Angry birds',
+    'loomio' => [
+        'name'          => '1000minds',
         'wkp'           => '',
-        'description'   => 'Jeux',
-        'editeur'       => '',
+        'description'   => 'Prise de décision',
+        'editeur'       => '1000minds',
         'wkp_editeur'   => '',
         'similaire'     => '',
         'alt_online'    => '',
         'alt_offline'   => '',
-        'alt_frama'     => '<a href="http://framagames.org"><b class="violet">Frama</b><b class="vert">games</b></a>',
-        'date_frama'    => '(depuis <a href="http://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">juin 2015</a>)',
-        'coordonnees'   => '',
-        'class'         => 'fight',
-        'soft_frama'    => 'divers',
-        'long_desc'     => 'Une compilation de jeux libre',
-        'url_frama'     => 'http://framagames.org',
-        'id_frama'      => 'framagames',
-        'modale_title'  => 'Faites une pose, jouez quelques instants',
+        'alt_frama'     => '<b class="violet">Frama</b><b class="vert">xxx</b>',
+        'date_frama'    => '2016',
+        'coordonnees'   => '400,590,40',
+        'class'         => 'potion',
+        'soft_frama'    => 'loomio',
+        'long_desc'     => 'Un outil pour mieux gérer les prises de décisions collectives',
+        'url_frama'     => '',
+        'id_frama'      => 'framaloomio',
+        'modale_title'  => 'Décidez ensembles,',
         'modale_body'   => '<p>
-                                <a href="http://framagames.org"><b class="violet">Frama</b><b class="vert">games</b></a>, vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu’hors ligne. Faites une pause et profitez de l’un des jeux proposés.
-                                <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">contrairement à Angry Birds</a>, la NSA ne vous espionnera pas ;) )</small>
+                                Framaloomio vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d’accord et passez à l’action, le tout dans les délais que vous fixés au départ.
                             </p>
                             <p>
-                                <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
-                            </p>',
-'modale_footer' => '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>'
+                                 <b class="violet">Fonctionnement :</b> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s’exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
+                            </p >',
+        'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="https://www.loomio.org">loomio</a></p>'
     ],
     'framavectoriel' => [
         'name'          => 'Pixlr',
@@ -1040,32 +1092,6 @@ $data = [
                                     <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>
                             </p>',
         'modale_footer' => '<p class="precisions">Framavectoriel est une instance basée sur <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/" class="btn btn-success"><i class="glyphicon glyphicon-tree-deciduous"></i> Installer</a>'
-    ],
-    'loomio' => [
-        'name'          => '',
-        'wkp'           => '',
-        'description'   => 'Prise de décision',
-        'editeur'       => '',
-        'wkp_editeur'   => '',
-        'similaire'     => '',
-        'alt_online'    => '',
-        'alt_offline'   => '',
-        'alt_frama'     => '<b class="violet">Frama</b><b class="vert">xxx</b>',
-        'date_frama'    => '2016',
-        'coordonnees'   => '',
-        'class'         => 'potion',
-        'soft_frama'    => 'loomio',
-        'long_desc'     => 'Un outil pour mieux gérer les prises de décisions collectives',
-        'url_frama'     => '',
-        'id_frama'      => 'framaloomio',
-        'modale_title'  => 'Décidez ensembles,',
-        'modale_body'   => '<p>
-                                Framaloomio vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d’accord et passez à l’action, le tout dans les délais que vous fixés au départ.
-                            </p>
-                            <p>
-                                 <b class="violet">Fonctionnement :</b> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s’exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
-                            </p >',
-        'modale_footer' => '<p class="precisions">Framaxxx est une instance basée sur <a href="https://www.loomio.org">loomio</a></p>'
     ],
     // Mises à jour
     'framadate2' => [
@@ -1215,33 +1241,6 @@ $data = [
                                 <b class="violet">Mise à jour :</b> le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d’enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
                             </p>',
         'modale_footer' => '<p class="precisions">Framindmap est une instance basée sur <a href="http://www.wisemapping.com/">Wisemapping</a></p><a href="http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/" class="btn btn-success"><i class="glyphicon glyphicon-tree-deciduous"></i> Installer</a>'
-    ],
-    'gmail' => [
-        'name'          => 'Google Mail',
-        'wkp'           => 'Gmail',
-        'description'   => 'Service de messagerie',
-        'editeur'       => 'Google',
-        'wkp_editeur'   => 'Google',
-        'similaire'     => '',
-        'alt_online'    => '',
-        'alt_offline'   => '<a href="http://mozilla.org/thunderbird">Thunderbird</a>',
-        'alt_frama'     => '<b class="violet">Frama</b><b class="vert">mail</b>',
-        'date_frama'    => '2017',
-        'coordonnees'   => '',
-        'class'         => '',
-        'soft_frama'    => 'caliop',
-        'long_desc'     => 'Vos mails, sans la NSA dedans',
-        'url_frama'     => 'https://framamail',
-        'id_frama'      => 'framamail',
-        'modale_title'  => 'Votre courrier, dans une enveloppe blindée',
-        'modale_body'   => '<p>
-                                <a href="http://framadate.org">Framanews</a> vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
-                            </p>
-                            <p>
-                                <b class="violet">Fonctionnement :</b> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
-                                Comment faire plus simple ?
-                            </p>',
-        'modale_footer' => '<p class="precisions">Framamail est une instance basée sur <a href="https://www.caliopen.org/">Caliopen</a></p>'
     ]
 ];
 
