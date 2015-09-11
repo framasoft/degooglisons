@@ -2,10 +2,30 @@
 require('../data.php');
 
 $tips = '';
-$timeline = array();
+$timeline = array(
+    '2011-2013' => '',
+    '2014'      => '',
+    '2015'      => '',
+    '2016'      => '',
+    '2017'      => ''
+);
 
-foreach ($data as $k => $v) {
-
+foreach ($d as $k => $v) {
+    
+    if(!isset($d[$k]['class'])) {
+        $v['class'] = '';
+        if(in_array($k, $potion)) {
+            $v['class'] = 'potion';
+        } elseif(in_array($k, $fight)) {
+            $v['class'] = 'fight';
+        }
+    }
+    
+    if(!isset($d[$k]['mFooter'])) {
+        $v['mFooter'] = '<p class="precisions">'.$v['F'].' est une instance basée sur le logiciel libre '.$v['S'].'</p>';
+        $v['mFooter'] .= (isset($v['CL']) && $v['CL'] != '') ? '<a href="'.$v['CL'].'" class="btn btn-success"><i class="glyphicon glyphicon-tree-deciduous"></i> Installer</a>' : '';
+    }
+    
     /* Icônes et texte pour compléter le code couleur */
     $icon = '';
     $alt_text = '';
@@ -20,16 +40,16 @@ foreach ($data as $k => $v) {
         $front = '
             <div class="front">
                 <p class="pull-right">'.$icon.'</p>
-                <h3>'.$v['alt_frama'].'</h3>
+                <h3>'.$v['F'].'</h3>
                 <div class="front_old">'.$v['name'].'</div>
                 <div class="front_new"></div>
             </div>';
     } else if ( $v['class']=='objectifs') {
         $front = '
             <div class="front">
-                <h3>'.$v['description'].'</h3>
+                <h3>'.$v['sDesc'].'</h3>
                 <div class="front_old"><span class="fa fa-fw fa-heart"></span> '.$v['name'].'</div>
-                <div class="front_new"><span class="fa fa-fw fa-paw"></span> '.$v['alt_frama'].'</div>
+                <div class="front_new"><span class="fa fa-fw fa-paw"></span> '.$v['F'].'</div>
             </div>';
     } else {
         $front = '
@@ -37,45 +57,46 @@ foreach ($data as $k => $v) {
                 <p class="pull-right">'.$icon.'</p>
                 <span class="logo"></span>
                 <div class="k-fg">
-                    <h3>'.$v['description'].'</h3>
+                    <h3>'.$v['sDesc'].'</h3>
                     <div class="front_old"><span class="fa fa-fw fa-eye"></span> '.$v['name'].'</div>
-                    <div class="front_new"><span class="fa fa-fw fa-shield"></span> '.$v['alt_frama'].' <span class="soft_frama">('.$v['soft_frama'].')</span></div>
+                    <div class="front_new"><span class="fa fa-fw fa-shield"></span> '.$v['F'].' <span class="soft_frama">('.$v['S'].')</span></div>
                 </div>
             </div>';
     }
 
     /* Back */
-    if($v['class']=='fight' || $v['class']=='casque' || $v['class']=='potion') {
+    if(($v['class']=='fight' || $v['class']=='casque' || $v['class']=='potion')
+        && ($v['lDesc'] != '' && $v['mTitle'] !='' && $v['mBody'] != '')) {
         $utiliser_back = ''; $utiliser_modale = '';
-        if($v['url_frama']!='') {
-            $utiliser_back = '<a href="'.$v['url_frama'].'" class="btn btn-xs btn-primary btn-block">Utiliser</a>';
-            $utiliser_modale = '<a href="'.$v['url_frama'].'" class="btn btn-primary">Utiliser</a>';
+        if($v['FL']!='') {
+            $utiliser_back = '<a href="'.$v['FL'].'" class="btn btn-xs btn-primary btn-block">Utiliser</a>';
+            $utiliser_modale = '<a href="'.$v['FL'].'" class="btn btn-primary">Utiliser</a>';
         }
         $back = '
             <div class="back">
                 <p class="pull-right">'.$icon.'</p>
-                <h4>'.$v['alt_frama'].'</h4>
-                <p class="back_content">'.$v['long_desc'].'</p>
+                <h4>'.$v['F'].'</h4>
+                <p class="back_content">'.$v['lDesc'].'</p>
 
                 <div class="col-xs-6">
                     '.$utiliser_back.'
                 </div>
                 <div class="col-xs-6">
-                    <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$v['id_frama'].'">+ d’infos</button>
+                    <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$k.'">+ d’infos</button>
                 </div>
 
-                <div class="modal fade" id="'.$v['id_frama'].'" tabindex="-1" role="dialog" aria-labelledby="'.$v['id_frama'].'Label" aria-hidden="true">
+                <div class="modal fade" id="'.$k.'" tabindex="-1" role="dialog" aria-labelledby="'.$k.'Label" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-                                <h4 class="modal-title" id="'.$v['id_frama'].'Label">'.$v['modale_title'].'</h4>
+                                <h4 class="modal-title" id="'.$k.'Label">'.$v['mTitle'].'</h4>
                             </div>
                             <div class="modal-body">
-                                    '.$v['modale_body'].'
+                                    '.$v['mBody'].'
                             </div>
                             <div class="modal-footer clearfix">
-                                '.$v['modale_footer'].$utiliser_modale.'<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                '.$v['mFooter'].$utiliser_modale.'<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                     </div>
@@ -85,27 +106,27 @@ foreach ($data as $k => $v) {
     } else if ( $v['class']=='objectifs') {
         $back = '
             <div class="back">
-                <p class="back_content">'.$v['long_desc'].'</p>
+                <p class="back_content">'.$v['lDesc'].'</p>
 
                 <div class="col-xs-6">
                     <a href="http://soutenir.framasoft.org" class="btn btn-xs btn-soutenir btn-block"><span class="fa fa-w fa-heart"></span> Soutenir</a>
                 </div>
                 <div class="col-xs-6">
-                    <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$v['id_frama'].'">+ d’infos</button>
+                    <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$k.'">+ d’infos</button>
                 </div>
 
-                <div class="modal fade" id="'.$v['id_frama'].'" tabindex="-1" role="dialog" aria-labelledby="'.$v['id_frama'].'Label" aria-hidden="true">
+                <div class="modal fade" id="'.$k.'" tabindex="-1" role="dialog" aria-labelledby="'.$k.'Label" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-                                <h4 class="modal-title" id="'.$v['id_frama'].'Label">'.$v['modale_title'].'</h4>
+                                <h4 class="modal-title" id="'.$k.'Label">'.$v['mTitle'].'</h4>
                             </div>
                             <div class="modal-body">
-                                '.$v['modale_body'].'
+                                '.$v['mBody'].'
                             </div>
                             <div class="modal-footer">
-                                '.$v['modale_footer'].'<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                '.$v['mFooter'].'<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                     </div>
@@ -118,13 +139,13 @@ foreach ($data as $k => $v) {
 
 
     $tip = '
-    <li class="'.$v['id_frama'].' '.$v['class'].'">
+    <li class="'.$k.' '.$v['class'].'">
         <div class="tip-content">
             '.$front.'
             '.$back.'
         </div>
     </li>';
-    preg_match('#(\d\d\d\d)#',$v['date_frama'],$year);
+    preg_match('#(\d\d\d\d)#',$v['FDate'],$year);
     if($year[0]=='2011' || $year[0]=='2012' || $year[0]=='2013') {
         $timeline['2011-2013'] .= $tip;
     } else {

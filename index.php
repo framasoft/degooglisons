@@ -26,19 +26,24 @@ $options = '
 
 $text = '';
 
-foreach ($data as $k => $v) {
-    $color = '0C5B7A';
-    if ($v['class'] == 'fight') {
-        $color = 'CC2D18';
-    }
-    if ($v['class'] == 'potion') {
-        $color = 'D2703A';
+foreach ($d as $k => $v) {
+
+    $color = '757575';
+    if(!isset($d[$k]['class'])) {
+        $v['class'] = '';
+        if(in_array($k, $potion)) {
+            $v['class'] = 'potion';
+            $color = 'D2703A';
+        } elseif(in_array($k, $fight)) {
+            $v['class'] = 'fight';
+            $color = '677835';
+        }
     }
 
-    if($v['coordonnees']!='') {
+    if($v['pos']!='') {
 
         $areas .= '
-        <area id="a-'.$k.'" coords="'.$v['coordonnees'].'" alt="'.$v['coordonnees'].'" shape="circle" data-maphilight=\'{"strokeColor":"'.$color.'","strokeWidth":2,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1" >';
+        <area id="a-'.$k.'" coords="'.$v['pos'].'" alt="'.$v['pos'].'" shape="circle" data-maphilight=\'{"strokeColor":"'.$color.'","strokeWidth":2,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1" >';
 
         $options .= '
         <option id="o-'.$k.'" aria-describeby="#t-'.$k.'">'.$v['name'].'</option>';
@@ -47,18 +52,18 @@ foreach ($data as $k => $v) {
         <div id="t-'.$k.'" class="c-text c-little '.$v['class'].'">
             <h2>';
                 $text .= ($v['wkp']!='') ? '<a href="http://fr.wikipedia.org/wiki/'.$v['wkp'].'">'.$v['name'].'</a>' : $v['name'];
-                $text .= ' - '.$v['description'].'</h2>
+                $text .= ' - '.$v['sDesc'].'</h2>
             <p>Éditeur : ';
-                $text .= ($v['wkp_editeur']!='') ? '<a href="http://fr.wikipedia.org/wiki/'.$v['wkp_editeur'].'">'.$v['editeur'].'</a>' : $v['editeur'];
-                $text .= ($v['similaire']!='') ? '<br />Équivalent(s) : '.$v['similaire'].'' : '';
+            //    $text .= ($v['wkp_editeur']!='') ? '<a href="http://fr.wikipedia.org/wiki/'.$v['wkp_editeur'].'">'.$v['editeur'].'</a>' : $v['editeur'];
+                $text .= ($v['eq']!='') ? '<br />Équivalent(s) : '.$v['eq'].'' : '';
                 $text .= '
             </p>
             <p>';
-                $text .= ($v['alt_online']!='') ? 'Alternative(s) en ligne : '.$v['alt_online'].'<br />' : '';
-                $text .= 'Alternative(s) à installer : '.$v['alt_offline'].'
+                $text .= ($v['altOn']!='') ? 'Alternative(s) en ligne : '.$v['altOn'].'<br />' : '';
+                $text .= 'Alternative(s) à installer : '.$v['altOff'].'
             </p>
-            <p>Service Framasoft : '.$v['alt_frama'].'<br />';
-                $text .= (strlen($v['date_frama'])==4) ? '(sortie prévue <a href="/liste/#'.$v['date_frama'].'">en '.$v['date_frama'].'</a>)' : $v['date_frama'];
+            <p>Service Framasoft : '.$v['F'].'<br />';
+                $text .= (strlen($v['FDate'])==4) ? '(sortie prévue <a href="/liste/#'.$v['FDate'].'">en '.$v['FDate'].'</a>)' : $v['FDate'];
                 $text .= '
             </p>
          </div>';

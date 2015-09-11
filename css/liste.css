@@ -300,26 +300,26 @@ h1 a:focus, h3 a:focus, h4 a:focus {
    color:#D2703A;
 }
 
-.framindmap .logo:before { content: "\f0e8"; }
-.framindmap .logo {
+.bubblus .logo:before { content: "\f0e8"; }
+.bubblus .logo {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
-.framadate .logo:before { content: "\f073"; }
-.framapad .logo:before { content: "\f036"; }
-.framacalc .logo:before { content: "\f00a"; }
-.framavectoriel .logo:before { content: "\f1fc"; }
-.framanews .logo:before { content: "\f1ea"; }
-.framabag .logo:before { content: "\f0b1"; }
-.framasphere .logo:before { content: "\f069"; }
-.framatube .logo:before { content: "\f008"; }
-.framashort .logo:before { content: "\f0c1"; }
-.framagit .logo:before { content: "\f1d3"; }
-.framalutim .logo:before { content: "\f03e"; }
-.framabin .logo:before { content: "\f0ea"; }
-.framabee .logo:before { content: "\f002"; }
-.framaopds .logo:before { content: "\f0f4"; }
-.framagames .logo:before { content: "\f11b"; }
+.doodle .logo:before { content: "\f073"; }
+.gdocs .logo:before { content: "\f036"; }
+.gspreadsheet .logo:before { content: "\f00a"; }
+.pixlr .logo:before { content: "\f1fc"; }
+.greader .logo:before { content: "\f1ea"; }
+.pocket .logo:before { content: "\f0b1"; }
+.facebook .logo:before { content: "\f069"; }
+.youtube .logo:before { content: "\f008"; }
+.bitly .logo:before { content: "\f0c1"; }
+.github .logo:before { content: "\f1d3"; }
+.imgur .logo:before { content: "\f03e"; }
+.pastebin .logo:before { content: "\f0ea"; }
+.gsearch .logo:before { content: "\f002"; }
+.gbooks .logo:before { content: "\f0f4"; }
+.kongregate .logo:before { content: "\f11b"; }
