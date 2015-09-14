@@ -1,4 +1,11 @@
-<?php 
+<?php
+
+    $langs_options = '';
+    foreach ($langs as $k => $v) {
+        $langs_options .= '
+            <option lang="'.substr($k,0,2).'" value="'.$k.'">'.$v.'</option>';
+    }
+
     $internav = '';
     foreach ($t as $k => $v) {
         if($k!='meta' && substr($k,0,1)!='_') {
@@ -30,6 +37,17 @@
     <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
         <div class="row" id="internav">
             <div class="container">
+                <form method="post" action="#">
+                    <div class="input-group input-group-sm pull-right col-md-2 col-xs-4">
+                        <select name="lang" class="form-control" title="<?php echo $t['_Select the language'] ?>" >
+                            <?php echo $langs_options ?>
+                        </select>
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default btn-sm" title="<?php echo $t['_Change the language'] ?>"><?php echo $t['_OK'] ?></button>
+                        </span>
+                    </div>
+                </form>
+
                 <ul class="nav navbar-nav navbar-right">
                     <?php echo $internav ?>
                 </ul>

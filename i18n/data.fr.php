@@ -341,6 +341,9 @@ $t['_Alternative(s) online: ']  = 'Alternative(s) en ligne : ';
 $t['_Alternative(s) offline: '] = 'Alternative(s) à installer : ';
 $t['_Framasoft service: ']      = 'Service Framasoft : ';
 $t['_release planned on ']      = 'sortie prévue en ';
+$t['_Select the language']      = 'Choisir la langue';
+$t['_Change the language']      = 'Changer la langue';
+$t['_OK']                       = 'OK';
 
 /*************
  * Objectifs *

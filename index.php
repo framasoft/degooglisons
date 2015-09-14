@@ -1,5 +1,5 @@
 <?php
-require('data.php');
+require('i18n.php');
 $page = 'home';
 
 $areas = '

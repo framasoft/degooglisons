@@ -23,6 +23,11 @@ body > .row {
     color: #fff;
 }
 
+#internav form div {
+    margin-top: -10px;
+    margin-left: 25px
+}
+
 header {
     padding: 2em 1em 0.5em;
 }
