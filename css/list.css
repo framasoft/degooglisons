@@ -1,73 +1,3 @@
-/* Default style
-* {
-    -moz-transition:all 0.5s;
-    -webkit-transition:all 0.5s;
-    -o-transition:all 0.5s;
-    transition:all 0.5s;
-}*/
-
-body {
-  font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
-  color:#333;
-  background:#eee;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: PTSansCaption, GillSans, sans-serif;
-    font-weight: bold;
-    color: #5b5e64;
-}
-
-h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; }
-
-.trait { /* hr */
-    background-color: #EEE;
-    height: 11px;
-    margin:15px 0px;
-    border:none;
-}
-
-body > .row {
-    padding-top:20px;
-    margin-left:0;
-    margin-right:0;
-}
-
-.ombre {
-    background-color: #FFF;
-    box-shadow: -4px 6px 9px rgba(50, 50, 50, 0.5);
-}
-
-a {
-    color: #0C5B7A;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #18a5d9;
-}
-
-p {
-    color: #333;
-    font-size: 1em;
-}
-
-/* Header style */
-header {
-    padding: 2em 1em 0.5em;
-}
-
-header .lead {
-    color: #666;
-    font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
-    padding-top: 1.65em;
-    margin-bottom: 0.5em;
-}
-
-.violet{color: #6A5687;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
-.orange{color: #D2703A;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
-.vert{color: #849551;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
-
 #sticky .btn-soutenir {
     font-size:24px;
     font-weight:bold;
@@ -76,34 +6,13 @@ header .lead {
 a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 
 /* End header style */
-
-.leds {
-    background: #677835;
-    border-radius:0 !important;
-    display:none;
-    margin: 30px 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.leds .close {
-    float:right;
-    right:auto;
-    top:auto;
-    margin-top:-10px;
-}
-
-#leds {
-    top: -140px;
-}
-
 #tips {
     margin-left:0;
     margin-right:0;
 }
 
 #tips .container {
-    padding:20px 0;
+    padding:15px 0;
 }
 
 #sticky {
@@ -128,10 +37,6 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 }
 .year h2 {
     text-align:center;
-}
-
-main {
-    margin-bottom:30px;
 }
 
 .soft_frama {
@@ -244,6 +149,10 @@ main {
     top: -140px;
 }
 
+.hide-back {
+    top: 0px !important;
+}
+
 .modal-dialog h4 {
     font-size: 24px;
 }
@@ -273,11 +182,6 @@ main {
     margin-left:15px;
 }
 
-h1 a, h3 a, h4 a,
-h1 a:hover, h3 a:hover, h4 a:hover,
-h1 a:focus, h3 a:focus, h4 a:focus {
-    text-decoration:none;
-}
 
 .k-fg {
     position:absolute;

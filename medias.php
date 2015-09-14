@@ -1,83 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-    <head>
-        <title>Dégooglisons Internet - Les bannières - Framasoft</title>
-        <meta charset="utf-8" />
-        <meta name="title" content="Dégooglisons Internet - Les bannières - Framasoft" />
-        <meta name="description" content="Bannières de la campagne Dégooglisons Internet que vous pouvez réutiliser." />
-        <meta name="author" content="Framasoft" />
-        <link rel="shortcut icon" href="img/favicon.png">
-        <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
-        <link href="css/liste.css" rel="stylesheet" type="text/css" />
-        <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="https://n4.framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('a[href="#leds"]').on('click', function() {
-                    $('.leds').slideDown('slow');
-                });
-                $('.leds .close').on('click', function() {
-                    $('.leds').slideUp();
-                });
-            });
-        </script>
-    </head>
-    <body data-spy="scroll" data-target=".nav-year">
-        <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
-        <div class="row" id="mainHeader">
-            <div class="container ombre">
-                <header class="header">
-                    <div class="row">
-                        <h1 class="col-md-6"><a href="../"><span class="violet">Dégooglisons</span> <span class="orange">Internet</span></a></h1>
-                        <p class="lead col-md-6">
-                            Une initiative du réseau <span class="violet">Frama</span><span class="orange">soft</span>
-                            en faveur d'un internet <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
-                            <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>
-                        </p>
-                    </div>
+<?php
+require('data.php');
+$page = 'medias';
 
-                    <hr class="trait clearfix" />
-                </header>
-            </div>
-        </div>
-        <main>
-        <a id="leds" class="anchor"></a>
-        <div class="row leds">
-            <div class="container ombre">
-                <h2 class="col-xs-12">Pour un Internet… <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button></h2>
-                <div class="row col-xs-12">
-                    <div class="col-md-6">
-                        <h3 id="internet-libre"><span class="fa fa-fw fa-unlock"></span> Libre</h3>
-                        <p>L'histoire d'Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés. Sa popularité et son potentiel font
-                        aussi des envieux, et de grandes entreprises aimeraient s'en attribuer le contrôle en imposant du code fermé dans des systèmes verrouillés et non-interopérables. Pour qu'Internet
-                        reste fidèle à ses principes fondateurs qui l'ont conduit à son succès, nous devons y trouver des applications libres, c'est à dire dont le code source est ouvert, accessible et
-                        sous licences libres.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 id="internet-decentralise"><span class="fa fa-fw fa-share-alt"></span> Décentralisé</h3>
-                        <p>L'intelligence d'Internet doit se situer à la périphérie du réseau dans une dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0. Pour assurer l'égalité
-                            de tous, citoyens comme entrepreneurs, les monopoles doivent non seulement être évités, mais empêchés de s'accaparer les données personnelles ou publiques. En expliquant,
-                            par des tutoriels, comment multiplier les solutions libres permettant un Internet plus équitable, nous facilitons l'essaimage du code et diversifions les usages.</p>
-                    </div>
-                </div>
-                <div class="row col-xs-12">
-                    <div class="col-md-6">
-                        <h3 id="internet-ethique"><span class="fa fa-fw fa-eye-slash"></span> Éthique</h3>
-                        <p>Nous plébiscitons un Internet fait de partage et d'indépendance. L'exploitation, la surveillance, la censure et l'appropriation des données sont des valeurs que nous refusons
-                        au profit de la transparence (la probité), de l'exposition claire des conditions d'utilisation des services, et du refus des discriminations.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 id="internet-solidaire"><span class="fa fa-fw fa-group"></span> Solidaire</h3>
-                        <p>À travers les services que nous déployons, nous promouvons un modèle économique fondé sur la mutualisation des coûts, le partage des ressources, et l'accessibilité au plus grand
-                            nombre. Pour cette raison les abus seront évités car nous avons tous conscience de la communauté des biens. Ce modèle possède aussi un caractère éducatif car nous pensons
-                            qu'en documentant le déploiement des services, un grand nombre d'utilisateurs seront en mesure de partager à leur tour ces ressources.</p>
-                    </div>
-                </div>
-                <div class="row col-xs-12">
-                    <p class="text-center well">Pour en savoir plus, consultez <strong><a href="http://n4.framasoft.org/nav/html/charte.html">notre charte</a></strong> détaillée.</p>
-                </div>
-            </div>
-        </div>
+include('header.php');
+?>
         <div class="row">
             <div class="container ombre">
                 <h2 class="col-xs-12">Format badge 180x240</h2>
@@ -127,8 +53,6 @@
                 <div class="col-md-8">
                     <p class="well">Si vous voulez créer vos propres images, <a href="https://wiki.framasoft.org/visuels_plm">les sources se trouvent là</a>. Les dessins sont de <a href="http://ptilouk.net/">Simon « Gee » Giraudot</a> et sont publiés sous licence Creative Commons By-SA. </p>
                 </div>
-            </div>
-        </div>
-        </main>
-    </body>
-</html>
+<?php
+include('footer.php')
+?>

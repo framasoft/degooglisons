@@ -1,5 +1,6 @@
 <?php
 require('data.php');
+$page = 'home';
 
 $areas = '
     <!-- Village -->
@@ -74,39 +75,9 @@ foreach ($d as $k => $v) {
     }
 }
 
-?><!DOCTYPE html>
-<html lang="<?php echo $t['meta']['lang'] ?>">
-<head>
-    <meta charset="utf-8">
-    <title><?php echo $t['meta']['title'].' - '.$t['home']['title'].' - '.$t['meta']['framasoft'] ?></title>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
-    <link href="css/styles.css" media="all" rel="stylesheet">
+include('header.php');
 
-    <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="https://n4.framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <script src="js/jquery.maphilight.js" type="text/javascript"></script>
-    <script src="js/imageMapResizer.min.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-</head>
-<body>
-    <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
-        <div class="row" id="mainHeader">
-            <div class="container ombre">
-                <header>
-                    <div class="row">
-                        <h1 class="col-md-6"><?php echo $t['meta']['DIo'] ?></h1>
-                        <p class="lead col-md-6">
-                            <?php echo $t['meta']['lead'] ?>
-                        </p>
-                    </div>
-
-                    <hr class="trait clearfix" />
-                </header>
-            </div>
-        </div>
+?>
 
         <div class="row" id="bloc-carte">
             <div class="container ombre">
@@ -366,10 +337,7 @@ foreach ($d as $k => $v) {
                         <a class="btn btn-lg btn-soutenir" href="<?php echo $l['S'] ?>"><span class="fa fa-w fa-heart"></span> <?php echo $t['home']['conc']['sbtn'] ?></a>
                     </p>
                 </div>
-                <p class="signature text-right small"><?php echo $t['meta']['start'].'<br/>'.$t['meta']['edit'] ?></p>
             </div>
-        </div>
-    </div>
-    <a href="#" id="back-to-top" title="<?php echo $t['_Back on top'] ?>" ><span class="fa fa-fw fa-arrow-up"></span><span class="sr-only"><?php echo $t['_Back on top'] ?></span></a>
-</body>
-</html>
+<?php
+include('footer.php')
+?>

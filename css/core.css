@@ -1,0 +1,102 @@
+body {
+    background:#eee;
+}
+
+body > .row {
+    margin-left:0;
+    margin-right:0;
+}
+
+#internav ul {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+#internav li a {
+    color: #666;
+    padding: 15px;
+    text-decoration: none;
+}
+#internav li a:hover,
+#internav li a:focus,
+#internav li a.active {
+    background: #767676;
+    color: #fff;
+}
+
+header {
+    padding: 2em 1em 0.5em;
+}
+
+header .lead {
+    color: #666;
+    font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
+    padding-top: 1.65em;
+    margin-bottom: 0.5em;
+}
+h1 a, h3 a, h4 a,
+h1 a:hover, h3 a:hover, h4 a:hover,
+h1 a:focus, h3 a:focus, h4 a:focus {
+    text-decoration:none;
+}
+header a, 
+h1 a, h1 a:hover, h1 a:focus,
+h2 a, h2 a:hover, h2 a:focus, 
+h3 a, h3 a:hover, h3 a:focus,
+h4 a, h4 a:hover, h4 a:focus,
+h5 a, h5 a:hover, h5 a:focus{
+    text-decoration: none;
+}
+
+main {
+    margin-bottom:30px;
+}
+
+.container.ombre {
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.leds {
+    background: #677835;
+    border-radius:0 !important;
+    display:none;
+    margin: 30px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.leds .close {
+    float:right;
+    right:auto;
+    top:auto;
+    margin-top:-10px;
+}
+
+#leds {
+    top: -140px;
+}
+
+
+.btn-soutenir {
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+#back-to-top {
+    display:none;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    font-size: 3em;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #767676;
+    opacity:0.4;
+    color: #FFF;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+    opacity:1;
+}

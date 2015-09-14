@@ -59,7 +59,13 @@ $t['meta']['leds']['charte']  = 'Pour en savoir plus, consultez <strong><a href=
 
 // Accueil
 $t['home']['title']  = 'Accueil';
+$t['home']['link']   = '/';
 $t['home']['desc']   = '';
+$t['home']['css']    = '<link href="css/home.css" rel="stylesheet" type="text/css" />';
+$t['home']['js']    = '
+    <script src="js/jquery.maphilight.js" type="text/javascript"></script>
+    <script src="js/imageMapResizer.min.js" type="text/javascript"></script>
+    <script src="js/home.js" type="text/javascript"></script>';
 $t['home']['altMap'] = '_ Nous sommes en 2015 après Jésus-Christ. Toute la toile est occupée par des services centralisés...
                 Toute ? Non ! Une communauté peuplée d’irreductibles libristes résite encore et toujours à l’envahisseur.
                 Et la vie n’est pas facile pour les garnisons des camps retranchés de Fermetum, Centralisum, Espionnum et Privatum…';
@@ -301,11 +307,20 @@ $t['home']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
 
 // Liste des services
 $t['list']['title']     = 'Liste des services';
+$t['list']['link']      = 'liste';
 $t['list']['desc']      = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
+$t['list']['css']       = '
+    <link href="css/list.css" rel="stylesheet" type="text/css" />';
+$t['list']['js']        = '
+    <script src="js/list.js" type="text/javascript"></script>
+    <script src="js/leds.js" type="text/javascript"></script>';
 
 // Espace médias
-$t['media']['title']    = 'Espace médias';
-$t['media']['desc']     = '';
+$t['medias']['title']   = 'Espace médias';
+$t['medias']['link']    = 'medias';
+$t['medias']['desc']    = '';
+$t['medias']['css']     = '<link href="css/list.css" rel="stylesheet" type="text/css" />';
+$t['medias']['js']      = '<script src="js/leds.js" type="text/javascript"></script>';
 
 // Texte générique
 $t['_Close']            = 'Fermer';
@@ -319,7 +334,7 @@ $t['_Project running']  = 'Projet actif';
 $t['_ is an instance based on '] = ' est une instance basée sur le logiciel libre ';
 $t['_Read more']        = 'En savoir plus';
 $t['_Some examples ?']  = 'Des exemples ?';
-$t['_Back on top']      = 'Retour en haut';
+$t['_Back to top']      = 'Retour en haut';
 $t['_Editor: ']         = 'Éditeur : ';
 $t['_Equivalent(s): ']          = 'Équivalent(s) : ';
 $t['_Alternative(s) online: ']  = 'Alternative(s) en ligne : ';
@@ -493,14 +508,14 @@ $d[$k]['mBody']  = '<p>
 $k= 'blogger';
 $d[$k]['FL']     = '';
 $d[$k]['CL']     = '';
-$d[$k]['S']      = 'Pluxml';
+$d[$k]['S']      = '<a href="http://www.pluxml.org/">PluXML</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">sites</b>';
 $d[$k]['FDate']  = '2016';
 $d[$k]['name']   = 'Blogger';
 $d[$k]['wkp']    = 'Blogger';
 $d[$k]['eq']     = 'sites.pages-jaunes.fr, OverBlog, Skyblog…';
 $d[$k]['altOn']  = '<a href="http://wordpress.com">Wordpress.com</a>';
-$d[$k]['altOff'] = '<a href="http://www.pluxml.org/">PluXML</a>, <a href="http://wordpress.org">Wordpress</a>…';
+$d[$k]['altOff'] = $d[$k]['S'].', '.$d[$k]['altOn'].'…';
 $d[$k]['pos']    = '605,480,40';
 $d[$k]['sDesc']  = 'Hébergement de sites';
 $d[$k]['lDesc']  = '';
