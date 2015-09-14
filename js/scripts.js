@@ -53,6 +53,7 @@ $(document).ready(function() {
             scrollTop: 0
         }, 1000);
     });
+    $('a:has(b)').css('text-decoration','none');
 });
 
 $(window).scroll(function() {

@@ -40,6 +40,10 @@ header .lead {
     margin-bottom: 0.5em;
 }
 
+header a, h1 a, h2 a, h3 a, h4 a, h5 a {
+    text-decoration: none;
+}
+
 .violet{color: #6A5687;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
 .orange{color: #D2703A;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
 .vert{color: #849551;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
