@@ -14,6 +14,7 @@ $l['DIoL'] = $l['DIo'].'/liste';
 $l['Charte'] = 'https://n4.framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
+$l['current'] = str_replace(array(realpath ($_SERVER['DOCUMENT_ROOT']),'/i18n'),'', dirname(__FILE__)).'/';
 
 // Meta
 $t['meta']['lang']      = 'es';
@@ -62,11 +63,11 @@ $t['meta']['leds']['charte']  = 'Pour en savoir plus, consultez <strong><a href=
 $t['home']['title']  = 'Accueil';
 $t['home']['link']   = '/';
 $t['home']['desc']   = '';
-$t['home']['css']    = '<link href="css/home.css" rel="stylesheet" type="text/css" />';
+$t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
 $t['home']['js']     = '
-    <script src="js/jquery.maphilight.js" type="text/javascript"></script>
-    <script src="js/imageMapResizer.min.js" type="text/javascript"></script>
-    <script src="js/home.js" type="text/javascript"></script>';
+    <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
 $t['home']['map']    = 'Cliquez sur la carte pour découvrir les alternatives…';
 $t['home']['altMap'] = 'Nous sommes en 2015 après Jésus-Christ. Toute la toile est occupée par des services centralisés…
                 Toute ? Non ! Une communauté peuplée d’irreductibles libristes résite encore et toujours à l’envahisseur.
@@ -312,17 +313,17 @@ $t['list']['title']     = 'Liste des services';
 $t['list']['link']      = 'liste';
 $t['list']['desc']      = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
 $t['list']['css']       = '
-    <link href="css/list.css" rel="stylesheet" type="text/css" />';
+    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['list']['js']        = '
-    <script src="js/list.js" type="text/javascript"></script>
-    <script src="js/leds.js" type="text/javascript"></script>';
+    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Espace médias
 $t['medias']['title']   = 'Espace médias';
 $t['medias']['link']    = 'medias';
 $t['medias']['desc']    = '';
-$t['medias']['css']     = '<link href="css/list.css" rel="stylesheet" type="text/css" />';
-$t['medias']['js']      = '<script src="js/leds.js" type="text/javascript"></script>';
+$t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
+$t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Texte générique
 $t['_Close']            = 'Fermer';
@@ -847,8 +848,8 @@ $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b cla
 $d[$k]['FDate']  = '<a href="http://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">mai 2015</a>';
 $d[$k]['name']   = $e['google']['fa'].'Google Search';
 $d[$k]['wkp']    = 'Google_%28moteur_de_recherche%29';
-$d[$k]['eq']     = $e['microsoft']['fa'].'Bing, Yahoo, Qwant';
-$d[$k]['altOn']  = '<a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://www.ixquick.com/">Ixquick</a>';
+$d[$k]['eq']     = $e['microsoft']['fa'].'Bing, Yahoo';
+$d[$k]['altOn']  = '<a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://www.ixquick.com/">Ixquick</a>, Qwant';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://codingteam.net/project/mysearch">MySearch</a>, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>';
 $d[$k]['pos']    = '370,330,40';
 $d[$k]['sDesc']  = 'Moteur de recherche';
