@@ -26,7 +26,7 @@
     <link rel="shortcut icon" href="https://n4.framasoft.org/nav/img/icons/favicon-violet.png">
     
     <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
-    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $l['current'] ?>css/core.css" rel="stylesheet" type="text/css" />
     <?php echo $t[$page]['css'] ?>
 
     <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
