@@ -5,9 +5,11 @@ body > .row:last-child {
 #bloc-carte {
     margin-bottom:30px;
 }
-
+#bloc-carte h2 {
+    margin-top:0;
+}
 .c-text {
-    min-height:464px;
+    min-height:530px;
     padding-bottom:200px; /* (hauteur de l'image en background) */
     background: url(../img/steve.png) no-repeat bottom right;
 }
@@ -17,6 +19,23 @@ body > .row:last-child {
 .c-text.potion {
     background: url(../img/potion.png) no-repeat bottom right;
 }
+
+.c-text table {
+    margin-top:40px;
+}
+.c-text table th,
+.c-text table td {
+    width:50%;
+    position:relative;
+    border: 1px solid #949494 !important;
+}
+
+.c-text table span[title] {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+    text-decoration:none;
+}
+
 #t-village {
     background: url(../img/village.png) no-repeat bottom right;
 
@@ -54,3 +73,13 @@ body > .row:last-child {
     padding:30px;
 }
 
+.btn-warning.center-block {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-xs.btn-soutenir {
+    font-size:10px;
+    margin:0;
+}

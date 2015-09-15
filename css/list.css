@@ -121,6 +121,10 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
     margin-bottom: 12px;
 }
 
+.front_old .fa:nth-child(2) {
+    display:none;
+}
+
 .tip-content {
     position: absolute;
     width: 270px;
@@ -194,8 +198,8 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
     right:20px;
     opacity:0.25;
     font-size:70px;
-
 }
+
 .tips .fight .logo {
    color:#849551;
 }

@@ -53,25 +53,63 @@ foreach ($d as $k => $v) {
         $options .= '
         <option id="o-'.$k.'" aria-describeby="#t-'.$k.'">'.$v['name'].'</option>';
 
+        $release = (strlen($v['FDate'])==4) ? str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).'<br /><span class="small">'.$t['_release planned on '].'<a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a><br/>'.$t['_ with your help'].'<br/><a href="'.$l['S'].'" class="btn btn-xs btn-soutenir" tittle="'.$t['meta']['S'].'"><i class="fa fa-fw fa-heart"></i><span class="sr-only">'.$t['meta']['S'].'</span></a></span>' : $v['F'].'<br/><span class="small">'.$t['_since'].' '.$v['FDate'].'</span>';
+        if ($v['altOn']!='') {
+            $alton  = '
+                    <tr>
+                        <td>
+                            <i class="fa fa-fw fa-lg fa-cloud fc_g4 pull-right"></i>
+                            <span class="sr-only">'.$t['_Alternative(s) online: '].'</span>'.str_replace(', ','<br/>',$v['altOn']).'
+                        </td>
+                    </tr>';
+            $rowspan = 3;
+        } else {
+            $alton  = '';
+            $rowspan = 2;
+        }
         $text .= '
         <div id="t-'.$k.'" class="c-text c-little '.$v['class'].'">
-            <h2>';
-                $text .= ($v['wkp']!='') ? '<a href="http://fr.wikipedia.org/wiki/'.$v['wkp'].'">'.$v['name'].'</a>' : $v['name'];
-                $text .= ' - '.$v['sDesc'].'</h2>
-            <p>'.$t['_Editor: '] ;
-            //    $text .= ($v['wkp_editeur']!='') ? '<a href="http://fr.wikipedia.org/wiki/'.$v['wkp_editeur'].'">'.$v['editeur'].'</a>' : $v['editeur'];
-                $text .= ($v['eq']!='') ? '<br />'.$t['_Equivalent(s): '].$v['eq'].'' : '';
-                $text .= '
-            </p>
-            <p>';
-                $text .= ($v['altOn']!='') ? $t['_Alternative(s) online: '].$v['altOn'].'<br />' : '';
-                $text .= $t['_Alternative(s) offline: '].$v['altOff'].'
-            </p>
-            <p>'.$t['_Framasoft service: '].$v['F'].'<br />';
-                $text .= (strlen($v['FDate'])==4) ? '('.$t['_release planned on '].'<a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a>)' : $v['FDate'];
-                $text .= '
-            </p>
-         </div>';
+            <h3>';
+                //$text .= ($v['wkp']!='') ? '<a href="http://fr.wikipedia.org/wiki/'.$v['wkp'].'">'.$v['name'].'</a>' : $v['name'];
+                $text .= $v['sDesc'].'<br/><span class="pull-right">'.$v['F'].'</span></h3>
+
+            <table class="table table-bordered">
+                <thead class="fb_g2">
+                    <tr>
+                        <th class="text-center"><span title="'.$e['google']['name'].', '.$e['apple']['name'].', '.$e['facebook']['name'].', '.$e['amazon']['name'].', '.$e['microsoft']['name'].'">'.$t['_GAFAM'].'</span> '.$t['_& co'].'<br/>
+                            '.$e['google']['fa'].$e['apple']['fa'].$e['facebook']['fa'].$e['amazon']['fa'].$e['microsoft']['fa'].'
+                        </th>
+                        <th class="text-center">Logiciels<br/>
+                            <span title="">LEDS</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="fb_g0">
+                    <tr>
+                        <td rowspan="'.$rowspan.'">
+                            <p>
+                                '.$v['name'].'<br/>
+                                <span class="fc_g8">'.str_replace(', ','<br/>',$v['eq']).'</span>
+                            </p>
+                            <p class="text-center" style="position:absolute; bottom: -5px;
+left: 25%;"><i class="fa fa-fw fa-4x fa-user-secret fc_g4"></i></p>
+                        </td>
+                        <td>
+                            <p class="text-center">
+                                '.$release.'
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-fw fa-lg fa-server fc_g4 pull-right"></i>
+                            <span class="sr-only">'.$t['_Alternative(s) offline: '].'</span>'.str_replace(', ','<br/>',$v['altOff']).'
+                        </td>
+                    </tr>
+                    '.$alton.'
+                </tbody>
+            </table>
+        </div>';
     }
 }
 
@@ -82,6 +120,7 @@ include('header.php');
         <div class="row" id="bloc-carte">
             <div class="container ombre">
                 <div class="col-md-8 map">
+                    <h2><?php echo $t['home']['map'] ?></h2>
                     <div class="well">
                         <img src="img/carte-full.jpg" alt="<?php echo $t['home']['altMap'] ?>" style="width:100%" id="carte" usemap="#cartemap" />
                         <map id="cartemap" name="cartemap">
@@ -91,7 +130,8 @@ include('header.php');
                 </div>
                 <div class="col-md-4 description">
 
-                    <p class="text-center"><a class="btn btn-lg btn-soutenir" href="<?php echo $l['S'] ?>"><span class="fa fa-w fa-heart"></span> <?php echo $t['meta']['S'] ?></a></p>
+                    <p class="text-center"><a class="btn btn-lg btn-soutenir center-block" href="<?php echo $l['S'] ?>"><span class="fa fa-w fa-heart"></span> <?php echo $t['meta']['S'] ?></a></p>
+                    <p class="text-center"><a class="btn btn-warning btn-lg center-block" href="<?php echo $l['DIoL'] ?>"><?php echo $t['list']['title'] ?></a></p>
 
                     <div class="well">
                         <p><select id="c-select" title="Choisir le camp" class="form-control">
@@ -100,34 +140,34 @@ include('header.php');
 
                         <!-- Village -->
                         <div id="t-village" class="c-text">
-                            <h2><?php echo $t['home']['camps']['village'] ?></h2>
+                            <h3><?php echo $t['home']['camps']['village'] ?></h3>
                             <p><?php echo $t['home']['camps']['vp1'] ?></p>
                             <p><?php echo $t['home']['camps']['vp2'] ?></p>
                         </div>
                         <!-- Big camps -->
                         <div id="t-fermetum" class="c-text">
-                            <h2><?php echo $t['home']['camps']['fermetum'] ?></h2>
+                            <h3><?php echo $t['home']['camps']['fermetum'] ?></h3>
                             <p><?php echo $t['home']['camps']['fp1'] ?></p>
                             <p><?php echo $t['home']['camps']['fp2'] ?> <a href="#t2-fermetum"><?php echo $t['_Read more'] ?></a></p>
                         </div>
                         <div id="t-centralisum" class="c-text">
-                            <h2><?php echo $t['home']['camps']['centralisum'] ?></h2>
+                            <h3><?php echo $t['home']['camps']['centralisum'] ?></h3>
                             <p><?php echo $t['home']['camps']['cp1'] ?></p>
                             <p><?php echo $t['home']['camps']['cp2'] ?> <a href="#t2-centralisum"><?php echo $t['_Read more'] ?></a></p>
                         </div>
                         <div id="t-espionnum" class="c-text">
-                            <h2><?php echo $t['home']['camps']['espionnum'] ?></h2>
+                            <h3><?php echo $t['home']['camps']['espionnum'] ?></h3>
                             <p><?php echo $t['home']['camps']['ep1'] ?></p>
                             <p><?php echo $t['home']['camps']['ep2'] ?> <a href="#t2-espionnum"><?php echo $t['_Read more'] ?></a></p>
                         </div>
                         <div id="t-privatum" class="c-text">
-                            <h2><?php echo $t['home']['camps']['privatum'] ?></h2>
+                            <h3><?php echo $t['home']['camps']['privatum'] ?></h3>
                             <p><?php echo $t['home']['camps']['pp1'] ?></p>
                             <p><?php echo $t['home']['camps']['pp2'] ?> <a href="#t2-privatum"><?php echo $t['_Read more'] ?></a></p>
                         </div>
                         <!-- NSA -->
                         <div id="t-nsa" class="c-text">
-                            <h2><?php echo $t['home']['camps']['nsa'] ?></h2>
+                            <h3><?php echo $t['home']['camps']['nsa'] ?></h3>
                             <p><?php echo $t['home']['camps']['np1'] ?></p>
                             <p><?php echo $t['home']['camps']['np2'] ?></p>
                         </div>
@@ -147,7 +187,6 @@ include('header.php');
                         <div class="col-md-6 col-sm-3 col-xs-6">
                             <p><a href="#concret" class="btn btn-primary btn-block"><?php echo $t['home']['conc']['btn'] ?></a></p>
                         </div>
-                        <p class="text-center"><a class="btn btn-warning btn-lg" href="<?php echo $l['DIoL'] ?>"><?php echo $t['list']['title'] ?></a></p>
                     </div>
                 </div>
             </div>

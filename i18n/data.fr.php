@@ -3,6 +3,7 @@
  * $l = liens
  * $t = texte
  * $d = données camps et framaprojets
+ * $e = éditeur
  */
 
 // Liens
@@ -23,7 +24,7 @@ $t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">Dégoogliso
 $t['meta']['start']     = 'Campagne commencée le 07/10/2014';
 $t['meta']['edit']      = 'Dernière modification le 17/07/2015';
 $t['meta']['S']         = 'Soutenir ce projet';
-$t['meta']['lead']      = 'Une initiative du réseau '.$t['meta']['F'].' en faveur d’un internet
+$t['meta']['lead']      = 'Une initiative du réseau '.$t['meta']['F'].' en faveur d’un internet<br/>
                 <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
                 <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>';
 // LEDS
@@ -62,11 +63,12 @@ $t['home']['title']  = 'Accueil';
 $t['home']['link']   = '/';
 $t['home']['desc']   = '';
 $t['home']['css']    = '<link href="css/home.css" rel="stylesheet" type="text/css" />';
-$t['home']['js']    = '
+$t['home']['js']     = '
     <script src="js/jquery.maphilight.js" type="text/javascript"></script>
     <script src="js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="js/home.js" type="text/javascript"></script>';
-$t['home']['altMap'] = '_ Nous sommes en 2015 après Jésus-Christ. Toute la toile est occupée par des services centralisés...
+$t['home']['map']    = 'Cliquez sur la carte pour découvrir les alternatives…';
+$t['home']['altMap'] = 'Nous sommes en 2015 après Jésus-Christ. Toute la toile est occupée par des services centralisés…
                 Toute ? Non ! Une communauté peuplée d’irreductibles libristes résite encore et toujours à l’envahisseur.
                 Et la vie n’est pas facile pour les garnisons des camps retranchés de Fermetum, Centralisum, Espionnum et Privatum…';
 // Accueil - Camps
@@ -149,7 +151,7 @@ $t['home']['dang']['erefs'] = '
                         <li>Numerama, le 24/07/2014 : <a href="http://www.numerama.com/magazine/30101-des-backdoors-sur-ios-tout-ce-qu-il-faut-savoir.html">Des backdoors sur iOS ? Tout ce qu’il faut savoir</a></li>
                         <li>Bug Brother (Le Monde), le 11/02/2014 : <a href="http://bugbrother.blog.lemonde.fr/2014/02/11/le-gif-qui-revele-la-paranoia-de-la-nsaqui-espionne-donc-aussi-vos-enfants-parents-amis/">Le .gif qui révèle la paranoïa de la NSA, et pourquoi elle espionne aussi vos parents & amis</a></li>
                         <li>Rue89, le 15/08/2013 :  <a href="http://rue89.nouvelobs.com/2013/08/15/les-messages-envoyes-compte-gmail-peuvent-etre-interceptes-alors-244954">Les e-mails envoyés sur Gmail peuvent être interceptés. Et alors ?</a></li>
-                        <li>Écrans.fr, le 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">Le FBI a accès aux comptes Facebook, Google, Yahoo!...</a></li>
+                        <li>Écrans.fr, le 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">Le FBI a accès aux comptes Facebook, Google, Yahoo!…</a></li>
                         <li>Le Monde.fr, le 27/01/2014 : <a href="http://www.lemonde.fr/technologies/article/2014/01/27/des-applications-mobiles-utilisees-par-la-nsa-et-son-homologue-britannique_4355371_651865.html">Des applications de smartphones "mises sur écoute" par la NSA</a></li>
                     </ul>';
 $t['home']['dang']['p']     = 'Vie privée';
@@ -232,7 +234,7 @@ $t['home']['dang']['frefs'] = '
                         <li>Rue89, le 03/02/2013 : <a href="http://rue89.nouvelobs.com/2013/02/03/qui-appartiennent-vos-donnees-sur-internet-mauvaises-nouvelles-et-conseils-239198">A qui appartiennent vos données sur Internet ? Mauvaises nouvelles et conseils</a></li>
                         <li>Atlantico, le 16/06/2014 : <a href="http://www.atlantico.fr/decryptage/quelle-cible-publicitaire-etes-pourquoi-avez-peut-etre-interet-utiliser-fonctions-facebook-et-google-pour-connaitre-que-geants-1617661.html">Quelle cible publicitaire êtes-vous?</a></li>
                         <li>Nextinpact, le 22/07/2009 : <a href="http://www.nextinpact.com/archive/52115-amazon-kindle-ebook-disparaitre-orwell.htm">Des ouvrages d’Orwell supprimés du Kindle par Amazon</a></li>
-                        <li>Rue89, le 18/11/2013 : <a href="http://rue89.nouvelobs.com/2013/11/18/google-facebook-apple-superpuissances-ont-privatise-internet-247615">Google, Facebook, Apple... : ces superpuissances ont privatisé Internet</a></li>
+                        <li>Rue89, le 18/11/2013 : <a href="http://rue89.nouvelobs.com/2013/11/18/google-facebook-apple-superpuissances-ont-privatise-internet-247615">Google, Facebook, Apple… : ces superpuissances ont privatisé Internet</a></li>
                         <li>Liberation.fr, le 07/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/07/la-fin-du-porno-sur-vine-un-espace-de-liberte-en-moins_985232">La fin du porno sur Vine, un espace de liberté en moins</a></li>
                         <li>Liberation.fr, le 14/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/14/apple-censure-un-roman-francais-pour-cause-de-seins-nus_987120">Apple censure un roman français pour cause de seins nus</a></li>
                         <li>Rue89, le 29/05/2014 : <a href="http://rue89.nouvelobs.com/2014/05/29/chantage-google-apple-amazon-les-tontons-ecrabouilleurs-252521">Chantage : Google, Apple et Amazon, les tontons écrabouilleurs</a></li>
@@ -340,10 +342,17 @@ $t['_Equivalent(s): ']          = 'Équivalent(s) : ';
 $t['_Alternative(s) online: ']  = 'Alternative(s) en ligne : ';
 $t['_Alternative(s) offline: '] = 'Alternative(s) à installer : ';
 $t['_Framasoft service: ']      = 'Service Framasoft : ';
-$t['_release planned on ']      = 'sortie prévue en ';
+$t['_release planned on ']      = 'sortie en ';
 $t['_Select the language']      = 'Choisir la langue';
 $t['_Change the language']      = 'Changer la langue';
 $t['_OK']                       = 'OK';
+$t['_since']                    = 'depuis';
+$t['_GAFAM']                    = 'GAFAM';
+$t['_& co']                     = '& cie';
+$t['_Software']                 = 'Logiciels';
+$t['_LEDS']                     = 'LEDS';
+$t['_Libre, Éthique, Décentralisé et Solidaire'] = 'Libre, Éthique, Décentralisé et Solidaire';
+$t['_ with your help']          = ' avec votre aide';
 
 /*************
  * Objectifs *
@@ -410,7 +419,7 @@ for ($i=2014; $i<2018; $i++) {
  * Éditeurs *
  ************/
 
-$editeurs = [
+$e = [
     // GAFAM…
     'google'    => ['name' => 'Google',    'wkp' => 'Google',    'fa' => '<i class="fa fa-fw fa-google"></i>'],
     'apple'     => ['name' => 'Apple',     'wkp' => 'Apple',     'fa' => '<i class="fa fa-fw fa-apple"></i>'],
@@ -421,14 +430,14 @@ $editeurs = [
     'avaaz'     => ['name' => 'Avaaz',         'wkp' => 'Avaaz.org'],
     'bitly'     => ['name' => 'Bitly',         'wkp' => 'Bit.ly'],
     'doodle'    => ['name' => 'Doodle AG',     'wkp' => 'Doodle.com'],
-    'dropbox'   => ['name' => 'Dropbox',       'wkp' => 'Dropbox'],
+    'dropbox'   => ['name' => 'Dropbox',       'wkp' => 'Dropbox', 'fa' => '<i class="fa fa-fw fa-dropbox"></i>'],
     'evernote'  => ['name' => 'Evernote',      'wkp' => 'Evernote' ],
-    'github'    => ['name' => 'GitHub',        'wkp' => 'GitHub'],
+    'github'    => ['name' => 'GitHub',        'wkp' => 'GitHub', 'fa' => '<i class="fa fa-fw fa-github"></i>'],
     'imgur'     => ['name' => 'Imgur',         'wkp' => 'Imgur'],
     'pastebin'  => ['name' => 'Pastebin',      'wkp' => 'Pastebin'],
-    'trello'    => ['name' => 'Trello Inc',    'wkp' => 'Trello Inc'],
-    'twitter'   => ['name' => 'Twitter',       'wkp' => 'Twitter'],
-    'pocket'    => ['name' => 'Read It Later', 'wkp' => 'Pocket_%28application%29']
+    'trello'    => ['name' => 'Trello Inc',    'wkp' => 'Trello Inc', 'fa' => '<i class="fa fa-fw fa-trello"></i>'],
+    'twitter'   => ['name' => 'Twitter',       'wkp' => 'Twitter', 'fa' => '<i class="fa fa-fw fa-twitter"></i>'],
+    'pocket'    => ['name' => 'Read It Later', 'wkp' => 'Pocket_%28application%29', 'fa' => '<i class="fa fa-fw fa-get-pocket"></i>']
 ];
 
 /****************
@@ -471,7 +480,7 @@ $d[$k]['name']   = 'Avaaz';
 $d[$k]['wkp']    = 'Avaaz.org';
 $d[$k]['eq']     = 'Change.org';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>…';
+$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
 $d[$k]['pos']    = '190,595,40';
 $d[$k]['sDesc']  = 'Pétitions';
 $d[$k]['lDesc']  = 'Lancez vos pétitions sans offrir les adresses de vos soutiens';
@@ -489,12 +498,12 @@ $d[$k]['FL']     = 'https://frama.link';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lstu/';
 $d[$k]['S']      = '<a href="http://lstu.fiat-tux.fr/"><abbr>LSTU</abbr></a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b>.<b class="vert">link</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
 $d[$k]['name']   = 'Bit.ly';
 $d[$k]['wkp']    = 'Bit.ly';
-$d[$k]['eq']     = 'goo.gl, t.co, tinyurl.com…';
+$d[$k]['eq']     = $e['google']['fa'].'goo.gl, '.$e['twitter']['fa'].'t.co, tinyurl.com';
 $d[$k]['altOn']  = '<a href="http://lstu.fr/">lstu.fr</a>, <a href="http://ur1.ca/">ur1.ca</a>';
-$d[$k]['altOff'] = '<a href="http://lstu.fr/">LSTU</a>, <a href="http://yourls.org/">YOURLS</a>, <a href="http://lilurl.sourceforge.net/">LilURL</a>…';
+$d[$k]['altOff'] = '<a href="http://lstu.fr/">LSTU</a>, <a href="http://yourls.org/">YOURLS</a>, <a href="http://lilurl.sourceforge.net/">LilURL</a>';
 $d[$k]['pos']    = '545,300,40';
 $d[$k]['sDesc']  = 'Réduction d’URL';
 $d[$k]['lDesc']  = 'Des adresses plus courtes en toute discrétion';
@@ -514,11 +523,11 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://www.pluxml.org/">PluXML</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">sites</b>';
 $d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Blogger';
+$d[$k]['name']   = $e['google']['fa'].'Blogger';
 $d[$k]['wkp']    = 'Blogger';
-$d[$k]['eq']     = 'sites.pages-jaunes.fr, OverBlog, Skyblog…';
+$d[$k]['eq']     = 'Pages Jaunes, OverBlog, Skyblog';
 $d[$k]['altOn']  = '<a href="http://wordpress.com">Wordpress.com</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', '.$d[$k]['altOn'].'…';
+$d[$k]['altOff'] = $d[$k]['S'].', '.$d[$k]['altOn'];
 $d[$k]['pos']    = '605,480,40';
 $d[$k]['sDesc']  = 'Hébergement de sites';
 $d[$k]['lDesc']  = '';
@@ -532,7 +541,7 @@ $d[$k]['FL']     = 'http://framindmap.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/';
 $d[$k]['S']      = '<a href="http://wisemapping.com">Wisemapping</a>';
 $d[$k]['F']      = '<a href="http://framindmap.org"><b class="violet">Fram</b><b class="vert">indmap</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">octobre 2012</a>)';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">octobre 2012</a>';
 $d[$k]['name']   = 'Bubbl.us';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = '';
@@ -564,7 +573,7 @@ $d[$k]['FL']     = 'http://framadate.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-framadate/';
 $d[$k]['S']      = 'Studs';
 $d[$k]['F']      = '<a href="http://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">juin 2011</a>)';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">juin 2011</a>';
 $d[$k]['name']   = 'Doodle';
 $d[$k]['wkp']    = 'Doodle.com';
 $d[$k]['eq']     = '';
@@ -593,9 +602,9 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = 'Owncloud';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">drive</b>';
 $d[$k]['FDate']  = '2015';
-$d[$k]['name']   = 'Dropbox';
+$d[$k]['name']   = $e['dropbox']['fa'].'Dropbox';
 $d[$k]['wkp']    = 'Dropbox';
-$d[$k]['eq']     = 'Google Drive, iCloud Drive';
+$d[$k]['eq']     = $e['google']['fa'].'Google Drive,<br/>'.$e['apple']['fa'].'iCloud Drive';
 $d[$k]['altOn']  = '<a href="http://owncloud.org/providers/#free">OwnCloud</a>, <a href="https://seacloud.cc">Seacloud</a>';
 $d[$k]['altOff'] = '<a href="https://pyd.io/">Pyd.io</a>, <a href="http://owncloud.org/">OwnCloud</a>, <a href="http://www.seafile.com">Seafile</a>';
 $d[$k]['pos']    = '325,550,40';
@@ -630,10 +639,10 @@ $d[$k]['FL']     = 'https://framasphere.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://diasporafoundation.org/">Diaspora*</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">sphère</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>)';
-$d[$k]['name']   = 'Facebook';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>';
+$d[$k]['name']   = $e['facebook']['fa'].'Facebook';
 $d[$k]['wkp']    = 'Facebook';
-$d[$k]['eq']     = 'LinkedIn, Viadeo, Google+';
+$d[$k]['eq']     = 'LinkedIn, Viadeo, '.$e['google']['fa'].'Google+';
 $d[$k]['altOn']  = '<a href="http://pods.jasonrobinson.me/">liste de pods Diaspora*</a>, <a href="https://pod.movim.eu">liste de pods Movim</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="https://movim.eu/">Movim</a>';
 $d[$k]['pos']    = '240,440,40';
@@ -655,11 +664,11 @@ $d[$k]['FL']     = 'http://git.framasoft.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://gitlab.com/">Gitlab</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">git</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">mars 2015</a>)';
-$d[$k]['name']   = 'GitHub';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">mars 2015</a>';
+$d[$k]['name']   = $e['github']['fa'].'GitHub';
 $d[$k]['wkp']    = 'GitHub';
-$d[$k]['eq']     = 'Google Code, SourceForge';
-$d[$k]['altOn']  = $d[$k]['S'].'<a href="http://savannah.gnu.org/">Savannah</a><a href="http://gna.org/">Gna!</a>, <a href="http://tuxfamily.org/">TuxFamilly</a>, l’<a href="https://adullact.net/">Adullact</a>';
+$d[$k]['eq']     = $e['google']['fa'].'Google Code, SourceForge';
+$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://savannah.gnu.org/">Savannah</a>, <a href="http://gna.org/">Gna!</a>, <a href="http://tuxfamily.org/">TuxFamilly</a>, l’<a href="https://adullact.net/">Adullact</a>';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '505,380,40';
 $d[$k]['sDesc']  = 'Hébergement de code';
@@ -677,9 +686,9 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://www.caliopen.org/">Caliopen</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">mail</b>';
 $d[$k]['FDate']  = '2017';
-$d[$k]['name']   = 'GMail';
+$d[$k]['name']   = $e['google']['fa'].'GMail';
 $d[$k]['wkp']    = 'Gmail';
-$d[$k]['eq']     = 'Outlook, Yahoo Mail, Orange…';
+$d[$k]['eq']     = $e['microsoft']['fa'].'Outlook, Yahoo Mail, Orange';
 $d[$k]['altOn']  = '<a href="https://openmailbox.org">OpenMailBox</a>, <a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>,… ';
 $d[$k]['altOff'] = '<a href="http://mozilla.org/thunderbird">Thunderbird</a>';
 $d[$k]['pos']    = '615,680,40';
@@ -695,11 +704,11 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://www.k5n.us/webcalendar.php">Webcalendar</a>';
 $d[$k]['F']      = '<b class="violet">Fram</b><b class="vert">agenda</b>';
 $d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Google Agenda';
+$d[$k]['name']   = $e['google']['fa'].'Google Agenda';
 $d[$k]['wkp']    = 'Google_Agenda';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="http://www.k5n.us/webcalendar.php">webcalendar</a>, <a href="http://www.zkoss.org/product/">ZK Calendar</a>…';
+$d[$k]['altOff'] = '<a href="http://www.k5n.us/webcalendar.php">webcalendar</a>, <a href="http://www.zkoss.org/product/">ZK Calendar</a>';
 $d[$k]['pos']    = '540,530,40';
 $d[$k]['sDesc']  = 'Agenda partagé';
 $d[$k]['lDesc']  = '';
@@ -712,12 +721,12 @@ $d[$k]['FL']     = 'http://framabookin.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-d-un-serveur-opds/';
 $d[$k]['S']      = '<a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">bookin</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon">juin 2015</a>)';
-$d[$k]['name']   = 'Google Books';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon">juin 2015</a>';
+$d[$k]['name']   = $e['google']['fa'].'Google Books';
 $d[$k]['wkp']    = 'Google_Livres';
 
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '<a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>, <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>…';
+$d[$k]['eq']     = $e['amazon']['fa'].'Amazon';
+$d[$k]['altOn']  = '<a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>, <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>';
 $d[$k]['pos']    = '590,400,40';
 $d[$k]['sDesc']  = 'Livres en ligne';
@@ -734,8 +743,8 @@ $d[$k]['FL']     = 'https://framapad.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-detherpad/';
 $d[$k]['S']      = '<a href="http://etherpad.org/">Etherpad</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">pad</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2011/03/28/framapad-collaboration-en-ligne">mars 2011</a>)';
-$d[$k]['name']   = 'Google Docs';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2011/03/28/framapad-collaboration-en-ligne">mars 2011</a>';
+$d[$k]['name']   = $e['google']['fa'].'Google Docs';
 $d[$k]['wkp']    = 'Google_Drive';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
@@ -771,7 +780,7 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://www.drupal.org/">Drupal</a> + <a href="https://www.drupal.org/project/webform">Webform</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">forms</b>';
 $d[$k]['FDate']  = '2017';
-$d[$k]['name']   = 'Google Forms';
+$d[$k]['name']   = $e['google']['fa'].'Google Forms';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
@@ -794,11 +803,11 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://www.sympa.org/">Sympa</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">listes</b>';
 $d[$k]['FDate']  = '2017';
-$d[$k]['name']   = 'Google Groupes';
+$d[$k]['name']   = $e['google']['fa'].'Google Groupes';
 $d[$k]['wkp']    = 'Google_Groupes';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="http://riseup.net/">riseup.net</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.gnu.org/software/mailman/">mailman</a>…';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.gnu.org/software/mailman/">mailman</a>';
 $d[$k]['pos']    = '615,750,40';
 $d[$k]['sDesc']  = 'Listes de diffusion';
 $d[$k]['lDesc']  = '';
@@ -811,12 +820,12 @@ $d[$k]['FL']     = 'https://framanews.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://tt-rss.org/">TinyTinyRSS</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">news</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2013/06/27/framanews-rss-google-reader">juin 2013</a>)';
-$d[$k]['name']   = 'Google Reader';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2013/06/27/framanews-rss-google-reader">juin 2013</a>';
+$d[$k]['name']   = $e['google']['fa'].'Google Reader';
 $d[$k]['wkp']    = 'Google_Reader';
 $d[$k]['eq']     = 'Feedly';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://freshrss.org/">FreshRSS</a>…';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://freshrss.org/">FreshRSS</a>';
 $d[$k]['pos']    = '430,80,40';
 $d[$k]['sDesc']  = 'Lecteur de flux';
 $d[$k]['lDesc']  = 'Suivez l’actualité et faites vos choix librement';
@@ -835,10 +844,10 @@ $d[$k]['FL']     = 'https://framabee.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-searx/';
 $d[$k]['S']      = '<a href="https://github.com/asciimoo/searx">Searx</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">bee</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">mai 2015</a>)';
-$d[$k]['name']   = 'Google Search';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">mai 2015</a>';
+$d[$k]['name']   = $e['google']['fa'].'Google Search';
 $d[$k]['wkp']    = 'Google_%28moteur_de_recherche%29';
-$d[$k]['eq']     = 'Bing, Yahoo, Qwant';
+$d[$k]['eq']     = $e['microsoft']['fa'].'Bing, Yahoo, Qwant';
 $d[$k]['altOn']  = '<a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://www.ixquick.com/">Ixquick</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://codingteam.net/project/mysearch">MySearch</a>, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>';
 $d[$k]['pos']    = '370,330,40';
@@ -857,7 +866,7 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://strut.io/">Strut.io</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">slides</b>';
 $d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Google Slides';
+$d[$k]['name']   = $e['google']['fa'].'Google Slides';
 $d[$k]['wkp']    = 'Google_Drive';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = $d[$k]['S'];
@@ -889,8 +898,8 @@ $d[$k]['FL']     = 'http://framacalc.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://ethercalc.org/">Ethercalc</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">calc</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octobre 2012</a>)';
-$d[$k]['name']   = 'Google Spreadsheet';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octobre 2012</a>';
+$d[$k]['name']   = $e['google']['fa'].'Google Spreadsheet';
 $d[$k]['wkp']    = 'Google_Drive';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
@@ -921,10 +930,10 @@ $d[$k]['FL']     = 'https://framapic.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lutim/';
 $d[$k]['S']      = '<a href="https://lut.im">Lut.im</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">pic</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
 $d[$k]['name']   = 'Img.ur';
 $d[$k]['wkp']    = 'Imgur';
-$d[$k]['eq']     = '';
+$d[$k]['eq']     = $e['facebook']['fa'].'Instagram';
 $d[$k]['altOn']  = '<a href="http://pix.toile-libre.org/">Toile libre</a>, <a href="https://lut.im">Lut.im</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="https://coquelicot.potager.org/">Coquelicot</a>';
 $d[$k]['pos']    = '630,190,40';
@@ -946,10 +955,10 @@ $d[$k]['FL']     = 'http://framagames.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = 'divers';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">games</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">juin 2015</a>)';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">juin 2015</a>';
 $d[$k]['name']   = 'Kongregate';
 $d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
+$d[$k]['eq']     = 'Angry Bird';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '';
 $d[$k]['pos']    = '365,420,40';
@@ -971,7 +980,7 @@ $d[$k]['FL']     = 'https://framabin.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-zerobin/';
 $d[$k]['S']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">bin</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>)';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
 $d[$k]['name']   = 'Pastebin';
 $d[$k]['wkp']    = 'Pastebin';
 $d[$k]['eq']     = '';
@@ -997,8 +1006,8 @@ $d[$k]['FL']     = 'http://framabag.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://www.wallabag.org/">Wallabag</a>';
 $d[$k]['F']      = '<a href="https://framabag.org"><b class="violet">Frama</b><b class="vert">bag</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">février 2014</a>)';
-$d[$k]['name']   = 'Pocket';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">février 2014</a>';
+$d[$k]['name']   = $e['pocket']['fa'].'Pocket';
 $d[$k]['wkp']    = 'Pocket_%28application%29';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
@@ -1024,9 +1033,9 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">talk</b>';
 $d[$k]['FDate']  = '2015';
-$d[$k]['name']   = 'Skype';
+$d[$k]['name']   = $e['microsoft']['fa'].'Skype';
 $d[$k]['wkp']    = 'Skype';
-$d[$k]['eq']     = 'Hangouts';
+$d[$k]['eq']     = $e['google']['fa'].'Hangouts';
 $d[$k]['altOn']  = $d[$k]['S'].', <a href="http://hibuddy.monkeypatch.me/">Hi Buddy</a> (WebRTC)';
 $d[$k]['altOff'] = '<a href="https://jitsi.org/">Jitsi</a>';
 $d[$k]['pos']    = '370,660,40';
@@ -1047,11 +1056,11 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://kanboard.net/">Kanboard</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">board</b>';
 $d[$k]['FDate']  = '2015';
-$d[$k]['name']   = 'Trello';
+$d[$k]['name']   = $e['trello']['fa'].'Trello';
 $d[$k]['wkp']    = 'Trello';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = 'Libreboard';
-$d[$k]['altOff'] = '';
+$d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '420,510,40';
 $d[$k]['sDesc']  = 'Gestion de projets';
 $d[$k]['lDesc']  = 'Gestionnaire de projets';
@@ -1070,7 +1079,7 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://twister.net.co/">Twister</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">tweet</b>';
 $d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Twitter';
+$d[$k]['name']   = $e['twitter']['fa'].'Twitter';
 $d[$k]['wkp']    = 'Twitter';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="https://identi.ca">Identi.ca</a>';
@@ -1097,7 +1106,7 @@ $d[$k]['name']   = 'Wetransfer';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = 'Dropsend';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '';
+$d[$k]['altOff'] = '<a href="https://coquelicot.potager.org/">Coquelicot</a>, <a href="https://gitlab.com/mojo42/Jirafeau">Jirafeau</a>';
 $d[$k]['pos']    = '240,520,40';
 $d[$k]['sDesc']  = 'Envoi de gros fichiers';
 $d[$k]['lDesc']  = '';
@@ -1111,11 +1120,11 @@ $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://mediagoblin.org/">Mediagoblin</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">tube</b></a>';
 $d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Youtube';
+$d[$k]['name']   = $e['google']['fa'].'Youtube';
 $d[$k]['wkp']    = 'Youtube';
-$d[$k]['eq']     = 'Vimeo, Dailymotion…';
+$d[$k]['eq']     = 'Vimeo, Dailymotion';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://cumulusclips.org/">CumulusClips</a>,<a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
 $d[$k]['pos']    = '635,560,40';
 $d[$k]['sDesc']  = 'Hébergement de vidéos';
 $d[$k]['lDesc']  = 'Partagez vos vidéos et conservez vos droits';
@@ -1139,7 +1148,7 @@ $d[$k]['name']   = '1000minds';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = '';
+$d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '400,590,40';
 $d[$k]['sDesc']  = 'Prise de décision';
 $d[$k]['lDesc']  = 'Un outil pour mieux gérer les prises de décisions collectives';
@@ -1176,9 +1185,9 @@ $d[$k]['mBody']  = '<p>
                     <p><b class="violet">Fonctionnement :</b></p>
                     <ul>
                         <li>Choisir les fonds de carte</li>
-                        <li>Ajouter des POI: marqueurs, lignes, polygones...</li>
+                        <li>Ajouter des POI: marqueurs, lignes, polygones…</li>
                         <li>Choisir la couleur et les icônes</li>
-                        <li>Gérer les options de la carte: afficher une minicarte, géolocaliser l’utilisateur...</li>
+                        <li>Gérer les options de la carte: afficher une minicarte, géolocaliser l’utilisateur…</li>
                         <li>Import des données géographiques en masse (geojson, gpx, kml, osm…)</li>
                         <li>Choisir la licence de vos données</li>
                         <li>Exporter et partager votre carte</li>
@@ -1195,7 +1204,7 @@ $d[$k]['name']   = 'jsFiddle';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = 'Codepen';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://dabblet.com/">Dabblet</a>…';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://dabblet.com/">Dabblet</a>';
 $d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Partage de code';
 $d[$k]['lDesc']  = '';
@@ -1213,7 +1222,7 @@ $d[$k]['name']   = 'Padlet';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '';
+$d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Organisation d’idées';
 $d[$k]['lDesc']  = '';
@@ -1226,7 +1235,7 @@ $d[$k]['FL']     = 'http://framavectoriel.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/';
 $d[$k]['S']      = '<a href="https://code.google.com/p/svg-edit/">SVG-Edit</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">vectoriel</b></a>';
-$d[$k]['FDate']  = '(depuis <a href="http://www.framablog.org/index.php/post/2012/10/23/framavectoriel">octobre 2012</a>)';
+$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/23/framavectoriel">octobre 2012</a>';
 $d[$k]['name']   = 'Pixlr';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = 'Picozu';
@@ -1264,7 +1273,7 @@ $d[$k]['name']   = 'Scribd';
 $d[$k]['wkp']    = '';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '';
+$d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Partage de PDF/ODP';
 $d[$k]['lDesc']  = '';
@@ -1358,13 +1367,5 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
 $d[$k]['name']    = 'Développement et intégration du plugin Mypads';
 $d[$k]['FDate']   = '2015';
 
-/**********************
- * Status des projets *
- **********************/
-// $potion = alternatives en préparation
-// $fight = alternatives opérationnelles
-$potion  = ['avaaz','dropbox','gslides','skype','trello','youtube','1000minds','gforms','gmaps','transifex','wetransfer'];
-$fight   = ['bubblus','doodle','gdocs','greader','gspreadsheet',
-            'pixlr','facebook','pocket','bitly','github',
-            'gbooks','gsearch','imgur','kongregate','pastebin'];
+include('data.php');
 ?>

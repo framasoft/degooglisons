@@ -29,9 +29,9 @@ foreach ($d as $k => $v) {
     $icon = '';
     $alt_text = '';
     switch ($v['class']) {
-        case 'fight' : $icon = '<span class="fa fa-fw fa-check vert" title="'.$t['_Project running'].'"></span><span class="sr-only">'.$t['_Project running'].'</span>'; break;
-        case 'potion' : $icon = '<span class="fa fa-fw fa-clock-o orange" title="'.$t['_Project loading'].'"></span><span class="sr-only">'.$t['_Project loading'].'</span>'; break;
-        case 'casque' : $icon = '<span class="fa fa-fw fa-refresh text-info" title="'.$t['_Project updated'].'"></span><span class="sr-only">'.$t['_Project updated'].'</span>'; break;
+        case 'fight' : $icon = '<i class="fa fa-fw fa-check vert" title="'.$t['_Project running'].'"></i><span class="sr-only">'.$t['_Project running'].'</span>'; break;
+        case 'potion' : $icon = '<i class="fa fa-fw fa-clock-o orange" title="'.$t['_Project loading'].'"></i><span class="sr-only">'.$t['_Project loading'].'</span>'; break;
+        case 'casque' : $icon = '<i class="fa fa-fw fa-refresh text-info" title="'.$t['_Project updated'].'"></i><span class="sr-only">'.$t['_Project updated'].'</span>'; break;
     }
 
     /* Front */
@@ -47,8 +47,8 @@ foreach ($d as $k => $v) {
         $front = '
             <div class="front">
                 <h3>'.$v['sDesc'].'</h3>
-                <div class="front_old"><span class="fa fa-fw fa-heart"></span> '.$v['name'].'</div>
-                <div class="front_new"><span class="fa fa-fw fa-paw"></span> '.$v['F'].'</div>
+                <div class="front_old"><i class="fa fa-fw fa-heart"></i> '.$v['name'].'</div>
+                <div class="front_new"><i class="fa fa-fw fa-paw"></i> '.$v['F'].'</div>
             </div>';
     } else {
         $front = '
@@ -57,8 +57,8 @@ foreach ($d as $k => $v) {
                 <span class="logo"></span>
                 <div class="k-fg">
                     <h3>'.$v['sDesc'].'</h3>
-                    <div class="front_old"><span class="fa fa-fw fa-eye"></span> '.$v['name'].'</div>
-                    <div class="front_new"><span class="fa fa-fw fa-shield"></span> '.$v['F'].' <span class="soft_frama">('.$v['S'].')</span></div>
+                    <div class="front_old"><i class="fa fa-fw fa-eye"></i> '.$v['name'].'</div>
+                    <div class="front_new"><i class="fa fa-fw fa-shield"></i> '.$v['F'].' <span class="soft_frama">('.$v['S'].')</span></div>
                 </div>
             </div>';
     }
@@ -108,7 +108,7 @@ foreach ($d as $k => $v) {
                 <p class="back_content">'.$v['lDesc'].'</p>
 
                 <div class="col-xs-6">
-                    <a href="'.$l['S'].'" class="btn btn-xs btn-soutenir btn-block"><span class="fa fa-w fa-heart"></span> '.$t['_Support'].'</a>
+                    <a href="'.$l['S'].'" class="btn btn-xs btn-soutenir btn-block"><i class="fa fa-w fa-heart"></i> '.$t['_Support'].'</a>
                 </div>
                 <div class="col-xs-6">
                     <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$k.'">'.$t['_More'].'</button>
@@ -184,7 +184,7 @@ include('header.php');
             </nav>
 
             <div class="col-md-6 hidden-sm">
-                <p class="text-center" style="margin:0"><a class="btn btn-lg btn-soutenir" href="<?php echo $l['S'] ?>"><span class="fa fa-w fa-heart"></span> <?php echo $t['meta']['S'] ?></a></p>
+                <p class="text-center" style="margin:0"><a class="btn btn-lg btn-soutenir" href="<?php echo $l['S'] ?>"><i class="fa fa-w fa-heart"></i> <?php echo $t['meta']['S'] ?></a></p>
             </div>
         </div>
         <div id="tips" class="row">

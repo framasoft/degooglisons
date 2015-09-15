@@ -4,7 +4,7 @@
         'en_GB' => 'English',
         'es_ES' => 'Español',
     ];
-    
+
     // Default language fr_FR
     if(!isset($_SESSION['lang']) OR !in_array($_SESSION['lang'], $langs)) {
         $_SESSION['lang'] = 'fr_FR';
@@ -27,7 +27,7 @@
                 $browserLangs[] = strtolower(substr($hit,0,2));
             }
         }
-        
+
         if(in_array('fr', $browserLangs)) {
             // french is better
             $_SESSION['lang'] = 'fr';
@@ -41,6 +41,6 @@
             }
         }
     }
-    
+
     require('i18n/data.'.strtolower(substr($_SESSION['lang'],0,2)).'.php');
 ?>
