@@ -2,6 +2,11 @@ body > .row:last-child {
     padding-top:20px;
 }
 
+body main > .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 #bloc-carte {
     margin-bottom:30px;
 }
