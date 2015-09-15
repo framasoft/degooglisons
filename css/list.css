@@ -1,73 +1,3 @@
-/* Default style
-* {
-    -moz-transition:all 0.5s;
-    -webkit-transition:all 0.5s;
-    -o-transition:all 0.5s;
-    transition:all 0.5s;
-}*/
-
-body {
-  font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
-  color:#333;
-  background:#eee;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: PTSansCaption, GillSans, sans-serif;
-    font-weight: bold;
-    color: #5b5e64;
-}
-
-h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; }
-
-.trait { /* hr */
-    background-color: #EEE;
-    height: 11px;
-    margin:15px 0px;
-    border:none;
-}
-
-body > .row {
-    padding-top:20px;
-    margin-left:0;
-    margin-right:0;
-}
-
-.ombre {
-    background-color: #FFF;
-    box-shadow: -4px 6px 9px rgba(50, 50, 50, 0.5);
-}
-
-a {
-    color: #0C5B7A;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #18a5d9;
-}
-
-p {
-    color: #333;
-    font-size: 1em;
-}
-
-/* Header style */
-header {
-    padding: 2em 1em 0.5em;
-}
-
-header .lead {
-    color: #666;
-    font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
-    padding-top: 1.65em;
-    margin-bottom: 0.5em;
-}
-
-.violet{color: #6A5687;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
-.orange{color: #D2703A;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
-.vert{color: #849551;font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; font-style:normal;}
-
 #sticky .btn-soutenir {
     font-size:24px;
     font-weight:bold;
@@ -76,34 +6,13 @@ header .lead {
 a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 
 /* End header style */
-
-.leds {
-    background: #677835;
-    border-radius:0 !important;
-    display:none;
-    margin: 30px 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.leds .close {
-    float:right;
-    right:auto;
-    top:auto;
-    margin-top:-10px;
-}
-
-#leds {
-    top: -140px;
-}
-
 #tips {
     margin-left:0;
     margin-right:0;
 }
 
 #tips .container {
-    padding:20px 0;
+    padding:15px 0;
 }
 
 #sticky {
@@ -128,10 +37,6 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 }
 .year h2 {
     text-align:center;
-}
-
-main {
-    margin-bottom:30px;
 }
 
 .soft_frama {
@@ -216,6 +121,10 @@ main {
     margin-bottom: 12px;
 }
 
+.front_old .fa:nth-child(2) {
+    display:none;
+}
+
 .tip-content {
     position: absolute;
     width: 270px;
@@ -242,6 +151,10 @@ main {
 
 .show-back {
     top: -140px;
+}
+
+.hide-back {
+    top: 0px !important;
 }
 
 .modal-dialog h4 {
@@ -273,11 +186,6 @@ main {
     margin-left:15px;
 }
 
-h1 a, h3 a, h4 a,
-h1 a:hover, h3 a:hover, h4 a:hover,
-h1 a:focus, h3 a:focus, h4 a:focus {
-    text-decoration:none;
-}
 
 .k-fg {
     position:absolute;
@@ -290,8 +198,8 @@ h1 a:focus, h3 a:focus, h4 a:focus {
     right:20px;
     opacity:0.25;
     font-size:70px;
-
 }
+
 .tips .fight .logo {
    color:#849551;
 }
@@ -300,26 +208,26 @@ h1 a:focus, h3 a:focus, h4 a:focus {
    color:#D2703A;
 }
 
-.framindmap .logo:before { content: "\f0e8"; }
-.framindmap .logo {
+.bubblus .logo:before { content: "\f0e8"; }
+.bubblus .logo {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
-.framadate .logo:before { content: "\f073"; }
-.framapad .logo:before { content: "\f036"; }
-.framacalc .logo:before { content: "\f00a"; }
-.framavectoriel .logo:before { content: "\f1fc"; }
-.framanews .logo:before { content: "\f1ea"; }
-.framabag .logo:before { content: "\f0b1"; }
-.framasphere .logo:before { content: "\f069"; }
-.framatube .logo:before { content: "\f008"; }
-.framashort .logo:before { content: "\f0c1"; }
-.framagit .logo:before { content: "\f1d3"; }
-.framalutim .logo:before { content: "\f03e"; }
-.framabin .logo:before { content: "\f0ea"; }
-.framabee .logo:before { content: "\f002"; }
-.framaopds .logo:before { content: "\f0f4"; }
-.framagames .logo:before { content: "\f11b"; }
+.doodle .logo:before { content: "\f073"; }
+.gdocs .logo:before { content: "\f036"; }
+.gspreadsheet .logo:before { content: "\f00a"; }
+.pixlr .logo:before { content: "\f1fc"; }
+.greader .logo:before { content: "\f1ea"; }
+.pocket .logo:before { content: "\f0b1"; }
+.facebook .logo:before { content: "\f069"; }
+.youtube .logo:before { content: "\f008"; }
+.bitly .logo:before { content: "\f0c1"; }
+.github .logo:before { content: "\f1d3"; }
+.imgur .logo:before { content: "\f03e"; }
+.pastebin .logo:before { content: "\f0ea"; }
+.gsearch .logo:before { content: "\f002"; }
+.gbooks .logo:before { content: "\f0f4"; }
+.kongregate .logo:before { content: "\f11b"; }
