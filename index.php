@@ -80,7 +80,7 @@ foreach ($d as $k => $v) {
                             '.$e['google']['fa'].$e['apple']['fa'].$e['facebook']['fa'].$e['amazon']['fa'].$e['microsoft']['fa'].'
                         </th>
                         <th class="text-center">Logiciels<br/>
-                            <span title="">LEDS</span>
+                            <span title="'.t['_Libre, Éthique, Décentralisé et Solidaire'].'">LEDS</span>
                         </th>
                     </tr>
                 </thead>
