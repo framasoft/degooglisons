@@ -88,6 +88,12 @@ main {
     margin-bottom:20px;
 }
 
+.btn-xs.btn-soutenir {
+    font-size:12px;
+    font-weight:normal;
+    margin:0px;
+}
+
 #back-to-top {
     display:none;
     position:fixed;
