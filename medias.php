@@ -140,8 +140,8 @@ include('header.php');
                 <?php echo $t['medias']['framalist'] ?>
 
                 <p class="text-center">
-                    <img src="img/biglogo.png" alt="" style="width:220px; margin:10px 30px"/>
-                    <img src="img/biglogo-noir.png" alt="" style="width:220px; margin:10px 30px"/>
+                    <img src="<?php echo $l['current'] ?>img/biglogo.png" alt="" style="width:220px; margin:10px 30px"/>
+                    <img src="<?php echo $l['current'] ?>img/biglogo-noir.png" alt="" style="width:220px; margin:10px 30px"/>
                 </p>
             </div>
 
