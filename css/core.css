@@ -43,9 +43,9 @@ h1 a:hover, h3 a:hover, h4 a:hover,
 h1 a:focus, h3 a:focus, h4 a:focus {
     text-decoration:none;
 }
-header a, 
+header a,
 h1 a, h1 a:hover, h1 a:focus,
-h2 a, h2 a:hover, h2 a:focus, 
+h2 a, h2 a:hover, h2 a:focus,
 h3 a, h3 a:hover, h3 a:focus,
 h4 a, h4 a:hover, h4 a:focus,
 h5 a, h5 a:hover, h5 a:focus{
@@ -104,4 +104,12 @@ main {
 #back-to-top:hover,
 #back-to-top:focus {
     opacity:1;
+}
+
+.thumbnail p {
+    margin-top:20px;
+}
+
+.tab-pane {
+    padding : 20px 0;
 }

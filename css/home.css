@@ -88,3 +88,13 @@ body main > .row {
     font-size:10px;
     margin:0;
 }
+
+.fa-server.fc_g5,
+.fa-cloud.fc_g5 {
+    cursor:help;
+    opacity:0.7
+}
+.fa-server.fc_g5:hover,
+.fa-cloud.fc_g5:hover {
+    opacity:1;
+}

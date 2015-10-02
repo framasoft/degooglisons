@@ -6,6 +6,8 @@
  * $e = éditeur
  */
 
+include('data.php');
+
 // Liens
 $l['F'] = 'https://framasoft.org';
 $l['S'] = 'https://soutenir.framasoft.org';
@@ -1289,5 +1291,4 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
 $d[$k]['name']    = 'Development and integration of Mypads plugin';
 $d[$k]['FDate']   = '2015';
 
-include('data.php');
 ?>

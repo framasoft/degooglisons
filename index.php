@@ -4,12 +4,12 @@ $page = 'home';
 
 $areas = '
     <!-- Village -->
-    <area id="a-village" coords="160,120,60" class="village" alt="'.$t['home']['camps']['village'].'" title="'.$t['home']['camps']['village'].'" shape="circle" data-maphilight=\'{"strokeColor":"6A5687","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-village" coords="165,120,60" class="village" alt="'.$t['home']['camps']['village'].'" title="'.$t['home']['camps']['village'].'" shape="circle" data-maphilight=\'{"strokeColor":"6A5687","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
     <!-- Big camps -->
-    <area id="a-fermetum" coords="95,210,50" alt="Fermetum" title="Fermetum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
-    <area id="a-centralisum" coords="160,250,50" alt="Centralisum" title="Centralisum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
-    <area id="a-espionnum" coords="235,230,50" alt="Espionnum" title="Espionnum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
-    <area id="a-privatum" coords="252,142,50" alt="Privatum" title="Privatum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-fermetum" coords="95,215,50" alt="Fermetum" title="Fermetum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-centralisum" coords="165,260,50" alt="Centralisum" title="Centralisum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-espionnum" coords="240,240,50" alt="Espionnum" title="Espionnum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
+    <area id="a-privatum" coords="260,150,50" alt="Privatum" title="Privatum"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1">
     <!-- NSA -->
     <area id="a-nsa" coords="460,300,45" alt="NSA" title="NSA"  shape="circle" data-maphilight=\'{"strokeColor":"0C5B7A","strokeWidth":3,"fillColor":"ffffff","fillOpacity":0.2}\' href="javascript:void(0);" tabindex="-1" >
     <!-- Little camps -->';
@@ -53,12 +53,26 @@ foreach ($d as $k => $v) {
         $options .= '
         <option id="o-'.$k.'" aria-describeby="#t-'.$k.'">'.$v['name'].'</option>';
 
-        $release = (strlen($v['FDate'])==4) ? str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).'<br /><span class="small">'.$t['_release planned on '].'<a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a><br/>'.$t['_ with your help'].'<br/><a href="'.$l['S'].'" class="btn btn-xs btn-soutenir" tittle="'.$t['meta']['S'].'"><i class="fa fa-fw fa-heart"></i><span class="sr-only">'.$t['meta']['S'].'</span></a></span>' : $v['F'].'<br/><span class="small">'.$t['_since'].' '.$v['FDate'].'</span>';
+        if (strlen($v['FDate'])==4) {
+            $release =
+                str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).'<br />
+                <span class="small">'.$t['_release planned on '].'
+                    <a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a><br/>
+                    '.$t['_ with your help'].'<br/>
+                    <a href="'.$l['S'].'" class="btn btn-xs btn-soutenir" tittle="'.$t['meta']['S'].'">
+                        <i class="fa fa-fw fa-heart"></i><span class="sr-only">'.$t['meta']['S'].'</span>
+                    </a>
+                </span>';
+        } else {
+            $release =
+                $v['F'].'<br/>
+                <span class="small">'.$t['_since'].' '.$v['FDate'].'</span>';
+        }
         if ($v['altOn']!='') {
             $alton  = '
                     <tr>
                         <td>
-                            <i class="fa fa-fw fa-lg fa-cloud fc_g4 pull-right"></i>
+                            <i class="fa fa-fw fa-lg fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>
                             <span class="sr-only">'.$t['_Alternative(s) online: '].'</span>'.str_replace(', ','<br/>',$v['altOn']).'
                         </td>
                     </tr>';
@@ -92,7 +106,7 @@ foreach ($d as $k => $v) {
                                 <span class="fc_g8">'.str_replace(', ','<br/>',$v['eq']).'</span>
                             </p>
                             <p class="text-center" style="position:absolute; bottom: -5px;
-left: 25%;"><i class="fa fa-fw fa-4x fa-user-secret fc_g4"></i></p>
+left: 25%;"><i class="fa fa-fw fa-4x fa-user-secret fc_g5"></i></p>
                         </td>
                         <td>
                             <p class="text-center">
@@ -102,7 +116,7 @@ left: 25%;"><i class="fa fa-fw fa-4x fa-user-secret fc_g4"></i></p>
                     </tr>
                     <tr>
                         <td>
-                            <i class="fa fa-fw fa-lg fa-server fc_g4 pull-right"></i>
+                            <i class="fa fa-fw fa-lg fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i>
                             <span class="sr-only">'.$t['_Alternative(s) offline: '].'</span>'.str_replace(', ','<br/>',$v['altOff']).'
                         </td>
                     </tr>
@@ -120,9 +134,9 @@ include('header.php');
         <div class="row" id="bloc-carte">
             <div class="container ombre">
                 <div class="col-md-8 map">
-                    <h2><?php echo $t['home']['map'] ?></h2>
-                    <div class="well">
-                        <img src="img/carte-full.jpg" alt="<?php echo $t['home']['altMap'] ?>" style="width:100%" id="carte" usemap="#cartemap" />
+                    <h2 class="h3"><?php echo $t['home']['map'] ?></h2>
+                    <div class="">
+                        <img src="<?php echo $l['map'] ?>" alt="<?php echo $t['home']['altMap'] ?>" style="width:100%" id="carte" usemap="#cartemap" />
                         <map id="cartemap" name="cartemap">
                             <?php echo $areas; ?>
                         </map>

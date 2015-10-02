@@ -6,6 +6,8 @@
  * $e = éditeur
  */
 
+include('data.php');
+
 // Liens
 $l['F'] = 'https://framasoft.org';
 $l['S'] = 'https://soutenir.framasoft.org';
@@ -14,7 +16,9 @@ $l['DIoL'] = $l['DIo'].'/liste';
 $l['Charte'] = 'https://n4.framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
-$l['current'] = str_replace(array(realpath ($_SERVER['DOCUMENT_ROOT']),'/i18n'),'', dirname(__FILE__)).'/';
+
+// Images
+$l['map'] = 'img/carte-animee-fr.gif';
 
 // Meta
 $t['meta']['lang']      = 'fr';
@@ -23,7 +27,7 @@ $t['meta']['framasoft'] = 'Framasoft';
 $t['meta']['F']         = '<a href="'.$l['F'].'"><b class="violet">Frama</b><b class="orange">soft</b></a>';
 $t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">Dégooglisons</b> <b class="orange">Internet</b></a>';
 $t['meta']['start']     = 'Campagne commencée le 07/10/2014';
-$t['meta']['edit']      = 'Dernière modification le 17/07/2015';
+$t['meta']['edit']      = 'Dernière modification le 02/10/2015';
 $t['meta']['S']         = 'Soutenir ce projet';
 $t['meta']['lead']      = 'Une initiative du réseau '.$t['meta']['F'].' en faveur d’un internet<br/>
                 <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
@@ -61,7 +65,7 @@ $t['meta']['leds']['charte']  = 'Pour en savoir plus, consultez <strong><a href=
 
 // Accueil
 $t['home']['title']  = 'Accueil';
-$t['home']['link']   = '/';
+$t['home']['link']   = $l['current'];
 $t['home']['desc']   = '';
 $t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
 $t['home']['js']     = '
@@ -309,21 +313,123 @@ $t['home']['conc']['sp3']     = 'Mais le moyen le plus simple et le plus rapide 
 $t['home']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
 
 // Liste des services
-$t['list']['title']     = 'Liste des services';
-$t['list']['link']      = 'liste';
-$t['list']['desc']      = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
-$t['list']['css']       = '
+$t['list']['title']      = 'Liste des services';
+$t['list']['link']       = $l['current'].'liste';
+$t['list']['desc']       = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
+$t['list']['css']        = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
-$t['list']['js']        = '
+$t['list']['js']         = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Espace médias
-$t['medias']['title']   = 'Espace médias';
-$t['medias']['link']    = 'medias';
-$t['medias']['desc']    = '';
-$t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
-$t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+$t['medias']['title']    = 'Espace médias';
+$t['medias']['link']     = $l['current'].'medias';
+$t['medias']['desc']     = '';
+$t['medias']['css']      = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
+$t['medias']['js']       = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+
+$t['medias']['subtitle']    = '5 octobre 2015 : an 2 de la Dégooglisation d’Internet.';
+$t['medias']['intro']       = 'Pour entamer la deuxième année de sa campagne de propositions d’alternatives aux services de Google & consorts, l’association Framasoft annonce, dès le 5 octobre, cinq nouveaux services issus de logiciels libres.';
+$t['medias']['btnCPtxt']    = 'Télécharger le<br/>communiqué de presse';
+$t['medias']['btnCPurl']    = 'img/2015_communique_degooglisons_Framasoft.odt';
+$t['medias']['btnDPtxt']    = 'Télécharger le<br/>dossier de presse';
+$t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2015.pdf';
+$t['medias']['1title']      = 'Articles sur le Framablog';
+$t['medias']['1intro']      = 'Le <a href="http://framablog.org">Framablog</a> est notre principal outil de communication envers le grand public. Chacune des 5 nouveautés proposées durant le lancement de cette campagne y seront présentées au cours de la semaine du 5 octobre 2015.';
+$t['medias']['1list']       = '
+                        <ul>
+                            <li><em>Lundi 5/10</em> : Présentation de <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">l’an 2 de la campagne Dégooglisons Internet</a>.</li>
+                            <li><em>Lundi 5/10</em> : <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative à Dropbox et Google Drive.</li>
+                            <li><em>Mardi 6/10</em> : <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative à GoogleDocs.</li>
+                            <li><em>Mercredi 7/10</em> : <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a> alternative à Trello.</li>
+                            <li><em>Jeudi 8/10</em> : <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternative à Doodle.</li>
+                            <li><em>Vendredi 9/10</em> : <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a> alternative à WeTransfer.</li>
+                        </ul>';
+$t['medias']['2title']      = 'Liens vers les services';
+$t['medias']['2intro']      = 'Bien qu’elles soient présentées tout au long de la semaine sur notre blog, ces cinq nouveautés seront en ligne dès le 5 octobre. Cliquez sur le nom du service pour l’essayer.';
+$t['medias']['2list']       = '
+                        <ul>
+                            <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
+                            <li><a href="https://mypads.framapad.org"><b class="violet">My</b><b class="vert">Pads</b></a></li>
+                            <li><a href="https://framaboard.org"><b class="violet">Frama</b><b class="vert">board</b></a></li>
+                            <li><a href="https://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a></li>
+                            <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
+                        </ul>';
+
+$t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons an 2.';
+$t['medias']['tabsintro']   = 'Sauf mention contraire, tous nos visuels sont réalisés par <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> et sont librement réutilisables sous la licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> Ces visuels sont en grand format (contrairement aux apparences). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à nous contacter.';
+$t['medias']['tabssaveas']  = '<em>Faire un clic droit sur l’image et choisir « Enregistrer l’image sous » afin de la réutiliser.</em>';
+$t['medias']['t1']          = 'Cartes';
+$t['medias']['t1i1txt']     = 'Carte « Avant »';
+$t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
+$t['medias']['t1i1desc']    = 'Carte de la France envahie par les services GAFAM (oct 2014)';
+$t['medias']['t1i2txt']     = 'Carte « Après »';
+$t['medias']['t1i2url']     = 'img/Carte2015-victoires.png';
+$t['medias']['t1i2desc']    = 'Carte de la France avec les alternatives Framasoft (oct 2015)';
+$t['medias']['t1i3txt']     = 'Carte animée';
+$t['medias']['t1i3url']     = 'img/Carte2015-romains.png';
+$t['medias']['t1i3desc']    = 'Carte de la France envahie par les services GAFAM (oct 2014)';
+$t['medias']['t2']          = 'Dessins';
+$t['medias']['t2i1txt']     = 'Dessin « Verouillage »';
+$t['medias']['t2i1url']     = 'img/stevusjobus.png';
+$t['medias']['t2i2txt']     = 'Dessin « Cyber Police »';
+$t['medias']['t2i2url']     = 'img/cyberpolicus.png';
+$t['medias']['t2i3txt']     = 'Dessin « Espions »';
+$t['medias']['t2i3url']     = 'img/bourrepifix.png';
+$t['medias']['t2i4txt']     = 'Dessin « Stallman »';
+$t['medias']['t2i4url']     = 'img/stallmanoramix.png';
+$t['medias']['t2i5txt']     = 'Dessin « Flicage »';
+$t['medias']['t2i5url']     = 'img/village.png';
+$t['medias']['t2i6txt']     = 'Dessin « GAFAM »';
+$t['medias']['t2i6url']     = 'img/GAFAM.png';
+$t['medias']['t3']          = 'Vidéos';
+$t['medias']['t3intro']     = 'Nous avons pu expliquer notre projet lors de conférences. Nous avons sélectionné ces deux captations vidéos (et leur code d’intégration) pour que vous puissiez librement les réutiliser sur vos sites webs.';
+$t['medias']['t3v1txt']     = 'Version courte (17mn)';
+$t['medias']['t3v1img']     = 'https://framatube.org/images/media/925l.jpg';
+$t['medias']['t3v1mp4']     = 'https://framatube.org/blip/gosset-owf-dio.mp4';
+$t['medias']['t3v1webm']    = 'https://framatube.org/blip/gosset-owf-dio.webm';
+$t['medias']['t3v2txt']     = 'Version longue (54mn)';
+$t['medias']['t3v2img']     = 'https://framatube.org/blip/gosset-degooglisons-internet.png';
+$t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-internet.mp4';
+$t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
+$t['medias']['t4']          = 'Capture d’écran';
+$t['medias']['presstitle']  = 'Revue de presse';
+$t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant sa première année. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
+$t['medias']['pressth1']    = 'Date';
+$t['medias']['pressth2']    = 'Média';
+$t['medias']['pressth3']    = 'Liens';
+$t['medias']['presslist']   = [
+    ['17/08/2015', 'France Culture (Du grain à moudre)',
+    'http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3',
+    'Lien vers le podcast'],
+    ['24/05/2015', 'Le Soir (Belgique)',
+    'http://www.lesoir.be/886985/article/economie/vie-du-net/2015-05-23/google-vivre-sans-c-est-parfois-possible',
+    'Lien vers l’article (abonnés)'],
+    ['29/04/2015', 'Canal + (La Nouvelle Édition)',
+    'http://www.canalplus.fr/c-emissions/c-la-nouvelle-edition/pid6850-la-nouvelle-edition.html?vid=1249359',
+    'Lien vers la vidéo'],
+    ['03/02/2015', 'L’Humanité',
+    'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
+    'Lien vers l’article'],
+    ['02/11/2014', 'Libération',
+    'http://www.liberation.fr/ecrans/2014/11/02/avec-framasoft-l-appli-fait-de-la-resistance_1134654',
+    'Lien vers l’article'],
+    ['01/11/2014', 'France Inter (Comme un buit qui court)',
+    'http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
+    'Lien vers la page d’écoute']
+];
+$t['medias']['framatitle']  = 'Framasoft en quelques liens…';
+$t['medias']['framalist']   = '
+                        <ul>
+                            <li><a href="https://contact.framasoft.org/#questions">Nous contacter</a> (le formulaire renvoie direcement à notre service presse).</li>
+                            <li><a href="https://fr.wikipedia.org/wiki/Framasoft">Page wikipédia</a> consacrée à Framasoft.</li>
+                            <li><a href="https://soutenir.framasoft.org/association">Présentation complète</a> de Framasoft.</li>
+                            <li><a href="https://wiki.framasoft.org/speakabout">Revue de presse</a> (et de web) de Framasoft.</li>
+                        </ul>';
+$t['medias']['framap1']     = 'Framasoft est un réseau d’éducation populaire, issu du monde éducatif, se consacrant à promouvoir et diffuser le logiciel et la culture libre.';
+$t['medias']['framap2']     = 'Trait d’union entre le monde du Libre et le grand public, l’association propose une galaxie de projets (annuaire de logiciels, maison d’édition, moteur de recherche, etc.) rassemblés en 3 axes : logiciels libres, culture libre et services libres.';
+$t['medias']['framap3']     = '<em>Le logo est une œuvre de JosephK sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
 // Texte générique
 $t['_Close']            = 'Fermer';
@@ -340,8 +446,8 @@ $t['_Some examples ?']  = 'Des exemples ?';
 $t['_Back to top']      = 'Retour en haut';
 $t['_Editor: ']         = 'Éditeur : ';
 $t['_Equivalent(s): ']          = 'Équivalent(s) : ';
-$t['_Alternative(s) online: ']  = 'Alternative(s) en ligne : ';
-$t['_Alternative(s) offline: '] = 'Alternative(s) à installer : ';
+$t['_Alternative(s) online: ']  = 'Alternative(s) en ligne';
+$t['_Alternative(s) offline: '] = 'Alternative(s) à installer';
 $t['_Framasoft service: ']      = 'Service Framasoft : ';
 $t['_release planned on ']      = 'sortie en ';
 $t['_Select the language']      = 'Choisir la langue';
@@ -416,73 +522,43 @@ for ($i=2014; $i<2018; $i++) {
     $d['tip'.$i]['mFooter'] = '<a href="'.$l['S'].'" class="btn btn-soutenir"><i class="fa fa-fw fa-heart"></i> Soutenir</a>';
 }
 
-/************
- * Éditeurs *
- ************/
-
-$e = [
-    // GAFAM…
-    'google'    => ['name' => 'Google',    'wkp' => 'Google',    'fa' => '<i class="fa fa-fw fa-google"></i>'],
-    'apple'     => ['name' => 'Apple',     'wkp' => 'Apple',     'fa' => '<i class="fa fa-fw fa-apple"></i>'],
-    'facebook'  => ['name' => 'Facebook',  'wkp' => 'Facebook',  'fa' => '<i class="fa fa-fw fa-facebook"></i>'],
-    'amazon'    => ['name' => 'Amazon',    'wkp' => 'Amazon',    'fa' => '<i class="fa fa-fw fa-amazon"></i>'],
-    'microsoft' => ['name' => 'Microsoft', 'wkp' => 'Microsoft', 'fa' => '<i class="fa fa-fw fa-windows"></i>'],
-    // … & cie
-    'avaaz'     => ['name' => 'Avaaz',         'wkp' => 'Avaaz.org'],
-    'bitly'     => ['name' => 'Bitly',         'wkp' => 'Bit.ly'],
-    'doodle'    => ['name' => 'Doodle AG',     'wkp' => 'Doodle.com'],
-    'dropbox'   => ['name' => 'Dropbox',       'wkp' => 'Dropbox', 'fa' => '<i class="fa fa-fw fa-dropbox"></i>'],
-    'evernote'  => ['name' => 'Evernote',      'wkp' => 'Evernote' ],
-    'github'    => ['name' => 'GitHub',        'wkp' => 'GitHub', 'fa' => '<i class="fa fa-fw fa-github"></i>'],
-    'imgur'     => ['name' => 'Imgur',         'wkp' => 'Imgur'],
-    'pastebin'  => ['name' => 'Pastebin',      'wkp' => 'Pastebin'],
-    'trello'    => ['name' => 'Trello Inc',    'wkp' => 'Trello Inc', 'fa' => '<i class="fa fa-fw fa-trello"></i>'],
-    'twitter'   => ['name' => 'Twitter',       'wkp' => 'Twitter', 'fa' => '<i class="fa fa-fw fa-twitter"></i>'],
-    'pocket'    => ['name' => 'Read It Later', 'wkp' => 'Pocket_%28application%29', 'fa' => '<i class="fa fa-fw fa-get-pocket"></i>']
-];
-
 /****************
  * Services web *
- ****************/
-/*
+ ****************
+
 $k = 'id';                                                              // pour la carte : id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte) et pour la liste : associer modales à chaque post-it
+
+---- Facultatif : déjà dans data.php -----------------------------------
 $d[$k]['FL']      = '';                                                 // lien pour le bouton « Utiliser » + $d[$k]['F']
 $d[$k]['CL']      = '';                                                 // lien pour le bouton « Installer » (Framacloud)
 $d[$k]['S']       = '<a href="*">*</a>';                                // lien et nom du logiciel que Frama utilise
 $d[$k]['F']       = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">*</b></a>';
-$d[$k]['FDate']   = '201*';                                             // date ou article du Framablog (contient la date dans l'url)
 $d[$k]['name']    = '';                                                 // Nom du service proprio sur la carte
-$d[$k]['wkp']     = '';                                                 // Page wikipédia
 $d[$k]['eq']      = '';                                                 // Équivalents
 $d[$k]['altOn']   = '';                                                 // Alternatives en ligne
 $d[$k]['altOff']  = '';                                                 // Alternatives hors ligne / à installer sur un serveur (doit y avoir au moins $d[$k]['S'])
 $d[$k]['pos']     = '';                                                 // Coordonnées sur la carte : 'x, y, R'
+$d[$k]['FDate']   = '201*';                                             // date ou article du Framablog (contient la date dans l'url)
+
+---- À remplir ici : data.xx.php ---------------------------------------
 $d[$k]['sDesc']   = '';                                                 // Description courte (en titre sur carte et post-it)
 $d[$k]['lDesc']   = '';                                                 // Description longue (au dos du post-it)
-$d[$k]['mTitle']  = '';                                                 // Modale ↓ (mFooter est optionnel → automatiquement défini si vide)
+$d[$k]['mTitle']  = '';                                                 // Modale ↓
 $d[$k]['mBody']   = '<p>
                         '.$d[$k]['F'].' vous permet de…
                     </p>
                     <p>
                         <b class="violet">Fonctionnement :</b> …
                     </p>';
+
+---- Facultatif : déjà dans list.php (l.23-26)--------------------------
 $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance basée sur le logiciel libre '.$d[$k]['S'].'</p>';
+
 */
 
 
 // Avaaz
 $k= 'avaaz';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://www.drupal.org/">Drupal</a> + <a href="https://www.drupal.org/project/webform">WebForm</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">pétition</b>';
-$d[$k]['FDate']  = '2015';
-$d[$k]['name']   = 'Avaaz';
-$d[$k]['wkp']    = 'Avaaz.org';
-$d[$k]['eq']     = 'Change.org';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
-$d[$k]['pos']    = '190,595,40';
 $d[$k]['sDesc']  = 'Pétitions';
 $d[$k]['lDesc']  = 'Lancez vos pétitions sans offrir les adresses de vos soutiens';
 $d[$k]['mTitle'] = 'Libérez vos pétitions';
@@ -495,17 +571,6 @@ $d[$k]['mBody']  = '<p>
 
 // Bit.ly
 $k= 'bitly';
-$d[$k]['FL']     = 'https://frama.link';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lstu/';
-$d[$k]['S']      = '<a href="http://lstu.fiat-tux.fr/"><abbr>LSTU</abbr></a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b>.<b class="vert">link</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
-$d[$k]['name']   = 'Bit.ly';
-$d[$k]['wkp']    = 'Bit.ly';
-$d[$k]['eq']     = $e['google']['fa'].'goo.gl, '.$e['twitter']['fa'].'t.co, tinyurl.com';
-$d[$k]['altOn']  = '<a href="http://lstu.fr/">lstu.fr</a>, <a href="http://ur1.ca/">ur1.ca</a>';
-$d[$k]['altOff'] = '<a href="http://lstu.fr/">LSTU</a>, <a href="http://yourls.org/">YOURLS</a>, <a href="http://lilurl.sourceforge.net/">LilURL</a>';
-$d[$k]['pos']    = '545,300,40';
 $d[$k]['sDesc']  = 'Réduction d’URL';
 $d[$k]['lDesc']  = 'Des adresses plus courtes en toute discrétion';
 $d[$k]['mTitle'] = 'Finies les adresses trop longues';
@@ -519,17 +584,6 @@ $d[$k]['mBody']  = '<p>
 
 // Blogger
 $k= 'blogger';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://www.pluxml.org/">PluXML</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">sites</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = $e['google']['fa'].'Blogger';
-$d[$k]['wkp']    = 'Blogger';
-$d[$k]['eq']     = 'Pages Jaunes, OverBlog, Skyblog';
-$d[$k]['altOn']  = '<a href="http://wordpress.com">Wordpress.com</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', '.$d[$k]['altOn'];
-$d[$k]['pos']    = '605,480,40';
 $d[$k]['sDesc']  = 'Hébergement de sites';
 $d[$k]['lDesc']  = '';
 $d[$k]['FL']     = '';
@@ -538,17 +592,7 @@ $d[$k]['mBody']  = '';
 
 // Bubbl.us
 $k= 'bubblus';
-$d[$k]['FL']     = 'http://framindmap.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/';
-$d[$k]['S']      = '<a href="http://wisemapping.com">Wisemapping</a>';
-$d[$k]['F']      = '<a href="http://framindmap.org"><b class="violet">Fram</b><b class="vert">indmap</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/16/framindmap-carte-mentale">octobre 2012</a>';
 $d[$k]['name']   = 'Bubbl.us';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="https://www.mindmup.com">Mindmup</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://github.com/drichard/mindmaps">Mindmaps</a>, <a href="https://github.com/mindmup/mindmup">Mindmup</a>';
-$d[$k]['pos']    = '360,145,40';
 $d[$k]['sDesc']  = 'Cartes heuristiques';
 $d[$k]['lDesc']  = 'Fabriquez vos cartes mentales';
 $d[$k]['mTitle'] = 'Pourquoi créer une carte mentale ?';
@@ -570,17 +614,6 @@ $d[$k]['mBody']  = '<p>
 
 // Doodle
 $k= 'doodle';
-$d[$k]['FL']     = 'http://framadate.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-framadate/';
-$d[$k]['S']      = 'Studs';
-$d[$k]['F']      = '<a href="http://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">juin 2011</a>';
-$d[$k]['name']   = 'Doodle';
-$d[$k]['wkp']    = 'Doodle.com';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>, <a href="http://www.peacefrogs.net/papillon">Papillon</a>';
-$d[$k]['pos']    = '415,190,40';
 $d[$k]['sDesc']  = 'Réunions et sondages';
 $d[$k]['lDesc']  = 'Convenir d’une réunion et créer un sondage';
 $d[$k]['mTitle'] = 'Organiser des rendez-vous simplement et librement';
@@ -598,17 +631,6 @@ $d[$k]['mBody']  = '<p>
 
 // Dropbox
 $k= 'dropbox';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = 'Owncloud';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">drive</b>';
-$d[$k]['FDate']  = '2015';
-$d[$k]['name']   = $e['dropbox']['fa'].'Dropbox';
-$d[$k]['wkp']    = 'Dropbox';
-$d[$k]['eq']     = $e['google']['fa'].'Google Drive,<br/>'.$e['apple']['fa'].'iCloud Drive';
-$d[$k]['altOn']  = '<a href="http://owncloud.org/providers/#free">OwnCloud</a>, <a href="https://seacloud.cc">Seacloud</a>';
-$d[$k]['altOff'] = '<a href="https://pyd.io/">Pyd.io</a>, <a href="http://owncloud.org/">OwnCloud</a>, <a href="http://www.seafile.com">Seafile</a>';
-$d[$k]['pos']    = '325,550,40';
 $d[$k]['sDesc']  = 'Stockage de documents';
 $d[$k]['lDesc']  = 'Héberger ses documents en ligne';
 $d[$k]['mTitle'] = 'Héberger ses documents en ligne';
@@ -618,17 +640,6 @@ $d[$k]['mBody']  = '<p>
 
 // Evernote
 $k= 'evernote';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://laverna.cc/">Laverna</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">notes</b>';
-$d[$k]['FDate']  = '2017';
-$d[$k]['name']   = 'Evernote';
-$d[$k]['wkp']    = 'Evernote';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '560,600,40';
 $d[$k]['sDesc']  = 'Prise de notes';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
@@ -636,17 +647,6 @@ $d[$k]['mBody']  = '';
 
 // Facebook
 $k= 'facebook';
-$d[$k]['FL']     = 'https://framasphere.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://diasporafoundation.org/">Diaspora*</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">sphère</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2014/10/07/framasphere-reseau-social-libre-et-gratuit">octobre 2014</a>';
-$d[$k]['name']   = $e['facebook']['fa'].'Facebook';
-$d[$k]['wkp']    = 'Facebook';
-$d[$k]['eq']     = 'LinkedIn, Viadeo, '.$e['google']['fa'].'Google+';
-$d[$k]['altOn']  = '<a href="http://pods.jasonrobinson.me/">liste de pods Diaspora*</a>, <a href="https://pod.movim.eu">liste de pods Movim</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://movim.eu/">Movim</a>';
-$d[$k]['pos']    = '240,440,40';
 $d[$k]['sDesc']  = 'Réseau social';
 $d[$k]['lDesc']  = 'Un réseau social éthique et décentralisé';
 $d[$k]['mTitle'] = 'Rejoignez vos amis en zone libre';
@@ -661,17 +661,6 @@ $d[$k]['mBody']  = '<p>
 
 // Github
 $k= 'github';
-$d[$k]['FL']     = 'http://git.framasoft.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://gitlab.com/">Gitlab</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">git</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">mars 2015</a>';
-$d[$k]['name']   = $e['github']['fa'].'GitHub';
-$d[$k]['wkp']    = 'GitHub';
-$d[$k]['eq']     = $e['google']['fa'].'Google Code, SourceForge';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://savannah.gnu.org/">Savannah</a>, <a href="http://gna.org/">Gna!</a>, <a href="http://tuxfamily.org/">TuxFamilly</a>, l’<a href="https://adullact.net/">Adullact</a>';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '505,380,40';
 $d[$k]['sDesc']  = 'Hébergement de code';
 $d[$k]['lDesc']  = 'Du code libre c’est bien. Sur une plateforme libre c’est mieux !';
 $d[$k]['mTitle'] = 'Hébergement de code libre';
@@ -682,17 +671,6 @@ $d[$k]['mBody']  = '<p>
 
 // Gmail
 $k= 'gmail';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://www.caliopen.org/">Caliopen</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">mail</b>';
-$d[$k]['FDate']  = '2017';
-$d[$k]['name']   = $e['google']['fa'].'GMail';
-$d[$k]['wkp']    = 'Gmail';
-$d[$k]['eq']     = $e['microsoft']['fa'].'Outlook, Yahoo Mail, Orange';
-$d[$k]['altOn']  = '<a href="https://openmailbox.org">OpenMailBox</a>, <a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>,… ';
-$d[$k]['altOff'] = '<a href="http://mozilla.org/thunderbird">Thunderbird</a>';
-$d[$k]['pos']    = '615,680,40';
 $d[$k]['sDesc']  = 'Service de messagerie';
 $d[$k]['lDesc']  = 'Vos mails, sans la NSA dedans';
 $d[$k]['mTitle'] = 'Votre courrier, dans une enveloppe blindée';
@@ -700,17 +678,6 @@ $d[$k]['mBody']  = '';
 
 // Google Agenda
 $k= 'gagenda';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://www.k5n.us/webcalendar.php">Webcalendar</a>';
-$d[$k]['F']      = '<b class="violet">Fram</b><b class="vert">agenda</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = $e['google']['fa'].'Google Agenda';
-$d[$k]['wkp']    = 'Google_Agenda';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="http://www.k5n.us/webcalendar.php">webcalendar</a>, <a href="http://www.zkoss.org/product/">ZK Calendar</a>';
-$d[$k]['pos']    = '540,530,40';
 $d[$k]['sDesc']  = 'Agenda partagé';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
@@ -718,18 +685,6 @@ $d[$k]['mBody']  = '';
 
 // Google Books
 $k= 'gbooks';
-$d[$k]['FL']     = 'http://framabookin.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-d-un-serveur-opds/';
-$d[$k]['S']      = '<a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">bookin</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon">juin 2015</a>';
-$d[$k]['name']   = $e['google']['fa'].'Google Books';
-$d[$k]['wkp']    = 'Google_Livres';
-
-$d[$k]['eq']     = $e['amazon']['fa'].'Amazon';
-$d[$k]['altOn']  = '<a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>, <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>';
-$d[$k]['pos']    = '590,400,40';
 $d[$k]['sDesc']  = 'Livres en ligne';
 $d[$k]['lDesc']  = 'Une bibliothèque de plusieurs milliers d’ouvrages';
 $d[$k]['mTitle'] = 'Catalogue d’ouvrages accessibles pour tous';
@@ -740,17 +695,6 @@ $d[$k]['mBody']  = '<p>
 
 // Google Docs
 $k= 'gdocs';
-$d[$k]['FL']     = 'https://framapad.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-detherpad/';
-$d[$k]['S']      = '<a href="http://etherpad.org/">Etherpad</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">pad</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2011/03/28/framapad-collaboration-en-ligne">mars 2011</a>';
-$d[$k]['name']   = $e['google']['fa'].'Google Docs';
-$d[$k]['wkp']    = 'Google_Drive';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="http://etherpad.org/">Etherpad</a>';
-$d[$k]['pos']    = '370,65,40';
 $d[$k]['sDesc']  = 'Rédaction collaborative';
 $d[$k]['lDesc']  = 'Du traitement de texte en ligne et à plusieurs !';
 $d[$k]['mTitle'] = 'Outil de rédaction collaborative';
@@ -776,17 +720,6 @@ $d[$k]['mBody']  = '<p>
 
 // Google Form
 $k= 'gforms';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://www.drupal.org/">Drupal</a> + <a href="https://www.drupal.org/project/webform">Webform</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">forms</b>';
-$d[$k]['FDate']  = '2017';
-$d[$k]['name']   = $e['google']['fa'].'Google Forms';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://github.com/spiral-project/daybed">DayBed</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
-$d[$k]['pos']    = '277,618,40';
 $d[$k]['sDesc']  = 'Questionnaires en ligne';
 $d[$k]['lDesc']  = 'Créez simplement des questionnaires';
 $d[$k]['mTitle'] = 'Création de questionaires';
@@ -799,17 +732,6 @@ $d[$k]['mBody']  = '<p>
 
 // Google Groupes
 $k= 'ggroups';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://www.sympa.org/">Sympa</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">listes</b>';
-$d[$k]['FDate']  = '2017';
-$d[$k]['name']   = $e['google']['fa'].'Google Groupes';
-$d[$k]['wkp']    = 'Google_Groupes';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '<a href="http://riseup.net/">riseup.net</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.gnu.org/software/mailman/">mailman</a>';
-$d[$k]['pos']    = '615,750,40';
 $d[$k]['sDesc']  = 'Listes de diffusion';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
@@ -817,17 +739,6 @@ $d[$k]['mBody']  = '';
 
 // Google Reader
 $k= 'greader';
-$d[$k]['FL']     = 'https://framanews.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://tt-rss.org/">TinyTinyRSS</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">news</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2013/06/27/framanews-rss-google-reader">juin 2013</a>';
-$d[$k]['name']   = $e['google']['fa'].'Google Reader';
-$d[$k]['wkp']    = 'Google_Reader';
-$d[$k]['eq']     = 'Feedly';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://freshrss.org/">FreshRSS</a>';
-$d[$k]['pos']    = '430,80,40';
 $d[$k]['sDesc']  = 'Lecteur de flux';
 $d[$k]['lDesc']  = 'Suivez l’actualité et faites vos choix librement';
 $d[$k]['mTitle'] = 'Toujours au courant, jamais en retard';
@@ -841,17 +752,6 @@ $d[$k]['mBody']  = '<p>
 
 // Google Search
 $k= 'gsearch';
-$d[$k]['FL']     = 'https://framabee.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-searx/';
-$d[$k]['S']      = '<a href="https://github.com/asciimoo/searx">Searx</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">bee</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">mai 2015</a>';
-$d[$k]['name']   = $e['google']['fa'].'Google Search';
-$d[$k]['wkp']    = 'Google_%28moteur_de_recherche%29';
-$d[$k]['eq']     = $e['microsoft']['fa'].'Bing, Yahoo';
-$d[$k]['altOn']  = '<a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://www.ixquick.com/">Ixquick</a>, Qwant';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://codingteam.net/project/mysearch">MySearch</a>, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>';
-$d[$k]['pos']    = '370,330,40';
 $d[$k]['sDesc']  = 'Moteur de recherche';
 $d[$k]['lDesc']  = 'Et si vos recherches n’étaient plus fichées par Google ?';
 $d[$k]['mTitle'] = 'Une recherche anonyme';
@@ -862,17 +762,6 @@ $d[$k]['mBody']  = '<p>
 
 // Google Slides
 $k= 'gslides';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://strut.io/">Strut.io</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">slides</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = $e['google']['fa'].'Google Slides';
-$d[$k]['wkp']    = 'Google_Drive';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '490,465,40';
 $d[$k]['sDesc']  = 'Présentations';
 $d[$k]['lDesc']  = 'Des diaporamas de haute qualité sans se fatiguer';
 $d[$k]['mTitle'] = 'Une application pour vos diaporamas';
@@ -895,17 +784,6 @@ $d[$k]['mBody']  = '<p>
 
 // Google Spreadsheet
 $k= 'gspreadsheet';
-$d[$k]['FL']     = 'http://framacalc.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://ethercalc.org/">Ethercalc</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">calc</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/03/framacalc-tableur-sur-internet">octobre 2012</a>';
-$d[$k]['name']   = $e['google']['fa'].'Google Spreadsheet';
-$d[$k]['wkp']    = 'Google_Drive';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>';
-$d[$k]['pos']    = '365,255,40';
 $d[$k]['sDesc']  = 'Tableur collaboratif';
 $d[$k]['lDesc']  = 'Partagez vos tableaux et collaborez !';
 $d[$k]['mTitle'] = 'Un tableur en ligne';
@@ -927,17 +805,6 @@ $d[$k]['mBody']  = '<p>
 
 // Img.ur
 $k= 'imgur';
-$d[$k]['FL']     = 'https://framapic.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lutim/';
-$d[$k]['S']      = '<a href="https://lut.im">Lut.im</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">pic</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
-$d[$k]['name']   = 'Img.ur';
-$d[$k]['wkp']    = 'Imgur';
-$d[$k]['eq']     = $e['facebook']['fa'].'Instagram';
-$d[$k]['altOn']  = '<a href="http://pix.toile-libre.org/">Toile libre</a>, <a href="https://lut.im">Lut.im</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://coquelicot.potager.org/">Coquelicot</a>';
-$d[$k]['pos']    = '630,190,40';
 $d[$k]['sDesc']  = 'Envoi d’images';
 $d[$k]['lDesc']  = 'Partagez vos images anonymement';
 $d[$k]['mTitle'] = 'Partagez vos images facilement';
@@ -949,45 +816,15 @@ $d[$k]['mBody']  = '<p>
                         '.$d[$k]['FL'].' permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
                     </p>';
 
-
-// Kongregate
-$k= 'kongregate';
-$d[$k]['FL']     = 'http://framagames.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = 'divers';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">games</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">juin 2015</a>';
-$d[$k]['name']   = 'Kongregate';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = 'Angry Bird';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '';
-$d[$k]['pos']    = '365,420,40';
-$d[$k]['sDesc']  = 'Jeux';
-$d[$k]['lDesc']  = 'Une compilation de jeux libre';
-$d[$k]['mTitle'] = 'Faites une pose, jouez quelques instants';
-$d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].', vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu’hors ligne. Faites une pause et profitez de l’un des jeux proposés.
-                        <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">contrairement à Angry Birds</a>, la NSA ne vous espionnera pas ;) )</small>
-                    </p>
-                    <p>
-                        <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
-                    </p>';
-$d[$k]['mFooter']= '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>';
+// Meetup
+$k= 'meetup';
+$d[$k]['sDesc']  = '';
+$d[$k]['lDesc']  = '';
+$d[$k]['mTitle'] = '';
+$d[$k]['mBody']  = '';
 
 // Pastebin
 $k= 'pastebin';
-$d[$k]['FL']     = 'https://framabin.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-zerobin/';
-$d[$k]['S']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">bin</b></a>';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
-$d[$k]['name']   = 'Pastebin';
-$d[$k]['wkp']    = 'Pastebin';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '620,255,40';
 $d[$k]['sDesc']  = 'Notes anonymes';
 $d[$k]['lDesc']  = 'Rédigez et partagez en toute discrétion';
 $d[$k]['mTitle'] = 'Communiquez des données chiffrées';
@@ -1003,17 +840,6 @@ $d[$k]['mBody']  = '<p>
 
 // Pocket
 $k= 'pocket';
-$d[$k]['FL']     = 'http://framabag.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://www.wallabag.org/">Wallabag</a>';
-$d[$k]['F']      = '<a href="https://framabag.org"><b class="violet">Frama</b><b class="vert">bag</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">février 2014</a>';
-$d[$k]['name']   = $e['pocket']['fa'].'Pocket';
-$d[$k]['wkp']    = 'Pocket_%28application%29';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://www.wallabag.org/">Wallabag</a>';
-$d[$k]['pos']    = '320,480,40';
 $d[$k]['sDesc']  = 'Sauvegarde de contenu';
 $d[$k]['lDesc']  = 'Sauvegardez et lisez plus tard';
 $d[$k]['mTitle'] = 'Sauvegardez, lisez plus tard';
@@ -1027,19 +853,20 @@ $d[$k]['mBody']  = '<p>
                         comprises. Vous pouvez aussi partager vos articles et utiliser des extensions pour Firefox, Chrome, Android…
                     </p>';
 
+// Shrtct
+$k= 'loomio';
+$d[$k]['sDesc']  = 'Prise de décision';
+$d[$k]['lDesc']  = 'Un outil pour mieux gérer les prises de décisions collectives';
+$d[$k]['mTitle'] = 'Décidez ensembles,';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d’accord et passez à l’action, le tout dans les délais que vous fixés au départ.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s’exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
+                    </p>';
+
 // Skype
 $k= 'skype';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">talk</b>';
-$d[$k]['FDate']  = '2015';
-$d[$k]['name']   = $e['microsoft']['fa'].'Skype';
-$d[$k]['wkp']    = 'Skype';
-$d[$k]['eq']     = $e['google']['fa'].'Hangouts';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://hibuddy.monkeypatch.me/">Hi Buddy</a> (WebRTC)';
-$d[$k]['altOff'] = '<a href="https://jitsi.org/">Jitsi</a>';
-$d[$k]['pos']    = '370,660,40';
 $d[$k]['sDesc']  = 'Visioconférence';
 $d[$k]['lDesc']  = 'Discutez librement avec vos amis';
 $d[$k]['mTitle'] = 'Vidéoconférence';
@@ -1052,17 +879,6 @@ $d[$k]['mBody']  = '<p>
 
 // Trello
 $k= 'trello';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://kanboard.net/">Kanboard</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">board</b>';
-$d[$k]['FDate']  = '2015';
-$d[$k]['name']   = $e['trello']['fa'].'Trello';
-$d[$k]['wkp']    = 'Trello';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = 'Libreboard';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '420,510,40';
 $d[$k]['sDesc']  = 'Gestion de projets';
 $d[$k]['lDesc']  = 'Gestionnaire de projets';
 $d[$k]['mTitle'] = 'Gestionnaire de projets';
@@ -1075,17 +891,6 @@ $d[$k]['mBody']  = '<p>
 
 // Twitter
 $k= 'twitter';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://twister.net.co/">Twister</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">tweet</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = $e['twitter']['fa'].'Twitter';
-$d[$k]['wkp']    = 'Twitter';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '<a href="https://identi.ca">Identi.ca</a>';
-$d[$k]['altOff'] = '<a href="http://twister.net.co/">Twister</a>, <a href="http://status.net/">StatusNet</a>';
-$d[$k]['pos']    = '475,575,40';
 $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Gazouillez sur Internet';
 $d[$k]['mTitle'] = 'Le microblogage libre';
@@ -1098,17 +903,6 @@ $d[$k]['mBody']  = '<p>
 
 // WeTransfer
 $k= 'wetransfer';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = 'LUFI';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">drop</b>';
-$d[$k]['FDate']  = '2015';
-$d[$k]['name']   = 'Wetransfer';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = 'Dropsend';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://coquelicot.potager.org/">Coquelicot</a>, <a href="https://gitlab.com/mojo42/Jirafeau">Jirafeau</a>';
-$d[$k]['pos']    = '240,520,40';
 $d[$k]['sDesc']  = 'Envoi de gros fichiers';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
@@ -1116,17 +910,6 @@ $d[$k]['mBody']  = '';
 
 // Youtube
 $k= 'youtube';
-$d[$k]['FL']     = 'http://framatube.org';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://mediagoblin.org/">Mediagoblin</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">tube</b></a>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = $e['google']['fa'].'Youtube';
-$d[$k]['wkp']    = 'Youtube';
-$d[$k]['eq']     = 'Vimeo, Dailymotion';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
-$d[$k]['pos']    = '635,560,40';
 $d[$k]['sDesc']  = 'Hébergement de vidéos';
 $d[$k]['lDesc']  = 'Partagez vos vidéos et conservez vos droits';
 $d[$k]['mTitle'] = 'Libérez vos vidéos';
@@ -1138,45 +921,11 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Fonctionnement :</b> ouvrez un compte et téléchargez vos vidéos. Vous gardez vos droits et la liberté de modifier vos téléchargements.
                     </p>';
 
-// 1000minds
-$k= 'loomio';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://www.loomio.org">Loomio</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">loomio</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = '1000minds';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '400,590,40';
-$d[$k]['sDesc']  = 'Prise de décision';
-$d[$k]['lDesc']  = 'Un outil pour mieux gérer les prises de décisions collectives';
-$d[$k]['mTitle'] = 'Décidez ensembles,';
-$d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d’accord et passez à l’action, le tout dans les délais que vous fixés au départ.
-                    </p>
-                    <p>
-                        <b class="violet">Fonctionnement :</b> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s’exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
-                    </p>';
-
 /********************
  * Pas sur la carte
  ********************/
 // Google Maps
 $k= 'gmaps';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="https://bitbucket.org/yohanboniface/umap">uMap</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">carte</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Google Map';
-$d[$k]['wkp']    = 'Google_Maps';
-$d[$k]['eq']     = 'Bing Maps, ViaMichelin, Mappy';
-$d[$k]['altOn']  = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>'.$d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Cartographie';
 $d[$k]['lDesc']  = 'Créer vos cartes personnalisées en ligne';
 $d[$k]['mTitle'] = 'Créez vos cartes personnalisées en ligne';
@@ -1196,35 +945,27 @@ $d[$k]['mBody']  = '<p>
 
 // JS Fiddle
 $k= 'jsfiddle';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://jsbin.com/">JS Bin</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">xxx</b>';
-$d[$k]['FDate']  = '2017';
-$d[$k]['name']   = 'jsFiddle';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = 'Codepen';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://dabblet.com/">Dabblet</a>';
-$d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Partage de code';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
+// Kongregate
+$k= 'kongregate';
+$d[$k]['sDesc']  = 'Jeux';
+$d[$k]['lDesc']  = 'Une compilation de jeux libre';
+$d[$k]['mTitle'] = 'Faites une pose, jouez quelques instants';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].', vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu’hors ligne. Faites une pause et profitez de l’un des jeux proposés.
+                        <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">contrairement à Angry Birds</a>, la NSA ne vous espionnera pas ;) )</small>
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
+                    </p>';
+$d[$k]['mFooter']= '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>';
+
 // Padlet
 $k= 'padlet';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://scrumblr.ca/">Scrumblr</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">xxx</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Padlet';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Organisation d’idées';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
@@ -1232,15 +973,6 @@ $d[$k]['mBody']  = '';
 
 // Pixlr
 $k= 'pixlr';
-$d[$k]['FL']     = 'http://framavectoriel.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/';
-$d[$k]['S']      = '<a href="https://code.google.com/p/svg-edit/">SVG-Edit</a>';
-$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">vectoriel</b></a>';
-$d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/23/framavectoriel">octobre 2012</a>';
-$d[$k]['name']   = 'Pixlr';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = 'Picozu';
-$d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Dessin vectoriel';
 $d[$k]['lDesc']  = 'Créez rapidement des images vectorielles au format SVG';
 $d[$k]['mTitle'] = 'Créez rapidement des images vectorielles au format SVG';
@@ -1265,17 +997,6 @@ $d[$k]['mBody']  = '<p>
 
 // Scribd
 $k= 'scribd';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://webodf.org/">WebODF</a> ou <a href="https://pdf.yt/">PDFy</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">xxx</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Scribd';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Partage de PDF/ODP';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
@@ -1283,54 +1004,23 @@ $d[$k]['mBody']  = '';
 
 // Transifex
 $k= 'transifex';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://pootle.translatehouse.org/">Pootle</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">poulpe</b>';
-$d[$k]['FDate']  = '2016';
-$d[$k]['name']   = 'Transifex';
-$d[$k]['wkp']    = '';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = 'Launchpad Translation';
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['pos']    = '';
 $d[$k]['sDesc']  = 'Traduction de logiciels';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
-/*
-// Youporn
-$k= 'youporn';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['S']      = 'GermanPorn';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">porn</b>';
-$d[$k]['FDate']  = '2015';
-$d[$k]['name']   = 'Youporn';
-$d[$k]['wkp']    = 'Youporn';
-$d[$k]['sDesc']  = 'Les codes du porno';
-*/
-
 /****************
  * Mises à jour *
  ****************/
 // Etherpad Lite
-$k = 'up-padlite'; $ko = 'gdocs'; // prefixe "up-" obligatoire ; $ko est l'id du projet initial
-$d[$k]['FL']     = $d[$ko]['FL']; // Copier/Coller
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
-$d[$k]['lDesc']  = $d[$ko]['lDesc'];
+$k = 'up-padlite'; $ko = 'gdocs';    // prefixe "up-" obligatoire ; $ko est l'id du projet initial
+$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copier/Coller
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'];
 $d[$k]['name']   = 'Remplacement d’Etherpad par la version « Lite » pour les pads publics';
-$d[$k]['FDate']  = '2013';
 
 // Wisemapping
 $k = 'up-framindmap2'; $ko = 'bubblus';
-$d[$k]['FL']     = $d[$ko]['FL'];
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
@@ -1338,13 +1028,9 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
         <b class="violet">Mise à jour :</b> le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d’enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
     </p>';
 $d[$k]['name']   = 'Mindmaps remplacé par Wisemapping';
-$d[$k]['FDate']  = '2014';
 
 // Framadate 0.8
 $k = 'up-framadate2'; $ko = 'doodle';
-$d[$k]['FL']     = $d[$ko]['FL'];
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
@@ -1352,13 +1038,9 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
         <b class="violet">Mise à jour</b> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L’interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
     </p>';
 $d[$k]['name']   = 'Développement axé sur l’ergonomie et l’accessibilité';
-$d[$k]['FDate']  = '2014';
 
 // MyPads
 $k = 'up-mypads'; $ko = 'gdocs';
-$d[$k]['FL']     = $d[$ko]['FL'];
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
@@ -1366,7 +1048,5 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
         <b class="violet">Mise à jour</b> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d’instances dédiées (par exemple à l’éducation ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
     </p>';
 $d[$k]['name']    = 'Développement et intégration du plugin Mypads';
-$d[$k]['FDate']   = '2015';
 
-include('data.php');
 ?>
