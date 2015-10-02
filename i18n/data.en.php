@@ -51,11 +51,11 @@ $t['home']['link']   = '/';
 $t['home']['desc']   = '';
 $t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
 $t['home']['js']     = '
-    <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script> 
+    <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
-$t['home']['map']    = 'Click on the map toquez sur la carte pour découvrir les alternatives…';
-$t['home']['altMap'] = 'We are in 2015 AD. The whole internet is occupied by centralized services... The whole, really? No! A community populated by irreducible free Culture lovers still resists against the invaders. And the life is not easy for the fortified camp garrisons of Fermetum, Centralisum, Espionnum and Privatum...';
+$t['home']['map']    = 'Click on the map to discovery all alternatives…';
+$t['home']['altMap'] = 'We are in 2015 AD. The whole internet is occupied by centralized services… The whole, really? No! A community populated by irreducible free Culture lovers still resists against the invaders. And the life is not easy for the fortified camp garrisons of Fermetum, Centralisum, Espionnum and Privatum…';
 
 // Accueil - Camps
 $t['home']['camps']['village']     = 'In the freewaredefender’s village';
@@ -71,7 +71,7 @@ $t['home']['camps']['cp1']         = 'Centralized services raise many problems: 
 $t['home']['camps']['cp2']         = 'Using decentralized online services means having a choice between using an online instance such as those proposed by Framasoft or installing/managing the service yourself.';
 
 $t['home']['camps']['espionnum']   = '<i lang="la">Espionnum</i>';
-$t['home']['camps']['ep1']         = '"If it’s free, you are the product": many online services make a living from the use of your personal data, by selling it to advertising companies. Furthermore, most of these services are based in the United States and obey US laws like the PATRIOT ACT which completely deny your right to privacy.';
+$t['home']['camps']['ep1']         = '“If it’s free, you are the product”: many online services make a living from the use of your personal data, by selling it to advertising companies. Furthermore, most of these services are based in the United States and obey US laws like the PATRIOT ACT which completely deny your right to privacy.';
 $t['home']['camps']['ep2']         = 'Using online services hosted in Europe means ensuring that you are not dependent on the laws of another continent. In addition, by hosting the service yourself, no third party can violate your privacy.';
 
 $t['home']['camps']['privatum']    = '<i lang="la">Privatum</i>';
@@ -156,7 +156,7 @@ $t['home']['dang']['cp']    ='Major actors of the Internet have become real gian
 This concentration of actors creates multiple issues: what if Facebook were suddenly shut down? How could we browse the Web if Google became broken?
 <strong>We rely more and more dependent on services provided by a small group of actors.</strong> For example, Apple (iPhone), Google (Android) and Microsoft (Windows Phone) dominate almost the entire mobile OSes industry.<br>
 Furthermore, the size of these actors impedes innovation: it’s hard to launch a startup facing Apple or Google (respectively the first and second worldwide market capitalisations).<br>
-Finally, the lack of diversity of these giants gives them a way not only to track us, but also to alter the data they bring us (a Google search won’t produce the same results for the terms "nuclear power" whether Google considers you as an environmentalist or pro-nuclear power).';
+Finally, the lack of diversity of these giants gives them a way not only to track us, but also to alter the data they bring us (a Google search won’t produce the same results for the terms “nuclear power” whether Google considers you as an environmentalist or pro-nuclear power).';
 
 $t['home']['dang']['crefs'] = '
                       <ul>
@@ -175,7 +175,7 @@ $t['home']['dang']['crefs'] = '
 $t['home']['dang']['f']     = 'Termination';
 $t['home']['dang']['fp']    = 'Web services used on your computer, smartphone, tablets (and others) are usually hosted on the “cloud”: servers spread across the planet, that host not only your data (mails, pictures, files, etc), but also the application code.<br>
 For your data, this raises the issue of sustainability (what would become of your files if Dropbox were to close tomorrow?) and of your ability to easily switch between services (how would you recover all of your data from Facebook or Picasa and import it, with all the adjoining comments, into another service?). <br>
-For applications, it means that <strong>you are completely dependent on what your service provider chooses to do</strong> (proliferating of advertisements, changes to the user interface, etc.) and that you hardly have any control over the application’s behaviour. They are "black boxes" that can exhibit malicious behaviour (sending spam SMS without your knowledge, executing malicious code, etc).<br>
+For applications, it means that <strong>you are completely dependent on what your service provider chooses to do</strong> (proliferating of advertisements, changes to the user interface, etc.) and that you hardly have any control over the application’s behaviour. They are “black boxes” that can exhibit malicious behaviour (sending spam SMS without your knowledge, executing malicious code, etc).<br>
 In short, these companies trap us in gilded cages: gilded yes, but cages nonetheless!';
 
 $t['home']['dang']['frefs'] = '
@@ -205,7 +205,7 @@ $t['home']['prop']['intro'] = 'Framasoft  wishes to face  the threats to our dig
 $t['home']['prop']['l']     = 'Freedom';
 $t['home']['prop']['lp1']   = 'The story of the Internet itself is a story of free software, whether from the point of view of the standards as well as the protocols used. Its potential and popularity are a cause for envy, and large companies would like nothing better than to control it by imposing closed-source, locked down and non-interoperable systems.';
 $t['home']['prop']['lp2']   = 'For the Internet to stay true to its founding principles, those which led to its success, it has to have/we have to develop/users must be able to use free software, that is to say software whose source code is open, accessible and covered by free software licenses.';
-$t['home']['prop']['lp3']   = 'Framasoft hereby commits to using only software for which the source code is "free".';
+$t['home']['prop']['lp3']   = 'Framasoft hereby commits to using only software for which the source code is “free”.';
 
 $t['home']['prop']['e']     = 'Ethics';
 $t['home']['prop']['ep1']   = 'We promote an Internet based on independence and sharing.';
@@ -216,7 +216,7 @@ $t['home']['prop']['d']     = 'Decentralization';
 $t['home']['prop']['dp1']   = 'Internet intelligence must rest with every network player, in the spirit of sharing among peers, to avoid creating a Minitel (videotext terminal and service, pre Internet) 2.0.';
 $t['home']['prop']['dp2']   = 'To ensure equality for all, whether citizens or entrepreneurs, not only must monopolies be avoided, but they must be prevented from grabbing personal or public data.';
 $t['home']['prop']['dp3']   = 'By explaining, thanks to tutorials, how to increase the use of free solutions allowing a fairer Internet, we help code spread and we diversify uses.';
-$t['home']['prop']['dp4']   = 'Framasoft hereby commits to facilitating self-hosting and interoperability, so that its users don’t get "locked in".';
+$t['home']['prop']['dp4']   = 'Framasoft hereby commits to facilitating self-hosting and interoperability, so that its users don’t get “locked in”.';
 
 $t['home']['prop']['s']     = 'Solidarity';
 $t['home']['prop']['sp1']   = 'Through the services we deploy, we promote an economic model based on sharing costs, sharing resources, and widespread access.';
@@ -232,7 +232,7 @@ $t['home']['prop']['charte'] = 'Framasoft service charter';
 // Accueil - Concrètement
 $t['home']['conc']['btn']   = 'In practice';
 $t['home']['conc']['title'] = 'In practice';
-$t['home']['conc']['p1']    = 'The "de-google-ify Internet" project -
+$t['home']['conc']['p1']    = 'The “de-google-ify Internet” project -
 which does not exclusively concern Google - consists in <strong> offering as many alternative services as possible to those we consider a threat to our digital lives</strong>.';
 $t['home']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, and many others, are extremely convenient services but <strong>they have become far too large and have made us dependent on them</strong>.
 Framasoft wishes to resist this trend and is putting forward a roadmap for setting up alternative services over several years.';
@@ -312,7 +312,7 @@ $d['tip2016'] = [
                 <ul>
                     <li>A shared online agenda (as an alternative to Google Agenda)</li>
                     <li>A microblogging service (as an alternative to Twitter)</li>
-                      <li>An open source video hosting service (as an alternative à Youtube)</li>
+                    <li>An open source video hosting service (as an alternative à Youtube)</li>
                 </ul>
                 <p>In order to implement these projects and maintain the existing projects, Framasoft will need to hire three new collaborators, i.e. a developer, a second sysadmin and an administrator. </p>
                 <p>ministrator. </p>
@@ -337,7 +337,7 @@ $d['tip2014'] = [
     'F'     => '3 employees',
     'mBody' => '<p>2014 was particularly intense for the Framasoft NPO, since we had to establish and fine-tune our battleplan to help you resist Google, Facebook and the others…</p>
                 <p  >Amongst other things, the organization has invested both time and money in the technical infrastructure which supports the existing services. This will allow us to comfortably host the applications we will be providing in the coming years.</p>
-                <p>You can help us meet these goals :</p>
+                <p>You can help us meet these goals:</p>
                 <ul>
                     <li>increase the size of our technical infrastructure, i.e. increase the computing power of our virtual machine cluster and its storage capacity</li>
                     <li>pay the wages of our two full-time employees</li>
@@ -494,7 +494,7 @@ $d[$k]['sDesc']  = 'Mind Map';
 $d[$k]['lDesc']  = 'Create your mind maps';
 $d[$k]['mTitle'] = 'Why would you create a mind map?';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].'  allows you to organize a brainstorming, to sort out and put in order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements., etc.
+                          '.$d[$k]['F'].'  allows you to organize a brainstorming, to sort out and put in order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements, etc.
                     </p>
                          <p><video controls="controls" preload="none"
                         width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
@@ -552,7 +552,7 @@ $d[$k]['sDesc']  = 'File hosting online service';
 $d[$k]['lDesc']  = 'File hosting online service';
 $d[$k]['mTitle'] = 'File hosting online service';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to store your documents online and encrypted, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want ...
+                         '.$d[$k]['F'].' allows you to store your documents online and encrypted, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want…
                     </p>';
 
 // Evernote
@@ -838,7 +838,7 @@ $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>';
 $d[$k]['pos']    = '365,255,40';
 $d[$k]['sDesc']  = 'Participative spreadsheet';
-$d[$k]['lDesc']  = 'Share your spreadsheets and collaborate !';
+$d[$k]['lDesc']  = 'Share your spreadsheets and collaborate!';
 $d[$k]['mTitle'] = 'An online spreadsheet';
 $d[$k]['mBody']  = '<p>
                         With '.$d[$k]['F'].', your data are automatically saved on the Internet. You and your colleagues can participate on the same document at the same time.  You can visualize in real time every change and work together on your lists, calculus, data, statistics and far more !
@@ -851,7 +851,7 @@ $d[$k]['mBody']  = '<p>
                         <li>Automated back up</li>
                         <li>Entry-level graphics (histograms, lines, dots)</li>
                         <li>HTML Export</li>
-                        <li>Size of the document : up to 100 000 lines.</li>
+                        <li>Size of the document: up to 100 000 lines.</li>
                     </ul>';
 
 // Img.ur
@@ -871,11 +871,11 @@ $d[$k]['sDesc']  = 'Sending pictures';
 $d[$k]['lDesc']  = 'Share your pictures anonymously';
 $d[$k]['mTitle'] = 'Easily Share your images';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' enables you to share easily images for exampl on Twitter, Facebook or ... on Framasphère !
+                        '.$d[$k]['F'].' enables you to share easily images for exampl on Twitter, Facebook or … on Framasphère !
                     </p>
                     <p>Be careful: this service is no equivalent of flickr or instagram : it is no hosting of users pictures, but the hosting of anonymous pictures (no one including us has access to the cyphered content).</p>
                     <p>
-                        '.$d[$k]['FL'].'  enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line). 
+                        '.$d[$k]['FL'].'  enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line).
                     </p>';
 
 
@@ -896,7 +896,7 @@ $d[$k]['sDesc']  = 'Jeux';
 $d[$k]['lDesc']  = 'A compilation of free games';
 $d[$k]['mTitle'] = 'Have a break, play a few moments';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].', offers you a compilation of free games, available for both online and offline use. Have a break and enjoy one of theses games ! 
+                        '.$d[$k]['F'].', offers you a compilation of free games, available for both online and offline use. Have a break and enjoy one of theses games !
                         <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">Unlike Angry Birds</a>, NSA will not spy on you ;) )</small>
                     </p>
                     <p>
@@ -921,10 +921,10 @@ $d[$k]['sDesc']  = 'Anonymous notes';
 $d[$k]['lDesc']  = 'Write and share confidentially';
 $d[$k]['mTitle'] = 'Communicate cyphered data';
 $d[$k]['mBody']  = '<p>
-                        With '.$d[$k]['F'].' you can share information which only you and your correspondent can decypher and furthermore very easily. You can even choose the duration of the access. 
+                        With '.$d[$k]['F'].' you can share information which only you and your correspondent can decypher and furthermore very easily. You can even choose the duration of the access.
                     </p>
                     <p>
-                        <b class="violet">What it can be used for ?</b> You may need to communicate confidentially one or several pieces of information without sending a classical e-mail or piece of paper. Framabin enables you to send an adress and give a secured and simple access it. The server stores the cyphered data, which are unreadable. 
+                        <b class="violet">What it can be used for ?</b> You may need to communicate confidentially one or several pieces of information without sending a classical e-mail or piece of paper. Framabin enables you to send an adress and give a secured and simple access it. The server stores the cyphered data, which are unreadable.
                     </p>';
 
 // Pocket
@@ -947,7 +947,7 @@ $d[$k]['mBody']  = '<p>
                         With '.$d[$k]['F'].', you don’t loose the Internet contents you are interested in even if you do not have time to read it at once. With one click, you save your selection and you can read it whenever you want to. The application saves your selection and enables you enjoy reading it when you have more time.
                     </p>
                     <p>
-                         Framabag is a <b class="violet">back-up service of web pages</b>. You store on the server the contents you are interested in including texts and images. You can also share your articles and use extensions for Firefox, Chrome, Android...
+                         Framabag is a <b class="violet">back-up service of web pages</b>. You store on the server the contents you are interested in including texts and images. You can also share your articles and use extensions for Firefox, Chrome, Android…
                     </p>';
 
 // Skype
@@ -967,7 +967,7 @@ $d[$k]['sDesc']  = 'Visioconference';
 $d[$k]['lDesc']  = 'Chat freely with your friends';
 $d[$k]['mTitle'] = 'Vidéoconference';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to merely chat with your friends, without any complexe software setup. You discuss freely without any data analysis of your conversation. Everything stays between you and your friends. 
+                         '.$d[$k]['F'].' allows you to merely chat with your friends, without any complexe software setup. You discuss freely without any data analysis of your conversation. Everything stays between you and your friends.
                     </p>
                     <p>
                          <b class="violet">How does it works:</b> Directly from your web browser, your are put through to your friends, without setting up any extra-software. Once connected, enable your web browser to use your microphone and your webcam  and enjoy chatting in a simple fashion.
@@ -1111,7 +1111,7 @@ $d[$k]['mBody']  = '<p>
                         <li>Add POI: marker, lines, polygons…</li>
                         <li>Choose colors and icons</li>
                         <li>Manage options of the map : add a littlemap, geolocalize user,…</li>
-                        <li>Import  a lot of geographics data (geojson, gpx, kml, osm…)</li>
+                        <li>Import a lot of geographics data (geojson, gpx, kml, osm…)</li>
                         <li>Choose a licence for your data</li>
                         <li>Export and share your map</li>
                     </ul>';
@@ -1171,7 +1171,7 @@ $d[$k]['mBody']  = '<p>
                     </p>
                     <p><b class="violet">How does it works? </b></p>
                     <ul>
-                          <li>Available online, without any installation</li>
+                        <li>Available online, without any installation</li>
                         <li>No registration required</li>
                         <li>Export your documents to bitmap or vector format</li>
                         <li>Free software, open to everyone</li>
@@ -1244,7 +1244,7 @@ $d[$k]['F']      = $d[$ko]['F'];
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'];
-$d[$k]['name']   = 'Remplacing Etherpad by the "lite" version for public pads';
+$d[$k]['name']   = 'Remplacing Etherpad by the “lite” version for public pads';
 $d[$k]['FDate']  = '2013';
 
 // Wisemapping
@@ -1270,7 +1270,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-          <b class="violet">Update:</b> the update of Framadate is a graphical overhaul and technical evolution. The interface is more clear, more ergonomic. It’s now possible to answer "maybe" to a choice in the survey..
+          <b class="violet">Update:</b> the update of Framadate is a graphical overhaul and technical evolution. The interface is more clear, more ergonomic. It’s now possible to answer “maybe” to a choice in the survey..
     </p>';
 $d[$k]['name']   = 'Development axis: ergonomy and accessibility';
 $d[$k]['FDate']  = '2014';
