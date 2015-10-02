@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('a:has(b)').css('text-decoration','none');
+    $('[data-toggle="tooltip"]').tooltip();
 
     // Init map
     $('#carte').maphilight();

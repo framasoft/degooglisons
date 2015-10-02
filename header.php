@@ -20,11 +20,11 @@
 <html lang="<?php echo $t['meta']['lang'] ?>" dir="ltr">
 <head>
     <meta charset="utf-8" />
-    
+
     <title><?php echo $t['meta']['title'].' - '.$t[$page]['title'].' - '.$t['meta']['framasoft'] ?></title>
-    
+
     <link rel="shortcut icon" href="https://n4.framasoft.org/nav/img/icons/favicon-violet.png">
-    
+
     <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
     <link href="<?php echo $l['current'] ?>css/core.css" rel="stylesheet" type="text/css" />
     <?php echo $t[$page]['css'] ?>
