@@ -2,7 +2,7 @@
     $langs = [
         'fr_FR' => 'Français', // keep French in first
         'en_GB' => 'English',
-        'es_ES' => 'Español',
+        //'es_ES' => 'Español',
     ];
 
     // Default language fr_FR

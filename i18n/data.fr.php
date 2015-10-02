@@ -556,7 +556,6 @@ $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance bas�
 
 */
 
-
 // Avaaz
 $k= 'avaaz';
 $d[$k]['sDesc']  = 'Pétitions';
@@ -736,6 +735,25 @@ $d[$k]['sDesc']  = 'Listes de diffusion';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
+
+// Google Maps
+$k= 'gmaps';
+$d[$k]['sDesc']  = 'Cartographie';
+$d[$k]['lDesc']  = 'Créer vos cartes personnalisées en ligne';
+$d[$k]['mTitle'] = 'Créez vos cartes personnalisées en ligne';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' permet de créer des cartes personnalisées sur des fonds OpenStreetMap et de les afficher dans votre site.
+                    </p>
+                    <p><b class="violet">Fonctionnement :</b></p>
+                    <ul>
+                        <li>Choisir les fonds de carte</li>
+                        <li>Ajouter des POI: marqueurs, lignes, polygones…</li>
+                        <li>Choisir la couleur et les icônes</li>
+                        <li>Gérer les options de la carte: afficher une minicarte, géolocaliser l’utilisateur…</li>
+                        <li>Import des données géographiques en masse (geojson, gpx, kml, osm…)</li>
+                        <li>Choisir la licence de vos données</li>
+                        <li>Exporter et partager votre carte</li>
+                    </ul>';
 
 // Google Reader
 $k= 'greader';
@@ -924,25 +942,6 @@ $d[$k]['mBody']  = '<p>
 /********************
  * Pas sur la carte
  ********************/
-// Google Maps
-$k= 'gmaps';
-$d[$k]['sDesc']  = 'Cartographie';
-$d[$k]['lDesc']  = 'Créer vos cartes personnalisées en ligne';
-$d[$k]['mTitle'] = 'Créez vos cartes personnalisées en ligne';
-$d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' permet de créer des cartes personnalisées sur des fonds OpenStreetMap et de les afficher dans votre site.
-                    </p>
-                    <p><b class="violet">Fonctionnement :</b></p>
-                    <ul>
-                        <li>Choisir les fonds de carte</li>
-                        <li>Ajouter des POI: marqueurs, lignes, polygones…</li>
-                        <li>Choisir la couleur et les icônes</li>
-                        <li>Gérer les options de la carte: afficher une minicarte, géolocaliser l’utilisateur…</li>
-                        <li>Import des données géographiques en masse (geojson, gpx, kml, osm…)</li>
-                        <li>Choisir la licence de vos données</li>
-                        <li>Exporter et partager votre carte</li>
-                    </ul>';
-
 // JS Fiddle
 $k= 'jsfiddle';
 $d[$k]['sDesc']  = 'Partage de code';

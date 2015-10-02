@@ -28,6 +28,12 @@ $e = [
 ];
 
 
+// Preset Objectifs (must be in first in list.php)
+$d['tip2017'] = array();
+$d['tip2016'] = array();
+$d['tip2015'] = array();
+$d['tip2014'] = array();
+
 /****************
  * Services web *
  ****************/
