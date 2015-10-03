@@ -50,20 +50,20 @@ $t['meta']['leds']['sdesc']   = 'Trough the services we roll out, we promote an 
 $t['meta']['leds']['charte']  = 'To know more about this, feel free to read <strong><a href="'.$l['Charte'].'">our detailled charter</a></strong>.';
 
 // Accueil
-$t['home']['title']  = 'Welcome';
+$t['home']['title']  = 'Main Page';
 $t['home']['link']   = '/';
 $t['home']['desc']   = '';
 $t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
 $t['home']['js']     = '
-    <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
+    <script src="'.$l['current']. 'js/jquery.maphilight.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
-$t['home']['map']    = 'Click on the map to discovery all alternatives…';
+$t['home']['map']    = 'Click on the map to discover all alternatives…';
 $t['home']['altMap'] = 'We are in 2015 AD. The whole internet is occupied by centralized services… The whole, really? No! A community populated by irreducible free Culture lovers still resists against the invaders. And the life is not easy for the fortified camp garrisons of Fermetum, Centralisum, Espionnum and Privatum…';
 
 // Accueil - Camps
 $t['home']['camps']['village']     = 'In the freewaredefender’s village';
-$t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few  nonprofit organizations keep on fighting for an open web respectfull of internet users.';
+$t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few nonprofit organizations keep on fighting for an open web respectfull of internet users.';
 $t['home']['camps']['vp2']         = 'In addition of '.$t['meta']['F'].', an non profit association leading the herein campaign, we can cite <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. Those organizations earn their livings thanks to your donations, don’t forget to support them!';
 
 $t['home']['camps']['fermetum']    = '<i lang="la">Fermetum</i>';
@@ -89,7 +89,7 @@ $t['home']['camps']['np2']         = 'Use centralized services corresponds to gi
 // Accueil - Enjeux
 $t['home']['enje']['btn']   = 'Stakes';
 $t['home']['enje']['title'] = 'What are the stakes?';
-$t['home']['enje']['p1']    = 'In recent years, we have witnessed <strong> the widespread corporate concentration of Internet actors</strong>  (Youtube belonging to Google, WhatsApp to Facebook, Skype to Microsoft, etc.). This centralisatio  n is detrimental, not only because it curbs innovation, but also because it results in a loss of freedom for the users. <strong>Users of these services no longer control their digital life</strong> :  their behaviour is continually dissected so that they can be better targeted by publicity, and their data – which should be private (sites visited, emails exchanged, videos watched, etc.) – can be analysed by government services.';
+$t['home']['enje']['p1']    = 'In recent years, we have witnessed <strong> the widespread corporate concentration of Internet actors</strong>  (Youtube belonging to Google, WhatsApp to Facebook, Skype to Microsoft, etc.). This centralisation is detrimental, not only because it curbs innovation, but also because it results in a loss of freedom for the users. <strong>Users of these services no longer control their digital life</strong>:  their behaviour is continually dissected so that they can be better targeted by publicity, and their data – which should be private (sites visited, emails exchanged, videos watched, etc.) – can be analysed by government services.';
 $t['home']['enje']['p2']    = 'The way that Framasoft would like to deal with this issue is simple: to highlight and provide a Free, Ethical, Decentralised and Solidarity-based alternative to each of these services which deprive their users of their liberty.';
 
 // Accueil - Dangers
@@ -99,63 +99,63 @@ $t['home']['dang']['intro'] = 'The increasingly centralized online services prov
 
 // EPCF (Espionnum, Privatum, Centralisum, Fermetum)
 $t['home']['dang']['e']     = 'Surveillance';
-$t['home']['dang']['ep']    = 'These services are tracking us everywhere. While claiming to give us a better "user experience", our behaviour is constantly under surveillance. This information can be used to display targeted adverts, but the revelations of the Snowden case also proved that the Internet giants were forced to communicate this data (sometimes extremely private: emails from Gmail, photos shared on Facebook, Skype conversations, smartphone’s location, etc.) to government services. Under the pretense of fighting terrorism, states are able to gather much more intelligence than a "Big Brother" would have ever dreamed of.';
+$t['home']['dang']['ep']    = 'These services are tracking us everywhere. While claiming to give us a better “user experience”, our behaviour is constantly under surveillance. This information can be used to display targeted adverts, but the revelations of the Snowden case also proved that the Internet giants were forced to communicate this data (sometimes extremely private: emails from Gmail, photos shared on Facebook, Skype conversations, smartphone’s location, etc.) to government services. Under the pretense of fighting terrorism, states are able to gather much more intelligence than a "Big Brother" would have ever dreamed of.';
 
 $t['home']['dang']['erefs'] = '
                   <ul>
-                      <li>Numerama, le 13/05/2014 : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">La NSA accusée d’avoir piégé les routeurs américains</a></li>
-                    <li>Numerama, le 12/09/2014 : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">Yahoo révèle le chantage des USA pour espionner les internautes</a></li>
-                    <li>Numerama, le 04/07/2013 : <a href="http://www.numerama.com/magazine/26435-prism-l-allemagne-qui-espionne-aussi-deconseille-le-web-americain.html">PRISM : l’Allemagne, qui espionne aussi, déconseille le web américain</a></li>
-                    <li>Le Monde, le 27/06/2013: <a href="http://www.lemonde.fr/sciences/article/2013/06/27/il-est-temps-de-parler-des-metadonnees_3437125_1650684.html">Il est temps de parler des métadonnées</a></li>
-                    <li>Atlantico, le 25/11/2013, <a href="http://www.atlantico.fr/pepites/espionnage-etat-veut-attaquer-nos-donnees-personnelles-908758.html">Espionnage : l’Etat veut s’attaquer à nos données personnelles</a></li>
-                    <li>Le Monde, le 20/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/20/dgse-orange-des-liaisons-incestueuses_4386264_3210.html">Espionnage : comment Orange et les services secrets coopèrent</a></li>
-                        <li>Le Monde, le 15/09/2014: <a href="http://www.lemonde.fr/proche-orient/article/2014/09/15/terrorisme-un-projet-de-loi-dangereux_4487639_3218.html">Terrorisme : un projet de loi dangereux</a></li>
-                        <li>Présumés Terroristes, septembre 2014 : <a href="https://presumes-terroristes.fr/">Loi Terrorisme. Sacrifier les libertés sous prétexte de lutte contre le terrorisme ? NON !</a></li>
-                        <li>Europe1, le 12/02/2014 : <a href="http://www.europe1.fr/high-tech/et-si-samsung-se-mettait-a-espionner-ses-propres-smartphones-1799713">Et si Samsung se mettait à "espionner" ses propres smartphones?</a></li>
-                        <li>Rue89, le 13/12/2008 :<a href="http://rue89.nouvelobs.com/2008/12/13/ecoutes-ce-qui-est-possible-avec-votre-telephone-portable">Ecoutes : ce qui est possible avec votre téléphone portable</a></li>
-                        <li>Le Monde, le 21/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/21/la-france-suspectee-de-cyberattaque_4387232_3210.html">La France suspectée de cyberespionnage</a></li>
-                        <li>Pixels (Le Monde), le 14/09/2014 : <a href="http://www.lemonde.fr/pixels/article/2014/09/13/la-nsa-et-le-gchq-auraient-pirate-cinq-operateurs-telecom-allemands_4487181_4408996.html">La NSA et le GCHQ auraient piraté cinq opérateurs télécom allemands</a></li>
-                        <li>Pixels (Le Monde), le 16/09/2014 :  <a href="http://www.lemonde.fr/pixels/breve/2014/09/16/tim-cook-estime-que-les-etats-unis-sont-alles-trop-loin-dans-la-collecte-des-donnees_4488172_4408996.html">Tim Cook estime que les Etats-Unis sont allés trop loin dans la collecte des données</a></li>
-                        <li>Liberation, le 01/07/2014 :  <a href="http://www.liberation.fr/monde/2014/07/01/la-nsa-espionnait-193-pays-et-aussi-l-ue-et-le-fmi_1054881">La NSA espionnait 193 pays</a></li>
-                        <li>Numerama, le 24/07/2014 : <a href="http://www.numerama.com/magazine/30101-des-backdoors-sur-ios-tout-ce-qu-il-faut-savoir.html">Des backdoors sur iOS ? Tout ce qu’il faut savoir</a></li>
-                        <li>Bug Brother (Le Monde), le 11/02/2014 : <a href="http://bugbrother.blog.lemonde.fr/2014/02/11/le-gif-qui-revele-la-paranoia-de-la-nsaqui-espionne-donc-aussi-vos-enfants-parents-amis/">Le .gif qui révèle la paranoïa de la NSA, et pourquoi elle espionne aussi vos parents & amis</a></li>
-                        <li>Rue89, le 15/08/2013 :  <a href="http://rue89.nouvelobs.com/2013/08/15/les-messages-envoyes-compte-gmail-peuvent-etre-interceptes-alors-244954">Les e-mails envoyés sur Gmail peuvent être interceptés. Et alors ?</a></li>
-                        <li>Écrans.fr, le 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">Le FBI a accès aux comptes Facebook, Google, Yahoo!…</a></li>
-                          <li>Le Monde.fr, le 27/01/2014 : <a href="http://www.lemonde.fr/technologies/article/2014/01/27/des-applications-mobiles-utilisees-par-la-nsa-et-son-homologue-britannique_4355371_651865.html">Des applications de smartphones "mises sur écoute" par la NSA</a></li>
+                      <li>Numerama, the 13/05/2014 : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">La NSA accusée d’avoir piégé les routeurs américains</a></li>
+                    <li>Numerama, the 12/09/2014 : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">Yahoo révèle le chantage des USA pour espionner les internautes</a></li>
+                    <li>Numerama, the 04/07/2013 : <a href="http://www.numerama.com/magazine/26435-prism-l-allemagne-qui-espionne-aussi-deconseille-le-web-americain.html">PRISM : l’Allemagne, qui espionne aussi, déconseille le web américain</a></li>
+                    <li>Le Monde, the 27/06/2013: <a href="http://www.lemonde.fr/sciences/article/2013/06/27/il-est-temps-de-parler-des-metadonnees_3437125_1650684.html">Il est temps de parler des métadonnées</a></li>
+                    <li>Atlantico, the 25/11/2013, <a href="http://www.atlantico.fr/pepites/espionnage-etat-veut-attaquer-nos-donnees-personnelles-908758.html">Espionnage : l’Etat veut s’attaquer à nos données personnelles</a></li>
+                    <li>Le Monde, the 20/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/20/dgse-orange-des-liaisons-incestueuses_4386264_3210.html">Espionnage : comment Orange et les services secrets coopèrent</a></li>
+                        <li>Le Monde, the 15/09/2014: <a href="http://www.lemonde.fr/proche-orient/article/2014/09/15/terrorisme-un-projet-de-loi-dangereux_4487639_3218.html">Terrorisme : un projet de loi dangereux</a></li>
+                        <li>Présumés Terroristes, september 2014 : <a href="https://presumes-terroristes.fr/">Loi Terrorisme. Sacrifier les libertés sous prétexte de lutte contre le terrorisme ? NON !</a></li>
+                        <li>Europe1, the 12/02/2014 : <a href="http://www.europe1.fr/high-tech/et-si-samsung-se-mettait-a-espionner-ses-propres-smartphones-1799713">Et si Samsung se mettait à "espionner" ses propres smartphones?</a></li>
+                        <li>Rue89, the 13/12/2008 :<a href="http://rue89.nouvelobs.com/2008/12/13/ecoutes-ce-qui-est-possible-avec-votre-telephone-portable">Ecoutes : ce qui est possible avec votre téléphone portable</a></li>
+                        <li>Le Monde, the 21/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/21/la-france-suspectee-de-cyberattaque_4387232_3210.html">La France suspectée de cyberespionnage</a></li>
+                        <li>Pixels (Le Monde), the 14/09/2014 : <a href="http://www.lemonde.fr/pixels/article/2014/09/13/la-nsa-et-le-gchq-auraient-pirate-cinq-operateurs-telecom-allemands_4487181_4408996.html">La NSA et le GCHQ auraient piraté cinq opérateurs télécom allemands</a></li>
+                        <li>Pixels (Le Monde), the 16/09/2014 :  <a href="http://www.lemonde.fr/pixels/breve/2014/09/16/tim-cook-estime-que-les-etats-unis-sont-alles-trop-loin-dans-la-collecte-des-donnees_4488172_4408996.html">Tim Cook estime que les Etats-Unis sont allés trop loin dans la collecte des données</a></li>
+                        <li>Liberation, the 01/07/2014 :  <a href="http://www.liberation.fr/monde/2014/07/01/la-nsa-espionnait-193-pays-et-aussi-l-ue-et-le-fmi_1054881">La NSA espionnait 193 pays</a></li>
+                        <li>Numerama, the 24/07/2014 : <a href="http://www.numerama.com/magazine/30101-des-backdoors-sur-ios-tout-ce-qu-il-faut-savoir.html">Des backdoors sur iOS ? Tout ce qu’il faut savoir</a></li>
+                        <li>Bug Brother (Le Monde), the 11/02/2014 : <a href="http://bugbrother.blog.lemonde.fr/2014/02/11/le-gif-qui-revele-la-paranoia-de-la-nsaqui-espionne-donc-aussi-vos-enfants-parents-amis/">Le .gif qui révèle la paranoïa de la NSA, et pourquoi elle espionne aussi vos parents & amis</a></li>
+                        <li>Rue89, the 15/08/2013 :  <a href="http://rue89.nouvelobs.com/2013/08/15/les-messages-envoyes-compte-gmail-peuvent-etre-interceptes-alors-244954">Les e-mails envoyés sur Gmail peuvent être interceptés. Et alors ?</a></li>
+                        <li>Écrans.fr, the 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">Le FBI a accès aux comptes Facebook, Google, Yahoo!…</a></li>
+                          <li>Le Monde.fr, the 27/01/2014 : <a href="http://www.lemonde.fr/technologies/article/2014/01/27/des-applications-mobiles-utilisees-par-la-nsa-et-son-homologue-britannique_4355371_651865.html">Des applications de smartphones "mises sur écoute" par la NSA</a></li>
                     </ul>';
 
 $t['home']['dang']['p']     = 'Privacy';
-$t['home']['dang']['pp']    = 'Our data is an extension of ourselves. It tells third-parties where we are, who we are with (?)/with whom we are, our political and sexual orientations, sites we have visited, our favorite recipe, our favorite topics of interest, etc. If a single data point is not always sensitive, the loss large amounts of aggregated data can be dangerous (for example if you browsed topics about cancer before subscribing to a life-insurance)<br>
-In a world where everything is digital (ebooks, TV, phones, music, social networks, etc.),  <strong>our private life is an essential part of what makes us a singular person</strong>.  A malicious hacker with access to your smartphone could, in a few minutes, cause you serious harm (he could take the control of your identity on Facebook, see your professional or medical information, make purchases without your authorisation, etc.).';
+$t['home']['dang']['pp']    = 'Our data is an extension of ourselves. It tells third-parties where we are, with whom we are, our political and sexual orientations, sites we have visited, our favorite recipe, our favorite topics of interest, etc. If a single data point is not always sensitive, the loss large amounts of aggregated data can be dangerous (for example if you browsed topics about cancer before subscribing to a life-insurance)<br>
+In a world where everything is digital (ebooks, TV, phones, music, social networks, etc.), <strong>our private life is an essential part of what makes us a singular person</strong>. A malicious hacker with access to your smartphone could, in a few minutes, cause you serious harm (he could take the control of your identity on Facebook, see your professional or medical information, make purchases without your authorisation, etc.).';
 
 $t['home']['dang']['prefs'] = '
                       <ul>
-                          <li>Numerama, le 17/05/2014 : <a href="http://www.numerama.com/magazine/29400-et-maintenant-google-lit-vos-factures.html">Et maintenant Google lit vos factures</a></li>
-                        <li>Numerama, le 06/02/2014 : <a href="http://www.numerama.com/magazine/28299-yahoo-transfere-votre-vie-privee-en-irlande.html">Yahoo transfère votre vie privée en Irlande</a></li>
-                        <li>L’Expansion, le 16/01/2014 : <a href="http://lexpansion.lexpress.fr/high-tech/e-commerce-vos-donnees-personnelles-sont-en-danger_1326103.html">E-commerce: vos données personnelles sont en danger</a></li>
-                        <li>Numerama, le 21/02/2014 : <a href="http://www.numerama.com/magazine/28515-donnees-personnelles-la-chute-de-confiance.html">Données personnelles : la chute de confiance</a></li>
-                        <li>INRIA, le 12/04/2013 : <a href="http://hal.inria.fr/hal-00812734">Internet du futur : performances et respect de la vie privée</a></li>
-                        <li>Numerama, le 04/08/2014 : <a href="http://www.numerama.com/magazine/30187-google-a-signale-un-usager-qui-avait-envoye-des-photos-pedopornographiques-par-mail.html">Google a signalé un usager qui avait envoyé des photos pédopornographiques par mail</a></li>
-                        <li>Rue89, le 03/07/2013 : <a href="http://rue89.nouvelobs.com/2013/07/31/payer-carte-sans-code-sans-contact-sans-risque-244508">Payer par carte mais sans code : le "sans contact", pas sans risque</a></li>
-                        <li>Slate, le 03/10/2014 : <a href="http://www.slate.fr/story/92887/apple-google-facebook-sante">Après Apple et Google, Facebook se penche aussi sur notre santé</a></li>
+                          <li>Numerama, the 17/05/2014 : <a href="http://www.numerama.com/magazine/29400-et-maintenant-google-lit-vos-factures.html">Et maintenant Google lit vos factures</a></li>
+                        <li>Numerama, the 06/02/2014 : <a href="http://www.numerama.com/magazine/28299-yahoo-transfere-votre-vie-privee-en-irlande.html">Yahoo transfère votre vie privée en Irlande</a></li>
+                        <li>L’Expansion, the 16/01/2014 : <a href="http://lexpansion.lexpress.fr/high-tech/e-commerce-vos-donnees-personnelles-sont-en-danger_1326103.html">E-commerce: vos données personnelles sont en danger</a></li>
+                        <li>Numerama, the 21/02/2014 : <a href="http://www.numerama.com/magazine/28515-donnees-personnelles-la-chute-de-confiance.html">Données personnelles : la chute de confiance</a></li>
+                        <li>INRIA, the 12/04/2013 : <a href="http://hal.inria.fr/hal-00812734">Internet du futur : performances et respect de la vie privée</a></li>
+                        <li>Numerama, the 04/08/2014 : <a href="http://www.numerama.com/magazine/30187-google-a-signale-un-usager-qui-avait-envoye-des-photos-pedopornographiques-par-mail.html">Google a signalé un usager qui avait envoyé des photos pédopornographiques par mail</a></li>
+                        <li>Rue89, the 03/07/2013 : <a href="http://rue89.nouvelobs.com/2013/07/31/payer-carte-sans-code-sans-contact-sans-risque-244508">Payer par carte mais sans code : le "sans contact", pas sans risque</a></li>
+                        <li>Slate, the 03/10/2014 : <a href="http://www.slate.fr/story/92887/apple-google-facebook-sante">Après Apple et Google, Facebook se penche aussi sur notre santé</a></li>
                         <li>CNIL, mai 2014 : <a href="http://www.cnil.fr/fileadmin/documents/La_CNIL/publications/DEIP/CNIL_CAHIERS_IP2_WEB.pdf ">Le corps, nouvel objet connecté (Cahiers IP num. 2)</a></li>
-                        <li>Numerama, le 22/08/2014 : <a href="http://www.numerama.com/magazine/30323-apple-approche-les-mutuelles-pour-divulguer-le-comportement-des-assures.html">Apple approche les mutuelles pour divulguer le comportement des assurés</a></li>
-                        <li>JDN, le 23/01/2014 : <a href="http://www.journaldunet.com/ebusiness/le-net/iwatch-apple-incroyable.shtml">Apple embauche des experts en contrôles sanguins</a></li>
-                        <li>Challenges, le 06/06/2014 : <a href="http://www.challenges.fr/entreprise/20140606.CHA4685/comment-l-assureur-axa-va-surveiller-votre-conduite.html">Comment l’assureur Axa va surveiller votre conduite</a></li>
-                        <li>UFC-Que-Choisir, le 25/03/2014 : <a href="http://www.quechoisir.org/telecom-multimedia/internet/communique-donnees-personnelles-l-ufc-que-choisir-attaque-les-reseaux-sociaux-et-appelle-les-consommateurs-a-garder-la-main-sur-leurs-donnees"> L’UFC-Que Choisir attaque les réseaux sociaux et appelle les consommateurs à garder la main sur leurs données</a></li>
-                        <li>Ecrans.fr, le 22/01/2011 :  <a href="http://ecrans.liberation.fr/ecrans/2011/10/22/facebook-la-memoire-cachee_956055">Facebook: la mémoire cachée</a></li>
-                        <li>Clubic, le 25/03/2013 : <a href="http://www.clubic.com/internet/google/actualite-549552-google-reader-fermeture-liee-problematiques-vie-privee.html">Google Reader : une fermeture liée aux problématiques de vie privée ?</a></li>
-                        <li>Rue89, le 14/01/2014 : <a href="http://rue89.nouvelobs.com/2014/01/14/google-lance-les-objets-connectes-sincruste-chez-249023">Google se lance dans les objets connectés et s’incruste chez vous</a></li>
-                        <li>Numerama le 30/06/2014 : <a href="http://www.numerama.com/magazine/29852-facebook-a-teste-sa-capacite-de-manipulation-mentale-des-foules.html">Facebook a testé sa capacité de manipulation mentale des foules</a></li>
-                        <li>Numerama, le 18/08/2014 : <a href="http://www.numerama.com/magazine/30290-comment-chrome-envoie-tous-vos-mots-de-passe-a-google.html">Comment Chrome envoie tous vos mots de passe à Google</a></li>
-                        <li>Rue89, le 29/08/2014 : <a href="http://rue89.nouvelobs.com/2014/08/29/iphone-6-apres-lempreinte-digitale-apple-veut-ficher-etat-sante-254496">iPhone 6 : après l’empreinte digitale, Apple veut ficher votre état de santé</a></li>
-                        <li>LDN, le 17/04/2014 : <a href="http://ldn-fai.net/je-nai-rien-a-cacher/">Je n’ai rien à cacher</a></li>
-                        <li>Numerama, le 26/09/2014 : <a href="http://www.numerama.com/magazine/30707-facebook-sait-ou-vous-passez-votre-lune-de-miel-maj.html">Même si vous dites rien, Facebook sait où vous passez votre lune de miel</a></li>
-                        <li>Journal du Net, le 16/07/14 : <a href="http://www.journaldunet.com/ebusiness/le-net/informations-rassemblees-par-google.shtml">Soyons honnêtes, la quantité  d’informations que Google rassemble à notre sujet est effrayante</a></li>
-                        <li>Big Browser, le 18/11/14 : <a href="http://bigbrowser.blog.lemonde.fr/2014/11/18/comment-avoir-bonne-presse-un-dirigeant-duber-propose-de-fouiller-la-vie-privee-des-journalistes-trop-critiques/">Comment avoir bonne presse ? Un dirigeant d’Uber propose de fouiller la vie privée des journalistes trop critiques</a></li>
+                        <li>Numerama, the 22/08/2014 : <a href="http://www.numerama.com/magazine/30323-apple-approche-les-mutuelles-pour-divulguer-le-comportement-des-assures.html">Apple approche les mutuelles pour divulguer le comportement des assurés</a></li>
+                        <li>JDN, the 23/01/2014 : <a href="http://www.journaldunet.com/ebusiness/le-net/iwatch-apple-incroyable.shtml">Apple embauche des experts en contrôles sanguins</a></li>
+                        <li>Challenges, the 06/06/2014 : <a href="http://www.challenges.fr/entreprise/20140606.CHA4685/comment-l-assureur-axa-va-surveiller-votre-conduite.html">Comment l’assureur Axa va surveiller votre conduite</a></li>
+                        <li>UFC-Que-Choisir, the 25/03/2014 : <a href="http://www.quechoisir.org/telecom-multimedia/internet/communique-donnees-personnelles-l-ufc-que-choisir-attaque-les-reseaux-sociaux-et-appelle-les-consommateurs-a-garder-la-main-sur-leurs-donnees"> L’UFC-Que Choisir attaque les réseaux sociaux et appelle les consommateurs à garder la main sur leurs données</a></li>
+                        <li>Ecrans.fr, the 22/01/2011 :  <a href="http://ecrans.liberation.fr/ecrans/2011/10/22/facebook-la-memoire-cachee_956055">Facebook: la mémoire cachée</a></li>
+                        <li>Clubic, the 25/03/2013 : <a href="http://www.clubic.com/internet/google/actualite-549552-google-reader-fermeture-liee-problematiques-vie-privee.html">Google Reader : une fermeture liée aux problématiques de vie privée ?</a></li>
+                        <li>Rue89, the 14/01/2014 : <a href="http://rue89.nouvelobs.com/2014/01/14/google-lance-les-objets-connectes-sincruste-chez-249023">Google se lance dans les objets connectés et s’incruste chez vous</a></li>
+                        <li>Numerama the 30/06/2014 : <a href="http://www.numerama.com/magazine/29852-facebook-a-teste-sa-capacite-de-manipulation-mentale-des-foules.html">Facebook a testé sa capacité de manipulation mentale des foules</a></li>
+                        <li>Numerama, the 18/08/2014 : <a href="http://www.numerama.com/magazine/30290-comment-chrome-envoie-tous-vos-mots-de-passe-a-google.html">Comment Chrome envoie tous vos mots de passe à Google</a></li>
+                        <li>Rue89, the 29/08/2014 : <a href="http://rue89.nouvelobs.com/2014/08/29/iphone-6-apres-lempreinte-digitale-apple-veut-ficher-etat-sante-254496">iPhone 6 : après l’empreinte digitale, Apple veut ficher votre état de santé</a></li>
+                        <li>LDN, the 17/04/2014 : <a href="http://ldn-fai.net/je-nai-rien-a-cacher/">Je n’ai rien à cacher</a></li>
+                        <li>Numerama, the 26/09/2014 : <a href="http://www.numerama.com/magazine/30707-facebook-sait-ou-vous-passez-votre-lune-de-miel-maj.html">Même si vous dites rien, Facebook sait où vous passez votre lune de miel</a></li>
+                        <li>Journal du Net, the 16/07/14 : <a href="http://www.journaldunet.com/ebusiness/le-net/informations-rassemblees-par-google.shtml">Soyons honnêtes, la quantité  d’informations que Google rassemble à notre sujet est effrayante</a></li>
+                        <li>Big Browser, the 18/11/14 : <a href="http://bigbrowser.blog.lemonde.fr/2014/11/18/comment-avoir-bonne-presse-un-dirigeant-duber-propose-de-fouiller-la-vie-privee-des-journalistes-trop-critiques/">Comment avoir bonne presse ? Un dirigeant d’Uber propose de fouiller la vie privée des journalistes trop critiques</a></li>
                     </ul>';
 
-$t['home']['dang']['c']     = 'Centralisation';
+$t['home']['dang']['c']     = 'Centralization';
 $t['home']['dang']['cp']    ='Major actors of the Internet have become real giants: Google owns Youtube and Waze, Facebook acquired WhatsApp and Instagram, Microsoft distributes Skype, etc.<br>
 This concentration of actors creates multiple issues: what if Facebook were suddenly shut down? How could we browse the Web if Google became broken?
 <strong>We rely more and more dependent on services provided by a small group of actors.</strong> For example, Apple (iPhone), Google (Android) and Microsoft (Windows Phone) dominate almost the entire mobile OSes industry.<br>
@@ -164,16 +164,16 @@ Finally, the lack of diversity of these giants gives them a way not only to trac
 
 $t['home']['dang']['crefs'] = '
                       <ul>
-                          <li>NextInpact, le 14/06/2014 : <a href="http://www.nextinpact.com/news/88112-les-geants-net-generent-nouveaux-rapports-force.htm">Les géants du Net génèrent de nouveaux rapports de force</a></li>
-                        <li>Numerama, le 09/03/2013 : <a href="http://www.nextinpact.com/news/78092-edito-la-domination-et-centralisation-ennemis-numero-web.htm">La domination et la centralisation, les ennemis numéro un du web</a></li>
-                        <li>Droit et Technologies, le 25/02/2013 : <a href="http://www.droit-technologie.org/actuality-1577/cloud-la-perte-totale-des-donnees-est-possible-la-preuve-par-2e2-et.html">Cloud : la perte totale des données est possible. La preuve par 2e2 et Megaupload.</a></li>
-                        <li>INRIA, le 27/09/2011: <a href="http://www.inria.fr/actualite/actualites-inria/massification-du-web-les-consequences">La « massification » du web transforme les relations sociales</a></li>
-                        <li>INRIA, le 13/03/2013 : <a href="http://www.inria.fr/centre/lille/agenda/data-et-big-data-le-nouvel-or-noir">Data et Big Data : le nouvel or noir?</a></li>
-                        <li>Le Monde, le 12/06/2013: <a href="http://www.lemonde.fr/technologies/chat/2013/06/12/surveillance-d-internet-peut-on-encore-proteger-notre-vie-privee_3428413_651865.html">Pourquoi stocker toutes nos vies sur des serveurs aux Etats-Unis?</a></li>
-                        <li>Rue89, le 17/07/2009 : <a href="http://rue89.nouvelobs.com/rue69/2009/07/13/pour-sauver-la-vertu-de-son-iphone-apple-censure-a-tout-va">Pour sauver la vertu de son iPhone, Apple censure à tout va</a></li>
-                        <li>Nextinpact, le 08/04/2013 :  <a href="http://www.nextinpact.com/news/78883-appgratis-supprime-app-store-pour-son-reperage-promotions.htm">AppGratis supprimé de l’App Store pour son repérage des promotions</a></li>
-                        <li>Ecrans.fr, le 25/04/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/04/25/google-devoile-une-flambee-de-la-censure_957911">Google dévoile une flambée de la censure</a></li>
-                        <li>Nextinpact, le 24/04/2014 : <a href="http://www.nextinpact.com/news/87203-comment-etats-unis-veulent-enterrer-neutralite-net.htm">Comment les États-Unis veulent enterrer la neutralité du net</a></li>
+                          <li>NextInpact, the 14/06/2014 : <a href="http://www.nextinpact.com/news/88112-les-geants-net-generent-nouveaux-rapports-force.htm">Les géants du Net génèrent de nouveaux rapports de force</a></li>
+                        <li>Numerama, the 09/03/2013 : <a href="http://www.nextinpact.com/news/78092-edito-la-domination-et-centralisation-ennemis-numero-web.htm">La domination et la centralisation, les ennemis numéro un du web</a></li>
+                        <li>Droit et Technologies, the 25/02/2013 : <a href="http://www.droit-technologie.org/actuality-1577/cloud-la-perte-totale-des-donnees-est-possible-la-preuve-par-2e2-et.html">Cloud : la perte totale des données est possible. La preuve par 2e2 et Megaupload.</a></li>
+                        <li>INRIA, the 27/09/2011: <a href="http://www.inria.fr/actualite/actualites-inria/massification-du-web-les-consequences">La « massification » du web transforme les relations sociales</a></li>
+                        <li>INRIA, the 13/03/2013 : <a href="http://www.inria.fr/centre/lille/agenda/data-et-big-data-le-nouvel-or-noir">Data et Big Data : le nouvel or noir?</a></li>
+                        <li>Le Monde, the 12/06/2013: <a href="http://www.lemonde.fr/technologies/chat/2013/06/12/surveillance-d-internet-peut-on-encore-proteger-notre-vie-privee_3428413_651865.html">Pourquoi stocker toutes nos vies sur des serveurs aux Etats-Unis?</a></li>
+                        <li>Rue89, the 17/07/2009 : <a href="http://rue89.nouvelobs.com/rue69/2009/07/13/pour-sauver-la-vertu-de-son-iphone-apple-censure-a-tout-va">Pour sauver la vertu de son iPhone, Apple censure à tout va</a></li>
+                        <li>Nextinpact, the 08/04/2013 :  <a href="http://www.nextinpact.com/news/78883-appgratis-supprime-app-store-pour-son-reperage-promotions.htm">AppGratis supprimé de l’App Store pour son repérage des promotions</a></li>
+                        <li>Ecrans.fr, the 25/04/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/04/25/google-devoile-une-flambee-de-la-censure_957911">Google dévoile une flambée de la censure</a></li>
+                        <li>Nextinpact, the 24/04/2014 : <a href="http://www.nextinpact.com/news/87203-comment-etats-unis-veulent-enterrer-neutralite-net.htm">Comment les États-Unis veulent enterrer la neutralité du net</a></li>
                     </ul>';
 
 $t['home']['dang']['f']     = 'Termination';
@@ -185,25 +185,25 @@ In short, these companies trap us in gilded cages: gilded yes, but cages nonethe
 $t['home']['dang']['frefs'] = '
                     <ul>
                         <li>CNIL, the 03/01/2014 : <a href="http://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000028450267&fastReqId=2000051504&fastPos=1">Exemple de sanction de la CNIL à l’encontre de Google</a></li>
-                        <li>01Net, le 23/11/2012 : <a href="http://www.01net.com/editorial/580825/securite-le-cloud-est-plus-dangereux-que-les-virus/">Sécurité : le cloud est plus dangereux que les virus</a></li>
-                        <li>CNIL, le 25/06/2012 : <a href="http://www.cnil.fr/fileadmin/images/la_cnil/actualite/Recommandations_pour_les_entreprises_qui_envisagent_de_souscrire_a_des_services_de_Cloud.pdf">Recommandations pour les entreprises qui envisagent de souscrire à des services de Cloud computing</a></li>
-                        <li>INRIA, le 13/12/2013 : <a href="http://hal.inria.fr/hal-00918398">Quand les terminaux mobiles jouent les mouchards de poche</a></li>
-                        <li>INAGlobal, le 04/02/2014 : <a href="http://www.inaglobal.fr/numerique/article/facebook-nen-fais-pas-une-affaire-de-donnees-personnelles">Facebook, n’en fais pas une affaire de données personnelles!</a></li>
-                        <li>Rue89, le 03/02/2013 : <a href="http://rue89.nouvelobs.com/2013/02/03/qui-appartiennent-vos-donnees-sur-internet-mauvaises-nouvelles-et-conseils-239198">A qui appartiennent vos données sur Internet ? Mauvaises nouvelles et conseils</a></li>
-                        <li>Atlantico, le 16/06/2014 : <a href="http://www.atlantico.fr/decryptage/quelle-cible-publicitaire-etes-pourquoi-avez-peut-etre-interet-utiliser-fonctions-facebook-et-google-pour-connaitre-que-geants-1617661.html">Quelle cible publicitaire êtes-vous?</a></li>
-                        <li>Nextinpact, le 22/07/2009 : <a href="http://www.nextinpact.com/archive/52115-amazon-kindle-ebook-disparaitre-orwell.htm">Des ouvrages d’Orwell supprimés du Kindle par Amazon</a></li>
-                        <li>Rue89, le 18/11/2013 : <a href="http://rue89.nouvelobs.com/2013/11/18/google-facebook-apple-superpuissances-ont-privatise-internet-247615">Google, Facebook, Apple… : ces superpuissances ont privatisé Internet</a></li>
-                        <li>Liberation.fr, le 07/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/07/la-fin-du-porno-sur-vine-un-espace-de-liberte-en-moins_985232">La fin du porno sur Vine, un espace de liberté en moins</a></li>
-                        <li>Liberation.fr, le 14/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/14/apple-censure-un-roman-francais-pour-cause-de-seins-nus_987120">Apple censure un roman français pour cause de seins nus</a></li>
-                        <li>Rue89, le 29/05/2014 : <a href="http://rue89.nouvelobs.com/2014/05/29/chantage-google-apple-amazon-les-tontons-ecrabouilleurs-252521">Chantage : Google, Apple et Amazon, les tontons écrabouilleurs</a></li>
-                        <li>Numerama, le 09/08/2014 : <a href="http://www.numerama.com/magazine/30226-quand-facebook-est-en-panne-le-trafic-des-sites-baisse.html">Quand Facebook est en panne, le trafic des sites baisse</a></li>
-                        <li>NextInpact, le 22/08/2014 : <a href="http://www.nextinpact.com/news/89379-quand-twitter-deraille-avec-timeline-ses-utilisateurs.htm">Quand Twitter déraille avec la timeline de ses utilisateurs</a></li>
+                        <li>01Net, the 23/11/2012 : <a href="http://www.01net.com/editorial/580825/securite-le-cloud-est-plus-dangereux-que-les-virus/">Sécurité : le cloud est plus dangereux que les virus</a></li>
+                        <li>CNIL, the 25/06/2012 : <a href="http://www.cnil.fr/fileadmin/images/la_cnil/actualite/Recommandations_pour_les_entreprises_qui_envisagent_de_souscrire_a_des_services_de_Cloud.pdf">Recommandations pour les entreprises qui envisagent de souscrire à des services de Cloud computing</a></li>
+                        <li>INRIA, the 13/12/2013 : <a href="http://hal.inria.fr/hal-00918398">Quand les terminaux mobiles jouent les mouchards de poche</a></li>
+                        <li>INAGlobal, the 04/02/2014 : <a href="http://www.inaglobal.fr/numerique/article/facebook-nen-fais-pas-une-affaire-de-donnees-personnelles">Facebook, n’en fais pas une affaire de données personnelles!</a></li>
+                        <li>Rue89, the 03/02/2013 : <a href="http://rue89.nouvelobs.com/2013/02/03/qui-appartiennent-vos-donnees-sur-internet-mauvaises-nouvelles-et-conseils-239198">A qui appartiennent vos données sur Internet ? Mauvaises nouvelles et conseils</a></li>
+                        <li>Atlantico, the 16/06/2014 : <a href="http://www.atlantico.fr/decryptage/quelle-cible-publicitaire-etes-pourquoi-avez-peut-etre-interet-utiliser-fonctions-facebook-et-google-pour-connaitre-que-geants-1617661.html">Quelle cible publicitaire êtes-vous?</a></li>
+                        <li>Nextinpact, the 22/07/2009 : <a href="http://www.nextinpact.com/archive/52115-amazon-kindle-ebook-disparaitre-orwell.htm">Des ouvrages d’Orwell supprimés du Kindle par Amazon</a></li>
+                        <li>Rue89, the 18/11/2013 : <a href="http://rue89.nouvelobs.com/2013/11/18/google-facebook-apple-superpuissances-ont-privatise-internet-247615">Google, Facebook, Apple… : ces superpuissances ont privatisé Internet</a></li>
+                        <li>Liberation.fr, the 07/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/07/la-fin-du-porno-sur-vine-un-espace-de-liberte-en-moins_985232">La fin du porno sur Vine, un espace de liberté en moins</a></li>
+                        <li>Liberation.fr, the 14/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/14/apple-censure-un-roman-francais-pour-cause-de-seins-nus_987120">Apple censure un roman français pour cause de seins nus</a></li>
+                        <li>Rue89, the 29/05/2014 : <a href="http://rue89.nouvelobs.com/2014/05/29/chantage-google-apple-amazon-les-tontons-ecrabouilleurs-252521">Chantage : Google, Apple et Amazon, les tontons écrabouilleurs</a></li>
+                        <li>Numerama, the 09/08/2014 : <a href="http://www.numerama.com/magazine/30226-quand-facebook-est-en-panne-le-trafic-des-sites-baisse.html">Quand Facebook est en panne, le trafic des sites baisse</a></li>
+                        <li>NextInpact, the 22/08/2014 : <a href="http://www.nextinpact.com/news/89379-quand-twitter-deraille-avec-timeline-ses-utilisateurs.htm">Quand Twitter déraille avec la timeline de ses utilisateurs</a></li>
                           </ul>';
 
 // Accueil - Nos propositions
 $t['home']['prop']['btn']   = 'Our proposals';
 $t['home']['prop']['title'] = 'Our proposals';
-$t['home']['prop']['intro'] = 'Framasoft  wishes to face  the threats to our digital lives by offering free, ethical, decentralised and solidarity-based services.';
+$t['home']['prop']['intro'] = 'Framasoft wishes to face the threats to our digital lives by offering free, ethical, decentralised and solidarity-based services.';
 
 // LEDS (Libre, Éthique, Décentralisé, Solidaire)
 $t['home']['prop']['l']     = 'Freedom';
@@ -258,7 +258,7 @@ $t['list']['desc']      = 'List of online services free, ethics, decentralized e
 $t['list']['css']       = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['list']['js']        = '
-    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/list.js" typ e="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Espace médias
@@ -269,76 +269,76 @@ $t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="style
 $t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 /* <NOT TRANSLATED> */
-$t['medias']['subtitle']    = '5 octobre 2015 : an 2 de la Dégooglisation d’Internet.';
-$t['medias']['intro']       = 'Pour entamer la deuxième année de sa campagne de propositions d’alternatives aux services de Google & consorts, l’association Framasoft annonce, dès le 5 octobre, cinq nouveaux services issus de logiciels libres.';
-$t['medias']['btnCPtxt']    = 'Télécharger le<br/>communiqué de presse';
+$t['medias']['subtitle']    = '5 october 2015 : year 2 of the de-google-ifycation of the Internet.';
+$t['medias']['intro']       = 'To begin this second year of his camppaign of alternatives proposal for Google & co services, Framasoft notify, from octobre 5, five new services, based on free sofwares.';
+$t['medias']['btnCPtxt']    = 'Download the<br/>press release';
 $t['medias']['btnCPurl']    = 'img/2015_communique_degooglisons_Framasoft.odt';
-$t['medias']['btnDPtxt']    = 'Télécharger le<br/>dossier de presse';
+$t['medias']['btnDPtxt']    = 'Download the<br/>press release';
 $t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2015.pdf';
-$t['medias']['1title']      = 'Articles sur le Framablog';
-$t['medias']['1intro']      = 'Le <a href="http://framablog.org">Framablog</a> est notre principal outil de communication envers le grand public. Chacune des 5 nouveautés proposées durant le lancement de cette campagne y seront présentées au cours de la semaine du 5 octobre 2015.';
+$t['medias']['1title']      = 'Posts on the Framablog';
+$t['medias']['1intro']      = 'The <a href="http://framablog.org">Framablog</a> in our main communication tool to the general public. All five proposed new services during taunch of this compaign will be presented during the week of the 5 october 2015.';
 $t['medias']['1list']       = '
                         <ul>
-                            <li><em>Lundi 5/10</em> : Présentation de <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">l’an 2 de la campagne Dégooglisons Internet</a>.</li>
-                            <li><em>Lundi 5/10</em> : <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative à Dropbox et Google Drive.</li>
-                            <li><em>Mardi 6/10</em> : <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative à GoogleDocs.</li>
-                            <li><em>Mercredi 7/10</em> : <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a> alternative à Trello.</li>
-                            <li><em>Jeudi 8/10</em> : <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternative à Doodle.</li>
-                            <li><em>Vendredi 9/10</em> : <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a> alternative à WeTransfer.</li>
+                              <li><em>Monday 5/10</em> : Presentation of <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">the second years of the campaign “De-google-ify internet”</a>.</li>
+                            <li><em>Monday 5/10</em>: <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative to Dropbox and Google Drive.</li>
+                            <li><em>Tuesday 6/10</em>: <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative to GoogleDocs.</li>
+                            <li><em>Wednesday 7/10</em>: <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a>, alternative to Trello.</li>
+                            <li><em>Thursday 8/10</em>: <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternative to Doodle.</li>
+                            <li><em>Friday 9/10</em>: <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a>, alternative to WeTransfer.</li>
                         </ul>';
-$t['medias']['2title']      = 'Liens vers les services';
-$t['medias']['2intro']      = 'Bien qu’elles soient présentées tout au long de la semaine sur notre blog, ces cinq nouveautés seront en ligne dès le 5 octobre. Cliquez sur le nom du service pour l’essayer.';
+$t['medias']['2title']      = 'Link to services';
+$t['medias']['2intro']      = 'Even if they are presented throughout the week on our blog, these five new services will be online as early as 5 october. Click on the name of the service to try it.';
 $t['medias']['2list']       = '
                         <ul>
-                            <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
+                              <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
                             <li><a href="https://mypads.framapad.org"><b class="violet">My</b><b class="vert">Pads</b></a></li>
                             <li><a href="https://framaboard.org"><b class="violet">Frama</b><b class="vert">board</b></a></li>
                             <li><a href="https://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a></li>
                             <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
                         </ul>';
 
-$t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons an 2.';
-$t['medias']['tabsintro']   = 'Sauf mention contraire, tous nos visuels sont réalisés par <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> et sont librement réutilisables sous la licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> Ces visuels sont en grand format (contrairement aux apparences). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à nous contacter.';
-$t['medias']['tabssaveas']  = '<em>Faire un clic droit sur l’image et choisir « Enregistrer l’image sous » afin de la réutiliser.</em>';
-$t['medias']['t1']          = 'Cartes';
-$t['medias']['t1i1txt']     = 'Carte « Avant »';
+$t['medias']['tabstitle']   = 'Visuals for the de-google-ify years 2.';
+$t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free ton contact us.';
+$t['medias']['tabssaveas']  = '<em>To reuse the picture, Right click on the image and select “save image as”.</em>';
+$t['medias']['t1']          = 'Maps';
+$t['medias']['t1i1txt']     = 'Map “Before”';
 $t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
-$t['medias']['t1i1desc']    = 'Carte de la France envahie par les services GAFAM (oct 2014)';
-$t['medias']['t1i2txt']     = 'Carte « Après »';
+$t['medias']['t1i1desc']    = 'Map of France invaded by GAFAM services (oct 2014)';
+$t['medias']['t1i2txt']     = 'Map “After”';
 $t['medias']['t1i2url']     = 'img/Carte2015-victoires.png';
-$t['medias']['t1i2desc']    = 'Carte de la France avec les alternatives Framasoft (oct 2015)';
-$t['medias']['t1i3txt']     = 'Carte animée';
+$t['medias']['t1i2desc']    = 'Map of France with Framasoft’s alternatives (oct 2015)';
+$t['medias']['t1i3txt']     = 'Animated map';
 $t['medias']['t1i3url']     = 'img/Carte2015-romains.png';
-$t['medias']['t1i3desc']    = 'Carte de la France envahie par les services GAFAM (oct 2014)';
-$t['medias']['t2']          = 'Dessins';
-$t['medias']['t2i1txt']     = 'Dessin « Verouillage »';
+$t['medias']['t1i3desc']    = 'Map of France invaded by GAFAM services (oct 2014)';
+$t['medias']['t2']          = 'Drawings';
+$t['medias']['t2i1txt']     = 'Drawing “Closed”';
 $t['medias']['t2i1url']     = 'img/stevusjobus.png';
-$t['medias']['t2i2txt']     = 'Dessin « Cyber Police »';
+$t['medias']['t2i2txt']     = 'Drawing “Cyber Police”';
 $t['medias']['t2i2url']     = 'img/cyberpolicus.png';
-$t['medias']['t2i3txt']     = 'Dessin « Espions »';
+$t['medias']['t2i3txt']     = 'Drawing “Spies”';
 $t['medias']['t2i3url']     = 'img/bourrepifix.png';
-$t['medias']['t2i4txt']     = 'Dessin « Stallman »';
+$t['medias']['t2i4txt']     = 'Drawing “Stallman”';
 $t['medias']['t2i4url']     = 'img/stallmanoramix.png';
-$t['medias']['t2i5txt']     = 'Dessin « Flicage »';
+$t['medias']['t2i5txt']     = 'Drawing “oversight”';
 $t['medias']['t2i5url']     = 'img/village.png';
-$t['medias']['t2i6txt']     = 'Dessin « GAFAM »';
+$t['medias']['t2i6txt']     = 'Drawing “GAFAM”';
 $t['medias']['t2i6url']     = 'img/GAFAM.png';
-$t['medias']['t3']          = 'Vidéos';
-$t['medias']['t3intro']     = 'Nous avons pu expliquer notre projet lors de conférences. Nous avons sélectionné ces deux captations vidéos (et leur code d’intégration) pour que vous puissiez librement les réutiliser sur vos sites webs.';
-$t['medias']['t3v1txt']     = 'Version courte (17mn)';
+$t['medias']['t3']          = 'Videos';
+$t['medias']['t3intro']     = 'We were able to exploain our projet at conferances. We selected thes two video recordings (and their embed code) so that you can freely reuse them on your websites.';
+$t['medias']['t3v1txt']     = 'Short version (FR - 17mn)';
 $t['medias']['t3v1img']     = 'https://framatube.org/images/media/925l.jpg';
 $t['medias']['t3v1mp4']     = 'https://framatube.org/blip/gosset-owf-dio.mp4';
 $t['medias']['t3v1webm']    = 'https://framatube.org/blip/gosset-owf-dio.webm';
-$t['medias']['t3v2txt']     = 'Version longue (54mn)';
+$t['medias']['t3v2txt']     = 'Long version (FR - 54mn)';
 $t['medias']['t3v2img']     = 'https://framatube.org/blip/gosset-degooglisons-internet.png';
 $t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-internet.mp4';
 $t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
-$t['medias']['t4']          = 'Capture d’écran';
-$t['medias']['presstitle']  = 'Revue de presse';
-$t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant sa première année. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
+$t['medias']['t4']          = 'Screenshot';
+$t['medias']['presstitle']  = 'Press Release';
+$t['medias']['pressintro']  = 'The “De-google-ifyInternet” campaing has already got a lot of attention during the first year. Here are so extracts from our <a href="https://wiki.framasoft.org/speakabout">Press release</a>.';
 $t['medias']['pressth1']    = 'Date';
-$t['medias']['pressth2']    = 'Média';
-$t['medias']['pressth3']    = 'Liens';
+$t['medias']['pressth2']    = 'Media';
+$t['medias']['pressth3']    = 'Link';
 $t['medias']['presslist']   = [
     ['17/08/2015', 'France Culture (Du grain à moudre)',
     'http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3',
@@ -359,17 +359,17 @@ $t['medias']['presslist']   = [
     'http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
     'Lien vers la page d’écoute']
 ];
-$t['medias']['framatitle']  = 'Framasoft en quelques liens…';
+$t['medias']['framatitle']  = 'Framasoft in few link…';
 $t['medias']['framalist']   = '
-                        <ul>
-                            <li><a href="https://contact.framasoft.org/#questions">Nous contacter</a> (le formulaire renvoie direcement à notre service presse).</li>
-                            <li><a href="https://fr.wikipedia.org/wiki/Framasoft">Page wikipédia</a> consacrée à Framasoft.</li>
-                            <li><a href="https://soutenir.framasoft.org/association">Présentation complète</a> de Framasoft.</li>
-                            <li><a href="https://wiki.framasoft.org/speakabout">Revue de presse</a> (et de web) de Framasoft.</li>
+                        <ul >
+                              <li><a href="https://contact.framasoft.org/#questions">Contact us</a> (This form relates directly to our press service).</li>
+                            <li><a href="https://fr.wikipedia.org/wiki/Framasoft">Wikipedia page</a> dedicated to Framasoft.</li>
+                            <li>Framasoft <a href="https://soutenir.framasoft.org/association">Complete presentation</a>.</li>
+                            <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
                         </ul>';
-$t['medias']['framap1']     = 'Framasoft est un réseau d’éducation populaire, issu du monde éducatif, se consacrant à promouvoir et diffuser le logiciel et la culture libre.';
-$t['medias']['framap2']     = 'Trait d’union entre le monde du Libre et le grand public, l’association propose une galaxie de projets (annuaire de logiciels, maison d’édition, moteur de recherche, etc.) rassemblés en 3 axes : logiciels libres, culture libre et services libres.';
-$t['medias']['framap3']     = '<em>Le logo est une œuvre de JosephK sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
+$t['medias']['framap1']     = 'Framasoft is a network of popular education, form the world of education, witch aims to promote and spead free software and Free Culture.';
+$t['medias']['framap2']     = 'Link between Free software world and general public the associationoffers many projects (directory sofware, publisher, websearch engine, etc.), following 3 axis : Free Software, Free Culture and Free Services.';
+$t['medias']['framap3']     = '<em>The logo is a relaization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 /* </NOT TRANSLATED> */
 
 // Texte générique
