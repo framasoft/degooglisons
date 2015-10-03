@@ -119,3 +119,7 @@ main {
 .tab-pane {
     padding : 20px 0;
 }
+
+#screenshots .col-sm-4 {
+	height: 350px;
+}
