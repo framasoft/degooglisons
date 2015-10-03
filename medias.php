@@ -44,7 +44,7 @@ include('header.php');
             <li role="presentation" class="active"><a href="#cartes" aria-controls="cartes" role="tab" data-toggle="tab"><?php echo $t['medias']['t1'] ?></a></li>
             <li role="presentation"><a href="#dessins" aria-controls="dessins" role="tab" data-toggle="tab"><?php echo $t['medias']['t2'] ?></a></li>
             <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab"><?php echo $t['medias']['t3'] ?></a></li>
-            <!--<li role="presentation"><a href="#screenshots" aria-controls="screenshots" role="tab" data-toggle="tab"><?php echo $t['medias']['t4'] ?></a></li>-->
+            <li role="presentation"><a href="#screenshots" aria-controls="screenshots" role="tab" data-toggle="tab"><?php echo $t['medias']['t4'] ?></a></li>
         </ul>
 
         <div class="tab-content">
@@ -104,7 +104,39 @@ include('header.php');
             </div>
             <!-- Screenshots -->
             <div role="tabpanel" class="tab-pane" id="screenshots">
-
+<div role="tabpanel" class="tab-pane" id="screenshots">
+			<div class="row">
+                                <div class="col-sm-4">
+                    <div class="thumbnail text-center">
+                        <h3><span class="violet">Frama</span><span class="vert">drive</span></h3>
+                        <img class="img-responsive" src="/img/framadrive2.png" alt="" />
+                    </div>
+                </div>
+                                <div class="col-sm-4">
+                    <div class="thumbnail text-center">
+                        <h3><span class="violet">My</span><span class="vert">Pads</span></h3>
+                        <img class="img-responsive" src="/img/mypads5.png" alt="" />
+                    </div>
+                </div>
+                                <div class="col-sm-4">
+                    <div class="thumbnail text-center">
+                        <h3><span class="violet">Frama</span><span class="vert">board</span></h3>
+                        <img class="img-responsive" src="/img/framaboard1.png" alt="" />
+                    </div>
+                </div>
+                                <div class="col-sm-4">
+                    <div class="thumbnail text-center">
+                        <h3><span class="violet">Frama</span><span class="vert">date</span></h3>
+                        <img class="img-responsive" src="/img/framadate1.png" alt="" />
+                    </div>
+                </div>
+                                <div class="col-sm-4">
+                    <div class="thumbnail text-center">
+                        <h3><span class="violet">Frama</span><span class="vert">drop</span></h3>
+                        <img class="img-responsive" src="/img/framadrop3.png" alt="" />
+                    </div>
+                </div>
+            </div>
             </div>
 
         </div>
