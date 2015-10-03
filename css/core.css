@@ -93,6 +93,11 @@ main {
     font-weight:normal;
     margin:0px;
 }
+.modal-footer .btn-soutenir {
+    font-size:14px;
+    font-weight:normal;
+    margin:0;
+}
 
 #back-to-top {
     display:none;
