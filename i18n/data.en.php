@@ -268,7 +268,7 @@ which does not exclusively concern Google - consists in <strong> offering as man
 $t['home']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, and many others, are extremely convenient services but <strong>they have become far too large and have made us dependent on them</strong>.
 Framasoft wishes to resist this trend and is putting forward a roadmap for setting up alternative services over several years.';
 $t['home']['conc']['p3']    = 'These services are free, gratis, open to all (insofar as our technical and financial capabilities allow us), as <strong><a href="http://en.wikipedia.org/wiki/Commons" title="Bien communs">digital commons</a></strong>.
-Withe the goal of decentralising the Internet and of promoting self-hosting, we will do our best so that everyone can install their own services (for themselves, for their organisation, their company).';
+With the goal of decentralising the Internet and of promoting self-hosting, we will do our best so that everyone can install their own services (for themselves, for their organisation, their company).';
 $t['home']['conc']['p4']    = 'We are not aiming to compete with these services of course, we merely wish to offer a space that is neutral, non-commercial and not aggressive towards its users.';
 $t['home']['conc']['p5']    = '<strong>See the list of services we are already offering (and those that we are preparing):</strong>';
 $t['home']['conc']['stitle'] = 'Support';
