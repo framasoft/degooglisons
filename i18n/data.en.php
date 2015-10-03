@@ -18,7 +18,7 @@ $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
 
 // Images
-$l['map'] = 'img/carte-animee-fr.gif';
+$l['map'] = 'img/carte-animee-en.gif';
 
 // Meta
 $t['meta']['lang']      = 'en';
