@@ -105,7 +105,7 @@ include('header.php');
             <!-- Screenshots -->
             <div role="tabpanel" class="tab-pane" id="screenshots">
 <div role="tabpanel" class="tab-pane" id="screenshots">
-				<div class="row">
+			<div class="row">
                                 <div class="col-sm-4">
                     <div class="thumbnail text-center">
                         <h3><span class="violet">Frama</span><span class="vert">drive</span></h3>
