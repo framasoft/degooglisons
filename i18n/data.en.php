@@ -268,7 +268,6 @@ $t['medias']['desc']    = '';
 $t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
-/* <NOT TRANSLATED> */
 $t['medias']['subtitle']    = '5 october 2015 : year 2 of the de-google-ifycation of the Internet.';
 $t['medias']['intro']       = 'To begin this second year of his camppaign of alternatives proposal for Google & co services, Framasoft notify, from octobre 5, five new services, based on free sofwares.';
 $t['medias']['btnCPtxt']    = 'Download the<br/>press release';
@@ -367,10 +366,9 @@ $t['medias']['framalist']   = '
                             <li>Framasoft <a href="https://soutenir.framasoft.org/association">Complete presentation</a>.</li>
                             <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
                         </ul>';
-$t['medias']['framap1']     = 'Framasoft is a network of popular education, form the world of education, witch aims to promote and spead free software and Free Culture.';
-$t['medias']['framap2']     = 'Link between Free software world and general public the associationoffers many projects (directory sofware, publisher, websearch engine, etc.), following 3 axis : Free Software, Free Culture and Free Services.';
-$t['medias']['framap3']     = '<em>The logo is a relaization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
-/* </NOT TRANSLATED> */
+$t['medias']['framap1']     = 'Framasoft is a network of popular education, from the world of education, witch aims to promote and spead free software and Free Culture.';
+$t['medias']['framap2']     = 'Link between Free software world and general public, the association offers many projects (directory sofware, publisher, websearch engine, etc.), following 3 axis : Free Software, Free Culture and Free Services.';
+$t['medias']['framap3']     = '<em>The logo is a realization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
 // Texte générique
 $t['_Close']            = 'Close';
@@ -430,7 +428,7 @@ $d['tip2016'] = [
 $d['tip2015'] = [
     'name'  =>  '€70,000 + 780 recurrent donors',
     'F'     => '5 employees',
-    'mBody' => '<p>Framasoft plans to start providing several important online services  in 2015:</p>
+    'mBody' => '<p>Framasoft plans to start providing several important online services in 2015:</p>
                 <ul>
                     <li>An online file storage service (as an alternative to Dropbox)</li>
                     <li>A large files sharing service (as an alternative to WeTransfer)</li>
@@ -444,22 +442,20 @@ $d['tip2014'] = [
     'name'  => '€ 35,000 + 550 recurrent donors',
     'F'     => '3 employees',
     'mBody' => '<p>2014 was particularly intense for the Framasoft NPO, since we had to establish and fine-tune our battleplan to help you resist Google, Facebook and the others…</p>
-                <p  >Amongst other things, the organization has invested both time and money in the technical infrastructure which supports the existing services. This will allow us to comfortably host the applications we will be providing in the coming years.</p>
+                <p>Amongst other things, the organization has invested both time and money in the technical infrastructure which supports the existing services. This will allow us to comfortably host the applications we will be providing in the coming years.</p>
                 <p>You can help us meet these goals:</p>
                 <ul>
                     <li>increase the size of our technical infrastructure, i.e. increase the computing power of our virtual machine cluster and its storage capacity</li>
                     <li>pay the wages of our two full-time employees</li>
                     <li>be able to hire a third full-time employee (communication manager)</li>
-                    <li>finance the development of upgrades to some of our existing services (Framadate and Framindmap, amongst others)
-</li>
-                    <li>financer le développement d’améliorations de certains services proposés (Framadate et Framindmap, notamment)</li>
+                    <li>finance the development of upgrades to some of our existing services (Framadate and Framindmap, amongst others)</li>
                     <li>coordinate the entire project “De-Google-ify the Internet”</li>
                 </ul>
                 <p>Our target was to increase the number of recurring donors from 400 to 550, as well as to collect €35,000 in one-time donations over the year.</p>
                 <p>We remind you that Framasoft is a non-profit organisation that is in great part self-financed, thanks to its generous donors. For a glimpse on the scale of our needs: our goal for 2014 —€35,000 and 550 recurring donors— represents the approximate costs of 8 meters of a motorway, or 0.000083% of Google’s annual revenue.</p>'
 ];
 for ($i=2014; $i<2018; $i++) {
-    $d  ['tip'.$i]['FDate']   = $i;
+    $d  ['tip'.$i]['F Date']   = $i;
     $d['tip'.$i]['sDesc']   = 'Goals';
     $d['tip'.$i]['lDesc']   = 'You can help us meet these goals';
     $d['tip'.$i]['mTitle']  = 'Our goals for '.$i;
@@ -493,7 +489,7 @@ $d[$k]['mBody']   = '<p>
                     </p>
                     <p>
                         <b class="violet">Fonctionnement :</b> …
-                    </p>';
+                     </p>';
 
 ---- Facultatif : déjà dans list.php (l.23-26)--------------------------
 $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance basée sur le logiciel libre '.$d[$k]['S'].'</p>';
@@ -506,10 +502,10 @@ $d[$k]['sDesc']  = 'Petitions';
 $d[$k]['lDesc']  = 'Launch your petitions without giving away the addresses of your supports';
 $d[$k]['mTitle'] = 'Free your petitions';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' allows you to launch petitions on issues that matter to you. With a few clicks, your petition is published and the addresses of your supports will not be  available for unwanted uses such as affiliate marketing.
+                            '.$d[$k]['F'].' allows you to launch petitions on issues that matter to you. With a few clicks, your petition is published and the addresses of your supports will not be  available for unwanted uses such as affiliate marketing.
                     </p>
                     <p>
-                          <b class="violet">How does it work? </b> Sign up and launch a new petition by simply following the instructions. Your survey will be created. Your supports will not be required to register in order to participate.
+                            <b class="violet">How does it work? </b> Sign up and launch a new petition by simply following the instructions. Your survey will be created. Your supports will not be required to register in order to participate.
                     </p>';
 
 // Bit.ly
@@ -518,7 +514,7 @@ $d[$k]['sDesc']  = 'URL shortener';
 $d[$k]['lDesc']  = 'Short URLs that keep it discreet.';
 $d[$k]['mTitle'] = 'Put an end to long URLs';
 $d[$k]['mBody']  = '<p>
-                          With '.$d[$k]['F'].' or <a href="https://huit.re">Huit.re</a>, you can shrink excessively long URLs without  being tracked in their use. On social networks or microblogs, a shortened web address can help save space or help improve readability.
+                            With '.$d[$k]['F'].' or <a href="https://huit.re">Huit.re</a>, you can shrink excessively long URLs without being tracked in their use. On social networks or microblogs, a shortened web address can help save space or help improve readability.
                     </p>
                     <p>
                           <b class="violet">How does it work?</b> Enter the original version of your URL: Frama.link shortens it. Copy the link.
@@ -538,16 +534,15 @@ $d[$k]['sDesc']  = 'Mind Map';
 $d[$k]['lDesc']  = 'Create your mind maps';
 $d[$k]['mTitle'] = 'Why would you create a mind map?';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].'  allows you to organize a brainstorming, to sort out and put in order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements, etc.
+                   '.$d[$k]['F'].' allows you to organize a brainstorming, to sort out and put in order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements, etc.
                     </p>
-                         <p><video controls="controls" preload="none"
-                        width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
-                        <source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
-                        <source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
-                          </video>
-                       </p>
-                       <p><small><em>Tutorial made by Claire Cassaigne</em> - The <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">video</a>  is available in WebM format.</small></p>
-
+                    <p><video controls="controls" preload="none"
+                      width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
+                      <source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
+                      <source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
+                      </video>
+                   </p>
+                   <p><small><em>Tutorial made by Claire Cassaigne</em> - The <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">video</a>  is available in WebM format.</small></p>
                     <p>
                          <b class="violet">Why would you use Framindmap?</b> This service is available online. No installation nor registration is required. You can choose your file format for export and save the map as an image. It is a free and open source software. The data are yours.
                     </p>';
@@ -558,7 +553,7 @@ $d[$k]['sDesc']  = 'Meetings and polls';
 $d[$k]['lDesc']  = 'Schedule a meeting or create a poll';
 $d[$k]['mTitle'] = 'Organiser des rendez-vous simplement et librement';
 $d[$k]['mBody']  = '<p>
-                         With '.$d[$k]['F'].' you will be able to plan a meeting with several persons or create an online survey. Framadate does not store your data!
+                       With '.$d[$k]['F'].' you will be able to plan a meeting with several persons or create an online survey. Framadate does not store your data!
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
@@ -574,7 +569,7 @@ $d[$k]['sDesc']  = 'File hosting online service';
 $d[$k]['lDesc']  = 'File hosting online service';
 $d[$k]['mTitle'] = 'File hosting online service';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to store your documents online and encrypted, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want…
+                      '.$d[$k]['F'].' allows you to store your documents online and encrypted, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want…
                     </p>';
 
 // Evernote
@@ -593,7 +588,7 @@ $d[$k]['mBody']  = '<p>
                          '.$d[$k]['F'].' is a social network that respects your data and your privacy. Framasphere is a node (also called <i>pod </i>) of Diaspora *, a free social network .
                     </p>
                     <p>
-                         <b class="violet">How does it work? </b>  Share messages and photos with anyone on the Diaspora * network, manage your contacts, tags, mentions, reshares … You can also publish on other social networks (Facebook, Twitter, Tumblr) or on WordPress.
+                         <b class="violet">How does it work? </b> Share messages and photos with anyone on the Diaspora * network, manage your contacts, tags, mentions, reshares… You can also publish on other social networks (Facebook, Twitter, Tumblr) or on WordPress.
                     </p>';
 
 // Github
@@ -626,7 +621,7 @@ $d[$k]['sDesc']  = 'Online books';
 $d[$k]['lDesc']  = 'An open library which offers thousands of books';
 $d[$k]['mTitle'] = 'Catalog of books available to everyone';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' is Framasoft’s <abbr>OPDS</abbr>  catalog.  “OK ... and this is interesting because …? ” might you ask. An Open Publication Distribution System (<abbr>OPDS</abbr>) catalog is a website to which you subscribe with a software that supports this functionality –some E-readers embed one, such as Aldiko amongst others for Android. It provides you a quick and easy access to an entire library from your computer, smartphone or tablet
+                          '.$d[$k]['F'].' is Framasoft’s <abbr>OPDS</abbr>  catalog.  “OK… and this is interesting because …? ” might you ask. An Open Publication Distribution System (<abbr>OPDS</abbr>) catalog is a website to which you subscribe with a software that supports this functionality –some E-readers embed one, such as Aldiko amongst others for Android. It provides you a quick and easy access to an entire library from your computer, smartphone or tablet.
                     </p>
                     <p> Framasoft’s <abbr>OPDS</abbr> catalog gives you access to hundreds of non-copyrighted books.</p>';
 
@@ -636,11 +631,11 @@ $d[$k]['sDesc']  = 'Collaborative writing';
 $d[$k]['lDesc']  = 'A web-based collaborative real-time editor';
 $d[$k]['mTitle'] = 'Collaborative writing service';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' is an online collaborative writing tool based on <a href="http://etherpad.org/">Etherpad</a>.
+                          '.$d[$k]['F'].' is an online collaborative writing tool based on <a href="http://etherpad.org/">Etherpad</a>.
                         '.$d[$k]['S'].'.
                     </p>
                     <p>
-                           A “pad” is an online text editor. Its true bonus? Real-time collaborative writing: each contribution appears immediately on each contributors’ screen, and is highlighted by a colour code.
+                            A “pad” is an online text editor. Its true bonus? Real-time collaborative writing: each contribution appears immediately on each contributors’ screen, and is highlighted by a colour code.
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
@@ -660,10 +655,10 @@ $d[$k]['sDesc']  = 'Online surveys';
 $d[$k]['lDesc']  = 'Easily create your surveys';
 $d[$k]['mTitle'] = 'Online surveys creation tool';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to create questionnaires and surveys depending on your needs, be it for school, family, an association or your job. Set up questions adapted to your context: multiple choice questions or free text fields.
+                          '.$d[$k]['F'].' allows you to create questionnaires and surveys depending on your needs, be it for school, family, an association or your job. Set up questions adapted to your context: multiple choice questions or free text fields.
                     </p>
                     <p>
-                         <b class="violet">How does it work?</b> create your account on Framaforms and get started in creating questionnaires depending on your needs. No registration is required for the respondents to post their replies. You have access to a synthesis of the replies.
+                          <b class="violet">How does it work?</b> create your account on Framaforms and get started in creating questionnaires depending on your needs. No registration is required for the respondents to post their replies. You have access to a synthesis of the replies.
                     </p >';
 
 // Google Groupes
@@ -679,7 +674,7 @@ $d[$k]['sDesc']  = 'Cartography';
 $d[$k]['lDesc']  = 'Create you own maps online';
 $d[$k]['mTitle'] = 'Create you own maps online';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to create custom maps based on OpenStreetMap and show them on your website.
+                          '.$d[$k]['F'].' allows you to create custom maps based on OpenStreetMap and show them on your website.
                     </p>
                     <p><b class="violet">How does it works ?</b></p>
                     <ul>
@@ -698,7 +693,7 @@ $d[$k]['sDesc']  = 'Web-based feed reader';
 $d[$k]['lDesc']  = 'Choose freely which news to follow';
 $d[$k]['mTitle'] = 'Always up to date with the latest news';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' provides you with an online feed reader, which keeps you up to date with the latest news syndicated from the RSS feeds of your favorite websites!
+                         '.$d[$k]['F'].' provides you with an online feed reader, which keeps you up to date with the latest news syndicated from the RSS feeds of your favorite websites!
                     </p>
                     <p>
                         <b class="violet">How does it work?</b> a Once your account is created, save your RSS feeds and follow them. Could it be simpler?
@@ -711,7 +706,7 @@ $d[$k]['lDesc']  = 'What if your online searches weren’t tracked by Google?';
 $d[$k]['mTitle'] = 'Anonymous web search';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].'  is an anonymous metasearch engine. This means that your searches are sent to several search engines and the results are displayed in your web browser. The advantage? Framabee acts as an intermediary between you and Google (or other search engines). Therefore your IP address won’t be stored by any of them. </p>
-                        <p>>It is an obvious statement that you should trust Framasoft and its tools before using Framabee, which is why we wrote this <a href="/nav/html/charte.html">charter</a>.
+                         <p>>It is an obvious statement that you should trust Framasoft and its tools before using Framabee, which is why we wrote this <a href="/nav/html/charte.html">charter</a>.
                     </p>';
 
 // Google Slides
@@ -720,7 +715,7 @@ $d[$k]['sDesc']  = 'Presentations';
 $d[$k]['lDesc']  = 'High quality and user-friendly slideshows';
 $d[$k]['mTitle'] = 'An application for your slideshows';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' ffers you a way to easily and intuitively create your slideshows. With this application in your browser, no need to load heavy and complicated softwares.
+                         '.$d[$k]['F'].' ffers you a way to easily and intuitively create your slideshows. With this application in your browser, no need to load heavy and complicated softwares.
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
@@ -739,7 +734,7 @@ $d[$k]['sDesc']  = 'Participative spreadsheet';
 $d[$k]['lDesc']  = 'Share your spreadsheets and collaborate!';
 $d[$k]['mTitle'] = 'An online spreadsheet';
 $d[$k]['mBody']  = '<p>
-                        With '.$d[$k]['F'].', your data are automatically saved on the Internet. You and your colleagues can participate on the same document at the same time.  You can visualize in real time every change and work together on your lists, calculus, data, statistics and far more !
+                         With '.$d[$k]['F'].', your data are automatically saved on the Internet. You and your colleagues can participate on the same document at the same time. You can visualize in real time every change and work together on your lists, calculus, data, statistics and far more !
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
@@ -758,11 +753,11 @@ $d[$k]['sDesc']  = 'Sending pictures';
 $d[$k]['lDesc']  = 'Share your pictures anonymously';
 $d[$k]['mTitle'] = 'Easily Share your images';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' enables you to share easily images for exampl on Twitter, Facebook or … on Framasphère !
+                         '.$d[$k]['F'].' enables you to share easily images for exampl on Twitter, Facebook or … on Framasphère !
                     </p>
-                    <p>Be careful: this service is no equivalent of flickr or instagram : it is no hosting of users pictures, but the hosting of anonymous pictures (no one including us has access to the cyphered content).</p>
+                    <p>Be careful: this service is no equivalent of flickr or instagram: it is no hosting of users pictures, but the hosting of anonymous pictures (no one including us has access to the cyphered content).</p>
                     <p>
-                        '.$d[$k]['FL'].'  enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line).
+                         '.$d[$k]['FL'].' enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line).
                     </p>';
 
 // Meetup
@@ -781,8 +776,8 @@ $d[$k]['mBody']  = '<p>
                         With '.$d[$k]['F'].' you can share information which only you and your correspondent can decypher and furthermore very easily. You can even choose the duration of the access.
                     </p>
                     <p>
-                        <b class="violet">What it can be used for ?</b> You may need to communicate confidentially one or several pieces of information without sending a classical e-mail or piece of paper. Framabin enables you to send an adress and give a secured and simple access it. The server stores the cyphered data, which are unreadable.
-                    </p>';
+                          <b class="violet">What it can be used for ?</b> You may need to communicate confidentially one or several pieces of information without sending a classical e-mail or piece of paper. Framabin enables you to send an adress and give a secured and simple access it. The server stores the cyphered data, which are unreadable.
+                    </p >';
 
 // Pocket
 $k= 'pocket';
@@ -790,10 +785,10 @@ $d[$k]['sDesc']  = 'Content back-up';
 $d[$k]['lDesc']  = 'Save it and read it later on';
 $d[$k]['mTitle'] = 'Save it and read it later on';
 $d[$k]['mBody']  = '<p>
-                        With '.$d[$k]['F'].', you don’t loose the Internet contents you are interested in even if you do not have time to read it at once. With one click, you save your selection and you can read it whenever you want to. The application saves your selection and enables you enjoy reading it when you have more time.
+                         With '.$d[$k]['F'].', you don’t loose the Internet contents you are interested in even if you do not have time to read it at once. With one click, you save your selection and you can read it whenever you want to. The application saves your selection and enables you enjoy reading it when you have more time.
                     </p>
                     <p>
-                         Framabag is a <b class="violet">back-up service of web pages</b>. You store on the server the contents you are interested in including texts and images. You can also share your articles and use extensions for Firefox, Chrome, Android…
+                          Framabag is a <b class="violet">back-up service of web pages</b>. You store on the server the contents you are interested in including texts and images. You can also share your articles and use extensions for Firefox, Chrome, Android…
                     </p>';
 
 // Shrtct
@@ -802,22 +797,22 @@ $d[$k]['sDesc']  = 'Decision making tool';
 $d[$k]['lDesc']  = 'The easiest way to make community decisions';
 $d[$k]['mTitle'] = 'Decide together,';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' helps you to make decisions together. Start a discussion, share ideas, decide together. Every decision have a clear deadline, so you can decide on time.
+                          '.$d[$k]['F'].' helps you to make decisions together. Start a discussion, share ideas, decide together. Every decision have a clear deadline, so you can decide on time.
                     </p>
                     <p>
-                         <b class="violet">How does it works ? </b> Start a discussion, offers people to share their opinion. Develops the proposal together so that works for everybody. The decision is taken together, with all the opinions. Anyone can propose actions. People can agree, abstain, disagree or block. You can see how everything feels, and why.
+                          <b class="violet">How does it works ? </b> Start a discussion, offers people to share their opinion. Develops the proposal together so that works for everybody. The decision is taken together, with all the opinions. Anyone can propose actions. People can agree, abstain, disagree or block. You can see how everything feels, and why.
                     </p >';
 
 // Skype
 $k= 'skype';
 $d[$k]['sDesc']  = 'Visioconference';
 $d[$k]['lDesc']  = 'Chat freely with your friends';
-$d[$k]['mTitle'] = 'Vidéoconference';
+$d[$k]['mTitle'] = 'Videoconference';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to merely chat with your friends, without any complexe software setup. You discuss freely without any data analysis of your conversation. Everything stays between you and your friends.
+                          '.$d[$k]['F'].' allows you to merely chat with your friends, without any complexe software setup. You discuss freely without any data analysis of your conversation. Everything stays between you and your friends.
                     </p>
                     <p>
-                         <b class="violet">How does it works:</b> Directly from your web browser, your are put through to your friends, without setting up any extra-software. Once connected, enable your web browser to use your microphone and your webcam  and enjoy chatting in a simple fashion.
+                          <b class="violet">How does it works:</b> Directly from your web browser, your are put through to your friends, without setting up any extra-software. Once connected, enable your web browser to use your microphone and your webcam  and enjoy chatting in a simple fashion.
                     </p>';
 
 // Trello
@@ -826,10 +821,10 @@ $d[$k]['sDesc']  = 'Gestion de projets';
 $d[$k]['lDesc']  = 'Project management';
 $d[$k]['mTitle'] = 'Project management';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' is a visual task manager. It enables to handle projects collaboratively  according to the Kanban method. Its design allows to identify at the first sight the tasks, whatever your habits may be of using task managing tools.
+                          '.$d[$k]['F'].' is a visual task manager. It enables to handle projects collaboratively  according to the Kanban method. Its design allows to identify at the first sight the tasks, whatever your habits may be of using task managing tools.
                     </p>
                     <p>
-                         <b class="violet">How does it work?</b>Launch your new project and identify the tasks or Work  Breakdown Structure (WBS) and start managing each task collectively one by one. assign a ressource for each task and define functions, progress and deadlines. This visual management tool enables you to see at a glance your project state of progress.
+                          <b class="violet">How does it work?</b>Launch your new project and identify the tasks or Work  Breakdown Structure (WBS) and start managing each task collectively one by one. assign a ressource for each task and define functions, progress and deadlines. This visual management tool enables you to see at a glance your project state of progress.
                     </p >';
 
 // Twitter
@@ -838,7 +833,7 @@ $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Express yourself on the Internet';
 $d[$k]['mTitle'] = 'The free microblogging';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' allows you to follow feeds and have your onw feed, with a decentralized solution using P2P protocol.
+                          '.$d[$k]['F'].' allows you to follow feeds and have your onw feed, with a decentralized solution using P2P protocol.
                     </p>
                     <p>
                          <b class="violet">How does it works ?</b> use a client , open an account, subscribe to some feeds and tweet.
@@ -861,7 +856,7 @@ $d[$k]['mBody']  = '<p>
                     </p>
                     <p>
                          <b class="violet">How does it works ? </b> open an account and upload your videos. You keep your rights and your freedom to change your uploads.
-                    </p>';
+                    </p >';
 
 /********************
  * Pas sur la carte
@@ -879,7 +874,7 @@ $d[$k]['sDesc']  = 'Games';
 $d[$k]['lDesc']  = 'A compilation of free games';
 $d[$k]['mTitle'] = 'Have a break, play a few moments';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].', offers you a compilation of free games, available for both online and offline use. Have a break and enjoy one of theses games !
+                         '.$d[$k]['F'].' offers you a compilation of free games, available for both online and offline use. Have a break and enjoy one of theses games !
                         <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">Unlike Angry Birds</a>, NSA will not spy on you ;) )</small>
                     </p>
                     <p>
@@ -900,7 +895,7 @@ $d[$k]['sDesc']  = 'Vectorial Drawing';
 $d[$k]['lDesc']  = 'Create quickly vector graphics on open standard SVG';
 $d[$k]['mTitle'] = 'Create quickly vector graphics on open standard SVG';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].', is a very simple drawing software (who said simplistic ?).
+                           '.$d[$k]['F'].', is a very simple drawing software (who said simplistic ?).
                     </p>
                     <p><b class="violet">How does it works? </b></p>
                     <ul>
@@ -908,11 +903,11 @@ $d[$k]['mBody']  = '<p>
                         <li>No registration required</li>
                         <li>Export your documents to bitmap or vector format</li>
                         <li>Free software, open to everyone</li>
-                        <li>Ethics : no storage of your data</li>
+                          <li>Ethics : no storage of your data</li>
                     </ul>
                     <div style="text-align:center">
                     <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
-                        <source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
+                        < source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
                          <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
                     </video>
                     </div>
@@ -948,7 +943,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-          <b class="violet">Update:</b> sotfware propulsing Framindmap is now Wisemapping (instead of Mindmaps). This software is more thorough, allows bind documents at the nodes or save your work to easily find them and share them on the internet.
+           <b class="violet">Update:</b> sotfware propulsing Framindmap is now Wisemapping (instead of Mindmaps). This software is more thorough, allows bind documents at the nodes or save your work to easily find them and share them on the internet.
     </p>';
 $d[$k]['name']   = 'Mindmaps replaced by Wisemapping';
 
@@ -958,7 +953,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-          <b class="violet">Update:</b> the update of Framadate is a graphical overhaul and technical evolution. The interface is more clear, more ergonomic. It’s now possible to answer “maybe” to a choice in the survey..
+           <b class="violet">Update:</b> the update of Framadate is a graphical overhaul and technical evolution. The interface is more clear, more ergonomic. It’s now possible to answer “maybe” to a choice in the survey..
     </p>';
 $d[$k]['name']   = 'Development axis: ergonomy and accessibility';
 
@@ -968,7 +963,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-        <b class="violet">Update:</b> This update is important. You can now have dedicated instances (for science or education, for exemple). Moreover, you can now manage private pads (by groups or passwords).
+          <b class="violet">Update:</b> This update is important. You can now have dedicated instances (for science or education, for exemple). Moreover, you can now manage private pads (by groups or passwords).
           </p>';
 $d[$k]['name']    = 'Development and integration of Mypads plugin';
 
