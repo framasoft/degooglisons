@@ -315,12 +315,12 @@ $d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-fr
 $k= 'meetup';
 $d[$k]['FL']     = '';
 $d[$k]['CL']     = '';
-$d[$k]['S']      = '';
+$d[$k]['S']      = '<a href="https://github.com/psycojoker/wanawana">WanaWana</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">meet</b>';
 $d[$k]['name']   = 'Meetup';
-$d[$k]['eq']     = '';
+$d[$k]['eq']     = $e['facebook']['fa'].'Facebook Event';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '';
+$d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '430,515,40';
 $d[$k]['FDate']  = '2016';
 
@@ -395,7 +395,7 @@ $d[$k]['FL']     = '';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://twister.net.co/">Twister</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">tweet</b>';
-$d[$k]['name']   = $e['twitter']['fa'].$e['amazon']['fa'].'Twitter';
+$d[$k]['name']   = $e['twitter']['fa'].'Twitter';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="https://identi.ca">Identi.ca</a>';
 $d[$k]['altOff'] = '<a href="http://twister.net.co/">Twister</a>, <a href="http://status.net/">StatusNet</a>';

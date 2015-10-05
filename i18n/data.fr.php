@@ -371,7 +371,7 @@ $t['medias']['t1i3txt']     = 'Carte animée';
 $t['medias']['t1i3url']     = 'img/Carte2015-animation.gif';
 $t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
 $t['medias']['t2']          = 'Dessins';
-$t['medias']['t2i1txt']     = 'Dessin « Verouillage »';
+$t['medias']['t2i1txt']     = 'Dessin « Verrouillage »';
 $t['medias']['t2i1url']     = 'img/stevusjobus.png';
 $t['medias']['t2i2txt']     = 'Dessin « Cyber Police »';
 $t['medias']['t2i2url']     = 'img/cyberpolicus.png';
@@ -836,7 +836,7 @@ $d[$k]['mBody']  = '<p>
 
 // Meetup
 $k= 'meetup';
-$d[$k]['sDesc']  = '';
+$d[$k]['sDesc']  = 'Événements communautaires';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
