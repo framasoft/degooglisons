@@ -316,7 +316,8 @@ $t['medias']['2list']       = '
 
 $t['medias']['tabstitle']   = 'Visuals for the de-google-ify years 2.';
 $t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free ton contact us.';
-$t['medias']['tabssaveas']  = '<em>To reuse the picture, Right click on the image and select “save image as”.</em>';
+$t['medias']['tabssaveas']  = 'To reuse the picture, right click on the image and “save image as”';
+
 $t['medias']['t1']          = 'Maps';
 $t['medias']['t1i1txt']     = 'Map “Before”';
 $t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
@@ -327,6 +328,7 @@ $t['medias']['t1i2desc']    = 'Map of France with Framasoft’s alternatives (oc
 $t['medias']['t1i3txt']     = 'Animated map';
 $t['medias']['t1i3url']     = 'img/Carte2015-animation.gif';
 $t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
+
 $t['medias']['t2']          = 'Drawings';
 $t['medias']['t2i1txt']     = 'Drawing “Closed”';
 $t['medias']['t2i1url']     = 'img/stevusjobus.png';
@@ -340,6 +342,7 @@ $t['medias']['t2i5txt']     = 'Drawing “oversight”';
 $t['medias']['t2i5url']     = 'img/village.png';
 $t['medias']['t2i6txt']     = 'Drawing “GAFAM”';
 $t['medias']['t2i6url']     = 'img/GAFAM.png';
+
 $t['medias']['t3']          = 'Videos';
 $t['medias']['t3intro']     = 'We were able to exploain our projet at conferances. We selected thes two video recordings (and their embed code) so that you can freely reuse them on your websites.';
 $t['medias']['t3v1txt']     = 'Short version (FR - 17mn)';
@@ -350,9 +353,28 @@ $t['medias']['t3v2txt']     = 'Long version (FR - 54mn)';
 $t['medias']['t3v2img']     = 'https://framatube.org/blip/gosset-degooglisons-internet.png';
 $t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-internet.mp4';
 $t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
+
 $t['medias']['t4']          = 'Screenshot';
+
+$t['medias']['t5']          = 'Animations';
+$t['medias']['t5i1txt']     = '<b class="violet">Frama</b><b class="vert">drive</b>';
+$t['medias']['t5i1url']     = 'img/anim_framadrive.gif';
+$t['medias']['t5i2txt']     = '<b class="violet">Frama</b><b class="vert">pad</b>';
+$t['medias']['t5i2url']     = 'img/anim_framapad.gif';
+$t['medias']['t5i3txt']     = '<b class="violet">Frama</b><b class="vert">board</b>';
+$t['medias']['t5i3url']     = 'img/anim_framaboard.gif';
+$t['medias']['t5i4txt']     = '<b class="violet">Frama</b><b class="vert">date</b>';
+$t['medias']['t5i4url']     = 'img/anim_framadate.gif';
+$t['medias']['t5i5txt']     = '<b class="violet">Frama</b><b class="vert">drop</b>';
+$t['medias']['t5i5url']     = 'img/anim_framadrop.gif';
+$t['medias']['t5i6txt']     = '<b class="violet">De-google-ify</b> <b class="orange">Internet</b>';
+$t['medias']['t5i6url']     = 'img/anim_dio'; // .mp4 et .webm
+
+$t['medias']['t6']          = 'Presentation';
+$t['medias']['t6url']       = 'presentation/';
+
 $t['medias']['presstitle']  = 'Press Release';
-$t['medias']['pressintro']  = 'The “De-google-ifyInternet” campaing has already got a lot of attention during the first year. Here are so extracts from our <a href="https://wiki.framasoft.org/speakabout">Press release</a>.';
+$t['medias']['pressintro']  = 'The “De-google-ify Internet” campaing has already got a lot of attention during the first year. Here are so extracts from our <a href="https://wiki.framasoft.org/speakabout">Press release</a>.';
 $t['medias']['pressth1']    = 'Date';
 $t['medias']['pressth2']    = 'Media';
 $t['medias']['pressth3']    = 'Link';

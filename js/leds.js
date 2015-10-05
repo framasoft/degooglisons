@@ -1,11 +1,13 @@
 $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+
     $('a[href="#leds"]').on('click', function() {
         $('.leds').slideDown('slow');
     });
     $('.leds .close').on('click', function() {
         $('.leds').slideUp();
     });
-    
+
     $('a[href="#"]').on('click', function() {
         $('html, body').animate({
             scrollTop: 0

@@ -359,7 +359,8 @@ $t['medias']['2list']       = '
 
 $t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons an 2.';
 $t['medias']['tabsintro']   = 'Sauf mention contraire, tous nos visuels sont réalisés par <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> et sont librement réutilisables sous la licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> Ces visuels sont en grand format (contrairement aux apparences). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à nous contacter.';
-$t['medias']['tabssaveas']  = '<em>Faire un clic droit sur l’image et choisir « Enregistrer l’image sous » afin de la réutiliser.</em>';
+$t['medias']['tabssaveas']  = 'Clic droit sur l’image et « Enregistrer l’image sous » pour la réutiliser';
+
 $t['medias']['t1']          = 'Cartes';
 $t['medias']['t1i1txt']     = 'Carte « Avant »';
 $t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
@@ -370,6 +371,7 @@ $t['medias']['t1i2desc']    = 'Carte de la France avec les alternatives Framasof
 $t['medias']['t1i3txt']     = 'Carte animée';
 $t['medias']['t1i3url']     = 'img/Carte2015-animation.gif';
 $t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
+
 $t['medias']['t2']          = 'Dessins';
 $t['medias']['t2i1txt']     = 'Dessin « Verrouillage »';
 $t['medias']['t2i1url']     = 'img/stevusjobus.png';
@@ -383,6 +385,7 @@ $t['medias']['t2i5txt']     = 'Dessin « Flicage »';
 $t['medias']['t2i5url']     = 'img/village.png';
 $t['medias']['t2i6txt']     = 'Dessin « GAFAM »';
 $t['medias']['t2i6url']     = 'img/GAFAM.png';
+
 $t['medias']['t3']          = 'Vidéos';
 $t['medias']['t3intro']     = 'Nous avons pu expliquer notre projet lors de conférences. Nous avons sélectionné ces deux captations vidéos (et leur code d’intégration) pour que vous puissiez librement les réutiliser sur vos sites webs.';
 $t['medias']['t3v1txt']     = 'Version courte (17mn)';
@@ -394,6 +397,24 @@ $t['medias']['t3v2img']     = 'https://framatube.org/blip/gosset-degooglisons-in
 $t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-internet.mp4';
 $t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
 $t['medias']['t4']          = 'Capture d’écran';
+
+$t['medias']['t5']          = 'Animations';
+$t['medias']['t5i1txt']     = '<b class="violet">Frama</b><b class="vert">drive</b>';
+$t['medias']['t5i1url']     = 'img/anim_framadrive.gif';
+$t['medias']['t5i2txt']     = '<b class="violet">Frama</b><b class="vert">pad</b>';
+$t['medias']['t5i2url']     = 'img/anim_framapad.gif';
+$t['medias']['t5i3txt']     = '<b class="violet">Frama</b><b class="vert">board</b>';
+$t['medias']['t5i3url']     = 'img/anim_framaboard.gif';
+$t['medias']['t5i4txt']     = '<b class="violet">Frama</b><b class="vert">date</b>';
+$t['medias']['t5i4url']     = 'img/anim_framadate.gif';
+$t['medias']['t5i5txt']     = '<b class="violet">Frama</b><b class="vert">drop</b>';
+$t['medias']['t5i5url']     = 'img/anim_framadrop.gif';
+$t['medias']['t5i6txt']     = '<b class="violet">Dégooglisons</b> <b class="orange">Internet</b>';
+$t['medias']['t5i6url']     = 'img/anim_dio'; // .mp4 et .webm
+
+$t['medias']['t6']          = 'Présentation';
+$t['medias']['t6url']       = 'presentation/';
+
 $t['medias']['presstitle']  = 'Revue de presse';
 $t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant sa première année. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
 $t['medias']['pressth1']    = 'Date';
