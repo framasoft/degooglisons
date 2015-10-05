@@ -231,3 +231,6 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 .gsearch .logo:before { content: "\f002"; }
 .gbooks .logo:before { content: "\f0f4"; }
 .kongregate .logo:before { content: "\f11b"; }
+.dropbox .logo:before { content: "\f0ee"; }
+.trello .logo:before { content: "\f0e4"; }
+.wetransfer .logo:before { content: "\f1d8"; }
