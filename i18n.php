@@ -5,19 +5,23 @@
         //'es_ES' => 'Español',
     ];
 
+    foreach ($langs as $k => $v) {
+        $isoLangs[] = strtolower(substr($k,0,2));
+    }
+
+    $paramLang = '';
+
     // Default language fr_FR
     if(!isset($_SESSION['lang']) OR !in_array($_SESSION['lang'], $langs)) {
         $_SESSION['lang'] = 'fr_FR';
     }
+
     // Manual set by form
     if (isset($_POST['lang']) && is_string($_POST['lang']) && in_array($_POST['lang'], array_keys($langs))) {
         $_SESSION['lang'] = $_POST['lang'];
     // Check available languages
     } else {
         $browserLangs = array();
-        foreach ($langs as $k => $v) {
-            $isoLangs[] = strtolower(substr($k,0,2));
-        }
 
         if (isset($_SERVER) && array_key_exists('HTTP_ACCEPT_LANGUAGE', $_SERVER)) {
             preg_match_all("/([[:alpha:]]{1,8}(?:-[[:alpha:]|-]{1,8})?)" .
@@ -40,6 +44,14 @@
                 }
             }
         }
+    }
+
+    // Manual set by URL
+    if (isset($_GET['l']) && is_string($_GET['l']) && in_array($_GET['l'], $isoLangs)) {
+        $_SESSION['lang'] = $_GET['l'];
+        $paramLang = '?l='.$_GET['l'];
+    } else {
+        $_SESSION['lang'] = 'fr';
     }
 
     require('i18n/data.'.strtolower(substr($_SESSION['lang'],0,2)).'.php');

@@ -9,7 +9,7 @@
     $internav = '';
     foreach ($t as $k => $v) {
         if($k!='meta' && substr($k,0,1)!='_') {
-            $internav .= '<li><a href="'.$v['link'].'"';
+            $internav .= '<li><a href="'.$v['link'].$paramLang.'"';
             $internav .= ($page == $k) ? ' class="active"' : '';
             $internav .= '>'.$v['title'].'</a></li>';
         }

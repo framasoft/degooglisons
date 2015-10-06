@@ -11,7 +11,7 @@ include('data.php');
 // Liens
 $l['F'] = 'https://framasoft.org';
 $l['S'] = 'https://soutenir.framasoft.org';
-$l['DIo'] = 'http://degooglisons-internet.org';
+$l['DIo'] = 'https://degooglisons-internet.org';
 $l['DIoL'] = $l['DIo'].'/liste';
 $l['Charte'] = 'https://n4.framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';

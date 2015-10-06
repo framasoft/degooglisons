@@ -11,7 +11,7 @@ include('data.php');
 // Liens
 $l['F'] = 'https://framasoft.org';
 $l['S'] = 'https://soutenir.framasoft.org';
-$l['DIo'] = 'http://degooglisons-internet.org';
+$l['DIo'] = 'https://degooglisons-internet.org';
 $l['DIoL'] = $l['DIo'].'/liste';
 $l['Charte'] = 'https://n4.framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
@@ -60,7 +60,7 @@ $t['meta']['leds']['charte']  = 'To know more about this, feel free to read <str
 
 // Accueil
 $t['home']['title']  = 'Main Page';
-$t['home']['link']   = '/';
+$t['home']['link']   = $l['current'];
 $t['home']['desc']   = '';
 $t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
 $t['home']['js']     = '
