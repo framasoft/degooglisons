@@ -6,11 +6,14 @@
             <option lang="'.substr($k,0,2).'" value="'.$k.'">'.$v.'</option>';
     }
 
-    $internav = '';
+    $internav = ''; $currentPage = '';
     foreach ($t as $k => $v) {
         if($k!='meta' && substr($k,0,1)!='_') {
             $internav .= '<li><a href="'.$v['link'].$paramLang.'"';
-            $internav .= ($page == $k) ? ' class="active"' : '';
+            if ($page == $k) {
+                $internav .=  ' class="active"';
+                $currentPage = $v['link'];
+            }
             $internav .= '>'.$v['title'].'</a></li>';
         }
     }
@@ -37,7 +40,7 @@
     <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
         <div class="row" id="internav">
             <div class="container">
-                <form method="post" action="#">
+                <form method="post" action="<?php echo $currentPage ?>">
                     <div class="input-group input-group-sm pull-right col-md-2 col-xs-4">
                         <select name="lang" class="form-control" title="<?php echo $t['_Select the language'] ?>" >
                             <?php echo $langs_options ?>

@@ -1,26 +1,35 @@
 <?php
     $langs = [
-        'fr_FR' => 'Français', // keep French in first
-        'en_GB' => 'English',
-        //'es_ES' => 'Español',
+        'fr' => 'Français',
+        'en' => 'English',
+        //'es' => 'Español',
     ];
-
-    foreach ($langs as $k => $v) {
-        $isoLangs[] = strtolower(substr($k,0,2));
-    }
 
     $paramLang = '';
 
-    // Default language fr_FR
-    if(!isset($_SESSION['lang']) OR !in_array($_SESSION['lang'], $langs)) {
-        $_SESSION['lang'] = 'fr_FR';
+    // Default language fr
+    if ( !isset($_SESSION['lang'])
+                || !in_array($_SESSION['lang'], array_keys($langs)) ) {
+        $_SESSION['lang'] = 'fr';
     }
 
+    // Manual set by URL
+    if (isset($_GET['l'])
+        && is_string($_GET['l'])
+        && in_array($_GET['l'], array_keys($langs)) ) {
+
+        $_SESSION['lang'] = $_GET['l'];
+        $paramLang = '?l='.$_GET['l'];
+
     // Manual set by form
-    if (isset($_POST['lang']) && is_string($_POST['lang']) && in_array($_POST['lang'], array_keys($langs))) {
+    } elseif (  isset($_POST['lang']) && is_string($_POST['lang'])
+                && in_array($_POST['lang'], array_keys($langs)) ) {
+
         $_SESSION['lang'] = $_POST['lang'];
+
     // Check available languages
     } else {
+
         $browserLangs = array();
 
         if (isset($_SERVER) && array_key_exists('HTTP_ACCEPT_LANGUAGE', $_SERVER)) {
@@ -38,7 +47,7 @@
         } else {
             // 1st default language
             foreach($browserLangs as $lang) {
-                if(in_array($lang, $isoLangs)) {
+                if(in_array($lang, array_keys($langs))) {
                     $_SESSION['lang'] = $lang;
                     break;
                 }
@@ -46,13 +55,5 @@
         }
     }
 
-    // Manual set by URL
-    if (isset($_GET['l']) && is_string($_GET['l']) && in_array($_GET['l'], $isoLangs)) {
-        $_SESSION['lang'] = $_GET['l'];
-        $paramLang = '?l='.$_GET['l'];
-    } else {
-        $_SESSION['lang'] = 'fr';
-    }
-
-    require('i18n/data.'.strtolower(substr($_SESSION['lang'],0,2)).'.php');
+    require('i18n/data.'.$_SESSION['lang'].'.php');
 ?>
