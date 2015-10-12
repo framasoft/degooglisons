@@ -43,9 +43,9 @@ include('header.php');
             <li role="presentation" class="active"><a href="#cartes" aria-controls="cartes" role="tab" data-toggle="tab"><?php echo $t['medias']['t1'] ?></a></li>
             <li role="presentation"><a href="#dessins" aria-controls="dessins" role="tab" data-toggle="tab"><?php echo $t['medias']['t2'] ?></a></li>
             <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab"><?php echo $t['medias']['t3'] ?></a></li>
+            <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab"><?php echo $t['medias']['t6'] ?></a></li>
             <li role="presentation"><a href="#screenshots" aria-controls="screenshots" role="tab" data-toggle="tab"><?php echo $t['medias']['t4'] ?></a></li>
             <li role="presentation"><a href="#animations" aria-controls="animations" role="tab" data-toggle="tab"><?php echo $t['medias']['t5'] ?></a></li>
-            <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab"><?php echo $t['medias']['t6'] ?></a></li>
         </ul>
 
         <div class="tab-content">
@@ -106,6 +106,18 @@ include('header.php');
                         <pre>&lt;video poster="<?php echo $t['medias']['t3v2img'] ?>" controls="controls" width="540" height="360"&gt;&lt;source src="<?php echo $t['medias']['t3v2webm'] ?>" type="video/webm" /&gt;&lt;source src="<?php echo $t['medias']['t3v2mp4'] ?>" type="video/mp4"&gt;&lt;/video&gt;</pre>
                    </div>
                </div>
+            </div>
+            <!-- Présentation -->
+            <div role="tabpanel" class="tab-pane" id="presentation">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="text-center">
+                            <h3><?php echo $t['medias']['t6'] ?></h3>
+                            <iframe src="<?php echo $l['DIo'].'/'.$t['medias']['t6url'] ?>" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                            <pre>&lt;iframe src="<?php echo $l['DIo'].'/'.$t['medias']['t6url'] ?>" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;</pre>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Screenshots -->
             <div role="tabpanel" class="tab-pane" id="screenshots">
@@ -175,18 +187,6 @@ include('header.php');
                             </video>
                             <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.webm" type="video/webm" /&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Présentation -->
-            <div role="tabpanel" class="tab-pane" id="presentation">
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <div class="text-center">
-                            <h3><?php echo $t['medias']['t6'] ?></h3>
-                            <iframe src="<?php echo $l['current'].$t['medias']['t6url'] ?>" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                            <pre>&lt;iframe src="<?php echo $l['DIo'].'/'.$t['medias']['t6url'] ?>" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;</pre>
                         </div>
                     </div>
                 </div>

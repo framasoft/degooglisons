@@ -564,7 +564,6 @@ $d[$k]['mBody']  = '<p>
 $k= 'blogger';
 $d[$k]['sDesc']  = 'Weblogs hosting service';
 $d[$k]['lDesc']  = '';
-$d[$k]['FL']     = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
@@ -609,7 +608,7 @@ $d[$k]['sDesc']  = 'File hosting online service';
 $d[$k]['lDesc']  = 'File hosting online service';
 $d[$k]['mTitle'] = 'File hosting online service';
 $d[$k]['mBody']  = '<p>
-                      '.$d[$k]['F'].' allows you to store your documents online and encrypted, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want…
+                      '.$d[$k]['F'].' allows you to store your documents online, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want…
                     </p>';
 
 // Evernote
@@ -797,7 +796,7 @@ $d[$k]['mBody']  = '<p>
                     </p>
                     <p>Be careful: this service is no equivalent of flickr or instagram: it is no hosting of users pictures, but the hosting of anonymous pictures (no one including us has access to the cyphered content).</p>
                     <p>
-                         '.$d[$k]['FL'].' enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line).
+                         '.$d[$k]['F'].' enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line).
                     </p>';
 
 // Meetup
@@ -892,7 +891,7 @@ $d[$k]['sDesc']  = 'Video Hosting';
 $d[$k]['lDesc']  = 'Share your videos, keep your rights';
 $d[$k]['mTitle'] = 'Free your videos';
 $d[$k]['mBody']  = '<p>
-                         On '.$d[$k]['FL'].', you can upload your videos, share them with your friends or open access for all the people. It’s the better way to share video without transfer your rights.
+                         On '.$d[$k]['F'].', you can upload your videos, share them with your friends or open access for all the people. It’s the better way to share video without transfer your rights.
                     </p>
                     <p>
                          <b class="violet">How does it works ? </b> open an account and upload your videos. You keep your rights and your freedom to change your uploads.

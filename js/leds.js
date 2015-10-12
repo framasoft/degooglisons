@@ -1,6 +1,12 @@
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
+    $('a[href="#presentation"]').on('click', function() {
+        $('#presentation iframe').attr('src', function() {
+            return $(this).attr('src')+'#/';
+        });
+    });
+
     $('a[href="#leds"]').on('click', function() {
         $('.leds').slideDown('slow');
     });

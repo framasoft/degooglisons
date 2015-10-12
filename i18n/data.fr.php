@@ -606,7 +606,6 @@ $d[$k]['mBody']  = '<p>
 $k= 'blogger';
 $d[$k]['sDesc']  = 'Hébergement de sites';
 $d[$k]['lDesc']  = '';
-$d[$k]['FL']     = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
@@ -655,7 +654,7 @@ $d[$k]['sDesc']  = 'Stockage de documents';
 $d[$k]['lDesc']  = 'Héberger ses documents en ligne';
 $d[$k]['mTitle'] = 'Héberger ses documents en ligne';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de stocker en ligne de manière chiffrée vos documents, de les synchroniser sur vos ordinateurs, tablettes, téléphones, etc et de les partager avec qui vous voulez…
+                        '.$d[$k]['F'].' vous permet de stocker en ligne vos documents, de les synchroniser sur vos ordinateurs, tablettes, téléphones, etc et de les partager avec qui vous voulez…
                     </p>';
 
 // Evernote
@@ -852,7 +851,7 @@ $d[$k]['mBody']  = '<p>
                     </p>
                     <p>Attention, ce service n’est pas un équivalent de flickr ou instagram : il ne s’agit pas d’un service d’hébergement de photos d’utilisateurs, mais bien d’un service d’hébergement d’images anonymes (même nous, nous n’avons pas accès au contenu, qui est chiffré).</p>
                     <p>
-                        '.$d[$k]['FL'].' permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
+                        '.$d[$k]['F'].' permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
                     </p>';
 
 // Meetup
@@ -943,9 +942,15 @@ $d[$k]['mBody']  = '<p>
 // WeTransfer
 $k= 'wetransfer';
 $d[$k]['sDesc']  = 'Envoi de gros fichiers';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Partagez vos fichiers de manière anonyme';
+$d[$k]['mTitle'] = 'Partagez vos fichiers facilement';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de partager facilement des fichiers comme, par exemple, lorsque vous voulez envoyez une pièce jointe par email et que le fichier dépasse la taille maximale autorisée.
+                    </p>
+                    <p>Attention, ce service n’est pas un équivalent de Dropbox ou Google Drive : il ne s’agit pas d’un service d’hébergement de fichiers  (pour ça il y a <b class="violet">Frama</b><b class="vert">drive</b>), mais bien d’un service d’envoi de fichiers anonymes (le contenu est automatiquement chiffré avant envoi, nous n’y avons pas accès).</p>
+                    <p>
+                        '.$d[$k]['F'].' permet d’envoyer des fichiers de façon anonyme. Vous pouvez décider du moment de leur suppression (dès le premier téléchargement, 24H/7j/30j/60j après leur mise en ligne).
+                    </p>';
 
 // Youtube
 $k= 'youtube';
@@ -953,7 +958,7 @@ $d[$k]['sDesc']  = 'Hébergement de vidéos';
 $d[$k]['lDesc']  = 'Partagez vos vidéos et conservez vos droits';
 $d[$k]['mTitle'] = 'Libérez vos vidéos';
 $d[$k]['mBody']  = '<p>
-                        Sur '.$d[$k]['FL'].', vous pouvez télécharger vos vidéos, les partager avec votre entourage ou les ouvrir en lecture publique.
+                        Sur '.$d[$k]['F'].', vous pouvez télécharger vos vidéos, les partager avec votre entourage ou les ouvrir en lecture publique.
                         C’est le meilleur moyen de partager des vidéos sans céder vos droits.
                     </p>
                     <p>

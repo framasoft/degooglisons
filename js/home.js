@@ -6,11 +6,16 @@ $(document).ready(function() {
     $('map').imageMapResize();
     $('#carte').maphilight();
 
-    $('#carte').attr('src', function() {
-        var carte = $(this).attr('src');
-        carte = carte.replace('victoires','animation').replace('png','gif');
-        $('#highlight-wrapper').css('background-image',carte);
-        return carte;
+    var carte = $('#carte').attr('src');
+        carte = window.location.href+carte.replace('victoires','animation').replace('png','gif');
+
+    $.ajax({
+        url : carte,
+        cache: true,
+        processData : false,
+    }).always(function(){
+        $('#carte').attr('src', carte);
+        $('#carte').maphilight();
     });
 
     // Init text
