@@ -136,7 +136,8 @@ include('header.php');
                 <div class="col-md-8 map">
                     <h2 class="h3"><?php echo $t['home']['map'] ?></h2>
                     <div class="">
-                        <img src="<?php echo $l['map'] ?>" alt="<?php echo $t['home']['altMap'] ?>" style="width:100%" id="carte" usemap="#cartemap" />
+                        <img src="<?php echo $l['map'] ?>" alt="<?php echo $t['home']['altMap'] ?>" style="width:100%;" id="carte" usemap="#cartemap" />
+
                         <map id="cartemap" name="cartemap">
                             <?php echo $areas; ?>
                         </map>

@@ -91,7 +91,7 @@ $d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2012/10/16/
 
 // Doodle
 $k= 'doodle';
-$d[$k]['FL']     = 'http://framadate.org';
+$d[$k]['FL']     = 'https://framadate.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-framadate/';
 $d[$k]['S']      = 'Studs';
 $d[$k]['F']      = '<a href="http://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a>';
@@ -104,8 +104,8 @@ $d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2011/06/28/
 
 // Dropbox
 $k= 'dropbox';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
+$d[$k]['FL']     = 'https://framadrive.org';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-owncloud/';
 $d[$k]['S']      = '<a href="http://owncloud.org/">OwnCloud</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">drive</b>';
 $d[$k]['name']   = $e['dropbox']['fa'].'Dropbox';
@@ -378,14 +378,14 @@ $d[$k]['FDate']  = '2015';
 
 // Trello
 $k= 'trello';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
+$d[$k]['FL']     = 'https://framaboard.org';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-kanboard/';
 $d[$k]['S']      = '<a href="http://kanboard.net/">Kanboard</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">board</b>';
 $d[$k]['name']   = $e['trello']['fa'].'Trello';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = 'Libreboard';
-$d[$k]['altOff'] = $d[$k]['S'];
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://wekan.io/">Wekan</a>';
 $d[$k]['pos']    = '370,510,40';
 $d[$k]['FDate']  = '<a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">2015</a>';
 
@@ -404,8 +404,8 @@ $d[$k]['FDate']  = '2016';
 
 // WeTransfer
 $k= 'wetransfer';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
+$d[$k]['FL']     = 'https://framadrop.org';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lufi/';
 $d[$k]['S']      = 'LUFI';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">drop</b>';
 $d[$k]['name']   = 'Wetransfer';
