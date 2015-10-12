@@ -29,9 +29,9 @@ $t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">De-google-i
 $t['meta']['start']     = 'Beginning of the campaign on the 10/07/2014';
 $t['meta']['edit']      = 'Last modification on the 02/10/2015';
 $t['meta']['S']         = 'Support this project';
-$t['meta']['lead']      = 'An initiative of '.$t['meta']['F'].' network for a<br/>
+$t['meta']['lead']      = 'An initiative of the '.$t['meta']['F'].' network for a<br/>
                 <a href="#leds">Free</a>, <a href="#leds" >Decentralized</a>,
-                <a href="#leds">Ethic</a> et <a href="#leds">Solidarity</a> Internet';
+                <a href="#leds">Ethical</a> Internet built on <a href="#leds">Solidarity</a> ';
 
 // LEDS
 $t['meta']['leds']['title']   = 'For an Internet…';
@@ -280,23 +280,23 @@ $t['list']['js']        = '
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Espace médias
-$t['medias']['title']   = 'Medias area';
+$t['medias']['title']   = 'Media area';
 $t['medias']['link']    = 'medias';
 $t['medias']['desc']    = '';
 $t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
-$t['medias']['subtitle']    = '5 october 2015 : year 2 of the de-google-ifycation of the Internet.';
-$t['medias']['intro']       = 'To begin this second year of his camppaign of alternatives proposal for Google & co services, Framasoft notify, from octobre 5, five new services, based on free sofwares.';
+$t['medias']['subtitle']    = '5 October 2015 : year 2 of the de-google-ifycation of the Internet.';
+$t['medias']['intro']       = 'To begin this second year of its campaign of alternative proposals for services provided by Google & co, Framasoft is launching five new services based on free software as of 5 October.';
 $t['medias']['btnCPtxt']    = 'Download the<br/>press release';
 $t['medias']['btnCPurl']    = 'img/2015_communique_degooglisons_Framasoft.odt';
 $t['medias']['btnDPtxt']    = 'Download the<br/>press release';
 $t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2015.pdf';
 $t['medias']['1title']      = 'Posts on the Framablog';
-$t['medias']['1intro']      = 'The <a href="http://framablog.org">Framablog</a> in our main communication tool to the general public. All five proposed new services during taunch of this compaign will be presented during the week of the 5 october 2015.';
+$t['medias']['1intro']      = '<a href="http://framablog.org">Framablog</a> is our main tool for communicating with the general public. All five of the new services launching our campaign will be presented during the week of 5 October 2015.';
 $t['medias']['1list']       = '
                         <ul>
-                            <li><em>Monday 5/10</em> : Presentation of <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">the second years of the campaign “De-google-ify internet”</a>.</li>
+                            <li><em>Monday 5/10</em> : Presentation of <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">the second year of our campaign “De-google-ify internet”</a>.</li>
                             <li><em>Monday 5/10</em>: <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative to Dropbox and Google Drive.</li>
                             <li><em>Tuesday 6/10</em>: <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative to GoogleDocs.</li>
                             <li><em>Wednesday 7/10</em>: <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a>, alternative to Trello.</li>
@@ -304,7 +304,7 @@ $t['medias']['1list']       = '
                             <li><em>Friday 9/10</em>: <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a>, alternative to WeTransfer.</li>
                         </ul>';
 $t['medias']['2title']      = 'Link to services';
-$t['medias']['2intro']      = 'Even if they are presented throughout the week on our blog, these five new services will be online as early as 5 october. Click on the name of the service to try it.';
+$t['medias']['2intro']      = 'Even though they will be presented throughout the week on our blog, these five new services will be online as early as 5 October. Click on the name of the service to try it.';
 $t['medias']['2list']       = '
                         <ul>
                             <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
@@ -406,8 +406,8 @@ $t['medias']['framalist']   = '
                             <li>Framasoft <a href="https://soutenir.framasoft.org/association">Complete presentation</a>.</li>
                             <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
                         </ul>';
-$t['medias']['framap1']     = 'Framasoft is a network of popular education, from the world of education, witch aims to promote and spead free software and Free Culture.';
-$t['medias']['framap2']     = 'Link between Free software world and general public, the association offers many projects (directory sofware, publisher, websearch engine, etc.), following 3 axis : Free Software, Free Culture and Free Services.';
+$t['medias']['framap1']     = 'Framasoft is a freely available public education network which aims to promote and spead free software and free culture.';
+$t['medias']['framap2']     = 'As a link between the world of freeware and the general public, our association offers many projects (directory software, a publisher, a websearch engine, etc.), with three main goals: Free Software, Free Culture, and Free Services.';
 $t['medias']['framap3']     = '<em>The logo is a realization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
 // Texte générique
