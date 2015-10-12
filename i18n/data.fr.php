@@ -18,7 +18,7 @@ $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
 
 // Images
-$l['map'] = 'img/carte-animee-fr.gif';
+$l['map'] = 'img/Carte2015-victoires.png';
 
 // Meta
 $t['meta']['lang']      = 'fr';

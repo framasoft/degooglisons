@@ -3,8 +3,15 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
     // Init map
-    $('#carte').maphilight();
     $('map').imageMapResize();
+    $('#carte').maphilight();
+
+    $('#carte').attr('src', function() {
+        var carte = $(this).attr('src');
+        carte = carte.replace('victoires','animation').replace('png','gif');
+        $('#highlight-wrapper').css('background-image',carte);
+        return carte;
+    });
 
     // Init text
     $('.c-text').hide();

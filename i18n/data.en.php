@@ -18,7 +18,7 @@ $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
 
 // Images
-$l['map'] = 'img/carte-animee-en.gif';
+$l['map'] = 'img/Carte2015-victoires-en.png';
 
 // Meta
 $t['meta']['lang']      = 'en';
@@ -320,13 +320,13 @@ $t['medias']['tabssaveas']  = 'To reuse the picture, right click on the image an
 
 $t['medias']['t1']          = 'Maps';
 $t['medias']['t1i1txt']     = 'Map “Before”';
-$t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
+$t['medias']['t1i1url']     = 'img/Carte2015-romains-en.png';
 $t['medias']['t1i1desc']    = 'Map of France invaded by GAFAM services (oct 2014)';
 $t['medias']['t1i2txt']     = 'Map “After”';
-$t['medias']['t1i2url']     = 'img/Carte2015-victoires.png';
+$t['medias']['t1i2url']     = 'img/Carte2015-victoires-en.png';
 $t['medias']['t1i2desc']    = 'Map of France with Framasoft’s alternatives (oct 2015)';
 $t['medias']['t1i3txt']     = 'Animated map';
-$t['medias']['t1i3url']     = 'img/Carte2015-animation.gif';
+$t['medias']['t1i3url']     = 'img/Carte2015-animation-en.gif';
 $t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
 
 $t['medias']['t2']          = 'Drawings';
