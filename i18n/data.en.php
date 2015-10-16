@@ -314,7 +314,7 @@ $t['medias']['2list']       = '
                             <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
                         </ul>';
 
-$t['medias']['tabstitle']   = 'Visuals for the de-google-ify years 2.';
+$t['medias']['tabstitle']   = 'Visuals for the ungooglize years 2.';
 $t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free ton contact us.';
 $t['medias']['tabssaveas']  = 'To reuse the picture, right click on the image and “save image as”';
 
