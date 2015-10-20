@@ -36,27 +36,27 @@ $t['meta']['lead']      = 'An initiative of the '.$t['meta']['F'].' network for 
 // LEDS
 $t['meta']['leds']['title']   = 'For an Internet…';
 $t['meta']['leds']['ltitle']  = 'Free';
-$t['meta']['leds']['ldesc']   = 'The story of the Internet is about
-free softwares as far as standards and used protocols are concerned.
-Its popularity and its potential makes big firms jealous. They would like to claim the control on it by establishing closed code in locked systems that are not interoperable. To make the Internet faithful to its founding principles which led to its success, free apps must dwell on the Internet, that is to say apps with opensource codes, accessible and under free licence.';
+$t['meta']['leds']['ldesc']   = 'As far as standards and protocols are concerned, the story of the Internet is one of
+free software.
+But its popularity and potential makes big firms jealous. They would like to claim the control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
 
 $t['meta']['leds']['dtitle']  = 'Decentralized';
-$t['meta']['leds']['ddesc']   = 'The Internet cleverness must dwell at
-the margin of the network in a peer to peer sharing dynamic, to avoid
-creating a Minitel 2.0. To insure everyone’s equality, citizens as
-well as businessmen, monopoles must not only be dodged, but also
-prevented from monopolizing personal or public data. With explanatory
-tutorials telling how to propagate free solutions enabling a fairer Internet, we intend to facilitate the spreading of codes and a diversification of usages.';
+$t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at
+the margins of the network in a peer-to-peer sharing dynamic, to avoid
+creating a Minitel 2.0. To insure equality for all concerned, from citizens to
+businesses, monopolies must not only be excluded, but also
+prevented from monopolizing personal or public data. Through clear
+tutorials explaining how to propagate free solutions for establishing a fairer Internet, we intend to facilitate the spreading of codes and a diversification of usages.';
 
 $t['meta']['leds']['etitle']  = 'Ethics';
-$t['meta']['leds']['edesc']   = 'We vote for a participative and
-independent Internet. Exploitation, surveillance, censorship and data
-appropriation are values we refuse in favor of transparency (integrity), of a clear display of services user’s conditions policy and of the refusal of any discrimination.';
+$t['meta']['leds']['edesc']   = 'We wish to support a participative and
+independent Internet. Exploitation, surveillance, censorship, and data
+appropriation are trends we refuse in favor of transparency (integrity), clearly displayed policies for users of the various services, and the refusal of all forms of discrimination.';
 
 $t['meta']['leds']['stitle']  = 'Solidarity';
-$t['meta']['leds']['sdesc']   = 'Trough the services we roll out, we promote an model based on participative costs, sharing of ressources and accessibility for the largest amount of people. For this reason any abuse will be avoided for we all are conscious about community of property. This model stands also for an educational purpose since as we think by documenting the roll-out of the services, a great deal of users will in their turn be able to share those resources.';
+$t['meta']['leds']['sdesc']   = 'Through the services we provide, we promote a model based on cost participation, resource sharing, and accessibility for the largest number of people. Any abuse will thus be avoided, for we all remain fully aware of our common interests. This model also has an educational purpose since, as we document the roll-out of services, many users will in their turn be able to share those resources.';
 
-$t['meta']['leds']['charte']  = 'To know more about this, feel free to read <strong><a href="'.$l['Charte'].'">our detailled charter</a></strong>.';
+$t['meta']['leds']['charte']  = 'To know more about this, feel free to read <strong><a href="'.$l['Charte'].'">our detailed charter</a></strong>.';
 
 // Accueil
 $t['home']['title']  = 'Main Page';
