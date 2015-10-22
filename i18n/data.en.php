@@ -38,7 +38,7 @@ $t['meta']['leds']['title']   = 'For an Internet…';
 $t['meta']['leds']['ltitle']  = 'Free';
 $t['meta']['leds']['ldesc']   = 'As far as standards and protocols are concerned, the story of the Internet is one of
 free software.
-But its popularity and potential makes big firms jealous. They would like to claim the control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
+But its popularity and potential makes big firms jealous. They would like to claim control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
 
 $t['meta']['leds']['dtitle']  = 'Decentralized';
 $t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at
@@ -56,7 +56,7 @@ appropriation are trends we refuse in favor of transparency (integrity), clearly
 $t['meta']['leds']['stitle']  = 'Solidarity';
 $t['meta']['leds']['sdesc']   = 'Through the services we provide, we promote a model based on cost participation, resource sharing, and accessibility for the largest number of people. Any abuse will thus be avoided, for we all remain fully aware of our common interests. This model also has an educational purpose since, as we document the roll-out of services, many users will in their turn be able to share those resources.';
 
-$t['meta']['leds']['charte']  = 'To know more about this, feel free to read <strong><a href="'.$l['Charte'].'">our detailed charter</a></strong>.';
+$t['meta']['leds']['charte']  = 'To find out more about this, feel free to read <strong><a href="'.$l['Charte'].'">our detailed charter</a></strong>.';
 
 // Accueil
 $t['home']['title']  = 'Main Page';
@@ -68,51 +68,51 @@ $t['home']['js']     = '
     <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
 $t['home']['map']    = 'Click on the map to discover all alternatives…';
-$t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum and Proprietarum.';
+$t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable freeware lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum, and Proprietarum.';
 
 // Accueil - Camps
 $t['home']['camps']['village']     = 'In the freewaredefender’s village';
-$t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few nonprofit organizations keep on fighting for an open web respectfull of internet users.';
-$t['home']['camps']['vp2']         = 'In addition of '.$t['meta']['F'].', an non profit association leading the herein campaign, we can cite <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. Those organizations earn their livings thanks to your donations, don’t forget to support them!';
+$t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few non-profit organizations keep up the struggle for an open web respectful of internet users.';
+$t['home']['camps']['vp2']         = 'In addition to '.$t['meta']['F'].', the non-profit association leading the campaign described here, we may also mention <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. These organizations can only keep going with the help of your donations, so don’t forget to support them!';
 
 $t['home']['camps']['fermetum']    = '<i lang="la">Closedum</i>';
 $t['home']['camps']['fp1']         = 'Online services are often
-closed-source: once you have started using them, it is very difficult
+closed-source: once you start using them, it is very difficult
 to leave, because these companies do everything to keep you captive by
-preventing you, for example, from migrating your data anywhere else.';
-$t['home']['camps']['fp2']         = 'Using open source services means making sure that we will never be controlled by a particular website but also that we can always migrate our data elsewhere.';
+preventing you, for example, from migrating your data elsewhere.';
+$t['home']['camps']['fp2']         = 'Using open source services means making sure that you will never be controlled by a particular website, but also that you can always migrate your data elsewhere.';
 
 $t['home']['camps']['centralisum'] = '<i lang="la">Centralizum</i>';
 $t['home']['camps']['cp1']         = 'Centralized services raise many problems: they make your data very vulnerable (one inaccessible website and everything is down) and make it very easy for third parties to exploit your data.';
-$t['home']['camps']['cp2']         = 'Using decentralized online services means having a choice between using an online instance such as those proposed by Framasoft or installing/managing the service yourself.';
+$t['home']['camps']['cp2']         = 'Using decentralized online services means maintaining a choice between using an online resource such as those proposed by Framasoft or installing/managing the service yourself.';
 
 $t['home']['camps']['espionnum']   = '<i lang="la">Trackum</i>';
-$t['home']['camps']['ep1']         = '“If it’s free, you are the product”: many online services make a living from the use of your personal data, by selling it to advertising companies. Furthermore, most of these services are based in the United States and obey US laws like the PATRIOT ACT which completely deny your right to privacy.';
+$t['home']['camps']['ep1']         = '“If it’s free, you are the product”: many online services make a living by exploiting your personal data, i.e., selling it to advertising companies. Furthermore, most of these services are based in the United States and obey US laws like the PATRIOT ACT which deny all rights to privacy.';
 $t['home']['camps']['ep2']         = 'Using online services hosted in Europe means ensuring that you are not dependent on the laws of another continent. In addition, by hosting the service yourself, no third party can violate your privacy.';
 
 $t['home']['camps']['privatum']    = '<i lang="la">Proprietarum</i>';
 $t['home']['camps']['pp1']         = 'Freedom-depriving services ("proprietary" in everyday language) are totally opaque: it is impossible to know exactly what the software does with your data. Only the publisher has control over it.';
-$t['home']['camps']['pp2']         = 'Using Free online services means being sure the community has control over the software and having the ability to modify it, to install it elsewhere, etc.';
+$t['home']['camps']['pp2']         = 'Using Free online services means being sure the community has control over the software and maintains the ability to modify it, to install it elsewhere, etc.';
 
 $t['home']['camps']['nsa']         = '<abbr>NSA</abbr>';
-$t['home']['camps']['np1']         = 'Edward Snowden’s revelations about the PRISM program of the <abbr>NSA</abbr> showed that fears about massive violations of users’ privacy were founded.';
-$t['home']['camps']['np2']         = 'Use centralized services
-corresponds to offer your personnal data for surveillance organizations without any means to control the use made of it.';
+$t['home']['camps']['np1']         = 'Edward Snowden’s revelations about the PRISM program of the <abbr>NSA</abbr> showed that fears about massive violations of users’ privacy were well-founded.';
+$t['home']['camps']['np2']         = 'Using centralized services
+amounts to offering your personal data to surveillance organizations without any means to control what they do with it.';
 
 // Accueil - Enjeux
 $t['home']['enje']['btn']   = 'Stakes';
 $t['home']['enje']['title'] = 'What are the stakes?';
-$t['home']['enje']['p1']    = 'In recent years, we have witnessed <strong> the widespread corporate concentration of Internet actors</strong>  (Youtube belonging to Google, WhatsApp to Facebook, Skype to Microsoft, etc.). This centralisation is detrimental, not only because it curbs innovation, but also because it results in a loss of freedom for the users. <strong>Users of these services no longer control their digital life</strong>:  their behaviour is continually dissected so that they can be better targeted by publicity, and their data – which should be private (sites visited, emails exchanged, videos watched, etc.) – can be analysed by government services.';
-$t['home']['enje']['p2']    = 'The way that Framasoft would like to deal with this issue is simple: to highlight and provide a Free, Ethical, Decentralised and Solidarity-based alternative to each of these services which deprive their users of their liberty.';
+$t['home']['enje']['p1']    = 'In recent years, we have witnessed <strong> the widespread corporate concentration of Internet actors</strong>  (Youtube belonging to Google, WhatsApp to Facebook, Skype to Microsoft, etc.). This centralisation is detrimental, not only because it curbs innovation, but also because it results in a loss of freedom for users, <strong>who no longer control their digital existence<strong>: their behaviour is continually dissected and analysed so that they can be better targeted by publicity, and their data – which should be private (sites visited, emails exchanged, videos watched, etc.) – can be analysed by government services.';
+$t['home']['enje']['p2']    = 'The way that Framasoft would like to deal with this issue is simple: to highlight and provide a Free, Ethical, Decentralised and Solidarity-based alternative to each of these services which deprive users of their freedom.';
 
 // Accueil - Dangers
 $t['home']['dang']['btn']   = 'Threats';
 $t['home']['dang']['title'] = 'Threats';
-$t['home']['dang']['intro'] = 'The increasingly centralized online services provided by sprawling giants like Google, Amazon, Facebook, Apple or Microsoft (GAFAM) threaten our digital lives.';
+$t['home']['dang']['intro'] = 'The increasingly centralized online services provided by sprawling giants like Google, Amazon, Facebook, Apple, or Microsoft (GAFAM) pose a threat to our digital lives.';
 
 // EPCF (Espionnum, Privatum, Centralisum, Fermetum)
 $t['home']['dang']['e']     = 'Surveillance';
-$t['home']['dang']['ep']    = 'These services are tracking us everywhere. While claiming to give us a better “user experience”, our behaviour is constantly under surveillance. This information can be used to display targeted adverts, but the revelations of the Snowden case also proved that the Internet giants were forced to communicate this data (sometimes extremely private: emails from Gmail, photos shared on Facebook, Skype conversations, smartphone’s location, etc.) to government services. Under the pretense of fighting terrorism, states are able to gather much more intelligence than a "Big Brother" would have ever dreamed of.';
+$t['home']['dang']['ep']    = 'These services track us everywhere, while claiming to give us a better “user experience”. But our behaviour is under constant surveillance. This information can be used to display targeted adverts, but the revelations of the Snowden case have also shown that Internet giants have been forced to communicate this data (sometimes extremely private: emails from Gmail, photos shared on Facebook, Skype conversations, smartphone locations, etc.) to government services. Under the pretense of fighting terrorism, states are able to gather much more intelligence than a "Big Brother" would ever have dreamed of.';
 
 $t['home']['dang']['erefs'] = '
                   <ul>
@@ -139,8 +139,8 @@ $t['home']['dang']['erefs'] = '
 
 $t['home']['dang']['p']     = 'Privacy';
 
-$t['home']['dang']['pp']    = 'Our data is an extension of ourselves. It tells third-parties where we are, with whom we are, our political and sexual orientations, sites we have visited, our favorite recipe, our favorite topics of interest, etc. If a single data point is not always sensitive, the loss large amounts of aggregated data can be dangerous (for example if you browsed topics about cancer before subscribing to a life-insurance)<br>
-In a world where everything is digital (ebooks, TV, phones, music, social networks, etc.), <strong>our private life is an essential part of what makes us a singular person</strong>. A malicious hacker with access to your smartphone could, in a few minutes, cause you serious harm (he could take the control of your identity on Facebook, see your professional or medical information, make purchases without your authorisation, etc.).';
+$t['home']['dang']['pp']    = 'Our data is an extension of ourselves. It tells third-parties where we are, who we are with, our political and sexual orientations, sites we have visited, our favorite recipes, our favorite topics of interest, and so on. While a single data point is not always sensitive, the loss of large amounts of aggregated data can be dangerous (for example if you browse topics about cancer before subscribing to a life insurance)<br>
+<strong>Your private life is an essential part of your individuality</strong>, and in a world where everything has been digitized (ebooks, TV, phones, music, social networks, etc.), it would only take a malicious hacker with access to your smartphone a few minutes to cause you serious harm (taking control of your identity on Facebook, consulting your professional or medical information, making purchases without your authorisation, etc.).';
 
 $t['home']['dang']['prefs'] = '
                     <ul>
