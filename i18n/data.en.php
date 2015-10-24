@@ -170,11 +170,11 @@ $t['home']['dang']['prefs'] = '
                     </ul>';
 
 $t['home']['dang']['c']     = 'Centralization';
-$t['home']['dang']['cp']    ='Major actors of the Internet have become real giants: Google owns Youtube and Waze, Facebook acquired WhatsApp and Instagram, Microsoft distributes Skype, etc.<br>
-This concentration of actors creates multiple issues: what if Facebook were suddenly shut down? How could we browse the Web if Google became broken?
-<strong>We rely more and more on services provided by a small group of actors.</strong> For example, Apple (iPhone), Google (Android) and Microsoft (Windows Phone) dominate almost the entire mobile OS industry.<br>
-Furthermore, the size of these actors impedes innovation: it’s hard to launch a startup facing Apple or Google (respectively the first and second worldwide market capitalisations).<br>
-Finally, the lack of diversity of these giants gives them a way not only to track us, but also to alter the data they bring us (a Google search won’t produce the same results for the terms “nuclear power” whether Google considers you as an environmentalist or pro-nuclear power).';
+$t['home']['dang']['cp']    ='Major actors of the Internet have become real giants: Google owns Youtube and Waze, Facebook has acquired WhatsApp and Instagram, Microsoft distributes Skype, etc.<br>
+This concentration of actors creates multiple issues: what if Facebook were suddenly shut down? And how could we browse the Web if Google went down?
+<strong>We rely more and more on services provided by a small group of suppliers.</strong> For example, Apple (iPhone), Google (Android) and Microsoft (Windows Phone) dominate almost the entire mobile OS industry.<br>
+Furthermore, the size of these actors impedes innovation: it’s hard to launch a startup that can match up to Apple or Google (the first and second worldwide market capitalisations, respectively).<br>
+Finally, The lack of diversity of the giants means they can track many people who are unaware that there may be alternatives, and it can influence the kind of data you receive (a Google search will produce different results for the term “nuclear power” depending on whether Google considers you to be an environmentalist or pro-nuclear power).';
 
 $t['home']['dang']['crefs'] = '
                       <ul>
@@ -191,11 +191,11 @@ $t['home']['dang']['crefs'] = '
                     </ul>';
 
 $t['home']['dang']['f']     = 'Termination';
-$t['home']['dang']['fp']    = 'Web services used on your computer, smartphone, tablets (and others) are usually hosted on the “cloud”: servers spread across the planet, that host not only your data (mails, pictures, files, etc), but also the application code.<br>
-For your data, this raises the issue of sustainability (what would become of your files if Dropbox were to close tomorrow?) and of your ability to easily switch between services (how would you recover all of your data from Facebook or Picasa and import it, with all the adjoining comments, into another service?). <br>
-For applications, it means that <strong>you are completely dependent on
-what your service provider chooses to do</strong> (proliferation of
-advertisements, changes to the user interface, etc.) and that you hardly have any control over the application’s behaviour. They are “black boxes” that can exhibit malicious behaviour (sending spam SMS without your knowledge, executing malicious code, etc.).<br>
+$t['home']['dang']['fp']    = 'Web services used on your computer, smartphone, tablets (and other devices) are usually hosted on the “cloud”: servers spread across the planet, that host not only your data (emails, pictures, files, etc.), but also the application code.<br>
+For your data, this raises the issue of sustainability (what would become of your files if Dropbox were to close tomorrow?) and of your ability to switch easily between services (how would you recover your data from Facebook or Picasa and import it, with all the adjoining comments, into another service?). <br>
+For applications, this means that <strong>you are completely at the mercy of
+your service provider</strong> when it comes to proliferation of
+advertisements, changes to the user interface, etc., and that you have hardly any control over the way an application works. It is a “black box” that can exhibit malicious behaviour (sending spam SMS without your knowledge, executing malicious code, and so on).<br>
 In short, these companies trap us in gilded cages: gilded yes, but cages nonetheless!';
 
 $t['home']['dang']['frefs'] = '
@@ -219,15 +219,15 @@ $t['home']['dang']['frefs'] = '
 // Accueil - Nos propositions
 $t['home']['prop']['btn']   = 'Our proposals';
 $t['home']['prop']['title'] = 'Our proposals';
-$t['home']['prop']['intro'] = 'Framasoft wishes to face the threats to our digital lives by offering free, ethical, decentralised and solidarity-based services.';
+$t['home']['prop']['intro'] = 'Framasoft wishes to face the threats to our digital lives by offering free, ethical, decentralised, and solidarity-based services.';
 
 // LEDS (Libre, Éthique, Décentralisé, Solidaire)
 $t['home']['prop']['l']     = 'Freedom';
-$t['home']['prop']['lp1']   = 'The story of the Internet itself is a story of free software, speaking of standards as well as of protocols. Its potential and popularity are a cause for envy, and large companies would like nothing better than to control it by imposing closed-source, locked down and non-interoperable systems.';
+$t['home']['prop']['lp1']   = 'The story of the Internet itself is one of free software, and this goes for standards as well as protocols. Its potential and popularity are a cause for envy, and large companies would like nothing better than to control it by imposing closed-source, locked-down, and non-interoperable systems.';
 $t['home']['prop']['lp2']   = 'For the Internet to stay true to its
-founding principles, those which led to its success, users must be
-able to choose free software, that is to say software which source code is open, accessible and covered by free software licenses.';
-$t['home']['prop']['lp3']   = 'Framasoft hereby commits to using only software which source code is “free”.';
+founding principles, those which have led to its success, users must be
+able to choose free software, that is to say, software whose source code remains open and accessible and is covered by a free software license.';
+$t['home']['prop']['lp3']   = 'Framasoft is thus committed to using only software with “free” source code.';
 
 $t['home']['prop']['e']     = 'Ethics';
 $t['home']['prop']['ep1']   = 'We promote an Internet based on independence and sharing.';
@@ -235,20 +235,20 @@ $t['home']['prop']['ep2']   = 'We oppose the exploitation, surveillance, censors
 $t['home']['prop']['ep3']   = 'Framasoft undertakes not to exploit its users’ data, and to promote a fair and open Web.';
 
 $t['home']['prop']['d']     = 'Decentralization';
-$t['home']['prop']['dp1']   = 'Internet intelligence must rest with every network player, in the spirit of sharing among peers, to avoid creating a Minitel (videotext terminal and service, pre Internet) 2.0.';
-$t['home']['prop']['dp2']   = 'To ensure equality for all, whether citizens or entrepreneurs, not only must monopolies be avoided, but they must be prevented from grabbing personal or public data.';
-$t['home']['prop']['dp3']   = 'By explaining, thanks to tutorials, how to increase the use of free solutions allowing a fairer Internet, we help speading the code and we diversify uses.';
-$t['home']['prop']['dp4']   = 'Framasoft hereby commits to facilitating self-hosting and interoperability, so that its users don’t get “locked in”.';
+$t['home']['prop']['dp1']   = 'Internet intelligence must remain with each individual player on the network, in a spirit of sharing among peers, to avoid creating a Minitel (a pre-Internet videotext terminal and service) version 2.0.';
+$t['home']['prop']['dp2']   = 'To ensure equality for all, whether citizens or businesses, not only is it essential to avoid monopolies, but large organizations must be prevented from grabbing personal or public data.';
+$t['home']['prop']['dp3']   = 'Using tutorials to explain how to increase the use of free solutions that will allow a fairer Internet, we help to distribute codes and diversify usage.';
+$t['home']['prop']['dp4']   = 'Framasoft is thus committed to facilitating self-hosting and interoperability, so that its users don’t get “locked in”.';
 
 $t['home']['prop']['s']     = 'Solidarity';
-$t['home']['prop']['sp1']   = 'Through the services we deploy, we promote an economic model based on sharing costs, sharing resources, and widespread access.';
-$t['home']['prop']['sp2']   = 'This model also has an educational aspect because we believe that by documenting how to setup services, many users will be able to share these resources in turn.';
-$t['home']['prop']['sp3']   = 'We think that not infantilizing users and that sharing the responsibility of using the services will make it possible to regulate abuse.';
-$t['home']['prop']['sp4']   = 'Framasoft hereby commits to promoting respect and autonomy for its users (as long as the reverse stays true).';
+$t['home']['prop']['sp1']   = 'Through the services we deploy, we promote an economic model based on sharing costs and resources, and providing widespread access.';
+$t['home']['prop']['sp2']   = 'This model also has an educational aspect because we believe that by documenting ways to setup services, many users will in turn be able to share these resources.';
+$t['home']['prop']['sp3']   = 'We think that, by not infantilizing users and by sharing responsibility for the use of services, it will be possible to regulate abuse.';
+$t['home']['prop']['sp4']   = 'Framasoft is thus committed to promoting respect and autonomy for its users (as long as this is reciprocated).';
 
 // Service & Charte
 $t['home']['prop']['s&c']   = 'Services and Charter';
-$t['home']['prop']['s&cp']  = 'You can find out online the list of the services we already offer (and those yet to come) as well as our charter:';
+$t['home']['prop']['s&cp']  = 'You can find online the list of the services we already offer (and those yet to come), together with our charter:';
 $t['home']['prop']['charte'] = 'Framasoft service charter';
 
 // Accueil - Concrètement
