@@ -259,12 +259,12 @@ which does not exclusively concern Google - consists in <strong> offering as man
 $t['home']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, and many others, are extremely convenient services but <strong>they have become far too large and have made us dependent on them</strong>.
 Framasoft wishes to resist this trend and is putting forward a roadmap for setting up alternative services over several years.';
 $t['home']['conc']['p3']    = 'These services are free, gratis, open to all (insofar as our technical and financial capabilities allow us), as <strong><a href="http://en.wikipedia.org/wiki/Commons" title="Bien communs">digital commons</a></strong>.
-With the goal of decentralising the Internet and of promoting self-hosting, we will do our best so that everyone can install their own services (for themselves, for their organisation, their company).';
-$t['home']['conc']['p4']    = 'We are not aiming to compete with these services of course, we merely wish to offer a space that is neutral, non-commercial and not aggressive towards its users.';
+With the goal of decentralising the Internet and promoting self-hosting, we will do our best to ensure that everyone can install their own services (for themselves, for their organisation, or their company).';
+$t['home']['conc']['p4']    = 'We are not aiming to compete with these services of course. We merely wish to offer a space that is neutral, non-commercial, and in no way aggressive towards its users.';
 $t['home']['conc']['p5']    = '<strong>See the list of services we are already offering (and those that we are preparing):</strong>';
 $t['home']['conc']['stitle'] = 'Support';
 $t['home']['conc']['sp1']   = 'A project with such a wide scope cannot happen without <strong>your support</strong>.';
-$t['home']['conc']['sp2']   = 'Whether you are a developer, a graphic designer, systems administrator, etc. you can contact us to take an active part in the project.';
+$t['home']['conc']['sp2']   = 'Whether you are a developer, a graphic designer, systems administrator, etc., you can contact us to take an active part in the project.';
 $t['home']['conc']['cbtn']  = 'Contact Framasoft';
 $t['home']['conc']['sp3']     = 'The simplest and quickest way to help us remains financial support: it allows us to pay for the infrastructure (servers) and the permanent staff committed to the success of this ambitious project. Framasoft is a public interest association ]: a €100 donation will cost you €34, after tax exemption (if you are in France).';
 $t['home']['conc']['sbtn']  = 'Donate<br /> to Framasoft';
@@ -272,7 +272,7 @@ $t['home']['conc']['sbtn']  = 'Donate<br /> to Framasoft';
 // Liste des services
 $t['list']['title']     = 'List of services';
 $t['list']['link']      = 'list';
-$t['list']['desc']      = 'List of online services free, ethics, decentralized et solidarity offered by Framasoft (or in progress) to de-google-ify Internet';
+$t['list']['desc']      = 'List of free, ethical, decentralized, and solidarity-based online services offered by Framasoft (or in progress) to de-google-ify Internet';
 $t['list']['css']       = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['list']['js']        = '
@@ -286,7 +286,7 @@ $t['medias']['desc']    = '';
 $t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
-$t['medias']['subtitle']    = '5 October 2015 : year 2 of the de-google-ifycation of the Internet.';
+$t['medias']['subtitle']    = '5 October 2015 : year 2 of the de-google-ification of the Internet.';
 $t['medias']['intro']       = 'To begin this second year of its campaign of alternative proposals for services provided by Google & co, Framasoft is launching five new services based on free software as of 5 October.';
 $t['medias']['btnCPtxt']    = 'Download the<br/>press release';
 $t['medias']['btnCPurl']    = 'img/2015_communique_degooglisons_Framasoft.odt';
@@ -314,17 +314,17 @@ $t['medias']['2list']       = '
                             <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
                         </ul>';
 
-$t['medias']['tabstitle']   = 'Visuals for the de-google-ify years 2.';
-$t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free ton contact us.';
+$t['medias']['tabstitle']   = 'Visuals for de-google-ify year 2.';
+$t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free to contact us.';
 $t['medias']['tabssaveas']  = 'To reuse the picture, right click on the image and “save image as”';
 
 $t['medias']['t1']          = 'Maps';
 $t['medias']['t1i1txt']     = 'Map “Before”';
 $t['medias']['t1i1url']     = 'img/Carte2015-romains-en.png';
-$t['medias']['t1i1desc']    = 'Map of France invaded by GAFAM services (oct 2014)';
+$t['medias']['t1i1desc']    = 'Map of France invaded by GAFAM services (Oct 2014)';
 $t['medias']['t1i2txt']     = 'Map “After”';
 $t['medias']['t1i2url']     = 'img/Carte2015-victoires-en.png';
-$t['medias']['t1i2desc']    = 'Map of France with Framasoft’s alternatives (oct 2015)';
+$t['medias']['t1i2desc']    = 'Map of France with Framasoft’s alternatives (Oct 2015)';
 $t['medias']['t1i3txt']     = 'Animated map';
 $t['medias']['t1i3url']     = 'img/Carte2015-animation-en.gif';
 $t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
@@ -344,7 +344,7 @@ $t['medias']['t2i6txt']     = 'Drawing “GAFAM”';
 $t['medias']['t2i6url']     = 'img/GAFAM.png';
 
 $t['medias']['t3']          = 'Videos';
-$t['medias']['t3intro']     = 'We were able to exploain our projet at conferances. We selected thes two video recordings (and their embed code) so that you can freely reuse them on your websites.';
+$t['medias']['t3intro']     = 'We have had the opportunity to explain our project at conferences. We have selected these two video recordings (and their embed code) so that you can freely reuse them on your websites.';
 $t['medias']['t3v1txt']     = 'Short version (FR - 17mn)';
 $t['medias']['t3v1img']     = 'https://framatube.org/images/media/925l.jpg';
 $t['medias']['t3v1mp4']     = 'https://framatube.org/blip/gosset-owf-dio.mp4';
@@ -374,7 +374,7 @@ $t['medias']['t6']          = 'Presentation';
 $t['medias']['t6url']       = 'presentation/';
 
 $t['medias']['presstitle']  = 'Press Release';
-$t['medias']['pressintro']  = 'The “De-google-ify Internet” campaing has already got a lot of attention during the first year. Here are so extracts from our <a href="https://wiki.framasoft.org/speakabout">Press release</a>.';
+$t['medias']['pressintro']  = 'The “De-google-ify Internet” campaign already received a lot of attention during the first year. Here are some extracts from our <a href="https://wiki.framasoft.org/speakabout">Press release</a>.';
 $t['medias']['pressth1']    = 'Date';
 $t['medias']['pressth2']    = 'Media';
 $t['medias']['pressth3']    = 'Link';
@@ -398,7 +398,7 @@ $t['medias']['presslist']   = [
     'http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
     'Lien vers la page d’écoute']
 ];
-$t['medias']['framatitle']  = 'Framasoft in few link…';
+$t['medias']['framatitle']  = 'Framasoft in a few links';
 $t['medias']['framalist']   = '
                         <ul >
                               <li><a href="https://contact.framasoft.org/#questions">Contact us</a> (This form relates directly to our press service).</li>
@@ -437,62 +437,62 @@ $t['_GAFAM']                    = 'GAFAM';
 $t['_& co']                     = '& co';
 $t['_Software']                 = 'Software';
 $t['_LEDS']                     = 'LEDS';
-$t['_Libre, Éthique, Décentralisé et Solidaire'] = 'Free, Ethics, Decentralizes ans Solidarity';
+$t['_Libre, Éthique, Décentralisé et Solidaire'] = 'Free, Ethical, Decentralized and Solidarity-based';
 $t['_ with your help']          = ' with your help';
 
 /*************
  * Objectifs *
  *************/
 $d['tip2017'] = [
-      'name'  => '€180,000 + 1,250 recurrent donors',
+      'name'  => '€180,000 + 1,250 regular donors',
     'F'     => '11 employees',
-    'mBody' => '<p>We will be close to the goal! Some “tricky” services still remain to set up, like messaging services: mailing lists, and e-mails obviously.</p>
-                <p>On the one hand, these services are more expensive to set up: it’s easier to manage a website that generates a million views per day than to manage 10.000 e-mail accounts! On the other hand, we’ll have to ensure the smooth running of all the projects and services that will have then been set up, which includes maintenance, updates, support, etc.</p>
+    'mBody' => '<p>We should come close to our goal! Some “tricky” services still remain to be set up, like messaging services, viz., mailing lists and e-mail.</p>
+                <p>On the one hand, these services are more expensive to set up: it’s easier to manage a website that generates a million views per day than to manage 10,000 e-mail accounts! On the other hand, we’ll have to ensure the smooth running of all the projects and services that will then have been set up. This includes maintenance, updates, support, etc.</p>
                 <p>This implies that we should hire 3 new collaborators, mainly on technical profiles.</p>
-                <p>For a glimpse on the scale of our needs: our goal for 2017 —€180,000 and 1,250 recurring donors— represents the approximate costs of 54 meters of a motorway, or 0.0006% of Google’s annual revenue.</p>'
+                <p>To grasp the relatively tiny scale of our needs: our goal for 2017 —€180,000 and 1,250 regular donors— represents the approximate cost of 54 meters of motorway, or 0.0006% of Google’s annual revenue.</p>'
 ];
 $d['tip2016'] = [
-    'name'  => '€130,000 + 1,080 recurrent donors',
+    'name'  => '€130,000 + 1,080 regular donors',
     'F'     => '8 employees',
-    'mBody' => '<p>Early 2016, Framasoft will already be providing more than twenty online services. But we have no intention of stopping there! We wish indeed to provide more and new free alternatives to the services provided by the Internet giants, such as:</p>
+    'mBody' => '<p>By early 2016, Framasoft will already be providing more than twenty online services. But we have no intention of stopping there! Indeed, we wish to provide more and new free alternatives to the services supplied by the Internet giants, such as:</p>
                 <ul>
                     <li>A shared online agenda (as an alternative to Google Agenda)</li>
                     <li>A microblogging service (as an alternative to Twitter)</li>
-                    <li>An open source video hosting service (as an alternative à Youtube)</li>
+                    <li>An open source video hosting service (as an alternative to Youtube)</li>
                 </ul>
-                <p>In order to implement these projects and maintain the existing projects, Framasoft will need to hire three new collaborators, i.e. a developer, a second sysadmin and an administrator. </p>
+                <p>In order to implement these projects and maintain the existing projects, Framasoft would need to hire three new collaborators, i.e., a developer, a second sysadmin, and an administrator. </p>
                 <p>ministrator. </p>
-                <p>We are aware that we cannot abuse from the kindness of our donators and systematically ask them for funds. Therefore the needed amount could be completed by grants. </p>
-                <p>For a glimpse on the scale of our needs: our goal for 2016 —€130,000 and 1080 recurring donors— represents the approximate costs of 38 meters of a motorway, or 0.0004% of Google’s annual revenue.</p>'
+                <p>We are aware that we cannot abuse the kindness of our donators and systematically ask them for funds. Therefore we may try to reach the required amount with the help of grants. </p>
+                <p>To appreciate the scale of our needs: our goal for 2016 —€130,000 and 1080 regular donors— represents the approximate cost of 38 meters of motorway, or 0.0004% of Google’s annual revenue.</p>'
 ];
 $d['tip2015'] = [
-    'name'  =>  '€70,000 + 780 recurrent donors',
+    'name'  =>  '€70,000 + 780 regular donors',
     'F'     => '5 employees',
     'mBody' => '<p>Framasoft plans to start providing several important online services in 2015:</p>
                 <ul>
                     <li>An online file storage service (as an alternative to Dropbox)</li>
-                    <li>A large files sharing service (as an alternative to WeTransfer)</li>
+                    <li>A sharing service for large files (as an alternative to WeTransfer)</li>
                     <li>An online presentation/slideshow service (as a sort of online alternative to MS PowerPoint)</li>
                     <li>A videoconferencing service (as an alternative to Skype), embedded in your web browser without requiring any software installation.</li>
                 </ul>
-                <p>In order to implement these projects and maintain the existing projects, Framasoft will need to hire, in addition to its current employees, a full-time sysadmin and two interns.</p>
-                <p>For a glimpse on the scale of our needs: our goal for 2015 —€70,000 and 780 recurring donors— represents the approximate costs of 21 meters of a motorway, or 0.0002% of Google’s annual revenue.</p>'
+                <p>In order to implement these projects and maintain the existing projects, Framasoft would need to hire, in addition to its current employees, a full-time sysadmin and two interns.</p>
+                <p>To appreciate the scale of our needs: our goal for 2015 —€70,000 and 780 regular donors— represents the approximate cost of 21 meters of motorway, or 0.0002% of Google’s annual revenue.</p>'
 ];
 $d['tip2014'] = [
-    'name'  => '€ 35,000 + 550 recurrent donors',
+    'name'  => '€ 35,000 + 550 regular donors',
     'F'     => '3 employees',
-    'mBody' => '<p>2014 was particularly intense for the Framasoft NPO, since we had to establish and fine-tune our battleplan to help you resist Google, Facebook and the others…</p>
-                <p>Amongst other things, the organization has invested both time and money in the technical infrastructure which supports the existing services. This will allow us to comfortably host the applications we will be providing in the coming years.</p>
+    'mBody' => '<p>2014 was particularly intense for the Framasoft NPO, since we had to establish and fine-tune our battleplan to help you resist Google, Facebook, and the others…</p>
+                <p>Amongst other things, the organization has invested both time and money in the technical infrastructure which supports existing services. This will allow us to comfortably host the applications we intend to provide in coming years.</p>
                 <p>You can help us meet these goals:</p>
                 <ul>
-                    <li>increase the size of our technical infrastructure, i.e. increase the computing power of our virtual machine cluster and its storage capacity</li>
+                    <li>increase the size of our technical infrastructure, i.e., increase the computing power of our virtual machine cluster and its storage capacity</li>
                     <li>pay the wages of our two full-time employees</li>
-                    <li>be able to hire a third full-time employee (communication manager)</li>
+                    <li>hire a third full-time employee (communication manager)</li>
                     <li>finance the development of upgrades to some of our existing services (Framadate and Framindmap, amongst others)</li>
                     <li>coordinate the entire project “De-Google-ify the Internet”</li>
                 </ul>
-                <p>Our target was to increase the number of recurring donors from 400 to 550, as well as to collect €35,000 in one-time donations over the year.</p>
-                <p>We remind you that Framasoft is a non-profit organisation that is in great part self-financed, thanks to its generous donors. For a glimpse on the scale of our needs: our goal for 2014 —€35,000 and 550 recurring donors— represents the approximate costs of 8 meters of a motorway, or 0.000083% of Google’s annual revenue.</p>'
+                <p>Our target was to increase the number of regular donors from 400 to 550, as well as to collect €35,000 in one-time donations over the year.</p>
+                <p>We remind you that Framasoft is a non-profit organisation and largely self-financed, thanks to the generosity of its donors. To appreciate the scale of our needs: our goal for 2014 —€35,000 and 550 regular donors— represents the approximate cost of 8 meters of motorway, or 0.000083% of Google’s annual revenue.</p>'
 ];
 for ($i=2014; $i<2018; $i++) {
     $d  ['tip'.$i]['F Date']   = $i;
