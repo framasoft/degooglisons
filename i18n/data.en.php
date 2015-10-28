@@ -68,7 +68,7 @@ $t['home']['js']     = '
     <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
 $t['home']['map']    = 'Click on the map to discover all alternatives…';
-$t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable freeware lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum, and Proprietarum.';
+$t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum, and Proprietarum.';
 
 // Accueil - Camps
 $t['home']['camps']['village']     = 'In the freewaredefender’s village';
@@ -539,13 +539,13 @@ $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance bas�
 // Avaaz
 $k= 'avaaz';
 $d[$k]['sDesc']  = 'Petitions';
-$d[$k]['lDesc']  = 'Launch your petitions without giving away the addresses of your supports';
+$d[$k]['lDesc']  = 'Launch your petitions without giving away the addresses of your backers';
 $d[$k]['mTitle'] = 'Free your petitions';
 $d[$k]['mBody']  = '<p>
-                            '.$d[$k]['F'].' allows you to launch petitions on issues that matter to you. With a few clicks, your petition is published and the addresses of your supports will not be  available for unwanted uses such as affiliate marketing.
+                            '.$d[$k]['F'].' allows you to launch petitions on issues that matter to you. With a few clicks, your petition is published and the addresses of your backers will not be  available for unwanted uses such as affiliate marketing.
                     </p>
                     <p>
-                            <b class="violet">How does it work? </b> Sign up and launch a new petition by simply following the instructions. Your survey will be created. Your supports will not be required to register in order to participate.
+                            <b class="violet">How does it work? </b> Sign up and launch a new petition by simply following the instructions. Your survey will be created. Your backers will not be required to register in order to participate.
                     </p>';
 
 // Bit.ly
@@ -554,7 +554,7 @@ $d[$k]['sDesc']  = 'URL shortener';
 $d[$k]['lDesc']  = 'Short URLs that keep it discreet.';
 $d[$k]['mTitle'] = 'Put an end to long URLs';
 $d[$k]['mBody']  = '<p>
-                            With '.$d[$k]['F'].' or <a href="https://huit.re">Huit.re</a>, you can shrink excessively long URLs without being tracked in their use. On social networks or microblogs, a shortened web address can help save space or help improve readability.
+                            With '.$d[$k]['F'].' or <a href="https://huit.re">Huit.re</a>, you can shrink excessively long URLs without it being possible to track their use. On social networks or microblogs, a shortened web address can help save space or improve readability.
                     </p>
                     <p>
                           <b class="violet">How does it work?</b> Enter the original version of your URL: Frama.link shortens it. Copy the link.
@@ -562,7 +562,7 @@ $d[$k]['mBody']  = '<p>
 
 // Blogger
 $k= 'blogger';
-$d[$k]['sDesc']  = 'Weblogs hosting service';
+$d[$k]['sDesc']  = 'Weblog hosting service';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
@@ -573,7 +573,7 @@ $d[$k]['sDesc']  = 'Mind Map';
 $d[$k]['lDesc']  = 'Create your mind maps';
 $d[$k]['mTitle'] = 'Why would you create a mind map?';
 $d[$k]['mBody']  = '<p>
-                   '.$d[$k]['F'].' allows you to organize a brainstorming, to sort out and put in order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements, etc.
+                   '.$d[$k]['F'].' allows you to organize a brainstorming session, to sort out and order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements, etc.
                     </p>
                     <p><video controls="controls" preload="none"
                       width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
@@ -589,10 +589,10 @@ $d[$k]['mBody']  = '<p>
 // Doodle
 $k= 'doodle';
 $d[$k]['sDesc']  = 'Meetings and polls';
-$d[$k]['lDesc']  = 'Schedule a meeting or create a poll';
-$d[$k]['mTitle'] = 'Organiser des rendez-vous simplement et librement';
+$d[$k]['lDesc']  = 'Schedule a meeting or create an opinion poll';
+$d[$k]['mTitle'] = 'A simple way to organize your meetings';
 $d[$k]['mBody']  = '<p>
-                       With '.$d[$k]['F'].' you will be able to plan a meeting with several persons or create an online survey. Framadate does not store your data!
+                       Using '.$d[$k]['F'].' you will be able to plan a meeting with several others or create an online survey. Framadate does not store your data!
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
