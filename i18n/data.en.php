@@ -71,7 +71,7 @@ $t['home']['map']    = 'Click on the map to discover all alternatives…';
 $t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum and Proprietarum.';
 
 // Accueil - Camps
-$t['home']['camps']['village']     = 'In the freedom defender’s village';
+$t['home']['camps']['village']     = 'In the freedom defenders village';
 $t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few nonprofit organizations keep on fighting for an open web respectfull of internet users.';
 $t['home']['camps']['vp2']         = 'In addition of '.$t['meta']['F'].', an non profit association leading the herein campaign, we can cite <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. Those organizations earn their livings thanks to your donations, don’t forget to support them!';
 
