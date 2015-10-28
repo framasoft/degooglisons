@@ -71,7 +71,7 @@ $t['home']['map']    = 'Click on the map to discover all alternatives…';
 $t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum and Proprietarum.';
 
 // Accueil - Camps
-$t['home']['camps']['village']     = 'In the freewaredefender’s village';
+$t['home']['camps']['village']     = 'In the freedom defender’s village';
 $t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few nonprofit organizations keep on fighting for an open web respectfull of internet users.';
 $t['home']['camps']['vp2']         = 'In addition of '.$t['meta']['F'].', an non profit association leading the herein campaign, we can cite <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. Those organizations earn their livings thanks to your donations, don’t forget to support them!';
 
@@ -407,7 +407,7 @@ $t['medias']['framalist']   = '
                             <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
                         </ul>';
 $t['medias']['framap1']     = 'Framasoft is a freely available public education network which aims to promote and spead free software and free culture.';
-$t['medias']['framap2']     = 'As a link between the world of freeware and the general public, our association offers many projects (directory software, a publisher, a websearch engine, etc.), with three main goals: Free Software, Free Culture, and Free Services.';
+$t['medias']['framap2']     = 'As a link between the world of free software and the general public, our association offers many projects (directory software, a publisher, a websearch engine, etc.), with three main goals: Free Software, Free Culture, and Free Services.';
 $t['medias']['framap3']     = '<em>The logo is a realization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
 // Texte générique
