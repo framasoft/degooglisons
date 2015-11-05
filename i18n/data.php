@@ -162,7 +162,7 @@ $d[$k]['S']      = '<a href="https://www.caliopen.org/">Caliopen</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">mail</b>';
 $d[$k]['name']   = $e['google']['fa'].'GMail';
 $d[$k]['eq']     = $e['microsoft']['fa'].'Outlook, Yahoo Mail, Orange';
-$d[$k]['altOn']  = '<a href="https://openmailbox.org">OpenMailBox</a>, <a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>,… ';
+$d[$k]['altOn']  = '<a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>,… ';
 $d[$k]['altOff'] = '<a href="http://mozilla.org/thunderbird">Thunderbird</a>';
 $d[$k]['pos']    = '650,760,40';
 $d[$k]['FDate']  = '2017';
