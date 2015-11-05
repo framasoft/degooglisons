@@ -114,7 +114,7 @@ $t['home']['camps']['np2']         = 'Utiliser des services centralisés revient
                 organisations de surveillance sans aucun moyen de contrôler l’usage qui en est fait.';
 // Accueil - Enjeux
 $t['home']['enje']['btn']   = 'Les enjeux';
-$t['home']['enje']['title'] = 'Quel sont les enjeux ?';
+$t['home']['enje']['title'] = 'Quels sont les enjeux ?';
 $t['home']['enje']['p1']    = 'Ces dernières années ont vu se généraliser une <strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
                 WhatsApp à Facebook, Skype à Microsoft, etc.). Cette centralisation est nuisible, non seulement parce qu’elle freine l’innovation,
                 mais surtout parce qu’elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces services derniers
