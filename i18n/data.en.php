@@ -608,7 +608,7 @@ $d[$k]['sDesc']  = 'File hosting online service';
 $d[$k]['lDesc']  = 'File hosting online service';
 $d[$k]['mTitle'] = 'File hosting online service';
 $d[$k]['mBody']  = '<p>
-                      '.$d[$k]['F'].' allows you to store your documents online, to synchronize them on your computers, tablets, phones, etc and to share them with whoever you want…
+                      '.$d[$k]['F'].' allows you to store your documents online, to synchronize them on your computers, tablets, phones, etc., and to share them with whoever you want.
                     </p>';
 
 // Evernote
@@ -624,7 +624,7 @@ $d[$k]['sDesc']  = 'An ethical and decentralized social network';
 $d[$k]['lDesc']  = 'An ethical and decentralized social network';
 $d[$k]['mTitle'] = 'Join your friends in the free zone';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' is a social network that respects your data and your privacy. Framasphere is a node (also called <i>pod </i>) of Diaspora *, a free social network .
+                         '.$d[$k]['F'].' is a social network that respects your data and your privacy. Framasphere is a node (also called <i>pod </i>) of Diaspora *, a free social network.
                     </p>
                     <p>
                          <b class="violet">How does it work? </b> Share messages and photos with anyone on the Diaspora * network, manage your contacts, tags, mentions, reshares… You can also publish on other social networks (Facebook, Twitter, Tumblr) or on WordPress.
@@ -636,9 +636,9 @@ $d[$k]['sDesc']  = 'Distributed revision control (source code repository)';
 $d[$k]['lDesc']  = 'Free code is good. On a free and open platform, it’s even better!';
 $d[$k]['mTitle'] = 'Hosting of Free code';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' is a tool that is primarily intended for developers. It allows you to creation of up to 42 deposits per account – if you need more, you should seriously consider self-hosting. Compared to GitHub, the little extra is that you can create private deposits.</p>
+                         '.$d[$k]['F'].' is a tool that is primarily intended for developers. It allows you to create up to 42 deposits per account – if you need more, you should seriously consider self-hosting. Compared to GitHub, the little extra is that you can create private deposits.</p>
                     </p>
-                    <p>You can also mirror automatically your repositories on GitHub: you keep on “feeding the beast” but you are less dependent, and you remain visible to the eyes of the nearly 10 million users registered on GitHub. Your deposit on our Framagit is automatically pushed to your GitHub repository. This is also the choice made by Framasoft, which still has a GitHub account, while developments are made in our forge.</p>';
+                    <p>You can also mirror your repositories on GitHub automatically: you keep “feeding the beast” but you are less dependent, and you remain visible to the eyes of the nearly 10 million users registered on GitHub. Your deposit on our Framagit is automatically pushed to your GitHub repository. This is also the choice made by Framasoft: we still have a GitHub account, while we continue to develop our projects.</p>';
 
 // Gmail
 $k= 'gmail';
@@ -660,21 +660,21 @@ $d[$k]['sDesc']  = 'Online books';
 $d[$k]['lDesc']  = 'An open library which offers thousands of books';
 $d[$k]['mTitle'] = 'Catalog of books available to everyone';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' is Framasoft’s <abbr>OPDS</abbr>  catalog.  “OK… and this is interesting because …? ” might you ask. An Open Publication Distribution System (<abbr>OPDS</abbr>) catalog is a website to which you subscribe with a software that supports this functionality –some E-readers embed one, such as Aldiko amongst others for Android. It provides you a quick and easy access to an entire library from your computer, smartphone or tablet.
+                          '.$d[$k]['F'].' is Framasoft’s <abbr>OPDS</abbr>  catalog.  “OK, so what?” you may ask. An Open Publication Distribution System (<abbr>OPDS</abbr>) is a website you subscribe to with a software supporting this functionality – some E-readers embed one, such as Aldiko and others for Android. It provides you with quick and easy access to an entire library from your computer, smartphone, or tablet.
                     </p>
                     <p> Framasoft’s <abbr>OPDS</abbr> catalog gives you access to hundreds of non-copyrighted books.</p>';
 
 // Google Docs
 $k= 'gdocs';
 $d[$k]['sDesc']  = 'Collaborative writing';
-$d[$k]['lDesc']  = 'A web-based collaborative real-time editor';
+$d[$k]['lDesc']  = 'A collaborative real-time web-based editor';
 $d[$k]['mTitle'] = 'Collaborative writing service';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' is an online collaborative writing tool based on <a href="http://etherpad.org/">Etherpad</a>.
+                          '.$d[$k]['F'].' is a collaborative online writing tool based on <a href="http://etherpad.org/">Etherpad</a>.
                         '.$d[$k]['S'].'.
                     </p>
                     <p>
-                            A “pad” is an online text editor. Its true bonus? Real-time collaborative writing: each contribution appears immediately on each contributors’ screen, and is highlighted by a colour code.
+                            A “pad” is an online text editor. But the great advantage here is the possibility of real-time collaborative writing: your contribution appears immediately on the screen of every other contributor, highlighted by a colour code.
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
