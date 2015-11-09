@@ -691,13 +691,13 @@ $d[$k]['mBody']  = '<p>
 // Google Form
 $k= 'gforms';
 $d[$k]['sDesc']  = 'Online surveys';
-$d[$k]['lDesc']  = 'Easily create your surveys';
-$d[$k]['mTitle'] = 'Online surveys creation tool';
+$d[$k]['lDesc']  = 'An easy way to create your surveys';
+$d[$k]['mTitle'] = 'Online survey creation tool';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' allows you to create questionnaires and surveys depending on your needs, be it for school, family, an association or your job. Set up questions adapted to your context: multiple choice questions or free text fields.
+                          '.$d[$k]['F'].' allows you to design questionnaires and surveys to meet your own specific needs, be it for school, family, an association, or work. Set up questions adapted to your own specific context, with multiple choice questions or free text fields.
                     </p>
                     <p>
-                          <b class="violet">How does it work?</b> create your account on Framaforms and get started in creating questionnaires depending on your needs. No registration is required for the respondents to post their replies. You have access to a synthesis of the replies.
+                          <b class="violet">How does it work?</b> create your account on Framaforms and start writing questionnaires to meet your needs. No registration is required for respondents to post their replies. You then have access to a synopsis of the results.
                     </p >';
 
 // Google Groupes
@@ -705,7 +705,7 @@ $k= 'ggroups';
 $d[$k]['sDesc']  = 'Mailing lists';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = 'Communicate easily with groups with theres mailing lists';
+$d[$k]['mBody']  = 'Communicate easily with groups using mailing lists';
 
 // Google Maps
 $k= 'gmaps';
@@ -713,15 +713,15 @@ $d[$k]['sDesc']  = 'Cartography';
 $d[$k]['lDesc']  = 'Create you own maps online';
 $d[$k]['mTitle'] = 'Create you own maps online';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' allows you to create custom maps based on OpenStreetMap and show them on your website.
+                          '.$d[$k]['F'].' allows you to create customised maps based on OpenStreetMap and show them on your website.
                     </p>
                     <p><b class="violet">How does it works ?</b></p>
                     <ul>
                         <li>Choose the background map</li>
                         <li>Add POI: marker, lines, polygons…</li>
                         <li>Choose colors and icons</li>
-                        <li>Manage options of the map : add a littlemap, geolocalize user,…</li>
-                        <li>Import a lot of geographics data (geojson, gpx, kml, osm…)</li>
+                        <li>Manage options of the map: add a littlemap, geolocalize user,…</li>
+                        <li>Import geographics data (geojson, gpx, kml, osm…)</li>
                         <li>Choose a licence for your data</li>
                         <li>Export and share your map</li>
                     </ul>';
@@ -730,12 +730,12 @@ $d[$k]['mBody']  = '<p>
 $k= 'greader';
 $d[$k]['sDesc']  = 'Web-based feed reader';
 $d[$k]['lDesc']  = 'Choose freely which news to follow';
-$d[$k]['mTitle'] = 'Always up to date with the latest news';
+$d[$k]['mTitle'] = 'Stay up to date with the latest news';
 $d[$k]['mBody']  = '<p>
                          '.$d[$k]['F'].' provides you with an online feed reader, which keeps you up to date with the latest news syndicated from the RSS feeds of your favorite websites!
                     </p>
                     <p>
-                        <b class="violet">How does it work?</b> a Once your account is created, save your RSS feeds and follow them. Could it be simpler?
+                        <b class="violet">How does it work?</b> a Once your account is created, save your preferred RSS feeds and start following. It couldn’t be simpler.
                     </p>';
 
 // Google Search
@@ -744,21 +744,21 @@ $d[$k]['sDesc']  = 'Search engine';
 $d[$k]['lDesc']  = 'What if your online searches weren’t tracked by Google?';
 $d[$k]['mTitle'] = 'Anonymous web search';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].'  is an anonymous metasearch engine. This means that your searches are sent to several search engines and the results are displayed in your web browser. The advantage? Framabee acts as an intermediary between you and Google (or other search engines). Therefore your IP address won’t be stored by any of them. </p>
-                         <p>>It is an obvious statement that you should trust Framasoft and its tools before using Framabee, which is why we wrote this <a href="/nav/html/charte.html">charter</a>.
+                        '.$d[$k]['F'].'  is an anonymous metasearch engine. This means that your searches are sent to several search engines and the results are then displayed in your web browser. The advantage is that Framabee acts as an intermediary between you and Google (or other search engines), so your IP address won’t be stored by any of them. </p>
+                         <p>>It goes without saying that you must trust Framasoft and its tools before using Framabee. This is why we wrote this <a href="/nav/html/charte.html">charter</a>.
                     </p>';
 
 // Google Slides
 $k= 'gslides';
 $d[$k]['sDesc']  = 'Presentations';
-$d[$k]['lDesc']  = 'High quality and user-friendly slideshows';
+$d[$k]['lDesc']  = 'High quality user-friendly slideshows';
 $d[$k]['mTitle'] = 'An application for your slideshows';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' ffers you a way to easily and intuitively create your slideshows. With this application in your browser, no need to load heavy and complicated softwares.
+                         '.$d[$k]['F'].' offers you a way to create slideshows easily and intuitively. With this application in your browser, no need to load heavy and sophisticated software.
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
-                        <li>a clear and intuitive interface &mdash; easy insertion of text, images, videos and websites</li>
+                        <li>a clear and intuitive interface &mdash; easy insertion of text, images, videos, and websites</li>
                         <li>local storage of a ready-to-use HTML version</li>
                     </ul>
                     <p><b class="violet">Later,</b> if we can afford it financially:</p>
@@ -770,20 +770,20 @@ $d[$k]['mBody']  = '<p>
 // Google Spreadsheet
 $k= 'gspreadsheet';
 $d[$k]['sDesc']  = 'Participative spreadsheet';
-$d[$k]['lDesc']  = 'Share your spreadsheets and collaborate!';
+$d[$k]['lDesc']  = 'Share your spreadsheets and work together!';
 $d[$k]['mTitle'] = 'An online spreadsheet';
 $d[$k]['mBody']  = '<p>
-                         With '.$d[$k]['F'].', your data are automatically saved on the Internet. You and your colleagues can participate on the same document at the same time. You can visualize in real time every change and work together on your lists, calculus, data, statistics and far more !
+                         With '.$d[$k]['F'].', your data are automatically saved on the Internet. You and your colleagues can contribute to the same document at the same time. You can visualize every change in real time and work together on lists, calculations, data, statistics, and much, much more!
                     </p>
                     <p class="violet">Features:</p>
                     <ul>
                         <li>Collaborative edition (several users connected to the same spreadsheet)</li>
                         <li>Numerous features available (statistics, financial data, mathematics, text, etc.)</li>
                         <li>Options available to comment cells</li>
-                        <li>Automated back up</li>
+                        <li>Automated backup</li>
                         <li>Entry-level graphics (histograms, lines, dots)</li>
                         <li>HTML Export</li>
-                        <li>Size of the document: up to 100 000 lines.</li>
+                        <li>Document size: up to 100 000 lines.</li>
                     </ul>';
 
 // Img.ur
