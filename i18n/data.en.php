@@ -790,18 +790,18 @@ $d[$k]['mBody']  = '<p>
 $k= 'imgur';
 $d[$k]['sDesc']  = 'Sending pictures';
 $d[$k]['lDesc']  = 'Share your pictures anonymously';
-$d[$k]['mTitle'] = 'Easily Share your images';
+$d[$k]['mTitle'] = 'An easy way to share your images';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' enables you to share easily images for exampl on Twitter, Facebook or … on Framasphère !
+                         '.$d[$k]['F'].' provides a simple way to share images, e.g., on Twitter, Facebook or … on Framasphère!
                     </p>
-                    <p>Be careful: this service is no equivalent of flickr or instagram: it is no hosting of users pictures, but the hosting of anonymous pictures (no one including us has access to the cyphered content).</p>
+                    <p> Note that this service differs significantly from flickr or instagram: it is not a hosting service for users’ pictures. Rather it hosts anonymous pictures and no one, including ourselves, has access to the cyphered content.</p>
                     <p>
-                         '.$d[$k]['F'].' enables to send pictures anonymously. You can choose at any time to supress them ( from the first visualization, 24 hours/7days/30 days/1 year after putting them on line).
+                         '.$d[$k]['F'].' enables the user to send pictures anonymously. You can choose to suppress them at any time (from the first viewing, 24 hours/7days/30 days/1 year after putting them on line).
                     </p>';
 
 // Meetup
 $k= 'meetup';
-$d[$k]['sDesc']  = 'Événements communautaires';
+$d[$k]['sDesc']  = 'Community events';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
@@ -812,34 +812,34 @@ $d[$k]['sDesc']  = 'Anonymous notes';
 $d[$k]['lDesc']  = 'Write and share confidentially';
 $d[$k]['mTitle'] = 'Communicate cyphered data';
 $d[$k]['mBody']  = '<p>
-                        With '.$d[$k]['F'].' you can share information which only you and your correspondent can decypher and furthermore very easily. You can even choose the duration of the access.
+                        '.$d[$k]['F'].' provides a simple way to share cyphered information exclusively with your correspondent. You can even choose the duration of access.
                     </p>
                     <p>
-                          <b class="violet">What it can be used for ?</b> You may need to communicate confidentially one or several pieces of information without sending a classical e-mail or piece of paper. Framabin enables you to send an adress and give a secured and simple access it. The server stores the cyphered data, which are unreadable.
+                          <b class="violet">What can it be used for?</b> You may need to communicate one or more pieces of confidential information without sending a standard e-mail or paper. Framabin enables you to send an address with simple but secure access. The server stores the cyphered data, which remains unreadable.
                     </p >';
 
 // Pocket
 $k= 'pocket';
 $d[$k]['sDesc']  = 'Content back-up';
-$d[$k]['lDesc']  = 'Save it and read it later on';
-$d[$k]['mTitle'] = 'Save it and read it later on';
+$d[$k]['lDesc']  = 'Save it and read it later';
+$d[$k]['mTitle'] = 'Save it and read it later';
 $d[$k]['mBody']  = '<p>
-                         With '.$d[$k]['F'].', you don’t loose the Internet contents you are interested in even if you do not have time to read it at once. With one click, you save your selection and you can read it whenever you want to. The application saves your selection and enables you enjoy reading it when you have more time.
+                         With '.$d[$k]['F'].', you won’t lose Internet contents that interest you, even if you don’t have time to read them right away. With one click, you save your selection and you can read it whenever you want. The application saves your selection so that you can enjoy reading it when you have more time.
                     </p>
                     <p>
-                          Framabag is a <b class="violet">back-up service of web pages</b>. You store on the server the contents you are interested in including texts and images. You can also share your articles and use extensions for Firefox, Chrome, Android…
+                          Framabag is a <b class="violet">back-up service for web pages</b>. You store the relevant contents on the server, including texts and images. You can also share your articles and use extensions for Firefox, Chrome, Android, etc.
                     </p>';
 
 // Shrtct
 $k= 'loomio';
-$d[$k]['sDesc']  = 'Decision making tool';
+$d[$k]['sDesc']  = 'Decision-making tool';
 $d[$k]['lDesc']  = 'The easiest way to make community decisions';
 $d[$k]['mTitle'] = 'Decide together,';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' helps you to make decisions together. Start a discussion, share ideas, decide together. Every decision have a clear deadline, so you can decide on time.
+                          '.$d[$k]['F'].' helps you to make group-based decisions. Start a discussion, share ideas, come to an agreement. Every decision has a clear deadline, so you can be sure to decide on time.
                     </p>
                     <p>
-                          <b class="violet">How does it works ? </b> Start a discussion, offers people to share their opinion. Develops the proposal together so that works for everybody. The decision is taken together, with all the opinions. Anyone can propose actions. People can agree, abstain, disagree or block. You can see how everything feels, and why.
+                          <b class="violet">How does it work? </b> Start a discussion, invite members to share their opinion, then develop a joint proposal that works for everybody. The decision is made as a group, taking all opinions into account. Anyone can propose actions. People can agree, abstain, disagree, or block. You can see how everyone feels, and why.
                     </p >';
 
 // Skype
@@ -848,10 +848,10 @@ $d[$k]['sDesc']  = 'Visioconference';
 $d[$k]['lDesc']  = 'Chat freely with your friends';
 $d[$k]['mTitle'] = 'Videoconference';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' allows you to merely chat with your friends, without any complexe software setup. You discuss freely without any data analysis of your conversation. Everything stays between you and your friends.
+                          '.$d[$k]['F'].' allows you to chat with your friends in the simplest possible way, without the need to set up any sophisticated software. Discussion is completely free: no data analysis will be carried out on your conversation. Everything stays between you and your friends.
                     </p>
                     <p>
-                          <b class="violet">How does it works:</b> Directly from your web browser, your are put through to your friends, without setting up any extra-software. Once connected, enable your web browser to use your microphone and your webcam  and enjoy chatting in a simple fashion.
+                          <b class="violet">How does it work? </b> You are connected to your friends directly from your web browser, without the need to set up any extra software. Once connected, enable your web browser to use your microphone and your webcam and simply get talking.
                     </p>';
 
 // Trello
