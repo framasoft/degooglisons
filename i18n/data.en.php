@@ -860,27 +860,27 @@ $d[$k]['sDesc']  = 'Gestion de projets';
 $d[$k]['lDesc']  = 'Project management';
 $d[$k]['mTitle'] = 'Project management';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' is a visual task manager. It enables to handle projects collaboratively  according to the Kanban method. Its design allows to identify at the first sight the tasks, whatever your habits may be of using task managing tools.
+                          '.$d[$k]['F'].' is a visual task manager that handles your projects collaboratively according to the Kanban method. It is designed so that you will know at a glance how to get started, whatever task management tools you generally use.
                     </p>
                     <p>
-                          <b class="violet">How does it work?</b>Launch your new project and identify the tasks or Work  Breakdown Structure (WBS) and start managing each task collectively one by one. assign a ressource for each task and define functions, progress and deadlines. This visual management tool enables you to see at a glance your project state of progress.
+                          <b class="violet">How does it work?</b>Launch your new project, identify the tasks or Work Breakdown Structure (WBS), and start managing each task collectively one by one. Assign a resource for each task and define functions, progress, and deadlines. This visual management tool enables you to see at a glance where you are in your project.
                     </p >';
 
 // Twitter
 $k= 'twitter';
 $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Express yourself on the Internet';
-$d[$k]['mTitle'] = 'The free microblogging';
+$d[$k]['mTitle'] = 'Free microblogging';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' allows you to follow feeds and have your onw feed, with a decentralized solution using P2P protocol.
+                          '.$d[$k]['F'].' allows you to follow feeds and have your own feed, with a decentralized solution using P2P protocol.
                     </p>
                     <p>
-                         <b class="violet">How does it works ?</b> use a client , open an account, subscribe to some feeds and tweet.
+                         <b class="violet">How does it work?</b> Choose a client, open an account, then subscribe to various feeds and tweet.
                     </p >';
 
 // WeTransfer
 $k= 'wetransfer';
-$d[$k]['sDesc']  = 'Sending large files';
+$d[$k]['sDesc']  = 'Send large files';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
@@ -889,12 +889,12 @@ $d[$k]['mBody']  = '';
 $k= 'youtube';
 $d[$k]['sDesc']  = 'Video Hosting';
 $d[$k]['lDesc']  = 'Share your videos, keep your rights';
-$d[$k]['mTitle'] = 'Free your videos';
+$d[$k]['mTitle'] = 'Release your videos';
 $d[$k]['mBody']  = '<p>
-                         On '.$d[$k]['F'].', you can upload your videos, share them with your friends or open access for all the people. It’s the better way to share video without transfer your rights.
+                         On '.$d[$k]['F'].', you can upload your videos, share them with your friends, or provide open access. This is certainly the best way to share your videos without transferring your rights.
                     </p>
                     <p>
-                         <b class="violet">How does it works ? </b> open an account and upload your videos. You keep your rights and your freedom to change your uploads.
+                         <b class="violet">How does it work? </b> Open an account and upload your videos. You keep your rights and your freedom to change uploads.
                     </p >';
 
 /********************
@@ -911,13 +911,13 @@ $d[$k]['mBody']  = '';
 $k= 'kongregate';
 $d[$k]['sDesc']  = 'Games';
 $d[$k]['lDesc']  = 'A compilation of free games';
-$d[$k]['mTitle'] = 'Have a break, play a few moments';
+$d[$k]['mTitle'] = 'Have a break and play a while';
 $d[$k]['mBody']  = '<p>
-                         '.$d[$k]['F'].' offers you a compilation of free games, available for both online and offline use. Have a break and enjoy one of theses games !
-                        <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">Unlike Angry Birds</a>, NSA will not spy on you ;) )</small>
+                         '.$d[$k]['F'].' offers you a compilation of free games, available for both online and offline use. Have a break and check them out!
+                        <small>(and <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">in contrast to Angry Birds</a>, the NSA won’t be able to spy on you ;) )</small>
                     </p>
                     <p>
-                        <b class="violet">How does it works ? </b> Each game is directly usable on the website, or downloadable for an offline use. Choose your game, and enjoy.
+                        <b class="violet">How does it work? </b> Each game can be used directly on the website or downloaded for offline use. Choose your game and start playing.
                     </p>';
 $d[$k]['mFooter']= '<p class="precisions">Framagames is a compilation of free games. All credits are available on the website.</p>';
 
@@ -931,18 +931,18 @@ $d[$k]['mBody']  = '';
 // Pixlr
 $k= 'pixlr';
 $d[$k]['sDesc']  = 'Vectorial Drawing';
-$d[$k]['lDesc']  = 'Create quickly vector graphics on open standard SVG';
-$d[$k]['mTitle'] = 'Create quickly vector graphics on open standard SVG';
+$d[$k]['lDesc']  = 'Create vector graphics quickly on open standard SVG';
+$d[$k]['mTitle'] = 'Create vector graphics quickly on open standard SVG';
 $d[$k]['mBody']  = '<p>
-                           '.$d[$k]['F'].', is a very simple drawing software (who said simplistic ?).
+                           '.$d[$k]['F'].' is a very simple (even simplistic) drawing software.
                     </p>
-                    <p><b class="violet">How does it works? </b></p>
+                    <p><b class="violet">How does it work? </b></p>
                     <ul>
                         <li>Available online, without any installation</li>
                         <li>No registration required</li>
                         <li>Export your documents to bitmap or vector format</li>
-                        <li>Free software, open to everyone</li>
-                          <li>Ethics : no storage of your data</li>
+                        <li>Free software, open to all</li>
+                          <li>Ethics: none of your data gets stored</li>
                     </ul>
                     <div style="text-align:center">
                     <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
@@ -974,7 +974,7 @@ $k = 'up-padlite'; $ko = 'gdocs';    // prefixe "up-" obligatoire ; $ko est l'id
 $d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copier/Coller
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'];
-$d[$k]['name']   = 'Remplacing Etherpad by the “lite” version for public pads';
+$d[$k]['name']   = 'Replacing Etherpad by the “lite” version for public pads';
 
 // Wisemapping
 $k = 'up-framindmap2'; $ko = 'bubblus';
@@ -982,7 +982,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-           <b class="violet">Update:</b> sotfware propulsing Framindmap is now Wisemapping (instead of Mindmaps). This software is more thorough, allows bind documents at the nodes or save your work to easily find them and share them on the internet.
+           <b class="violet">Update:</b> the sotfware underlying Framindmap is now Wisemapping rather than Mindmaps. This software is more complete, allowing you to bind documents at the nodes or save your work in such a way that it can easily be found and shared on the internet.
     </p>';
 $d[$k]['name']   = 'Mindmaps replaced by Wisemapping';
 
@@ -992,7 +992,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-           <b class="violet">Update:</b> the update of Framadate is a graphical overhaul and technical evolution. The interface is more clear, more ergonomic. It’s now possible to answer “maybe” to a choice in the survey..
+           <b class="violet">Update:</b> this update of Framadate involves a graphic and technical overhaul of the service. The interface is clearer and more ergonomic. It’s now possible to answer a survey option by “maybe”.
     </p>';
 $d[$k]['name']   = 'Development axis: ergonomy and accessibility';
 
@@ -1002,7 +1002,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-          <b class="violet">Update:</b> This update is important. You can now have dedicated instances (for science or education, for exemple). Moreover, you can now manage private pads (by groups or passwords).
+          <b class="violet">Update:</b> This update is important. You can now have dedicated instances (for science or education, for example). Moreover, you can now manage private pads (by groups or passwords).
           </p>';
 $d[$k]['name']    = 'Development and integration of Mypads plugin';
 
