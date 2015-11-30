@@ -161,7 +161,7 @@ $t['home']['dang']['erefs'] = '
                     </ul>';
 $t['home']['dang']['p']     = 'Vie privée';
 $t['home']['dang']['pp']    = 'Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre orientation politique
-                    ou sexuelle, les sites que nous avons visités, notre recette préférée, les sujets qui nous intéressent, etc.<br/>
+                    ou sexuelle, les sites que nous avons visité, notre recette préférée, les sujets qui nous intéressent, etc.<br/>
                     Si une donnée seule, prise indépendamment, n’est pas forcément sensible, un ensemble de données peut le devenir
                     (par exemple si vous avez fait des recherches sur le cancer avant de souscrire à une assurance-vie).<br/>
                     Dans un monde où tout devient numérique (lecture, TV, téléphonie, musique, réseau social, etc.), <strong>notre vie privée
