@@ -620,12 +620,12 @@ $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
                     </p>
                        <p><video controls="controls" preload="none"
-                        width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
-                        <source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
-                        <source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
+                        width="420" height="248" poster="https://framatube.org/images/media/866l.jpg">
+                        <source src="https://framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
+                        <source src="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
                           </video>
                        </p>
-                       <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
+                       <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
 
                     <p>
                         <b class="violet">Pourquoi utiliser Framindmap ?</b> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
@@ -1008,12 +1008,12 @@ $d[$k]['mBody']  = '<p>
                         <li>Ethique : aucune conservation de vos données</li>
                     </ul>
                     <div style="text-align:center">
-                    <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
-                        <source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
-                        <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
+                    <video controls="controls" preload="none" width="620" height="360" poster="https://framatube.org/images/media/864l.jpg">
+                        <source src="https://framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
+                        <source src="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
                     </video>
                     </div>
-                    <p> La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>';
+                    <p> La <a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>';
 
 // Scribd
 $k= 'scribd';

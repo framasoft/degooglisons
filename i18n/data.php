@@ -417,14 +417,14 @@ $d[$k]['FDate']  = '<a href="http://framablog.org/2015/10/09/framadrop-emailez-d
 
 // Youtube
 $k= 'youtube';
-$d[$k]['FL']     = 'http://framatube.org';
+$d[$k]['FL']     = 'https://framatube.org';
 $d[$k]['CL']     = '';
-$d[$k]['S']      = '<a href="http://mediagoblin.org/">Mediagoblin</a>';
+$d[$k]['S']      = '<a href="http://mediadrop.net/">Mediadrop</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">tube</b></a>';
 $d[$k]['name']   = $e['google']['fa'].'Youtube';
 $d[$k]['eq']     = 'Vimeo, Dailymotion';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
 $d[$k]['pos']    = '665,590,40';
 $d[$k]['FDate']  = '2016';
 
