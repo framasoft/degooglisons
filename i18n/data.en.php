@@ -495,7 +495,7 @@ $d['tip2014'] = [
                 <p>We remind you that Framasoft is a non-profit organisation and largely self-financed, thanks to the generosity of its donors. To appreciate the scale of our needs: our goal for 2014 —€35,000 and 550 regular donors— represents the approximate cost of 8 meters of motorway, or 0.000083% of Google’s annual revenue.</p>'
 ];
 for ($i=2014; $i<2018; $i++) {
-    $d  ['tip'.$i]['F Date']   = $i;
+    $d['tip'.$i]['FDate']  = $i;
     $d['tip'.$i]['sDesc']   = 'Goals';
     $d['tip'.$i]['lDesc']   = 'You can help us meet these goals';
     $d['tip'.$i]['mTitle']  = 'Our goals for '.$i;
