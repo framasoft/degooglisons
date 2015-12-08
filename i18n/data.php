@@ -48,7 +48,7 @@ $d[$k]['eq']     = 'Change.org';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
 $d[$k]['pos']    = '205,625,40';
-$d[$k]['FDate']  = '2015';
+$d[$k]['FDate']  = '2016';
 
 // Bit.ly
 $k= 'bitly';
@@ -81,7 +81,7 @@ $k= 'bubblus';
 $d[$k]['FL']     = 'http://framindmap.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/';
 $d[$k]['S']      = '<a href="http://wisemapping.com">Wisemapping</a>';
-$d[$k]['F']      = '<a href="http://framindmap.org"><b class="violet">Fram</b><b class="vert">indmap</b></a>';
+$d[$k]['F']      = '<a href="http://framindmap.org"><b class="violet">Fra</b><b class="vert">mindmap</b></a>';
 $d[$k]['name']   = 'Bubbl.us';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = $d[$k]['S'].', <a href="https://www.mindmup.com">Mindmup</a>';
@@ -215,8 +215,8 @@ $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">forms</b>';
 $d[$k]['FDate']  = '2017';
 $d[$k]['name']   = $e['google']['fa'].'Google Forms';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://github.com/spiral-project/daybed">DayBed</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
+$d[$k]['altOn']  = '<a href="https://www.limeservice.com/en/">LimeService</a>';
+$d[$k]['altOff'] = '<a href="https://github.com/spiral-project/daybed">DayBed</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>, <a href="https://www.limesurvey.org/en/">LimeSurvey</a>';
 $d[$k]['pos']    = '265,635,40';
 $d[$k]['FDate']  = '2017';
 
@@ -235,16 +235,16 @@ $d[$k]['FDate']  = '2017';
 
 // Google Maps
 $k= 'gmaps';
-$d[$k]['FL']     = '';
+$d[$k]['FL']     = 'https://framacarte.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="https://bitbucket.org/yohanboniface/umap">uMap</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">carte</b>';
+$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">carte</b></a>';
 $d[$k]['name']   = 'Google Maps';
 $d[$k]['eq']     = 'Bing Maps, ViaMichelin, Mappy';
 $d[$k]['altOn']  = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>'.$d[$k]['S'];
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '620,420,40';
-$d[$k]['FDate']  = '2016';
+$d[$k]['FDate']  = '2015';
 
 // Google Reader
 $k= 'greader';
@@ -374,7 +374,7 @@ $d[$k]['eq']     = $e['google']['fa'].'Hangouts';
 $d[$k]['altOn']  = $d[$k]['S'].', <a href="http://hibuddy.monkeypatch.me/">Hi Buddy</a> (WebRTC)';
 $d[$k]['altOff'] = '<a href="https://jitsi.org/">Jitsi</a>';
 $d[$k]['pos']    = '330,675,40';
-$d[$k]['FDate']  = '2015';
+$d[$k]['FDate']  = '2016';
 
 // Trello
 $k= 'trello';
