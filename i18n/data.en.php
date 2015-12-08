@@ -576,12 +576,12 @@ $d[$k]['mBody']  = '<p>
                    '.$d[$k]['F'].' allows you to organize a brainstorming session, to sort out and order your ideas, alone or with others, to teach or learn a lesson, to carry out classifications, to identify key elements, etc.
                     </p>
                     <p><video controls="controls" preload="none"
-                      width="420" height="248" poster="http://www.framatube.org/images/media/866l.jpg">
-                      <source src="http://www.framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
-                      <source src="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
+                      width="420" height="248" poster="https://framatube.org/images/media/866l.jpg">
+                      <source src="https://framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
+                      <source src="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
                       </video>
                    </p>
-                   <p><small><em>Tutorial made by Claire Cassaigne</em> - The <a href="http://www.framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">video</a>  is available in WebM format.</small></p>
+                   <p><small><em>Tutorial made by Claire Cassaigne</em> - The <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">video</a>  is available in WebM format.</small></p>
                     <p>
                          <b class="violet">Why would you use Framindmap?</b> This service is available online. No installation nor registration is required. You can choose your file format for export and save the map as an image. It is a free and open source software. The data are yours.
                     </p>';
@@ -945,12 +945,12 @@ $d[$k]['mBody']  = '<p>
                           <li>Ethics: none of your data gets stored</li>
                     </ul>
                     <div style="text-align:center">
-                    <video controls="controls" preload="none" width="620" height="360" poster="http://www.framatube.org/images/media/864l.jpg">
-                        < source src="http://www.framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
-                         <source src="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
+                    <video controls="controls" preload="none" width="620" height="360" poster="https://framatube.org/images/media/864l.jpg">
+                        < source src="https://framatube.org/files/1227-introduction-a-svg-editjpg.mp4" type="video/mp4"></source>
+                         <source src="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
                     </video>
                     </div>
-                    <p>  La <a href="http://www.framatube.org/files/1228-introduction-a-svg-editjpg.webm">video</a> in  webm format</p>';
+                    <p>  La <a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">video</a> in  webm format</p>';
 
 // Scribd
 $k= 'scribd';

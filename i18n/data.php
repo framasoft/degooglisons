@@ -417,7 +417,7 @@ $d[$k]['FDate']  = '<a href="http://framablog.org/2015/10/09/framadrop-emailez-d
 
 // Youtube
 $k= 'youtube';
-$d[$k]['FL']     = 'http://framatube.org';
+$d[$k]['FL']     = 'https://framatube.org';
 $d[$k]['CL']     = '';
 $d[$k]['S']      = '<a href="http://mediagoblin.org/">Mediagoblin</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">tube</b></a>';
