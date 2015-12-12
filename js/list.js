@@ -29,7 +29,7 @@ $(document).ready(function() {
             $(this).parent('.tip-content').addClass('hide-back');
         }
     });
-    
+
     // Sticky
     $('body').attr({
         'data-spy': 'scroll',
@@ -43,5 +43,11 @@ $(window).scroll(function() {
         $("#sticky").css('position','fixed');
     } else {
         $("#sticky").css('position','relative');
+    };
+    var $affix = $("#affix");
+    if($(window).scrollTop() > 500) {
+        $("#affix").css('position','fixed');
+    } else {
+        $("#affix").css('position','relative');
     };
 });

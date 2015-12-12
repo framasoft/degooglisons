@@ -321,6 +321,9 @@ $t['list']['css']        = '
 $t['list']['js']         = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+$t['list']['alt1']        = 'Vous utilisez';
+$t['list']['alt2']       = ' recommande';
+$t['list']['alt3']       = 'repose sur ';
 
 // Espace médias
 $t['medias']['title']    = 'Espace médias';
@@ -1073,5 +1076,19 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
         <b class="violet">Mise à jour</b> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d’instances dédiées (par exemple à l’éducation ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
     </p>';
 $d[$k]['name']    = 'Développement et intégration du plugin Mypads';
+
+/**************
+ * Categories *
+ **************/
+$c['web']['name']     = 'Web';
+$c['office']['name']  = 'Bureautique';
+$c['social']['name']  = 'Réseaux sociaux <br/>& communication';
+$c['files']['name']   = 'Stockage et partage de fichiers';
+$c['media']['name']   = 'Médias & culture';
+$c['geo']['name']     = 'Géo';
+$c['hobbies']['name'] = 'Loisirs';
+$c['site']['name']    = 'Sites web';
+$c['dev']['name']     = 'Développement';
+$c['home']['name']    = 'Chez soi';
 
 ?>
