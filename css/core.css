@@ -13,7 +13,7 @@ body > .row {
 }
 #internav li a {
     color: #666;
-    padding: 15px;
+    padding: 12px 15px;
     text-decoration: none;
 }
 #internav li a:hover,
@@ -24,7 +24,7 @@ body > .row {
 }
 
 #internav form div {
-    margin-top: -10px;
+    margin-top: -14px;
     margin-left: 25px
 }
 
@@ -126,5 +126,59 @@ main {
 }
 
 #screenshots .col-sm-4 {
-	height: 350px;
+    height: 350px;
+}
+
+.panel-default > .panel-heading {
+    background : #E3EBC7;
+}
+
+.panel {
+    border: 1px solid #C0D481;
+    margin-bottom:20px !important;
+}
+
+.panel td {
+    width:33%;
+}
+
+.panel td:first-child,
+.panel th:first-child {
+    border-right:1px solid #ccc !important;
+}
+
+
+.panel-title i {
+    float:left;
+}
+.panel-heading a,
+.panel-heading a:link,
+.panel-heading a:hover {
+    text-decoration:none !important;
+}
+.panel-title {
+    font-size:20px;
+}
+
+table .list-group-item img {
+    width:24px;
+    height:24px;
+}
+
+.table-hover > tbody > tr:hover td {
+    border-color: #C0D481;
+    background-color: #E3EBC7;
+}
+.table-hover > tbody > tr:hover td:first-child {
+    border-color: #E0B3A8;
+    background-color: #FDE0DC;
+}
+
+#affix a,
+#affix a:link {
+    text-decoration:none;
+}
+
+#affix[style*="fixed"] {
+    top:20px;
 }

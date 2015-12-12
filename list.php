@@ -148,7 +148,7 @@ foreach ($d as $k => $v) {
     if($year[0]=='2011' || $year[0]=='2012' || $year[0]=='2013') {
         $timeline['2011-2013'] .= $tip;
     } else {
-        $timeline[$year[0]] .= $tip;
+        if($year[0]!='') { $timeline[$year[0]] .= $tip; }
     }
 };
 
