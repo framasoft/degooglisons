@@ -16,6 +16,8 @@ foreach ($d as $k => $v) {
         array_unshift($gafam, strip_tags($v['name']));
 
         $gafam_html = '
+            <a class="anchor" id="'.$k.'" rel="nofollow"></a>
+            <h3 class="h5"><a href="#'.$k.'" rel="nofollow">'.$v['sDesc'].'</a></h3>
             <ul class="list-group">';
 
         foreach($gafam as $w) {
@@ -41,10 +43,10 @@ foreach ($d as $k => $v) {
         if (strlen($v['FDate'])==4) {
             $frama .= str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).' (<a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a>)</li>';
         } else {
-            $frama .= $v['F'].'</li>';
+            $frama .= $v['F'].'<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i></li>';
         }
         if ($v['S'] != '') {
-            $frama .= '<li class="list-group-item">'.$t['list']['alt3'].$v['S'].'</li>';
+            $frama .= '<li class="list-group-item">'.$t['list']['alt3'].$v['S'].'<i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i></li>';
         }
 
         $frama .= '
@@ -58,9 +60,9 @@ foreach ($d as $k => $v) {
             </ul>';
         $others = str_replace('<li class="list-group-item online"></li>', '', $others);
         $others = str_replace('<li class="list-group-item offline"></li>', '', $others);
-        $others = str_replace(' online">',' online"><i class="fa fa-fw fa-lg fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>
+        $others = str_replace(' online">',' online"><i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>
 ', $others);
-        $others = str_replace(' offline">',' offline"><i class="fa fa-fw fa-lg fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i>', $others);
+        $others = str_replace(' offline">',' offline"><i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i>', $others);
 
         $tip = '
                         <tr>
@@ -69,7 +71,16 @@ foreach ($d as $k => $v) {
                             <td>'.$others.'</td>
                         </tr>';
     }
-    $c[$v['cat']]['html'] .= $tip;
+    if($v['cat']== 'home') {
+            $c[$v['cat']]['html'] .= str_replace('fa-server', 'fa-home',
+                                     str_replace('fa-cloud', 'fa-home',
+                                     str_replace('title="'.$t['_Alternative(s) online: '].'"', 'title="'.$c['home']['name'].'"',
+                                     str_replace('title="'.$t['_Alternative(s) offline: '].'"', 'title="'.$c['home']['name'].'"',
+                                        $tip
+                                     ))));
+    } else {
+        $c[$v['cat']]['html'] .= $tip;
+    }
 };
 
 $tablist = '';
@@ -79,8 +90,9 @@ foreach($c as $k => $v) {
 
     if ( $k != '') {
     $tips .= '
+        <a class="anchor" id="'.$k.'" rel="nofollow"></a>
         <div class="panel panel-default">
-            <div class="panel-heading" id="h-'.$k.'">
+            <div class="panel-heading">
                     <h2 class="panel-title text-center">
                         '.$v['fa'].'&nbsp;'.$v['name'].'
                     </h2>
@@ -98,7 +110,7 @@ foreach($c as $k => $v) {
             </table>
         </div>
     ';
-    $tablist .= '<li class="list-group-item"><a href="#h-'.$k.'">'.$v['fa'].'&nbsp;'.$v['name'].'</a></li>';
+    $tablist .= '<li><a href="#'.$k.'" title="'.$v['name'].'" data-toggle="tooltip" data-placement="bottom">'.$v['fa'].'&nbsp;<span>'.$v['name'].'</span></a></li>';
 
     }
 }
@@ -106,18 +118,37 @@ foreach($c as $k => $v) {
 include('header.php');
 
 ?>
-        <div class="row">
+        <div class="row" id="alt-intro">
             <div class="container ombre">
-                <div class="panel-group col-md-9">
-                    <?php echo $tips; ?>
-                </div>
-                <div class="col-md-3">
-                    <nav id="affix" class="navbar navbar-default nav-year" role="navigation">
-                        <ul class="list-group" role="tablist">
-                            <?php echo $tablist; ?>
-                        </ul>
+                <p><?php echo $t['list']['altp1']; ?></p>
+
+                <p><?php echo $t['list']['altp2']; ?></p>
+
+                <p><?php echo $t['list']['altp3']; ?></p>
+
+                <p class="text-center" id="network"><a href="#home"><i class="fa fa-fw fa-home"></i></a> → <i class="fa fa-fw fa-cloud"></i> → <i class="fa fa-fw fa-server"></i></p>
+
+                <p><?php echo $t['list']['altp4']; ?></p>
+            </div>
+        </div>
+
+        <div id="tips" class="row">
+            <div class="container ombre">
+                <div id="sticky" class="container hidden-xs cats">
+                    <nav class="navbar navbar-default nav-cats" role="navigation">
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav nav-tabs" role="tablist">
+                                <?php echo $tablist; ?>
+                            </ul>
+                        </div>
+
                     </nav>
                 </div>
+
+                <div class="panel-group">
+                    <?php echo $tips; ?>
+                </div>
+
 <?php
 include('footer.php')
 ?>

@@ -31,16 +31,16 @@ $e = [
  * Categories *
  **************/
 $c = [
-    'web'       => ['name' => 'Web',                    'fa' => '<i class="fa fa-fw fa-globe"></i>'],
-    'office'    => ['name' => 'Office',                 'fa' => '<i class="fa fa-fw fa-area-chart"></i>'],
-    'social'    => ['name' => 'Social & communication', 'fa' => '<i class="fa fa-fw fa-group"></i>'],
-    'files'     => ['name' => 'File hosting & sharing', 'fa' => '<i class="fa fa-fw fa-upload"></i>'],
-    'media'     => ['name' => 'Media & culture',        'fa' => '<i class="fa fa-fw fa-music"></i>'],
-    'geo'       => ['name' => 'Geo',                    'fa' => '<i class="fa fa-fw fa-compass"></i>'],
-    'hobbies'   => ['name' => 'Hobbies',                'fa' => '<i class="fa fa-fw fa-bicycle"></i>'],
-    'site'      => ['name' => 'Website',                'fa' => '<i class="fa fa-fw fa-html5"></i>'],
-    'dev'       => ['name' => 'Developement',           'fa' => '<i class="fa fa-fw fa-code-fork"></i>'],
-    'home'      => ['name' => 'At home',                'fa' => '<i class="fa fa-fw fa-home"></i>']
+    'home'      => ['name' => '', 'fa' => '<i class="fa fa-fw fa-home"></i>'],
+    'web'       => ['name' => '', 'fa' => '<i class="fa fa-fw fa-globe"></i>'],
+    'office'    => ['name' => '', 'fa' => '<i class="fa fa-fw fa-area-chart"></i>'],
+    'social'    => ['name' => '', 'fa' => '<i class="fa fa-fw fa-group"></i>'],
+    'files'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-upload"></i>'],
+    'media'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-music"></i>'],
+    'geo'       => ['name' => '', 'fa' => '<i class="fa fa-fw fa-compass"></i>'],
+    'hobbies'   => ['name' => '', 'fa' => '<i class="fa fa-fw fa-bicycle"></i>'],
+    'site'      => ['name' => '', 'fa' => '<i class="fa fa-fw fa-html5"></i>'],
+    'dev'       => ['name' => '', 'fa' => '<i class="fa fa-fw fa-code-fork"></i>']
 ];
 
 // Preset Objectifs (must be in first in list.php)
@@ -112,12 +112,12 @@ $d[$k]['cat']    = 'office';
 $k= 'doodle';
 $d[$k]['FL']     = 'https://framadate.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-framadate/';
-$d[$k]['S']      = 'Studs';
+$d[$k]['S']      = '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>';
 $d[$k]['F']      = '<a href="http://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a>';
 $d[$k]['name']   = 'Doodle';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>, <a href="http://www.peacefrogs.net/papillon">Papillon</a>, <a href="http://kyela.net/">Kyélà</a>, <a href="https://dudle.inf.tu-dresden.de/">Dudle</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.peacefrogs.net/papillon">Papillon</a>, <a href="http://kyela.net/">Kyélà</a>, <a href="https://dudle.inf.tu-dresden.de/">Dudle</a>';
 $d[$k]['pos']    = '435,210,40';
 $d[$k]['FDate']  = '<a href="http://www.framablog.org/index.php/post/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">2011</a>';
 $d[$k]['cat']    = 'social';
@@ -145,7 +145,7 @@ $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">notes</b>';
 $d[$k]['name']   = 'Evernote';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'];
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.tagspaces.org/">Tagspaces</a>';
 $d[$k]['pos']    = '585,630,40';
 $d[$k]['FDate']  = '2017';
 $d[$k]['cat']    = 'office';
@@ -173,7 +173,7 @@ $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b cla
 $d[$k]['name']   = $e['github']['fa'].'GitHub';
 $d[$k]['eq']     = $e['google']['fa'].'Google Code, SourceForge';
 $d[$k]['altOn']  = $d[$k]['S'].', <a href="http://savannah.gnu.org/">Savannah</a>, <a href="http://gna.org/">Gna!</a>, <a href="http://tuxfamily.org/">TuxFamilly</a>, l’<a href="https://adullact.net/">Adullact</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://kallithea-scm.org/">Kallithea</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://kallithea-scm.org/">Kallithea</a>, <a href="http://gitlist.org/">Gitlist</a>';
 $d[$k]['pos']    = '530,400,40';
 $d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">2015</a>';
 $d[$k]['cat']    = 'dev';
@@ -186,8 +186,8 @@ $d[$k]['S']      = '<a href="https://www.caliopen.org/">Caliopen</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">mail</b>';
 $d[$k]['name']   = $e['google']['fa'].'GMail';
 $d[$k]['eq']     = $e['microsoft']['fa'].'Outlook, Yahoo Mail, Orange';
-$d[$k]['altOn']  = '<a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>,… ';
-$d[$k]['altOff'] = '<a href="https://blue-mind.net">Blue-mind</a>, <a href="https://kolab.org/">Kolab</a>';
+$d[$k]['altOn']  = '<a href="https://www.protonmail.com/">ProntonMail</a>, <a href="https://mixmail.fr/">Mixmail</a>, <a href="https://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>';
+$d[$k]['altOff'] = '<a href="https://blue-mind.net">Blue-mind</a>, <a href="https://kolab.org/">Kolab</a>, <a href="https://roundcube.net/">Roundcube</a>, <a href="http://www.rainloop.net/">Rainloop</a>';
 $d[$k]['pos']    = '650,760,40';
 $d[$k]['FDate']  = '2017';
 $d[$k]['cat']    = 'social';
@@ -258,9 +258,9 @@ $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">listes</b>';
 $d[$k]['name']   = $e['google']['fa'].'Google Groupes';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="http://riseup.net/">Riseup</a>, <a href="https://www.ouvaton.org/">Ouvaton</a>, <a href="https://www.sud-ouest.org/">Sud-Ouest</a>, <a href="https://www.fdn.fr/Listes-de-diffusion.html">FDN</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.gnu.org/software/mailman/">mailman</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.gnu.org/software/mailman/">Mailman</a>';
 $d[$k]['pos']    = '405,693,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2016';
 $d[$k]['cat']    = 'social';
 
 // Google Maps
@@ -271,7 +271,7 @@ $d[$k]['S']      = '<a href="https://bitbucket.org/yohanboniface/umap">uMap</a>'
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">carte</b></a>';
 $d[$k]['name']   = 'Google Maps';
 $d[$k]['eq']     = 'Bing Maps, ViaMichelin, Mappy';
-$d[$k]['altOn']  = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>, '.$d[$k]['S'];
+$d[$k]['altOn']  = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="https://umap.openstreetmap.org">uMap</a>';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '620,420,40';
 $d[$k]['FDate']  = '2015';
@@ -342,7 +342,7 @@ $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b cla
 $d[$k]['name']   = 'Img.ur';
 $d[$k]['eq']     = $e['facebook']['fa'].'Instagram';
 $d[$k]['altOn']  = '<a href="http://pix.toile-libre.org/">Toile libre</a>, <a href="https://lut.im">Lut.im</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://coquelicot.potager.org/">Coquelicot</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.mad5.de/ownstagram/">ownStagram</a>, <a href="https://coquelicot.potager.org/">Coquelicot</a>';
 $d[$k]['pos']    = '665,197,40';
 $d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>';
 $d[$k]['cat']    = 'files';
@@ -370,7 +370,7 @@ $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b cla
 $d[$k]['name']   = 'Pastebin';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'];
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://0bin.net/">0bin</a>';
 $d[$k]['pos']    = '650,270,40';
 $d[$k]['FDate']  = '<a href="http://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">2015</a>';
 $d[$k]['cat']    = 'files';
@@ -442,7 +442,7 @@ $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="https://quitter.se/">Quitter</a>, <a href="https://babytwit.fr/">Babytwit</a>, <a href="https://pump.io">Pump.io</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="https://gnu.io/social/">GNUSocial</a>';
 $d[$k]['pos']    = '500,605,40';
-$d[$k]['FDate']  = '2016';
+$d[$k]['FDate']  = '2017';
 $d[$k]['cat']    = 'social';
 
 // WeTransfer
@@ -468,9 +468,9 @@ $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b cla
 $d[$k]['name']   = $e['google']['fa'].'Youtube';
 $d[$k]['eq']     = 'Vimeo, Dailymotion, Netflix';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.mediaspip.net/">MediaSpip</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://butterproject.org/">Butter (PopcornTime)</a>, <a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
 $d[$k]['pos']    = '665,590,40';
-$d[$k]['FDate']  = '2016';
+$d[$k]['FDate']  = '2017';
 $d[$k]['cat']    = 'media';
 
 /********************
@@ -603,13 +603,13 @@ $fight   = ['bubblus','doodle','dropbox','gdocs','greader','gspreadsheet',
  * Projets hors Frama *
  **********************/
 // AirBnB
-$k= 'blablacar';
+$k= 'airbnb';
 $d[$k]['S']      = '';
-$d[$k]['F']      = '';
+$d[$k]['F']      = '<a href="http://www.bewelcome.org/">BeWelcome</a>';
 $d[$k]['name']   = 'AirBnB';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://www.bewelcome.org/">BeWelcome</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://trac.bewelcome.org/">BW Rox</a>';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="http://trac.bewelcome.org/">BW Rox</a>';
 $d[$k]['cat']    = 'hobbies';
 
 // Blablacar
@@ -618,8 +618,8 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://www.covoiturage-libre.fr/">Covoiturage Libre</a>';
 $d[$k]['name']   = 'Blablacar';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'];
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '';
 $d[$k]['cat']    = 'hobbies';
 
 // Camptocamp
@@ -628,8 +628,8 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="https://fr.wikivoyage.org">Wikivoyage</a>';
 $d[$k]['name']   = 'Guide du Routard';
 $d[$k]['eq']     = 'Petit Futé, Voyage Michelin';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://camptocamp.org">CampToCamp.org</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://github.com/c2corg/camptocamp.org">CampToCamp</a>';
+$d[$k]['altOn']  = '<a href="http://camptocamp.org">CampToCamp.org</a>';
+$d[$k]['altOff'] = '<a href="https://github.com/c2corg/camptocamp.org">CampToCamp</a>';
 $d[$k]['cat']    = 'hobbies';
 
 // Chrome
@@ -638,8 +638,8 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="https://www.mozilla.org/fr/firefox/products/">Firefox</a>';
 $d[$k]['name']   = 'Google Chrome';
 $d[$k]['eq']     = 'Internet Explorer, Safari, Opera, Edge';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="">Tor Browser</a><a href="http://www.qupzilla.com/">Qupzilla</a>, <a href="http://www.midori-browser.org/">Midori</a>';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a>, <a href="http://www.qupzilla.com/">Qupzilla</a>, <a href="http://www.midori-browser.org/">Midori</a>';
 $d[$k]['cat']    = 'home';
 
 
@@ -647,10 +647,10 @@ $d[$k]['cat']    = 'home';
 $k= 'deezer';
 $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://dogmazic.org">Dogmazic</a>';
-$d[$k]['name']   = 'Spotify';
-$d[$k]['eq']     = 'Soundcloud';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://jamendo.com">Jamendo</a>';
-$d[$k]['altOff'] = $d[$k]['S'];
+$d[$k]['name']   = 'Deezer';
+$d[$k]['eq']     = 'Spotify, Soundcloud';
+$d[$k]['altOn']  = '<a href="http://jamendo.com">Jamendo</a>';
+$d[$k]['altOff'] = '';
 $d[$k]['cat']    = 'media';
 
 // Flickr
@@ -658,9 +658,9 @@ $k= 'flickr';
 $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://piwigo.com/">Piwigo</a>';
 $d[$k]['name']   = 'Flickr';
-$d[$k]['eq']     = 'Picasa, Tumblr, Pinterest';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="https://commons.wikimedia.org">Wikimedia Commons</a>, <a href="http://data.abuledu.org/wp/">Data Abulédu</a>, <a href="http://openclipart.org/">Openclipart</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://piwigo.org/">Piwigo</a>, <a href="http://www.zenphoto.org/">Zenphoto</a>';
+$d[$k]['eq']     = 'Instagram, Picasa, Tumblr, Pinterest';
+$d[$k]['altOn']  = '<a href="https://commons.wikimedia.org">Wikimedia Commons</a>, <a href="http://data.abuledu.org/wp/">Data Abulédu</a>, <a href="http://openclipart.org/">Openclipart</a>';
+$d[$k]['altOff'] = '<a href="http://piwigo.org/">Piwigo</a>, <a href="http://www.zenphoto.org/">Zenphoto</a>, <a href="http://www.mad5.de/ownstagram/">ownStagram</a>';
 $d[$k]['cat']    = 'media';
 
 // Google Analytics
@@ -669,18 +669,18 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://piwik.com/">Piwik</a>';
 $d[$k]['name']   = 'Google Analytics';
 $d[$k]['eq']     = 'Xiti';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.openwebanalytics.com/">Open Web Analytics</a>';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="http://www.openwebanalytics.com/">Open Web Analytics</a>';
 $d[$k]['cat']    = 'site';
 
 // Orange
 $k= 'orange';
 $d[$k]['S']      = '';
-$d[$k]['F']      = '<a href="https://www.fdn.fr/">FDN</a>';
+$d[$k]['F']      = '<a href="https://www.ffdn.org/fr/membres">FFDN</a>';
 $d[$k]['name']   = 'Orange';
 $d[$k]['eq']     = 'SFR, Free, OVH';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.ffdn.org/wiki/doku.php?id=essaimage">FFDN</a>';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://www.fdn.fr/">FDN</a>, <a href="http://tetaneutral.net/">Tetaneutral</a>, <a href="http://neutrinet.be/">Neutrinet</a>, <a href="http://www.illyse.net/">Illyse</a>, <a href="http://www.franciliens.net/">Francilien.net</a>';
 $d[$k]['cat']    = 'home';
 
 // Outlook
@@ -689,8 +689,8 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="https://www.mozilla.org/thunderbird">Thunderbird</a> + <a href="https://enigmail.net/">Enigmail</a>';
 $d[$k]['name']   = 'Outlook';
 $d[$k]['eq']     = 'Apple Mail';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>, <a href="http://userbase.kde.org/KMail/fr">KMail</a>, <a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a> ';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>, <a href="http://userbase.kde.org/KMail/fr">KMail</a>, <a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a> ';
 $d[$k]['cat']    = 'home';
 
 // OVH
@@ -699,9 +699,9 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="#chatons">Les <abbr title="Collectif des Hébergeurs Alternatifs Transparents Ouverts Neutres et Solidaires">CHATONS</abbr></a>';
 $d[$k]['name']   = 'OVH';
 $d[$k]['eq']     = 'Online';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://www.rhien.org/Hebergeurs,59.html">RHIEN</a>, <a href="https://indiehosters.net/">IndieHosters</a>, <a href="https://www.zaclys.com/">La mère Zaclys</a>, <a href="http://www.infini.fr/">Infini</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://cozy.io/fr/">Cosy</a>, <a href="http://yunohost.org">Yunohost</a>, <a href="https://sandstorm.io/">Sandstorm</a>';
-$d[$k]['cat']    = 'home';
+$d[$k]['altOn']  = '<a href="http://www.rhien.org/Hebergeurs,59.html">RHIEN</a>, <a href="https://indiehosters.net/">IndieHosters</a>, <a href="https://www.zaclys.com/">La mère Zaclys</a>, <a href="http://www.infini.fr/">Infini</a>';
+$d[$k]['altOff'] = '<a href="https://cozy.io/fr/">Cosy</a>, <a href="http://yunohost.org">Yunohost</a>, <a href="https://sandstorm.io/">Sandstorm</a>';
+$d[$k]['cat']    = 'site';
 
 // Paypal
 $k= 'paypal';
@@ -709,9 +709,19 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://bitcoin.org/">Bitcoin</a>';
 $d[$k]['name']   = 'Paypal';
 $d[$k]['eq']     = 'Orange Contact+';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://litecoin.org/">Litecoin</a>';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://litecoin.org/">Litecoin</a>';
 $d[$k]['cat']    = 'home';
+
+// Slack
+$k= 'slack';
+$d[$k]['S']      = '';
+$d[$k]['F']      = '<a href="https://rizzoma.com/">Rizzoma</a>';
+$d[$k]['name']   = 'Slack';
+$d[$k]['eq']     = '';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://rocket.chat/">Rocket.chat</a>, <a href="http://www.mattermost.org/">Mattermost</a>';
+$d[$k]['cat']    = 'social';
 
 // Universalis
 $k= 'universalis';
@@ -719,8 +729,8 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://wikipedia.org">Wikipedia</a>';
 $d[$k]['name']   = 'Universalis';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://fr.vikidia.org/">Vikidia</a>, <a href="http://www.appropedia.org">Appropedia</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.okawix.com/">Okawix</a>, <a href="https://www.dokuwiki.org/">Dokuwiki</a>, <a href="https://www.mediawiki.org/">Mediawiki</a>';
+$d[$k]['altOn']  = '<a href="http://fr.vikidia.org/">Vikidia</a>, <a href="http://www.appropedia.org">Appropedia</a>';
+$d[$k]['altOff'] = '<a href="http://www.okawix.com/">Okawix</a>, <a href="https://www.dokuwiki.org/">Dokuwiki</a>, <a href="https://www.mediawiki.org/">Mediawiki</a>';
 $d[$k]['cat']    = 'media';
 
 // Xmarks
@@ -729,9 +739,9 @@ $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:shaarli">Shaarli</a>';
 $d[$k]['name']   = 'Xmarks';
 $d[$k]['eq']     = 'Google Bookmarks';
-$d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'];
-$d[$k]['cat']    = 'media';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '';
+$d[$k]['cat']    = 'web';
 
 
 ?>

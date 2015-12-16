@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('a:has(b)').css('text-decoration','none');
 
-    $('.nav-year a').on('click', function() {
+    $('#sticky .navbar a').on('click', function() {
         var offset = $($(this).attr('href')).offset();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
@@ -33,9 +33,9 @@ $(document).ready(function() {
     // Sticky
     $('body').attr({
         'data-spy': 'scroll',
-        'data-target': '.nav-year'
+        'data-target': '#sticky .navbar'
     });
-    $('header').append($('#sticky'));
+    $('header').append($('#sticky:has(.nav-year)'));
 });
 $(window).scroll(function() {
     var $sticky = $("#sticky");
@@ -44,10 +44,9 @@ $(window).scroll(function() {
     } else {
         $("#sticky").css('position','relative');
     };
-    var $affix = $("#affix");
-    if($(window).scrollTop() > 500) {
-        $("#affix").css('position','fixed');
+    if($(window).scrollTop() > 540) {
+        $("#sticky.cats").css('position','fixed');
     } else {
-        $("#affix").css('position','relative');
+        $("#sticky.cats").css('position','relative');
     };
 });

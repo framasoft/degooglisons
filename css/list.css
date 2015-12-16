@@ -15,21 +15,54 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
     padding:15px 0;
 }
 
+#network, #network a {
+    font-size:64px;
+    color: #949494;
+    border:none;
+}
+
+#alt-intro {
+    background:#366F86;
+    margin: 30px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 #sticky {
     z-index:1;
     top: 0px;
     padding: 5px 15px;
     margin:0 -29px;
     background: none repeat scroll 0% 0% #FFF;
-    box-shadow: 0px 20px 15px -10px #FFF;
 }
-.nav-year {
+
+#sticky.cats {
+    margin:0;
+    padding:5px 15px;
+}
+
+#sticky .btn {
+    margin:0 auto;
+}
+
+.nav-year, .nav-cats {
     margin:0;
     border:none;
 }
-.nav-year .navbar-collapse {
+
+.nav-year .navbar-collapse,
+.nav-cats .navbar-collapse {
     padding:0;
     border:none;
+}
+
+.nav-cats li a span {
+    display:none;
+}
+
+.nav-cats li.active a span {
+    display:inline;
 }
 
 .year {
