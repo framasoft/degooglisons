@@ -23,7 +23,7 @@ foreach ($d as $k => $v) {
         foreach($gafam as $w) {
             $gafam_img = 'img/gafam/'.str_replace(' ', '-', strtolower($w)).'.png';
             if(file_exists($gafam_img)) {
-                $gafam_html .= '<li class="list-group-item"><img src="'.$gafam_img.'" alt="" />&nbsp;'.$w.'</li>';
+                $gafam_html .= '<li class="list-group-item"><img src="'.$l['current'].$gafam_img.'" alt="" />&nbsp;'.$w.'</li>';
             } else {
                 $gafam_html .= '<li class="list-group-item">'.$w.'</li>';
             }
