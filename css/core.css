@@ -8,13 +8,15 @@ body > .row {
 }
 
 #internav ul {
-    margin-top: -20px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 #internav li a {
     color: #666;
     padding: 12px 15px;
     text-decoration: none;
+    border:none !important;
+    line-height: 14px;
 }
 #internav li a:hover,
 #internav li a:focus,
@@ -24,8 +26,15 @@ body > .row {
 }
 
 #internav form div {
-    margin-top: -14px;
+    margin-top: 4px;
     margin-left: 25px
+}
+
+#framanav .nav {
+    max-height:42px;
+}
+#framanav .nav > li:last-child {
+    max-height:42px;
 }
 
 header {
@@ -79,6 +88,7 @@ main {
 
 #leds {
     top: -140px;
+    border:none;
 }
 
 
@@ -110,6 +120,7 @@ main {
     background-color: #767676;
     opacity:0.4;
     color: #FFF;
+    border:none;
 }
 
 #back-to-top:hover,
@@ -136,6 +147,8 @@ main {
 .panel {
     border: 1px solid #C0D481;
     margin-bottom:20px !important;
+    margin-left:15px;
+    margin-right:15px;
 }
 
 .panel td {
@@ -165,6 +178,19 @@ table .list-group-item img {
     height:24px;
 }
 
+.table-hover > tbody > tr td {
+    padding-top:42px;
+}
+
+.table-hover > tbody > tr td:first-child {
+    padding-top:6px;
+}
+
+.table-hover > tbody > tr td:first-child h3 a {
+    padding-left:10px;
+    color:#616161;
+}
+
 .table-hover > tbody > tr:hover td {
     border-color: #C0D481;
     background-color: #E3EBC7;
@@ -174,11 +200,31 @@ table .list-group-item img {
     background-color: #FDE0DC;
 }
 
-#affix a,
-#affix a:link {
-    text-decoration:none;
+a {
+    border-bottom: 1px solid #bdbdbd;
+    text-decoration:none !important;
 }
 
-#affix[style*="fixed"] {
-    top:20px;
+a:hover,
+a:focus {
+    border-bottom: 2px solid #949494;
+
+    -webkit-transition: all 100ms ease 0s;
+    -moz-transition: all 100ms ease 0s;
+    -o-transition: all 100ms ease 0s;
+    transition: all 100ms ease 0s;
+}
+
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover,
+h1 a:focus, h2 a:focus, h3 a:focus,
+h4 a:focus, h5 a:focus, h6 a:focus,
+a[href="https://framasoft.org"],
+#framanav a { border : none;}
+
+a.btn:hover,
+a.btn:focus {
+    border-bottom-width : 1px;
 }

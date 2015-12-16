@@ -27,7 +27,7 @@ $t['meta']['framasoft'] = 'Framasoft';
 $t['meta']['F']         = '<a href="'.$l['F'].'"><b class="violet">Frama</b><b class="orange">soft</b></a>';
 $t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">Dégooglisons</b> <b class="orange">Internet</b></a>';
 $t['meta']['start']     = 'Campagne commencée le 07/10/2014';
-$t['meta']['edit']      = 'Dernière modification le 02/10/2015';
+$t['meta']['edit']      = 'Dernière modification le 16/12/2015';
 $t['meta']['S']         = 'Soutenir ce projet';
 $t['meta']['lead']      = 'Une initiative du réseau '.$t['meta']['F'].' en faveur d’un internet<br/>
                 <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
@@ -321,9 +321,21 @@ $t['list']['css']        = '
 $t['list']['js']         = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
-$t['list']['alt1']        = 'Vous utilisez';
+$t['list']['alt1']       = 'Vous utilisez';
 $t['list']['alt2']       = ' recommande';
 $t['list']['alt3']       = 'repose sur ';
+$t['list']['altp1']      = $t['meta']['F'].' s’est donné comme objectif de <a href="'.$l['DIoL'].'">proposer une trentaine de services libres alternatifs</a>
+                            face aux services qui aspirent nos données et nous enferment.<br>
+                            Mais il existe bien d’autres services et acteurs qui œuvrent à dégoogliser internet.';
+$t['list']['altp2']      = 'Voici <a href="#tips" rel="nofollow">ci-dessous</a> une liste qui récapitule et complète les alternatives déjà présentées <a href="'.$l['DIo'].'">sur la page d’accueil</a>.
+                            Elle est inspirée de <a href="https://prism-break.org/fr/">Prism-Break</a> qui propose aussi d’autres logiciels dans des domaines plus pointus.';
+$t['list']['altp3']      = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
+                            qui communique avec un <b>logiciel installé sur un ordinateur</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> où se trouvent les données personnelles
+                            et auxquels on accède via divers <b>outils installés chez soi</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
+$t['list']['altp4']      = 'Ainsi, lorsque nous utilisons internet, nous devons <b>accorder notre confiance à différents maillons de la chaîne</b>
+                            qui nous relie aux données personnelles placées en ligne.
+                            À moins de s’auto-héberger, <b>le <i lang="en">cloud</i> est toujours l’ordinateur de quelqu’un d’autre</b>.
+                            Il est donc important de savoir à qui nous faisons confiance et ce que font les logiciels de nos données.';
 
 // Espace médias
 $t['medias']['title']    = 'Espace médias';
@@ -470,8 +482,8 @@ $t['_Some examples ?']  = 'Des exemples ?';
 $t['_Back to top']      = 'Retour en haut';
 $t['_Editor: ']         = 'Éditeur : ';
 $t['_Equivalent(s): ']          = 'Équivalent(s) : ';
-$t['_Alternative(s) online: ']  = 'Alternative(s) en ligne';
-$t['_Alternative(s) offline: '] = 'Alternative(s) à installer';
+$t['_Alternative(s) online: ']  = 'Alternative en ligne';
+$t['_Alternative(s) offline: '] = 'Alternative à installer';
 $t['_Framasoft service: ']      = 'Service Framasoft : ';
 $t['_release planned on ']      = 'sortie en ';
 $t['_Select the language']      = 'Choisir la langue';
@@ -1077,13 +1089,72 @@ $d[$k]['mBody']  = $d[$ko]['mBody'].'
     </p>';
 $d[$k]['name']    = 'Développement et intégration du plugin Mypads';
 
+/**********************
+ * Projets hors Frama *
+ **********************/
+// AirBnB
+$k= 'airbnb';
+$d[$k]['sDesc']  = 'Logement';
+
+// Blablacar
+$k= 'blablacar';
+$d[$k]['sDesc']  = 'Co-voiturage';
+
+// Camptocamp
+$k= 'routard';
+$d[$k]['sDesc']  = 'Guide de voyage';
+
+// Chrome
+$k= 'gchrome';
+$d[$k]['sDesc']  = 'Navigateur web';
+
+// Deezer
+$k= 'deezer';
+$d[$k]['sDesc']  = 'Musique';
+
+// Flickr
+$k= 'flickr';
+$d[$k]['sDesc']  = 'Albums photos';
+
+// Google Analytics
+$k= 'ganalytics';
+$d[$k]['sDesc']  = 'Statistiques web';
+
+// Orange
+$k= 'orange';
+$d[$k]['sDesc']  = 'Fournisseur d’Accès à Internet';
+
+// Outlook
+$k= 'outlook';
+$d[$k]['sDesc']  = 'Client de courriel';
+
+// OVH
+$k= 'ovh';
+$d[$k]['sDesc']  = 'Hébergement web & cloud';
+
+// Paypal
+$k= 'paypal';
+$d[$k]['sDesc']  = 'Paiements en ligne';
+
+// Slack
+$k= 'slack';
+$d[$k]['sDesc']  = 'Communication collaborative';
+
+// Universalis
+$k= 'universalis';
+$d[$k]['sDesc']  = 'Encyclopédie';
+
+// Xmarks
+$k= 'xmarks';
+$d[$k]['sDesc']  = 'Marque-pages';
+
 /**************
  * Categories *
  **************/
 $c['web']['name']     = 'Web';
 $c['office']['name']  = 'Bureautique';
-$c['social']['name']  = 'Réseaux sociaux <br/>& communication';
-$c['files']['name']   = 'Stockage et partage de fichiers';
+$c['social']['name']  = 'Société';
+$c['files']['name']   = 'Partage de fichiers';
 $c['media']['name']   = 'Médias & culture';
 $c['geo']['name']     = 'Géo';
 $c['hobbies']['name'] = 'Loisirs';
