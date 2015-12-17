@@ -398,7 +398,7 @@ $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">loomio</b>';
 $d[$k]['name']   = 'Shrtct';
 $d[$k]['eq']     = '1000minds';
 $d[$k]['altOn']  = $d[$k]['S'];
-$d[$k]['altOff'] = $d[$k]['S'];
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://liquidfeedback.org/">LiquidFeedback</a>';
 $d[$k]['pos']    = '420,620,40';
 $d[$k]['FDate']  = '2016';
 $d[$k]['cat']    = 'social';
@@ -665,8 +665,8 @@ $d[$k]['cat']    = 'media';
 
 // Google Analytics
 $k= 'ganalytics';
-$d[$k]['S']      = '';
-$d[$k]['F']      = '<a href="http://piwik.com/">Piwik</a>';
+$d[$k]['S']      = '<a href="http://piwik.com/">Piwik</a>';
+$d[$k]['F']      = '';
 $d[$k]['name']   = 'Google Analytics';
 $d[$k]['eq']     = 'Xiti';
 $d[$k]['altOn']  = '';
@@ -690,7 +690,7 @@ $d[$k]['F']      = '<a href="https://www.mozilla.org/thunderbird">Thunderbird</a
 $d[$k]['name']   = 'Outlook';
 $d[$k]['eq']     = 'Apple Mail';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>, <a href="http://userbase.kde.org/KMail/fr">KMail</a>, <a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a> ';
+$d[$k]['altOff'] = '<a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>, <a href="http://userbase.kde.org/KMail/fr">KMail</a>, <a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a>';
 $d[$k]['cat']    = 'home';
 
 // OVH
@@ -735,8 +735,8 @@ $d[$k]['cat']    = 'media';
 
 // Xmarks
 $k= 'xmarks';
-$d[$k]['S']      = '';
-$d[$k]['F']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:shaarli">Shaarli</a>';
+$d[$k]['S']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:shaarli">Shaarli</a>';
+$d[$k]['F']      = '';
 $d[$k]['name']   = 'Xmarks';
 $d[$k]['eq']     = 'Google Bookmarks';
 $d[$k]['altOn']  = '';

@@ -21,11 +21,13 @@ foreach ($d as $k => $v) {
             <ul class="list-group">';
 
         foreach($gafam as $w) {
-            $gafam_img = 'img/gafam/'.str_replace(' ', '-', strtolower($w)).'.png';
-            if(file_exists($gafam_img)) {
-                $gafam_html .= '<li class="list-group-item"><img src="'.$l['current'].$gafam_img.'" alt="" />&nbsp;'.$w.'</li>';
-            } else {
-                $gafam_html .= '<li class="list-group-item">'.$w.'</li>';
+            if ($w != '') {
+                $gafam_img = 'img/gafam/'.str_replace(' ', '-', strtolower($w)).'.png';
+                $gafam_html .= '<li class="list-group-item">';
+                if(file_exists($gafam_img)) {
+                    $gafam_html .= '<img src="'.$l['current'].$gafam_img.'" alt="" />&nbsp;';
+                }
+                $gafam_html .= $w.'</li>';
             }
         }
 
@@ -33,42 +35,78 @@ foreach ($d as $k => $v) {
             </ul>
         ';
 
-        $gafam_html = str_replace('<li class="list-group-item"></li>', '', $gafam_html);
-
         // Frama
         $frama = '
             <ul class="list-group">
-                <li class="list-group-item">';
+                ';
+        $frama_img = '';
 
-        if (strlen($v['FDate'])==4) {
-            $frama .= str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).' (<a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a>)</li>';
-        } else {
-            $frama .= $v['F'].'<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i></li>';
+        if (strlen($v['FDate'])==4 && $v['F']!='') {
+            // Framaservice in the future
+            $frama .= '<li class="list-group-item">'.str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).' <small>(<a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a>)</small></li>';
+
+        } elseif ($v['F']!='') {
+
+            // Frama or LEDS service online
+            $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($v['F']))).'.png';
+            if(file_exists($leds_img)) {
+                $frama_img .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+            }
+            $frama .= '<li class="list-group-item">'.$frama_img.$v['F'].'<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i></li>';
+
         }
+
         if ($v['S'] != '') {
-            $frama .= '<li class="list-group-item">'.$t['list']['alt3'].$v['S'].'<i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i></li>';
+            $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($v['S']))).'.png';
+            if(file_exists($leds_img)) {
+                $frama_img .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+            }
+            $frama .= '<li class="list-group-item">'.$frama_img.$v['S'].'<i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i></li>';
         }
 
         $frama .= '
             </ul>';
 
-        // Others
-        $others = '
-            <ul class="list-group">
-                <li class="list-group-item online">'.str_replace(', ','</li><li class="list-group-item online">', $v['altOn']).'</li>
-                <li class="list-group-item offline">'.str_replace(', ','</li><li class="list-group-item offline">', str_replace($v['S'], '', $v['altOff'])).'</li>
+        // LEDS
+        $leds_html = '
+            <ul class="list-group">';
+
+        // online
+        $leds = explode(', ', str_replace($v['S'], '', $v['altOn']));
+        foreach($leds as $w) {
+            if ($w != '') {
+                $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($w))).'.png';
+                $leds_html .= '<li class="list-group-item">';
+                if(file_exists($leds_img)) {
+                    $leds_html .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+                }
+                $leds_html .= '<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>'.$w.'</li>';
+            }
+        }
+
+        // offline
+        $leds = explode(', ', str_replace($v['S'], '', $v['altOff']));
+        foreach($leds as $w) {
+            if ($w != '') {
+                $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($w))).'.png';
+                $leds_html .= '<li class="list-group-item">';
+                if(file_exists($leds_img)) {
+                    $leds_html .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+                }
+                $leds_html .= '<i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i>'.$w.'</li>';
+            }
+        }
+
+        $leds_html .= '
             </ul>';
-        $others = str_replace('<li class="list-group-item online"></li>', '', $others);
-        $others = str_replace('<li class="list-group-item offline"></li>', '', $others);
-        $others = str_replace(' online">',' online"><i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>
-', $others);
-        $others = str_replace(' offline">',' offline"><i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i>', $others);
 
         $tip = '
                         <tr>
                             <td>'.$gafam_html.'</td>
-                            <td>'.$frama.'</td>
-                            <td>'.$others.'</td>
+                            <td>
+                                <div class="col-sm-6">'.$frama.'</div>
+                                <div class="col-sm-6">'.$leds_html.'</div>
+                            </td>
                         </tr>';
     }
     if($v['cat']== 'home') {
@@ -101,7 +139,7 @@ foreach($c as $k => $v) {
                 <thead>
                     <tr>
                         <th class="text-center" scope="col">'.$t['list']['alt1'].'</th>
-                        <th class="text-center" scope="col" colspan="2">'.$t['meta']['F'].' '.$t['list']['alt2'].'</th>
+                        <th class="text-center" scope="col">'.$t['meta']['F'].' '.$t['list']['alt2'].'</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -151,9 +151,27 @@ main {
     margin-right:15px;
 }
 
-.panel td {
-    width:33%;
+.panel td:first-child,
+.panel th:first-child {
+    width:50%;
 }
+
+.panel td .col-sm-6 {
+    padding:0;
+}
+
+@media (min-width: 768px) {
+    .panel td:first-child,
+    .panel th:first-child {
+        width:33%;
+    }
+
+    .panel td .col-sm-6:first-child {
+        padding-right:8px;
+    }
+}
+
+
 
 .panel td:first-child,
 .panel th:first-child {
