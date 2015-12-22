@@ -321,18 +321,28 @@ $t['list']['css']        = '
 $t['list']['js']         = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
-$t['list']['alt1']       = 'Vous utilisez';
-$t['list']['alt2']       = ' recommande';
-$t['list']['alt3']       = 'repose sur ';
-$t['list']['altp1']      = $t['meta']['F'].' s’est donné comme objectif de <a href="'.$l['DIoL'].'">proposer une trentaine de services libres alternatifs</a>
+
+// Liste des alternatives
+$t['alt']['title']       = 'Liste des alternatives';
+$t['alt']['link']        = $l['current'].'alternatives';
+$t['alt']['desc']        = 'Liste des alternatives en ligne libres, éthiques, décentralisé et solidaires que Framasoft recommande pour dégoogliser internet';
+$t['alt']['css']         = '
+    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
+$t['alt']['js']          = '
+    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+$t['alt']['alt1']        = 'Vous utilisez';
+$t['alt']['alt2']        = ' recommande';
+$t['alt']['alt3']        = 'repose sur ';
+$t['alt']['altp1']       = $t['meta']['F'].' s’est donné comme objectif de <a href="'.$l['DIoL'].'">proposer une trentaine de services libres alternatifs</a>
                             face aux services qui aspirent nos données et nous enferment.<br>
                             Mais il existe bien d’autres services et acteurs qui œuvrent à dégoogliser internet.';
-$t['list']['altp2']      = 'Voici <a href="#tips" rel="nofollow">ci-dessous</a> une liste qui récapitule et complète les alternatives déjà présentées <a href="'.$l['DIo'].'">sur la page d’accueil</a>.
+$t['alt']['altp2']       = 'Voici <a href="#tips" rel="nofollow">ci-dessous</a> une liste qui récapitule et complète les alternatives déjà présentées <a href="'.$l['DIo'].'">sur la page d’accueil</a>.
                             Elle est inspirée de <a href="https://prism-break.org/fr/">Prism-Break</a> qui propose aussi d’autres logiciels dans des domaines plus pointus.';
-$t['list']['altp3']      = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
+$t['alt']['altp3']       = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
                             qui communique avec un <b>logiciel installé sur un ordinateur</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> où se trouvent les données personnelles
                             et auxquels on accède via divers <b>outils installés chez soi</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
-$t['list']['altp4']      = 'Ainsi, lorsque nous utilisons internet, nous devons <b>accorder notre confiance à différents maillons de la chaîne</b>
+$t['alt']['altp4']       = 'Ainsi, lorsque nous utilisons internet, nous devons <b>accorder notre confiance à différents maillons de la chaîne</b>
                             qui nous relie aux données personnelles placées en ligne.
                             À moins de s’auto-héberger, <b>le <i lang="en">cloud</i> est toujours l’ordinateur de quelqu’un d’autre</b>.
                             Il est donc important de savoir à qui nous faisons confiance et ce que font les logiciels de nos données.';
