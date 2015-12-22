@@ -271,10 +271,10 @@ $d[$k]['S']      = '<a href="https://bitbucket.org/yohanboniface/umap">uMap</a>'
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">carte</b></a>';
 $d[$k]['name']   = 'Google Maps';
 $d[$k]['eq']     = 'Bing Maps, ViaMichelin, Mappy';
-$d[$k]['altOn']  = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="https://umap.openstreetmap.org">uMap</a>';
+$d[$k]['altOn']  = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="http://umap.openstreetmap.fr">uMap</a>';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '620,420,40';
-$d[$k]['FDate']  = '2015';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2015/12/">2015</a>'; // à actualiser quand l'article sera paru
 $d[$k]['cat']    = 'geo';
 
 // Google Reader
@@ -594,9 +594,9 @@ $d[$k]['FDate']   = '2015';
  **********************/
 // $potion = alternatives en préparation
 // $fight = alternatives opérationnelles
-$potion  = ['avaaz','gslides','skype','youtube','1000minds','gforms','gmaps','transifex'];
+$potion  = ['avaaz','gslides','skype','youtube','1000minds','gforms','transifex'];
 $fight   = ['bubblus','doodle','dropbox','gdocs','greader','gspreadsheet',
-            'pixlr','facebook','pocket','bitly','github','gbooks',
+            'pixlr','facebook','pocket','bitly','github','gbooks','gmaps',
             'gsearch','imgur','kongregate','pastebin','trello','wetransfer'];
 
 /**********************

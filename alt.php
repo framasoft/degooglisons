@@ -2,7 +2,7 @@
 
 require('i18n.php');
 
-$page = 'list';
+$page = 'alt';
 
 $tips = '';
 
@@ -138,8 +138,8 @@ foreach($c as $k => $v) {
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th class="text-center" scope="col">'.$t['list']['alt1'].'</th>
-                        <th class="text-center" scope="col">'.$t['meta']['F'].' '.$t['list']['alt2'].'</th>
+                        <th class="text-center" scope="col">'.$t['alt']['alt1'].'</th>
+                        <th class="text-center" scope="col">'.$t['meta']['F'].' '.$t['alt']['alt2'].'</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -158,15 +158,15 @@ include('header.php');
 ?>
         <div class="row" id="alt-intro">
             <div class="container ombre">
-                <p><?php echo $t['list']['altp1']; ?></p>
+                <p><?php echo $t['alt']['altp1']; ?></p>
 
-                <p><?php echo $t['list']['altp2']; ?></p>
+                <p><?php echo $t['alt']['altp2']; ?></p>
 
-                <p><?php echo $t['list']['altp3']; ?></p>
+                <p><?php echo $t['alt']['altp3']; ?></p>
 
                 <p class="text-center" id="network"><a href="#home"><i class="fa fa-fw fa-home"></i></a> → <i class="fa fa-fw fa-cloud"></i> → <i class="fa fa-fw fa-server"></i></p>
 
-                <p><?php echo $t['list']['altp4']; ?></p>
+                <p><?php echo $t['alt']['altp4']; ?></p>
             </div>
         </div>
 
