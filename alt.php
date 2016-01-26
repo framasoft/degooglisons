@@ -49,7 +49,7 @@ foreach ($d as $k => $v) {
 
             // Frama or LEDS service online
             $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($v['F']))).'.png';
-            if(file_exists($leds_img)) {
+            if(file_exists($leds_img) && !strstr($leds_img,'frama')) {
                 $frama_img .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
             }
             $frama .= '<li class="list-group-item">'.$frama_img.$v['F'].'<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i></li>';

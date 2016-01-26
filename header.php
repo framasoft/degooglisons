@@ -31,6 +31,8 @@
     <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
     <link href="<?php echo $l['current'] ?>css/core.css" rel="stylesheet" type="text/css" />
     <?php echo $t[$page]['css'] ?>
+    <link href="https://n4.framasoft.org/nav/lib/font-awesome/css/font-awesome.min.css" media="all" rel="stylesheet">
+    <link href="https://n4.framasoft.org/nav/css/frama.css" media="all" rel="stylesheet">
 
     <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="https://n4.framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
