@@ -276,7 +276,7 @@ $t['list']['desc']      = 'List of free, ethical, decentralized, and solidarity-
 $t['list']['css']       = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['list']['js']        = '
-    <script src="'.$l['current'].'js/list.js" typ e="text/javascript"></script>
+    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Liste des alternatives
@@ -770,7 +770,7 @@ $d[$k]['lDesc']  = 'What if your online searches weren’t tracked by Google?';
 $d[$k]['mTitle'] = 'Anonymous web search';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].'  is an anonymous metasearch engine. This means that your searches are sent to several search engines and the results are then displayed in your web browser. The advantage is that Framabee acts as an intermediary between you and Google (or other search engines), so your IP address won’t be stored by any of them. </p>
-                         <p>>It goes without saying that you must trust Framasoft and its tools before using Framabee. This is why we wrote this <a href="/nav/html/charte.html">charter</a>.
+                         <p>>It goes without saying that you must trust Framasoft and its tools before using Framabee. This is why we wrote this <a href="'.$l['Charte'].'">charter</a>.
                     </p>';
 
 // Google Slides
@@ -881,7 +881,7 @@ $d[$k]['mBody']  = '<p>
 
 // Trello
 $k= 'trello';
-$d[$k]['sDesc']  = 'Gestion de projets';
+$d[$k]['sDesc']  = 'Project management';
 $d[$k]['lDesc']  = 'Project management';
 $d[$k]['mTitle'] = 'Project management';
 $d[$k]['mBody']  = '<p>
@@ -906,9 +906,15 @@ $d[$k]['mBody']  = '<p>
 // WeTransfer
 $k= 'wetransfer';
 $d[$k]['sDesc']  = 'Send large files';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Partagez vos fichiers de manière anonyme';
+$d[$k]['mTitle'] = 'Partagez vos fichiers facilement';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de partager facilement des fichiers comme, par exemple, lorsque vous voulez envoyez une pièce jointe par email et que le fichier dépasse la taille maximale autorisée.
+                    </p>
+                    <p>Attention, ce service n’est pas un équivalent de Dropbox ou Google Drive : il ne s’agit pas d’un service d’hébergement de fichiers  (pour ça il y a <b class="violet">Frama</b><b class="vert">drive</b>), mais bien d’un service d’envoi de fichiers anonymes (le contenu est automatiquement chiffré avant envoi, nous n’y avons pas accès).</p>
+                    <p>
+                        '.$d[$k]['F'].' permet d’envoyer des fichiers de façon anonyme. Vous pouvez décider du moment de leur suppression (dès le premier téléchargement, 24H/7j/30j/60j après leur mise en ligne).
+                    </p>';
 
 // Youtube
 $k= 'youtube';
