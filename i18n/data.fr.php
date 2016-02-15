@@ -117,12 +117,12 @@ $t['home']['enje']['btn']   = 'Les enjeux';
 $t['home']['enje']['title'] = 'Quels sont les enjeux ?';
 $t['home']['enje']['p1']    = 'Ces dernières années ont vu se généraliser une <strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
                 WhatsApp à Facebook, Skype à Microsoft, etc.). Cette centralisation est nuisible, non seulement parce qu’elle freine l’innovation,
-                mais surtout parce qu’elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces services derniers
+                mais surtout parce qu’elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces derniers services
                 ne contrôlent plus leur vie numérique</strong> : leurs comportements sont disséqués en permanence afin de mieux être ciblés par
                 la publicité, et leurs données - pourtant privées (sites visités, mails échangés, vidéos regardées, etc.) - peuvent être analysées par des
                 services gouvernementaux.';
 $t['home']['enje']['p2']    = 'La réponse que souhaite apporter Framasoft à cette problématique est simple : mettre en valeur, pour chacun de ces
-                services privateur de liberté, une alternative Libre, Ethique, Décentralisée et Solidaire.';
+                services privateurs de liberté, une alternative Libre, Ethique, Décentralisée et Solidaire.';
 
 // Accueil - Dangers
 $t['home']['dang']['btn']   = 'Les dangers';
@@ -161,7 +161,7 @@ $t['home']['dang']['erefs'] = '
                     </ul>';
 $t['home']['dang']['p']     = 'Vie privée';
 $t['home']['dang']['pp']    = 'Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre orientation politique
-                    ou sexuelle, les sites que nous avons visité, notre recette préférée, les sujets qui nous intéressent, etc.<br/>
+                    ou sexuelle, les sites que nous avons visités, notre recette préférée, les sujets qui nous intéressent, etc.<br/>
                     Si une donnée seule, prise indépendamment, n’est pas forcément sensible, un ensemble de données peut le devenir
                     (par exemple si vous avez fait des recherches sur le cancer avant de souscrire à une assurance-vie).<br/>
                     Dans un monde où tout devient numérique (lecture, TV, téléphonie, musique, réseau social, etc.), <strong>notre vie privée
