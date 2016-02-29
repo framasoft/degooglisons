@@ -38,7 +38,7 @@ $t['meta']['leds']['title']   = 'For an Internet…';
 $t['meta']['leds']['ltitle']  = 'Free';
 $t['meta']['leds']['ldesc']   = 'As far as standards and protocols are concerned, the story of the Internet is one of
 free software.
-But its popularity and potential makes big firms jealous. They would like to claim control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
+But its popularity and potential make big firms jealous. They would like to claim control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
 
 $t['meta']['leds']['dtitle']  = 'Decentralized';
 $t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at
@@ -71,7 +71,7 @@ $t['home']['map']    = 'Click on the map to discover all alternatives…';
 $t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum, and Proprietarum.';
 
 // Accueil - Camps
-$t['home']['camps']['village']     = 'In the freedom defenders village';
+$t['home']['camps']['village']     = 'In the freedom defenders’ village';
 $t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few non-profit organizations keep up the struggle for an open web respectful of internet users.';
 $t['home']['camps']['vp2']         = 'In addition to '.$t['meta']['F'].', the non-profit association leading the campaign described here, we may also mention <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. These organizations can only keep going with the help of your donations, so don’t forget to support them!';
 
@@ -101,7 +101,7 @@ amounts to offering your personal data to surveillance organizations without any
 
 // Accueil - Enjeux
 $t['home']['enje']['btn']   = 'Stakes';
-$t['home']['enje']['title'] = 'What are the stakes?';
+$t['home']['enje']['title'] = 'What is at stake?';
 $t['home']['enje']['p1']    = 'In recent years, we have witnessed <strong> the widespread corporate concentration of Internet actors</strong>  (Youtube belonging to Google, WhatsApp to Facebook, Skype to Microsoft, etc.). This centralisation is detrimental, not only because it curbs innovation, but also because it results in a loss of freedom for users, <strong>who no longer control their digital existence<strong>: their behaviour is continually dissected and analysed so that they can be better targeted by publicity, and their data – which should be private (sites visited, emails exchanged, videos watched, etc.) – can be analysed by government services.';
 $t['home']['enje']['p2']    = 'The way that Framasoft would like to deal with this issue is simple: to highlight and provide a Free, Ethical, Decentralised and Solidarity-based alternative to each of these services which deprive users of their freedom.';
 
@@ -280,29 +280,29 @@ $t['list']['js']        = '
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Liste des alternatives
-$t['alt']['title']       = 'Liste des alternatives';
+$t['alt']['title']       = 'List of alternatives';
 $t['alt']['link']        = $l['current'].'alternatives';
-$t['alt']['desc']        = 'Liste des alternatives en ligne libres, éthiques, décentralisé et solidaires que Framasoft recommande pour dégoogliser internet';
+$t['alt']['desc']        = 'List of free, ethical, decentralized, and solidarity-based online alternatives recommended by Framasoft to de-google-ify Internet';
 $t['alt']['css']         = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['alt']['js']          = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
-$t['alt']['alt1']        = 'Vous utilisez';
-$t['alt']['alt2']        = ' recommande';
-$t['alt']['alt3']        = 'repose sur ';
-$t['alt']['altp1']       = $t['meta']['F'].' s’est donné comme objectif de <a href="'.$l['DIoL'].'">proposer une trentaine de services libres alternatifs</a>
-                            face aux services qui aspirent nos données et nous enferment.<br>
-                            Mais il existe bien d’autres services et acteurs qui œuvrent à dégoogliser internet.';
-$t['alt']['altp2']       = 'Voici <a href="#tips" rel="nofollow">ci-dessous</a> une liste qui récapitule et complète les alternatives déjà présentées <a href="'.$l['DIo'].'">sur la page d’accueil</a>.
-                            Elle est inspirée de <a href="https://prism-break.org/fr/">Prism-Break</a> qui propose aussi d’autres logiciels dans des domaines plus pointus.';
-$t['alt']['altp3']       = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
-                            qui communique avec un <b>logiciel installé sur un ordinateur</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> où se trouvent les données personnelles
-                            et auxquels on accède via divers <b>outils installés chez soi</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
-$t['alt']['altp4']       = 'Ainsi, lorsque nous utilisons internet, nous devons <b>accorder notre confiance à différents maillons de la chaîne</b>
-                            qui nous relie aux données personnelles placées en ligne.
-                            À moins de s’auto-héberger, <b>le <i lang="en">cloud</i> est toujours l’ordinateur de quelqu’un d’autre</b>.
-                            Il est donc important de savoir à qui nous faisons confiance et ce que font les logiciels de nos données.';
+$t['alt']['alt1']        = 'You use';
+$t['alt']['alt2']        = ' recommends';
+$t['alt']['alt3']        = 'based on ';
+$t['alt']['altp1']       = $t['meta']['F'].' aims to <a href="'.$l['DIoL'].'">offer around thirty free alternative services</a>
+                            to provide a substitute for those services that entrap us and then feed upon our data.<br>
+                            But there are many other players working to de-google-ify Internet and many other such services.';
+$t['alt']['altp2']       = 'Here is <a href="#tips" rel="nofollow">ci-dessous</a> a list summarizing and supplementing the alternatives already presented <a href="'.$l['DIo'].'">on the home page</a>.
+                            It is inspired by <a href="https://prism-break.org/fr/">Prism-Break</a> which promotes other software in more specialized areas.';
+$t['alt']['altp3']       = 'In the list, each service generally includes a <b>complex website</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
+                            communicating with <b>software installed on a computer</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> which stores personal data
+                            and which can be accessed through various <b>home-based tools</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
+$t['alt']['altp4']       = 'So when we use Internet, we must necessarily <b>trust several links in the chain</b>
+                            joining us to our personal data online.
+                            Unless we self-host, <b>the <i lang="en">cloud</i> is always someone else's computer</b>.
+                            It is therefore important to know who we are being asked to trust and what their software is doing with our data.';
 
 // Espace médias
 $t['medias']['title']   = 'Media area';
