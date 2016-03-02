@@ -292,7 +292,7 @@ $t['alt']['alt1']        = 'You use';
 $t['alt']['alt2']        = ' recommends';
 $t['alt']['alt3']        = 'based on ';
 $t['alt']['altp1']       = $t['meta']['F'].' aims to <a href="'.$l['DIoL'].'">offer around thirty free alternative services</a>
-                            to provide a substitute for those services that entrap us and then feed upon our data.<br>
+                            to provide a substitute for those services which, once they get hold of us, proceed to feed upon our data.<br>
                             But there are many other players working to de-google-ify Internet and many other such services.';
 $t['alt']['altp2']       = 'Here is <a href="#tips" rel="nofollow">ci-dessous</a> a list summarizing and supplementing the alternatives already presented <a href="'.$l['DIo'].'">on the home page</a>.
                             It is inspired by <a href="https://prism-break.org/fr/">Prism-Break</a> which promotes other software in more specialized areas.';
@@ -431,7 +431,7 @@ $t['medias']['framalist']   = '
                             <li>Framasoft <a href="https://soutenir.framasoft.org/association">Complete presentation</a>.</li>
                             <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
                         </ul>';
-$t['medias']['framap1']     = 'Framasoft is a freely available public education network which aims to promote and spead free software and free culture.';
+$t['medias']['framap1']     = 'Framasoft is a freely available public education network which aims to promote and spread free software and free culture.';
 $t['medias']['framap2']     = 'As a link between the world of free software and the general public, our association offers many projects (directory software, a publisher, a websearch engine, etc.), with three main goals: Free Software, Free Culture, and Free Services.';
 $t['medias']['framap3']     = '<em>The logo is a realization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
@@ -448,7 +448,7 @@ $t['_ is an instance based on '] = ' is an instance based on ';
 $t['_Read more']        = 'Read more';
 $t['_Some examples ?']  = 'Some examples ?';
 $t['_Back to top']      = 'Back to top';
-$t['_Editor: ']         = 'Éditor: ';
+$t['_Editor: ']         = 'Editor: ';
 $t['_Equivalent(s): ']          = 'Equivalent(s): ';
 $t['_Alternative(s) online: ']  = 'Alternative(s) online';
 $t['_Alternative(s) offline: '] = 'Alternative(s) offline';
@@ -1001,8 +1001,8 @@ $d[$k]['mBody']  = '';
  * Mises à jour *
  ****************/
 // Etherpad Lite
-$k = 'up-padlite'; $ko = 'gdocs';    // prefixe "up-" obligatoire ; $ko est l'id du projet initial
-$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copier/Coller
+$k = 'up-padlite'; $ko = 'gdocs';    // prefix "up-" compulsory ; $ko is the id of the initial project
+$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copy/Paste
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'];
 $d[$k]['name']   = 'Replacing Etherpad by the “lite” version for public pads';
@@ -1013,7 +1013,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-           <b class="violet">Update:</b> the sotfware underlying Framindmap is now Wisemapping rather than Mindmaps. This software is more complete, allowing you to bind documents at the nodes or save your work in such a way that it can easily be found and shared on the internet.
+           <b class="violet">Update:</b> the software underlying Framindmap is now Wisemapping rather than Mindmaps. This software is more complete, allowing you to bind documents at the nodes or save your work in such a way that it can easily be found and shared on the internet.
     </p>';
 $d[$k]['name']   = 'Mindmaps replaced by Wisemapping';
 
@@ -1042,59 +1042,59 @@ $d[$k]['name']    = 'Development and integration of Mypads plugin';
  **********************/
 // AirBnB
 $k= 'airbnb';
-$d[$k]['sDesc']  = 'Logement';
+$d[$k]['sDesc']  = 'Accommodation';
 
 // Blablacar
 $k= 'blablacar';
-$d[$k]['sDesc']  = 'Co-voiturage';
+$d[$k]['sDesc']  = 'Car sharing';
 
 // Camptocamp
 $k= 'routard';
-$d[$k]['sDesc']  = 'Guide de voyage';
+$d[$k]['sDesc']  = 'Travel guide';
 
 // Chrome
 $k= 'gchrome';
-$d[$k]['sDesc']  = 'Navigateur web';
+$d[$k]['sDesc']  = 'Web browser';
 
 // Deezer
 $k= 'deezer';
-$d[$k]['sDesc']  = 'Musique';
+$d[$k]['sDesc']  = 'Music';
 
 // Flickr
 $k= 'flickr';
-$d[$k]['sDesc']  = 'Albums photos';
+$d[$k]['sDesc']  = 'Photo album';
 
 // Google Analytics
 $k= 'ganalytics';
-$d[$k]['sDesc']  = 'Statistiques web';
+$d[$k]['sDesc']  = 'Web statistics';
 
 // Orange
 $k= 'orange';
-$d[$k]['sDesc']  = 'Fournisseur d’Accès à Internet';
+$d[$k]['sDesc']  = 'Internet service provider';
 
 // Outlook
 $k= 'outlook';
-$d[$k]['sDesc']  = 'Client de courriel';
+$d[$k]['sDesc']  = 'Email client';
 
 // OVH
 $k= 'ovh';
-$d[$k]['sDesc']  = 'Hébergement web & cloud';
+$d[$k]['sDesc']  = 'Web hosting & cloud';
 
 // Paypal
 $k= 'paypal';
-$d[$k]['sDesc']  = 'Paiements en ligne';
+$d[$k]['sDesc']  = 'Online payments';
 
 // Slack
 $k= 'slack';
-$d[$k]['sDesc']  = 'Communication collaborative';
+$d[$k]['sDesc']  = 'Collaborative communication';
 
 // Universalis
 $k= 'universalis';
-$d[$k]['sDesc']  = 'Encyclopédie';
+$d[$k]['sDesc']  = 'Encyclopedia';
 
 // Xmarks
 $k= 'xmarks';
-$d[$k]['sDesc']  = 'Marque-pages';
+$d[$k]['sDesc']  = 'Bookmark';
 
 /**************
  * Categories *
@@ -1104,10 +1104,10 @@ $c['web']['name']     = 'Web';
 $c['office']['name']  = 'Office';
 $c['social']['name']  = 'Social';
 $c['files']['name']   = 'File sharing';
-$c['media']['name']   = 'Medias & culture';
+$c['media']['name']   = 'Media & culture';
 $c['geo']['name']     = 'Geo';
 $c['hobbies']['name'] = 'Hobbies';
 $c['site']['name']    = 'Website';
-$c['dev']['name']     = 'Developpement';
+$c['dev']['name']     = 'Development';
 
 ?>
