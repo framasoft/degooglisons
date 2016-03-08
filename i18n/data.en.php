@@ -38,7 +38,7 @@ $t['meta']['leds']['title']   = 'For an Internet…';
 $t['meta']['leds']['ltitle']  = 'Free';
 $t['meta']['leds']['ldesc']   = 'As far as standards and protocols are concerned, the story of the Internet is one of
 free software.
-But its popularity and potential makes big firms jealous. They would like to claim control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
+But its popularity and potential make big firms jealous. They would like to claim control of it by establishing closed code in locked systems that are not interoperable. To keep the Internet faithful to the founding principles which led to its success, it is important that there should be free apps on the Internet, that is to say, apps with opensource codes, accessible under free licence.';
 
 $t['meta']['leds']['dtitle']  = 'Decentralized';
 $t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at
@@ -71,7 +71,7 @@ $t['home']['map']    = 'Click on the map to discover all alternatives…';
 $t['home']['altMap'] = 'The year is 2015 AD. The whole web is occupied by centralized services… Well… not entirely. One small village of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum, and Proprietarum.';
 
 // Accueil - Camps
-$t['home']['camps']['village']     = 'In the freedom defenders village';
+$t['home']['camps']['village']     = 'In the freedom defenders’ village';
 $t['home']['camps']['vp1']         = 'Engulfed in sprawling multinational firms, a few non-profit organizations keep up the struggle for an open web respectful of internet users.';
 $t['home']['camps']['vp2']         = 'In addition to '.$t['meta']['F'].', the non-profit association leading the campaign described here, we may also mention <a href="http://april.org">April</a>,  <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>. These organizations can only keep going with the help of your donations, so don’t forget to support them!';
 
@@ -101,7 +101,7 @@ amounts to offering your personal data to surveillance organizations without any
 
 // Accueil - Enjeux
 $t['home']['enje']['btn']   = 'Stakes';
-$t['home']['enje']['title'] = 'What are the stakes?';
+$t['home']['enje']['title'] = 'What is at stake?';
 $t['home']['enje']['p1']    = 'In recent years, we have witnessed <strong> the widespread corporate concentration of Internet actors</strong>  (Youtube belonging to Google, WhatsApp to Facebook, Skype to Microsoft, etc.). This centralisation is detrimental, not only because it curbs innovation, but also because it results in a loss of freedom for users, <strong>who no longer control their digital existence<strong>: their behaviour is continually dissected and analysed so that they can be better targeted by publicity, and their data – which should be private (sites visited, emails exchanged, videos watched, etc.) – can be analysed by government services.';
 $t['home']['enje']['p2']    = 'The way that Framasoft would like to deal with this issue is simple: to highlight and provide a Free, Ethical, Decentralised and Solidarity-based alternative to each of these services which deprive users of their freedom.';
 
@@ -280,29 +280,29 @@ $t['list']['js']        = '
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
 // Liste des alternatives
-$t['alt']['title']       = 'Liste des alternatives';
+$t['alt']['title']       = 'List of alternatives';
 $t['alt']['link']        = $l['current'].'alternatives';
-$t['alt']['desc']        = 'Liste des alternatives en ligne libres, éthiques, décentralisé et solidaires que Framasoft recommande pour dégoogliser internet';
+$t['alt']['desc']        = 'List of free, ethical, decentralized, and solidarity-based online alternatives recommended by Framasoft to de-google-ify Internet';
 $t['alt']['css']         = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['alt']['js']          = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
-$t['alt']['alt1']        = 'Vous utilisez';
-$t['alt']['alt2']        = ' recommande';
-$t['alt']['alt3']        = 'repose sur ';
-$t['alt']['altp1']       = $t['meta']['F'].' s’est donné comme objectif de <a href="'.$l['DIoL'].'">proposer une trentaine de services libres alternatifs</a>
-                            face aux services qui aspirent nos données et nous enferment.<br>
-                            Mais il existe bien d’autres services et acteurs qui œuvrent à dégoogliser internet.';
-$t['alt']['altp2']       = 'Voici <a href="#tips" rel="nofollow">ci-dessous</a> une liste qui récapitule et complète les alternatives déjà présentées <a href="'.$l['DIo'].'">sur la page d’accueil</a>.
-                            Elle est inspirée de <a href="https://prism-break.org/fr/">Prism-Break</a> qui propose aussi d’autres logiciels dans des domaines plus pointus.';
-$t['alt']['altp3']       = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
-                            qui communique avec un <b>logiciel installé sur un ordinateur</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> où se trouvent les données personnelles
-                            et auxquels on accède via divers <b>outils installés chez soi</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
-$t['alt']['altp4']       = 'Ainsi, lorsque nous utilisons internet, nous devons <b>accorder notre confiance à différents maillons de la chaîne</b>
-                            qui nous relie aux données personnelles placées en ligne.
-                            À moins de s’auto-héberger, <b>le <i lang="en">cloud</i> est toujours l’ordinateur de quelqu’un d’autre</b>.
-                            Il est donc important de savoir à qui nous faisons confiance et ce que font les logiciels de nos données.';
+$t['alt']['alt1']        = 'You use';
+$t['alt']['alt2']        = ' recommends';
+$t['alt']['alt3']        = 'based on ';
+$t['alt']['altp1']       = $t['meta']['F'].' aims to <a href="'.$l['DIoL'].'">offer around thirty free alternative services</a>
+                            to provide a substitute for those services which, once they get hold of us, proceed to feed upon our data.<br>
+                            But there are many other players working to de-google-ify Internet and many other such services.';
+$t['alt']['altp2']       = 'Here is <a href="#tips" rel="nofollow">ci-dessous</a> a list summarizing and supplementing the alternatives already presented <a href="'.$l['DIo'].'">on the home page</a>.
+                            It is inspired by <a href="https://prism-break.org/fr/">Prism-Break</a> which promotes other software in more specialized areas.';
+$t['alt']['altp3']       = 'In the list, each service generally includes a <b>complex website</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
+                            communicating with <b>software installed on a computer</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> which stores personal data
+                            and which can be accessed through various <b>home-based tools</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
+$t['alt']['altp4']       = 'So when we use Internet, we must necessarily <b>trust several links in the chain</b>
+                            joining us to our personal data online.
+                            Unless we self-host, <b>the <i lang="en">cloud</i> is always someone else's computer</b>.
+                            It is therefore important to know who we are being asked to trust and what their software is doing with our data.';
 
 // Espace médias
 $t['medias']['title']   = 'Media area';
@@ -431,7 +431,7 @@ $t['medias']['framalist']   = '
                             <li>Framasoft <a href="https://soutenir.framasoft.org/association">Complete presentation</a>.</li>
                             <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
                         </ul>';
-$t['medias']['framap1']     = 'Framasoft is a freely available public education network which aims to promote and spead free software and free culture.';
+$t['medias']['framap1']     = 'Framasoft is a freely available public education network which aims to promote and spread free software and free culture.';
 $t['medias']['framap2']     = 'As a link between the world of free software and the general public, our association offers many projects (directory software, a publisher, a websearch engine, etc.), with three main goals: Free Software, Free Culture, and Free Services.';
 $t['medias']['framap3']     = '<em>The logo is a realization of JosephK under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
@@ -448,7 +448,7 @@ $t['_ is an instance based on '] = ' is an instance based on ';
 $t['_Read more']        = 'Read more';
 $t['_Some examples ?']  = 'Some examples ?';
 $t['_Back to top']      = 'Back to top';
-$t['_Editor: ']         = 'Éditor: ';
+$t['_Editor: ']         = 'Editor: ';
 $t['_Equivalent(s): ']          = 'Equivalent(s): ';
 $t['_Alternative(s) online: ']  = 'Alternative(s) online';
 $t['_Alternative(s) offline: '] = 'Alternative(s) offline';
@@ -531,33 +531,33 @@ for ($i=2014; $i<2018; $i++) {
  * Services web *
  ****************
 
-$k = 'id';                                                              // pour la carte : id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte) et pour la liste : associer modales à chaque post-it
+$k = 'id';                                                              // for the card: id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (text) and for the list: to associate modals with each post-it
 
 ---- Facultatif : déjà dans data.php -----------------------------------
-$d[$k]['FL']      = '';                                                 // lien pour le bouton « Utiliser » + $d[$k]['F']
-$d[$k]['CL']      = '';                                                 // lien pour le bouton « Installer » (Framacloud)
-$d[$k]['S']       = '<a href="*">*</a>';                                // lien et nom du logiciel que Frama utilise
+$d[$k]['FL']      = '';                                                 // link for the button « User » + $d[$k]['F']
+$d[$k]['CL']      = '';                                                 // link for the button « Install » (Framacloud)
+$d[$k]['S']       = '<a href="*">*</a>';                                // link and name of software that Frama uses
 $d[$k]['F']       = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">*</b></a>';
-$d[$k]['name']    = '';                                                 // Nom du service proprio sur la carte
-$d[$k]['eq']      = '';                                                 // Équivalents
-$d[$k]['altOn']   = '';                                                 // Alternatives en ligne
-$d[$k]['altOff']  = '';                                                 // Alternatives hors ligne / à installer sur un serveur (doit y avoir au moins $d[$k]['S'])
-$d[$k]['pos']     = '';                                                 // Coordonnées sur la carte : 'x, y, R'
-$d[$k]['FDate']   = '201*';                                             // date ou article du Framablog (contient la date dans l'url)
+$d[$k]['name']    = '';                                                 // Name of the proprietary service on the card
+$d[$k]['eq']      = '';                                                 // Equivalents
+$d[$k]['altOn']   = '';                                                 // Alternatives online
+$d[$k]['altOff']  = '';                                                 // Alternatives offline/to be installed on a server (must have at least $d[$k]['S'])
+$d[$k]['pos']     = '';                                                 // Coordinates on the card: 'x, y, R'
+$d[$k]['FDate']   = '201*';                                             // date or article of Framablog (contains the date in the url)
 
 ---- À remplir ici : data.xx.php ---------------------------------------
-$d[$k]['sDesc']   = '';                                                 // Description courte (en titre sur carte et post-it)
-$d[$k]['lDesc']   = '';                                                 // Description longue (au dos du post-it)
-$d[$k]['mTitle']  = '';                                                 // Modale ↓
+$d[$k]['sDesc']   = '';                                                 // Short description (title on card and post-it)
+$d[$k]['lDesc']   = '';                                                 // Long description (on the back of the post-it)
+$d[$k]['mTitle']  = '';                                                 // Modal ↓
 $d[$k]['mBody']   = '<p>
-                        '.$d[$k]['F'].' vous permet de…
+                        '.$d[$k]['F'].' allows you to…
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> …
+                        <b class="violet">Operation :</b> …
                     </p>';
 
 ---- Facultatif : déjà dans list.php (l.23-26)--------------------------
-$d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance basée sur le logiciel libre '.$d[$k]['S'].'</p>';
+$d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' is an instance based on the free software '.$d[$k]['S'].'</p>';
 
 */
 
@@ -725,7 +725,7 @@ $d[$k]['mBody']  = '<p>
                           <b class="violet">How does it work?</b> create your account on Framaforms and start writing questionnaires to meet your needs. No registration is required for respondents to post their replies. You then have access to a synopsis of the results.
                     </p >';
 
-// Google Groupes
+// Google Groups
 $k= 'ggroups';
 $d[$k]['sDesc']  = 'Mailing lists';
 $d[$k]['lDesc']  = '';
@@ -906,14 +906,14 @@ $d[$k]['mBody']  = '<p>
 // WeTransfer
 $k= 'wetransfer';
 $d[$k]['sDesc']  = 'Send large files';
-$d[$k]['lDesc']  = 'Partagez vos fichiers de manière anonyme';
-$d[$k]['mTitle'] = 'Partagez vos fichiers facilement';
+$d[$k]['lDesc']  = 'Share your files anonymously';
+$d[$k]['mTitle'] = 'Share your files easily';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de partager facilement des fichiers comme, par exemple, lorsque vous voulez envoyez une pièce jointe par email et que le fichier dépasse la taille maximale autorisée.
+                        '.$d[$k]['F'].' provides an easy way to share files, for example, when you want to send an email attachment and the file exceeds the maximum allowed size.
                     </p>
-                    <p>Attention, ce service n’est pas un équivalent de Dropbox ou Google Drive : il ne s’agit pas d’un service d’hébergement de fichiers  (pour ça il y a <b class="violet">Frama</b><b class="vert">drive</b>), mais bien d’un service d’envoi de fichiers anonymes (le contenu est automatiquement chiffré avant envoi, nous n’y avons pas accès).</p>
+                    <p>Note, however, that this service is not an equivalent of Dropbox or Google Drive : it is not a file hosting service  (for that we have <b class="violet">Frama</b><b class="vert">drive</b>), but really an anonymous file transfer service (the content is automatically coded before transfer, and we don't have access).</p>
                     <p>
-                        '.$d[$k]['F'].' permet d’envoyer des fichiers de façon anonyme. Vous pouvez décider du moment de leur suppression (dès le premier téléchargement, 24H/7j/30j/60j après leur mise en ligne).
+                        '.$d[$k]['F'].' can send files anonymously. You decide when you wish to remove them (after the first download, 24H/7j/30j/60j after they go online).
                     </p>';
 
 // Youtube
@@ -1001,8 +1001,8 @@ $d[$k]['mBody']  = '';
  * Mises à jour *
  ****************/
 // Etherpad Lite
-$k = 'up-padlite'; $ko = 'gdocs';    // prefixe "up-" obligatoire ; $ko est l'id du projet initial
-$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copier/Coller
+$k = 'up-padlite'; $ko = 'gdocs';    // prefix "up-" compulsory ; $ko is the id of the initial project
+$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copy/Paste
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'];
 $d[$k]['name']   = 'Replacing Etherpad by the “lite” version for public pads';
@@ -1013,7 +1013,7 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-           <b class="violet">Update:</b> the sotfware underlying Framindmap is now Wisemapping rather than Mindmaps. This software is more complete, allowing you to bind documents at the nodes or save your work in such a way that it can easily be found and shared on the internet.
+           <b class="violet">Update:</b> the software underlying Framindmap is now Wisemapping rather than Mindmaps. This software is more complete, allowing you to bind documents at the nodes or save your work in such a way that it can easily be found and shared on the internet.
     </p>';
 $d[$k]['name']   = 'Mindmaps replaced by Wisemapping';
 
@@ -1042,59 +1042,59 @@ $d[$k]['name']    = 'Development and integration of Mypads plugin';
  **********************/
 // AirBnB
 $k= 'airbnb';
-$d[$k]['sDesc']  = 'Logement';
+$d[$k]['sDesc']  = 'Accommodation';
 
 // Blablacar
 $k= 'blablacar';
-$d[$k]['sDesc']  = 'Co-voiturage';
+$d[$k]['sDesc']  = 'Car sharing';
 
 // Camptocamp
 $k= 'routard';
-$d[$k]['sDesc']  = 'Guide de voyage';
+$d[$k]['sDesc']  = 'Travel guide';
 
 // Chrome
 $k= 'gchrome';
-$d[$k]['sDesc']  = 'Navigateur web';
+$d[$k]['sDesc']  = 'Web browser';
 
 // Deezer
 $k= 'deezer';
-$d[$k]['sDesc']  = 'Musique';
+$d[$k]['sDesc']  = 'Music';
 
 // Flickr
 $k= 'flickr';
-$d[$k]['sDesc']  = 'Albums photos';
+$d[$k]['sDesc']  = 'Photo album';
 
 // Google Analytics
 $k= 'ganalytics';
-$d[$k]['sDesc']  = 'Statistiques web';
+$d[$k]['sDesc']  = 'Web statistics';
 
 // Orange
 $k= 'orange';
-$d[$k]['sDesc']  = 'Fournisseur d’Accès à Internet';
+$d[$k]['sDesc']  = 'Internet service provider';
 
 // Outlook
 $k= 'outlook';
-$d[$k]['sDesc']  = 'Client de courriel';
+$d[$k]['sDesc']  = 'Email client';
 
 // OVH
 $k= 'ovh';
-$d[$k]['sDesc']  = 'Hébergement web & cloud';
+$d[$k]['sDesc']  = 'Web hosting & cloud';
 
 // Paypal
 $k= 'paypal';
-$d[$k]['sDesc']  = 'Paiements en ligne';
+$d[$k]['sDesc']  = 'Online payments';
 
 // Slack
 $k= 'slack';
-$d[$k]['sDesc']  = 'Communication collaborative';
+$d[$k]['sDesc']  = 'Collaborative communication';
 
 // Universalis
 $k= 'universalis';
-$d[$k]['sDesc']  = 'Encyclopédie';
+$d[$k]['sDesc']  = 'Encyclopedia';
 
 // Xmarks
 $k= 'xmarks';
-$d[$k]['sDesc']  = 'Marque-pages';
+$d[$k]['sDesc']  = 'Bookmark';
 
 /**************
  * Categories *
@@ -1104,10 +1104,10 @@ $c['web']['name']     = 'Web';
 $c['office']['name']  = 'Office';
 $c['social']['name']  = 'Social';
 $c['files']['name']   = 'File sharing';
-$c['media']['name']   = 'Medias & culture';
+$c['media']['name']   = 'Media & culture';
 $c['geo']['name']     = 'Geo';
 $c['hobbies']['name'] = 'Hobbies';
 $c['site']['name']    = 'Website';
-$c['dev']['name']     = 'Developpement';
+$c['dev']['name']     = 'Development';
 
 ?>
