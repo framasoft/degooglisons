@@ -301,7 +301,7 @@ $t['alt']['altp3']       = 'In the list, each service generally includes a <b>co
                             and which can be accessed through various <b>home-based tools</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
 $t['alt']['altp4']       = 'So when we use Internet, we must necessarily <b>trust several links in the chain</b>
                             joining us to our personal data online.
-                            Unless we self-host, <b>the <i lang="en">cloud</i> is always someone else's computer</b>.
+                            Unless we self-host, <b>the <i lang="en">cloud</i> is always someone else\'s computer</b>.
                             It is therefore important to know who we are being asked to trust and what their software is doing with our data.';
 
 // Espace médias
@@ -911,7 +911,7 @@ $d[$k]['mTitle'] = 'Share your files easily';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' provides an easy way to share files, for example, when you want to send an email attachment and the file exceeds the maximum allowed size.
                     </p>
-                    <p>Note, however, that this service is not an equivalent of Dropbox or Google Drive : it is not a file hosting service  (for that we have <b class="violet">Frama</b><b class="vert">drive</b>), but really an anonymous file transfer service (the content is automatically coded before transfer, and we don't have access).</p>
+                    <p>Note, however, that this service is not an equivalent of Dropbox or Google Drive : it is not a file hosting service  (for that we have <b class="violet">Frama</b><b class="vert">drive</b>), but really an anonymous file transfer service (the content is automatically coded before transfer, and we don\'t have access).</p>
                     <p>
                         '.$d[$k]['F'].' can send files anonymously. You decide when you wish to remove them (after the first download, 24H/7j/30j/60j after they go online).
                     </p>';
