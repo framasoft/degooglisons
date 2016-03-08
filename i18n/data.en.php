@@ -531,33 +531,33 @@ for ($i=2014; $i<2018; $i++) {
  * Services web *
  ****************
 
-$k = 'id';                                                              // pour la carte : id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte) et pour la liste : associer modales à chaque post-it
+$k = 'id';                                                              // for the card: id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (text) and for the list: to associate modals with each post-it
 
 ---- Facultatif : déjà dans data.php -----------------------------------
-$d[$k]['FL']      = '';                                                 // lien pour le bouton « Utiliser » + $d[$k]['F']
-$d[$k]['CL']      = '';                                                 // lien pour le bouton « Installer » (Framacloud)
-$d[$k]['S']       = '<a href="*">*</a>';                                // lien et nom du logiciel que Frama utilise
+$d[$k]['FL']      = '';                                                 // link for the button « User » + $d[$k]['F']
+$d[$k]['CL']      = '';                                                 // link for the button « Install » (Framacloud)
+$d[$k]['S']       = '<a href="*">*</a>';                                // link and name of software that Frama uses
 $d[$k]['F']       = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">*</b></a>';
-$d[$k]['name']    = '';                                                 // Nom du service proprio sur la carte
-$d[$k]['eq']      = '';                                                 // Équivalents
-$d[$k]['altOn']   = '';                                                 // Alternatives en ligne
-$d[$k]['altOff']  = '';                                                 // Alternatives hors ligne / à installer sur un serveur (doit y avoir au moins $d[$k]['S'])
-$d[$k]['pos']     = '';                                                 // Coordonnées sur la carte : 'x, y, R'
-$d[$k]['FDate']   = '201*';                                             // date ou article du Framablog (contient la date dans l'url)
+$d[$k]['name']    = '';                                                 // Name of the proprietary service on the card
+$d[$k]['eq']      = '';                                                 // Equivalents
+$d[$k]['altOn']   = '';                                                 // Alternatives online
+$d[$k]['altOff']  = '';                                                 // Alternatives offline/to be installed on a server (must have at least $d[$k]['S'])
+$d[$k]['pos']     = '';                                                 // Coordinates on the card: 'x, y, R'
+$d[$k]['FDate']   = '201*';                                             // date or article of Framablog (contains the date in the url)
 
 ---- À remplir ici : data.xx.php ---------------------------------------
-$d[$k]['sDesc']   = '';                                                 // Description courte (en titre sur carte et post-it)
-$d[$k]['lDesc']   = '';                                                 // Description longue (au dos du post-it)
-$d[$k]['mTitle']  = '';                                                 // Modale ↓
+$d[$k]['sDesc']   = '';                                                 // Short description (title on card and post-it)
+$d[$k]['lDesc']   = '';                                                 // Long description (on the back of the post-it)
+$d[$k]['mTitle']  = '';                                                 // Modal ↓
 $d[$k]['mBody']   = '<p>
-                        '.$d[$k]['F'].' vous permet de…
+                        '.$d[$k]['F'].' allows you to…
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> …
+                        <b class="violet">Operation :</b> …
                     </p>';
 
 ---- Facultatif : déjà dans list.php (l.23-26)--------------------------
-$d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance basée sur le logiciel libre '.$d[$k]['S'].'</p>';
+$d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' is an instance based on the free software '.$d[$k]['S'].'</p>';
 
 */
 
@@ -725,7 +725,7 @@ $d[$k]['mBody']  = '<p>
                           <b class="violet">How does it work?</b> create your account on Framaforms and start writing questionnaires to meet your needs. No registration is required for respondents to post their replies. You then have access to a synopsis of the results.
                     </p >';
 
-// Google Groupes
+// Google Groups
 $k= 'ggroups';
 $d[$k]['sDesc']  = 'Mailing lists';
 $d[$k]['lDesc']  = '';
@@ -906,14 +906,14 @@ $d[$k]['mBody']  = '<p>
 // WeTransfer
 $k= 'wetransfer';
 $d[$k]['sDesc']  = 'Send large files';
-$d[$k]['lDesc']  = 'Partagez vos fichiers de manière anonyme';
-$d[$k]['mTitle'] = 'Partagez vos fichiers facilement';
+$d[$k]['lDesc']  = 'Share your files anonymously';
+$d[$k]['mTitle'] = 'Share your files easily';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de partager facilement des fichiers comme, par exemple, lorsque vous voulez envoyez une pièce jointe par email et que le fichier dépasse la taille maximale autorisée.
+                        '.$d[$k]['F'].' provides an easy way to share files, for example, when you want to send an email attachment and the file exceeds the maximum allowed size.
                     </p>
-                    <p>Attention, ce service n’est pas un équivalent de Dropbox ou Google Drive : il ne s’agit pas d’un service d’hébergement de fichiers  (pour ça il y a <b class="violet">Frama</b><b class="vert">drive</b>), mais bien d’un service d’envoi de fichiers anonymes (le contenu est automatiquement chiffré avant envoi, nous n’y avons pas accès).</p>
+                    <p>Note, however, that this service is not an equivalent of Dropbox or Google Drive : it is not a file hosting service  (for that we have <b class="violet">Frama</b><b class="vert">drive</b>), but really an anonymous file transfer service (the content is automatically coded before transfer, and we don't have access).</p>
                     <p>
-                        '.$d[$k]['F'].' permet d’envoyer des fichiers de façon anonyme. Vous pouvez décider du moment de leur suppression (dès le premier téléchargement, 24H/7j/30j/60j après leur mise en ligne).
+                        '.$d[$k]['F'].' can send files anonymously. You decide when you wish to remove them (after the first download, 24H/7j/30j/60j after they go online).
                     </p>';
 
 // Youtube
