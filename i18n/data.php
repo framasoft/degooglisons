@@ -544,6 +544,20 @@ $d[$k]['pos']    = '';
 $d[$k]['FDate']  = '2016';
 $d[$k]['cat']    = 'files';
 
+// Slack
+$k= 'slack';
+$d[$k]['FL']     = 'https://framateam.org';
+$d[$k]['CL']     = '';
+$d[$k]['S']      = '<a href="http://www.mattermost.org/">Mattermost</a>';
+$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">team</b></a>';
+$d[$k]['name']   = 'Slack';
+$d[$k]['eq']     = '';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://rizzoma.com/">Rizzoma</a>, <a href="https://rocket.chat/">Rocket.chat</a>';
+$d[$k]['pos']    = '';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">2016</a>';
+$d[$k]['cat']    = 'social';
+
 // Transifex
 $k= 'transifex';
 $d[$k]['FL']     = '';
@@ -712,16 +726,6 @@ $d[$k]['eq']     = 'Orange Contact+, Google Wallet, Apple Pay';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '<a href="https://litecoin.org/">Litecoin</a>';
 $d[$k]['cat']    = 'home';
-
-// Slack
-$k= 'slack';
-$d[$k]['S']      = '';
-$d[$k]['F']      = '<a href="https://rizzoma.com/">Rizzoma</a>';
-$d[$k]['name']   = 'Slack';
-$d[$k]['eq']     = '';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://rocket.chat/">Rocket.chat</a>, <a href="http://www.mattermost.org/">Mattermost</a>';
-$d[$k]['cat']    = 'social';
 
 // Universalis
 $k= 'universalis';

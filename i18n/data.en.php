@@ -606,7 +606,7 @@ $d[$k]['mBody']  = '<p>
                       <source src="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
                       </video>
                    </p>
-                   <p><small><em>Tutorial made by Claire Cassaigne</em> - The <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">video</a>  is available in WebM format.</small></p>
+                   <p><small><em>Tutorial made by Claire Cassaigne</em> - The <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">video</a> is available in WebM format.</small></p>
                     <p>
                          <b class="violet">Why would you use Framindmap?</b> This service is available online. No installation nor registration is required. You can choose your file format for export and save the map as an image. It is a free and open source software. The data are yours.
                     </p>';
@@ -981,7 +981,7 @@ $d[$k]['mBody']  = '<p>
                          <source src="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
                     </video>
                     </div>
-                    <p>  La <a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">video</a> in  webm format</p>';
+                    <p><a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">Video</a> in webm format</p>';
 
 // Scribd
 $k= 'scribd';
@@ -989,6 +989,22 @@ $d[$k]['sDesc']  = 'Sharing PDF/ODP';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
+
+// Slack
+$k= 'slack';
+$d[$k]['sDesc']  = 'Collaborative communication';
+$d[$k]['lDesc']  = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
+$d[$k]['mTitle'] = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
+$d[$k]['mBody']  = '<p>
+                        <b class="violet">Frama</b><b class="vert">team</b> est un service de <b>tchat</b>
+                        libre qui permet de communiquer avec son équipe en notifiant ses collègues,
+                        de conserver ses conversations et d’y faire des recherches.
+                    </p>
+                    <ol>
+                        <li>Créez votre équipe</li>
+                        <li>Invitez vos membres</li>
+                        <li>Créez vos canaux de communication (publics ou privés)</li>
+                    </ol>';
 
 // Transifex
 $k= 'transifex';
@@ -1083,10 +1099,6 @@ $d[$k]['sDesc']  = 'Web hosting & cloud';
 // Paypal
 $k= 'paypal';
 $d[$k]['sDesc']  = 'Online payments';
-
-// Slack
-$k= 'slack';
-$d[$k]['sDesc']  = 'Collaborative communication';
 
 // Universalis
 $k= 'universalis';
