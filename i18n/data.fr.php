@@ -1052,6 +1052,22 @@ $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
+// Slack
+$k= 'slack';
+$d[$k]['sDesc']  = 'Communication collaborative';
+$d[$k]['lDesc']  = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
+$d[$k]['mTitle'] = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
+$d[$k]['mBody']  = '<p>
+                        <b class="violet">Frama</b><b class="vert">team</b> est un service de <b>tchat</b>
+                        libre qui permet de communiquer avec son équipe en notifiant ses collègues,
+                        de conserver ses conversations et d’y faire des recherches.
+                    </p>
+                    <ol>
+                        <li>Créez votre équipe</li>
+                        <li>Invitez vos membres</li>
+                        <li>Créez vos canaux de communication (publics ou privés)</li>
+                    </ol>';
+
 // Transifex
 $k= 'transifex';
 $d[$k]['sDesc']  = 'Traduction de logiciels';
@@ -1145,10 +1161,6 @@ $d[$k]['sDesc']  = 'Hébergement web & cloud';
 // Paypal
 $k= 'paypal';
 $d[$k]['sDesc']  = 'Paiements en ligne';
-
-// Slack
-$k= 'slack';
-$d[$k]['sDesc']  = 'Communication collaborative';
 
 // Universalis
 $k= 'universalis';
