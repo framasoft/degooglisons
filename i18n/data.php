@@ -608,10 +608,10 @@ $d[$k]['FDate']   = '2015';
  **********************/
 // $potion = alternatives en préparation
 // $fight = alternatives opérationnelles
-$potion  = ['avaaz','gslides','skype','youtube','1000minds','gforms','transifex'];
+$potion  = ['avaaz','gslides','loomio','skype','youtube','1000minds','gforms','transifex'];
 $fight   = ['bubblus','doodle','dropbox','gdocs','greader','gspreadsheet',
             'pixlr','facebook','pocket','bitly','github','gbooks','gmaps',
-            'gsearch','imgur','kongregate','pastebin','trello','wetransfer'];
+            'gsearch','imgur','kongregate','pastebin','slack','trello','wetransfer'];
 
 /**********************
  * Projets hors Frama *
