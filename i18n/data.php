@@ -660,7 +660,7 @@ $d[$k]['cat']    = 'home';
 // Deezer
 $k= 'deezer';
 $d[$k]['S']      = '';
-$d[$k]['F']      = '<a href="http://dogmazic.org">Dogmazic</a>';
+$d[$k]['F']      = '<a href="http://dogmazic.net">Dogmazic</a>';
 $d[$k]['name']   = 'Deezer';
 $d[$k]['eq']     = 'Spotify, Soundcloud';
 $d[$k]['altOn']  = '<a href="http://jamendo.com">Jamendo</a>';
