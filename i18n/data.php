@@ -391,16 +391,16 @@ $d[$k]['cat']    = 'web';
 
 // Shrtct
 $k= 'loomio';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
+$d[$k]['FL']     = 'https://framavox.org';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-loomio/';
 $d[$k]['S']      = '<a href="https://www.loomio.org">Loomio</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">loomio</b>';
+$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">vox</b>';
 $d[$k]['name']   = 'Shrtct';
 $d[$k]['eq']     = '1000minds';
 $d[$k]['altOn']  = $d[$k]['S'];
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://liquidfeedback.org/">LiquidFeedback</a>';
 $d[$k]['pos']    = '420,620,40';
-$d[$k]['FDate']  = '2016';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2016/06/03/framavox-discutez-decidez-et-faites-entendre-votre-voix">2016</a>';
 $d[$k]['cat']    = 'social';
 
 // Skype
@@ -608,10 +608,10 @@ $d[$k]['FDate']   = '2015';
  **********************/
 // $potion = alternatives en préparation
 // $fight = alternatives opérationnelles
-$potion  = ['avaaz','gslides','loomio','skype','youtube','1000minds','gforms','transifex'];
+$potion  = ['avaaz','gslides','skype','youtube','1000minds','gforms','transifex'];
 $fight   = ['bubblus','doodle','dropbox','gdocs','greader','gspreadsheet',
             'pixlr','facebook','pocket','bitly','github','gbooks','gmaps',
-            'gsearch','imgur','kongregate','pastebin','slack','trello','wetransfer'];
+            'gsearch','imgur','kongregate','loomio','pastebin','slack','trello','wetransfer'];
 
 /**********************
  * Projets hors Frama *
