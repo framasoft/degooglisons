@@ -391,8 +391,8 @@ $d[$k]['cat']    = 'web';
 
 // Shrtct
 $k= 'loomio';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
+$d[$k]['FL']     = 'https://framavox.org';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-loomio/';
 $d[$k]['S']      = '<a href="https://www.loomio.org">Loomio</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">vox</b>';
 $d[$k]['name']   = 'Shrtct';
