@@ -268,3 +268,4 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 .trello .logo:before { content: "\f0e4"; }
 .wetransfer .logo:before { content: "\f1d8"; }
 .gmaps .logo:before { content: "\f279"; }
+.loomio .logo:before { content: "\f0a1"; }
