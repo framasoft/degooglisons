@@ -394,7 +394,7 @@ $k= 'loomio';
 $d[$k]['FL']     = 'https://framavox.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-loomio/';
 $d[$k]['S']      = '<a href="https://www.loomio.org">Loomio</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">vox</b>';
+$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">vox</b></a>';
 $d[$k]['name']   = 'Shrtct';
 $d[$k]['eq']     = '1000minds';
 $d[$k]['altOn']  = $d[$k]['S'];
