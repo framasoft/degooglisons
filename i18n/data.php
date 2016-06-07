@@ -400,7 +400,7 @@ $d[$k]['eq']     = '1000minds';
 $d[$k]['altOn']  = $d[$k]['S'];
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://liquidfeedback.org/">LiquidFeedback</a>';
 $d[$k]['pos']    = '420,620,40';
-$d[$k]['FDate']  = '<a href="http://framablog.org/2016/06/03/framavox-discutez-decidez-et-faites-entendre-votre-voix">2016</a>';
+$d[$k]['FDate']  = '<a href="http://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix">2016</a>';
 $d[$k]['cat']    = 'social';
 
 // Skype
