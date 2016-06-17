@@ -398,6 +398,26 @@ $t['medias']['t5i6url']     = 'img/anim_dio'; // .mp4 et .webm
 $t['medias']['t6']          = 'Presentation';
 $t['medias']['t6url']       = 'presentation/';
 
+$t['medias']['t7']          = 'Stickers';
+$t['medias']['t7i1txt']     = 'GAFAM';
+$t['medias']['t7i1url']     = 'img/stickerDiO_gafam.png';
+$t['medias']['t7i1desc']    = 'GAFAM, we &lt;3 your data!';
+$t['medias']['t7i2txt']     = 'Google';
+$t['medias']['t7i2url']     = 'img/stickerDiO_google.png';
+$t['medias']['t7i2desc']    = 'Warning: do not feed the Google.';
+$t['medias']['t7i3txt']     = 'Amazon';
+$t['medias']['t7i3url']     = 'img/stickerDiO_amazon.png';
+$t['medias']['t7i3desc']    = '<i lang="fr">Attention : Amazon très méchant</i>';
+$t['medias']['t7i4txt']     = 'Facebook';
+$t['medias']['t7i4url']     = 'img/stickerDiO_facebook.png';
+$t['medias']['t7i4desc']    = 'Facebook is watching you.';
+$t['medias']['t7i5txt']     = 'Apple';
+$t['medias']['t7i5url']     = 'img/stickerDiO_apple.png';
+$t['medias']['t7i5desc']    = 'Apple: Kids, don\'t do drugs.';
+$t['medias']['t7i6txt']     = 'Microsoft';
+$t['medias']['t7i6url']     = 'img/stickerDiO_microsoft.png';
+$t['medias']['t7i6desc']    = 'Microsoft: do you need a backdoor?';
+
 $t['medias']['presstitle']  = 'Press Release';
 $t['medias']['pressintro']  = 'The “De-google-ify Internet” campaign already received a lot of attention during the first year. Here are some extracts from our <a href="https://wiki.framasoft.org/speakabout">Press release</a>.';
 $t['medias']['pressth1']    = 'Date';

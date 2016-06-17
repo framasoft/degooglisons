@@ -440,6 +440,26 @@ $t['medias']['t5i6url']     = 'img/anim_dio'; // .mp4 et .webm
 $t['medias']['t6']          = 'Présentation';
 $t['medias']['t6url']       = 'presentation/';
 
+$t['medias']['t7']          = '<span lang="en">Stickers</span>';
+$t['medias']['t7i1txt']     = 'GAFAM';
+$t['medias']['t7i1url']     = 'img/stickerDiO_gafam.png';
+$t['medias']['t7i1desc']    = '<i lang="en">GAFAM, we &lt;3 your data!</i>';
+$t['medias']['t7i2txt']     = 'Google';
+$t['medias']['t7i2url']     = 'img/stickerDiO_google.png';
+$t['medias']['t7i2desc']    = '<i lang="en">Warning: do not feed the Google.</i>';
+$t['medias']['t7i3txt']     = 'Amazon';
+$t['medias']['t7i3url']     = 'img/stickerDiO_amazon.png';
+$t['medias']['t7i3desc']    = 'Attention : Amazon très méchant';
+$t['medias']['t7i4txt']     = 'Facebook';
+$t['medias']['t7i4url']     = 'img/stickerDiO_facebook.png';
+$t['medias']['t7i4desc']    = '<i lang="en">Facebook is watching you.</i>';
+$t['medias']['t7i5txt']     = 'Apple';
+$t['medias']['t7i5url']     = 'img/stickerDiO_apple.png';
+$t['medias']['t7i5desc']    = '<i lang="en">Apple: Kids, don\'t do drugs.</i>';
+$t['medias']['t7i6txt']     = 'Microsoft';
+$t['medias']['t7i6url']     = 'img/stickerDiO_microsoft.png';
+$t['medias']['t7i6desc']    = '<i lang="en">Microsoft: do you need a backdoor?</i>';
+
 $t['medias']['presstitle']  = 'Revue de presse';
 $t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant sa première année. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
 $t['medias']['pressth1']    = 'Date';
