@@ -42,6 +42,7 @@ include('header.php');
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#cartes" aria-controls="cartes" role="tab" data-toggle="tab"><?php echo $t['medias']['t1'] ?></a></li>
             <li role="presentation"><a href="#dessins" aria-controls="dessins" role="tab" data-toggle="tab"><?php echo $t['medias']['t2'] ?></a></li>
+            <li role="presentation"><a href="#stickers" aria-controls="stickers" role="tab" data-toggle="tab"><?php echo $t['medias']['t7'] ?></a></li>
             <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab"><?php echo $t['medias']['t3'] ?></a></li>
             <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab"><?php echo $t['medias']['t6'] ?></a></li>
             <li role="presentation"><a href="#screenshots" aria-controls="screenshots" role="tab" data-toggle="tab"><?php echo $t['medias']['t4'] ?></a></li>
@@ -76,6 +77,22 @@ include('header.php');
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                                  title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
                                  src="<?php echo $l['current'].$t['medias']['t2i'.$i.'url'] ?>" />
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+            <!-- Stickers -->
+            <div role="tabpanel" class="tab-pane" id="stickers">
+                <div class="row">
+                    <?php for ($i=1; $i<=6; $i++) { ?>
+                    <div class="col-sm-4">
+                        <div class="thumbnail text-center">
+                            <h3><?php echo $t['medias']['t7i'.$i.'txt'] ?></h3>
+                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'].$t['medias']['t7i'.$i.'url'] ?>" />
+                            <p class="text-center"><?php echo $t['medias']['t7i'.$i.'desc'] ?></p>
                         </div>
                     </div>
                     <?php } ?>
