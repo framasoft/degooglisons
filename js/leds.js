@@ -7,6 +7,13 @@ $(document).ready(function() {
         });
     });
 
+    if (window.location.hash) {
+        var f$_hash=window.location.hash;
+        jQuery('.nav-tabs a').each(function(){
+            if(jQuery(this).attr('href')==f$_hash) { jQuery(this).trigger('click'); }
+        });
+    }
+
     $('a[href="#leds"]').on('click', function() {
         $('.leds').slideDown('slow');
     });

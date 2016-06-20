@@ -1142,6 +1142,10 @@ $d[$k]['name']    = 'Développement et intégration du plugin Mypads';
 $k= 'airbnb';
 $d[$k]['sDesc']  = 'Logement';
 
+// AWeber
+$k= 'aweber';
+$d[$k]['sDesc']  = 'Lettre d’information';
+
 // Blablacar
 $k= 'blablacar';
 $d[$k]['sDesc']  = 'Co-voiturage';

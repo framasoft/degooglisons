@@ -626,6 +626,16 @@ $d[$k]['altOn']  = '<a href="https://www.trustroots.org/">Trustroots</a>';
 $d[$k]['altOff'] = '<a href="http://trac.bewelcome.org/">BW Rox</a>';
 $d[$k]['cat']    = 'hobbies';
 
+// AWeber
+$k= 'aweber';
+$d[$k]['S']      = '';
+$d[$k]['F']      = '<a href="https://www.phplist.com/">PHP List</a>';
+$d[$k]['name']   = 'AWeber';
+$d[$k]['eq']     = '';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://www.phplist.com/">PHP List</a>';
+$d[$k]['cat']    = 'social';
+
 // Blablacar
 $k= 'blablacar';
 $d[$k]['S']      = '';

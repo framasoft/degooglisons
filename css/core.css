@@ -219,13 +219,13 @@ table .list-group-item img {
 }
 
 a {
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid #ccc;
     text-decoration:none !important;
 }
 
 a:hover,
 a:focus {
-    border-bottom: 2px solid #949494;
+    border-bottom: 2px solid #ccc;
 
     -webkit-transition: all 100ms ease 0s;
     -moz-transition: all 100ms ease 0s;
