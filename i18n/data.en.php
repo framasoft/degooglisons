@@ -1080,6 +1080,10 @@ $d[$k]['name']    = 'Development and integration of Mypads plugin';
 $k= 'airbnb';
 $d[$k]['sDesc']  = 'Accommodation';
 
+// AWeber
+$k= 'aweber';
+$d[$k]['sDesc']  = 'Newsletter';
+
 // Blablacar
 $k= 'blablacar';
 $d[$k]['sDesc']  = 'Car sharing';
