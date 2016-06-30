@@ -89,9 +89,9 @@ include('header.php');
                     <div class="col-sm-4">
                         <div class="thumbnail text-center">
                             <h3><?php echo $t['medias']['t7i'.$i.'txt'] ?></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                            <a href="<?php echo $l['current'].str_replace('.png', '.svg', $t['medias']['t7i'.$i.'url']) ?>"><img class="img-responsive" data-toggle="tooltip" data-placement="top"
                                  title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'].$t['medias']['t7i'.$i.'url'] ?>" />
+                                 src="<?php echo $l['current'].$t['medias']['t7i'.$i.'url'] ?>" /></a>
                             <p class="text-center"><?php echo $t['medias']['t7i'.$i.'desc'] ?></p>
                         </div>
                     </div>
