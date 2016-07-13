@@ -13,7 +13,7 @@ $l['F'] = 'https://framasoft.org';
 $l['S'] = 'https://soutenir.framasoft.org';
 $l['DIo'] = 'https://degooglisons-internet.org';
 $l['DIoL'] = $l['DIo'].'/liste';
-$l['Charte'] = 'https://n4.framasoft.org/nav/html/charte.html';
+$l['Charte'] = 'https://framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
 

@@ -26,20 +26,20 @@
 
     <title><?php echo $t['meta']['title'].' - '.$t[$page]['title'].' - '.$t['meta']['framasoft'] ?></title>
 
-    <link rel="shortcut icon" href="https://n4.framasoft.org/nav/img/icons/favicon-violet.png">
+    <link rel="shortcut icon" href="https://framasoft.org/nav/img/icons/favicon-violet.png">
 
-    <link href="https://n4.framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link href="https://framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
     <link href="<?php echo $l['current'] ?>css/core.css" rel="stylesheet" type="text/css" />
     <?php echo $t[$page]['css'] ?>
-    <link href="https://n4.framasoft.org/nav/lib/font-awesome/css/font-awesome.min.css" media="all" rel="stylesheet">
-    <link href="https://n4.framasoft.org/nav/css/frama.css" media="all" rel="stylesheet">
+    <link href="https://framasoft.org/nav/lib/font-awesome/css/font-awesome.min.css" media="all" rel="stylesheet">
+    <link href="https://framasoft.org/nav/css/frama.css" media="all" rel="stylesheet">
 
-    <script src="https://n4.framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
-    <script src="https://n4.framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="https://framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <?php echo $t[$page]['js'] ?>
 </head>
 <body>
-    <script src="https://n4.framasoft.org/nav/nav.js" type="text/javascript"></script>
+    <script src="https://framasoft.org/nav/nav.js" type="text/javascript"></script>
         <div class="row" id="internav">
             <div class="container">
                 <form method="post" action="<?php echo $currentPage ?>">
