@@ -167,7 +167,7 @@ $d[$k]['cat']    = 'social';
 // Github
 $k= 'github';
 $d[$k]['FL']     = 'http://git.framasoft.org';
-$d[$k]['CL']     = '';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/';
 $d[$k]['S']      = '<a href="https://gitlab.com/">Gitlab</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">git</b></a>';
 $d[$k]['name']   = $e['github']['fa'].'GitHub';
@@ -547,7 +547,7 @@ $d[$k]['cat']    = 'files';
 // Slack
 $k= 'slack';
 $d[$k]['FL']     = 'https://framateam.org';
-$d[$k]['CL']     = '';
+$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/';
 $d[$k]['S']      = '<a href="http://www.mattermost.org/">Mattermost</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">team</b></a>';
 $d[$k]['name']   = 'Slack';
