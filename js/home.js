@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('#carte').maphilight();
 
     var carte = $('#carte').attr('src');
-        carte = window.location.href+carte.replace('victoires','animation').replace('png','gif');
+        carte = window.location.href.replace(/\?l=.*/, '')+carte.replace('victoires','animation').replace('png','gif');
 
     $.ajax({
         url : carte,
