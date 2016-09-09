@@ -314,6 +314,7 @@ $t['home']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
 
 // Liste des services
 $t['list']['title']      = 'Liste des services';
+$t['list']['roadmap']    = 'Feuille de route';
 $t['list']['link']       = $l['current'].'liste';
 $t['list']['desc']       = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
 $t['list']['css']        = '

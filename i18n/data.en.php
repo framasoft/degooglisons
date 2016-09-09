@@ -271,6 +271,7 @@ $t['home']['conc']['sbtn']  = 'Donate<br /> to Framasoft';
 
 // Liste des services
 $t['list']['title']     = 'List of services';
+$t['list']['roadmap']   = 'Roadmap';
 $t['list']['link']      = 'list';
 $t['list']['desc']      = 'List of free, ethical, decentralized, and solidarity-based online services offered by Framasoft (or in progress) to de-google-ify Internet';
 $t['list']['css']       = '
