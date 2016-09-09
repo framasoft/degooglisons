@@ -169,11 +169,34 @@ foreach($timeline as $k => $v) {
 include('header.php');
 
 ?>
+        <div id="list" class="row lite">
+            <div class="container ombre">
+                <h1><?php echo $t['list']['title'] ?></h1>
+                <ul class="list-inline">
+<?php
+                foreach ($d as $k => $v) {
+                    if(in_array($k, $fight)) {
+                        echo '
+                    <li class="col-xs-4 col-sm-3 text-center">
+                        <a href="'.$v['FL'].'"
+                           title="'.$v['sDesc'].'" >
+                            <i class="fa fa-3x fa-fw '.$v['i'].' fb_v'.rand(1,4).' fc_dark"></i>
+                            <br/>'.strip_tags($v['F'], '<b>').'
+                        </a>
+                    </li>';
+                    }
+                }
+?>
+                </ul>
+            </div>
+        </div>
+
         <div id="sticky" class="container hidden-xs">
             <nav class="navbar navbar-default nav-year col-md-6" role="navigation">
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#2011-2013">2011-2013</a></li>
+                        <li class="active"><a href="#list"><img src="https://framasoft.org/nav/img/logo.png" width="20" height="20"><span class="sr-only"><?php echo $t['list']['title'] ?></span></a></li>
+                        <li><a href="#2011-2013">2011-2013</a></li>
                         <li><a href="#2014">2014</a></li>
                         <li><a href="#2015">2015</a></li>
                         <li><a href="#2016">2016</a></li>
@@ -189,6 +212,7 @@ include('header.php');
         </div>
         <div id="tips" class="row">
             <div class="container ombre">
+                <h1><?php echo $t['list']['roadmap'] ?></h1>
                 <?php echo $tips; ?>
 <?php
 include('footer.php')

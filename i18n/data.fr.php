@@ -314,6 +314,7 @@ $t['home']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
 
 // Liste des services
 $t['list']['title']      = 'Liste des services';
+$t['list']['roadmap']    = 'Feuille de route';
 $t['list']['link']       = $l['current'].'liste';
 $t['list']['desc']       = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
 $t['list']['css']        = '
@@ -650,9 +651,14 @@ $d[$k]['mBody']  = '<p>
 // Blogger
 $k= 'blogger';
 $d[$k]['sDesc']  = 'Hébergement de sites';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Créez un site web qui respectera vos visiteurs';
+$d[$k]['mTitle'] = 'Votre site web en quelques clics';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de créer un site web facilement, avec des outils libres et de l’héberger sur nos serveurs. Aucune publicité ni traquage ne portera atteinte aux données de vos visiteurs et visiteuses.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Choisissez votre sous-domaine, le type de site que vous voulez créer (page web, blog) puis laissez-vous guider.
+                    </p>';
 
 // Bubbl.us
 $k= 'bubblus';
@@ -696,18 +702,30 @@ $d[$k]['mBody']  = '<p>
 // Dropbox
 $k= 'dropbox';
 $d[$k]['sDesc']  = 'Stockage de documents';
-$d[$k]['lDesc']  = 'Héberger ses documents en ligne';
+$d[$k]['lDesc']  = 'Hébergez, synchronisez et partagez vos documents';
 $d[$k]['mTitle'] = 'Héberger ses documents en ligne';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de stocker en ligne vos documents, de les synchroniser sur vos ordinateurs, tablettes, téléphones, etc et de les partager avec qui vous voulez…
+                    </p>
+                    <p>
+			Nous avons ouvert 5000 comptes d´une capacité de 2 Go afin de permettre de tester une alternative libre… Pour une solution plus importante ou plus disponible, vous pouvez aller chercher un hébergement chez les <a href="https://chatons.org">CHATONS</a> dont notre partenaire <a href="https://indiehosters.net">Indie Hosters</a> (ou vous essayer à l´auto hébergement avec <a href="http://yunohost.org/">Yunohost</a>, <a href="http://labriqueinter.net/">la Brique internet</a> ou <a href="https://cozy.io/fr/">My Cozy Cloud</a>).
                     </p>';
 
 // Evernote
 $k= 'evernote';
 $d[$k]['sDesc']  = 'Prise de notes';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Vos notes, images et liens favoris à portée de doigt&nbsp;!';
+$d[$k]['mTitle'] = 'Vos notes ne regardent que vous.';
+$d[$k]['mBody']  = '<p>
+                        Avec '.$d[$k]['F'].' vous pouvez prendre et conserver des notes, images, liens… et même des fichiers&nbsp;; et les synchroniser avec tous vos appareils (voire les partager avec des ami-e-s).
+                    </p>
+                    <p class="violet">Fonctionnalités :</p>
+                    <ul>
+                        <li>prise de notes synchronisées</li>
+                        <li>mise en page facilitée (syntaxe Markdown)</li>
+                        <li>hébergement d´images et de fichiers (légers)</li>
+                        <li>possibilité de partager un «&nbsp;Tableau de notes&nbsp;» avec d´autres utilisateurs</li>
+                    </ul>';
 
 // Facebook
 $k= 'facebook';
@@ -743,9 +761,20 @@ $d[$k]['mBody']  = '';
 // Google Agenda
 $k= 'gagenda';
 $d[$k]['sDesc']  = 'Agenda partagé';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'À vous de choisir qui verra votre planning';
+$d[$k]['mTitle'] = 'Vos rendez-vous vous appartiennent';
+$d[$k]['mBody']  = '<p>
+                        Avec '.$d[$k]['F'].' vous pouvez créer des agendas personnels, professionnels, le planning d´une salle ou des activités de votre organisation, et les partager librement. Vous restez maîtres de vos données, et vous choisissez auprès de qui, où et quand elles s´affichent.
+                    </p>
+                    <p class="violet">Fonctionnalités :</p>
+                    <ul>
+                        <li>création de multiples agendas</li>
+                        <li>listes de contacts et de taches</li>
+                        <li>synchronisation sur vos appareils</li>
+                        <li>partager des agendas</li>
+                        <li>inviter (par email) des participants à des rendez-vous</li>
+                        <li>possibilité d´affichage public des agendas</li>
+                    </ul>';
 
 // Google Books
 $k= 'gbooks';
@@ -797,9 +826,14 @@ $d[$k]['mBody']  = '<p>
 // Google Groupes
 $k= 'ggroups';
 $d[$k]['sDesc']  = 'Listes de diffusion';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Créez une liste de discussion par email';
+$d[$k]['mTitle'] = 'Échangez sans être lus par Big Brother';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de créer des liste de diffusion emails : toute personne s´abonnant à votre liste pourra recevoir les emails qui y sont envoyés, et y participer à son tour. À vous de choisir si cette liste est publique, semi-privée ou privée.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement</b> : créez un compte sur Framalistes pour faire, paramétrer et gérer votre liste de diffusion, ou tout simplement pour y rechercher les listes qui vous intéressent et gérer vos abonnements.
+                    </p>';
 
 // Google Maps
 $k= 'gmaps';
@@ -902,9 +936,14 @@ $d[$k]['mBody']  = '<p>
 // Meetup
 $k= 'meetup';
 $d[$k]['sDesc']  = 'Événements communautaires';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Organisez des rencontres et des groupes d´intérêts';
+$d[$k]['mTitle'] = 'Gardez le contrôle sur les rencontres que vous organisez';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de proposer des événements et rencontres, et de garder le contact avec la communauté qui partage vos intérêts !
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> à venir.
+                    </p>';
 
 // Pastebin
 $k= 'pastebin';
@@ -1037,9 +1076,14 @@ $d[$k]['mFooter']= '<p class="precisions">Framagames est une compilation de jeux
 // Padlet
 $k= 'padlet';
 $d[$k]['sDesc']  = 'Organisation d’idées';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Un brainstrorming collaboratif en temps réel';
+$d[$k]['mTitle'] = 'Tempête de post-it libres';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de créer un tableau à colonnes où quiconque peut venir y déposer des notes colorées. Tel <a href="https://framapad.org><b class="violet>Frama</b><b class="vert">pad</b></a>, aucune inscription n´est requise, et les modifications se voient et sont enregistrées en direct.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> allez sur le site, créez un tableau, renseignez votre pseudonyme, puis partagez l´URL (l´adresse web) avec vos collaborateurs. C´est aussi simple que cela !
+                    </p>';
 
 // Pixlr
 $k= 'pixlr';
@@ -1068,9 +1112,14 @@ $d[$k]['mBody']  = '<p>
 // Scribd
 $k= 'scribd';
 $d[$k]['sDesc']  = 'Partage de PDF/ODP';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Affichez et partagez vos documents';
+$d[$k]['mTitle'] = 'Votre lectorat aussi a des droits';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' permet d´héberger des documents PDF et des présentations (ODP) afin de les donner à lire au grand public. Votre lectorat n´aura pas besoin de créer un compte ni de subir punblicités et traquages, et pourra se concentreer sur ce que vous partagez.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Créez un compte, téléversez vos documents et utilisez le lien de partage (ou le code d´affichage pour votre site).
+                    </p>';
 
 // Slack
 $k= 'slack';
@@ -1091,9 +1140,28 @@ $d[$k]['mBody']  = '<p>
 // Transifex
 $k= 'transifex';
 $d[$k]['sDesc']  = 'Traduction de logiciels';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = '';
+$d[$k]['lDesc']  = 'Ouvrez un espace de traduction à voter logiciel';
+$d[$k]['mTitle'] = 'Pour que votre code devienne polyglotte !';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous offre une interface de traduction simple pour traduire les chaînes de caractères de votre code de manière collaborative.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Créez un compte, téléversez vote code, et modérez les diverses participations.
+                    </p>';
+
+// Minecraft
+$k= 'minecraft';
+$d[$k]['sDesc']  = 'Jeu éducatif';
+$d[$k]['lDesc']  = 'Le jeu éducatif à creuser';
+$d[$k]['mTitle'] = 'Construisez vos propres applications pédagogiques';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' est un serveur du jeu Minetest, un jeu "bac à sable" dont vous construisez et décomposez les blocs pour le modifier.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Téléchargez le logiciel client, connectez vous sur notre serveur et jouez.
+                    </p>';
+
+
 
 /****************
  * Mises à jour *

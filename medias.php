@@ -4,7 +4,7 @@ $page = 'medias';
 
 include('header.php');
 ?>
-<div class="row">
+<div id="medias" class="row">
     <div class="container ombre">
         <div class="col-xs-12">
         <h2><?php echo $t['medias']['subtitle'] ?></h2>

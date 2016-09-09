@@ -62,12 +62,25 @@ h5 a, h5 a:hover, h5 a:focus{
 }
 
 main {
-    margin-bottom:30px;
+    /*margin-bottom:30px;*/
 }
 
 .container.ombre {
     padding-top:15px;
     padding-bottom:15px;
+}
+
+#mainHeader .container.ombre {
+    margin-bottom:0 !important;
+}
+#tips .container.ombre,
+#list .container.ombre,
+#medias .container.ombre {
+    margin-top:0 !important;
+}
+#bloc-carte .container.ombre {
+    margin-top:0 !important;
+    margin-bottom:0 !important;
 }
 
 .leds {
