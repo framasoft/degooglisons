@@ -817,7 +817,7 @@ $d[$k]['sDesc']  = 'Questionnaires en ligne';
 $d[$k]['lDesc']  = 'Créez simplement des questionnaires';
 $d[$k]['mTitle'] = 'Création de questionaires';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de créer les questionnaires dont vous avez besoin, que ce soit dans un cadre scolaire, familial ou associatif. Créez vos questions en fonction de vos besoins, des formulaires à choix multiples aux champs de texte libre.
+                        '.$d[$k]['F'].' vous permet de créer les questionnaires qu´il vous faut, que ce soit dans un cadre scolaire, familial ou associatif. Créez vos questions en fonction de vos besoins, des formulaires à choix multiples aux champs de texte libre.
                     </p>
                     <p>
                         <b class="violet">Fonctionnement</b> : créez un compte sur Framaforms et lancez-vous dans la création des questionnaires, en fonction de vos besoins. Vos sondés n’ont pas besoin de s’inscrire pour pouvoir répondre. Vous disposez d’une synthèse des réponses.
@@ -993,7 +993,7 @@ $d[$k]['sDesc']  = 'Visioconférence';
 $d[$k]['lDesc']  = 'Discutez librement avec vos amis';
 $d[$k]['mTitle'] = 'Vidéoconférence';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de discuter simplement avec vos amis, sans installation complexe de logiciel. Vous discutez simplement, sans aucune analyse des données liées aux conversations. Tout se passe entre vous et vos amis.
+                        '.$d[$k]['F'].' vous permet de discuter simplement avec vos amis, sans installation complexe de logiciel. Vous échangez sans aucune analyse des données liées aux conversations. Tout se passe entre vous et vos amis.
                     </p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Directement à partir de votre navigateur web, vous êtes mis en relation avec vos amis, sans devoir installer de logiciel supplémentaire. Une fois connecté, donnez l’autorisation à votre navigateur d’utiliser votre micro et votre webcam, et profitez de la discussion en toute simplicité.
