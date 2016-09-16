@@ -682,6 +682,18 @@ $d[$k]['mBody']  = '<p>
                         votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                     </p>';
 
+// Compte Google
+$k= 'compte';
+$d[$k]['sDesc']  = 'Tout Framasoft';
+$d[$k]['lDesc']  = 'Retrouvez facilement tous les services Framasoft que vous utilisez';
+$d[$k]['mTitle'] = 'Retrouver ses Framachins (et ses liens) en un clic';
+$d[$k]['mBody']  = '<p>
+                        Avec '.$d[$k]['F'].', il suffit d´un clic pour que votre Frama -pad, -date, -form (etc.) soit rangé et conservé dans votre compte. Véritable petit fourre-tout numérique, il vous permet aussi de conserver et retrouver les liens que vous aimez à la manière de del.ico.us !
+                    </p>
+                    <p>
+                      <b class="violet">Fonctionnement :</b> Créez votre compte, puis ajoutez le marque-pages interactif (Bookmarklet) à votre barre personelle ou utilisez notre bouton MyFrama pour conserver le lien du service que vous utilisez. Tout est trié automatiquement, et vous pouvez ajouter vos propres étiquettes ou les liens vers les pages web que vous aimez ! 
+                    </p>';
+
 // Doodle
 $k= 'doodle';
 $d[$k]['sDesc']  = 'Réunions et sondages';
