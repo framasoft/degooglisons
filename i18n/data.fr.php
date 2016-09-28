@@ -1161,7 +1161,17 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Fonctionnement :</b> Téléchargez le logiciel client, connectez vous sur notre serveur et jouez.
                     </p>';
 
-
+// Xmarks
+$k= 'xmarks';
+$d[$k]['sDesc']  = 'Marque-pages';
+$d[$k]['lDesc']  = 'Retrouvez facilement vos liens, et vos services Framasoft';
+$d[$k]['mTitle'] = 'Triez tout le web si vous voulez (mais c´est long)';
+ $d[$k]['mBody']  = '<p>
+                         '.$d[$k]['F'].' est un petit fourre-tout numérique, qui vous permet de conserver et retrouver les liens que vous aimez à la manière de del.ico.us ! Avec un système d´étiquettes et de tri automatique, vous pouvez ranger aisément vos onglets et marque-pages, et utiliser le bouton MyFrama pour retrouver les services Framasoft que vous utilisez !
+                     </p>
+                     <p>
+                       <b class="violet">Fonctionnement :</b> Créez votre compte, puis ajoutez le marque-pages interactif (Bookmarklet) à la barre personelle de voter navigateur. Utilisez-le pour conserver un lien (URL) en lui adjoignant un titre, une description et des étiquettes. Le bouton MyFrama sur nos sites sert à conserver le lien du service que vous utilisez : avec lui, tout est trié automatiquement ! Pensez à créer vos propres règles de tri automatiques qui ajoutent l´étiquette de votre choix aux morceaux d´adresses web que vous identifierez !
+                    </p>';
 
 /****************
  * Mises à jour *
@@ -1258,9 +1268,6 @@ $d[$k]['sDesc']  = 'Paiements en ligne';
 $k= 'universalis';
 $d[$k]['sDesc']  = 'Encyclopédie';
 
-// Xmarks
-$k= 'xmarks';
-$d[$k]['sDesc']  = 'Marque-pages';
 
 /**************
  * Categories *
