@@ -1,8 +1,8 @@
 #!/usr/bin/ruby -w
 # coding: utf-8
 
-$english = true # Switch to false for French version
-
+$english = false # Switch to false for French version
+$empty_back = false # Switch to true to create with empty background
 
 
 $geom = Hash.new
@@ -85,7 +85,9 @@ end
 # Generate one frame
 def generate_image(img, date, camp_states)
   # Init with empty map
-  if($english)
+  if($empty_back)
+    system "cp fond_vide.png #{img}"
+  elsif($english)
     system "cp fond_en.png #{img}"
   else
     system "cp fond.png #{img}"
@@ -237,7 +239,9 @@ $nb_img.times do |n|
   cmd = cmd + image_name_idx(n) + " "
 end
 
-if($english)
+if($empty_back)
+  cmd = cmd + "animation_trans.gif"
+elsif($english)
   cmd = cmd + "animation_en.gif"
 else
   cmd = cmd + "animation.gif"
