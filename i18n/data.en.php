@@ -795,9 +795,14 @@ $d[$k]['mBody']  = '<p>
 // Google Groups
 $k= 'ggroups';
 $d[$k]['sDesc']  = 'Mailing lists';
-$d[$k]['lDesc']  = '';
-$d[$k]['mTitle'] = '';
-$d[$k]['mBody']  = 'Communicate easily with groups using mailing lists';
+$d[$k]['lDesc']  = 'Créez une liste de discussion par email';
+$d[$k]['mTitle'] = 'Échangez sans être lus par Big Brother';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de créer des liste de diffusion emails : toute personne s´abonnant à votre liste pourra recevoir les emails qui y sont envoyés, et y participer à son tour. À vous de choisir si cette liste est publique, semi-privée ou privée.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement</b> : créez un compte sur Framalistes pour faire, paramétrer et gérer votre liste de diffusion, ou tout simplement pour y rechercher les listes qui vous intéressent et gérer vos abonnements.
+                    </p>';
 
 // Google Maps
 $k= 'gmaps';
