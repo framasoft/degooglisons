@@ -80,6 +80,16 @@ include('header.php');
                         </div>
                     </div>
                     <?php } ?>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="thumbnail text-center">
+                            <h3><?php echo $t['medias']['t5i6txt'] ?></h3>
+                            <video controls="controls" width="540" height="360">
+                                <source src="<?php echo $l['current'].$t['medias']['t5i6url'] ?>.webm" type="video/webm" />
+                                <source src="<?php echo $l['current'].$t['medias']['t5i6url'] ?>.mp4" type="video/mp4" />
+                            </video>
+                            <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.webm" type="video/webm" /&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Stickers -->
@@ -139,20 +149,46 @@ include('header.php');
             <!-- Screenshots -->
             <div role="tabpanel" class="tab-pane" id="screenshots">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">listes</b></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framalistes.png" />
+                    <div class="col-sm-8">
+                        <div class="col-sm-6">
+                            <div class="thumbnail text-center">
+                                <h3><b class="violet">Frama</b><b class="vert">listes</b></h3>
+                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'] ?>img/framalistes.png" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">notes</b></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framanotes.png"  />
+                        <div class="col-sm-6">
+                            <div class="thumbnail text-center">
+                                <h3><b class="violet">Frama</b><b class="vert">notes</b></h3>
+                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'] ?>img/framanotes.png"  />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <div class="thumbnail text-center">
+                                <h3><b class="violet">Frama</b><b class="vert">talk</b></h3>
+                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'] ?>img/framatalk.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="thumbnail text-center">
+                                <h3><b class="violet">Fram</b><b class="vert">agenda</b></h3>
+                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'] ?>img/framagenda.png" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="thumbnail text-center">
+                                <h3><b class="violet">My</b><b class="vert">Frama</b></h3>
+                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'] ?>img/myframa.jpg" />
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -161,29 +197,6 @@ include('header.php');
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                              title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
                              src="<?php echo $l['current'] ?>img/framaforms.png" />
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">talk</b></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framatalk.png" />
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail text-center">
-                            <h3><b class="violet">Fram</b><b class="vert">agenda</b></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framagenda.png" />
-                        </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail text-center">
-                            <h3><b class="violet">My</b><b class="vert">Frama</b></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/MyFrama.png" />
                         </div>
                     </div>
                 </div>
