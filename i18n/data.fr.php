@@ -355,47 +355,49 @@ $t['medias']['desc']     = '';
 $t['medias']['css']      = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']       = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
-$t['medias']['subtitle']    = '5 octobre 2015 : an 2 de la Dégooglisation d’Internet.';
-$t['medias']['intro']       = 'Pour entamer la deuxième année de sa campagne de propositions d’alternatives aux services de Google & consorts, l’association Framasoft annonce, dès le 5 octobre, cinq nouveaux services issus de logiciels libres.';
+$t['medias']['subtitle']    = '3 octobre 2016 : 3e (et dernière) année de Dégooglisons Internet.';
+$t['medias']['intro']       = 'Pour entamer la dernière année de sa campagne de propositions d’alternatives aux services de Google & consorts, l’association Framasoft annonce, dès le 3 octobre, six nouveaux services issus de logiciels libres.';
 $t['medias']['btnCPtxt']    = 'Télécharger le<br/>communiqué de presse';
-$t['medias']['btnCPurl']    = 'img/2015_communique_degooglisons_Framasoft.odt';
+$t['medias']['btnCPurl']    = 'img/2016_communique_degooglisons_Framasoft.odt';
 $t['medias']['btnDPtxt']    = 'Télécharger le<br/>dossier de presse';
-$t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2015.pdf';
+$t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2016.pdf';
 $t['medias']['1title']      = 'Articles sur le Framablog';
-$t['medias']['1intro']      = 'Le <a href="http://framablog.org">Framablog</a> est notre principal outil de communication envers le grand public. Chacune des 5 nouveautés proposées durant le lancement de cette campagne y seront présentées au cours de la semaine du 5 octobre 2015.';
+$t['medias']['1intro']      = 'Le <a href="http://framablog.org">Framablog</a> est notre principal outil de communication envers le grand public. Les 6 nouveaux services proposés durant le lancement de cette campagne y seront présentées entre le 3 et le 10 octobre 2016.';
 $t['medias']['1list']       = '
                         <ul>
-                            <li><em>Lundi 5/10</em> : Présentation de <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">l’an 2 de la campagne Dégooglisons Internet</a>.</li>
-                            <li><em>Lundi 5/10</em> : <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative à Dropbox et Google Drive.</li>
-                            <li><em>Mardi 6/10</em> : <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative à GoogleDocs.</li>
-                            <li><em>Mercredi 7/10</em> : <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a> alternative à Trello.</li>
-                            <li><em>Jeudi 8/10</em> : <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternative à Doodle.</li>
-                            <li><em>Vendredi 9/10</em> : <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a> alternative à WeTransfer.</li>
+                            <li><em>Lundi 03/10</em> : Présentation de <a href="https://framablog.org/?p=7449">la 3e année de la campagne Dégooglisons Internet</a>.</li>
+                            <li><em>Lundi 03/10</em> : <a href="http://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google">Framalistes</a>, alternative à Google Groups.</li>
+                            <li><em>Mardi 04/10</em> : <a href="http://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever">Framanotes</a>, alternative à Evernote.</li>
+                            <li><em>Mercredi 05/10</em> : <a href="http://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google">Framaforms</a> alternative à Google Forms.</li>
+                            <li><em>Jeudi 06/10</em> : <a href="http://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie">Framatalk</a>, alternative à Skype.</li>
+                            <li><em>Vendredi 07/10</em> : <a href="http://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-et-vos-contacts-avec-la-nsa">Framagenda</a> alternative à Google Agenda & Contacts.</li>
+                            <li><em>Lundi 10/10</em> : <a href="http://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous">MyFrama</a> alternative à Del.icio.us & au compte unifié Google.</li>
                         </ul>';
 $t['medias']['2title']      = 'Liens vers les services';
-$t['medias']['2intro']      = 'Bien qu’elles soient présentées tout au long de la semaine sur notre blog, ces cinq nouveautés seront en ligne dès le 5 octobre. Cliquez sur le nom du service pour l’essayer.';
+$t['medias']['2intro']      = 'Bien qu’elles soient présentées tout au long de la semaine sur notre blog, ces six nouveautés seront en ligne dès le 3 octobre. Cliquez sur le nom du service pour l’essayer.';
 $t['medias']['2list']       = '
                         <ul>
-                            <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
-                            <li><a href="https://mypads.framapad.org"><b class="violet">My</b><b class="vert">Pads</b></a></li>
-                            <li><a href="https://framaboard.org"><b class="violet">Frama</b><b class="vert">board</b></a></li>
-                            <li><a href="https://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a></li>
-                            <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
+                            <li><a href="https://framalistes.org"><b class="violet">Frama</b><b class="vert">listes</b></a></li>
+                            <li><a href="https://framanotes.org"><b class="violet">Frama</b><b class="vert">notes</b></a></li>
+                            <li><a href="https://framaforms.org"><b class="violet">Frama</b><b class="vert">forms</b></a></li>
+                            <li><a href="https://framatalk.org"><b class="violet">Frama</b><b class="vert">talk</b></a></li>
+                            <li><a href="https://framagenda.org"><b class="violet">Fram</b><b class="vert">agenda</b></a></li>
+                            <li><a href="https://my.framasoft.org"><b class="violet">My</b><b class="vert">Frama</b></a></li>
                         </ul>';
 
-$t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons an 2.';
+$t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons, saison 3.';
 $t['medias']['tabsintro']   = 'Sauf mention contraire, tous nos visuels sont réalisés par <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> et sont librement réutilisables sous la licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> Ces visuels sont en grand format (contrairement aux apparences). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à nous contacter.';
 $t['medias']['tabssaveas']  = 'Clic droit sur l’image et « Enregistrer l’image sous » pour la réutiliser';
 
 $t['medias']['t1']          = 'Cartes';
 $t['medias']['t1i1txt']     = 'Carte « Avant »';
-$t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
+$t['medias']['t1i1url']     = 'img/Carte2016-romains.png';
 $t['medias']['t1i1desc']    = 'Carte de la France envahie par les services GAFAM (oct 2014)';
 $t['medias']['t1i2txt']     = 'Carte « Après »';
-$t['medias']['t1i2url']     = 'img/Carte2015-victoires.png';
+$t['medias']['t1i2url']     = 'img/Carte2016-victoires.png';
 $t['medias']['t1i2desc']    = 'Carte de la France avec les alternatives Framasoft (oct 2015)';
 $t['medias']['t1i3txt']     = 'Carte animée';
-$t['medias']['t1i3url']     = 'img/Carte2015-animation.gif';
+$t['medias']['t1i3url']     = 'img/Carte2016-animation.gif';
 $t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
 
 $t['medias']['t2']          = 'Dessins';
@@ -424,20 +426,6 @@ $t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-in
 $t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
 $t['medias']['t4']          = 'Capture d’écran';
 
-$t['medias']['t5']          = 'Animations';
-$t['medias']['t5i1txt']     = '<b class="violet">Frama</b><b class="vert">drive</b>';
-$t['medias']['t5i1url']     = 'img/anim_framadrive.gif';
-$t['medias']['t5i2txt']     = '<b class="violet">Frama</b><b class="vert">pad</b>';
-$t['medias']['t5i2url']     = 'img/anim_framapad.gif';
-$t['medias']['t5i3txt']     = '<b class="violet">Frama</b><b class="vert">board</b>';
-$t['medias']['t5i3url']     = 'img/anim_framaboard.gif';
-$t['medias']['t5i4txt']     = '<b class="violet">Frama</b><b class="vert">date</b>';
-$t['medias']['t5i4url']     = 'img/anim_framadate.gif';
-$t['medias']['t5i5txt']     = '<b class="violet">Frama</b><b class="vert">drop</b>';
-$t['medias']['t5i5url']     = 'img/anim_framadrop.gif';
-$t['medias']['t5i6txt']     = '<b class="violet">Dégooglisons</b> <b class="orange">Internet</b>';
-$t['medias']['t5i6url']     = 'img/anim_dio'; // .mp4 et .webm
-
 $t['medias']['t6']          = 'Présentation';
 $t['medias']['t6url']       = 'presentation/';
 
@@ -462,11 +450,29 @@ $t['medias']['t7i6url']     = 'img/stickerDiO_microsoft.png';
 $t['medias']['t7i6desc']    = '<i lang="en">Microsoft: do you need a backdoor?</i>';
 
 $t['medias']['presstitle']  = 'Revue de presse';
-$t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant sa première année. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
+$t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant ses deux ans d’existance. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
 $t['medias']['pressth1']    = 'Date';
 $t['medias']['pressth2']    = 'Média';
 $t['medias']['pressth3']    = 'Liens';
 $t['medias']['presslist']   = [
+    ['24/08/2016', 'Opensource.com (anglais)',
+    'https://opensource.com/business/16/8/open-source-alternatives-office-365',
+    'Lien vers l’article'],
+    ['27/03/2016', 'France 24 / Mashable',
+    'http://mashable.france24.com/tech-business/20160226-google-internet-framasoft',
+    'Lien vers l’article'],
+    ['17/03/2016', 'La Tribune',
+    'http://www.latribune.fr/technos-medias/internet/les-chatons-toutes-griffes-dehors-face-aux-geants-du-net-557084.html',
+    'Lien vers l’article'],
+    ['12/10/2015', 'France Info',
+    'http://media.radiofrance-podcast.net/podcast09/18998-12.10.2015-ITEMA_20815840-0.mp3',
+    'Lien vers le podcast'],
+    ['08/10/2015', 'Korben.info',
+    'http://korben.info/framasoft-degooglise-encore-plus-fort.html',
+    'Lien vers l’article'],
+    ['06/10/2015', 'Next Inpact',
+    'http://www.nextinpact.com/news/96764-degooglisons-internet-saison-2-framasoft-lance-produit-par-jour-cette-semaine.htm',
+    'Lien vers l’article'],
     ['17/08/2015', 'France Culture (Du grain à moudre)',
     'http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3',
     'Lien vers le podcast'],
