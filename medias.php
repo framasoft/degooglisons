@@ -141,75 +141,53 @@ include('header.php');
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">drive</b></h3>
+                            <h3><b class="violet">Frama</b><b class="vert">listes</b></h3>
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                              title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framadrive2.png" />
+                             src="<?php echo $l['current'] ?>img/framalistes.png" />
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="thumbnail text-center">
-                            <h3><b class="violet">My</b><b class="vert">Pads</b></h3>
+                            <h3><b class="violet">Frama</b><b class="vert">notes</b></h3>
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                              title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/mypads5.png"  />
+                             src="<?php echo $l['current'] ?>img/framanotes.png"  />
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">board</b></h3>
+                            <h3><b class="violet">Frama</b><b class="vert">forms</b></h3>
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                              title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framaboard1.png" />
+                             src="<?php echo $l['current'] ?>img/framaforms.png" />
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">date</b></h3>
+                            <h3><b class="violet">Frama</b><b class="vert">talk</b></h3>
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                              title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framadate1.png" />
+                             src="<?php echo $l['current'] ?>img/framatalk.png" />
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">drop</b></h3>
+                            <h3><b class="violet">Fram</b><b class="vert">agenda</b></h3>
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                              title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framadrop3.png" />
+                             src="<?php echo $l['current'] ?>img/framagenda.png" />
+                        </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail text-center">
+                            <h3><b class="violet">My</b><b class="vert">Frama</b></h3>
+                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                             src="<?php echo $l['current'] ?>img/MyFrama.png" />
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Animations -->
-            <div role="tabpanel" class="tab-pane" id="animations">
-                <div class="row">
-                    <?php for ($i=1; $i<=5; $i++) { ?>
-                    <div class="col-sm-6">
-                        <div class="thumbnail text-center">
-                            <h3><?php echo $t['medias']['t5i'.$i.'txt'] ?></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'].$t['medias']['t5i'.$i.'url'] ?>" />
-                        </div>
-                    </div>
-                    <?php } ?>
-                    <div class="col-sm-6">
-                        <div class="thumbnail text-center">
-                            <h3><?php echo $t['medias']['t5i6txt'] ?></h3>
-                            <video controls="controls" width="540" height="360"
-                                   class="img-responsive">
-                                <source src="<?php echo $l['current'].$t['medias']['t5i6url'] ?>.webm" type="video/webm" />
-                                <source src="<?php echo $l['current'].$t['medias']['t5i6url'] ?>.mp4" type="video/mp4" />
-                            </video>
-                            <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.webm" type="video/webm" /&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
         <!-- Revue de web-->
         <h2><?php echo $t['medias']['presstitle'] ?></h2>
