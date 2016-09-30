@@ -313,3 +313,4 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 .skype .logo:before { content: "\f03d"; }
 .minecraft .logo:before { content: "\f1b2"; }
 .padlet .logo:before { content: "\f247"; }
+.delicious .logo:before { content: "\f005"; }
