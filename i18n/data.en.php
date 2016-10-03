@@ -312,35 +312,37 @@ $t['medias']['desc']    = '';
 $t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
-$t['medias']['subtitle']    = '5 October 2015 : year 2 of the de-google-ification of the Internet.';
-$t['medias']['intro']       = 'To begin this second year of its campaign of alternative proposals for services provided by Google & co, Framasoft is launching five new services based on free software as of 5 October.';
+$t['medias']['subtitle']    = '3 October 2016 : year 3 of the de-google-ification of the Internet.';
+$t['medias']['intro']       = 'To begin this third year of its campaign of alternative proposals for services provided by Google & co, Framasoft is launching six new services based on free software as of 3 October.';
 $t['medias']['btnCPtxt']    = 'Read the<br/>press release';
 $t['medias']['btnCPurl']    = 'img/2016_communique_degooglisons_Framasoft.html';
 $t['medias']['btnDPtxt']    = 'Download the<br/>press release';
 $t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2016.pdf';
 $t['medias']['1title']      = 'Posts on the Framablog';
-$t['medias']['1intro']      = '<a href="http://framablog.org">Framablog</a> is our main tool for communicating with the general public. All five of the new services launching our campaign will be presented during the week of 5 October 2015.';
+$t['medias']['1intro']      = '<a href="http://framablog.org">Framablog</a> is our main tool for communicating with the general public. All six of the new services launching our campaign will be presented during the week of 3 October 2016.';
 $t['medias']['1list']       = '
                         <ul>
-                            <li><em>Monday 5/10</em> : Presentation of <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">the second year of our campaign “De-google-ify internet”</a>.</li>
-                            <li><em>Monday 5/10</em>: <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative to Dropbox and Google Drive.</li>
-                            <li><em>Tuesday 6/10</em>: <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative to GoogleDocs.</li>
-                            <li><em>Wednesday 7/10</em>: <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a>, alternative to Trello.</li>
-                            <li><em>Thursday 8/10</em>: <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternative to Doodle.</li>
-                            <li><em>Friday 9/10</em>: <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a>, alternative to WeTransfer.</li>
+                            <li><em>Monday 03/10</em> : Présentation de <a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">la 3e année de la campagne Dégooglisons Internet</a>.</li>
+                            <li><em>Monday 03/10</em> : <a href="http://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google">Framalistes</a>, alternative à Google Groups.</li>
+                            <li><em>Tuesday 04/10</em> : <a href="http://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever">Framanotes</a>, alternative à Evernote.</li>
+                            <li><em>Wednesday 05/10</em> : <a href="http://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google">Framaforms</a> alternative à Google Forms.</li>
+                            <li><em>Thursday 06/10</em> : <a href="http://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie">Framatalk</a>, alternative à Skype.</li>
+                            <li><em>Friday 07/10</em> : <a href="http://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-et-vos-contacts-avec-la-nsa">Framagenda</a> alternative à Google Agenda & Contacts.</li>
+                            <li><em>Monday 10/10</em> : <a href="http://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous">MyFrama</a> alternative à Del.icio.us & au compte unifié Google.</li>
                         </ul>';
 $t['medias']['2title']      = 'Link to services';
-$t['medias']['2intro']      = 'Even though they will be presented throughout the week on our blog, these five new services will be online as early as 5 October. Click on the name of the service to try it.';
+$t['medias']['2intro']      = 'Even though they will be presented throughout the week on our blog, these six new services will be online as early as 3 October. Click on the name of the service to try it.';
 $t['medias']['2list']       = '
                         <ul>
-                            <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
-                            <li><a href="https://mypads.framapad.org"><b class="violet">My</b><b class="vert">Pads</b></a></li>
-                            <li><a href="https://framaboard.org"><b class="violet">Frama</b><b class="vert">board</b></a></li>
-                            <li><a href="https://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a></li>
-                            <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
+                            <li><a href="https://framalistes.org"><b class="violet">Frama</b><b class="vert">listes</b></a></li>
+                            <li><a href="https://framanotes.org"><b class="violet">Frama</b><b class="vert">notes</b></a></li>
+                            <li><a href="https://framaforms.org"><b class="violet">Frama</b><b class="vert">forms</b></a></li>
+                            <li><a href="https://framatalk.org"><b class="violet">Frama</b><b class="vert">talk</b></a></li>
+                            <li><a href="https://framagenda.org"><b class="violet">Fram</b><b class="vert">agenda</b></a></li>
+                            <li><a href="https://my.framasoft.org"><b class="violet">My</b><b class="vert">Frama</b></a></li>
                         </ul>';
 
-$t['medias']['tabstitle']   = 'Visuals for de-google-ify year 2.';
+$t['medias']['tabstitle']   = 'Visuals for de-google-ify year 3.';
 $t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free to contact us.';
 $t['medias']['tabssaveas']  = 'To reuse the picture, right click on the image and “save image as”';
 
@@ -413,7 +415,7 @@ $t['medias']['pressth1']    = 'Date';
 $t['medias']['pressth2']    = 'Media';
 $t['medias']['pressth3']    = 'Link';
 $t['medias']['presslist']   = [
-    ['24/08/2016', 'Opensource.com (anglais)',
+    ['24/08/2016', 'Opensource.com (english)',
     'https://opensource.com/business/16/8/open-source-alternatives-office-365',
     'Lien vers l’article'],
     ['27/03/2016', 'France 24 / Mashable',
