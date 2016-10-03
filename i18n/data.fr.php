@@ -365,7 +365,7 @@ $t['medias']['1title']      = 'Articles sur le Framablog';
 $t['medias']['1intro']      = 'Le <a href="http://framablog.org">Framablog</a> est notre principal outil de communication envers le grand public. Les 6 nouveaux services proposés durant le lancement de cette campagne y seront présentées entre le 3 et le 10 octobre 2016.';
 $t['medias']['1list']       = '
                         <ul>
-                            <li><em>Lundi 03/10</em> : Présentation de <a href="https://framablog.org/?p=7449">la 3e année de la campagne Dégooglisons Internet</a>.</li>
+                            <li><em>Lundi 03/10</em> : Présentation de <a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">la 3e année de la campagne Dégooglisons Internet</a>.</li>
                             <li><em>Lundi 03/10</em> : <a href="http://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google">Framalistes</a>, alternative à Google Groups.</li>
                             <li><em>Mardi 04/10</em> : <a href="http://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever">Framanotes</a>, alternative à Evernote.</li>
                             <li><em>Mercredi 05/10</em> : <a href="http://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google">Framaforms</a> alternative à Google Forms.</li>
