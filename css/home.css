@@ -98,3 +98,24 @@ body main > .row {
 .fa-cloud.fc_g5:hover {
     opacity:1;
 }
+#map-container {
+  position: relative;
+  width:100%;
+  float:left;
+}
+
+#highlight-wrapper[style],
+#carte, #map-container video {
+    position:absolute !important;
+    top:0;
+    width:100%;
+}
+#highlight-wrapper {
+  z-index:15;
+}
+#carte {
+  z-index:10;
+}
+#map-container video {
+  z-index: 5;
+}
