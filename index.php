@@ -143,7 +143,7 @@ include('header.php');
                             <?php echo $areas; ?>
                         </map>
 
-                        <video poster="<?php echo $l['map'] ?>" autoplay loop>
+                        <video poster="<?php echo $l['map'] ?>" autoplay loop muted>
                             <source src="<?php echo str_replace('victoires','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
                             <source src="<?php echo str_replace('victoires','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
                             <img src="<?php echo $l['map'] ?>" alt="" style="width:100%;" />
