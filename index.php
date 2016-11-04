@@ -135,12 +135,19 @@ include('header.php');
             <div class="container ombre">
                 <div class="col-md-8 map">
                     <h2 class="h3"><?php echo $t['home']['map'] ?></h2>
-                    <div class="">
-                        <img src="<?php echo $l['map'] ?>" alt="<?php echo $t['home']['altMap'] ?>" style="width:100%;" id="carte" usemap="#cartemap" />
+                    <div id="map-container">
 
-                        <map id="cartemap" name="cartemap">
+                        <img src="<?php echo str_replace('victoires','fantome', $l['map']) ?>" alt="<?php echo $t['home']['altMap'] ?>" id="carte" usemap="#cartemap" />
+
+                        <map id="cartemap" name="cartemap" style="position:absolute; top:0; width:100%; z-index:15">
                             <?php echo $areas; ?>
                         </map>
+
+                        <video poster="<?php echo $l['map'] ?>" autoplay loop>
+                            <source src="<?php echo str_replace('victoires','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
+                            <source src="<?php echo str_replace('victoires','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
+                            <img src="<?php echo $l['map'] ?>" alt="" style="width:100%;" />
+                        </video>
                     </div>
                 </div>
                 <div class="col-md-4 description">
