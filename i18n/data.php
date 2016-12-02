@@ -284,7 +284,7 @@ $d[$k]['FL']     = 'https://framalistes.org';
 $d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-sympa/';
 $d[$k]['i']      = 'fa-group';
 $d[$k]['S']      = '<a href="http://www.sympa.org/">Sympa</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">listes</b>';
+$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">listes</b></a>';
 $d[$k]['name']   = $e['google']['fa'].'Google Groupes';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="http://riseup.net/">Riseup</a>, <a href="https://www.ouvaton.org/">Ouvaton</a>, <a href="https://www.sud-ouest.org/">Sud-Ouest</a>, <a href="https://www.fdn.fr/Listes-de-diffusion.html">FDN</a>';
