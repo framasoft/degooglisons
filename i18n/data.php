@@ -14,7 +14,6 @@ $e = [
     'amazon'    => ['name' => 'Amazon',    'fa' => '<i class="fa fa-fw fa-amazon"></i>'],
     'microsoft' => ['name' => 'Microsoft', 'fa' => '<i class="fa fa-fw fa-windows"></i>'],
     // … & cie
-    'avaaz'     => ['name' => 'Avaaz'],
     'bitly'     => ['name' => 'Bitly'],
     'doodle'    => ['name' => 'Doodle AG'],
     'dropbox'   => ['name' => 'Dropbox', 'fa' => '<i class="fa fa-fw fa-dropbox"></i>'],
@@ -59,8 +58,8 @@ $d[$k]['CL']     = '';
 $d[$k]['i']      = '';
 $d[$k]['S']      = '<a href="https://www.drupal.org/project/webform">WebForm</a>';
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">pétition</b>';
-$d[$k]['name']   = 'Avaaz';
-$d[$k]['eq']     = 'Change.org';
+$d[$k]['name']   = 'Change.org';
+$d[$k]['eq']     = 'Avaaz';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
 $d[$k]['pos']    = '285,615,40';
