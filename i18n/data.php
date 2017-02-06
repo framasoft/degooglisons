@@ -792,7 +792,7 @@ $d[$k]['F']      = '<a href="http://chatons.org"><abbr title="Collectif des Héb
 $d[$k]['name']   = 'OVH';
 $d[$k]['eq']     = 'Online';
 $d[$k]['altOn']  = '<a href="http://www.rhien.org/Hebergeurs,59.html">RHIEN</a>, <a href="https://indiehosters.net/">IndieHosters</a>, <a href="https://www.zaclys.com/">La mère Zaclys</a>, <a href="http://www.infini.fr/">Infini</a>';
-$d[$k]['altOff'] = '<a href="https://cozy.io/fr/">Cozy</a>, <a href="http://yunohost.org">Yunohost</a>, <a href="https://sandstorm.io/">Sandstorm</a>';
+$d[$k]['altOff'] = '<a href="https://cozy.io/fr/">Cozy</a>, <a href="http://yunohost.org">Yunohost</a>, <a href="https://sandstorm.io/">Sandstorm</a>, <a href="https://cloudron.io/">Cloudron</a>';
 $d[$k]['cat']    = 'site';
 
 // Paypal
