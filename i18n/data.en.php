@@ -379,10 +379,10 @@ $t['medias']['t3v1txt']     = 'Short version (FR - 17mn)';
 $t['medias']['t3v1img']     = 'https://framatube.org/images/media/925l.jpg';
 $t['medias']['t3v1mp4']     = 'https://framatube.org/blip/gosset-owf-dio.mp4';
 $t['medias']['t3v1webm']    = 'https://framatube.org/blip/gosset-owf-dio.webm';
-$t['medias']['t3v2txt']     = 'Long version (FR - 54mn)';
-$t['medias']['t3v2img']     = 'https://framatube.org/blip/gosset-degooglisons-internet.png';
-$t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-internet.mp4';
-$t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
+$t['medias']['t3v2txt']     = 'Long version (FR - 24mn)';
+$t['medias']['t3v2img']     = 'https://framatube.org/images/media/1059l.jpg';
+$t['medias']['t3v2mp4']     = 'https://framatube.org/blip/de_google_ify.mp4';
+$t['medias']['t3v2webm']    = 'https://framatube.org/blip/de_google_ify.webm';
 
 $t['medias']['t4']          = 'Screenshot';
 
