@@ -180,7 +180,7 @@ include('header.php');
                     <li class="col-xs-4 col-sm-3 text-center">
                         <a href="'.$v['FL'].'"
                            title="'.$v['sDesc'].'" >
-                            <i class="fa fa-3x fa-fw '.$v['i'].' fb_v'.rand(1,4).' fc_dark"></i>
+                            <i class="fa fa-3x fa-fw '.$v['i'].' fb_v5 fc_light"></i>
                             <br/>'.strip_tags($v['F'], '<b>').'
                         </a>
                     </li>';

@@ -1074,6 +1074,16 @@ $d[$k]['mBody']  = '<p>
                     </p>';
 $d[$k]['mFooter']= '<p class="precisions">Framagames is a compilation of free games. All credits are available on the website.</p>';
 
+// Maestro
+$k= 'maestro';
+$d[$k]['sDesc']  = 'Collaboration flexible';
+$d[$k]['lDesc']  = 'Ochestrez vos projets collaboratifs';
+$d[$k]['mTitle'] = 'Ochestrez vos projets collaboratifs';
+$d[$k]['mBody']  = '<p>
+                        Besoin en même temps d’un pad pour prendre des notes, d’un tableau d’organisation, et d’une vidéo-conférence ?
+                        Avec '.$d[$k]['F'].', c’est vous qui organisez les outils qu’ils vous faut, sur une seule et unique page web.
+                    </p>';
+
 // Pixlr
 $k= 'pixlr';
 $d[$k]['sDesc']  = 'Vectorial Drawing';
