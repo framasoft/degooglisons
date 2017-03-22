@@ -63,7 +63,7 @@ $d[$k]['eq']     = 'Avaaz';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
 $d[$k]['pos']    = '285,615,40';
-$d[$k]['FDate']  = '2016';
+$d[$k]['FDate']  = '2017';
 $d[$k]['cat']    = 'social';
 
 // Bit.ly
@@ -98,11 +98,11 @@ $d[$k]['cat']    = 'site';
 
 // Bubbl.us
 $k= 'bubblus';
-$d[$k]['FL']     = 'http://framindmap.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/';
+$d[$k]['FL']     = 'https://framindmap.org';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/';
 $d[$k]['i']      = 'fa-sitemap fa-rotate-270';
 $d[$k]['S']      = '<a href="http://wisemapping.com">Wisemapping</a>';
-$d[$k]['F']      = '<a href="http://framindmap.org"><b class="violet">Fra</b><b class="vert">mindmap</b></a>';
+$d[$k]['F']      = '<a href="https://framindmap.org"><b class="violet">Fra</b><b class="vert">mindmap</b></a>';
 $d[$k]['name']   = 'Bubbl.us';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = $d[$k]['S'].', <a href="https://www.mindmup.com">Mindmup</a>';
@@ -114,7 +114,7 @@ $d[$k]['cat']    = 'office';
 // Del.icio.us
 $k= 'delicious';
 $d[$k]['FL']     = 'https://my.framasoft.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-shaarli/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-shaarli/';
 $d[$k]['i']      = 'fa-star';
 $d[$k]['S']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:shaarli">Shaarli</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">My</b><b class="vert">Frama</b></a>';
@@ -129,9 +129,9 @@ $d[$k]['cat']    = 'web';
 // Doodle
 $k= 'doodle';
 $d[$k]['FL']     = 'https://framadate.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-framadate/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-framadate/';
 $d[$k]['i']      = 'fa-calendar-check-o';
-$d[$k]['S']      = '<a href="https://git.framasoft.org/framasoft/framadate">Framadate</a>';
+$d[$k]['S']      = '<a href="https://framagit.org/framasoft/framadate">Framadate</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">date</b></a>';
 $d[$k]['name']   = 'Doodle';
 $d[$k]['eq']     = '';
@@ -144,7 +144,7 @@ $d[$k]['cat']    = 'social';
 // Dropbox
 $k= 'dropbox';
 $d[$k]['FL']     = 'https://framadrive.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-nextcloud/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-nextcloud/';
 $d[$k]['i']      = 'fa-cloud-upload';
 $d[$k]['S']      = '<a href="https://nextcloud.com/">Nextcloud</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">drive</b></a>';
@@ -159,7 +159,7 @@ $d[$k]['cat']    = 'files';
 // Evernote
 $k= 'evernote';
 $d[$k]['FL']     = 'https://framanotes.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-turtl/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-turtl/';
 $d[$k]['i']      = 'fa-sticky-note';
 $d[$k]['S']      = '<a href="https://turtlapp.com/">Turtl</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">notes</b></a>';
@@ -189,7 +189,7 @@ $d[$k]['cat']    = 'social';
 // Github
 $k= 'github';
 $d[$k]['FL']     = 'https://framagit.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/';
 $d[$k]['i']      = 'fa-git';
 $d[$k]['S']      = '<a href="https://gitlab.com/">Gitlab</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">git</b></a>';
@@ -219,7 +219,7 @@ $d[$k]['cat']    = 'social';
 // Google Agenda
 $k= 'gagenda';
 $d[$k]['FL']     = 'https://framagenda.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-nextcloud/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-nextcloud/';
 $d[$k]['i']      = 'fa-calendar';
 $d[$k]['S']      = '<a href="https://nextcloud.com/">Nextcloud</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Fram</b><b class="vert">agenda</b></a>';
@@ -233,8 +233,8 @@ $d[$k]['cat']    = 'office';
 
 // Google Books
 $k= 'gbooks';
-$d[$k]['FL']     = 'http://framabookin.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-d-un-serveur-opds/';
+$d[$k]['FL']     = 'https://framabookin.org';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-d-un-serveur-opds/';
 $d[$k]['i']      = 'fa-coffee';
 $d[$k]['S']      = '<a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="rouge">bookin</b></a>';
@@ -249,7 +249,7 @@ $d[$k]['cat']    = 'media';
 // Google Docs
 $k= 'gdocs';
 $d[$k]['FL']     = 'https://framapad.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-detherpad/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-detherpad/';
 $d[$k]['i']      = 'fa-align-left';
 $d[$k]['S']      = '<a href="http://etherpad.org/">Etherpad</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">pad</b></a>';
@@ -264,7 +264,7 @@ $d[$k]['cat']    = 'office';
 // Google Form
 $k= 'gforms';
 $d[$k]['FL']     = 'https://framaforms.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-framaforms/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-framaforms/';
 $d[$k]['i']      = 'fa-list-ul';
 $d[$k]['S']      = '<a href="https://www.drupal.org/project/webform">Webform</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">forms</b></a>';
@@ -280,7 +280,7 @@ $d[$k]['cat']    = 'office';
 // Google Groupes
 $k= 'ggroups';
 $d[$k]['FL']     = 'https://framalistes.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-sympa/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-sympa/';
 $d[$k]['i']      = 'fa-group';
 $d[$k]['S']      = '<a href="http://www.sympa.org/">Sympa</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">listes</b></a>';
@@ -295,7 +295,7 @@ $d[$k]['cat']    = 'social';
 // Google Maps
 $k= 'gmaps';
 $d[$k]['FL']     = 'https://framacarte.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-umap/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-umap/';
 $d[$k]['i']      = 'fa-map';
 $d[$k]['S']      = '<a href="https://github.com/umap-project/umap/">uMap</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">carte</b></a>';
@@ -310,7 +310,7 @@ $d[$k]['cat']    = 'geo';
 // Google Reader
 $k= 'greader';
 $d[$k]['FL']     = 'https://framanews.org';
-$d[$k]['CL']     = '';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-tinytinyrss/';
 $d[$k]['i']      = 'fa-newspaper-o';
 $d[$k]['S']      = '<a href="http://tt-rss.org/">TinyTinyRSS</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">news</b></a>';
@@ -325,7 +325,7 @@ $d[$k]['cat']    = 'web';
 // Google Search
 $k= 'gsearch';
 $d[$k]['FL']     = 'https://framabee.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-searx/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-searx/';
 $d[$k]['i']      = 'fa-search';
 $d[$k]['S']      = '<a href="https://github.com/asciimoo/searx">Searx</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">bee</b></a>';
@@ -340,22 +340,22 @@ $d[$k]['cat']    = 'web';
 
 // Google Slides
 $k= 'gslides';
-$d[$k]['FL']     = '';
+$d[$k]['FL']     = 'https://framaslides.org';
 $d[$k]['CL']     = '';
-$d[$k]['i']      = 'fa-';
+$d[$k]['i']      = 'fa-pie-chart';
 $d[$k]['S']      = '<a href="http://strut.io/">Strut</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">slides</b>';
+$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">slides</b></a>';
 $d[$k]['name']   = $e['google']['fa'].'Google Slides';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = $d[$k]['S'];
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '195,630,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">2017</a>';
 $d[$k]['cat']    = 'office';
 
 // Google Spreadsheet
 $k= 'gspreadsheet';
-$d[$k]['FL']     = 'http://framacalc.org';
+$d[$k]['FL']     = 'https://framacalc.org';
 $d[$k]['CL']     = '';
 $d[$k]['i']      = 'fa-th';
 $d[$k]['S']      = '<a href="https://ethercalc.org/">Ethercalc</a>';
@@ -371,9 +371,9 @@ $d[$k]['cat']    = 'office';
 // Img.ur
 $k= 'imgur';
 $d[$k]['FL']     = 'https://framapic.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lutim/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-lutim/';
 $d[$k]['i']      = 'fa-photo';
-$d[$k]['S']      = '<a href="https://git.framasoft.org/luc/lutim">Lutim</a>';
+$d[$k]['S']      = '<a href="https://framagit.org/luc/lutim">Lutim</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">pic</b></a>';
 $d[$k]['name']   = 'Img.ur';
 $d[$k]['eq']     = $e['facebook']['fa'].'Instagram';
@@ -401,7 +401,7 @@ $d[$k]['cat']    = 'social';
 // Minecraft
 $k= 'minecraft';
 $d[$k]['FL']     = 'https://framinetest.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-minetest/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-minetest/';
 $d[$k]['i']      = 'fa-cube';
 $d[$k]['S']      = '<a href="http://www.minetest.net/">Minetest</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Fra</b><b class="vert">minetest</b></a>';
@@ -416,7 +416,7 @@ $d[$k]['cat']    = 'hobbies';
 // Padlet
 $k= 'padlet';
 $d[$k]['FL']     = 'https://framemo.org/';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-scrumblr/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-scrumblr/';
 $d[$k]['i']      = 'fa-object-group';
 $d[$k]['S']      = '<a href="http://scrumblr.ca/">Scrumblr</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Fra</b><b class="vert">memo</b></a>';
@@ -431,7 +431,7 @@ $d[$k]['cat']    = 'office';
 // Pastebin
 $k= 'pastebin';
 $d[$k]['FL']     = 'https://framabin.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-zerobin/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-zerobin/';
 $d[$k]['i']      = 'fa-paste';
 $d[$k]['S']      = '<a href="http://sebsauvage.net/wiki/doku.php?id=php:zerobin">Zerobin</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">bin</b></a>';
@@ -445,7 +445,7 @@ $d[$k]['cat']    = 'files';
 
 // Pocket
 $k= 'pocket';
-$d[$k]['FL']     = 'http://framabag.org';
+$d[$k]['FL']     = 'https://framabag.org';
 $d[$k]['CL']     = '';
 $d[$k]['i']      = 'fa-briefcase';
 $d[$k]['S']      = '<a href="https://www.wallabag.org/">Wallabag</a>';
@@ -476,7 +476,7 @@ $d[$k]['cat']    = 'files';
 // Shrtct
 $k= 'loomio';
 $d[$k]['FL']     = 'https://framavox.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-loomio/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-loomio/';
 $d[$k]['i']      = 'fa-bullhorn';
 $d[$k]['S']      = '<a href="https://www.loomio.org">Loomio</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">vox</b></a>';
@@ -491,7 +491,7 @@ $d[$k]['cat']    = 'social';
 // Skype
 $k= 'skype';
 $d[$k]['FL']     = 'https://framatalk.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-jitsi-meet/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-jitsi-meet/';
 $d[$k]['i']      = 'fa-video-camera';
 $d[$k]['S']      = '<a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">talk</b></a>';
@@ -506,7 +506,7 @@ $d[$k]['cat']    = 'social';
 // Slack
 $k= 'slack';
 $d[$k]['FL']     = 'https://framateam.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/';
 $d[$k]['i']      = 'fa-comments-o';
 $d[$k]['S']      = '<a href="http://www.mattermost.org/">Mattermost</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">team</b></a>';
@@ -521,7 +521,7 @@ $d[$k]['cat']    = 'social';
 // Trello
 $k= 'trello';
 $d[$k]['FL']     = 'https://framaboard.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-kanboard/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-kanboard/';
 $d[$k]['i']      = 'fa-dashboard';
 $d[$k]['S']      = '<a href="http://kanboard.net/">Kanboard</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">board</b></a>';
@@ -536,9 +536,9 @@ $d[$k]['cat']    = 'office';
 // WeTransfer
 $k= 'wetransfer';
 $d[$k]['FL']     = 'https://framadrop.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-lufi/';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-lufi/';
 $d[$k]['i']      = 'fa-send';
-$d[$k]['S']      = '<a href="https://git.framasoft.org/luc/lufi">Lufi</a>';
+$d[$k]['S']      = '<a href="https://framagit.org/luc/lufi">Lufi</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">drop</b></a>';
 $d[$k]['name']   = 'Wetransfer';
 $d[$k]['eq']     = 'Dropsend';
@@ -583,7 +583,7 @@ $d[$k]['cat']    = 'dev';
 
 // Kongregate
 $k= 'kongregate';
-$d[$k]['FL']     = 'http://framagames.org';
+$d[$k]['FL']     = 'https://framagames.org';
 $d[$k]['CL']     = '';
 $d[$k]['i']      = 'fa-gamepad';
 $d[$k]['S']      = 'divers';
@@ -596,10 +596,25 @@ $d[$k]['pos']    = '';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">2015</a>';
 $d[$k]['cat']    = 'hobbies';
 
+// Maestro
+$k= 'maestro';
+$d[$k]['FL']     = 'https://framaestro.org';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-framaestro/';
+$d[$k]['i']      = 'fa-magic';
+$d[$k]['S']      = '<a href="https://framagit.org/framasoft/framaestro">Framaestro</a>';
+$d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Fra</b><b class="vert">maestro</b></a>';
+$d[$k]['name']   = '';
+$d[$k]['eq']     = '';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '';
+$d[$k]['pos']    = '';
+$d[$k]['FDate']  = '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">2017</a>';
+$d[$k]['cat']    = 'office';
+
 // Pixlr
 $k= 'pixlr';
-$d[$k]['FL']     = 'http://framavectoriel.org';
-$d[$k]['CL']     = 'http://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/';
+$d[$k]['FL']     = 'https://framavectoriel.org';
+$d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/';
 $d[$k]['i']      = 'fa-paint-brush';
 $d[$k]['S']      = '<a href="https://code.google.com/p/svg-edit/">SVG-Edit</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">vectoriel</b></a>';
@@ -636,7 +651,7 @@ $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="https://launchpad.net/launchpad">Rosetta (Launchpad)</a>';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '';
-$d[$k]['FDate']  = '2016';
+$d[$k]['FDate']  = '2017';
 $d[$k]['cat']    = 'dev';
 
 /****************
@@ -678,7 +693,7 @@ $d[$k]['FDate']   = '2015';
 $potion  = ['avaaz','youtube','transifex'];
 $fight   = ['bitly','bubblus','delicious','doodle','dropbox','evernote',
             'facebook','github','gagenda','gbooks','gdocs','gforms',
-            'ggroups','gmaps','greader','gspreadsheet','gsearch','imgur',
+            'ggroups','gmaps','greader','gspreadsheet','gsearch','gslides','imgur',
             'kongregate','loomio','minecraft','padlet','pastebin','pixlr',
             'pocket','skype','slack','trello','wetransfer'];
 
