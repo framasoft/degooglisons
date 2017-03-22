@@ -603,7 +603,7 @@ $d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-f
 $d[$k]['i']      = 'fa-magic';
 $d[$k]['S']      = '<a href="https://framagit.org/framasoft/framaestro">Framaestro</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Fra</b><b class="vert">maestro</b></a>';
-$d[$k]['name']   = '';
+$d[$k]['name']   = '—';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '';
@@ -694,7 +694,7 @@ $potion  = ['avaaz','youtube','transifex'];
 $fight   = ['bitly','bubblus','delicious','doodle','dropbox','evernote',
             'facebook','github','gagenda','gbooks','gdocs','gforms',
             'ggroups','gmaps','greader','gspreadsheet','gsearch','gslides','imgur',
-            'kongregate','loomio','minecraft','padlet','pastebin','pixlr',
+            'kongregate','loomio','maestro','minecraft','padlet','pastebin','pixlr',
             'pocket','skype','slack','trello','wetransfer'];
 
 /**********************
