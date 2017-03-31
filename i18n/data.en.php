@@ -1081,7 +1081,7 @@ $d[$k]['lDesc']  = 'Ochestrez vos projets collaboratifs';
 $d[$k]['mTitle'] = 'Ochestrez vos projets collaboratifs';
 $d[$k]['mBody']  = '<p>
                         Besoin en même temps d’un pad pour prendre des notes, d’un tableau d’organisation, et d’une vidéo-conférence ?
-                        Avec '.$d[$k]['F'].', c’est vous qui organisez les outils qu’ils vous faut, sur une seule et unique page web.
+                        Avec '.$d[$k]['F'].', c’est vous qui organisez les outils qu’il vous faut, sur une seule et unique page web.
                     </p>';
 
 // Pixlr
