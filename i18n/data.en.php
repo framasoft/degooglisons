@@ -27,7 +27,7 @@ $t['meta']['framasoft'] = 'Framasoft';
 $t['meta']['F']         = '<a href="'.$l['F'].'"><b class="violet">Frama</b><b class="orange">soft</b></a>';
 $t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">De-google-ify</b> <b class="orange">Internet</b></a>';
 $t['meta']['start']     = 'Beginning of the campaign on the 10/07/2014';
-$t['meta']['edit']      = 'Last modification on the 30/09/2016';
+$t['meta']['edit']      = 'Last modification on the 12/04/2017';
 $t['meta']['S']         = 'Support this project';
 $t['meta']['lead']      = 'An initiative of the '.$t['meta']['F'].' network for a<br/>
                 <a href="#leds">Free</a>, <a href="#leds" >Decentralized</a>,
