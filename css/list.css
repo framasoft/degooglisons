@@ -316,3 +316,4 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 .delicious .logo:before { content: "\f005"; }
 .maestro .logo:before { content: "\f0d0"; }
 .gslides .logo:before { content: "\f200"; }
+.twitter .logo:before { content: "\f079"; }

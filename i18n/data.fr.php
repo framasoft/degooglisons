@@ -27,7 +27,7 @@ $t['meta']['framasoft'] = 'Framasoft';
 $t['meta']['F']         = '<a href="'.$l['F'].'"><b class="violet">Frama</b><b class="orange">soft</b></a>';
 $t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">Dégooglisons</b> <b class="orange">Internet</b></a>';
 $t['meta']['start']     = 'Campagne commencée le 07/10/2014';
-$t['meta']['edit']      = 'Dernière modification le 30/09/2016';
+$t['meta']['edit']      = 'Dernière modification le 12/04/2017';
 $t['meta']['S']         = 'Soutenir ce projet';
 $t['meta']['lead']      = 'Une initiative du réseau '.$t['meta']['F'].' en faveur d’un internet<br/>
                 <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
@@ -1186,7 +1186,7 @@ $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Gazouillez sur Internet';
 $d[$k]['mTitle'] = 'Le microblogage libre';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de suivre des flux de microblogage et entretenir vos propres flux de manière décentralisée en utilisant le protocole P2P.
+                        '.$d[$k]['F'].' vous permet de suivre des flux de microblogage et entretenir vos propres flux de manière décentralisée.
                     </p>
                     <p>
                         <b class="violet">Fonctionnement :</b> utilisez un client de connexion, ouvrez un compte, abonnez-vous à des flux et tweetez à votre tour.

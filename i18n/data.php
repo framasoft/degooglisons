@@ -626,17 +626,17 @@ $d[$k]['cat']    = 'office';
 
 // Twitter
 $k= 'twitter';
-$d[$k]['FL']     = '';
+$d[$k]['FL']     = 'https://framapiaf.org';
 $d[$k]['CL']     = '';
-$d[$k]['i']      = 'fa-';
-$d[$k]['S']      = '<a href="http://twister.net.co/">Twister</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">tweet</b>';
+$d[$k]['i']      = 'fa-retweet';
+$d[$k]['S']      = '<a href="https://github.com/tootsuite/mastodon">Mastodon</a>';
+$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">piaf</b>';
 $d[$k]['name']   = $e['twitter']['fa'].'Twitter';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = '<a href="https://babytwit.fr/">Babytwit</a>, <a href="https://pump.io">Pump.io</a>, <a href="https://quitter.se/">Quitter</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://gnu.io/social/">GNUSocial</a>';
+$d[$k]['altOn']  = '<a href="https://instances.mastodon.xyz">Instances Mastodon</a>, <a href="https://babytwit.fr/">Babytwit</a>, <a href="https://quitter.se/">Quitter</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://gnu.io/social/">GNUSocial</a>, <a href="http://twister.net.co/">Twister</a>';
 $d[$k]['pos']    = '';//500,605,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '<a href="https://framablog.org/2017/04/12/plus-de-chatons-plus-de-confiance-en-mastodon">2017</a>';
 $d[$k]['cat']    = 'social';
 
 // Transifex
@@ -695,7 +695,7 @@ $fight   = ['bitly','bubblus','delicious','doodle','dropbox','evernote',
             'facebook','github','gagenda','gbooks','gdocs','gforms',
             'ggroups','gmaps','greader','gspreadsheet','gsearch','gslides','imgur',
             'kongregate','loomio','maestro','minecraft','padlet','pastebin','pixlr',
-            'pocket','skype','slack','trello','wetransfer'];
+            'pocket','skype','slack','trello','twitter','wetransfer'];
 
 /**********************
  * Projets hors Frama *

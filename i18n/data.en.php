@@ -1126,7 +1126,7 @@ $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Express yourself on the Internet';
 $d[$k]['mTitle'] = 'Free microblogging';
 $d[$k]['mBody']  = '<p>
-                          '.$d[$k]['F'].' allows you to follow feeds and have your own feed, with a decentralized solution using P2P protocol.
+                          '.$d[$k]['F'].' allows you to follow feeds and have your own feed, with a decentralized solution.
                     </p>
                     <p>
                          <b class="violet">How does it work?</b> Choose a client, open an account, then subscribe to various feeds and tweet.
