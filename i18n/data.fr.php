@@ -63,81 +63,80 @@ $t['meta']['leds']['sdesc']   = 'À travers les services que nous déployons, no
                 seront en mesure de partager à leur tour ces ressources.';
 $t['meta']['leds']['charte']  = 'Pour en savoir plus, consultez <strong><a href="'.$l['Charte'].'">notre charte</a></strong> détaillée.';
 
-// Accueil
-$t['home']['title']  = 'Accueil';
-$t['home']['link']   = $l['current'];
-$t['home']['desc']   = '';
-$t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
-$t['home']['js']     = '
-    <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
-    <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
-    <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
-$t['home']['map']    = 'Cliquez sur la carte pour découvrir les alternatives…';
-$t['home']['altMap'] = 'Nous sommes en 2016 après Jésus-Christ. Toute la toile est occupée par des services centralisés…
+// Carte
+$t['map']['map']    = 'Cliquez sur la carte pour découvrir les alternatives…';
+$t['map']['altMap'] = 'Nous sommes en 2016 après Jésus-Christ. Toute la toile est occupée par des services centralisés…
                 Toute ? Non ! Une communauté peuplée d’irreductibles libristes résite encore et toujours à l’envahisseur.
                 Et la vie n’est pas facile pour les garnisons des camps retranchés de Fermetum, Centralisum, Espionnum et Privatum…';
-// Accueil - Camps
-$t['home']['camps']['village']     = 'Village libriste';
-$t['home']['camps']['vp1']         = 'Au milieu des multinationales tentaculaires, quelques organisations non-lucratives continuent de lutter activement
+// Carte - Camps
+$t['map']['camps']['village']     = 'Village libriste';
+$t['map']['camps']['vp1']         = 'Au milieu des multinationales tentaculaires, quelques organisations non-lucratives continuent de lutter activement
                     pour un Web ouvert et respectueux des internautes.';
-$t['home']['camps']['vp2']         = 'En plus de '.$t['meta']['F'].', association loi 1901
+$t['map']['camps']['vp2']         = 'En plus de '.$t['meta']['F'].', association loi 1901
                 qui mène la présente campagne, nous pouvons citer <a href="http://april.org">l’April</a>,
                 <a href="http://laquadrature.net">la Quadrature du Net</a> ou encore <a href="http://aful.org">l’Aful</a>.
                 Ces associations vivent de vos dons, n’oubliez pas de les soutenir !';
-$t['home']['camps']['fermetum']    = '<i lang="la">Fermetum</i>';
-$t['home']['camps']['fp1']         = 'Les services en ligne sont souvent fermés : une fois que vous avez commencé à les utiliser,
+$t['map']['camps']['fermetum']    = '<i lang="la">Fermetum</i>';
+$t['map']['camps']['fp1']         = 'Les services en ligne sont souvent fermés : une fois que vous avez commencé à les utiliser,
                 il est très difficile de s’en séparer car ces entreprises font tout pour vous garder captifs en
                 vous empêchant, par exemple, de migrer vos données ailleurs facilement.';
-$t['home']['camps']['fp2']         = 'Utiliser des services en ligne ouverts, c’est s’assurer qu’on ne sera jamais captif d’un site particulier
+$t['map']['camps']['fp2']         = 'Utiliser des services en ligne ouverts, c’est s’assurer qu’on ne sera jamais captif d’un site particulier
                 et qu’il sera toujours possible d’aller voir ailleurs.';
-$t['home']['camps']['centralisum'] = '<i lang="la">Centralisum</i>';
-$t['home']['camps']['cp1']         = 'Les services centralisés posent de nombreux problèmes : ils rendent vos données très vulnérables (un seul site
+$t['map']['camps']['centralisum'] = '<i lang="la">Centralisum</i>';
+$t['map']['camps']['cp1']         = 'Les services centralisés posent de nombreux problèmes : ils rendent vos données très vulnérables (un seul site
                 indisponible et plus rien n’est accessible) et facilitent énormément leur exploitation par des tiers.';
-$t['home']['camps']['cp2']         = 'Utiliser des services en ligne décentralisés, c’est avoir le choix entre utiliser une instance en ligne comme celle
+$t['map']['camps']['cp2']         = 'Utiliser des services en ligne décentralisés, c’est avoir le choix entre utiliser une instance en ligne comme celle
                 proposée par Framasoft ou installer le service chez soi.';
-$t['home']['camps']['espionnum']   = '<i lang="la">Espionnum</i>';
-$t['home']['camps']['ep1']         = '« Si c‘est gratuit, c‘est que vous êtes le produit » : de nombreux services en ligne vivent de
+$t['map']['camps']['espionnum']   = '<i lang="la">Espionnum</i>';
+$t['map']['camps']['ep1']         = '« Si c‘est gratuit, c‘est que vous êtes le produit » : de nombreux services en ligne vivent de
                 l’exploitation de vos données personnelles en les revendant à des sociétés publicitaires.
                 De plus, la plupart de ces services sont basés aux États-Unis et obéissent aux lois américaines de type
                 PATRIOT ACT qui nient totalement votre droit à la vie privée.';
-$t['home']['camps']['ep2']         = 'Utiliser des services en ligne hébergés en Europe, c’est s’assurer de ne pas être dépendant des lois d’un autre
+$t['map']['camps']['ep2']         = 'Utiliser des services en ligne hébergés en Europe, c’est s’assurer de ne pas être dépendant des lois d’un autre
                 continent. De plus, en hébergeant vous-même le service, plus aucun tiers ne peut violer votre vie privée.';
-$t['home']['camps']['privatum']    = '<i lang="la">Privatum</i>';
-$t['home']['camps']['pp1']         = 'Les services privateurs (« propriétaires » dans le langage courant) ont un fonctionnement totalement opaque :
+$t['map']['camps']['privatum']    = '<i lang="la">Privatum</i>';
+$t['map']['camps']['pp1']         = 'Les services privateurs (« propriétaires » dans le langage courant) ont un fonctionnement totalement opaque :
                 il est impossible de savoir exactement ce que fait le logiciel de vos données. Seul l’éditeur en a le contrôle.';
-$t['home']['camps']['pp2']         = 'Utiliser des services en ligne libres, c’est avoir l’assurance d’un contrôle sur le fonctionnement du logiciel par la
+$t['map']['camps']['pp2']         = 'Utiliser des services en ligne libres, c’est avoir l’assurance d’un contrôle sur le fonctionnement du logiciel par la
                 communauté et la possibilité de le modifier, de l’installer ailleurs, etc.';
-$t['home']['camps']['nsa']         = '<abbr>NSA</abbr>';
-$t['home']['camps']['np1']         = 'Les révélations d’Edward Snowden sur le programme PRISM de la <abbr>NSA</abbr> ont montré que les craintes sur la violation
+$t['map']['camps']['nsa']         = '<abbr>NSA</abbr>';
+$t['map']['camps']['np1']         = 'Les révélations d’Edward Snowden sur le programme PRISM de la <abbr>NSA</abbr> ont montré que les craintes sur la violation
                 de masse de la vie privée des internautes étaient fondées.';
-$t['home']['camps']['np2']         = 'Utiliser des services centralisés revient aujourd’hui à offrir sur un plateau ses données personnelles aux
+$t['map']['camps']['np2']         = 'Utiliser des services centralisés revient aujourd’hui à offrir sur un plateau ses données personnelles aux
                 organisations de surveillance sans aucun moyen de contrôler l’usage qui en est fait.';
-// Accueil - Enjeux
-$t['home']['enje']['btn']   = 'Les enjeux';
-$t['home']['enje']['title'] = 'Quels sont les enjeux ?';
-$t['home']['enje']['p1']    = 'Ces dernières années ont vu se généraliser une <strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
+
+$t['why']['title']  = 'Accueil';
+$t['why']['link']   = $l['current'];
+$t['why']['desc']   = '';
+$t['why']['css']    = '<link href="'.$l['current'].'css/map.css" rel="stylesheet" type="text/css" />';
+$t['why']['js']     = '
+    <script src="'.$l['current'].'js/why.js" type="text/javascript"></script>';
+// Pourquoi - Enjeux
+$t['why']['enje']['btn']   = 'Les enjeux';
+$t['why']['enje']['title'] = 'Quels sont les enjeux ?';
+$t['why']['enje']['p1']    = 'Ces dernières années ont vu se généraliser une <strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
                 WhatsApp à Facebook, Skype à Microsoft, etc.). Cette centralisation est nuisible, non seulement parce qu’elle freine l’innovation,
                 mais surtout parce qu’elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces derniers services
                 ne contrôlent plus leur vie numérique</strong> : leurs comportements sont disséqués en permanence afin de mieux être ciblés par
                 la publicité, et leurs données - pourtant privées (sites visités, mails échangés, vidéos regardées, etc.) - peuvent être analysées par des
                 services gouvernementaux.';
-$t['home']['enje']['p2']    = 'La réponse que souhaite apporter Framasoft à cette problématique est simple : mettre en valeur, pour chacun de ces
+$t['why']['enje']['p2']    = 'La réponse que souhaite apporter Framasoft à cette problématique est simple : mettre en valeur, pour chacun de ces
                 services privateurs de liberté, une alternative Libre, Ethique, Décentralisée et Solidaire.';
 
-// Accueil - Dangers
-$t['home']['dang']['btn']   = 'Les dangers';
-$t['home']['dang']['title'] = 'Les dangers';
-$t['home']['dang']['intro'] = 'Les services en ligne toujours plus centralisés de géants tentaculaires comme Google, Amazon, Facebook,
+// Pourquoi - Dangers
+$t['why']['dang']['btn']   = 'Les dangers';
+$t['why']['dang']['title'] = 'Les dangers';
+$t['why']['dang']['intro'] = 'Les services en ligne toujours plus centralisés de géants tentaculaires comme Google, Amazon, Facebook,
                 Apple ou Microsoft (GAFAM) mettent en danger nos vies numériques.';
     // EPCF (Espionnum, Privatum, Centralisum, Fermetum)
-$t['home']['dang']['e']     = 'Espionnage';
-$t['home']['dang']['ep']    = 'Sous le prétexte de fournir une « meilleure expérience utilisateur », nos comportements sur Internet sont espionnés en
+$t['why']['dang']['e']     = 'Espionnage';
+$t['why']['dang']['ep']    = 'Sous le prétexte de fournir une « meilleure expérience utilisateur », nos comportements sur Internet sont espionnés en
                 permanence. Ces informations peuvent servir à afficher de la publicité ciblée, mais les révélations de l’affaire Snowden
                 ont aussi prouvé que les géants de l’Internet étaient contraints de communiquer ces données (parfois extrêmement privées :
                 emails échangés sur GMail, photos partagées sur Facebook, conversations Skype, géolocalisation des téléphones, etc.)
                 à des services gouvernementaux. <strong>Sous prétexte de lutte contre le terrorisme</strong>, les états sont capables
                 aujourd’hui d’obtenir bien plus d’informations qu’un « Big Brother » ne l’aurait jamais rêvé.';
-$t['home']['dang']['erefs'] = '
+$t['why']['dang']['erefs'] = '
                 <ul>
                     <li>Numerama, le 13/05/2014 : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">La NSA accusée d’avoir piégé les routeurs américains</a></li>
                     <li>Numerama, le 12/09/2014 : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">Yahoo révèle le chantage des USA pour espionner les internautes</a></li>
@@ -159,8 +158,8 @@ $t['home']['dang']['erefs'] = '
                         <li>Écrans.fr, le 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">Le FBI a accès aux comptes Facebook, Google, Yahoo!…</a></li>
                         <li>Le Monde.fr, le 27/01/2014 : <a href="http://www.lemonde.fr/technologies/article/2014/01/27/des-applications-mobiles-utilisees-par-la-nsa-et-son-homologue-britannique_4355371_651865.html">Des applications de smartphones "mises sur écoute" par la NSA</a></li>
                     </ul>';
-$t['home']['dang']['p']     = 'Vie privée';
-$t['home']['dang']['pp']    = 'Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre orientation politique
+$t['why']['dang']['p']     = 'Vie privée';
+$t['why']['dang']['pp']    = 'Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre orientation politique
                     ou sexuelle, les sites que nous avons visités, notre recette préférée, les sujets qui nous intéressent, etc.<br/>
                     Si une donnée seule, prise indépendamment, n’est pas forcément sensible, un ensemble de données peut le devenir
                     (par exemple si vous avez fait des recherches sur le cancer avant de souscrire à une assurance-vie).<br/>
@@ -168,7 +167,7 @@ $t['home']['dang']['pp']    = 'Nos données sont une extension de nous-mêmes. E
                     est un élément essentiel de ce qui fait de nous une personne singulière</strong>. Une personne malveillante qui aurait accès à votre
                     smartphone peut en apprendre suffisamment sur vous en quelques minutes pour vous causer des torts très importants (usurpation d’identité sur
                     Facebook, détournement d’informations professionnelles, achats effectués sans votre accord, etc.).';
-$t['home']['dang']['prefs'] = '
+$t['why']['dang']['prefs'] = '
                     <ul>
                         <li>Numerama, le 17/05/2014 : <a href="http://www.numerama.com/magazine/29400-et-maintenant-google-lit-vos-factures.html">Et maintenant Google lit vos factures</a></li>
                         <li>Numerama, le 06/02/2014 : <a href="http://www.numerama.com/magazine/28299-yahoo-transfere-votre-vie-privee-en-irlande.html">Yahoo transfère votre vie privée en Irlande</a></li>
@@ -194,8 +193,8 @@ $t['home']['dang']['prefs'] = '
                         <li>Journal du Net, le 16/07/14 : <a href="http://www.journaldunet.com/ebusiness/le-net/informations-rassemblees-par-google.shtml">Soyons honnêtes, la quantité  d’informations que Google rassemble à notre sujet est effrayante</a></li>
                         <li>Big Browser, le 18/11/14 : <a href="http://bigbrowser.blog.lemonde.fr/2014/11/18/comment-avoir-bonne-presse-un-dirigeant-duber-propose-de-fouiller-la-vie-privee-des-journalistes-trop-critiques/">Comment avoir bonne presse ? Un dirigeant d’Uber propose de fouiller la vie privée des journalistes trop critiques</a></li>
                     </ul>';
-$t['home']['dang']['c']     = 'Centralisation';
-$t['home']['dang']['cp']    = 'Les acteurs majeurs de l’internet sont devenus de véritables pieuvres : Facebook possède WhatsApp et Instagram,
+$t['why']['dang']['c']     = 'Centralisation';
+$t['why']['dang']['cp']    = 'Les acteurs majeurs de l’internet sont devenus de véritables pieuvres : Facebook possède WhatsApp et Instagram,
                     Google détient Youtube et Waze, Microsoft distribue Skype, etc.<br/> Cette concentration des acteurs pose de
                     multiples problèmes : que se passera-t-il si Facebook met la clé sous la porte ? Comment faire des recherches si Google subit une panne ?
                     <strong>Nous devenons peu à peu dépendants de services fournis par un petit nombre d’acteurs.</strong> Par exemple, Apple (iPhone),
@@ -205,7 +204,7 @@ $t['home']['dang']['cp']    = 'Les acteurs majeurs de l’internet sont devenus 
                     Enfin, le manque de diversité de ces géants leur donne aussi la possibilité non seulement de collecter facilement
                     des informations personnelles, mais aussi d’altérer l’information qu’ils diffusent (une recherche Google sur le mot « nucléaire »
                     n’affichera pas les mêmes liens suivant que Google vous perçoit comme un militant écologiste ou un pro-nucléaire).';
-$t['home']['dang']['crefs'] = '
+$t['why']['dang']['crefs'] = '
                     <ul>
                         <li>NextInpact, le 14/06/2014 : <a href="http://www.nextinpact.com/news/88112-les-geants-net-generent-nouveaux-rapports-force.htm">Les géants du Net génèrent de nouveaux rapports de force</a></li>
                         <li>Numerama, le 09/03/2013 : <a href="http://www.nextinpact.com/news/78092-edito-la-domination-et-centralisation-ennemis-numero-web.htm">La domination et la centralisation, les ennemis numéro un du web</a></li>
@@ -218,8 +217,8 @@ $t['home']['dang']['crefs'] = '
                         <li>Ecrans.fr, le 25/04/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/04/25/google-devoile-une-flambee-de-la-censure_957911">Google dévoile une flambée de la censure</a></li>
                         <li>Nextinpact, le 24/04/2014 : <a href="http://www.nextinpact.com/news/87203-comment-etats-unis-veulent-enterrer-neutralite-net.htm">Comment les États-Unis veulent enterrer la neutralité du net</a></li>
                     </ul>';
-$t['home']['dang']['f']     = 'Fermeture';
-$t['home']['dang']['fp']    = 'Les services web affichés sur votre ordinateur ou votre smartphone sont généralement exécutés dans le
+$t['why']['dang']['f']     = 'Fermeture';
+$t['why']['dang']['fp']    = 'Les services web affichés sur votre ordinateur ou votre smartphone sont généralement exécutés dans le
                     « cloud » : des serveurs dispersés sur la planète, stockant à la fois vos données (mails, photos, fichiers, etc.) mais aussi le code
                     des applications.<br>
                     Pour les données, cela pose le problème de leur pérennité (que deviennent vos fichiers si Dropbox ferme demain ?)
@@ -229,7 +228,7 @@ $t['home']['dang']['fp']    = 'Les services web affichés sur votre ordinateur o
                     (ajout de publicité, modification de l’interface, etc.), mais surtout que vous n’avez quasiment aucun contrôle sur ce que l’application peut
                     faire. Ce sont des « boîtes noires » qui peuvent agir de façon malveillante (envoyer des SMS à votre insu, exécuter du code indésirable, etc.).<br>
                     Bref, ces sociétés nous enferment dans des cages dorées, certes, mais des cages malgré tout !';
-$t['home']['dang']['frefs'] = '
+$t['why']['dang']['frefs'] = '
                     <ul>
                         <li>CNIL, le 03/01/2014 : <a href="http://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000028450267&fastReqId=2000051504&fastPos=1">Exemple de sanction de la CNIL à l’encontre de Google</a></li>
                         <li>01Net, le 23/11/2012 : <a href="http://www.01net.com/editorial/580825/securite-le-cloud-est-plus-dangereux-que-les-virus/">Sécurité : le cloud est plus dangereux que les virus</a></li>
@@ -246,71 +245,74 @@ $t['home']['dang']['frefs'] = '
                         <li>Numerama, le 09/08/2014 : <a href="http://www.numerama.com/magazine/30226-quand-facebook-est-en-panne-le-trafic-des-sites-baisse.html">Quand Facebook est en panne, le trafic des sites baisse</a></li>
                         <li>NextInpact, le 22/08/2014 : <a href="http://www.nextinpact.com/news/89379-quand-twitter-deraille-avec-timeline-ses-utilisateurs.htm">Quand Twitter déraille avec la timeline de ses utilisateurs</a></li>
                     </ul>';
-// Accueil - Nos propositions
-$t['home']['prop']['btn']   = 'Nos propositions';
-$t['home']['prop']['title'] = 'Ce que nous proposons';
-$t['home']['prop']['intro'] = 'Framasoft souhaite faire face à ces dangers menaçant nos vies numériques en proposant des services libres, éthiques,
+// Pourquoi - Nos propositions
+$t['why']['prop']['btn']   = 'Nos propositions';
+$t['why']['prop']['title'] = 'Ce que nous proposons';
+$t['why']['prop']['intro'] = 'Framasoft souhaite faire face à ces dangers menaçant nos vies numériques en proposant des services libres, éthiques,
                 décentralisés et solidaires.';
     // LEDS (Libre, Éthique, Décentralisé, Solidaire)
-$t['home']['prop']['l']     = 'Liberté';
-$t['home']['prop']['lp1']   = 'L’histoire d’Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés.
+$t['why']['prop']['l']     = 'Liberté';
+$t['why']['prop']['lp1']   = 'L’histoire d’Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés.
                 Sa popularité et son potentiel font aussi des envieux, et de grandes entreprises aimeraient s’en attribuer le contrôle en imposant
                 du code fermé dans des systèmes verrouillés et non-interopérables.';
-$t['home']['prop']['lp2']   = 'Pour qu’Internet reste fidèle à ses principes fondateurs qui l’ont conduit à son succès, nous devons y trouver des applications libres,
+$t['why']['prop']['lp2']   = 'Pour qu’Internet reste fidèle à ses principes fondateurs qui l’ont conduit à son succès, nous devons y trouver des applications libres,
                 c’est-à-dire dont le code source est ouvert, accessible et sous licences libres.';
-$t['home']['prop']['lp3']   = 'Framasoft s’engage à n’utiliser que des logiciels au code source « libre ».';
-$t['home']['prop']['e']     = 'Éthique';
-$t['home']['prop']['ep1']   = 'Nous plébiscitons un Internet fait de partage et d’indépendance.';
-$t['home']['prop']['ep2']   = 'L’exploitation, la surveillance, la censure et l’appropriation des données sont
+$t['why']['prop']['lp3']   = 'Framasoft s’engage à n’utiliser que des logiciels au code source « libre ».';
+$t['why']['prop']['e']     = 'Éthique';
+$t['why']['prop']['ep1']   = 'Nous plébiscitons un Internet fait de partage et d’indépendance.';
+$t['why']['prop']['ep2']   = 'L’exploitation, la surveillance, la censure et l’appropriation des données sont
                 des valeurs que nous refusons au profit de la transparence (la probité), de l’exposition
                 claire des conditions d’utilisation des services, et du refus des discriminations.';
-$t['home']['prop']['ep3']   = 'Framasoft s’engage à ne pas exploiter les données des utilisateurs de ses services, et à promouvoir un Web ouvert et équitable.';
-$t['home']['prop']['d']     = 'Décentralisation';
-$t['home']['prop']['dp1']   = 'L’intelligence d’Internet doit reposer sur chaque acteur du réseau dans une
+$t['why']['prop']['ep3']   = 'Framasoft s’engage à ne pas exploiter les données des utilisateurs de ses services, et à promouvoir un Web ouvert et équitable.';
+$t['why']['prop']['d']     = 'Décentralisation';
+$t['why']['prop']['dp1']   = 'L’intelligence d’Internet doit reposer sur chaque acteur du réseau dans une
                 dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0.';
-$t['home']['prop']['dp2']   = 'Pour assurer l’égalité de tous, citoyens comme entrepreneurs, les monopoles doivent
+$t['why']['prop']['dp2']   = 'Pour assurer l’égalité de tous, citoyens comme entrepreneurs, les monopoles doivent
                 non seulement être évités, mais empêchés de s’accaparer les données personnelles ou publiques.';
-$t['home']['prop']['dp3']   = 'En expliquant, par des tutoriels, comment multiplier les solutions libres permettant un
+$t['why']['prop']['dp3']   = 'En expliquant, par des tutoriels, comment multiplier les solutions libres permettant un
                 Internet plus équitable, nous facilitons l’essaimage du code et diversifions les usages.';
-$t['home']['prop']['dp4']   = 'Framasoft s’engage à faciliter l’auto-hébergement et l’interopérabilité, afin de ne pas «&nbsp;enfermer&nbsp;» ses utilisateurs.';
-$t['home']['prop']['s']     = 'Solidarité';
-$t['home']['prop']['sp1']   = 'À travers les services que nous déployons, nous promouvons un modèle économique
+$t['why']['prop']['dp4']   = 'Framasoft s’engage à faciliter l’auto-hébergement et l’interopérabilité, afin de ne pas «&nbsp;enfermer&nbsp;» ses utilisateurs.';
+$t['why']['prop']['s']     = 'Solidarité';
+$t['why']['prop']['sp1']   = 'À travers les services que nous déployons, nous promouvons un modèle économique
                 fondé sur la mutualisation des coûts, le partage des ressources, et l’accessibilité
                 au plus grand nombre.';
-$t['home']['prop']['sp2']   = 'Ce modèle possède aussi un caractère éducatif car nous pensons qu’en documentant
+$t['why']['prop']['sp2']   = 'Ce modèle possède aussi un caractère éducatif car nous pensons qu’en documentant
                 le déploiement des services, un grand nombre d’utilisateurs seront en mesure de partager
                 à leur tour ces ressources.';
-$t['home']['prop']['sp3']   = 'Nous pensons que ne pas infantiliser les utilisateurs et faire partager la responsabilité de l’utilisation des services permettra de réguler les abus.';
-$t['home']['prop']['sp4']   = 'Framasoft s’engage à promouvoir le respect et l’autonomie de ces utilisateurs (tant que la réciproque sera vraie).';
+$t['why']['prop']['sp3']   = 'Nous pensons que ne pas infantiliser les utilisateurs et faire partager la responsabilité de l’utilisation des services permettra de réguler les abus.';
+$t['why']['prop']['sp4']   = 'Framasoft s’engage à promouvoir le respect et l’autonomie de ces utilisateurs (tant que la réciproque sera vraie).';
     // Service & Charte
-$t['home']['prop']['s&c']   = 'Services et Charte';
-$t['home']['prop']['s&cp']  = 'Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :';
-$t['home']['prop']['charte'] = 'Charte des services';
+$t['why']['prop']['s&c']   = 'Services et Charte';
+$t['why']['prop']['s&cp']  = 'Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :';
+$t['why']['prop']['charte'] = 'Charte des services';
 
 // Accueil - Concrètement
-$t['home']['conc']['btn']   = 'Concrètement';
-$t['home']['conc']['title'] = 'Concrètement';
-$t['home']['conc']['p1']    = 'Le projet « Dégooglisons Internet » - qui ne concerne d’ailleurs pas que Google - consiste à <strong>proposer des services
+$t['why']['conc']['btn']   = 'Concrètement';
+$t['why']['conc']['title'] = 'Concrètement';
+$t['why']['conc']['p1']    = 'Le projet « Dégooglisons Internet » - qui ne concerne d’ailleurs pas que Google - consiste à <strong>proposer des services
                 alternatifs face à un maximum de services que nous évaluons comme menaçants pour nos vies numériques</strong>.';
-$t['home']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d’autres sont des
+$t['why']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d’autres sont des
                 services extrêment pratiques, mais <strong>ils sont devenus bien trop gros et nous ont rendus dépendants</strong>.
                 Framasoft souhaite entrer en résistance, et propose un plan de mise en place d’applications alternatives sur plusieurs années.';
-$t['home']['conc']['p3']    = 'Ces services sont libres, gratuits, ouverts à tous (dans la limite de nos capacités techniques et financières), tels
+$t['why']['conc']['p3']    = 'Ces services sont libres, gratuits, ouverts à tous (dans la limite de nos capacités techniques et financières), tels
                 des <strong><a href="http://fr.wikipedia.org/wiki/Biens_communs" title="Bien communs">biens communs</a> numériques</strong>.
                 Dans un souci de décentralisation d’internet et de promotion de l’auto-hébergement, nous ferons le maximum afin que chacun
                 puisse installer ses propres services (pour soi, pour son association, son entreprise).';
-$t['home']['conc']['p4']    = 'Évidemment, nous n’avons pas la prétention de <em>concurrencer</em> ces services, nous souhaitons juste proposer un espace numérique
+$t['why']['conc']['p4']    = 'Évidemment, nous n’avons pas la prétention de <em>concurrencer</em> ces services, nous souhaitons juste proposer un espace numérique
                 neutre, non-commercial et non-agressif envers ses utilisateurs.';
-$t['home']['conc']['p5']    = 'Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :';
-$t['home']['conc']['stitle'] = 'Soutenir';
-$t['home']['conc']['sp1']   = 'Un projet d’une telle envergure ne peut se faire sans <strong>votre soutien</strong>.';
-$t['home']['conc']['sp2']   = 'Si vous êtes développeur, graphiste, ergonome, administrateur système, etc, vous pouvez nous contacter pour participer
+$t['why']['conc']['p5']    = 'Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :';
+$t['why']['conc']['stitle'] = 'Soutenir';
+$t['why']['conc']['sp1']   = 'Un projet d’une telle envergure ne peut se faire sans <strong>votre soutien</strong>.';
+$t['why']['conc']['sp2']   = 'Si vous êtes développeur, graphiste, ergonome, administrateur système, etc, vous pouvez nous contacter pour participer
                 activement au projet.';
-$t['home']['conc']['cbtn']  = 'Contacter Framasoft';
-$t['home']['conc']['sp3']     = 'Mais le moyen le plus simple et le plus rapide de nous aider reste de nous soutenir financièrement : cela nous permet
+$t['why']['conc']['cbtn']  = 'Contacter Framasoft';
+$t['why']['conc']['sp3']     = 'Mais le moyen le plus simple et le plus rapide de nous aider reste de nous soutenir financièrement : cela nous permet
                 de payer l’infrastructure (serveurs), et les permanents dédiés à la réussite de ce projet ambitieux. Framasoft est une association
                 d’intérêt général : un don de 100€ vous reviendra, après défiscalisation, à 34€.';
-$t['home']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
+$t['why']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
+
+
+$t['why']['who']['btn']   = 'Qui sommes nous ?';
 
 // Liste des services
 $t['list']['title']      = 'Liste des services';
@@ -328,10 +330,14 @@ $t['alt']['title']       = 'Liste des alternatives';
 $t['alt']['link']        = $l['current'].'alternatives';
 $t['alt']['desc']        = 'Liste des alternatives en ligne libres, éthiques, décentralisé et solidaires que Framasoft recommande pour dégoogliser internet';
 $t['alt']['css']         = '
-    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
+    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />
+    <link href="'.$l['current'].'css/map.css" rel="stylesheet" type="text/css" />';
 $t['alt']['js']          = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
-    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/map.js" type="text/javascript"></script>';
 $t['alt']['alt1']        = 'Vous utilisez';
 $t['alt']['alt2']        = ' recommande';
 $t['alt']['alt3']        = 'repose sur ';
@@ -512,6 +518,9 @@ $t['_Close']            = 'Fermer';
 $t['_More']             = '+ d’infos';
 $t['_Support']          = 'Soutenir';
 $t['_Use']              = 'Utiliser';
+$t['_Docs']             = 'Documentation';
+$t['_Framacloud']       = 'Framacloud';
+$t['_CHATONS']          = 'Chatons';
 $t['_Install']          = 'Installer';
 $t['_Project updated']  = 'Projet mis à jour';
 $t['_Project loading']  = 'Projet en cours';
@@ -656,6 +665,7 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> entrez l’adresse dans sa version originale et Frama.link la raccourcira.
                     </p>';
+$d[$k]['DL']     = 'https://docs.framasoft.org/fr/lstu';
 
 // Blogger
 $k= 'blogger';
@@ -897,6 +907,14 @@ $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d’être affichées dans votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait alors office d’intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n’est donc pas enregistrée chez eux. </p>
                         <p>Evidemment, vous devez avoir confiance en Framasoft/Framabee si vous souhaitez l’utiliser, c’est pourquoi nous proposons une <a href="'.$l['Charte'].'">charte</a>.
                     </p>';
+$s[$k]['pd'] = 'Le moteur qui butine les internets pour vous';
+$s[$k]['pt'] = 'Framabee est un meta-moteur de recherche libre et anonyme.
+                Vos recherches effectuées au travers de ce moteur sont envoyées
+                à différents moteurs avant d’être affichées dans votre navigateur.
+                L’intérêt ? Notre moteur est alors un intermédiaire entre
+                vous et Google (et autres), ainsi vos données personnelles
+                (adresse IP, historique de vos recherches, géolocalisation, profil)
+                ne sont pas enregistrées chez eux.';
 
 // Google Slides
 $k= 'gslides';
@@ -1291,15 +1309,24 @@ $d[$k]['sDesc']  = 'Encyclopédie';
 /**************
  * Categories *
  **************/
-$c['home']['name']    = 'Chez soi';
-$c['web']['name']     = 'Web';
-$c['office']['name']  = 'Bureautique';
-$c['social']['name']  = 'Société';
-$c['files']['name']   = 'Partage de fichiers';
-$c['media']['name']   = 'Médias & culture';
-$c['geo']['name']     = 'Géo';
-$c['hobbies']['name'] = 'Loisirs';
-$c['site']['name']    = 'Sites web';
-$c['dev']['name']     = 'Développement';
+$c1['home']['name']    = 'Chez soi';
+$c1['web']['name']     = 'Web';
+$c1['office']['name']  = 'Bureautique';
+$c1['social']['name']  = 'Société';
+$c1['files']['name']   = 'Partage de fichiers';
+$c1['media']['name']   = 'Médias & culture';
+$c1['geo']['name']     = 'Géo';
+$c1['hobbies']['name'] = 'Loisirs';
+$c1['site']['name']    = 'Sites web';
+$c1['dev']['name']     = 'Développement';
+
+$c2['orga']['name']    = 'Organisation';
+$c2['prod']['name']    = 'Production';
+$c2['share']['name']   = 'Partage';
+$c2['tools']['name']   = 'Outils';
+$c2['com']['name']     = 'Communication';
+$c2['games']['name']   = 'Jeux et divers';
+$c2['collab']['name']  = 'Collaboration';
+$c2['search']['name']  = 'Recherche et veille';
 
 ?>

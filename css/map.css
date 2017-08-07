@@ -54,19 +54,11 @@ body main > .row {
 }
 
 #enjeux {
-    background:#366F86;
-}
-
-#dangers {
     background:#A81400;
 }
 
 #solutions {
     background:#677835;
-}
-
-#concret {
-    background:#6A5687;
 }
 
 #enjeux .container,
@@ -118,4 +110,5 @@ body main > .row {
 }
 #map-container video {
   z-index: 5;
+  position:relative !important;
 }

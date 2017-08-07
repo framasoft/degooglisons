@@ -38,7 +38,7 @@
     <script src="https://framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <?php echo $t[$page]['js'] ?>
 </head>
-<body>
+<body class="<?php echo basename($_SERVER['SCRIPT_FILENAME'], '.php'); ?>">
     <script src="https://framasoft.org/nav/nav.js" type="text/javascript"></script>
         <div class="row" id="internav">
             <div class="container">

@@ -176,7 +176,7 @@ main {
 @media (min-width: 768px) {
     .panel td:first-child,
     .panel th:first-child {
-        width:33%;
+        width:50%;
     }
 
     .panel td .col-sm-6:first-child {
@@ -258,4 +258,44 @@ a[href="https://framasoft.org"],
 a.btn:hover,
 a.btn:focus {
     border-bottom-width : 1px;
+}
+
+.navbar-nav > li > a[href="#bloc-carte"] {
+    padding:5px 15px;
+}
+.navbar-nav > li > a[href="#bloc-carte"] img {
+    height:40px;
+}
+
+/* Landing */
+body.index #mainHeader {
+    display:none;
+}
+.landing .container {
+    background: url("http://s2.static-clubeo.com/uploads/vttarverneslabrochateaugay/news/repas-gaulois__nvyiuo.jpg") no-repeat right top;
+    padding: 50px;
+    min-height:600px;
+    margin-bottom:0 !important;
+}
+.choice .container {
+    margin-top:0 !important;
+}
+
+.landing .col-sm-4 {
+    margin-top:10%;
+    margin-bottom:10%;
+}
+
+.choice img {
+    max-width:300px;
+    margin-top: 10px;
+}
+
+.choice .btn-soutenir {
+    font-size:14px;
+}
+
+#enjeux img {
+    max-width:300px;
+    margin:auto;
 }
