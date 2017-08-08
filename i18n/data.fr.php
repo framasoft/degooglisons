@@ -16,9 +16,10 @@ $l['DIoL'] = $l['DIo'].'/liste';
 $l['Charte'] = 'https://framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
+$l['docs'] = 'https://docs.framasoft.org/fr/';
 
 // Images
-$l['map'] = 'img/Carte2016-victoires.png';
+$l['map'] = 'img/Carte2016-romains.png';
 
 // Meta
 $t['meta']['lang']      = 'fr';
@@ -628,6 +629,7 @@ $d[$k]['FDate']   = '201*';                                             // date 
 ---- À remplir ici : data.xx.php ---------------------------------------
 $d[$k]['sDesc']   = '';                                                 // Description courte (en titre sur carte et post-it)
 $d[$k]['lDesc']   = '';                                                 // Description longue (au dos du post-it)
+$d[$k]['hDesc']   = '';                                                 // Description très longue (framanav, framasoft.org et list.php)
 $d[$k]['mTitle']  = '';                                                 // Modale ↓
 $d[$k]['mBody']   = '<p>
                         '.$d[$k]['F'].' vous permet de…
@@ -641,22 +643,14 @@ $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance bas�
 
 */
 
-// Avaaz
-$k= 'avaaz';
-$d[$k]['sDesc']  = 'Pétitions';
-$d[$k]['lDesc']  = 'Lancez vos pétitions sans offrir les adresses de vos soutiens';
-$d[$k]['mTitle'] = 'Libérez vos pétitions';
-$d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de lancer des pétitions sur les sujets qui vous tiennent à cœur. En quelques clics, votre pétition est publiée et les adresses de vos soutiens ne seront pas exploités par des régies publicitaires.
-                    </p>
-                    <p>
-                        <b class="violet">Fonctionnement :</b> Inscrivez-vous, lancez une nouvelle pétition en suivant les instructions. Votre sondage sera créé. Vos soutiens n’aurons pas besoin de s’inscrire pour pouvoir y participer.
-                    </p>';
-
 // Bit.ly
 $k= 'bitly';
 $d[$k]['sDesc']  = 'Réduction d’URL';
 $d[$k]['lDesc']  = 'Des adresses plus courtes en toute discrétion';
+$d[$k]['hDesc']  = 'Avec Frama.link, il est possible de raccourcir des
+                    adresses web trop longues. Sur les réseaux sociaux et
+                    le microblogging, un lien raccourci permet d’économiser
+                    de l’espace et gagner en clarté.';
 $d[$k]['mTitle'] = 'Finies les adresses trop longues';
 $d[$k]['mBody']  = '<p>
                         Avec '.$d[$k]['F'].' ou <a href="https://huit.re">Huit.re</a>, il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
@@ -665,12 +659,14 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> entrez l’adresse dans sa version originale et Frama.link la raccourcira.
                     </p>';
-$d[$k]['DL']     = 'https://docs.framasoft.org/fr/lstu';
+$d[$k]['tags']   = 'partager, liens';
+
 
 // Blogger
 $k= 'blogger';
 $d[$k]['sDesc']  = 'Hébergement de sites';
 $d[$k]['lDesc']  = 'Créez un site web qui respectera vos visiteurs';
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Votre site web en quelques clics';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de créer un site web facilement, avec des outils libres et de l’héberger sur nos serveurs. Aucune publicité ni traquage ne portera atteinte aux données de vos visiteurs et visiteuses.
@@ -678,12 +674,16 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Choisissez votre sous-domaine, le type de site que vous voulez créer (page web, blog) puis laissez-vous guider.
                     </p>';
+$d[$k]['tags']   = 'site, vitrine, web, html';
 
 // Bubbl.us
 $k= 'bubblus';
 $d[$k]['name']   = 'Bubbl.us';
 $d[$k]['sDesc']  = 'Cartes heuristiques';
 $d[$k]['lDesc']  = 'Fabriquez vos cartes mentales';
+$d[$k]['hDesc']  = 'Interface fluide et intuitive pour créer rapidement et
+                    simplement des cartes heuristiques à même votre navigateur.
+                    Pertinent en situation de brainstorming ou de prise de notes.';
 $d[$k]['mTitle'] = 'Pourquoi créer une carte mentale ?';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
@@ -700,26 +700,69 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Pourquoi utiliser Framindmap ?</b> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
                         votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
                     </p>';
+$d[$k]['tags']   = 'produire, mindmap, brainstorming';
+
+// Change.org
+$k= 'change';
+$d[$k]['sDesc']  = 'Pétitions';
+$d[$k]['lDesc']  = 'Lancez vos pétitions sans offrir les adresses de vos soutiens';
+$d[$k]['hDesc']  = '';
+$d[$k]['mTitle'] = 'Libérez vos pétitions';
+$d[$k]['mBody']  = '<p>
+                        '.$d[$k]['F'].' vous permet de lancer des pétitions sur les sujets qui vous tiennent à cœur. En quelques clics, votre pétition est publiée et les adresses de vos soutiens ne seront pas exploités par des régies publicitaires.
+                    </p>
+                    <p>
+                        <b class="violet">Fonctionnement :</b> Inscrivez-vous, lancez une nouvelle pétition en suivant les instructions. Votre sondage sera créé. Vos soutiens n’aurons pas besoin de s’inscrire pour pouvoir y participer.
+                    </p>';
+$d[$k]['tags']   = 'pétition, diffuser';
 
 // Del.icio.us
 $k= 'delicious';
 $d[$k]['sDesc']  = 'Marque-pages';
 $d[$k]['lDesc']  = 'Retrouvez facilement vos liens, et vos services Framasoft';
+$d[$k]['hDesc']  = 'MyFrama est un petit fourre-tout numérique, qui vous
+                    permet de conserver et retrouver les liens que vous aimez
+                    à la manière de del.ico.us ! Avec un système d´étiquettes
+                    et de tri automatique, vous pouvez ranger aisément vos
+                    onglets et marque-pages, et utiliser le bouton MyFrama
+                    pour retrouver les services Framasoft que vous utilisez !';
 $d[$k]['mTitle'] = 'Triez tout le web si vous voulez (mais c´est long)';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' est un petit fourre-tout numérique, qui vous permet de conserver et retrouver les liens que vous aimez à la manière de del.ico.us ! Avec un système d´étiquettes et de tri automatique, vous pouvez ranger aisément vos onglets et marque-pages, et utiliser le bouton MyFrama pour retrouver les services Framasoft que vous utilisez !
+                        '.$d[$k]['F'].' est un petit fourre-tout numérique,
+                        qui vous permet de conserver et retrouver les
+                        liens que vous aimez à la manière de del.ico.us !
+                        Avec un système d´étiquettes et de tri automatique,
+                        vous pouvez ranger aisément vos onglets et marque-pages,
+                        et utiliser le bouton MyFrama pour retrouver les
+                        services Framasoft que vous utilisez !
                     </p>
                     <p>
-                      <b class="violet">Fonctionnement :</b> Créez votre compte, puis ajoutez le marque-pages interactif (Bookmarklet) à la barre personelle de voter navigateur. Utilisez-le pour conserver un lien (<abbr>URL</abbr>) en lui adjoignant un titre, une description et des étiquettes. Le bouton MyFrama sur nos sites sert à conserver le lien du service que vous utilisez : avec lui, tout est trié automatiquement ! Pensez à créer vos propres règles de tri automatiques qui ajoutent l´étiquette de votre choix aux morceaux d´adresses web que vous identifierez !
+                      <b class="violet">Fonctionnement :</b> Créez votre
+                      compte, puis ajoutez le marque-pages interactif
+                      (Bookmarklet) à la barre personelle de voter navigateur.
+                      Utilisez-le pour conserver un lien (<abbr>URL</abbr>)
+                      en lui adjoignant un titre, une description et des étiquettes.
+                      Le bouton MyFrama sur nos sites sert à conserver le
+                      lien du service que vous utilisez : avec lui, tout est
+                      trié automatiquement !
+                      Pensez à créer vos propres règles de tri automatiques
+                      qui ajoutent l´étiquette de votre choix aux morceaux
+                      d´adresses web que vous identifierez !
                     </p>';
+$d[$k]['tags']   = 'partager, veille, liens';
 
 // Doodle
 $k= 'doodle';
 $d[$k]['sDesc']  = 'Réunions et sondages';
 $d[$k]['lDesc']  = 'Convenir d’une réunion et créer un sondage';
+$d[$k]['hDesc']  = 'Framadate c’est un peu comme Doodle mais en libre.
+                    Rien de plus simple de créer un rendez-vous ou un sondage
+                    sans inscription pour y inviter vos collaborateurs.';
 $d[$k]['mTitle'] = 'Organiser des rendez-vous simplement et librement';
 $d[$k]['mBody']  = '<p>
-                        Avec '.$d[$k]['F'].' vous serez en mesure de planifier un rendez-vous à plusieurs ou créer un sondage en ligne. Framadate ne stocke
+                        Avec '.$d[$k]['F'].' vous serez en mesure de
+                        planifier un rendez-vous à plusieurs ou créer
+                        un sondage en ligne. Framadate ne stocke
                         pas vos données !
                     </p>
                     <p class="violet">Fonctionnalités :</p>
@@ -729,23 +772,43 @@ $d[$k]['mBody']  = '<p>
                         <li>planification d’une dead-line</li>
                         <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
                     </ul>';
+$d[$k]['tags']   = 'organiser, réunion, date, sondage';
 
 // Dropbox
 $k= 'dropbox';
 $d[$k]['sDesc']  = 'Stockage de documents';
 $d[$k]['lDesc']  = 'Hébergez, synchronisez et partagez vos documents';
+$d[$k]['hDesc']  = 'Framadrive vous permet de stocker vos documents en ligne,
+                    de les synchroniser sur vos ordinateurs, mobiles, etc…
+                    et de les partager avec qui vous voulez.';
 $d[$k]['mTitle'] = 'Héberger ses documents en ligne';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de stocker en ligne vos documents, de les synchroniser sur vos ordinateurs, tablettes, téléphones, etc et de les partager avec qui vous voulez…
+                        '.$d[$k]['F'].' vous permet de stocker en ligne
+                        vos documents, de les synchroniser sur vos
+                        ordinateurs, tablettes, téléphones, etc et de
+                        les partager avec qui vous voulez…
                     </p>
                     <p>
-			Nous avons ouvert 5000 comptes d´une capacité de 2 Go afin de permettre de tester une alternative libre… Pour une solution plus importante ou plus disponible, vous pouvez aller chercher un hébergement chez les <a href="https://chatons.org">CHATONS</a> dont notre partenaire <a href="https://indiehosters.net">Indie Hosters</a> (ou vous essayer à l´auto hébergement avec <a href="http://yunohost.org/">Yunohost</a>, <a href="http://labriqueinter.net/">la Brique internet</a> ou <a href="https://cozy.io/fr/">My Cozy Cloud</a>).
+                    Nous avons ouvert 5000 comptes d´une capacité de 2 Go
+                    afin de permettre de tester une alternative libre…
+                    Pour une solution plus importante ou plus disponible,
+                    vous pouvez aller chercher un hébergement chez les
+                    <a href="https://chatons.org">CHATONS</a> dont notre
+                    partenaire <a href="https://indiehosters.net">Indie Hosters</a>
+                    (ou vous essayer à l´auto hébergement avec
+                    <a href="http://yunohost.org/">Yunohost</a>,
+                    <a href="http://labriqueinter.net/">la Brique internet</a>
+                    ou <a href="https://cozy.io/fr/">My Cozy Cloud</a>).
                     </p>';
+$d[$k]['tags']   = 'stocker, sauvegarder, fichiers, partager, agenda, calendrier, contacts, tâches';
 
 // Evernote
 $k= 'evernote';
 $d[$k]['sDesc']  = 'Prise de notes';
 $d[$k]['lDesc']  = 'Vos notes, images et liens favoris à portée de doigt&nbsp;!';
+$d[$k]['hDesc']  = 'Avec Framanotes vous pouvez prendre et conserver des notes,
+                    images, liens… et même des fichiers ; et les synchroniser
+                    avec tous vos appareils (voire les partager avec des ami⋅e⋅s).';
 $d[$k]['mTitle'] = 'Vos notes ne regardent que vous.';
 $d[$k]['mBody']  = '<p>
                         Avec '.$d[$k]['F'].' vous pouvez prendre et conserver des notes, images, liens… et même des fichiers&nbsp;; et les synchroniser avec tous vos appareils (voire les partager avec des ami-e-s).
@@ -757,11 +820,16 @@ $d[$k]['mBody']  = '<p>
                         <li>hébergement d´images et de fichiers (légers)</li>
                         <li>possibilité de partager un «&nbsp;Tableau de notes&nbsp;» avec d´autres utilisateurs</li>
                     </ul>';
+$d[$k]['tags']   = 'noter, partager, chiffrement';
 
 // Facebook
 $k= 'facebook';
 $d[$k]['sDesc']  = 'Réseau social';
 $d[$k]['lDesc']  = 'Un réseau social éthique et décentralisé';
+$d[$k]['hDesc']  = 'Framasphère est un réseau social libre, basé sur le
+                    logiciel décentralisé Diaspora*.
+                    Retrouvez vos amis sur Framasphère - ou d’autres pods Diaspora* -
+                    et échangez avec eux sans être pisté.';
 $d[$k]['mTitle'] = 'Rejoignez vos amis en zone libre';
 $d[$k]['mBody']  = '<p>
                         Sur '.$d[$k]['F'].', vous pouvez retrouver un réseau social qui respecte vos données. Framasphère est un nœud (appelé <i>pod</i>)
@@ -771,28 +839,40 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Fonctionnement :</b> échanger des messages et photos avec n’importe quelle autre personne du réseau Diaspora*, gérer vos contacts, tags,
                         mentions, repartages… Vous pouvez aussi publier sur d’autres réseaux sociaux (Facebook, Twitter, Tumblr ou Wordpress).
                     </p>';
+$d[$k]['tags']   = 'social, réseau, partager';
 
 // Github
 $k= 'github';
 $d[$k]['sDesc']  = 'Hébergement de code';
 $d[$k]['lDesc']  = 'Du code libre c’est bien. Sur une plateforme libre c’est mieux !';
+$d[$k]['hDesc']  = 'Framagit est un outil qui s’adresse avant tout aux développeurs.
+                    Il permet d’héberger vos projets de logiciels libres et
+                    de travailler collaborativement dessus.';
 $d[$k]['mTitle'] = 'Hébergement de code libre';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est un outil qui s’adresse avant tout aux développeurs. Il permet la création de 42 dépôts maximum par compte (si vous avez besoin de plus, songez sérieusement à vous auto-héberger). Et, petit plus par rapport à GitHub, vous pouvez créer des dépôts privés.</p>
                     </p>
                     <p>Il est également possible de « mirrorer » automatiquement vos dépôts sur GitHub : vous continuez à « engraisser la bête », mais vous êtes déjà moins dépendant, et vous conservez une visibilité auprès des presque 10 millions d’inscrits sur GitHub. Votre dépôt sur notre Framagit est automatiquement poussé sur votre dépôt Github. C’est d’ailleurs la solution retenue par Framasoft, qui dispose toujours d’un compte GitHub, alors que les développements sont réalisés sur notre forge.</p>';
+$d[$k]['tags']   = 'coder, forge, développement';
 
 // Gmail
 $k= 'gmail';
 $d[$k]['sDesc']  = 'Service de messagerie';
 $d[$k]['lDesc']  = 'Vos mails, sans la NSA dedans';
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Votre courrier, dans une enveloppe blindée';
 $d[$k]['mBody']  = '';
+$d[$k]['tags']   = '';
 
 // Google Agenda
 $k= 'gagenda';
 $d[$k]['sDesc']  = 'Agenda partagé';
 $d[$k]['lDesc']  = 'À vous de choisir qui verra votre planning';
+$d[$k]['hDesc']  = 'Avec Framagenda vous pouvez créer des agendas personnels,
+                    professionnels, le planning d´une salle ou des activités
+                    de votre organisation, et les partager librement.
+                    Vous restez maîtres de vos données, et vous choisissez
+                    auprès de qui, où et quand elles s´affichent.';
 $d[$k]['mTitle'] = 'Vos rendez-vous vous appartiennent';
 $d[$k]['mBody']  = '<p>
                         Avec '.$d[$k]['F'].' vous pouvez créer des agendas personnels, professionnels, le planning d´une salle ou des activités de votre organisation, et les partager librement. Vous restez maîtres de vos données, et vous choisissez auprès de qui, où et quand elles s´affichent.
@@ -806,21 +886,32 @@ $d[$k]['mBody']  = '<p>
                         <li>inviter (par email) des participants à des rendez-vous</li>
                         <li>possibilité d´affichage public des agendas</li>
                     </ul>';
+$d[$k]['tags']   = 'date, organiser, partager, agenda, calendrier, contacts, tâches';
 
 // Google Books
 $k= 'gbooks';
 $d[$k]['sDesc']  = 'Livres en ligne';
 $d[$k]['lDesc']  = 'Une bibliothèque de plusieurs milliers d’ouvrages';
+$d[$k]['hDesc']  = 'Notre bibliothèque contient quelques centaines d’ouvrages
+                    libres ou du domaine public. Elle est consultable en ligne
+                    sur les plateformes mobiles. Vous pouvez l’ajouter
+                    directement une application de lecture d’ebook grâce au
+                    flux <abbr>OPDS</abbr>.';
 $d[$k]['mTitle'] = 'Catalogue d’ouvrages accessibles pour tous';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est le catalogue <abbr>OPDS</abbr> de Framasoft. « Euh… Oui, mais encore ? », nous direz-vous. Un catalogue <abbr>OPDS</abbr> est un site auquel vous pouvez vous abonner avec un logiciel supportant cette fonctionnalité (certaines liseuses en embarquent un, pour Android, il existe Aldiko et bien d’autres), vous donnant accès rapidement et simplement à tout une bibliothèque depuis votre ordinateur, smartphone ou tablette.
                     </p>
                     <p>Le catalogue <abbr>OPDS</abbr> de Framasoft vous donne accès à des centaines d’ouvrages non protégés par « copyright ».</p>';
+$d[$k]['tags']   = 'kindle, ebook, lire';
 
 // Google Docs
 $k= 'gdocs';
 $d[$k]['sDesc']  = 'Rédaction collaborative';
 $d[$k]['lDesc']  = 'Du traitement de texte en ligne et à plusieurs !';
+$d[$k]['hDesc']  = 'Écrivons tous ensemble sur le même document dans une
+                    interface de rédaction collective en ligne.
+                    Aucune inscription requise, on se donne un pseudo,
+                    une couleur et on se lance !';
 $d[$k]['mTitle'] = 'Outil de rédaction collaborative';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est un service de rédaction collaborative en ligne basé sur le logiciel
@@ -841,11 +932,17 @@ $d[$k]['mBody']  = '<p>
                         <li>Exporter votre travail</li>
                         <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
                     </ul>';
+$d[$k]['tags']   = 'document, texte, collaborer';
 
 // Google Form
 $k= 'gforms';
 $d[$k]['sDesc']  = 'Questionnaires en ligne';
 $d[$k]['lDesc']  = 'Créez simplement des questionnaires';
+$d[$k]['hDesc']  = 'Framaforms vous permet de créer les questionaires dont
+                    vous avez besoin, que ce soit dans un cadre scolaire,
+                    familial ou associatif. Créez vos questions en fonction
+                    de vos besoins, des formulaires à choix multiples aux
+                    champs de texte libre.';
 $d[$k]['mTitle'] = 'Création de questionaires';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de créer les questionnaires qu´il vous faut, que ce soit dans un cadre scolaire, familial ou associatif. Créez vos questions en fonction de vos besoins, des formulaires à choix multiples aux champs de texte libre.
@@ -853,11 +950,17 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement</b> : créez un compte sur Framaforms et lancez-vous dans la création des questionnaires, en fonction de vos besoins. Vos sondés n’ont pas besoin de s’inscrire pour pouvoir répondre. Vous disposez d’une synthèse des réponses.
                     </p>';
+$d[$k]['tags']   = 'formulaire, diffusion, groupes';
 
 // Google Groupes
 $k= 'ggroups';
 $d[$k]['sDesc']  = 'Listes de diffusion';
 $d[$k]['lDesc']  = 'Créez une liste de discussion par email';
+$d[$k]['hDesc']  = 'Framalistes vous permet de créer des liste de diffusion
+                    emails : toute personne s´abonnant à votre liste pourra
+                    recevoir les emails qui y sont envoyés, et y participer
+                    à son tour. À vous de choisir si cette liste est
+                    publique, semi-privée ou privée.';
 $d[$k]['mTitle'] = 'Échangez sans être lus par Big Brother';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de créer des liste de diffusion emails : toute personne s´abonnant à votre liste pourra recevoir les emails qui y sont envoyés, et y participer à son tour. À vous de choisir si cette liste est publique, semi-privée ou privée.
@@ -865,11 +968,16 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement</b> : créez un compte sur Framalistes pour faire, paramétrer et gérer votre liste de diffusion, ou tout simplement pour y rechercher les listes qui vous intéressent et gérer vos abonnements.
                     </p>';
+$d[$k]['tags']   = 'groupes, discussion, diffusion, liste';
 
 // Google Maps
 $k= 'gmaps';
 $d[$k]['sDesc']  = 'Cartographie';
 $d[$k]['lDesc']  = 'Créer vos cartes personnalisées en ligne';
+$d[$k]['hDesc']  = 'Framacarte vous permet de dessiner, marquer, colorier,
+                    annoter… les fonds de carte
+                    d’<a href="https://fr.wikipedia.org/wiki/Openstreetmap">OpenStreetMap</a>
+                    pour les afficher ensuite dans votre site web ou les imprimer.';
 $d[$k]['mTitle'] = 'Créez vos cartes personnalisées en ligne';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' permet de créer des cartes personnalisées sur des fonds OpenStreetMap et de les afficher dans votre site.
@@ -884,11 +992,14 @@ $d[$k]['mBody']  = '<p>
                         <li>Choisir la licence de vos données</li>
                         <li>Exporter et partager votre carte</li>
                     </ul>';
+$d[$k]['tags']   = 'carte, maps';
 
 // Google Reader
 $k= 'greader';
 $d[$k]['sDesc']  = 'Lecteur de flux';
 $d[$k]['lDesc']  = 'Suivez l’actualité et faites vos choix librement';
+$d[$k]['hDesc']  = 'En vous abonnant aux flux RSS de vos sites préférés,
+                    restez informés de toutes leurs actualités avec Framanews !';
 $d[$k]['mTitle'] = 'Toujours au courant, jamais en retard';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
@@ -897,29 +1008,33 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Fonctionnement :</b> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
                         Comment faire plus simple ?
                     </p>';
+$d[$k]['tags']   = 'feed, rss, news, reader, veille';
 
 // Google Search
 $k= 'gsearch';
 $d[$k]['sDesc']  = 'Moteur de recherche';
 $d[$k]['lDesc']  = 'Et si vos recherches n’étaient plus fichées par Google ?';
+$d[$k]['hDesc']  = 'Framabee est un meta-moteur de recherche libre et anonyme.
+                    Vos recherches effectuées au travers de ce moteur sont envoyées
+                    à différents moteurs avant d’être affichées dans votre navigateur.
+                    L’intérêt ? Notre moteur est alors un intermédiaire entre
+                    vous et Google (et autres), ainsi vos données personnelles
+                    (adresse IP, historique de vos recherches, géolocalisation, profil)
+                    ne sont pas enregistrées chez eux.';
 $d[$k]['mTitle'] = 'Une recherche anonyme';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d’être affichées dans votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait alors office d’intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n’est donc pas enregistrée chez eux. </p>
                         <p>Evidemment, vous devez avoir confiance en Framasoft/Framabee si vous souhaitez l’utiliser, c’est pourquoi nous proposons une <a href="'.$l['Charte'].'">charte</a>.
                     </p>';
-$s[$k]['pd'] = 'Le moteur qui butine les internets pour vous';
-$s[$k]['pt'] = 'Framabee est un meta-moteur de recherche libre et anonyme.
-                Vos recherches effectuées au travers de ce moteur sont envoyées
-                à différents moteurs avant d’être affichées dans votre navigateur.
-                L’intérêt ? Notre moteur est alors un intermédiaire entre
-                vous et Google (et autres), ainsi vos données personnelles
-                (adresse IP, historique de vos recherches, géolocalisation, profil)
-                ne sont pas enregistrées chez eux.';
+$d[$k]['tags']   = 'rechercher, anonymat';
 
 // Google Slides
 $k= 'gslides';
 $d[$k]['sDesc']  = 'Présentations';
 $d[$k]['lDesc']  = 'Des diaporamas de haute qualité sans se fatiguer';
+$d[$k]['hDesc']  = 'Framaslides vous permet de créer directement en ligne un
+                    diaporama ou une présentation, d’y accéder avec une
+                    simple connexion internet, et de la partager.';
 $d[$k]['mTitle'] = 'Une application pour vos diaporamas';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permettra
@@ -937,11 +1052,16 @@ $d[$k]['mBody']  = '<p>
                         <li>la sauvegarde dans les nuages dans une boîte privée</li>
                         <li>une fonction d’édition collaborative…</li>
                     </ul>';
+$d[$k]['tags']   = 'diaporama, présentation, document';
 
 // Google Spreadsheet
 $k= 'gspreadsheet';
 $d[$k]['sDesc']  = 'Tableur collaboratif';
 $d[$k]['lDesc']  = 'Partagez vos tableaux et collaborez !';
+$d[$k]['hDesc']  = 'Framacalc est au tableur ce que Framapad est au
+                    traitement de texte, autrement dit la possibilité
+                    d’éditer simplement et collectivement en ligne
+                    sur un même document.';
 $d[$k]['mTitle'] = 'Un tableur en ligne';
 $d[$k]['mBody']  = '<p>
                         Avec '.$d[$k]['F'].', vos données sont automatiquement sauvegardées sur Internet. Vous et vos collaborateurs pouvez collaborer sur
@@ -958,11 +1078,15 @@ $d[$k]['mBody']  = '<p>
                         <li>Export HTML</li>
                         <li>Taille du document : jusqu’à 100 000 lignes.</li>
                     </ul>';
+$d[$k]['tags']   = 'tableur, document';
 
 // Img.ur
 $k= 'imgur';
 $d[$k]['sDesc']  = 'Envoi d’images';
 $d[$k]['lDesc']  = 'Partagez vos images anonymement';
+$d[$k]['hDesc']  = 'Framapic vous permet de partager facilement des images,
+                    par exemple pour les publier sur Twitter, Facebook,
+                    ou … Framasphère !';
 $d[$k]['mTitle'] = 'Partagez vos images facilement';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou … Framasphère !
@@ -971,11 +1095,13 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         '.$d[$k]['F'].' permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
                     </p>';
+$d[$k]['tags']   = 'partager, images, galerie, chiffrement';
 
 // Meetup
 $k= 'meetup';
 $d[$k]['sDesc']  = 'Événements communautaires';
 $d[$k]['lDesc']  = 'Organisez des rencontres et des groupes d´intérêts';
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Gardez le contrôle sur les rencontres que vous organisez';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de proposer des événements et rencontres, et de garder le contact avec la communauté qui partage vos intérêts !
@@ -983,11 +1109,15 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> à venir.
                     </p>';
+$d[$k]['tags']   = '';
 
 // Minecraft
 $k= 'minecraft';
 $d[$k]['sDesc']  = 'Jeu éducatif';
 $d[$k]['lDesc']  = 'Le jeu éducatif à creuser';
+$d[$k]['hDesc']  = 'Framinetestest un serveur du jeu Minetest, un jeu « bac à sable »
+                    dont vous construisez et décomposez les blocs pour le modifier et
+                    avec lequel vous pouvez réaliser vos propres applications pédagogiques.';
 $d[$k]['mTitle'] = 'Construisez vos propres applications pédagogiques';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est un serveur du jeu Minetest, un jeu "bac à sable" dont vous construisez et décomposez les blocs pour le modifier.
@@ -995,11 +1125,14 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Téléchargez le logiciel client, connectez vous sur notre serveur et jouez.
                     </p>';
+$d[$k]['tags']   = '';
 
 // Padlet
 $k= 'padlet';
 $d[$k]['sDesc']  = 'Organisation d’idées';
 $d[$k]['lDesc']  = 'Un brainstrorming collaboratif en temps réel';
+$d[$k]['hDesc']  = 'Framemo vous permet de créer un tableau à colonnes où quiconque peut venir y déposer des notes colorées.
+                    Tel Framapad, aucune inscription n´est requise, les modifications se voient et sont enregistrées en direct.';
 $d[$k]['mTitle'] = 'Tempête de post-it libres';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de créer un tableau à colonnes où quiconque peut venir y déposer des notes colorées. Tel <a href="https://framapad.org><b class="violet>Frama</b><b class="vert">pad</b></a>, aucune inscription n´est requise, et les modifications se voient et sont enregistrées en direct.
@@ -1007,11 +1140,15 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> allez sur le site, créez un tableau, renseignez votre pseudonyme, puis partagez l´URL (l´adresse web) avec vos collaborateurs. C´est aussi simple que cela !
                     </p>';
+$d[$k]['tags']   = 'collaborer, brainstorming';
 
 // Pastebin
 $k= 'pastebin';
 $d[$k]['sDesc']  = 'Notes anonymes';
 $d[$k]['lDesc']  = 'Rédigez et partagez en toute discrétion';
+$d[$k]['hDesc']  = 'Avec Framabin, vous pouvez partager des informations que
+                    seuls vous et votre correspondant aurez le pouvoir de
+                    déchiffrer, et ceci de manière très simple.';
 $d[$k]['mTitle'] = 'Communiquez des données chiffrées';
 $d[$k]['mBody']  = '<p>
                         Avec '.$d[$k]['F'].' vous pouvez partager des informations dont seuls vous et votre correspondant aurez le pouvoir de déchiffrer, et surtout de
@@ -1022,11 +1159,14 @@ $d[$k]['mBody']  = '<p>
                         du courriel ou du petit bout de papier. Framabin vous permet d’envoyer une adresse et donner accès à ces informations en toute sécurité et simplicité. Le
                         serveur stocke des données illisibles pour lui.
                     </p>';
+$d[$k]['tags']   = 'partager, noter, texte, chiffrement';
 
 // Pocket
 $k= 'pocket';
 $d[$k]['sDesc']  = 'Sauvegarde de contenu';
 $d[$k]['lDesc']  = 'Sauvegardez et lisez plus tard';
+$d[$k]['hDesc']  = 'Framabag vous permet de mettre de côté les articles
+                    que vous n’avez pas le temps de lire tout de suite.';
 $d[$k]['mTitle'] = 'Sauvegardez, lisez plus tard';
 $d[$k]['mBody']  = '<p>
                         Avec '.$d[$k]['F'].', vous ne perdrez plus les contenus du Web qui vous intéressent mais que vous n’avez pas le temps de
@@ -1037,11 +1177,13 @@ $d[$k]['mBody']  = '<p>
                         Framabag est un <b class="violet">service de sauvegarde de pages web</b>. Vous stockez sur le serveur les contenus qui vous intéressent, textes et images
                         comprises. Vous pouvez aussi partager vos articles et utiliser des extensions pour Firefox, Chrome, Android…
                     </p>';
+$d[$k]['tags']   = 'veille';
 
 // Scribd
 $k= 'scribd';
 $d[$k]['sDesc']  = 'Partage de PDF/ODP';
 $d[$k]['lDesc']  = 'Affichez et partagez vos documents';
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Votre lectorat aussi a des droits';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' permet d´héberger des documents PDF et des présentations (ODP) afin de les donner à lire au grand public. Votre lectorat n´aura pas besoin de créer un compte ni de subir punblicités et traquages, et pourra se concentreer sur ce que vous partagez.
@@ -1049,11 +1191,15 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Créez un compte, téléversez vos documents et utilisez le lien de partage (ou le code d´affichage pour votre site).
                     </p>';
+$d[$k]['tags']   = '';
 
 // Shrtct
 $k= 'loomio';
 $d[$k]['sDesc']  = 'Prise de décision';
 $d[$k]['lDesc']  = 'Un outil pour mieux gérer les prises de décisions collectives';
+$d[$k]['hDesc']  = 'Framavox vous aide à prendre des décisions communautaires.
+                    Discutez, échangez, mettez-vous d’accord et passez à l’action,
+                    le tout dans les délais que vous vous êtes fixés au départ.';
 $d[$k]['mTitle'] = 'Décidez ensembles,';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d’accord et passez à l’action, le tout dans les délais que vous fixés au départ.
@@ -1061,11 +1207,16 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s’exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
                     </p>';
+$d[$k]['tags']   = 'discussion, groupes, organiser, décider';
 
 // Skype
 $k= 'skype';
 $d[$k]['sDesc']  = 'Visioconférence';
 $d[$k]['lDesc']  = 'Discutez librement avec vos amis';
+$d[$k]['hDesc']  = 'Framatalk vous permet de discuter avec vos amis sans
+                    installation complexe de logiciel ni inscription.
+                    Tout se passe entre vous et vos amis, directement depuis
+                    votre navigateur web.';
 $d[$k]['mTitle'] = 'Vidéoconférence';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de discuter simplement avec vos amis, sans installation complexe de logiciel. Vous échangez sans aucune analyse des données liées aux conversations. Tout se passe entre vous et vos amis.
@@ -1073,11 +1224,15 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Directement à partir de votre navigateur web, vous êtes mis en relation avec vos amis, sans devoir installer de logiciel supplémentaire. Une fois connecté, donnez l’autorisation à votre navigateur d’utiliser votre micro et votre webcam, et profitez de la discussion en toute simplicité.
                     </p>';
+$d[$k]['tags']   = 'discussion, vidéo';
 
 // Slack
 $k= 'slack';
 $d[$k]['sDesc']  = 'Communication collaborative';
 $d[$k]['lDesc']  = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
+$d[$k]['hDesc']  = 'Framateam est un service de <b>tchat</b> libre
+                    qui permet de communiquer avec son équipe en notifiant ses collègues,
+                    de conserver ses conversations et d’y faire des recherches.';
 $d[$k]['mTitle'] = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
 $d[$k]['mBody']  = '<p>
                         <b class="violet">Frama</b><b class="vert">team</b> est un service de <b>tchat</b>
@@ -1089,11 +1244,17 @@ $d[$k]['mBody']  = '<p>
                         <li>Invitez vos membres</li>
                         <li>Créez vos canaux de communication (publics ou privés)</li>
                     </ol>';
+$d[$k]['tags']   = 'discussion, groupes';
 
 // Trello
 $k= 'trello';
 $d[$k]['sDesc']  = 'Gestion de projets';
 $d[$k]['lDesc']  = 'Gestionnaire de projets';
+$d[$k]['hDesc']  = 'Framaboard est un gestionnaire collaboratif de tâches
+                    et de projets, en suivant la méthode Kanban.
+                    Son système visuel permet de s’y retrouver au premier
+                    coup d’œil, quelle que soit votre habitude à utiliser
+                    ce genre d’outil.';
 $d[$k]['mTitle'] = 'Gestionnaire de projets';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' est un gestionnaire de tâches visuel. Il permet de gérer des projets de manière collaborative, en suivant la méthode Kanban. Son système visuel permet de s’y retrouver au premier coup d’œil, quelque soit votre habitude à utiliser ce genre d’outil.
@@ -1101,11 +1262,16 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Lancez votre projet, et commencez à le gérer collectivement, tâche par tâche. Assignez une personne à chaque tache, définissez des fonctions, des avancements et des délais. Cette gestion visuelle vous permettra de voir l’état du projet en un coup d’œil.
                     </p>';
+$d[$k]['tags']   = 'organiser, calendrier, agenda, tâches, projet';
 
 // WeTransfer
 $k= 'wetransfer';
 $d[$k]['sDesc']  = 'Envoi de gros fichiers';
 $d[$k]['lDesc']  = 'Partagez vos fichiers de manière anonyme';
+$d[$k]['hDesc']  = 'Avec Framadrop, fini les pièces jointes trop lourdes qui
+                    empêchent l’envoi d’un <span lang="en">email</span>.
+                    Ce service libre vous permet de partager facilement des
+                    fichiers de manière sécurisé.';
 $d[$k]['mTitle'] = 'Partagez vos fichiers facilement';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de partager facilement des fichiers comme, par exemple, lorsque vous voulez envoyez une pièce jointe par email et que le fichier dépasse la taille maximale autorisée.
@@ -1114,11 +1280,16 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         '.$d[$k]['F'].' permet d’envoyer des fichiers de façon anonyme. Vous pouvez décider du moment de leur suppression (dès le premier téléchargement, 24H/7j/30j/60j après leur mise en ligne).
                     </p>';
+$d[$k]['tags']   = 'partager, fichiers, chiffrement';
 
 // Youtube
 $k= 'youtube';
 $d[$k]['sDesc']  = 'Hébergement de vidéos';
 $d[$k]['lDesc']  = 'Partagez vos vidéos et conservez vos droits';
+$d[$k]['hDesc']  = 'Vidéos en français (ou sous-titrées en français) autour
+                    du logiciel libre en particulier et du Libre en général.
+                    Interviews, conférences, documentaires, extraits télévisés…
+                    pour s’informer mais aussi informer les autres.';
 $d[$k]['mTitle'] = 'Libérez vos vidéos';
 $d[$k]['mBody']  = '<p>
                         Sur '.$d[$k]['F'].', vous pouvez télécharger vos vidéos, les partager avec votre entourage ou les ouvrir en lecture publique.
@@ -1127,6 +1298,7 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> ouvrez un compte et téléchargez vos vidéos. Vous gardez vos droits et la liberté de modifier vos téléchargements.
                     </p>';
+$d[$k]['tags']   = 'partager, vidéo';
 
 /********************
  * Pas sur la carte
@@ -1135,13 +1307,17 @@ $d[$k]['mBody']  = '<p>
 $k= 'jsfiddle';
 $d[$k]['sDesc']  = 'Partage de code';
 $d[$k]['lDesc']  = '';
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
-
+$d[$k]['tags']   = '';
 // Kongregate
 $k= 'kongregate';
 $d[$k]['sDesc']  = 'Jeux';
 $d[$k]['lDesc']  = 'Une compilation de jeux libre';
+$d[$k]['hDesc']  = 'Framagames est une compilation de jeux libres qui se
+                    jouent en ligne, se téléchargent sur son PC, sa tablette…
+                    et ne nécessitent aucune installation supplémentaire.';
 $d[$k]['mTitle'] = 'Faites une pose, jouez quelques instants';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].', vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu’hors ligne. Faites une pause et profitez de l’un des jeux proposés.
@@ -1151,21 +1327,28 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
                     </p>';
 $d[$k]['mFooter']= '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>';
+$d[$k]['tags']   = '';
 
 // Maestro
 $k= 'maestro';
 $d[$k]['sDesc']  = 'Collaboration flexible';
 $d[$k]['lDesc']  = 'Ochestrez vos projets collaboratifs';
+$d[$k]['hDesc']  = 'Besoin en même temps d’un pad pour prendre des notes,
+                    d’un tableau d’organisation, et d’une vidéo-conférence ?
+                    Avec Framaestro, c’est vous qui organisez les outils qu’il vous faut, sur une seule et unique page web.';
 $d[$k]['mTitle'] = 'Ochestrez vos projets collaboratifs';
 $d[$k]['mBody']  = '<p>
                         Besoin en même temps d’un pad pour prendre des notes, d’un tableau d’organisation, et d’une vidéo-conférence ?
                         Avec '.$d[$k]['F'].', c’est vous qui organisez les outils qu’il vous faut, sur une seule et unique page web.
                     </p>';
+$d[$k]['tags']   = 'collaborer';
 
 // Pixlr
 $k= 'pixlr';
 $d[$k]['sDesc']  = 'Dessin vectoriel';
 $d[$k]['lDesc']  = 'Créez rapidement des images vectorielles au format SVG';
+$d[$k]['hDesc']  = 'Pour créer et éditer simplement et rapidement de belles
+                    images en ligne au format ouvert SVG. Les enfants adorent !';
 $d[$k]['mTitle'] = 'Créez rapidement des images vectorielles au format SVG';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].', est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
@@ -1185,11 +1368,13 @@ $d[$k]['mBody']  = '<p>
                     </video>
                     </div>
                     <p> La <a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>';
+$d[$k]['tags']   = 'images, dessiner';
 
 // Transifex
 $k= 'transifex';
 $d[$k]['sDesc']  = 'Traduction de logiciels';
 $d[$k]['lDesc']  = 'Ouvrez un espace de traduction à voter logiciel';
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Pour que votre code devienne polyglotte !';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous offre une interface de traduction simple pour traduire les chaînes de caractères de votre code de manière collaborative.
@@ -1197,11 +1382,16 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Créez un compte, téléversez vote code, et modérez les diverses participations.
                     </p>';
+$d[$k]['tags']   = '';
 
 // Twitter
 $k= 'twitter';
 $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Gazouillez sur Internet';
+$d[$k]['hDesc']  = 'Framapiaf est un service libre de <b>microblogging</b>,
+                    basé sur le logiciel décentralisé Mastodon.
+                    Retrouvez vos amis sur Framapiaf - ou d’autres instances
+                    Mastodon, GNU Social, Friendica - et échangez avec eux sans être pisté.';
 $d[$k]['mTitle'] = 'Le microblogage libre';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de suivre des flux de microblogage et entretenir vos propres flux de manière décentralisée.
@@ -1209,6 +1399,7 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> utilisez un client de connexion, ouvrez un compte, abonnez-vous à des flux et tweetez à votre tour.
                     </p>';
+$d[$k]['tags']   = 'réseau, social, microblog';
 
 /****************
  * Mises à jour *
@@ -1223,6 +1414,7 @@ $d[$k]['name']   = 'Remplacement d’Etherpad par la version « Lite » pour l
 // Wisemapping
 $k = 'up-framindmap2'; $ko = 'bubblus';
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
@@ -1233,6 +1425,7 @@ $d[$k]['name']   = 'Mindmaps remplacé par Wisemapping';
 // Framadate 0.8
 $k = 'up-framadate2'; $ko = 'doodle';
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
@@ -1243,6 +1436,7 @@ $d[$k]['name']   = 'Développement axé sur l’ergonomie et l’accessibilité'
 // MyPads
 $k = 'up-mypads'; $ko = 'gdocs';
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
+$d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>

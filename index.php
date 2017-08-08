@@ -17,24 +17,27 @@ require('header.php');
             <div class="container ombre">
                 <div class="col-xs-12 text-center">
                     <h2>Je cherche…</h2>
-                    <p class="col-sm-6"><a href="list.php" class="btn btn-default fb_f0 h3">
+                    <p class="col-sm-6"><a href="list.php" class="btn btn-primary h2">
                         Un service libre<br>répondant à mes besoins<br>
                         <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
                     </a></p>
-                    <p class="col-sm-6"><a href="alt.php" class="btn btn-default fb_o0 h3">
+                    <p class="col-sm-6"><a href="alt.php" class="btn btn-info h2">
                         Une alternative<br>à un service des GAFAM<br>
                         <img src="<?php echo $t['medias']['t2i3url'] ?>" alt="" />
                     </a></p>
 
                 </div>
-                <hr class="trait col-xs-12">
+            </div>
+        </div>
+        <div class="row more">
+            <div class="container ombre">
                 <div  class="col-sm-6">
                     <h2 class="text-center">Aller plus loin</h2>
                     <p>blablabla</p>
                     <div  class="col-xs-8 col-xs-offset-2">
-                        <a href="https://docs.framasoft.org" class="btn btn-warning btn-block"><i class="fa fa-fw fa-lg fa-learning" aria-hidden="true"></i> <?php echo $t['_Docs'] ?></a>
-                        <a href="https://framacloud.org/fr/cultiver-son-jardin" class="btn btn-success btn-block"><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i> <?php echo $t['_Framacloud'] ?></a>
-                        <a href="/chatons.php" class="btn btn-soutenir btn-block"><i class="fa fa-fw fa-lg fa-paw" aria-hidden="true"></i> <?php echo $t['_CHATONS'] ?></a>
+                        <a href="https://docs.framasoft.org" class="btn btn-default btn-block"><i class="fa fa-fw fa-lg fa-graduation-cap" aria-hidden="true"></i> <?php echo $t['_Docs'] ?></a>
+                        <a href="https://framacloud.org/fr/cultiver-son-jardin" class="btn btn-default btn-block"><i class="glyphicon fa-fw fa-lg glyphicon-tree-deciduous" aria-hidden="true"></i> <?php echo $t['_Framacloud'] ?></a>
+                        <a href="/chatons.php" class="btn btn-default btn-block"><i class="fa fa-fw fa-lg fa-paw" aria-hidden="true"></i> <?php echo $t['_CHATONS'] ?></a>
                     </div>
                 </div>
 
@@ -42,17 +45,32 @@ require('header.php');
                     <h2 class="text-center">Pourquoi ?</h2>
                     <p>blablabla</p>
                     <div  class="col-xs-8 col-xs-offset-2">
-                        <a href="#enjeux" class="btn btn-danger btn-block"><?php echo $t['why']['enje']['btn'].'/'.$t['why']['dang']['btn'] ?></a>
-                        <a href="#solutions" class="btn btn-success btn-block"><?php echo $t['why']['prop']['btn'] ?></a>
-                        <a href="#who" class="btn btn-primary btn-block"><?php echo $t['why']['who']['btn'] ?></a>
+                        <a href="#enjeux" class="btn btn-default btn-block"><?php echo $t['why']['enje']['btn'].'/'.$t['why']['dang']['btn'] ?></a>
+                        <a href="#solutions" class="btn btn-default btn-block"><?php echo $t['why']['prop']['btn'] ?></a>
+                        <a href="#who" class="btn btn-default btn-block"><?php echo $t['why']['who']['btn'] ?></a>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="row" id="media">
-
+        <div class="row" id="speakabout">
+            <div class="container ombre text-center">
+                <h2>Ils parlent de nous…</h2>
+                <ul class="list-inline">
+                    <li><a href="http://www.canalplus.fr/c-emissions/c-la-nouvelle-edition/pid6850-la-nouvelle-edition.html?vid=1249359"><img src="img/medias/canal_nb.png" alt="Canal+"></a></li>
+                    <li><a href="http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3"><img src="img/medias/france_culture_nb.png" alt="France Culture"></a></li>
+                    <li><a href="http://www.francetvinfo.fr/replay-radio/nouveau-monde/nouveau-monde-est-il-possible-de-degoogliser-le-web_1854529.html"><img src="img/medias/france_info_nb.png" alt="France Info"></a></li>
+                    <li><a href="http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade"><img src="img/medias/france_inter_nb.png" alt="France Inter"></a></li>
+                    <li><a href="http://www.lagedefaire-lejournal.fr/framasoft-services-libres-faciliter-nos-echanges/"><img src="img/medias/age_de_faire_nb.png" alt="L'âge de faire"></a></li>
+                    <li><a href="http://www.latribune.fr/technos-medias/internet/les-chatons-toutes-griffes-dehors-face-aux-geants-du-net-557084.html"><img src="img/medias/la_tribune_nb.png" alt="La Tribune"></a></li>
+                    <li><a href="http://www.lefigaro.fr/secteur/high-tech/test/2016/10/05/32003-20161005ARTFIG00176-des-solutions-alternatives-pour-vivre-sans-google-facebook-et-microsoft.php"><img src="img/medias/le_figaro_nb.png" alt="Le Figaro"></a></li>
+                    <li><a href="http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379"><img src="img/medias/l_humanite_nb.png" alt="L’Humanité"></a></li>
+                    <li><a href="http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262"><img src="img/medias/liberation_nb.png" alt="Libération"></a></li>
+                    <li><a href="http://www.nextinpact.com/news/96764-degooglisons-internet-saison-2-framasoft-lance-produit-par-jour-cette-semaine.htm"><img src="img/medias/next_inpact_nb.png" alt="Next Inpact"></a></li>
+                </ul>
+                <p><a href="medias.php">[ Espace médias ]</a></p>
+            </div>
         </div>
 
         <div class="row" id="enjeux">

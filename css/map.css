@@ -86,14 +86,16 @@ body main > .row {
     cursor:help;
     opacity:0.7
 }
+
 .fa-server.fc_g5:hover,
 .fa-cloud.fc_g5:hover {
     opacity:1;
 }
+
 #map-container {
-  position: relative;
-  width:100%;
-  float:left;
+    position: relative;
+    width:100%;
+    float:left;
 }
 
 #highlight-wrapper[style],
@@ -102,13 +104,20 @@ body main > .row {
     top:0;
     width:100%;
 }
+
 #highlight-wrapper {
-  z-index:15;
+    z-index:15;
 }
+
 #carte {
-  z-index:10;
+    z-index:10;
 }
+
 #map-container video {
-  z-index: 5;
-  position:relative !important;
+    z-index: 5;
+    position:relative !important;
+}
+
+.btn-alt {
+    margin-top:5px;
 }

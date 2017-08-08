@@ -49,7 +49,7 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 }
 
 .nav-year, .nav-cats {
-    margin:0;
+    margin:0 15px;
     border:none;
 }
 

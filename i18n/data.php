@@ -63,20 +63,6 @@ $d['tip2014'] = array();
 /****************
  * Services web *
  ****************/
-// Avaaz
-$k= 'avaaz';
-$d[$k]['FL']     = '';
-$d[$k]['CL']     = '';
-$d[$k]['i']      = '';
-$d[$k]['S']      = '<a href="https://www.drupal.org/project/webform">WebForm</a>';
-$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">pétition</b>';
-$d[$k]['name']   = 'Change.org';
-$d[$k]['eq']     = 'Avaaz';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
-$d[$k]['pos']    = '285,615,40';
-$d[$k]['FDate']  = '2017';
-$d[$k]['c1']    = 'social';
 
 // Bit.ly
 $k= 'bitly';
@@ -125,6 +111,21 @@ $d[$k]['pos']    = '414,183,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2012/10/16/framindmap-carte-mentale">2012</a>';
 $d[$k]['c1']    = 'office';
 $d[$k]['c2']    = 'prod';
+
+// Change.org
+$k= 'change';
+$d[$k]['FL']     = '';
+$d[$k]['CL']     = '';
+$d[$k]['i']      = '';
+$d[$k]['S']      = '<a href="https://www.drupal.org/project/webform">WebForm</a>';
+$d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">pétition</b>';
+$d[$k]['name']   = 'Change.org';
+$d[$k]['eq']     = 'Avaaz';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
+$d[$k]['pos']    = '285,615,40';
+$d[$k]['FDate']  = '2017';
+$d[$k]['c1']    = 'social';
 
 // Del.icio.us
 $k= 'delicious';
@@ -460,7 +461,7 @@ $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '490,480,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">2016</a>';
 $d[$k]['c1']    = 'office';
-$d[$k]['c2']    = 'tools';
+$d[$k]['c2']    = 'collab';
 
 // Pastebin
 $k= 'pastebin';
@@ -652,7 +653,7 @@ $d[$k]['altOff'] = '';
 $d[$k]['pos']    = '';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">2017</a>';
 $d[$k]['c1']    = 'office';
-$d[$k]['c2']    = 'orga';
+$d[$k]['c2']    = 'collab';
 
 // Pixlr
 $k= 'pixlr';
@@ -666,7 +667,7 @@ $d[$k]['eq']     = 'Picozu, Google Drawing';
 $d[$k]['pos']    = '';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2012/10/23/framavectoriel">2012</a>';
 $d[$k]['c1']    = 'office';
-$d[$k]['c2']    = 'prod';
+$d[$k]['c2']    = 'games';
 
 // Twitter
 $k= 'twitter';

@@ -59,8 +59,6 @@ foreach ($d as $k => $v) {
         }
     }
 
-
-
     if(isset($v['pos']) && $v['pos']!='') {
 
         $areas .= '
@@ -69,8 +67,10 @@ foreach ($d as $k => $v) {
               data-maphilight=\'{"strokeColor":"'.$color.'","strokeWidth":2,"fillColor":"ffffff","fillOpacity":0.2}\'
               href="javascript:void(0);" tabindex="-1" >';
 
+        $options_eq = (isset($d[$k]['eq']) && $d[$k]['eq'] != '') ? ' ('.$d[$k]['eq'].')' : '';
+
         $options .= '
-        <option id="o-'.$k.'" aria-describeby="#t-'.$k.'">'.$v['name'].'</option>';
+        <option id="o-'.$k.'" aria-describeby="#t-'.$k.'">'.$v['name'].$options_eq.'</option>';
 
         if (strlen($v['FDate'])==4) {
             $release =
@@ -104,8 +104,6 @@ foreach ($d as $k => $v) {
             $v['mFooter'] .= (isset($v['CL']) && $v['CL'] != '') ? '<br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i> Découvrir comment l’<a href="'.$v['CL'].'" class="text-success">'.$t['_Install'].' sur un serveur</a></p>' : '</p>';
         }
 
-        $docs = (!isset($v['DL'])) ? '' : '<a href="'.$v['DL'].'" class="btn btn-warning">'.$t['_Docs'].'</a>';
-
         $text .= modal(
                     't-'.$k,
                     $v['sDesc'].'<span class="pull-right">'.$v['F'].'</span>',
@@ -115,7 +113,7 @@ foreach ($d as $k => $v) {
                     </div>'.$v['mBody'],
                     $v['mFooter'].'
                     <a href="'.$v['FL'].'" class="btn btn-primary">'.$t['_Use'].'</a>
-                    '.$docs.'
+                    <a href="'.$l['docs'].strtolower(strip_tags($d[$k]['S'])).'" class="btn btn-warning">'.$t['_Docs'].'</a><br>
                     <a href="#'.$k.'" class="btn btn-default btn-alt">Autres alternatives</a>'
                 );
     }
@@ -254,24 +252,36 @@ include('header.php');
 ?>
         <div class="row" id="bloc-carte">
             <div class="container ombre">
-                <div class="map row">
+                <div class="map clearfix">
+
                     <h2 class="h3"><?php echo $t['map']['map'] ?></h2>
 
-                    <p><select id="c-select" title="Choisir le camp" class="form-control">
-                        <?php echo $options; ?>
-                    </select></p>
+                    <div class="clearfix" style="margin:30px auto">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <label class="col-sm-1 text-right" for="c-select">
+                                <i class="fa fa-2x fa-search"></i>
+                                <span class="sr-only">Chercher</span>
+                            </label>
+                            <div class="col-sm-11">
+                                <select id="c-select">
+                                    <option></option>
+                                    <?php echo $options; ?>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
 
                     <div id="map-container">
 
-                        <img src="<?php echo str_replace('#','', str_replace('victoires','fantome', $l['map'])) ?>" alt="<?php echo $t['map']['altMap'] ?>" id="carte" usemap="#cartemap" />
+                        <img src="<?php echo str_replace('#','', str_replace('romains','fantome', $l['map'])) ?>" alt="<?php echo $t['map']['altMap'] ?>" id="carte" usemap="#cartemap" />
 
                         <map id="cartemap" name="cartemap" style="position:absolute; top:0; width:100%; z-index:15">
                             <?php echo $areas; ?>
                         </map>
 
                         <video poster="<?php echo $l['map'] ?>" <!--autoplay loop--> muted>
-                            <source src="<?php echo str_replace('victoires','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
-                            <source src="<?php echo str_replace('victoires','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
+                            <source src="<?php echo str_replace('romains','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
+                            <source src="<?php echo str_replace('romains','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
                             <img src="<?php echo $l['map'] ?>" alt="" style="width:100%;" />
                         </video>
                     </div>
@@ -346,7 +356,7 @@ include('header.php');
                     </nav>
                 </div>
 
-                <div class="panel-group">
+                <div class="panel-group col-xs-12">
                     <?php echo $tips; ?>
                 </div>
 

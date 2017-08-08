@@ -25,6 +25,10 @@ $(document).ready(function() {
         });
     });
 
+    $("#c-select").select2({
+        placeholder: "Chercher une alternative à un service propriétaire"
+    });
+
     $('.btn-alt').on('click', function(){
         $(this).parent().parent().parent().parent().modal('hide');
     });
