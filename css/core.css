@@ -65,6 +65,12 @@ main {
     /*margin-bottom:30px;*/
 }
 
+@media (min-width:1200px) {
+    .container {
+        width:1440px;
+    }
+}
+
 .container.ombre {
     padding-top:15px;
     padding-bottom:15px;
@@ -75,6 +81,8 @@ main {
 
 #mainHeader .container.ombre {
     margin-bottom:0 !important;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 #tips .container.ombre,
 #list .container.ombre,
@@ -282,10 +290,6 @@ body.index #mainHeader, body.index #internav {
     background: url("http://s2.static-clubeo.com/uploads/vttarverneslabrochateaugay/news/repas-gaulois__nvyiuo.jpg") no-repeat right top;
     padding: 50px;
     min-height:600px;
-    /*margin-bottom:0 !important;
-}
-.choice .container {
-    margin-top:0 !important;*/
 }
 
 .landing .col-sm-4 {
@@ -296,6 +300,13 @@ body.index #mainHeader, body.index #internav {
 .choice img {
     max-width:300px;
     margin-top: 10px;
+}
+
+.choice .btn {
+    color: #fff;
+    font-weight:bold;
+    /*font-size: 20px;
+    text-transform: uppercase;*/
 }
 
 .choice .btn-soutenir {
@@ -362,7 +373,6 @@ body.index #mainHeader, body.index #internav {
 }
 .dropup ul.dropdown-menu {
     padding:0;
-    width:155%;
     margin-bottom: -46px;
 }
 
@@ -390,13 +400,17 @@ body.index #mainHeader, body.index #internav {
     height:50px;
 }
 
-.nav-tabs {
+#sticky .nav-tabs {
     position:absolute;
     left:0px;
     top:0px;
     min-width:3000px;
     margin-left:12px;
     margin-top:0px;
+}
+
+#sticky[style*="relative"] li:first-child {
+    display:none;
 }
 
 .nav-tabs li{

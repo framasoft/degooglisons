@@ -43,21 +43,22 @@ foreach ($d as $k => $v) {
         <div class="col-md-3 col-sm-6 text-center '.$tags.'">
             <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
             <p class="desc">'.$v['hDesc'].'</p>
-            <p><img class="img-responsive" src="img/screens/'.$input[rand(0,1)].'.png" alt="" /></p>
+            <p><img class="img-responsive" src="img/screens/'.strip_tags(strtolower($v['F'])).'.png" alt="" /></p>
             <p>
-                <div class="dropup pull-left">
+                <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">Utiliser</a>
+                <div class="dropup pull-right">
                   <button class="btn btn-link btn-lg dropdown-toggle" type="button" id="dropdown-'.$k.'"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Premiers pas
+                    Plus
                     <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdown-'.$k.'">
-                    <li><a href="'.$v['FL'].'" class="text-primary">Utiliser</a></li>
+                    <li><a href="javascript:void(0);">En savoir plus</a></li>
+                    <li><a href="'.$l['docs'].strtolower(strip_tags($d[$k]['S'])).'">Documentation</a></li>
                     <li><a href="'.$v['CL'].'">Installer</a></li>
-                    <li><a href="https://chatons.org">Chatons</a></li>
+                    <!--<li><a href="https://chatons.org">Chatons</a></li>-->
                   </ul>
                 </div>
-                <a href="'.$l['docs'].strtolower(strip_tags($d[$k]['S'])).'" class="btn btn-link btn-lg pull-right">Aide</a>
             </p>
         </div>';
         $tip = $frama;

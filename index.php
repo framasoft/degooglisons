@@ -17,14 +17,22 @@ require('header.php');
             <div class="container ombre">
                 <div class="col-xs-12 text-center">
                     <h2>Je cherche…</h2>
-                    <p class="col-sm-6"><a href="list.php" class="btn btn-primary h2">
-                        Un service libre<br>répondant à mes besoins<br>
-                        <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
-                    </a></p>
-                    <p class="col-sm-6"><a href="alt.php" class="btn btn-info h2">
-                        Une alternative<br>à un service des GAFAM<br>
-                        <img src="<?php echo $t['medias']['t2i3url'] ?>" alt="" />
-                    </a></p>
+                    <div class="col-sm-6">
+                        <p class="clearfix"><a href="list.php" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-primary">
+                            Un service libre<br>répondant à mes besoins
+                        </a></p>
+                        <p class="text-center">
+                            <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="clearfix"><a href="alt.php" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-info">
+                            Une alternative<br>à un service des GAFAM
+                        </a></p>
+                        <p class="text-center">
+                            <img src="<?php echo $t['medias']['t2i3url'] ?>" alt="" />
+                        </p>
+                    </div>
 
                 </div>
             </div>
