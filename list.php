@@ -1,6 +1,8 @@
 <?php
 require('i18n.php');
 
+require('function.php');
+
 $page = 'list';
 $tips = '';
 $options_gafam  = '';
@@ -33,8 +35,6 @@ foreach ($d as $k => $v) {
         }
 
         // Frama
-        $input = array("myframa", "agenda"); // tmp
-
         $tags  = 'tag-'.str_replace(' ', '-',strtolower(strip_tags($v['name'])));
         $tags .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower(strip_tags($v['eq']))));
         $tags .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower($v['tags'])));
@@ -43,24 +43,48 @@ foreach ($d as $k => $v) {
         <div class="col-md-3 col-sm-6 text-center '.$tags.'">
             <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
             <p class="desc">'.$v['hDesc'].'</p>
-            <p><img class="img-responsive" src="img/screens/'.strip_tags(strtolower($v['F'])).'.png" alt="" /></p>
-            <p>
-                <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">Utiliser</a>
+            <p><img class="img-responsive" src="img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
+            <div>
+                <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">'.t($t['_Use'],'U').'</a>
                 <div class="dropup pull-right">
                   <button class="btn btn-link btn-lg dropdown-toggle" type="button" id="dropdown-'.$k.'"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plus
+                    '.t('Plus','U').'
                     <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdown-'.$k.'">
-                    <li><a href="javascript:void(0);">En savoir plus</a></li>
-                    <li><a href="'.$l['docs'].strtolower(strip_tags($d[$k]['S'])).'">Documentation</a></li>
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modal-t-'.$k.'" >En savoir plus</a></li>
+                    <li><a href="'.$l['docs'].t($d[$k]['S'],'l').'">Documentation</a></li>
                     <li><a href="'.$v['CL'].'">Installer</a></li>
                     <!--<li><a href="https://chatons.org">Chatons</a></li>-->
                   </ul>
                 </div>
-            </p>
-        </div>';
+            </div>
+        </div>'.
+        modal(
+            't-'.$k,
+
+            '<img class="pull-left" src="'.$l['F'].'/nav/img/icons/'.t($d[$k]['F'],'noframa').'.png">'.
+            '<span class="frama">'.$v['F'].'</span><br>'.
+            '<span class="desc">'.$v['lDesc'].'</span>',
+
+            '<div class="web-browser">
+                <div class="toolbar">
+                    <img src="https://elementary.io/images/get-involved/browser-left.svg" alt="" />
+                    <div class="search-bar"></div>
+                    <img src="https://elementary.io/images/icons/actions/symbolic/window-maximize-symbolic.svg" alt="" />
+                </div>
+                <img src="img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
+            </div>'.
+            $v['mBody'],
+
+            $v['mFooter'].'
+            <a href="'.$l['docs'].t($d[$k]['S'],'l').'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
+            <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>',
+
+            'lg'
+        );
+
         $tip = $frama;
     }
     $c2[$v['c2']]['html'] .= $tip;
@@ -81,7 +105,7 @@ foreach($tags_search as $v) {
         <option id="tag-'.$v.'">'.$v.'</option>';
 }
 
-$tablist = '<li><a href="#search" title="Recherche par mots-clés"><i class="fa fa-lg fa-search" aria-hidden="true"></i><span class="sr-only">Recherche par mots-clés</span></a></li>
+$tablist = '<li><a href="#tagssearch" title="Recherche par mots-clés"><i class="fa fa-lg fa-search" aria-hidden="true"></i><span class="sr-only">Recherche par mots-clés</span></a></li>
             <li><a href="#all" title="Tous les services">Tous les services</a></li>';
 
 foreach($c2 as $k => $v) {
@@ -123,7 +147,7 @@ include('header.php');
                     </nav>
                 </div>
 
-                <a class="anchor" id="search" rel="nofollow"></a>
+                <a class="anchor" id="tagssearch" rel="nofollow"></a>
                 <div class="clearfix" style="margin:30px auto">
                     <div class="col-sm-6 col-sm-offset-3">
                         <label class="col-sm-1 text-right" for="tags-select">

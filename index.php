@@ -16,10 +16,10 @@ require('header.php');
         <div class="row choice">
             <div class="container ombre">
                 <div class="col-xs-12 text-center">
-                    <h2>Je cherche…</h2>
+                    <h2>Je cherche un service libre…</h2>
                     <div class="col-sm-6">
                         <p class="clearfix"><a href="list.php" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-primary">
-                            Un service libre<br>répondant à mes besoins
+                            … qui réponde au mieux à mes besoins
                         </a></p>
                         <p class="text-center">
                             <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
@@ -27,7 +27,7 @@ require('header.php');
                     </div>
                     <div class="col-sm-6">
                         <p class="clearfix"><a href="alt.php" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-info">
-                            Une alternative<br>à un service des GAFAM
+                            … pour remplacer un service des GAFAM
                         </a></p>
                         <p class="text-center">
                             <img src="<?php echo $t['medias']['t2i3url'] ?>" alt="" />

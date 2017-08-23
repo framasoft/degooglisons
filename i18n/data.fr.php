@@ -688,14 +688,12 @@ $d[$k]['mTitle'] = 'Pourquoi créer une carte mentale ?';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
                     </p>
-                       <p><video controls="controls" preload="none"
-                        width="420" height="248" poster="https://framatube.org/images/media/866l.jpg">
-                        <source src="https://framatube.org/files/1230-framindmap-creer-une-carte-mentale.mp4" type="video/mp4"></source>
-                        <source src="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
-                          </video>
-                       </p>
-                       <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
-
+                   <p><video controls="controls" preload="none"
+                              width="558" height="387" poster="https://www.framatube.org/images/media/903l.jpg">
+                        <source src="https://www.framatube.org/files/1288-tutoriel-video-wisemapping-claire-cassaigne.mp4" type="video/mp4"/>
+                        <source src="https://www.framatube.org/files/1288-tutoriel-video-wisemapping-claire-cassaigne.webm" type="video/webm"/>
+                    </video></p>
+                   <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="https://www.framatube.org/files/1288-tutoriel-video-wisemapping-claire-cassaigne.webm?download=1">vidéo</a> au format webm</small></p>
                     <p>
                         <b class="violet">Pourquoi utiliser Framindmap ?</b> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
                         votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
