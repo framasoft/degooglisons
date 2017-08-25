@@ -85,9 +85,9 @@ foreach ($d as $k => $v) {
 
             '<div class="web-browser">
                 <div class="toolbar">
-                    <img src="https://elementary.io/images/get-involved/browser-left.svg" alt="" />
+                    <img src="img/browser-left.svg" alt="" />
                     <div class="search-bar"></div>
-                    <img src="https://elementary.io/images/icons/actions/symbolic/window-maximize-symbolic.svg" alt="" />
+                    <img src="img/browser-right.svg" alt="" />
                 </div>
                 <img src="img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
             </div>'.
@@ -172,7 +172,7 @@ include('header.php');
                 <a class="anchor" id="tagssearch" rel="nofollow"></a>
                 <div class="clearfix" style="margin:30px auto">
                     <div class="col-sm-6 col-sm-offset-3 well">
-                        <div class="clearfix">
+                        <div class="clearfix" style="margin:10px 0">
                             <label class="col-sm-1 text-right" for="tags-select">
                                 <i class="fa fa-2x fa-search"></i>
                                 <span class="sr-only"><?php echo $t['_Search by tags'] ?></span>

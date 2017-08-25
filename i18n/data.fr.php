@@ -1128,7 +1128,7 @@ $d[$k]['mBody']  = '<p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Téléchargez le logiciel client, connectez vous sur notre serveur et jouez.
                     </p>';
-$d[$k]['tags']   = '';
+$d[$k]['tags']   = 'jeu, éducation';
 
 // Padlet
 $k= 'padlet';
@@ -1330,7 +1330,7 @@ $d[$k]['mBody']  = '<p>
                         <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
                     </p>';
 $d[$k]['mFooter']= '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>';
-$d[$k]['tags']   = '';
+$d[$k]['tags']   = 'jeu';
 
 // Maestro
 $k= 'maestro';
