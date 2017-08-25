@@ -546,6 +546,11 @@ $t['_Software']                 = 'Logiciels';
 $t['_LEDS']                     = 'LEDS';
 $t['_Libre, Éthique, Décentralisé et Solidaire'] = 'Libre, Éthique, Décentralisé et Solidaire';
 $t['_ with your help']          = ' avec votre aide';
+$t['_Search by tags']           = 'Recherche par mots-clés';
+$t['_Results']                  = 'Résultats';
+$t['_All services']             = 'Tous les services';
+
+
 
 /*************
  * Objectifs *

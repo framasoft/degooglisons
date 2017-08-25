@@ -50,8 +50,27 @@ $(document).ready(function() {
     });
 
     $("#tags-select").select2({
-        placeholder: "Recherche par mots-clés"
+        placeholder: $('a[href="#tagssearch"]').attr('title')
     });
+
+    $('[href^="#tag-"]').click(function(){
+        $('.modal').modal('hide');
+        $('#tags-select').val($(this).text());
+        $('#tags-select').trigger('change');
+        $('html, body').animate({
+            scrollTop: $('#results').offset().top
+        }, 1);
+        location.hash = '#tag-'+$(this).text();
+        return false;
+    })
+
+    if (window.location.hash) {
+        var f$_hash = window.location.hash;
+        if( f$_hash.indexOf('#tag-' > -1) ) {
+            $('#tags-select').val(f$_hash.replace('#tag-',''));
+            $('#tags-select').trigger('change');
+        }
+    }
 
     // Sticky
     $('body').attr({

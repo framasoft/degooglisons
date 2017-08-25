@@ -18,7 +18,7 @@ foreach ($d as $k => $v) {
 
         if(in_array($k, $fight)) {
             $tags_eq = explode(', ', strip_tags($v['eq']));
-            if($u != '—') { // (Framaestro)
+            if($u != '—') { // (Framaestro n’a pas d’équivalent Gafam)
                 array_push($tags_gafam, strip_tags($v['name']));
             }
             foreach($tags_eq as $u) {
@@ -34,29 +34,44 @@ foreach ($d as $k => $v) {
             }
         }
 
-        // Frama
-        $tags  = 'tag-'.str_replace(' ', '-',strtolower(strip_tags($v['name'])));
-        $tags .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower(strip_tags($v['eq']))));
-        $tags .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower($v['tags'])));
+        $tags = explode(",", strtolower($v['tags']));
+
+        $tagsClass  = 'tag-'.str_replace(' ', '-',strtolower(strip_tags($v['name'])));
+        $tagsClass .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower(strip_tags($v['eq']))));
+        $tagsClass .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower($v['tags'])));
+        $tagsClass  = str_replace('tag- ','',$tagsClass);
+
+        $tagsLink = '';
+        foreach($tags as $u) {
+            if($u != '' && $u != ' ') {
+                $tagsLink .=
+                    '<li>
+                        <a href="#tag-'.str_replace(' ', '-',strtolower($u)).'" class="btn btn-xs btn-default">'.
+                            preg_replace('/ /', '', strtolower($u), 1).
+                        '</a>
+                    </li>';
+            }
+        }
+        $tagsLink  = str_replace('--', '-',$tagsLink);
 
         $frama = '
-        <div class="col-md-3 col-sm-6 text-center '.$tags.'">
+        <div class="col-md-3 col-sm-6 text-center '.$tagsClass.'">
             <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
             <p class="desc">'.$v['hDesc'].'</p>
             <p><img class="img-responsive" src="img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
             <div>
                 <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">'.t($t['_Use'],'U').'</a>
                 <div class="dropup pull-right">
-                  <button class="btn btn-link btn-lg dropdown-toggle" type="button" id="dropdown-'.$k.'"
+                  <button class="btn btn-link  btn-lg dropdown-toggle" type="button" id="dropdown-'.$k.'"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    '.t('Plus','U').'
-                    <span class="caret"></span>
+                    <i class="fa fa-lg fa-question-circle-o" aria-hidden="true"></i>
+                    <span class="sr-only">'.t('Plus','U').'</span>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdown-'.$k.'">
                     <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modal-t-'.$k.'" >En savoir plus</a></li>
                     <li><a href="'.$l['docs'].t($d[$k]['S'],'l').'">Documentation</a></li>
-                    <li><a href="'.$v['CL'].'">Installer</a></li>
-                    <!--<li><a href="https://chatons.org">Chatons</a></li>-->
+                    <!--<li><a href="'.$v['CL'].'">Installer</a></li>
+                    <li><a href="https://chatons.org">Chatons</a></li>-->
                   </ul>
                 </div>
             </div>
@@ -78,9 +93,13 @@ foreach ($d as $k => $v) {
             </div>'.
             $v['mBody'],
 
-            $v['mFooter'].'
-            <a href="'.$l['docs'].t($d[$k]['S'],'l').'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
-            <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>',
+            '<ul class="list-inline col-md-6 text-left">'
+                .$tagsLink.'
+            </ul>
+            <div class="col-md-6 text-right">
+                <a href="'.$l['docs'].t($d[$k]['S'],'l').'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
+                <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>
+            </div>',
 
             'lg'
         );
@@ -105,8 +124,11 @@ foreach($tags_search as $v) {
         <option id="tag-'.$v.'">'.$v.'</option>';
 }
 
-$tablist = '<li><a href="#tagssearch" title="Recherche par mots-clés"><i class="fa fa-lg fa-search" aria-hidden="true"></i><span class="sr-only">Recherche par mots-clés</span></a></li>
-            <li><a href="#all" title="Tous les services">Tous les services</a></li>';
+$tablist = '<li><a href="#tagssearch" title="'.$t['_Search by tags'].'">
+                <i class="fa fa-lg fa-search" aria-hidden="true"></i>
+                <span class="sr-only">'.$t['_Search by tags'].'</span>
+            </a></li>
+            <li><a href="#all">'.$t['_All services'].'</a></li>';
 
 foreach($c2 as $k => $v) {
 
@@ -149,18 +171,29 @@ include('header.php');
 
                 <a class="anchor" id="tagssearch" rel="nofollow"></a>
                 <div class="clearfix" style="margin:30px auto">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <label class="col-sm-1 text-right" for="tags-select">
-                            <i class="fa fa-2x fa-search"></i>
-                            <span class="sr-only">Recherche par mots-clés</span>
-                        </label>
-                        <div class="col-sm-11">
-                            <select id="tags-select" multiple="multiple">
-                                <?php echo $options_search; ?>
-                                <optgroup label="GAFAM">
-                                    <?php echo $options_gafam; ?>
-                                </optgroup>
-                            </select>
+                    <div class="col-sm-6 col-sm-offset-3 well">
+                        <div class="clearfix">
+                            <label class="col-sm-1 text-right" for="tags-select">
+                                <i class="fa fa-2x fa-search"></i>
+                                <span class="sr-only"><?php echo $t['_Search by tags'] ?></span>
+                            </label>
+                            <div class="col-sm-11">
+                                <select id="tags-select" multiple="multiple">
+                                    <?php echo $options_search; ?>
+                                    <optgroup label="GAFAM et cie">
+                                        <?php echo $options_gafam; ?>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clearfix h4">
+                            <ul class="list-inline text-center">
+                                <li><a href="#tag-calendrier" class="btn btn-xs btn-default">calendrier</a></li>
+                                <li><a href="#tag-chiffrement" class="btn btn-xs btn-default">chiffrement</a></li>
+                                <li><a href="#tag-social" class="btn btn-xs btn-default">social</a></li>
+                                <li><a href="#tag-partager" class="btn btn-xs btn-default">partager</a></li>
+                                <li><a href="#tag-partager" class="btn btn-xs btn-default">jeu</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -169,7 +202,7 @@ include('header.php');
                     <div  id="results_wrapper" class="panel panel-default clearfix">
                         <div class="panel-heading">
                                 <h2 class="panel-title text-center h1">
-                                    Résultats
+                                    <?php echo $t['_Results'] ?>
                                 </h2>
                         </div>
                         <div id="results" class="clearfix" >
@@ -179,7 +212,9 @@ include('header.php');
                     <a class="anchor" id="all" rel="nofollow"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h2 class="panel-title text-center">Tous les services</h2>
+                            <h2 class="panel-title text-center">
+                                <?php echo $t['_All services'] ?>
+                            </h2>
                         </div>
                         <div class="clearfix">
                             <ul class="list-inline">
@@ -201,11 +236,7 @@ include('header.php');
                         </div>
                     </div>
                 </div>
-<script>
-    jQuery(document).ready(function({
-        jQuery('#all .btn').popover();
-    )});
-</script>
+
 <?php
 include('footer.php')
 ?>

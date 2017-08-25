@@ -382,12 +382,12 @@ body.index #mainHeader, body.index #internav {
     overflow: auto;
 }
 
-.list .panel .btn-default {
+/*.list .panel .btn-default {
     font-size:16px;
     border-color: transparent;
-}
+}*/
 
-.list .panel i.fa {
+.list .panel h3 i.fa {
     font-size:50px;
     margin-bottom: 1rem;
 }
