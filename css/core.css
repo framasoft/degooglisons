@@ -44,7 +44,7 @@ header {
 header .lead {
     color: #666;
     font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
-    padding-top: 1.65em;
+    padding-top: 0.85em;
     margin-bottom: 0.5em;
 }
 h1 a, h3 a, h4 a,
@@ -363,6 +363,12 @@ body.index #mainHeader, body.index #internav {
     font-weight: 300;
 }
 
+@media (min-width: 992px) {
+    .list .panel > div.clearfix:not(#results) .col-md-3:nth-child(n+8) {
+        display:none;
+    }
+}
+
 .dropup li {
     text-align:center;
     font-size: 18px;
@@ -376,10 +382,12 @@ body.index #mainHeader, body.index #internav {
     margin-bottom: -46px;
 }
 
-.desc {
-    min-height:160px;
-    max-height: 160px;
-    overflow: auto;
+@media (min-width:768px) {
+    .desc {
+        min-height:160px;
+        max-height: 160px;
+        overflow: auto;
+    }
 }
 
 /*.list .panel .btn-default {
@@ -392,13 +400,15 @@ body.index #mainHeader, body.index #internav {
     margin-bottom: 1rem;
 }
 
-/* List modal */
-.list .modal-header h1 {
+/* List/Alt modal */
+.list .modal-header h1,
+.alt .modal-header h1 {
     font-size: 32px;
     margin: 0 20px !important;
 }
 
-.list .modal-header img {
+.list .modal-header img,
+.alt .modal-header img {
     margin-right: 30px;
     width:96px;
 }
@@ -407,20 +417,28 @@ body.index #mainHeader, body.index #internav {
     background: #FFEBB5;
     border:none;
 }
+.alt .modal-header {
+    background: #E1F8FC;
+    border:none;
+}
 
-.list .modal-header span {
+.list .modal-header span,
+.alt .modal-header span {
     line-height: 42px;
 }
 
-.list .modal-header .desc {
+.list .modal-header .desc,
+.alt .modal-header .desc {
     font-size: 24px;
     font-weight: 300;
 }
 
-.list .modal-footer {
+.list .modal-footer,
+.alt .modal-footer {
     border:none;
     padding-top:0;
 }
+/* ~~~ */
 
 .nav-cats {
     position:relative;

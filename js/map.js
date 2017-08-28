@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
 
     $('.btn-alt').on('click', function(){
-        $(this).parent().parent().parent().parent().modal('hide');
+        $(this).parent().parent().parent().parent().parent().modal('hide');
     });
 
     // Scroll sur Dangers

@@ -101,20 +101,43 @@ foreach ($d as $k => $v) {
 
         if(!isset($d[$k]['mFooter'])) {
             $v['mFooter'] = '<p class="precisions">'.$v['F'].$t['_ is an instance based on '].$v['S'];
-            $v['mFooter'] .= (isset($v['CL']) && $v['CL'] != '') ? '<br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i> Découvrir comment l’<a href="'.$v['CL'].'" class="text-success">'.$t['_Install'].' sur un serveur</a></p>' : '</p>';
+            $v['mFooter'] .= (isset($v['CL']) && $v['CL'] != '') ? '<br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i> Découvrir comment l’<a href="'.$v['CL'].'" class="text-success">'.t($t['_Install'],'l').' sur un serveur</a></p>' : '</p>';
         }
 
         $text .= modal(
                     't-'.$k,
-                    $v['sDesc'].'<span class="pull-right">'.$v['F'].'</span>',
+
+                    '<img class="pull-left" src="'.$l['F'].'/nav/img/icons/'.t($d[$k]['F'],'noframa').'.png">'.
+                    '<span class="frama">'.$v['F'].'</span><br>'.
+                    '<span class="desc">'.$v['lDesc'].'</span>',
+                    //$v['sDesc'].'<span class="pull-right">'.$v['F'].'</span>',
+
                     '<div class="well"><p>Comme alternative aux services des <span title="'.$e['google']['name'].', '.$e['apple']['name'].', '.$e['facebook']['name'].', '.$e['amazon']['name'].', '.$e['microsoft']['name'].'">'.$e['google']['fa'].$e['apple']['fa'].$e['facebook']['fa'].$e['amazon']['fa'].$e['microsoft']['fa'].'</span> '.$t['_& co'].', tels :</p>
                         <ul class="list-group">'.$gafam_html.'</ul>
                         <p>Nous proposons le service '.$release.'</p>
-                    </div>'.$v['mBody'],
-                    $v['mFooter'].'
-                    <a href="'.$v['FL'].'" class="btn btn-primary">'.$t['_Use'].'</a>
-                    <a href="'.$l['docs'].strtolower(strip_tags($d[$k]['S'])).'" class="btn btn-warning">'.$t['_Docs'].'</a><br>
-                    <a href="#'.$k.'" class="btn btn-default btn-alt">Autres alternatives</a>'
+                    </div>
+                    <div class="web-browser">
+                        <div class="toolbar">
+                            <img src="img/browser-left.svg" alt="" />
+                            <div class="search-bar"></div>
+                            <img src="img/browser-right.svg" alt="" />
+                        </div>
+                        <img src="img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
+                    </div>'.
+                    $v['mBody'].
+                    $v['mFooter'],
+
+                    '
+                    <div class="col-md-6 text-left">
+                        <a href="#'.$k.'" class="btn btn-alt btn-default">Autres alternatives libres</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>
+                        <a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
+                    </div>
+                    ',
+
+                    'lg'
                 );
     }
 

@@ -35,6 +35,7 @@ function t($string, $format = 'text') {
             $text = str_replace('.','',$text);
             $text = str_replace('è','e',$text);
             $text = str_replace('é','e',$text);
+            $text = str_replace('my','myframa',$text);
             return $text;
         break;
         case 'l' :

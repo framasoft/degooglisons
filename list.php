@@ -59,7 +59,7 @@ foreach ($d as $k => $v) {
             <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
             <p class="desc">'.$v['hDesc'].'</p>
             <p><img class="img-responsive" src="img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
-            <div>
+            <div class="clearfix">
                 <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">'.t($t['_Use'],'U').'</a>
                 <div class="dropup pull-right">
                   <button class="btn btn-link  btn-lg dropdown-toggle" type="button" id="dropdown-'.$k.'"
@@ -69,7 +69,7 @@ foreach ($d as $k => $v) {
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdown-'.$k.'">
                     <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modal-t-'.$k.'" >En savoir plus</a></li>
-                    <li><a href="'.$l['docs'].t($d[$k]['S'],'l').'">Documentation</a></li>
+                    <li><a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'">Documentation</a></li>
                     <!--<li><a href="'.$v['CL'].'">Installer</a></li>
                     <li><a href="https://chatons.org">Chatons</a></li>-->
                   </ul>
@@ -97,7 +97,7 @@ foreach ($d as $k => $v) {
                 .$tagsLink.'
             </ul>
             <div class="col-md-6 text-right">
-                <a href="'.$l['docs'].t($d[$k]['S'],'l').'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
+                <a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
                 <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>
             </div>',
 

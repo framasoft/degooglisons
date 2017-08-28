@@ -9,7 +9,7 @@
     $internav = ''; $currentPage = '';
     foreach ($t as $k => $v) {
         if($k!='meta' && substr($k,0,1)!='_') {
-            $internav .= '<li><a href="'.$v['link'].$paramLang.'"';
+            $internav .= '<li><a href="'.$v['link'].$paramLang.'" class="btn btn-link"';
             if ($page == $k) {
                 $internav .=  ' class="active"';
                 $currentPage = $v['link'];
@@ -42,32 +42,24 @@
 </head>
 <body class="<?php echo basename($_SERVER['SCRIPT_FILENAME'], '.php'); ?>">
     <script src="https://framasoft.org/nav/nav.js" type="text/javascript"></script>
-        <div class="row" id="internav">
-            <div class="container">
-                <form method="post" action="<?php echo $currentPage ?>">
-                    <div class="input-group input-group-sm pull-right col-md-2 col-xs-4">
-                        <select name="lang" class="form-control" title="<?php echo $t['_Select the language'] ?>" >
-                            <?php echo $langs_options ?>
-                        </select>
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-default btn-sm" title="<?php echo $t['_Change the language'] ?>"><?php echo $t['_OK'] ?></button>
-                        </span>
-                    </div>
-                </form>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <?php echo $internav ?>
-                </ul>
-            </div>
-        </div>
         <div class="row" id="mainHeader">
             <div class="container ombre">
                 <header class="row">
                     <div class="row">
-                        <h1 class="col-md-6"><?php echo $t['meta']['DIo'] ?></h1>
-                        <p class="lead col-md-6">
+                        <h1 class="col-md-5"><?php echo $t['meta']['DIo'] ?></h1>
+                        <p class="lead col-md-5">
                             <?php echo $t['meta']['lead'] ?>
                         </p>
+                        <form method="post" action="<?php echo $currentPage ?>" class="col-md-2 col-xs-4">
+                            <div class="input-group input-group-sm">
+                                <select name="lang" class="form-control" title="<?php echo $t['_Select the language'] ?>" >
+                                    <?php echo $langs_options ?>
+                                </select>
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-default btn-sm" title="<?php echo $t['_Change the language'] ?>"><?php echo $t['_OK'] ?></button>
+                                </span>
+                            </div>
+                        </form>
                     </div>
 
                     <hr class="trait clearfix" />
