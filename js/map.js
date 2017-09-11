@@ -9,42 +9,11 @@ $(document).ready(function() {
     var carte = $('#carte').attr('src');
         carte = window.location.href.replace(/\?l=.*/, '')+carte.replace('victoires','fantome');
 
-    //$('video').width($('#carte').width()).height($('#carte').height());
-
-    $.ajax({
-        url : carte,
-        cache: true,
-        processData : false,
-    }).always(function(){
-        $('#carte').attr('src', carte);
-        $('#carte').maphilight();
-    });
-
-    // Init text
-    $('.c-text').hide();
-    $('#o-village').attr('selected', 'selected');
-    $('#t-village').show();
-
     /** Interactions **/
     // Description du camps au clic sur la carte
     $('area').on('click', function() {
         var areaId = $(this).attr('id');
-
-        $('.c-text').hide();
-        $('#'+$(this).attr('id').replace('a-','t-')).fadeIn('slow');
-        $('#'+$(this).attr('id').replace('a-','o-'));
-        $('#c-select option').removeAttr("selected");
-        $('#'+$(this).attr('id').replace('a-','o-')).attr('selected','selected');
-
-        // déplacement de l'attention sur la description
-        $('#c-select').focus();
-        var offset = $('.description').offset();
-        if($('.description').offset().top > 500) { // scroll sur mobile
-            $('html, body').animate({
-                scrollTop: $('.description').offset().top
-            }, 1000);
-        }
-
+        $('#'+$(this).attr('id').replace('a-','modal-t-')).modal('show');
     });
 
     // Description du camps à la selection dans le menu
@@ -52,10 +21,16 @@ $(document).ready(function() {
         $( "#c-select option:selected" ).each(function() {
             $('#cartemap area').mouseout();
             $('#'+$(this).attr('id').replace('o-','a-')).mouseover();
-
-            $('.c-text').hide();
-            $('#'+$(this).attr('id').replace('o-','t-')).fadeIn('slow');
+            $('#'+$(this).attr('id').replace('o-','modal-t-')).modal('show');
         });
+    });
+
+    $("#c-select").select2({
+        placeholder: "Chercher une alternative à un service propriétaire"
+    });
+
+    $('.btn-alt').on('click', function(){
+        $(this).parent().parent().parent().parent().parent().modal('hide');
     });
 
     // Scroll sur Dangers

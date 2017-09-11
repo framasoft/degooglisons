@@ -1,219 +1,242 @@
 <?php
 require('i18n.php');
 
-$page = 'list';
+require('function.php');
 
+$page = 'list';
 $tips = '';
-$timeline = array('2011-2013' => '','2014' => '','2015' => '','2016' => '','2017' => '');
+$options_gafam  = '';
+$options_search = '';
+
+$tags_gafam  = array();
+$tags_search = array();
 
 foreach ($d as $k => $v) {
-    if(!isset($d[$k]['class'])) {
-        $v['class'] = '';
-        switch (substr($k,0,3)) {
-            case 'tip' : $v['class'] = 'objectifs'; break;
-            case 'up-' : $v['class'] = 'casque'; break;
-        }
-        if(in_array($k, $potion)) {
-            $v['class'] = 'potion';
-        } elseif(in_array($k, $fight)) {
-            $v['class'] = 'fight';
-        }
-    }
-
-    if(!isset($d[$k]['mFooter'])) {
-        $v['mFooter'] = '<p class="precisions">'.$v['F'].$t['_ is an instance based on '].$v['S'].'</p>';
-        $v['mFooter'] .= (isset($v['CL']) && $v['CL'] != '') ? '<a href="'.$v['CL'].'" class="btn btn-success"><i class="glyphicon glyphicon-tree-deciduous"></i> '.$t['_Install'].'</a>' : '';
-    }
-
-    /* Icônes et texte pour compléter le code couleur */
-    $icon = '';
-    $alt_text = '';
-    switch ($v['class']) {
-        case 'fight' : $icon = '<i class="fa fa-fw fa-check vert" title="'.$t['_Project running'].'"></i><span class="sr-only">'.$t['_Project running'].'</span>'; break;
-        case 'potion' : $icon = '<i class="fa fa-fw fa-clock-o orange" title="'.$t['_Project loading'].'"></i><span class="sr-only">'.$t['_Project loading'].'</span>'; break;
-        case 'casque' : $icon = '<i class="fa fa-fw fa-refresh text-info" title="'.$t['_Project updated'].'"></i><span class="sr-only">'.$t['_Project updated'].'</span>'; break;
-    }
-
-    /* Front */
-    if($v['class']=='casque') {
-        $front = '
-            <div class="front">
-                <p class="pull-right">'.$icon.'</p>
-                <h3>'.$v['F'].'</h3>
-                <div class="front_old">'.$v['name'].'</div>
-                <div class="front_new"></div>
-            </div>';
-    } else if ( $v['class']=='objectifs') {
-        $front = '
-            <div class="front">
-                <h3>'.$v['sDesc'].'</h3>
-                <div class="front_old"><i class="fa fa-fw fa-heart"></i> '.$v['name'].'</div>
-                <div class="front_new"><i class="fa fa-fw fa-paw"></i> '.$v['F'].'</div>
-            </div>';
+    if((substr($k,0,3) == 'tip') || (substr($k,0,3) == 'up-')) {
+        $tip = '';
     } else {
-        $front = '
-            <div class="front">
-                <p class="pull-right">'.$icon.'</p>
-                <span class="logo"></span>
-                <div class="k-fg">
-                    <h3>'.$v['sDesc'].'</h3>
-                    <div class="front_old"><i class="fa fa-fw fa-eye"></i> '.$v['name'].'</div>
-                    <div class="front_new"><i class="fa fa-fw fa-shield"></i> '.$v['F'].' <span class="soft_frama">('.$v['S'].')</span></div>
-                </div>
-            </div>';
-    }
 
-    /* Back */
-    if(($v['class']=='fight' || $v['class']=='casque' || $v['class']=='potion')
-        && ($v['lDesc'] != '' && $v['mTitle'] !='' && $v['mBody'] != '')) {
-        $utiliser_back = ''; $utiliser_modale = '';
-        if($v['FL']!='') {
-            $utiliser_back = '<a href="'.$v['FL'].'" class="btn btn-xs btn-primary btn-block">'.$t['_Use'].'</a>';
-            $utiliser_modale = '<a href="'.$v['FL'].'" class="btn btn-primary">'.$t['_Use'].'</a>';
+        if(in_array($k, $fight)) {
+            $tags_eq = explode(', ', strip_tags($v['eq']));
+            if($u != '—') { // (Framaestro n’a pas d’équivalent Gafam)
+                array_push($tags_gafam, strip_tags($v['name']));
+            }
+            foreach($tags_eq as $u) {
+                if($u != '') {
+                    array_push($tags_gafam, $u);
+                }
+            }
+            $tags_tags = explode(', ', $v['tags']);
+            foreach($tags_tags as $u) {
+                if($u != '' && $u != '—') {
+                    array_push($tags_search, $u);
+                }
+            }
         }
-        $back = '
-            <div class="back">
-                <p class="pull-right">'.$icon.'</p>
-                <h4>'.$v['F'].'</h4>
-                <p class="back_content">'.$v['lDesc'].'</p>
 
-                <div class="col-xs-6">
-                    '.$utiliser_back.'
-                </div>
-                <div class="col-xs-6">
-                    <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$k.'">'.$t['_More'].'</button>
-                </div>
+        $tags = explode(",", strtolower($v['tags']));
 
-                <div class="modal fade" id="'.$k.'" tabindex="-1" role="dialog" aria-labelledby="'.$k.'Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">'.$t['_Close'].'</span></button>
-                                <h4 class="modal-title" id="'.$k.'Label">'.$v['mTitle'].'</h4>
-                            </div>
-                            <div class="modal-body">
-                                    '.$v['mBody'].'
-                            </div>
-                            <div class="modal-footer clearfix">
-                                '.$v['mFooter'].$utiliser_modale.'<button type="button" class="btn btn-default" data-dismiss="modal">'.$t['_Close'].'</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>';
+        $tagsClass  = 'tag-'.str_replace(' ', '-',strtolower(strip_tags($v['name'])));
+        $tagsClass .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower(strip_tags($v['eq']))));
+        $tagsClass .= ' tag-'.str_replace(',-', ' tag-',str_replace(' ', '-',strtolower($v['tags'])));
+        $tagsClass  = str_replace('tag- ','',$tagsClass);
 
-    } else if ( $v['class']=='objectifs') {
-        $back = '
-            <div class="back">
-                <p class="back_content">'.$v['lDesc'].'</p>
+        $tagsLink = '';
+        foreach($tags as $u) {
+            if($u != '' && $u != ' ') {
+                $tagsLink .=
+                    '<li>
+                        <a href="#tag-'.str_replace(' ', '-',strtolower($u)).'" class="btn btn-xs btn-default">'.
+                            preg_replace('/ /', '', strtolower($u), 1).
+                        '</a>
+                    </li>';
+            }
+        }
+        $tagsLink  = str_replace('--', '-',$tagsLink);
 
-                <div class="col-xs-6">
-                    <a href="'.$l['S'].'" class="btn btn-xs btn-soutenir btn-block"><i class="fa fa-w fa-heart"></i> '.$t['_Support'].'</a>
+        $frama = '
+        <div class="col-md-3 col-sm-6 text-center '.$tagsClass.'">
+            <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
+            <p class="desc">'.$v['hDesc'].'</p>
+            <p><img class="img-responsive" src="img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
+            <div class="clearfix">
+                <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">'.t($t['_Use'],'U').'</a>
+                <div class="dropup pull-right">
+                  <button class="btn btn-link  btn-lg dropdown-toggle" type="button" id="dropdown-'.$k.'"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-lg fa-question-circle-o" aria-hidden="true"></i>
+                    <span class="sr-only">'.t('Plus','U').'</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown-'.$k.'">
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modal-t-'.$k.'" >En savoir plus</a></li>
+                    <li><a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'">Documentation</a></li>
+                    <!--<li><a href="'.$v['CL'].'">Installer</a></li>
+                    <li><a href="https://chatons.org">Chatons</a></li>-->
+                  </ul>
                 </div>
-                <div class="col-xs-6">
-                    <button class="btn btn-xs btn-info btn-block" data-toggle="modal" data-target="#'.$k.'">'.$t['_More'].'</button>
-                </div>
+            </div>
+        </div>'.
+        modal(
+            't-'.$k,
 
-                <div class="modal fade" id="'.$k.'" tabindex="-1" role="dialog" aria-labelledby="'.$k.'Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">'.$t['_Close'].'</span></button>
-                                <h4 class="modal-title" id="'.$k.'Label">'.$v['mTitle'].'</h4>
-                            </div>
-                            <div class="modal-body">
-                                '.$v['mBody'].'
-                            </div>
-                            <div class="modal-footer">
-                                '.$v['mFooter'].'<button type="button" class="btn btn-default" data-dismiss="modal">'.$t['_Close'].'</button>
-                            </div>
-                        </div>
-                    </div>
+            '<img class="pull-left" src="'.$l['F'].'/nav/img/icons/'.t($d[$k]['F'],'noframa').'.png">'.
+            '<span class="frama">'.$v['F'].'</span><br>'.
+            '<span class="desc">'.$v['lDesc'].'</span>',
+
+            '<div class="web-browser">
+                <div class="toolbar">
+                    <img src="img/browser-left.svg" alt="" />
+                    <div class="search-bar"></div>
+                    <img src="img/browser-right.svg" alt="" />
                 </div>
-            </div>';
-    } else {
-        $back = '
-            <div class="back"></div>';
+                <img src="img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
+            </div>'.
+            $v['mBody'],
+
+            '<ul class="list-inline col-md-6 text-left">'
+                .$tagsLink.'
+            </ul>
+            <div class="col-md-6 text-right">
+                <a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
+                <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>
+            </div>',
+
+            'lg'
+        );
+
+        $tip = $frama;
     }
-
-
-    $tip = '
-    <li class="'.$k.' '.$v['class'].'">
-        <div class="tip-content">
-            '.$front.'
-            '.$back.'
-        </div>
-    </li>';
-    preg_match('#(\d\d\d\d)#',$v['FDate'],$year);
-    if($year[0]=='2011' || $year[0]=='2012' || $year[0]=='2013') {
-        $timeline['2011-2013'] .= $tip;
-    } else {
-        if($year[0]!='') { $timeline[$year[0]] .= $tip; }
-    }
+    $c2[$v['c2']]['html'] .= $tip;
 };
 
-ksort($timeline);
+$tags_gafam = array_unique($tags_gafam);
+$tags_search = array_unique($tags_search);
+sort($tags_gafam);
+sort($tags_search);
 
-foreach($timeline as $k => $v) {
+foreach($tags_gafam as $v) {
+    $options_gafam .= '
+        <option id="tag-'.str_replace(' ','-',strtolower($v)).'">'.$v.'</option>';
+}
+
+foreach($tags_search as $v) {
+    $options_search .= '
+        <option id="tag-'.$v.'">'.$v.'</option>';
+}
+
+$tablist = '<li><a href="#tagssearch" title="'.$t['_Search by tags'].'">
+                <i class="fa fa-lg fa-search" aria-hidden="true"></i>
+                <span class="sr-only">'.$t['_Search by tags'].'</span>
+            </a></li>
+            <li><a href="#all">'.$t['_All services'].'</a></li>';
+
+foreach($c2 as $k => $v) {
+
+
+    if ( $k != '') {
     $tips .= '
-        <a class="anchor" id="'.$k.'"></a>
-        <div class="row year">
-            <h2>'.$k.'</h2>
-            <ul class="tips">
-                '.$v.'
-            </ul>
+        <a class="anchor" id="'.$k.'" rel="nofollow"></a>
+        <div class="panel panel-default clearfix">
+            <div class="panel-heading">
+                    <h2 class="panel-title text-center h1">
+                        '.$v['name'].'
+                    </h2>
+            </div>
+            <div class="clearfix">'.$v['html'].'</div>
         </div>
     ';
+    $tablist .= '<li><a href="#'.$k.'" title="'.$v['name'].'">'.$v['name'].'</a></li>';
+
+    }
 }
 
 include('header.php');
 
 ?>
-        <div id="list" class="row lite">
-            <div class="container ombre">
-                <h1><?php echo $t['list']['title'] ?></h1>
-                <ul class="list-inline">
-<?php
-                foreach ($d as $k => $v) {
-                    if(in_array($k, $fight)) {
-                        echo '
-                    <li class="col-xs-4 col-sm-3 text-center">
-                        <a href="'.$v['FL'].'"
-                           title="'.$v['sDesc'].'" >
-                            <i class="fa fa-3x fa-fw '.$v['i'].' fb_v5 fc_light"></i>
-                            <br/>'.strip_tags($v['F'], '<b>').'
-                        </a>
-                    </li>';
-                    }
-                }
-?>
-                </ul>
-            </div>
-        </div>
-
-        <div id="sticky" class="container hidden-xs">
-            <nav class="navbar navbar-default nav-year col-md-6" role="navigation">
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <ul class="nav navbar-nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#list"><img src="https://framasoft.org/nav/img/logo.png" width="20" height="20"><span class="sr-only"><?php echo $t['list']['title'] ?></span></a></li>
-                        <li><a href="#2011-2013">2011-2013</a></li>
-                        <li><a href="#2014">2014</a></li>
-                        <li><a href="#2015">2015</a></li>
-                        <li><a href="#2016">2016</a></li>
-                        <li><a href="#2017">2017</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-
-            </nav>
-
-            <div class="col-md-6 hidden-sm">
-                <p class="text-center" style="margin:0"><a class="btn btn-lg btn-soutenir" href="<?php echo $l['S'] ?>"><i class="fa fa-w fa-heart"></i> <?php echo $t['meta']['S'] ?></a></p>
-            </div>
-        </div>
         <div id="tips" class="row">
             <div class="container ombre">
-                <h1><?php echo $t['list']['roadmap'] ?></h1>
-                <?php echo $tips; ?>
+
+                <div id="sticky" class="container hidden-xs cats">
+                    <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
+                    <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
+                    <nav class="navbar navbar-default nav-cats" role="navigation">
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav nav-tabs" role="tablist">
+                                <?php echo $tablist; ?>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+
+                <a class="anchor" id="tagssearch" rel="nofollow"></a>
+                <div class="clearfix" style="margin:30px auto">
+                    <div class="col-sm-6 col-sm-offset-3 well">
+                        <div class="clearfix" style="margin:10px 0">
+                            <label class="col-sm-1 text-right" for="tags-select">
+                                <i class="fa fa-2x fa-search"></i>
+                                <span class="sr-only"><?php echo $t['_Search by tags'] ?></span>
+                            </label>
+                            <div class="col-sm-11">
+                                <select id="tags-select" multiple="multiple">
+                                    <?php echo $options_search; ?>
+                                    <optgroup label="GAFAM et cie">
+                                        <?php echo $options_gafam; ?>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clearfix h4">
+                            <ul class="list-inline text-center">
+                                <li><a href="#tag-calendrier" class="btn btn-xs btn-default">calendrier</a></li>
+                                <li><a href="#tag-chiffrement" class="btn btn-xs btn-default">chiffrement</a></li>
+                                <li><a href="#tag-social" class="btn btn-xs btn-default">social</a></li>
+                                <li><a href="#tag-partager" class="btn btn-xs btn-default">partager</a></li>
+                                <li><a href="#tag-partager" class="btn btn-xs btn-default">jeu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-group col-xs-12">
+                    <div  id="results_wrapper" class="panel panel-default clearfix">
+                        <div class="panel-heading">
+                                <h2 class="panel-title text-center h1">
+                                    <?php echo $t['_Results'] ?>
+                                </h2>
+                        </div>
+                        <div id="results" class="clearfix" >
+                        </div>
+                    </div>
+                    <?php echo $tips; ?>
+                    <a class="anchor" id="all" rel="nofollow"></a>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title text-center">
+                                <?php echo $t['_All services'] ?>
+                            </h2>
+                        </div>
+                        <div class="clearfix">
+                            <ul class="list-inline">
+<?php
+                            foreach ($d as $k => $v) {
+                                if(in_array($k, $fight)) {
+                                    echo '
+                                <li class="col-xs-4 col-sm-3 col-md-2 text-center" style="padding:20px">
+                                    <a href="'.$v['FL'].'" class="btn btn-default btn-block"
+                                       title="'.$v['sDesc'].'" rel="popover" data-placement="bottom" data-content="'.$v['lDesc'].'">
+                                        <i class="fa fa-3x fa-fw '.$v['i'].' fc_g7"></i>
+                                        <br/>'.strip_tags($v['F'], '<b>').'
+                                    </a>
+                                </li>';
+                                }
+                            }
+?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
 <?php
 include('footer.php')
 ?>
