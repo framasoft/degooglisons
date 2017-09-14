@@ -634,6 +634,7 @@ $d[$k]['FDate']   = '201*';                                             // date 
 ---- À remplir ici : data.xx.php ---------------------------------------
 $d[$k]['sDesc']   = '';                                                 // Description courte (en titre sur carte et post-it)
 $d[$k]['lDesc']   = '';                                                 // Description longue (au dos du post-it)
+$d[$k]['tDesc']   = '';                                                 // Description tweet (140 car.)
 $d[$k]['hDesc']   = '';                                                 // Description très longue (framanav, framasoft.org et list.php)
 $d[$k]['mTitle']  = '';                                                 // Modale ↓
 $d[$k]['mBody']   = '<p>
@@ -652,6 +653,7 @@ $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance bas�
 $k= 'bitly';
 $d[$k]['sDesc']  = 'Réduction d’URL';
 $d[$k]['lDesc']  = 'Racourcissez les adresses web sans pister personne';
+$d[$k]['tDesc']  = 'Raccourcir et/ou personnaliser une adresse web (URL) en deux clics, et sans pister quiconque (alternative à Bit.ly ou Goo.gl).';
 $d[$k]['hDesc']  = 'Avec Frama.link, il est possible de raccourcir des
                     adresses web trop longues. Sur les réseaux sociaux et
                     le microblogging, un lien raccourci permet d’économiser
@@ -671,6 +673,7 @@ $d[$k]['tags']   = 'partager, liens';
 $k= 'blogger';
 $d[$k]['sDesc']  = 'Hébergement de sites';
 $d[$k]['lDesc']  = 'Créez un site web qui respectera vos visiteurs';
+$d[$k]['tDesc']  = 'Créer un blog, une page ou un site web qui respectera vos visiteurs autant que vos  publications (alternative à Blogger ou Tumblr).';
 $d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Votre site web en quelques clics';
 $d[$k]['mBody']  = '<p>
@@ -686,6 +689,7 @@ $k= 'bubblus';
 $d[$k]['name']   = 'Bubbl.us';
 $d[$k]['sDesc']  = 'Cartes heuristiques';
 $d[$k]['lDesc']  = 'Fabriquez vos cartes mentales';
+$d[$k]['tDesc']  = 'Concevoir, publier et partager des cartes mentales simplement, seul ou en collaborant chacun son tour (alternative à Bubbl.us).';
 $d[$k]['hDesc']  = 'Interface fluide et intuitive pour créer rapidement et
                     simplement des cartes heuristiques à même votre navigateur.
                     Pertinent en situation de brainstorming ou de prise de notes.';
@@ -709,6 +713,7 @@ $d[$k]['tags']   = 'produire, mindmap, brainstorming';
 $k= 'change';
 $d[$k]['sDesc']  = 'Pétitions';
 $d[$k]['lDesc']  = 'Lancez vos pétitions sans offrir les adresses de vos soutiens';
+$d[$k]['tDesc']  = 'Lancer des pétitions depuis une plateforme éthique, qui n’exploite pas les données des signataires (alternative à Avaaz, Change.org).';
 $d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Libérez vos pétitions';
 $d[$k]['mBody']  = '<p>
@@ -723,6 +728,7 @@ $d[$k]['tags']   = 'pétition, diffuser';
 $k= 'delicious';
 $d[$k]['sDesc']  = 'Marque-pages';
 $d[$k]['lDesc']  = 'Retrouvez facilement vos liens, et vos services Framasoft';
+$d[$k]['tDesc']  = 'Trier et conserver ses adresses web (dont les liens vers ses Frama-services) dans un classeur numérique (alternative à Del.icio.us).';
 $d[$k]['hDesc']  = 'MyFrama est un petit fourre-tout numérique, qui vous
                     permet de conserver et retrouver les liens que vous aimez
                     à la manière de del.ico.us ! Avec un système d´étiquettes
@@ -758,6 +764,7 @@ $d[$k]['tags']   = 'partager, veille, liens';
 $k= 'doodle';
 $d[$k]['sDesc']  = 'Réunions et sondages';
 $d[$k]['lDesc']  = 'Plannifiez vos réunions ou prenez des décisions';
+$d[$k]['tDesc']  = 'Déterminer collaborativement la meilleure date et heure d’une réunion, ou créer un mini-sondage très simplement (alternative à Doodle).';
 $d[$k]['hDesc']  = 'Framadate c’est un peu comme Doodle mais en libre.
                     Rien de plus simple de créer un rendez-vous ou un sondage
                     sans inscription pour y inviter vos collaborateurs.';
@@ -781,6 +788,7 @@ $d[$k]['tags']   = 'organiser, réunion, date, sondage';
 $k= 'dropbox';
 $d[$k]['sDesc']  = 'Stockage de documents';
 $d[$k]['lDesc']  = 'Hébergez, synchronisez et partagez vos documents';
+$d[$k]['tDesc']  = 'Obtenir un espace de stockage en ligne pour y héberger, synchroniser (voire partager) ses fichiers (alternative à Dropbox, Google Drive).';
 $d[$k]['hDesc']  = 'Framadrive vous permet de stocker vos documents en ligne,
                     de les synchroniser sur vos ordinateurs, mobiles, etc…
                     et de les partager avec qui vous voulez.';
@@ -809,6 +817,7 @@ $d[$k]['tags']   = 'stocker, sauvegarder, fichiers, partager, agenda, calendrier
 $k= 'evernote';
 $d[$k]['sDesc']  = 'Prise de notes';
 $d[$k]['lDesc']  = 'Vos notes, images et liens favoris à portée de doigt&nbsp;!';
+$d[$k]['tDesc']  = 'Synchroniser ses notes, images et liens favoris entre ses appareils avec la sécurité qu’offre le chiffrement (alternative à Evernote).';
 $d[$k]['hDesc']  = 'Avec Framanotes vous pouvez prendre et conserver des notes,
                     images, liens… et même des fichiers ; et les synchroniser
                     avec tous vos appareils (voire les partager avec des ami⋅e⋅s).';
@@ -829,6 +838,7 @@ $d[$k]['tags']   = 'noter, partager, chiffrement';
 $k= 'facebook';
 $d[$k]['sDesc']  = 'Réseau social';
 $d[$k]['lDesc']  = 'Échangez sur un réseau social éthique et décentralisé';
+$d[$k]['tDesc']  = 'Partager sur un réseau social éthique et décentralisé, sans voir son profil exploité à des fins publicitaires (alternative à Facebook).';
 $d[$k]['hDesc']  = 'Framasphère est un réseau social libre, basé sur le
                     logiciel décentralisé Diaspora*.
                     Retrouvez vos amis sur Framasphère - ou d’autres pods Diaspora* -
@@ -848,6 +858,7 @@ $d[$k]['tags']   = 'social, réseau, partager';
 $k= 'github';
 $d[$k]['sDesc']  = 'Hébergement de code';
 $d[$k]['lDesc']  = 'Publiez votre code (libre) sur une plateforme libre !';
+$d[$k]['tDesc']  = 'Publier son code (de préférence libre !), et collaborer à celui des autres, sur une forge logicielle libre (alternative à Github).';
 $d[$k]['hDesc']  = 'Framagit est un outil qui s’adresse avant tout aux développeurs.
                     Il permet d’héberger vos projets de logiciels libres et
                     de travailler collaborativement dessus.';
@@ -862,6 +873,7 @@ $d[$k]['tags']   = 'coder, forge, développement';
 $k= 'gmail';
 $d[$k]['sDesc']  = 'Service de messagerie';
 $d[$k]['lDesc']  = 'Hébergez vos mails, sans la NSA dedans';
+$d[$k]['tDesc']  = '';
 $d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Votre courrier, dans une enveloppe blindée';
 $d[$k]['mBody']  = '';
@@ -871,6 +883,7 @@ $d[$k]['tags']   = '';
 $k= 'gagenda';
 $d[$k]['sDesc']  = 'Agenda partagé';
 $d[$k]['lDesc']  = 'Choisissez qui verra votre planning';
+$d[$k]['tDesc']  = 'Créer des agendas personnels ou professionnels, confidentiels ou publics, seul ou en collaboration, et les synchroniser sur ses appareils.';
 $d[$k]['hDesc']  = 'Avec Framagenda vous pouvez créer des agendas personnels,
                     professionnels, le planning d´une salle ou des activités
                     de votre organisation, et les partager librement.
@@ -895,6 +908,7 @@ $d[$k]['tags']   = 'date, organiser, partager, agenda, calendrier, contacts, tâ
 $k= 'gbooks';
 $d[$k]['sDesc']  = 'Livres en ligne';
 $d[$k]['lDesc']  = 'Téléchargez des ebooks sous licence libre';
+$d[$k]['tDesc']  = 'Consulter une bibliothèque en ligne de livres numériques sous licence libre, pour les télécharger à volonté (alternative à Google Book).';
 $d[$k]['hDesc']  = 'Notre bibliothèque contient quelques centaines d’ouvrages
                     libres ou du domaine public. Elle est consultable en ligne
                     sur les plateformes mobiles. Vous pouvez l’ajouter
@@ -911,6 +925,7 @@ $d[$k]['tags']   = 'kindle, ebook, lire';
 $k= 'gdocs';
 $d[$k]['sDesc']  = 'Rédaction collaborative';
 $d[$k]['lDesc']  = 'Rédigez vos textes en ligne et à plusieurs';
+$d[$k]['tDesc']  = 'Rédiger un texte en ligne, à plusieurs, en temps réel, avec l’aide d’un historique, du tchat, des commentaires… (alternative à Google Docs).';
 $d[$k]['hDesc']  = 'Écrivons tous ensemble sur le même document dans une
                     interface de rédaction collective en ligne.
                     Aucune inscription requise, on se donne un pseudo,
@@ -941,6 +956,7 @@ $d[$k]['tags']   = 'document, texte, collaborer';
 $k= 'gforms';
 $d[$k]['sDesc']  = 'Questionnaires en ligne';
 $d[$k]['lDesc']  = 'Créez simplement des questionnaires';
+$d[$k]['tDesc']  = 'Créer un questionnaire en ligne, simple ou complexe, sur une plateforme respectueuse des donnéees de chacun (alternative à Google Forms).';
 $d[$k]['hDesc']  = 'Framaforms vous permet de créer les questionaires dont
                     vous avez besoin, que ce soit dans un cadre scolaire,
                     familial ou associatif. Créez vos questions en fonction
@@ -959,6 +975,7 @@ $d[$k]['tags']   = 'formulaire, diffusion, groupes';
 $k= 'ggroups';
 $d[$k]['sDesc']  = 'Listes de diffusion';
 $d[$k]['lDesc']  = 'Créez une liste de discussion par email';
+$d[$k]['tDesc']  = 'Créer une liste de diffusion, c’est à dire une adresse email unique pour l’ensemble des emails de son groupe (alternative à Google Groups).';
 $d[$k]['hDesc']  = 'Framalistes vous permet de créer des liste de diffusion
                     emails : toute personne s´abonnant à votre liste pourra
                     recevoir les emails qui y sont envoyés, et y participer
@@ -977,6 +994,7 @@ $d[$k]['tags']   = 'groupes, discussion, diffusion, liste';
 $k= 'gmaps';
 $d[$k]['sDesc']  = 'Cartographie';
 $d[$k]['lDesc']  = 'Personnalisez vos cartes géographiques en ligne';
+$d[$k]['tDesc']  = 'Personnaliser et dessiner sur des fonds de cartes, seul ou en collaboration, et les partager aisément (alternative à Google Maps).';
 $d[$k]['hDesc']  = 'Framacarte vous permet de dessiner, marquer, colorier,
                     annoter… les fonds de carte
                     d’<a href="https://fr.wikipedia.org/wiki/Openstreetmap">OpenStreetMap</a>
@@ -1001,6 +1019,7 @@ $d[$k]['tags']   = 'carte, maps';
 $k= 'greader';
 $d[$k]['sDesc']  = 'Lecteur de flux';
 $d[$k]['lDesc']  = 'Suivez l’actualité et faites vos choix librement';
+$d[$k]['tDesc']  = 'Rassembler les flux d’actualité (RSS, Atom) de blogs, chaînes vidéos, etc. en un seul lieu de consultation (alternative à Google Reader).';
 $d[$k]['hDesc']  = 'En vous abonnant aux flux RSS de vos sites préférés,
                     restez informés de toutes leurs actualités avec Framanews !';
 $d[$k]['mTitle'] = 'Toujours au courant, jamais en retard';
@@ -1017,6 +1036,7 @@ $d[$k]['tags']   = 'feed, rss, news, reader, veille';
 $k= 'gsearch';
 $d[$k]['sDesc']  = 'Moteur de recherche';
 $d[$k]['lDesc']  = 'Et si vos recherches n’étaient plus fichées par Google ?';
+$d[$k]['tDesc']  = 'Faire ses recherches sur un moteur qui va interroger Google, Bing, Yahoo, Wikipedia, etc. en anonymisant les requêtes et éviter le pistage.';
 $d[$k]['hDesc']  = 'Framabee est un meta-moteur de recherche libre et anonyme.
                     Vos recherches effectuées au travers de ce moteur sont envoyées
                     à différents moteurs avant d’être affichées dans votre navigateur.
@@ -1035,6 +1055,7 @@ $d[$k]['tags']   = 'rechercher, anonymat';
 $k= 'gslides';
 $d[$k]['sDesc']  = 'Présentations';
 $d[$k]['lDesc']  = 'Concevez de beaux diaporamas sans vous fatiguer';
+$d[$k]['tDesc']  = 'Concevoir des diaporamas et présentations en ligne, avec la possibilité de collaborer et les partager (alternative à PowerPoint365).';
 $d[$k]['hDesc']  = 'Framaslides vous permet de créer directement en ligne un
                     diaporama ou une présentation, d’y accéder avec une
                     simple connexion internet, et de la partager.';
@@ -1061,6 +1082,7 @@ $d[$k]['tags']   = 'diaporama, présentation, document';
 $k= 'gspreadsheet';
 $d[$k]['sDesc']  = 'Tableur collaboratif';
 $d[$k]['lDesc']  = 'Partagez vos tableaux et collaborez !';
+$d[$k]['tDesc']  = 'Collaborer en ligne, à plusieurs et en temps réel sur des feuilles de calcul en ligne (alternative à Excel365, Google Spreadsheet).';
 $d[$k]['hDesc']  = 'Framacalc est au tableur ce que Framapad est au
                     traitement de texte, autrement dit la possibilité
                     d’éditer simplement et collectivement en ligne
@@ -1087,6 +1109,7 @@ $d[$k]['tags']   = 'tableur, document';
 $k= 'imgur';
 $d[$k]['sDesc']  = 'Envoi d’images';
 $d[$k]['lDesc']  = 'Partagez vos images anonymement';
+$d[$k]['tDesc']  = 'Envoyer ses images en ligne, pour les partager seules avec un seul lien, ou en faire une galerie (alternative à Img.ur).';
 $d[$k]['hDesc']  = 'Framapic vous permet de partager facilement des images,
                     par exemple pour les publier sur Twitter, Facebook,
                     ou … Framasphère !';
@@ -1105,6 +1128,7 @@ $k= 'meetup';
 $d[$k]['sDesc']  = 'Événements communautaires';
 $d[$k]['lDesc']  = 'Organisez des rencontres et des groupes d´intérêts';
 $d[$k]['hDesc']  = '';
+$d[$k]['tDesc']  = '';
 $d[$k]['mTitle'] = 'Gardez le contrôle sur les rencontres que vous organisez';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous permet de proposer des événements et rencontres, et de garder le contact avec la communauté qui partage vos intérêts !
@@ -1118,6 +1142,7 @@ $d[$k]['tags']   = '';
 $k= 'minecraft';
 $d[$k]['sDesc']  = 'Jeu éducatif';
 $d[$k]['lDesc']  = 'Découvrez le jeu éducatif à creuser';
+$d[$k]['tDesc']  = 'Jouer à construire ensemble dans ce un monde ouvert qui a de nombreuses applications pédagogiques (alternative à Minecraft).';
 $d[$k]['hDesc']  = 'Framinetestest un serveur du jeu Minetest, un jeu « bac à sable »
                     dont vous construisez et décomposez les blocs pour le modifier et
                     avec lequel vous pouvez réaliser vos propres applications pédagogiques.';
@@ -1134,6 +1159,7 @@ $d[$k]['tags']   = 'jeu, éducation';
 $k= 'padlet';
 $d[$k]['sDesc']  = 'Organisation d’idées';
 $d[$k]['lDesc']  = 'Faites vos brainstrormings en ligne et à plusieurs';
+$d[$k]['tDesc']  = 'Créer un tableau de notes collaboratif, en ligne et en temps réel pour animer ses brainstormings (alternative à Padlet).';
 $d[$k]['hDesc']  = 'Framemo vous permet de créer un tableau à colonnes où quiconque peut venir y déposer des notes colorées.
                     Tel Framapad, aucune inscription n´est requise, les modifications se voient et sont enregistrées en direct.';
 $d[$k]['mTitle'] = 'Tempête de post-it libres';
@@ -1149,6 +1175,7 @@ $d[$k]['tags']   = 'collaborer, brainstorming';
 $k= 'pastebin';
 $d[$k]['sDesc']  = 'Textes chiffrés';
 $d[$k]['lDesc']  = 'Rédigez et partagez en toute discrétion';
+$d[$k]['tDesc']  = 'Rédiger des textes, écrits et codes pour les partager confidentiellement grâce au chiffrement de bout en bout (alternative à Pastebin).';
 $d[$k]['hDesc']  = 'Avec Framabin, vous pouvez partager des informations que
                     seuls vous et votre correspondant aurez le pouvoir de
                     déchiffrer, et ceci de manière très simple.';
@@ -1168,6 +1195,7 @@ $d[$k]['tags']   = 'partager, noter, texte, chiffrement';
 $k= 'pocket';
 $d[$k]['sDesc']  = 'Sauvegarde de contenu';
 $d[$k]['lDesc']  = 'Sauvegardez et lisez plus tard';
+$d[$k]['tDesc']  = 'Mettre de côté les articles blogs et onglet « à lire plus tard » pour les retrouver aisément sur tous ses appareils (alternative à Pocket).';
 $d[$k]['hDesc']  = 'Framabag vous permet de mettre de côté les articles
                     que vous n’avez pas le temps de lire tout de suite.';
 $d[$k]['mTitle'] = 'Sauvegardez, lisez plus tard';
@@ -1187,6 +1215,7 @@ $k= 'scribd';
 $d[$k]['sDesc']  = 'Partage de d’écrits';
 $d[$k]['lDesc']  = 'Affichez et partagez vos documents';
 $d[$k]['hDesc']  = '';
+$d[$k]['tDesc']  = '';
 $d[$k]['mTitle'] = 'Votre lectorat aussi a des droits';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' permet d´héberger des documents PDF et des présentations (ODP) afin de les donner à lire au grand public. Votre lectorat n´aura pas besoin de créer un compte ni de subir punblicités et traquages, et pourra se concentreer sur ce que vous partagez.
@@ -1200,6 +1229,7 @@ $d[$k]['tags']   = '';
 $k= 'loomio';
 $d[$k]['sDesc']  = 'Prise de décision';
 $d[$k]['lDesc']  = 'Prenez vos décisions ensemble, collaborativement';
+$d[$k]['tDesc']  = 'Créer une équipe et y inviter ses collaborateurs pour discuter et prendre des décisions communautaires à l’aide de divers outils de vote.';
 $d[$k]['hDesc']  = 'Framavox vous aide à prendre des décisions communautaires.
                     Discutez, échangez, mettez-vous d’accord et passez à l’action,
                     le tout dans les délais que vous vous êtes fixés au départ.';
@@ -1216,6 +1246,7 @@ $d[$k]['tags']   = 'discussion, groupes, organiser, décider';
 $k= 'skype';
 $d[$k]['sDesc']  = 'Visioconférence';
 $d[$k]['lDesc']  = 'Échangez en audio-vidéo en trois clics seulement';
+$d[$k]['tDesc']  = 'Obtenir ou rejoindre un salon de vidéoconférence (avec tchat et partage d’écran) en 3 clics, depuis son navigateur web (alternative à Skype).';
 $d[$k]['hDesc']  = 'Framatalk vous permet de discuter avec vos amis sans
                     installation complexe de logiciel ni inscription.
                     Tout se passe entre vous et vos amis, directement depuis
@@ -1233,6 +1264,7 @@ $d[$k]['tags']   = 'discussion, vidéo';
 $k= 'slack';
 $d[$k]['sDesc']  = 'Communication collaborative';
 $d[$k]['lDesc']  = 'Discutez avec votre équipe sur un tchat boosté aux stéroïdes';
+$d[$k]['tDesc']  = 'Communiquer avec son équipe sans passer par les groupes Facebook (ni Slack). Partage d’images, canaux publics et privés, indexation…';
 $d[$k]['hDesc']  = 'Framateam est un service de <b>tchat</b> libre
                     qui permet de communiquer avec son équipe en notifiant ses collègues,
                     de conserver ses conversations et d’y faire des recherches.';
@@ -1253,6 +1285,7 @@ $d[$k]['tags']   = 'discussion, groupes';
 $k= 'trello';
 $d[$k]['sDesc']  = 'Gestion de projets';
 $d[$k]['lDesc']  = 'Gérez vos projets communs jusqu’au moindre détail';
+$d[$k]['tDesc']  = 'Gérer ses projets communs avec de multiples outils : équipes, tableaux de tâches, plannings, rappels et emails… (alternative à Trello).';
 $d[$k]['hDesc']  = 'Framaboard est un gestionnaire collaboratif de tâches
                     et de projets, en suivant la méthode Kanban.
                     Son système visuel permet de s’y retrouver au premier
@@ -1271,6 +1304,7 @@ $d[$k]['tags']   = 'organiser, calendrier, agenda, tâches, projet';
 $k= 'wetransfer';
 $d[$k]['sDesc']  = 'Envoi de gros fichiers';
 $d[$k]['lDesc']  = 'Partagez vos fichiers de manière anonyme';
+$d[$k]['tDesc']  = 'Partager de lourds fichiers avec une adresse web, de manière confidentielle avec le chiffrement de bout en bout (alternative à WeTransfer).';
 $d[$k]['hDesc']  = 'Avec Framadrop, fini les pièces jointes trop lourdes qui
                     empêchent l’envoi d’un <span lang="en">email</span>.
                     Ce service libre vous permet de partager facilement des
@@ -1289,6 +1323,7 @@ $d[$k]['tags']   = 'partager, fichiers, chiffrement';
 $k= 'youtube';
 $d[$k]['sDesc']  = 'Hébergement de vidéos';
 $d[$k]['lDesc']  = 'Devenez YouTube à la place de Google';
+$d[$k]['tDesc']  = '';
 $d[$k]['hDesc']  = 'Vidéos en français (ou sous-titrées en français) autour
                     du logiciel libre en particulier et du Libre en général.
                     Interviews, conférences, documentaires, extraits télévisés…
@@ -1311,6 +1346,7 @@ $k= 'jsfiddle';
 $d[$k]['sDesc']  = 'Partage de code';
 $d[$k]['lDesc']  = '';
 $d[$k]['hDesc']  = '';
+$d[$k]['tDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 $d[$k]['tags']   = '';
@@ -1318,6 +1354,7 @@ $d[$k]['tags']   = '';
 $k= 'kongregate';
 $d[$k]['sDesc']  = 'Jeux';
 $d[$k]['lDesc']  = 'Une compilation de jeux libre';
+$d[$k]['tDesc']  = 'Retrouver une sélection de jeux sous licence libre, à jouer en ligne ou à installer sur son ordinateur (alternative à Kongregate).';
 $d[$k]['hDesc']  = 'Framagames est une compilation de jeux libres qui se
                     jouent en ligne, se téléchargent sur son PC, sa tablette…
                     et ne nécessitent aucune installation supplémentaire.';
@@ -1336,6 +1373,7 @@ $d[$k]['tags']   = 'jeu';
 $k= 'maestro';
 $d[$k]['sDesc']  = 'Collaboration flexible';
 $d[$k]['lDesc']  = 'Ochestrez vos projets collaboratifs';
+$d[$k]['tDesc']  = 'Rassembler un pad, une vidéo-conférence et bien d’autres outils en une seule fenêtre et seule une adresse web : idéal pour les réunions.';
 $d[$k]['hDesc']  = 'Besoin en même temps d’un pad pour prendre des notes,
                     d’un tableau d’organisation, et d’une vidéo-conférence ?
                     Avec Framaestro, c’est vous qui organisez les outils qu’il vous faut, sur une seule et unique page web.';
@@ -1350,6 +1388,7 @@ $d[$k]['tags']   = 'collaborer';
 $k= 'pixlr';
 $d[$k]['sDesc']  = 'Dessin vectoriel';
 $d[$k]['lDesc']  = 'Créez rapidement des images vectorielles au format SVG';
+$d[$k]['tDesc']  = 'Créer et éditer des images à base de formes (vectorielles, au format SVG) très simplement et en quelques clics. Les enfants adorent.';
 $d[$k]['hDesc']  = 'Pour créer et éditer simplement et rapidement de belles
                     images en ligne au format ouvert SVG. Les enfants adorent !';
 $d[$k]['mTitle'] = 'Créez rapidement des images vectorielles au format SVG';
@@ -1378,6 +1417,7 @@ $k= 'transifex';
 $d[$k]['sDesc']  = 'Traduction de logiciels';
 $d[$k]['lDesc']  = 'Ouvrez un espace de traduction à voter logiciel';
 $d[$k]['hDesc']  = '';
+$d[$k]['tDesc']  = '';
 $d[$k]['mTitle'] = 'Pour que votre code devienne polyglotte !';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' vous offre une interface de traduction simple pour traduire les chaînes de caractères de votre code de manière collaborative.
@@ -1391,6 +1431,7 @@ $d[$k]['tags']   = '';
 $k= 'twitter';
 $d[$k]['sDesc']  = 'Microblogging';
 $d[$k]['lDesc']  = 'Gazouillez sur Internet';
+$d[$k]['tDesc']  = 'Échanger de courts messages de manière publique, confidentielle ou privée sur cette alternative à Twitter éthique et décentralisée.';
 $d[$k]['hDesc']  = 'Framapiaf est un service libre de <b>microblogging</b>,
                     basé sur le logiciel décentralisé Mastodon.
                     Retrouvez vos amis sur Framapiaf - ou d’autres instances
