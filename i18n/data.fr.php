@@ -1147,7 +1147,7 @@ $d[$k]['tags']   = 'collaborer, brainstorming';
 
 // Pastebin
 $k= 'pastebin';
-$d[$k]['sDesc']  = 'Notes anonymes';
+$d[$k]['sDesc']  = 'Textes chiffrés';
 $d[$k]['lDesc']  = 'Rédigez et partagez en toute discrétion';
 $d[$k]['hDesc']  = 'Avec Framabin, vous pouvez partager des informations que
                     seuls vous et votre correspondant aurez le pouvoir de
@@ -1184,7 +1184,7 @@ $d[$k]['tags']   = 'veille';
 
 // Scribd
 $k= 'scribd';
-$d[$k]['sDesc']  = 'Partage de PDF/ODP';
+$d[$k]['sDesc']  = 'Partage de d’écrits';
 $d[$k]['lDesc']  = 'Affichez et partagez vos documents';
 $d[$k]['hDesc']  = '';
 $d[$k]['mTitle'] = 'Votre lectorat aussi a des droits';
