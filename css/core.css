@@ -384,12 +384,16 @@ body.index #mainHeader, body.index #internav {
 
 @media (min-width:768px) {
     .desc {
-        min-height:160px;
-        max-height: 160px;
+        min-height:140px;
         overflow: auto;
     }
 }
-
+@media (min-width:1200px) {
+    .desc {
+        min-height:80px;
+        overflow: auto;
+    }
+}
 /*.list .panel .btn-default {
     font-size:16px;
     border-color: transparent;

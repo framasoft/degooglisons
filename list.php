@@ -57,7 +57,7 @@ foreach ($d as $k => $v) {
         $frama = '
         <div class="col-md-3 col-sm-6 text-center '.$tagsClass.'">
             <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
-            <p class="desc">'.$v['hDesc'].'</p>
+            <p class="desc">'.$v['tDesc'].'</p>
             <p><img class="img-responsive" src="img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
             <div class="clearfix">
                 <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">'.t($t['_Use'],'U').'</a>
