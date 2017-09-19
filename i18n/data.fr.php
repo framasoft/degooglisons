@@ -472,7 +472,7 @@ $t['medias']['presslist']   = [
     'https://usbeketrica.com/article/framasoft-une-amap-du-logiciel-libre',
     'Lien vers l’article'],
     ['04/02/2017', 'Mashable/France 24',
-    'http://mashable.france24.com/tech-business/20170204-chatons-collectif-hebergeurs-framasoft?ref=tw_i',
+    'http://mashable.france24.com/tech-business/20170204-chatons-collectif-hebergeurs-framasoft',
     'Lien vers l’article'],
     ['24/08/2016', 'Opensource.com (anglais)',
     
