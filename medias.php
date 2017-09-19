@@ -9,7 +9,7 @@ include('header.php');
         <div class="col-xs-12">
         <h2><?php echo $t['medias']['subtitle'] ?></h2>
         <p><?php echo $t['medias']['intro'] ?></p>
-
+<!-- [remplacer par un historique DIo]
         <p class="col-md-3 col-md-offset-3 text-center">
             <a class="btn btn-primary btn-lg btn-block" href="<?php echo $l['current'].$t['medias']['btnCPurl'] ?>">
                 <i class="fa fa-fw fa-file-text-o"></i> <?php echo $t['medias']['btnCPtxt'] ?>
@@ -20,20 +20,8 @@ include('header.php');
                 <i class="fa fa-fw fa-file-pdf-o"></i> <?php echo $t['medias']['btnDPtxt'] ?>
             </a>
         </p>
+-->
 
-        <div class="row">
-            <div class="col-md-8">
-                <h3><?php echo $t['medias']['1title'] ?></h3>
-                <p><?php echo $t['medias']['1intro'] ?></p>
-                <?php echo $t['medias']['1list'] ?>
-            </div>
-
-            <div class="col-md-4">
-                <h3><?php echo $t['medias']['2title'] ?></h3>
-                <p><?php echo $t['medias']['2intro'] ?></p>
-                <?php echo $t['medias']['2list'] ?>
-            </div>
-        </div>
 
         <!-- Visuels-->
         <h2><?php echo $t['medias']['tabstitle'] ?></h2>
@@ -54,6 +42,7 @@ include('header.php');
             <!-- Cartes -->
             <div role="tabpanel" class="tab-pane active" id="cartes">
                 <div class="row">
+                <p><?php echo $t['medias']['t1intro'] ?></p>
                 <?php for ($i=1; $i<=3; $i++) { ?>
                 <div class="col-sm-4">
                     <div class="thumbnail text-center">
@@ -67,8 +56,9 @@ include('header.php');
                 <?php } ?>
                 </div>
             </div>
-            <!-- Dessins -->
+            <!-- Dessins Gee-->
             <div role="tabpanel" class="tab-pane" id="dessins">
+                <p><?php echo $t['medias']['t2intro'] ?></p>
                 <div class="row">
                     <?php for ($i=1; $i<=6; $i++) { ?>
                     <div class="col-sm-4">
@@ -90,6 +80,28 @@ include('header.php');
                             <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.webm" type="video/webm" /&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- Dessins Péhä-->
+            <div role="tabpanel" class="tab-pane" id="dessins-peha">
+                <p><?php echo $t['medias']['t8intro'] ?></p>
+                <div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h3><?php echo $t['medias']['t8i5txt'] ?></h3>
+						<img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'].$t['medias']['t8i5url'] ?>" />
+					</div>
+                    <?php for ($i=1; $i<=4; $i++) { ?>
+                    <div class="col-sm-6">
+                        <div class="thumbnail text-center">
+                            <h3><?php echo $t['medias']['t8i'.$i.'txt'] ?></h3>
+                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'].$t['medias']['t2i'.$i.'url'] ?>" />
+                        </div>
+                    </div>
+                    <?php } ?>
                 </div>
             </div>
             <!-- Stickers -->
