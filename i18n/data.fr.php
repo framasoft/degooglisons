@@ -467,10 +467,19 @@ $t['medias']['pressth1']    = 'Date';
 $t['medias']['pressth2']    = 'Média';
 $t['medias']['pressth3']    = 'Liens';
 $t['medias']['presslist']   = [
+    ['30/07/2017', 'Usbek & Rica',
+    
+    'https://usbeketrica.com/article/framasoft-une-amap-du-logiciel-libre',
+    'Lien vers l’article'],
+    ['04/02/2017', 'Mashable/France 24',
+    'http://mashable.france24.com/tech-business/20170204-chatons-collectif-hebergeurs-framasoft?ref=tw_i',
+    'Lien vers l’article'],
     ['24/08/2016', 'Opensource.com (anglais)',
+    
     'https://opensource.com/business/16/8/open-source-alternatives-office-365',
     'Lien vers l’article'],
-    ['27/03/2016', 'France 24 / Mashable',
+    ['27/02/2016', 'France 24 / Mashable',
+    
     'http://mashable.france24.com/tech-business/20160226-google-internet-framasoft',
     'Lien vers l’article'],
     ['17/03/2016', 'La Tribune',
