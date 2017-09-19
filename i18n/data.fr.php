@@ -361,7 +361,7 @@ $t['medias']['link']     = $l['current'].'medias';
 $t['medias']['desc']     = '';
 $t['medias']['css']      = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']       = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
-/* [Pouhiou] à remplacer par un historique DIo
+/* (Pouhiou) à remplacer par un historique DIo
 $t['medias']['subtitle']    = '3 octobre 2016 : 3e (et dernière) année de Dégooglisons Internet.';
 $t['medias']['intro']       = 'Pour entamer la dernière année de sa campagne de propositions d’alternatives aux services de Google & consorts, l’association Framasoft annonce, dès le 3 octobre, six nouveaux services issus de logiciels libres.';
 $t['medias']['btnCPtxt']    = 'Lire le<br/>communiqué de presse';
@@ -369,6 +369,7 @@ $t['medias']['btnCPurl']    = 'img/2016_communique_degooglisons_Framasoft.html';
 $t['medias']['btnDPtxt']    = 'Télécharger le<br/>dossier de presse';
 $t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2016.pdf';
 */
+// coupure 02 : articles des services 2016
 $t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons Internet.';
 $t['medias']['tabsintro']   = 'Les visuels ci dessous sont sous licence libre, les crédits sont précisés sous chaque onglet.<br/>Contrairement aux apparences, ces visuels sont en grand format (clic droit + «&nbsp;Enregistrer la cible du lien sous&hellip;&nbsp;»). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à <a href="https://contact.framasoft.org/#presse">nous contacter</a>.';
 $t['medias']['tabssaveas']  = 'Clic droit sur l’image et « Enregistrer l’image sous » pour la réutiliser';
