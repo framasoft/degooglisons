@@ -9,7 +9,7 @@ include('header.php');
         <div class="col-xs-12">
         <h2><?php echo $t['medias']['subtitle'] ?></h2>
         <p><?php echo $t['medias']['intro'] ?></p>
-
+<!-- [remplacer par un historique DIo]
         <p class="col-md-3 col-md-offset-3 text-center">
             <a class="btn btn-primary btn-lg btn-block" href="<?php echo $l['current'].$t['medias']['btnCPurl'] ?>">
                 <i class="fa fa-fw fa-file-text-o"></i> <?php echo $t['medias']['btnCPtxt'] ?>
@@ -20,21 +20,8 @@ include('header.php');
                 <i class="fa fa-fw fa-file-pdf-o"></i> <?php echo $t['medias']['btnDPtxt'] ?>
             </a>
         </p>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3><?php echo $t['medias']['1title'] ?></h3>
-                <p><?php echo $t['medias']['1intro'] ?></p>
-                <?php echo $t['medias']['1list'] ?>
-            </div>
-
-            <div class="col-md-4">
-                <h3><?php echo $t['medias']['2title'] ?></h3>
-                <p><?php echo $t['medias']['2intro'] ?></p>
-                <?php echo $t['medias']['2list'] ?>
-            </div>
-        </div>
-
+-->
+<!-- coupure 01 : articles des services 2016 -->
         <!-- Visuels-->
         <h2><?php echo $t['medias']['tabstitle'] ?></h2>
         <p><?php echo $t['medias']['tabsintro'] ?></p>
@@ -42,10 +29,11 @@ include('header.php');
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#cartes" aria-controls="cartes" role="tab" data-toggle="tab"><?php echo $t['medias']['t1'] ?></a></li>
             <li role="presentation"><a href="#dessins" aria-controls="dessins" role="tab" data-toggle="tab"><?php echo $t['medias']['t2'] ?></a></li>
+            <li role="presentation"><a href="#dessins-peha" aria-controls="dessins-peha" role="tab" data-toggle="tab"><?php echo $t['medias']['t8'] ?></a></li>
             <li role="presentation"><a href="#stickers" aria-controls="stickers" role="tab" data-toggle="tab"><?php echo $t['medias']['t7'] ?></a></li>
             <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab"><?php echo $t['medias']['t3'] ?></a></li>
             <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab"><?php echo $t['medias']['t6'] ?></a></li>
-            <li role="presentation"><a href="#screenshots" aria-controls="screenshots" role="tab" data-toggle="tab"><?php echo $t['medias']['t4'] ?></a></li>
+<!-- Coupure 03 : onglet screenshots des services 2016 -->
             <li role="presentation"><a href="#animations" aria-controls="animations" role="tab" data-toggle="tab"><?php echo $t['medias']['t5'] ?></a></li>
         </ul>
 
@@ -54,6 +42,7 @@ include('header.php');
             <!-- Cartes -->
             <div role="tabpanel" class="tab-pane active" id="cartes">
                 <div class="row">
+                <p><?php echo $t['medias']['t1intro'] ?></p>
                 <?php for ($i=1; $i<=3; $i++) { ?>
                 <div class="col-sm-4">
                     <div class="thumbnail text-center">
@@ -67,8 +56,9 @@ include('header.php');
                 <?php } ?>
                 </div>
             </div>
-            <!-- Dessins -->
+            <!-- Dessins Gee-->
             <div role="tabpanel" class="tab-pane" id="dessins">
+                <p><?php echo $t['medias']['t2intro'] ?></p>
                 <div class="row">
                     <?php for ($i=1; $i<=6; $i++) { ?>
                     <div class="col-sm-4">
@@ -90,6 +80,28 @@ include('header.php');
                             <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.webm" type="video/webm" /&gt;&lt;source src="<?php echo $l['DIo'].'/'.$t['medias']['t5i6url'] ?>.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- Dessins Péhä-->
+            <div role="tabpanel" class="tab-pane" id="dessins-peha">
+                <p><?php echo $t['medias']['t8intro'] ?></p>
+                <div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h3><?php echo $t['medias']['t8i5txt'] ?></h3>
+						<img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'].$t['medias']['t8i5url'] ?>" />
+					</div>
+                    <?php for ($i=1; $i<=4; $i++) { ?>
+                    <div class="col-sm-6">
+                        <div class="thumbnail text-center">
+                            <h3><?php echo $t['medias']['t8i'.$i.'txt'] ?></h3>
+                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'].$t['medias']['t2i'.$i.'url'] ?>" />
+                        </div>
+                    </div>
+                    <?php } ?>
                 </div>
             </div>
             <!-- Stickers -->
@@ -147,60 +159,7 @@ include('header.php');
                 </div>
             </div>
             <!-- Screenshots -->
-            <div role="tabpanel" class="tab-pane" id="screenshots">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="col-sm-6">
-                            <div class="thumbnail text-center">
-                                <h3><b class="violet">Frama</b><b class="vert">listes</b></h3>
-                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'] ?>img/framalistes.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="thumbnail text-center">
-                                <h3><b class="violet">Frama</b><b class="vert">notes</b></h3>
-                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'] ?>img/framanotes.png"  />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-sm-offset-3">
-                            <div class="thumbnail text-center">
-                                <h3><b class="violet">Frama</b><b class="vert">talk</b></h3>
-                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'] ?>img/framatalk.jpg" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="thumbnail text-center">
-                                <h3><b class="violet">Fram</b><b class="vert">agenda</b></h3>
-                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'] ?>img/framagenda.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="thumbnail text-center">
-                                <h3><b class="violet">My</b><b class="vert">Frama</b></h3>
-                                <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'] ?>img/myframa.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail text-center">
-                            <h3><b class="violet">Frama</b><b class="vert">forms</b></h3>
-                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                             title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                             src="<?php echo $l['current'] ?>img/framaforms.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- coupure 04 : onglet Screenshots des services 2016 -->       
 
         <!-- Revue de web-->
         <h2><?php echo $t['medias']['presstitle'] ?></h2>
