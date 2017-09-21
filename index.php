@@ -18,18 +18,18 @@ require('header.php');
     <!--    </div>
         <div class="row choice">-->
             <div class="container ombre choice">
-                <div class="col-xs-12 text-center">
+                <div class="row text-center">
                     <h2><?php echo $t['why']['choice']['h2'] ?></h2>
-                    <div class="col-sm-6">
-                        <p class="clearfix"><a href="./liste" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-primary">
+                    <div class="col-md-6">
+                        <p class="clearfix"><a href="./liste" class="col-lg-10 col-lg-offset-1 btn btn-lg btn-primary">
                             <?php echo $t['why']['choice']['list'] ?>
                         </a></p>
                         <p class="text-center">
                             <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
                         </p>
                     </div>
-                    <div class="col-sm-6">
-                        <p class="clearfix"><a href="./alternative" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-info">
+                    <div class="col-md-6">
+                        <p class="clearfix"><a href="./alternative" class="col-lg-10 col-md-offset-1 btn btn-lg btn-info">
                             <?php echo $t['why']['choice']['alt'] ?>
                         </a></p>
                         <p class="text-center">
@@ -97,7 +97,7 @@ require('header.php');
                 <div class="col-sm-12 well">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2><?php echo $t['why']['conc']['ctitle'] ?></h2>
+                            <h2 class="text-center"><?php echo $t['why']['conc']['ctitle'] ?></h2>
                             <p><?php echo $t['why']['conc']['sp1'] ?></p>
                             <p><?php echo $t['why']['conc']['sp2'] ?></p>
                             <p class="clearfix">
@@ -108,7 +108,7 @@ require('header.php');
                             </p>
                         </div>
                         <div class="col-sm-6">
-                            <h2><?php echo $t['why']['conc']['stitle'] ?></h2>
+                            <h2 class="text-center"><?php echo $t['why']['conc']['stitle'] ?></h2>
                             <p><?php echo $t['why']['conc']['sp3'] ?></p>
                             <p class="clearfix">
                                 <a class="btn btn-soutenir col-xs-6 col-xs-offset-3" href="<?php echo $l['S'] ?>">

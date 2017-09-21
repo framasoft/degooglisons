@@ -58,7 +58,7 @@ $(document).ready(function() {
         $('#tags-select').val($(this).text());
         $('#tags-select').trigger('change');
         $('html, body').animate({
-            scrollTop: $('#results').offset().top
+            scrollTop: $('#results-wrapper').offset().top
         }, 1);
         location.hash = '#tag-'+$(this).text();
         return false;
@@ -145,12 +145,12 @@ $(document).ready(function() {
 });
 $(window).scroll(function() {
     var $sticky = $("#sticky");
-    if($(window).scrollTop() > 140) {
+    if($(window).scrollTop() > 240) {
         $("#sticky").css('position','fixed');
     } else {
         $("#sticky").css('position','relative');
     };
-    if($(window).scrollTop() > 540) {
+    if($(window).scrollTop() > 640) {
         $("#sticky.cats").css('position','fixed');
     } else {
         $("#sticky.cats").css('position','relative');

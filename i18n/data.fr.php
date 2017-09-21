@@ -182,7 +182,7 @@ $t['why']['dang']['title'] = 'Les dangers';
 $t['why']['dang']['intro'] = 'Les services en ligne toujours plus centralisés de géants tentaculaires comme Google, Amazon, Facebook,
                 Apple ou Microsoft (GAFAM) mettent en danger nos vies numériques.';
     // EPCF (Espionnum, Privatum, Centralisum, Fermetum)
-$t['why']['dang']['e']     = 'Espionnage';
+$t['why']['dang']['e']     = 'Surveillance';
 $t['why']['dang']['ep']    = 'Sous le prétexte de fournir une « meilleure expérience utilisateur », nos comportements sur Internet sont espionnés en
                 permanence. Ces informations peuvent servir à afficher de la publicité ciblée, mais les révélations de l’affaire Snowden
                 ont aussi prouvé que les géants de l’Internet étaient contraints de communiquer ces données (parfois extrêmement privées :
@@ -361,9 +361,9 @@ $t['alt']['altp1']       = $t['meta']['F'].' s’est donné comme objectif de <a
                             Mais il existe bien d’autres services et acteurs qui œuvrent à dégoogliser internet.';
 $t['alt']['altp2']       = 'Vous trouverez <a href="#tips" rel="nofollow">ci-dessous</a> une liste qui récapitule et complète les alternatives présentées sur la carte.
                             Elle est inspirée de <a href="https://prism-break.org/fr/">Prism-Break</a> qui propose aussi d’autres logiciels dans des domaines plus pointus.';
-$t['alt']['altp3']       = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
-                            qui communique avec un <b>logiciel installé sur un ordinateur</b> <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span> où se trouvent les données personnelles
-                            et auxquels on accède via divers <b>outils installés chez soi</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.';
+$t['alt']['altp3']       = 'Dans cette liste, chaque service est généralement composé d’<b>un site web complexe</b> <span aria-hidden="true">( <i class="fa fa-cloud"></i> )</span>
+                            qui communique avec un <b>logiciel installé sur un ordinateur</b> <span aria-hidden="true">( <i class="fa fa-server"></i> )</span> où se trouvent les données personnelles
+                            et auxquels on accède via divers <b>outils installés chez soi</b> <span aria-hidden="true">( <i class="fa fa-home"></i> )</span>.';
 $t['alt']['altp4']       = 'Ainsi, lorsque nous utilisons internet, nous devons <b>accorder notre confiance à différents maillons de la chaîne</b>
                             qui nous relie aux données personnelles placées en ligne.
                             À moins de s’auto-héberger, <b>le <i lang="en">cloud</i> est toujours l’ordinateur de quelqu’un d’autre</b>.
