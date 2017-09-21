@@ -121,3 +121,12 @@ body main > .row {
 .btn-alt {
     margin-top:5px;
 }
+
+#play-pause {
+    top:10px;
+    left:10px !important;
+    text-align:center;
+}
+#play-pause a {
+    padding-top: 0 !important;
+}
