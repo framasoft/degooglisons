@@ -38,27 +38,31 @@ body > .row {
 }
 
 header {
-    padding: 2em 1em 0.5em;
+    padding: 1em 15px 0.5em;
 }
 
 header .lead {
     color: #666;
-    font: italic 1.3em/1.35 "PT Sans",Arial,sans-serif;
-    padding-top: 0.85em;
-    margin-bottom: 0.5em;
+    font: italic 1.5em/1.5 "PT Sans",Arial,sans-serif;
+    margin:0;
 }
+
 h1 a, h3 a, h4 a,
 h1 a:hover, h3 a:hover, h4 a:hover,
 h1 a:focus, h3 a:focus, h4 a:focus {
     text-decoration:none;
 }
-header a,
+
 h1 a, h1 a:hover, h1 a:focus,
 h2 a, h2 a:hover, h2 a:focus,
 h3 a, h3 a:hover, h3 a:focus,
 h4 a, h4 a:hover, h4 a:focus,
 h5 a, h5 a:hover, h5 a:focus{
     text-decoration: none;
+}
+
+header a, header a:hover, header a:focus {
+    border-bottom:none;
 }
 
 main {
@@ -115,12 +119,12 @@ main {
     border:none;
 }
 
-
+/*
 .btn-soutenir {
     font-size:24px;
     font-weight:bold;
     margin-bottom:20px;
-}
+}*/
 
 .btn-xs.btn-soutenir {
     font-size:12px;
@@ -284,18 +288,45 @@ body.index #mainHeader, body.index #internav {
 }
 
 .landing {
-    background: #444;
-}
-.landing .container {
-    background: url("http://s2.static-clubeo.com/uploads/vttarverneslabrochateaugay/news/repas-gaulois__nvyiuo.jpg") no-repeat right top;
-    padding: 50px;
-    min-height:600px;
+    background-image: url("../img/Peha-Banquet-CC-By-1920.jpg");
+    background-size:cover;
+    background-position:center;
 }
 
-.landing .col-sm-4 {
-    margin-top:10%;
-    margin-bottom:10%;
+.landing .container-fluid {
+    /*background-color:rgba(0,0,0, 0.1);
+    background-image: radial-gradient(90deg, rgba(0,0,0,.5), rgba(0,0,0,0) 20%, rgba(0,0,0,.5)) !important;*/
 }
+
+.landing .container:not(.ombre) {
+    padding: 50px;
+    min-height:700px;
+}
+
+.landing .container:not(.ombre) .well a {
+    border-color:#000;
+    color:#000
+}
+
+.landing .container:not(.ombre) .well {
+    background-color: rgba(255,255,255, 0.8);
+    font-size: 21px;
+    border: none;
+    color:#222;
+    text-shadow: 0px 0px 2px #fff;
+}
+
+.landing h1{
+    font-size:63px;
+    text-align:center;
+    text-shadow: 0px 0px 10px #000;
+    opacity:0.97;
+}
+
+.landing .container:not(.ombre) .col-md-8 {
+    margin-top:25%;
+}
+
 
 .choice img {
     max-width:300px;
@@ -313,6 +344,10 @@ body.index #mainHeader, body.index #internav {
     font-size:14px;
 }
 
+.more .well {
+    margin-top: 30px;
+}
+
 #enjeux img {
     max-width:300px;
     margin:auto;
@@ -322,7 +357,7 @@ body.index #mainHeader, body.index #internav {
     background: #444;
     box-shadow:none;
 }
-#speakabout a {
+#speakabout a:not(.btn) {
     color: #fff;
     border: none;
     font-size:16px;
@@ -560,4 +595,24 @@ body.index #mainHeader, body.index #internav {
 }
 .web-browser .img-responsive {
     padding: 4px 2px 2px;
+}
+
+#modal-t-change .web-browser,
+#modal-t-scribd .web-browser,
+#modal-t-youtube .web-browser,
+#modal-t-meetup .web-browser,
+#modal-t-blogger .web-browser,
+#modal-t-change h1 img,
+#modal-t-scribd h1 img,
+#modal-t-meetup h1 img,
+#modal-t-blogger h1 img,
+#modal-t-change .modal-footer .btn-default:nth-child(2),
+#modal-t-change .modal-footer .btn-link,
+#modal-t-scribd .modal-footer .btn-default:nth-child(2),
+#modal-t-scribd .modal-footer .btn-link,
+#modal-t-youtube .modal-footer .btn-default:nth-child(2),
+#modal-t-youtube .modal-footer .btn-link,
+#modal-t-meetup .modal-footer .btn-default:nth-child(2),
+#modal-t-meetup .modal-footer .btn-link {
+    display:none;
 }

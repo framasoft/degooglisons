@@ -1,7 +1,4 @@
                 <div class="clearfix col-xs-12">
-                    <ul class="pull-left list-inline">
-                        <?php echo $internav ?>
-                    </ul>
                     <p class="signature text-right small" style="margin-right:20px"><?php echo $t['meta']['start'].'<br/>'.$t['meta']['edit'] ?></p>
                 </div>
             </div>

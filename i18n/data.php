@@ -44,21 +44,15 @@ $c1 = [
 
 //Organisation, prod, partage, outils, comm, jeux & co, collaboration, recherche & veille
 $c2 = [
-    'orga'      => ['name' => '', 'fa' => '<i class="fa fa-fw fa-building"></i>'],
-    'prod'      => ['name' => '', 'fa' => '<i class="fa fa-fw fa-area-chart"></i>'],
-    'share'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-share-alt"></i>'],
-    'tools'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-gears"></i>'],
-    'com'       => ['name' => '', 'fa' => '<i class="fa fa-fw fa-bullhorn"></i>'],
-    'games'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-gamepad"></i>'],
     'collab'    => ['name' => '', 'fa' => '<i class="fa fa-fw fa-group"></i>'],
-    'search'    => ['name' => '', 'fa' => '<i class="fa fa-fw fa-search"></i>']
+    'prod'      => ['name' => '', 'fa' => '<i class="fa fa-fw fa-area-chart"></i>'],
+    'orga'      => ['name' => '', 'fa' => '<i class="fa fa-fw fa-building"></i>'],
+    'com'       => ['name' => '', 'fa' => '<i class="fa fa-fw fa-bullhorn"></i>'],
+    'tools'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-gears"></i>'],
+    'share'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-share-alt"></i>'],
+    'search'    => ['name' => '', 'fa' => '<i class="fa fa-fw fa-search"></i>'],
+    'games'     => ['name' => '', 'fa' => '<i class="fa fa-fw fa-gamepad"></i>']
 ];
-
-// Preset Objectifs (must be in first in list.php)
-$d['tip2017'] = array();
-$d['tip2016'] = array();
-$d['tip2015'] = array();
-$d['tip2014'] = array();
 
 /****************
  * Services web *
@@ -235,7 +229,7 @@ $d[$k]['eq']     = $e['microsoft']['fa'].'Outlook, Yahoo Mail, Orange';
 $d[$k]['altOn']  = '<a href="https://www.protonmail.com/">ProtonMail</a>, <a href="https://tutanota.com/fr/">Tutanota</a>, <a href="http://mailoo.org">Mailoo</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>';
 $d[$k]['altOff'] = '<a href="https://blue-mind.net">Blue-mind</a>, <a href="https://kolab.org/">Kolab</a>, <a href="https://roundcube.net/">Roundcube</a>, <a href="http://www.rainloop.net/">Rainloop</a>';
 $d[$k]['pos']    = '650,760,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2042';
 $d[$k]['c1']    = 'social';
 
 // Google Agenda
@@ -293,7 +287,6 @@ $d[$k]['CL']     = 'https://framacloud.org/cultiver-son-jardin/installation-de-f
 $d[$k]['i']      = 'fa-list-ul';
 $d[$k]['S']      = '<a href="https://www.drupal.org/project/webform">Webform</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">forms</b></a>';
-$d[$k]['FDate']  = '2017';
 $d[$k]['name']   = $e['google']['fa'].'Google Forms';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="https://www.limeservice.com/en/">LimeService</a>, <a href="http://webform.com">Webform</a>';
@@ -428,7 +421,7 @@ $d[$k]['eq']     = $e['facebook']['fa'].'Facebook Event';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '545,620,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2018';
 $d[$k]['c1']    = 'social';
 
 // Minecraft
@@ -507,7 +500,7 @@ $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '350,675,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2018';
 $d[$k]['c1']    = 'files';
 
 // Shrtct
@@ -540,7 +533,7 @@ $d[$k]['altOff'] = '<a href="https://jitsi.org/">Jitsi</a>, <a href="https://tox
 $d[$k]['pos']    = '506,560,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie">2016</a>';
 $d[$k]['c1']    = 'social';
-$d[$k]['c2']    = 'com';
+$d[$k]['c2']    = 'orga';
 
 // Slack
 $k= 'slack';
@@ -602,7 +595,7 @@ $d[$k]['eq']     = 'Vimeo, Dailymotion, Netflix';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://butterproject.org/">Butter (PopcornTime)</a>, <a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>';
 $d[$k]['pos']    = '440,635,40';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2018';
 $d[$k]['c1']    = 'media';
 
 /********************
@@ -620,7 +613,7 @@ $d[$k]['eq']     = 'Codepen';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://dabblet.com/">Dabblet</a>';
 $d[$k]['pos']    = '';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2018';
 $d[$k]['c1']    = 'dev';
 
 // Kongregate
@@ -697,39 +690,8 @@ $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '<a href="https://launchpad.net/launchpad">Rosetta (Launchpad)</a>';
 $d[$k]['altOff'] = $d[$k]['S'];
 $d[$k]['pos']    = '';
-$d[$k]['FDate']  = '2017';
+$d[$k]['FDate']  = '2018';
 $d[$k]['c1']    = 'dev';
-
-/****************
- * Mises à jour *
- ****************/
-// Etherpad Lite
-$k = 'up-padlite'; $ko = 'gdocs'; // prefixe "up-" obligatoire ; $ko est l'id du projet initial
-$d[$k]['FL']     = $d[$ko]['FL']; // Copier/Coller
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
-$d[$k]['FDate']  = '2013';
-
-// Wisemapping
-$k = 'up-framindmap2'; $ko = 'bubblus';
-$d[$k]['FL']     = $d[$ko]['FL'];
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
-$d[$k]['FDate']  = '2014';
-
-// Framadate 0.8
-$k = 'up-framadate2'; $ko = 'doodle';
-$d[$k]['FL']     = $d[$ko]['FL'];
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
-$d[$k]['FDate']  = '2014';
-
-// MyPads
-$k = 'up-mypads'; $ko = 'gdocs';
-$d[$k]['FL']     = $d[$ko]['FL'];
-$d[$k]['S']      = $d[$ko]['S'];
-$d[$k]['F']      = $d[$ko]['F'];
-$d[$k]['FDate']   = '2015';
 
 /**********************
  * Status des projets *

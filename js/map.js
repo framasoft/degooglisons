@@ -25,12 +25,22 @@ $(document).ready(function() {
         });
     });
 
-    $("#c-select").select2({
-        placeholder: "Chercher une alternative à un service propriétaire"
+    $('#c-select').select2({
+        placeholder: $('label[for="c-select"] .sr-only').text()
     });
 
     $('.btn-alt').on('click', function(){
         $(this).parent().parent().parent().parent().parent().modal('hide');
+    });
+
+    $('#play-pause').on('click', function(){
+        if($('#play-pause a i').hasClass('fa-play')) {
+            $("video").get(0).play();
+            $('#play-pause a i').removeClass('fa-play').addClass('fa-pause');
+        } else {
+            $("video").get(0).pause();
+            $('#play-pause a i').removeClass('fa-pause').addClass('fa-play');
+        }
     });
 
     // Scroll sur Dangers
@@ -55,13 +65,3 @@ $(window).scroll(function() {
         $("#back-to-top").hide();
     };
 });
-
-/* Coordonnées de la souris sur l'image
-$(document).ready(function() {
-   $('.well').append('<p id="log"></p>');
-});
-$( document ).on( "mousemove", function( event ) {
-    var carte = $( "#carte" );
-    var offset = carte.offset();
-    $( "#log" ).text( "pageX: " + Math.floor(((event.pageX-offset.left)*1353/1130+5)/10)*10 + ", pageY: " + Math.floor(((event.pageY-offset.top)*1579/1319+5)/10)*10 );
-});*/

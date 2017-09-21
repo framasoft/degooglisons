@@ -9,19 +9,6 @@ include('header.php');
         <div class="col-xs-12">
         <h2><?php echo $t['medias']['subtitle'] ?></h2>
         <p><?php echo $t['medias']['intro'] ?></p>
-<!-- [remplacer par un historique DIo]
-        <p class="col-md-3 col-md-offset-3 text-center">
-            <a class="btn btn-primary btn-lg btn-block" href="<?php echo $l['current'].$t['medias']['btnCPurl'] ?>">
-                <i class="fa fa-fw fa-file-text-o"></i> <?php echo $t['medias']['btnCPtxt'] ?>
-            </a>
-        </p>
-        <p class="col-md-3 text-center">
-            <a class="btn btn-primary btn-lg btn-block" href="<?php echo $l['current'].$t['medias']['btnDPurl'] ?>">
-                <i class="fa fa-fw fa-file-pdf-o"></i> <?php echo $t['medias']['btnDPtxt'] ?>
-            </a>
-        </p>
--->
-<!-- coupure 01 : articles des services 2016 -->
         <!-- Visuels-->
         <h2><?php echo $t['medias']['tabstitle'] ?></h2>
         <p><?php echo $t['medias']['tabsintro'] ?></p>
@@ -33,7 +20,6 @@ include('header.php');
             <li role="presentation"><a href="#stickers" aria-controls="stickers" role="tab" data-toggle="tab"><?php echo $t['medias']['t7'] ?></a></li>
             <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab"><?php echo $t['medias']['t3'] ?></a></li>
             <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab"><?php echo $t['medias']['t6'] ?></a></li>
-<!-- Coupure 03 : onglet screenshots des services 2016 -->
             <li role="presentation"><a href="#animations" aria-controls="animations" role="tab" data-toggle="tab"><?php echo $t['medias']['t5'] ?></a></li>
         </ul>
 
@@ -41,8 +27,8 @@ include('header.php');
 
             <!-- Cartes -->
             <div role="tabpanel" class="tab-pane active" id="cartes">
-                <div class="row">
                 <p><?php echo $t['medias']['t1intro'] ?></p>
+                <div class="row">
                 <?php for ($i=1; $i<=3; $i++) { ?>
                 <div class="col-sm-4">
                     <div class="thumbnail text-center">
@@ -86,19 +72,19 @@ include('header.php');
             <div role="tabpanel" class="tab-pane" id="dessins-peha">
                 <p><?php echo $t['medias']['t8intro'] ?></p>
                 <div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
-						<h3><?php echo $t['medias']['t8i5txt'] ?></h3>
-						<img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h3><?php echo $t['medias']['t8i5txt'] ?></h3>
+                        <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                                  title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
                                  src="<?php echo $l['current'].$t['medias']['t8i5url'] ?>" />
-					</div>
+                    </div>
                     <?php for ($i=1; $i<=4; $i++) { ?>
                     <div class="col-sm-6">
                         <div class="thumbnail text-center">
                             <h3><?php echo $t['medias']['t8i'.$i.'txt'] ?></h3>
                             <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                                  title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
-                                 src="<?php echo $l['current'].$t['medias']['t2i'.$i.'url'] ?>" />
+                                 src="<?php echo $l['current'].$t['medias']['t8i'.$i.'url'] ?>" />
                         </div>
                     </div>
                     <?php } ?>

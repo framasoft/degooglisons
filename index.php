@@ -5,29 +5,32 @@ $page = 'why';
 
 require('header.php');
 ?>
-        <div class="row landing">
-            <div class="container ombre">
-                <div class="well col-sm-4 col-sm-offset-1">
-                    <h1><?php echo $t['meta']['DIo'] ?></h1>
-                    <p><?php echo $t['meta']['lead'] ?></p>
+        <div class="row landing"><div class="container-fluid">
+            <div class="container">
+                <h1><?php echo preg_replace( '/(violet|orange)/', 'fc_light', $t['meta']['DIo']) ?></h1>
+                
+                <div class="well col-md-8 col-md-offset-2">
+                    <p><?php echo $t['why']['lp']['p1'] ?></p>
+                    <p><?php echo $t['why']['lp']['p2'] ?></p>
+                    <p><?php echo $t['why']['lp']['p3'] ?></p>
                 </div>
             </div>
-        </div>
-        <div class="row choice">
-            <div class="container ombre">
+    <!--    </div>
+        <div class="row choice">-->
+            <div class="container ombre choice">
                 <div class="col-xs-12 text-center">
-                    <h2>Je cherche un service libre…</h2>
+                    <h2><?php echo $t['why']['choice']['h2'] ?></h2>
                     <div class="col-sm-6">
-                        <p class="clearfix"><a href="list.php" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-primary">
-                            … qui réponde au mieux à mes besoins
+                        <p class="clearfix"><a href="./liste" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-primary">
+                            <?php echo $t['why']['choice']['list'] ?>
                         </a></p>
                         <p class="text-center">
                             <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
                         </p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="clearfix"><a href="alt.php" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-info">
-                            … pour remplacer un service des GAFAM
+                        <p class="clearfix"><a href="./alternative" class="col-sm-8 col-sm-offset-2 btn btn-lg btn-info">
+                            <?php echo $t['why']['choice']['alt'] ?>
                         </a></p>
                         <p class="text-center">
                             <img src="<?php echo $t['medias']['t2i3url'] ?>" alt="" />
@@ -36,26 +39,84 @@ require('header.php');
 
                 </div>
             </div>
-        </div>
+        </div></div>
         <div class="row more">
             <div class="container ombre">
                 <div  class="col-sm-6">
-                    <h2 class="text-center">Aller plus loin</h2>
-                    <p>blablabla</p>
-                    <div  class="col-xs-8 col-xs-offset-2">
-                        <a href="https://docs.framasoft.org" class="btn btn-default btn-block"><i class="fa fa-fw fa-lg fa-graduation-cap" aria-hidden="true"></i> <?php echo $t['_Docs'] ?></a>
-                        <a href="https://framacloud.org/fr/cultiver-son-jardin" class="btn btn-default btn-block"><i class="glyphicon fa-fw fa-lg glyphicon-tree-deciduous" aria-hidden="true"></i> <?php echo $t['_Framacloud'] ?></a>
-                        <a href="/chatons.php" class="btn btn-default btn-block"><i class="fa fa-fw fa-lg fa-paw" aria-hidden="true"></i> <?php echo $t['_CHATONS'] ?></a>
-                    </div>
+                    <h2 class="text-center"><?php echo $t['why']['more']['h2'] ?></h2>
+                    <p><?php echo $t['why']['more']['p0'] ?></p>
+                    <p><?php echo $t['why']['more']['p1'] ?></p>
+                    <p class="clearfix">
+                        <a href="https://docs.framasoft.org" class="btn btn-warning col-xs-6 col-xs-offset-3">
+                            <i class="fa fa-fw fa-lg fa-graduation-cap" aria-hidden="true"></i>
+                            <?php echo $t['why']['more']['b1'] ?>
+                        </a>
+                    </p>
+                    <p><?php echo $t['why']['more']['p2'] ?></p>
+                    <p class="clearfix">
+                        <a href="https://framacloud.org/fr/cultiver-son-jardin" class="btn btn-success col-xs-6 col-xs-offset-3">
+                            <i class="glyphicon fa-fw fa-lg glyphicon-tree-deciduous" aria-hidden="true"></i>
+                            <?php echo $t['why']['more']['b2'] ?>
+                        </a>
+                    </p>
+                    <p><?php echo $t['why']['more']['p3'] ?></p>
+                    <p class="clearfix">
+                        <a href="https://chatons.org" class="btn btn-soutenir col-xs-6 col-xs-offset-3">
+                            <i class="fa fa-fw fa-lg fa-paw" aria-hidden="true"></i>
+                            <?php echo $t['why']['more']['b3'] ?>
+                        </a>
+                    </p>
                 </div>
 
                 <div class="col-sm-6">
-                    <h2 class="text-center">Pourquoi ?</h2>
-                    <p>blablabla</p>
-                    <div  class="col-xs-8 col-xs-offset-2">
-                        <a href="#enjeux" class="btn btn-default btn-block"><?php echo $t['why']['enje']['btn'].'/'.$t['why']['dang']['btn'] ?></a>
-                        <a href="#solutions" class="btn btn-default btn-block"><?php echo $t['why']['prop']['btn'] ?></a>
-                        <a href="#who" class="btn btn-default btn-block"><?php echo $t['why']['who']['btn'] ?></a>
+                    <h2 class="text-center"><?php echo $t['why']['why']['h2'] ?></h2>
+                    <p><?php echo $t['why']['why']['p0'] ?></p>
+                    <p><?php echo $t['why']['why']['p1'] ?></p>
+                    <p class="clearfix">
+                        <a href="#enjeux" class="btn btn-danger col-xs-6 col-xs-offset-3">
+                            <i class="fa fa-fw fa-user-secret" aria-hidden="true"></i>
+                            <?php echo $t['why']['why']['b1'] ?>
+                        </a>
+                    </p>
+                    <p><?php echo $t['why']['why']['p2'] ?></p>
+                    <p class="clearfix">
+                        <a href="#solutions" class="btn btn-success col-xs-6 col-xs-offset-3">
+                            <i class="fa fa-fw fa-shield" aria-hidden="true"></i>
+                            <?php echo $t['why']['why']['b2'] ?>
+                        </a>
+                    </p>
+                    <p><?php echo $t['why']['why']['p3'] ?></p>
+                    <p class="clearfix">
+                        <a href="<?php echo $l['S'] ?>/association" class="btn btn-primary col-xs-6 col-xs-offset-3">
+                            <i class="fa fa-fw fa-id-card" aria-hidden="true"></i>
+                            <?php echo $t['why']['why']['b3'] ?>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-sm-12 well">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2><?php echo $t['why']['conc']['ctitle'] ?></h2>
+                            <p><?php echo $t['why']['conc']['sp1'] ?></p>
+                            <p><?php echo $t['why']['conc']['sp2'] ?></p>
+                            <p class="clearfix">
+                                <a href="<?php echo $l['contact'] ?>" class="btn btn-primary col-xs-6 col-xs-offset-3">
+                                    <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> 
+                                    <?php echo $t['why']['conc']['cbtn'] ?>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2><?php echo $t['why']['conc']['stitle'] ?></h2>
+                            <p><?php echo $t['why']['conc']['sp3'] ?></p>
+                            <p class="clearfix">
+                                <a class="btn btn-soutenir col-xs-6 col-xs-offset-3" href="<?php echo $l['S'] ?>">
+                                    <i class="fa fa-w fa-heart" aria-hidden="true"></i>
+                                    <?php echo $t['why']['conc']['sbtn'] ?>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -77,7 +138,7 @@ require('header.php');
                     <li><a href="http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262"><img src="img/medias/liberation_nb.png" alt="Libération"></a></li>
                     <li><a href="http://www.nextinpact.com/news/96764-degooglisons-internet-saison-2-framasoft-lance-produit-par-jour-cette-semaine.htm"><img src="img/medias/next_inpact_nb.png" alt="Next Inpact"></a></li>
                 </ul>
-                <p><a href="medias.php">[ Espace médias ]</a></p>
+                <p><a href="./medias" class="btn btn-lg btn-default"><?php echo $t['medias']['title'] ?></a></p>
             </div>
         </div>
 
@@ -236,7 +297,7 @@ require('header.php');
                 <p class="col-sm-12 text-center">
                     <img src="<?php echo $t['medias']['t2i5url'] ?>" alt="" />
                 </p>
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <h2><?php echo $t['why']['conc']['title'] ?></h2>
                     <p><?php echo $t['why']['conc']['p1'] ?></p>
                     <p><?php echo $t['why']['conc']['p2'] ?></p>
@@ -245,20 +306,6 @@ require('header.php');
                     <p><?php echo $t['why']['conc']['p5'] ?></p>
                     <p class="text-center"><a href="<?php echo $l['DIoL'] ?>" class="btn btn-warning btn-lg" ><?php echo $t['list']['title'].' '.$t['meta']['framasoft'] ?></a></p>
                     <p><img src="img/cloud.jpg" alt="" class="center-block img-responsive" /></p>
-                </div>
-                <div class="col-md-4">
-                    <div class="well">
-                        <h2><?php echo $t['why']['conc']['stitle'] ?></h2>
-                        <p><?php echo $t['why']['conc']['sp1'] ?></p>
-                        <p><?php echo $t['why']['conc']['sp2'] ?></p>
-                        <p class="text-center">
-                            <a href="<?php echo $l['participer'] ?>" class="btn btn-primary"><span class="fa fa-fw fa-envelope"></span> <?php echo $t['why']['conc']['cbtn'] ?></a>
-                        </p>
-                        <p><?php echo $t['why']['conc']['sp3'] ?></p>
-                        <p class="text-center">
-                            <a class="btn btn-lg btn-soutenir" href="<?php echo $l['S'] ?>"><span class="fa fa-w fa-heart"></span> <?php echo $t['why']['conc']['sbtn'] ?></a>
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>

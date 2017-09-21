@@ -3,7 +3,7 @@
     $langs_options = '';
     foreach ($langs as $k => $v) {
         $langs_options .= '
-            <option lang="'.substr($k,0,2).'" value="'.$k.'">'.$v.'</option>';
+            <li><a href="?l='.substr($k,0,2).'">'.$v.'</a></li>';
     }
 
     $internav = ''; $currentPage = '';
@@ -45,54 +45,25 @@
         <div class="row" id="mainHeader">
             <div class="container ombre">
                 <header class="row">
-                    <div class="row">
-                        <h1 class="col-md-5"><?php echo $t['meta']['DIo'] ?></h1>
-                        <p class="lead col-md-5">
-                            <?php echo $t['meta']['lead'] ?>
-                        </p>
-                        <form method="post" action="<?php echo $currentPage ?>" class="col-md-2 col-xs-4">
-                            <div class="input-group input-group-sm">
-                                <select name="lang" class="form-control" title="<?php echo $t['_Select the language'] ?>" >
+                    <h1><?php echo $t['meta']['DIo'] ?>
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" 
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    title="<?php echo $t['_Change the language'] ?>">
+                                    <i class="fa fa-lg fa-language" aria-hidden="true"></i> Langue <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
                                     <?php echo $langs_options ?>
-                                </select>
-                                <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-default btn-sm" title="<?php echo $t['_Change the language'] ?>"><?php echo $t['_OK'] ?></button>
-                                </span>
+                                </ul>
                             </div>
-                        </form>
-                    </div>
-
+                        </div>
+                    </h1>
+                    <p class="lead text-center">
+                        <?php echo $t[$page]['title'] ?>
+                    </p>
                     <hr class="trait clearfix" />
                 </header>
             </div>
         </div>
         <main>
-            <a id="leds" class="anchor"></a>
-            <div class="row leds">
-                <div class="container ombre">
-                    <h2 class="col-xs-12"><?php echo $t['meta']['leds']['title'] ?> <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button></h2>
-                    <div class="row col-xs-12">
-                        <div class="col-md-6">
-                            <h3 id="internet-libre"><span class="fa fa-fw fa-unlock"></span> <?php echo $t['meta']['leds']['ltitle'] ?></h3>
-                            <p><?php echo $t['meta']['leds']['ldesc'] ?></p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3 id="internet-decentralise"><span class="fa fa-fw fa-share-alt"></span> <?php echo $t['meta']['leds']['dtitle'] ?></h3>
-                            <p><?php echo $t['meta']['leds']['ddesc'] ?></p>
-                        </div>
-                    </div>
-                    <div class="row col-xs-12">
-                        <div class="col-md-6">
-                            <h3 id="internet-ethique"><span class="fa fa-fw fa-eye-slash"></span> <?php echo $t['meta']['leds']['etitle'] ?></h3>
-                            <p><?php echo $t['meta']['leds']['edesc'] ?></p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3 id="internet-solidaire"><span class="fa fa-fw fa-group"></span> <?php echo $t['meta']['leds']['stitle'] ?></h3>
-                            <p><?php echo $t['meta']['leds']['sdesc'] ?></p>
-                        </div>
-                    </div>
-                    <div class="row col-xs-12">
-                        <p class="text-center well"><?php echo $t['meta']['leds']['charte'] ?></p>
-                    </div>
-                </div>
-            </div>

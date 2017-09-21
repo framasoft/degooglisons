@@ -74,7 +74,7 @@ foreach ($d as $k => $v) {
 
         if (strlen($v['FDate'])==4) {
             $release =
-                str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).'
+                $t['_Nous proposerons le service'].' '.str_replace(array('violet','vert','rouge'), 'fc_g8', $v['F']).'
                 <span class="small">'.$t['_release planned on '].'
                     <a href="/liste/#'.$v['FDate'].'">'.$v['FDate'].'</a>
                     '.$t['_ with your help'].' <a href="'.$l['S'].'" class="btn btn-xs btn-soutenir" tittle="'.$t['meta']['S'].'">
@@ -83,20 +83,7 @@ foreach ($d as $k => $v) {
                 </span>';
         } else {
             $release =
-                $v['F'].' <span class="small">'.$t['_since'].' '.$v['FDate'].'</span>';
-        }
-        if ($v['altOn']!='') {
-            $alton  = '
-                    <tr>
-                        <td>
-                            <i class="fa fa-fw fa-lg fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>
-                            <span class="sr-only">'.$t['_Alternative(s) online: '].'</span>'.str_replace(', ','<br/>',$v['altOn']).'
-                        </td>
-                    </tr>';
-            $rowspan = 3;
-        } else {
-            $alton  = '';
-            $rowspan = 2;
+                $t['_Nous proposons le service'].' '.$v['F'].' <span class="small">'.$t['_since'].' '.$v['FDate'].'</span>';
         }
 
         if(!isset($d[$k]['mFooter'])) {
@@ -104,17 +91,33 @@ foreach ($d as $k => $v) {
             $v['mFooter'] .= (isset($v['CL']) && $v['CL'] != '') ? '<br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i> Découvrir comment l’<a href="'.$v['CL'].'" class="text-success">'.t($t['_Install'],'l').' sur un serveur</a></p>' : '</p>';
         }
 
-        $text .= modal(
+        /* Modale Framamail */
+        if ($k == 'gmail') {
+            
+            $text .= modal(
+                    't-'.$k,
+                    '<span class="desc">'.$v['lDesc'].'</span>',
+                    '<p class="alert alert-warning">'.$v['mBody'].'</p>',
+                    '',
+                    'lg'
+                );
+        /* Modale Framatrucs */
+        } else {
+
+            $text .= modal(
                     't-'.$k,
 
                     '<img class="pull-left" src="'.$l['F'].'/nav/img/icons/'.t($d[$k]['F'],'noframa').'.png">'.
                     '<span class="frama">'.$v['F'].'</span><br>'.
                     '<span class="desc">'.$v['lDesc'].'</span>',
-                    //$v['sDesc'].'<span class="pull-right">'.$v['F'].'</span>',
 
-                    '<div class="well"><p>Comme alternative aux services des <span title="'.$e['google']['name'].', '.$e['apple']['name'].', '.$e['facebook']['name'].', '.$e['amazon']['name'].', '.$e['microsoft']['name'].'">'.$e['google']['fa'].$e['apple']['fa'].$e['facebook']['fa'].$e['amazon']['fa'].$e['microsoft']['fa'].'</span> '.$t['_& co'].', tels :</p>
+                    '<div class="well">
+                        <p>'.$t['_Comme alternative aux services des '].'
+                            <span title="'.$t['_GAFAM Title'].'">'.
+                                $t['_GAFAM Logos'].
+                            '</span> '.$t['_& co'].$t['_, tels :'].'</p>
                         <ul class="list-group">'.$gafam_html.'</ul>
-                        <p>Nous proposons le service '.$release.'</p>
+                        <p>'.$release.'</p>
                     </div>
                     <div class="web-browser">
                         <div class="toolbar">
@@ -129,16 +132,17 @@ foreach ($d as $k => $v) {
 
                     '
                     <div class="col-md-6 text-left">
-                        <a href="#'.$k.'" class="btn btn-alt btn-default">Autres alternatives libres</a>
+                        <a href="#'.$k.'" class="btn btn-alt btn-default">'.$t['_Autres alternatives libres'].'</a>
+                        <a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'" class="btn btn-alt btn-default">'.$t['_Docs'].'</a>
                     </div>
                     <div class="col-md-6 text-right">
                         <a href="'.$v['FL'].'" class="btn btn-lg btn-link">'.t($t['_Use'],'U').'</a>
-                        <a href="'.$l['docs'].str_replace('*','',t($d[$k]['S'],'l')).'" class="btn btn-lg btn-link">'.t($t['_Docs'],'U').'</a>
                     </div>
                     ',
 
                     'lg'
                 );
+        }
     }
 
     if((substr($k,0,3) == 'tip') || (substr($k,0,3) == 'up-')) {
@@ -238,7 +242,7 @@ foreach ($d as $k => $v) {
     }
 };
 
-$tablist = '<li><a href="#bloc-carte" title="Retour à la carte" data-toggle="tooltip" data-placement="bottom"><img src="img/carte_petite.png" alt="Retour à la carte" /></a></li>';
+$tablist = '<li><a href="#bloc-carte" title="'.$t['_Retour à la carte'].'" data-toggle="tooltip" data-placement="bottom"><img src="./img/carte_petite.png" alt="'.$t['_Retour à la carte'].'" /></a></li>';
 
 foreach($c1 as $k => $v) {
 
@@ -275,97 +279,112 @@ include('header.php');
 ?>
         <div class="row" id="bloc-carte">
             <div class="container ombre">
-                <div class="map clearfix">
+                <div class="row">
+                    <div class="map col-lg-8 clearfix">
 
-                    <h2 class="h3"><?php echo $t['map']['map'] ?></h2>
+                        <h2 class="h3"><?php echo $t['map']['map'] ?></h2>
 
-                    <div class="clearfix" style="margin:30px auto">
-                        <div class="col-sm-6 col-sm-offset-3">
-                            <label class="col-sm-1 text-right" for="c-select">
+                        <div id="map-container">
+
+                            <img src="<?php echo str_replace('#','', str_replace('romains','fantome', $l['map'])) ?>" alt="<?php echo $t['map']['altMap'] ?>" id="carte" usemap="#cartemap" />
+
+                            <map id="cartemap" name="cartemap" style="position:absolute; top:0; width:100%; z-index:15">
+                                <?php echo $areas; ?>
+                            </map>
+
+                            <video poster="<?php echo $l['map'] ?>" <!--autoplay loop--> muted id="map-video">
+                                <source src="<?php echo str_replace('romains','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
+                                <source src="<?php echo str_replace('romains','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
+                                <img src="<?php echo $l['map'] ?>" alt="" style="width:100%;" />
+                            </video>
+                            <div id="play-pause" style="margin:0"> 
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                    <span class="sr-only">Play</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <!-- Modales Camps -->
+                <?php echo modal(
+                        't-village',
+                        $t['map']['camps']['village'],
+                        '<p>'.$t['map']['camps']['vp1'].'</p>
+                         <p>'.$t['map']['camps']['vp2'].'</p>
+                         <p class="text-center"><img src="'.$t['medias']['t2i5url'].'" alt="" /></p>'
+                    );
+                    echo modal(
+                        't-fermetum',
+                        $t['map']['camps']['fermetum'],
+                        '<p>'.$t['map']['camps']['fp1'].'</p>
+                         <p>'.$t['map']['camps']['fp2'].'<a href="/#t2-fermetum">'.$t['_Read more'].'</a></p>
+                         <p class="text-center"><img src="'.$t['medias']['t2i1url'].'" alt="" /></p>'
+                    );
+                    echo modal(
+                        't-espionnum',
+                        $t['map']['camps']['espionnum'],
+                        '<p>'.$t['map']['camps']['ep1'].'</p>
+                         <p>'.$t['map']['camps']['ep2'].'<a href="/#t2-espionnum">'.$t['_Read more'].'</a></p>
+                         <p class="text-center"><img src="'.$t['medias']['t2i2url'].'" alt="" /></p>'
+                    );
+                    echo modal(
+                        't-centralisum',
+                        $t['map']['camps']['centralisum'],
+                        '<p>'.$t['map']['camps']['cp1'].'</p>
+                         <p>'.$t['map']['camps']['cp2'].'<a href="/#t2-centralisum">'.$t['_Read more'].'</a></p>
+                         <p class="text-center"><img src="'.$t['medias']['t2i1url'].'" alt="" /></p>'
+                    );
+                    echo modal(
+                        't-privatum',
+                        $t['map']['camps']['privatum'],
+                        '<p>'.$t['map']['camps']['pp1'].'</p>
+                         <p>'.$t['map']['camps']['pp2'].'<a href="/#t2-privatum">'.$t['_Read more'].'</a></p>
+                         <p class="text-center"><img src="'.$t['medias']['t2i2url'].'" alt="" /></p>'
+                    );
+                    echo modal(
+                        't-nsa',
+                        $t['map']['camps']['nsa'],
+                        '<p>'.$t['map']['camps']['np1'].'</p>
+                         <p>'.$t['map']['camps']['np2'].'</p>
+                         <p class="text-center"><img src="img/nsa.png" alt="" /></p>'
+                    );
+                
+                    echo $text;
+                ?>
+
+                    <div class="col-lg-4">
+                        <!-- Recherche -->
+                        <div class="well clearfix" style="margin:60px auto">
+                            
+                            <label class="col-xs-1 text-right" for="c-select">
                                 <i class="fa fa-2x fa-search"></i>
-                                <span class="sr-only">Chercher</span>
+                                <span class="sr-only"><?php echo $t['_Chercher une alternative à un service propriétaire']; ?></span>
                             </label>
-                            <div class="col-sm-11">
+                            <div class="col-xs-11">
                                 <select id="c-select">
                                     <option></option>
                                     <?php echo $options; ?>
                                 </select>
                             </div>
                         </div>
-                    </div>
+                        
+                        <!-- Intro alternatives -->
+                        <p><?php echo $t['alt']['altp1']; ?></p>
 
-                    <div id="map-container">
+                        <p><?php echo $t['alt']['altp2']; ?></p>
 
-                        <img src="<?php echo str_replace('#','', str_replace('romains','fantome', $l['map'])) ?>" alt="<?php echo $t['map']['altMap'] ?>" id="carte" usemap="#cartemap" />
+                        <p><?php echo $t['alt']['altp3']; ?></p>
 
-                        <map id="cartemap" name="cartemap" style="position:absolute; top:0; width:100%; z-index:15">
-                            <?php echo $areas; ?>
-                        </map>
+                        <p class="text-center" id="network" aria-hidden="true"><a href="#home"><i class="fa fa-fw fa-home"></i></a> → <i class="fa fa-fw fa-cloud"></i> → <i class="fa fa-fw fa-server"></i></p>
 
-                        <video poster="<?php echo $l['map'] ?>" <!--autoplay loop--> muted>
-                            <source src="<?php echo str_replace('romains','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
-                            <source src="<?php echo str_replace('romains','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
-                            <img src="<?php echo $l['map'] ?>" alt="" style="width:100%;" />
-                        </video>
+                        <p><?php echo $t['alt']['altp4']; ?></p>
                     </div>
                 </div>
-
-                <?php echo modal(
-                        't-village',
-                        $t['map']['camps']['village'],
-                        '<p>'.$t['map']['camps']['vp1'].'</p>
-                         <p>'.$t['map']['camps']['vp2'].'</p>'
-                    );
-                    echo modal(
-                        't-fermetum',
-                        $t['map']['camps']['fermetum'],
-                        '<p>'.$t['map']['camps']['fp1'].'</p>
-                         <p>'.$t['map']['camps']['fp2'].'<a href="#t2-fermetum">'.$t['_Read more'].'</a></p>'
-                    );
-                    echo modal(
-                        't-espionnum',
-                        $t['map']['camps']['espionnum'],
-                        '<p>'.$t['map']['camps']['ep1'].'</p>
-                         <p>'.$t['map']['camps']['ep2'].'<a href="#t2-espionnum">'.$t['_Read more'].'</a></p>'
-                    );
-                    echo modal(
-                        't-centralisum',
-                        $t['map']['camps']['centralisum'],
-                        '<p>'.$t['map']['camps']['cp1'].'</p>
-                         <p>'.$t['map']['camps']['cp2'].'<a href="#t2-centralisum">'.$t['_Read more'].'</a></p>'
-                    );
-                    echo modal(
-                        't-privatum',
-                        $t['map']['camps']['privatum'],
-                        '<p>'.$t['map']['camps']['pp1'].'</p>
-                         <p>'.$t['map']['camps']['pp2'].'<a href="#t2-privatum">'.$t['_Read more'].'</a></p>'
-                    );
-                    echo modal(
-                        't-nsa',
-                        $t['map']['camps']['nsa'],
-                        '<p>'.$t['map']['camps']['np1'].'</p>
-                         <p>'.$t['map']['camps']['np2'].'</p>'
-                    );
-                ?>
-                <!-- Little camps -->
-                <?php echo $text; ?>
             </div>
         </div>
 
-        <div class="row" id="alt-intro">
-            <div class="container ombre">
-                <p><?php echo $t['alt']['altp1']; ?></p>
-
-                <p><?php echo $t['alt']['altp2']; ?></p>
-
-                <p><?php echo $t['alt']['altp3']; ?></p>
-
-                <p class="text-center" id="network"><a href="#home"><i class="fa fa-fw fa-home"></i></a> → <i class="fa fa-fw fa-cloud"></i> → <i class="fa fa-fw fa-server"></i></p>
-
-                <p><?php echo $t['alt']['altp4']; ?></p>
-            </div>
-        </div>
-
+        <!-- Listes des alternatives -->
         <div id="tips" class="row">
             <div class="container ombre">
                 <div id="sticky" class="container hidden-xs cats">
