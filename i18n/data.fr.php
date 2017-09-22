@@ -17,6 +17,8 @@ $l['Charte'] = 'https://framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
 $l['docs'] = 'https://docs.framasoft.org/fr/';
+$l['cloud'] = 'https://framacloud.org/fr/cultiver-son-jardin';
+$l['chatons'] = 'https://chatons.org';
 
 // Images
 $l['map'] = 'img/Carte2016-romains.png';
@@ -109,13 +111,11 @@ $t['map']['camps']['np2']         = 'Utiliser des services centralisés revient 
 $t['why']['title']  = 'Accueil';
 $t['why']['link']   = $l['current'];
 $t['why']['desc']   = '';
-$t['why']['css']    = '<link href="'.$l['current'].'css/map.css" rel="stylesheet" type="text/css" />';
-$t['why']['js']     = '
-    <script src="'.$l['current'].'js/why.js" type="text/javascript"></script>';
+$t['why']['js']     = '';
 
-$t['why']['lp']['p1']      = 'Les géants du web <a href="#enjeux">centralisent les données</a> décrivant nos vies numériques, en échange de leurs services.';
-$t['why']['lp']['p2']      = 'Les communautés du logiciel libre offrent <a href="#solutions">des services alternatifs éthiques</a>, dont chacun·e peut s’emparer.';
-$t['why']['lp']['p3']      = 'Le réseau Framasoft propose d’en faire la <a href="./liste">démonstration</a>, en hébergeant de tels services.';
+$t['why']['lp']['p1']      = 'Les géants du web <strong>centralisent nos vies numériques</strong> en échange de leurs services';
+$t['why']['lp']['p2']      = 'Les communautés du <strong>logiciel libre</strong> offrent des <strong>services alternatifs éthiques</strong>';
+$t['why']['lp']['p3']      = 'Le réseau <strong>Framasoft</strong> souhaite le <strong>démontrer</strong><br>en les <strong>hébergeant</strong>';
 
 $t['why']['choice']['h2']  = 'Je cherche un service libre…';
 $t['why']['choice']['list']= '… qui réponde au mieux à mes besoins';
@@ -334,22 +334,15 @@ $t['why']['who']['btn']   = 'Qui sommes nous ?';
 $t['list']['title']      = 'Liste des services';
 $t['list']['link']       = $l['current'].'liste';
 $t['list']['desc']       = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
-$t['list']['css']        = '
-    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['list']['js']         = '
-    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
-    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>';
 
 // Liste des alternatives
 $t['alt']['title']       = 'Liste des alternatives';
 $t['alt']['link']        = $l['current'].'alternatives';
 $t['alt']['desc']        = 'Liste des alternatives en ligne libres, éthiques, décentralisé et solidaires que Framasoft recommande pour dégoogliser internet';
-$t['alt']['css']         = '
-    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />
-    <link href="'.$l['current'].'css/map.css" rel="stylesheet" type="text/css" />';
 $t['alt']['js']          = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
-    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/map.js" type="text/javascript"></script>';
@@ -373,8 +366,7 @@ $t['alt']['altp4']       = 'Ainsi, lorsque nous utilisons internet, nous devons 
 $t['medias']['title']    = 'Espace médias';
 $t['medias']['link']     = $l['current'].'medias';
 $t['medias']['desc']     = '';
-$t['medias']['css']      = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
-$t['medias']['js']       = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+$t['medias']['js']       = '';
 $t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons Internet.';
 $t['medias']['tabsintro']   = 'Les visuels ci dessous sont sous licence libre, les crédits sont précisés sous chaque onglet.<br/>Contrairement aux apparences, ces visuels sont en grand format (clic droit + «&nbsp;Enregistrer la cible du lien sous&hellip;&nbsp;»). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à <a href="https://contact.framasoft.org/#presse">nous contacter</a>.';
 $t['medias']['tabssaveas']  = 'Clic droit sur l’image et « Enregistrer l’image sous » pour la réutiliser';
@@ -455,7 +447,7 @@ $t['medias']['t8i3url']     = 'img/Peha-Framapiaf-Framasphere-CC-BY.png';
 $t['medias']['t8i4txt']     = 'Dessin « Visio-conf »';
 $t['medias']['t8i4url']     = 'img/Peha-Framatalk-CC-BY-SA.png';
 $t['medias']['t8i5txt']     = 'Dessin « Dégooglisons »';
-$t['medias']['t8i5url']     = 'img/Peha-Benquet-Degooglisons-CC-BY.png';
+$t['medias']['t8i5url']     = 'img/Peha-Banquet-Degooglisons-CC-By.png';
 
 
 $t['medias']['presstitle']  = 'Revue de presse';
