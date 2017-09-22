@@ -9,27 +9,6 @@ $(document).ready(function() {
 
     });
 
-    // Fix slide up on focus
-    $('.tips .back a,.tips .back button').on('focus', function() {
-        $('.tip-content').removeClass('show-back');
-        $(this).parent().parent().parent('.tip-content').addClass('show-back');
-    });
-    $('.tips .back a,.tips .back button').on('focusout', function() {
-        $('.tip-content').removeClass('show-back');
-    });
-    // Remove link in the front
-    $('.front a').contents().unwrap();
-    // Slide up on click for tablet/mobile
-    $('.objectifs .front,.potion .front,.casque .front, .fight .front').on('click', function() {
-        $(this).parent('.tip-content').addClass('show-back');
-    });
-    // No slide up on hover
-    $('.potion .back').each(function(){
-        if($(this).html()=='') {
-            $(this).parent('.tip-content').addClass('hide-back');
-        }
-    });
-
     $('#tags-select').on('change', function() {
         $('#results').html('');
         $('#results_wrapper').hide();

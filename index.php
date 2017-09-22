@@ -9,10 +9,16 @@ require('header.php');
             <div class="container">
                 <h1><?php echo preg_replace( '/(violet|orange)/', 'fc_light', $t['meta']['DIo']) ?></h1>
                 
-                <div class="well col-md-8 col-md-offset-2">
-                    <p><?php echo $t['why']['lp']['p1'] ?></p>
-                    <p><?php echo $t['why']['lp']['p2'] ?></p>
-                    <p><?php echo $t['why']['lp']['p3'] ?></p>
+                <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+                        <p class="text-center well"><a href="#enjeux"><?php echo $t['why']['lp']['p1'] ?></a></p>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                        <p class="text-center well"><a href="#solutions"><?php echo $t['why']['lp']['p2'] ?></a></p>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                        <p class="text-center well"><a href="<?php echo $t['list']['link'] ?>"><?php echo $t['why']['lp']['p3'] ?></a></p>
+                    </div>
                 </div>
             </div>
     <!--    </div>
@@ -42,56 +48,114 @@ require('header.php');
         </div></div>
         <div class="row more">
             <div class="container ombre">
-                <div  class="col-sm-6">
+                <div class="col-sm-12">
                     <h2 class="text-center"><?php echo $t['why']['more']['h2'] ?></h2>
                     <p><?php echo $t['why']['more']['p0'] ?></p>
-                    <p><?php echo $t['why']['more']['p1'] ?></p>
-                    <p class="clearfix">
-                        <a href="https://docs.framasoft.org" class="btn btn-warning col-xs-6 col-xs-offset-3">
-                            <i class="fa fa-fw fa-lg fa-graduation-cap" aria-hidden="true"></i>
-                            <?php echo $t['why']['more']['b1'] ?>
-                        </a>
-                    </p>
-                    <p><?php echo $t['why']['more']['p2'] ?></p>
-                    <p class="clearfix">
-                        <a href="https://framacloud.org/fr/cultiver-son-jardin" class="btn btn-success col-xs-6 col-xs-offset-3">
-                            <i class="glyphicon fa-fw fa-lg glyphicon-tree-deciduous" aria-hidden="true"></i>
-                            <?php echo $t['why']['more']['b2'] ?>
-                        </a>
-                    </p>
-                    <p><?php echo $t['why']['more']['p3'] ?></p>
-                    <p class="clearfix">
-                        <a href="https://chatons.org" class="btn btn-soutenir col-xs-6 col-xs-offset-3">
-                            <i class="fa fa-fw fa-lg fa-paw" aria-hidden="true"></i>
-                            <?php echo $t['why']['more']['b3'] ?>
-                        </a>
-                    </p>
-                </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="text-center text-primary" aria-hidden="true">
+                                <a href="<?php echo $l['docs'] ?>">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-graduation-cap fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p><?php echo $t['why']['more']['p1'] ?></p>
+                            <p class="text-center">
+                                <a href="<?php echo $l['docs'] ?>" class="btn btn-default">
+                                    <?php echo $t['why']['more']['b1'] ?>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-center text-success" aria-hidden="true">
+                                <a href="<?php echo $l['cloud'] ?>">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="glyphicon glyphicon-tree-deciduous fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p><?php echo $t['why']['more']['p2'] ?></p>
+                            <p class="text-center">
+                                <a href="<?php echo $l['cloud'] ?>" class="btn btn-default">
+                                    <?php echo $t['why']['more']['b2'] ?>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-center text-chatons" aria-hidden="true">
+                                <a href="<?php echo $l['chatons'] ?>">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-paw fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p><?php echo $t['why']['more']['p3'] ?></p>
+                            <p class="text-center">
+                                <a href="<?php echo $l['chatons'] ?>" class="btn btn-default">
+                                    <?php echo $t['why']['more']['b3'] ?>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <hr class="trait">
 
-                <div class="col-sm-6">
                     <h2 class="text-center"><?php echo $t['why']['why']['h2'] ?></h2>
                     <p><?php echo $t['why']['why']['p0'] ?></p>
-                    <p><?php echo $t['why']['why']['p1'] ?></p>
-                    <p class="clearfix">
-                        <a href="#enjeux" class="btn btn-danger col-xs-6 col-xs-offset-3">
-                            <i class="fa fa-fw fa-user-secret" aria-hidden="true"></i>
-                            <?php echo $t['why']['why']['b1'] ?>
-                        </a>
-                    </p>
-                    <p><?php echo $t['why']['why']['p2'] ?></p>
-                    <p class="clearfix">
-                        <a href="#solutions" class="btn btn-success col-xs-6 col-xs-offset-3">
-                            <i class="fa fa-fw fa-shield" aria-hidden="true"></i>
-                            <?php echo $t['why']['why']['b2'] ?>
-                        </a>
-                    </p>
-                    <p><?php echo $t['why']['why']['p3'] ?></p>
-                    <p class="clearfix">
-                        <a href="<?php echo $l['S'] ?>/association" class="btn btn-primary col-xs-6 col-xs-offset-3">
-                            <i class="fa fa-fw fa-id-card" aria-hidden="true"></i>
-                            <?php echo $t['why']['why']['b3'] ?>
-                        </a>
-                    </p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="text-center text-danger" aria-hidden="true">
+                                <a href="#enjeux">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-user-secret fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p><?php echo $t['why']['why']['p1'] ?></p>
+                            <p class="text-center">
+                                <a href="#enjeux" class="btn btn-default">
+                                    <?php echo $t['why']['why']['b1'] ?>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-center text-success" aria-hidden="true">
+                                <a href="#solutions">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-shield fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p><?php echo $t['why']['why']['p2'] ?></p>
+                            <p class="text-center">
+                                <a href="#solutions" class="btn btn-default">
+                                    <?php echo $t['why']['why']['b2'] ?>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="text-center text-primary" aria-hidden="true">
+                                <a href="<?php echo $l['S'] ?>/association">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-id-card fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </p>
+                            <p><?php echo $t['why']['why']['p3'] ?></p>
+                            <p class="text-center">
+                                <a href="<?php echo $l['S'] ?>/association" class="btn btn-default">
+                                    <?php echo $t['why']['why']['b3'] ?>
+                                </a>
+                            </p>
+                        </div>
+                    </div>                        
                 </div>
 
                 <div class="col-sm-12 well">
@@ -119,7 +183,6 @@ require('header.php');
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -146,7 +209,7 @@ require('header.php');
             <div class="container ombre">
                 <h2><?php echo $t['why']['enje']['title'] ?></h2>
                 <p><?php echo $t['why']['enje']['p1'] ?></p>
-                <p><?php echo $t['why']['enje']['p2'] ?> <a href="#dangers"><?php echo $t['_Read more'] ?></a></p>
+                <p><?php echo $t['why']['enje']['p2'] ?></p>
 
                 <div class="row">
                     <div class="col-sm-12">
