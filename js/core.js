@@ -35,7 +35,7 @@ $(document).ready(function() {
             $('.landing .col-sm-4:eq(1) .well').delay(500).css({visibility: 'visible'}).animate({
                     width: '200px',
                     height: '200px',
-                    padding: '19px'
+                    padding: '19px 23px'
                 },{
                 duration: 500, 
                 complete: function() {
