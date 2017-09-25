@@ -496,7 +496,7 @@ $t['medias']['presslist']   = [
     ['02/11/2014', 'Libération',
     'http://www.liberation.fr/ecrans/2014/11/02/avec-framasoft-l-appli-fait-de-la-resistance_1134654',
     'Lien vers l’article'],
-    ['01/11/2014', 'France Inter (Comme un buit qui court)',
+    ['01/11/2014', 'France Inter (Comme un bruit qui court)',
     'http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
     'Lien vers la page d’écoute']
 ];
