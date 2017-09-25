@@ -327,14 +327,18 @@ body.index #mainHeader {
 
 @media (min-width:768px) {
     .desc {
-        min-height:140px;
+        min-height:150px;
         overflow: auto;
+        font-size: 16px;
+        font-weight: 300;
     }
 }
 @media (min-width:1200px) {
     .desc {
-        min-height:100px;
+        min-height:110px;
         overflow: auto;
+        font-size: 16px;
+        font-weight: 300;
     }
 }
 
