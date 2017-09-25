@@ -9,6 +9,13 @@ include('header.php');
         <div class="col-xs-12">
         <h2><?php echo $t['medias']['subtitle'] ?></h2>
         <p><?php echo $t['medias']['intro'] ?></p>
+        <div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<iframe title="Fresque Dégooglisons Internet" src="https://degooglisons-internet.org/fresque" height="400">
+					<p>Votre navigateur ne permet pas l'utilisation d'iframes.</p>
+				</iframe>
+			</div>
+		</div>
         <!-- Visuels-->
         <h2><?php echo $t['medias']['tabstitle'] ?></h2>
         <p><?php echo $t['medias']['tabsintro'] ?></p>
