@@ -25,32 +25,29 @@ require('header.php');
         <div class="row choice">-->
             <div class="container ombre choice">
                 <div class="row text-center">
-                    <h2><?php echo $t['why']['choice']['h2'] ?></h2>
-                    <div class="col-md-6">
-                        <p class="clearfix"><a href="./liste" class="col-lg-10 col-lg-offset-1 btn btn-lg btn-primary">
-                            <?php echo $t['why']['choice']['list'] ?>
-                        </a></p>
-                        <p class="text-center">
-                            <img src="<?php echo $t['medias']['t2i4url'] ?>" alt="" />
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="clearfix"><a href="./alternative" class="col-lg-10 col-md-offset-1 btn btn-lg btn-info">
-                            <?php echo $t['why']['choice']['alt'] ?>
-                        </a></p>
-                        <p class="text-center">
-                            <img src="<?php echo $t['medias']['t2i3url'] ?>" alt="" />
-                        </p>
-                    </div>
-
+                    <a href="./liste">
+                        <div class="col-md-6 fb_f6 h3 fc_light" style="margin:0 ; padding:5%">
+                            <p class="fc_light"><?php echo $t['why']['choice']['list1'] ?></p>
+                            <p><small><i class="fc_light"><?php echo $t['why']['choice']['list2'] ?></i></small></p>
+                            <p class="btn-lg btn-default"><?php echo $t['why']['choice']['list3'] ?></p>
+                        
+                        </div>
+                    </a>
+                    <a href="./alternative">
+                        <div class="col-md-6 fb_o6 h3" style="margin:0 ; padding:5%">
+                            <p class="fc_light"><?php echo $t['why']['choice']['alt1'] ?></p>
+                            <p><small><i class="fc_light"><?php echo $t['why']['choice']['alt2'] ?></i></small></p>
+                            <p class="btn-lg btn-default"><?php echo $t['why']['choice']['alt3'] ?></p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div></div>
         <div class="row more">
             <div class="container ombre">
                 <div class="col-sm-12">
-                    <h2 class="text-center"><?php echo $t['why']['more']['h2'] ?></h2>
-                    <p><?php echo $t['why']['more']['p0'] ?></p>
+                    <h2><?php echo $t['why']['more']['h2'] ?></h2>
+                    <p class="accroche"><?php echo $t['why']['more']['p0'] ?></p>
                     <div class="row">
                         <div class="col-sm-4">
                             <p class="text-center text-primary" aria-hidden="true">
@@ -62,8 +59,8 @@ require('header.php');
                                 </a>
                             </p>
                             <p><?php echo $t['why']['more']['p1'] ?></p>
-                            <p class="text-center">
-                                <a href="<?php echo $l['docs'] ?>" class="btn btn-default">
+                            <p>
+                                <a href="<?php echo $l['docs'] ?>" class="btn btn-xs btn-default">
                                     <?php echo $t['why']['more']['b1'] ?>
                                 </a>
                             </p>
@@ -78,8 +75,8 @@ require('header.php');
                                 </a>
                             </p>
                             <p><?php echo $t['why']['more']['p2'] ?></p>
-                            <p class="text-center">
-                                <a href="<?php echo $l['cloud'] ?>" class="btn btn-default">
+                            <p>
+                                <a href="<?php echo $l['cloud'] ?>" class="btn btn-xs btn-default">
                                     <?php echo $t['why']['more']['b2'] ?>
                                 </a>
                             </p>
@@ -94,18 +91,16 @@ require('header.php');
                                 </a>
                             </p>
                             <p><?php echo $t['why']['more']['p3'] ?></p>
-                            <p class="text-center">
-                                <a href="<?php echo $l['chatons'] ?>" class="btn btn-default">
+                            <p>
+                                <a href="<?php echo $l['chatons'] ?>" class="btn btn-xs btn-default">
                                     <?php echo $t['why']['more']['b3'] ?>
                                 </a>
                             </p>
                         </div>
                     </div>
-                
-                    <hr class="trait">
 
-                    <h2 class="text-center"><?php echo $t['why']['why']['h2'] ?></h2>
-                    <p><?php echo $t['why']['why']['p0'] ?></p>
+                    <h2><?php echo $t['why']['why']['h2'] ?></h2>
+                    <p class="accroche"><?php echo $t['why']['why']['p0'] ?></p>
                     <div class="row">
                         <div class="col-sm-4">
                             <p class="text-center text-danger" aria-hidden="true">
@@ -117,8 +112,8 @@ require('header.php');
                                 </a>
                             </p>
                             <p><?php echo $t['why']['why']['p1'] ?></p>
-                            <p class="text-center">
-                                <a href="#enjeux" class="btn btn-default">
+                            <p>
+                                <a href="#enjeux" class="btn btn-xs btn-default">
                                     <?php echo $t['why']['why']['b1'] ?>
                                 </a>
                             </p>
@@ -133,8 +128,8 @@ require('header.php');
                                 </a>
                             </p>
                             <p><?php echo $t['why']['why']['p2'] ?></p>
-                            <p class="text-center">
-                                <a href="#solutions" class="btn btn-default">
+                            <p>
+                                <a href="#solutions" class="btn btn-xs btn-default">
                                     <?php echo $t['why']['why']['b2'] ?>
                                 </a>
                             </p>
@@ -149,8 +144,8 @@ require('header.php');
                                 </a>
                             </p>
                             <p><?php echo $t['why']['why']['p3'] ?></p>
-                            <p class="text-center">
-                                <a href="<?php echo $l['S'] ?>/association" class="btn btn-default">
+                            <p>
+                                <a href="<?php echo $l['S'] ?>/association" class="btn btn-xs btn-default">
                                     <?php echo $t['why']['why']['b3'] ?>
                                 </a>
                             </p>
@@ -161,7 +156,7 @@ require('header.php');
                 <div class="col-sm-12 well">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2 class="text-center"><?php echo $t['why']['conc']['ctitle'] ?></h2>
+                            <h2><?php echo $t['why']['conc']['ctitle'] ?></h2>
                             <p><?php echo $t['why']['conc']['sp1'] ?></p>
                             <p><?php echo $t['why']['conc']['sp2'] ?></p>
                             <p class="clearfix">
@@ -172,7 +167,7 @@ require('header.php');
                             </p>
                         </div>
                         <div class="col-sm-6">
-                            <h2 class="text-center"><?php echo $t['why']['conc']['stitle'] ?></h2>
+                            <h2><?php echo $t['why']['conc']['stitle'] ?></h2>
                             <p><?php echo $t['why']['conc']['sp3'] ?></p>
                             <p class="clearfix">
                                 <a class="btn btn-soutenir col-xs-6 col-xs-offset-3" href="<?php echo $l['S'] ?>">
@@ -221,7 +216,7 @@ require('header.php');
                         <h3 id="t2-espionnum"><span class="fa fa-fw fa-eye"></span> <?php echo $t['why']['dang']['e'] ?></h3>
                         <p><?php echo $t['why']['dang']['ep'] ?></p>
                         <p>
-                            <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-espionnage-modal-lg"><?php echo $t['_Some examples ?'] ?></button>
+                            <a href="<?php echo $t['why']['dang']['erefs'] ?>" class="btn btn-primary btn-xs" data-target=".bs-espionnage-modal-lg"><?php echo $t['_Some examples ?'] ?></a>
                         </p>
                             <div class="modal fade bs-espionnage-modal-lg" id="espionnageModal" tabindex="-1" role="dialog" aria-labelledby="espionnageLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
@@ -231,7 +226,7 @@ require('header.php');
                                     <h4 class="modal-title" id="espionnageLabel"><?php echo $t['why']['dang']['e'] ?></h4>
                                   </div>
                                   <div class="modal-body">
-                                        <?php echo $t['why']['dang']['erefs'] ?>
+                                    <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="about:blank" ></iframe></div>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $t['_Close'] ?></button>
@@ -247,7 +242,7 @@ require('header.php');
                         <h3 id="t2-privatum"><span class="fa fa-fw fa-user"></span> <?php echo $t['why']['dang']['p'] ?></h3>
                         <p><?php echo $t['why']['dang']['pp'] ?></p>
                         <p>
-                            <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-vie-privee-modal-lg"><?php echo $t['_Some examples ?'] ?></button>
+                            <a href="<?php echo $t['why']['dang']['prefs'] ?>" class="btn btn-primary btn-xs" data-target=".bs-vie-privee-modal-lg"><?php echo $t['_Some examples ?'] ?></a>
                         </p>
                             <div class="modal fade bs-vie-privee-modal-lg" id="viePriveeModal" tabindex="-1" role="dialog" aria-labelledby="viePriveeLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
@@ -257,7 +252,7 @@ require('header.php');
                                     <h4 class="modal-title" id="viePriveeLabel"><?php echo $t['why']['dang']['p'] ?></h4>
                                   </div>
                                   <div class="modal-body">
-                                      <?php echo $t['why']['dang']['prefs'] ?>
+                                    <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="about:blank" ></iframe></div>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $t['_Close'] ?></button>
@@ -272,7 +267,7 @@ require('header.php');
                         <h3 id="t2-centralisum"><span class="fa fa-fw fa-dot-circle-o"></span> <?php echo $t['why']['dang']['c'] ?></h3>
                         <p><?php echo $t['why']['dang']['cp'] ?></p>
                         <p>
-                            <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-centralisation-modal-lg"><?php echo $t['_Some examples ?'] ?></button>
+                            <a href="<?php echo $t['why']['dang']['crefs'] ?>" class="btn btn-primary btn-xs"  data-target=".bs-centralisation-modal-lg"><?php echo $t['_Some examples ?'] ?></a>
                         </p>
                             <div class="modal fade bs-centralisation-modal-lg" id="centralisationModal" tabindex="-1" role="dialog" aria-labelledby="centralisationLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
@@ -282,7 +277,7 @@ require('header.php');
                                     <h4 class="modal-title" id="centralisationLabel"><?php echo $t['why']['dang']['c'] ?></h4>
                                   </div>
                                   <div class="modal-body">
-                                    <?php echo $t['why']['dang']['crefs'] ?>
+                                    <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="about:blank" ></iframe></div>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $t['_Close'] ?></button>
@@ -295,7 +290,7 @@ require('header.php');
                         <h3 id="t2-fermetum"><span class="fa fa-fw fa-lock"></span> <?php echo $t['why']['dang']['f'] ?></h3>
                         <p><?php echo $t['why']['dang']['fp'] ?></p>
                         <p>
-                            <button class="btn btn-primary btn-xs" data-toggle="modal" data-target=".bs-fermeture-modal-lg"><?php echo $t['_Some examples ?'] ?></button>
+                            <a href="<?php echo $t['why']['dang']['frefs'] ?>" class="btn btn-primary btn-xs"  data-target=".bs-fermeture-modal-lg"><?php echo $t['_Some examples ?'] ?></a>
                         </p>
                             <div class="modal fade bs-fermeture-modal-lg" id="fermetureModal" tabindex="-1" role="dialog" aria-labelledby="fermetureLabel" aria-hidden="true">
                               <div role="document" class="modal-dialog modal-lg">
@@ -305,7 +300,7 @@ require('header.php');
                                     <h4 class="modal-title" id="fermetureLabel"><?php echo $t['why']['dang']['f'] ?></h4>
                                   </div>
                                   <div class="modal-body">
-                                      <?php echo $t['why']['dang']['frefs'] ?>
+                                    <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="about:blank" ></iframe></div>
                                   </div>
                                   <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo $t['_Close'] ?></button>
