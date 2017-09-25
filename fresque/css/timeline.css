@@ -8,7 +8,6 @@
 
 body {
     font: normal 16px/1.5 "Open Sans", sans-serif;
-    background-color: #6A5687;
     color: #fff;
     overflow-x: hidden;
     padding-bottom: 50px;
@@ -39,7 +38,7 @@ a:hover {
       –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-    padding: 100px 0;
+    padding: 42px 0 50px 0;
     color: #616161;
     background-color: #fff;
 }
@@ -51,17 +50,31 @@ a:hover {
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
+.container hr {
+    margin-top: 50px;
+    background-color: #EEE;
+    height: 11px;
+    border: medium none;
 }
 
+.container h1 {
+    font-size: 2.5rem;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box, .text {
+    vertical-align: middle;
+    display: table-cell;
+}
 
 /* TIMELINE
    –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
     background: #fff;
-    padding: 50px 0;
+    padding: 0 0;
 }
 
 .timeline ul li {
@@ -194,6 +207,9 @@ time {
 }
 
 @media screen and (max-width: 600px) {
+    .box, .text {
+        display: block;
+    }
     .timeline ul li {
         margin-left: 20px;
     }
