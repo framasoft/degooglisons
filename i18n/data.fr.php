@@ -365,7 +365,7 @@ $t['alt']['altp4']       = 'Ainsi, lorsque nous utilisons internet, nous devons 
 $t['medias']['title']    = 'Espace médias';
 $t['medias']['link']     = $l['current'].'medias';
 $t['medias']['subtitle'] = 'Historique de la campagne Dégooglisons Internet';
-$t['medias']['intro']    = 'Dégooglisons Internet est une campagne qui a duré trois ans (oct. 2014 - oct. 2017), mais qui s’inscrit dans un cheminement plus général de Framasoft. <br/>Parcourez la fresque ci-dessous de la molette pour en découvrir les dates-clés (plein écran <a href="https://degooglisons-internet.org/fresque">disponible ici</a>).';
+$t['medias']['intro']    = 'Dégooglisons Internet est une campagne qui a duré trois ans (oct. 2014 - oct. 2017), mais qui s’inscrit dans un cheminement plus général de Framasoft. <br/>Parcourez de la molette la fresque ci-dessous pour en découvrir les dates-clés (plein écran <a href="https://degooglisons-internet.org/fresque">disponible ici</a>).';
 $t['medias']['desc']     = '';
 $t['medias']['js']       = '';
 $t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons Internet';
