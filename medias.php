@@ -30,6 +30,7 @@ include('header.php');
             <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab"><?php echo $t['medias']['t3'] ?></a></li>
             <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab"><?php echo $t['medias']['t6'] ?></a></li>
             <li role="presentation"><a href="#animations" aria-controls="animations" role="tab" data-toggle="tab"><?php echo $t['medias']['t5'] ?></a></li>
+            <li role="infographie"><a href="#infographie" aria-controls="infographie" role="tab" data-toggle="tab"><?php echo $t['medias']['t9'] ?></a></li>
         </ul>
 
         <div class="tab-content">
@@ -155,8 +156,21 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <!-- Screenshots -->
-<!-- coupure 04 : onglet Screenshots des services 2016 -->       
+            <!-- Infographie G Dorne -->
+            <div role="tabpanel" class="tab-pane" id="infographie">
+                <p><?php echo $t['medias']['t9intro'] ?></p>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="thumbnail text-center">
+                            <h3><?php echo $t['medias']['t9i1txt'] ?></h3>
+                            <p><a href="<?php echo $t['medias']['t9i2url'] ?>"><?php echo $t['medias']['t9i2txt'] ?></a></p>
+                            <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                                 title="<?php echo $t['medias']['tabssaveas'] ?>" alt=""
+                                 src="<?php echo $l['current'].$t['medias']['t9i1url'] ?>" />
+                        </div>
+                    </div>
+                </div>
+            </div>     
 
         <!-- Revue de web-->
         <h2><?php echo $t['medias']['presstitle'] ?></h2>
