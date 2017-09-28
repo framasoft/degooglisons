@@ -450,6 +450,13 @@ $t['medias']['t8i4url']     = 'img/Peha-Framatalk-CC-BY-SA.png';
 $t['medias']['t8i5txt']     = 'Dessin « Dégooglisons »';
 $t['medias']['t8i5url']     = 'img/Peha-Banquet-Degooglisons-CC-By.png';
 
+$t['medias']['t9']          = 'Infographie Framasoft';
+$t['medias']['t9intro']     = 'Crédits infographie&nbsp;: <a href="https://geoffreydorne.com/">Geoffrey Dorne</a>, librement réutilisables sous la licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By-SA</span> 4.0</a>.';
+$t['medias']['t9i1txt']     = 'Infographie « Le Monde de Framasoft »';
+$t['medias']['t9i1url']     = 'img/infographie_Le-Monde-de-Framasoft_CC-By-SA-Geoffrey-Dorne-1920px.jpg';
+$t['medias']['t9i2txt']     = 'Source (fichier.pdf grand format)';
+$t['medias']['t9i2url']     = 'img/infographie_framasoft_2017.pdf';
+
 
 $t['medias']['presstitle']  = 'Revue de presse';
 $t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant ses deux ans d’existance. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
