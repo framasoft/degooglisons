@@ -85,7 +85,7 @@ $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">sites</b>';
 $d[$k]['name']   = $e['google']['fa'].'Blogger';
 $d[$k]['eq']     = 'Pages Jaunes, OverBlog, Skyblog';
 $d[$k]['altOn']  = '<a href="http://wordpress.com">Wordpress</a>';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.pluxml.org/">PluXML</a>, <a href="http://wordpress.org">Wordpress</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.pluxml.org/">PluXML</a>, <a href="https://www.spip.net/">Spip</a>, <a href="http://wordpress.org">Wordpress</a>';
 $d[$k]['pos']    = '650,605,40';
 $d[$k]['FDate']  = '2017';
 $d[$k]['c1']    = 'site';
