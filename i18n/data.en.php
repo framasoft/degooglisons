@@ -180,20 +180,14 @@ $t['why']['dang']['intro'] = 'The increasingly centralized online services provi
 $t['why']['dang']['e']     = 'Surveillance';
 $t['why']['dang']['ep']    = 'These services track us everywhere, while claiming to give us a better “user experience”. But our behaviour is under constant surveillance. This information can be used to display targeted adverts, but the revelations of the Snowden case have also shown that Internet giants have been forced to communicate this data (sometimes extremely private: emails from Gmail, photos shared on Facebook, Skype conversations, smartphone locations, etc.) to government services. Under the pretense of fighting terrorism, states are able to gather much more intelligence than a "Big Brother" would ever have dreamed of.';
 
-$t['why']['dang']['erefs'] = '
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://my.framasoft.org/u/degooglisons/?searchtags=espionnage"></iframe>
-                    </div>';
+$t['why']['dang']['erefs'] = 'https://my.framasoft.org/u/degooglisons/?searchtags=espionnage';
 
 $t['why']['dang']['p']     = 'Privacy';
 
 $t['why']['dang']['pp']    = 'Our data is an extension of ourselves. It tells third-parties where we are, who we are with, our political and sexual orientations, sites we have visited, our favorite recipes, our favorite topics of interest, and so on. While a single data point is not always sensitive, the loss of large amounts of aggregated data can be dangerous (for example if you browse topics about cancer before subscribing to a life insurance)<br>
 <strong>Your private life is an essential part of your individuality</strong>, and in a world where everything has been digitized (ebooks, TV, phones, music, social networks, etc.), it would only take a malicious hacker with access to your smartphone a few minutes to cause you serious harm (taking control of your identity on Facebook, consulting your professional or medical information, making purchases without your authorisation, etc.).';
 
-$t['why']['dang']['prefs'] = '
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://my.framasoft.org/u/degooglisons/?searchtags=vie-privee"></iframe>
-                    </div>';
+$t['why']['dang']['prefs'] = 'https://my.framasoft.org/u/degooglisons/?searchtags=vie-privee';
 
 $t['why']['dang']['c']     = 'Centralization';
 $t['why']['dang']['cp']    ='Major actors of the Internet have become real giants: Google owns Youtube and Waze, Facebook has acquired WhatsApp and Instagram, Microsoft distributes Skype, etc.<br>
@@ -202,10 +196,7 @@ This concentration of actors creates multiple issues: what if Facebook were sudd
 Furthermore, the size of these actors impedes innovation: it’s hard to launch a startup that can match up to Apple or Google (the first and second worldwide market capitalisations, respectively).<br>
 Finally, The lack of diversity of the giants means they can track many people who are unaware that there may be alternatives, and it can influence the kind of data you receive (a Google search will produce different results for the term “nuclear power” depending on whether Google considers you to be an environmentalist or pro-nuclear power).';
 
-$t['why']['dang']['crefs'] = '
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://my.framasoft.org/u/degooglisons/?searchtags=centralisation"></iframe>
-                    </div>';
+$t['why']['dang']['crefs'] = 'https://my.framasoft.org/u/degooglisons/?searchtags=centralisation';
 
 $t['why']['dang']['f']     = 'Termination';
 $t['why']['dang']['fp']    = 'Web services used on your computer, smartphone, tablets (and other devices) are usually hosted on the “cloud”: servers spread across the planet, that host not only your data (emails, pictures, files, etc.), but also the application code.<br>
@@ -215,10 +206,7 @@ your service provider</strong> when it comes to proliferation of
 advertisements, changes to the user interface, etc., and that you have hardly any control over the way an application works. It is a “black box” that can exhibit malicious behaviour (sending spam SMS without your knowledge, executing malicious code, and so on).<br>
 In short, these companies trap us in gilded cages: gilded yes, but cages nonetheless!';
 
-$t['why']['dang']['frefs'] = '
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://my.framasoft.org/u/degooglisons/?searchtags=fermeture"></iframe>
-                    </div>';
+$t['why']['dang']['frefs'] = 'https://my.framasoft.org/u/degooglisons/?searchtags=fermeture';
 
 // Pourquoi - Nos propositions
 $t['why']['prop']['btn']   = 'Our proposals';
