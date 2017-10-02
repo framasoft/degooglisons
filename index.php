@@ -160,7 +160,7 @@ require('header.php');
                             <p><?php echo $t['why']['conc']['sp1'] ?></p>
                             <p><?php echo $t['why']['conc']['sp2'] ?></p>
                             <p class="clearfix">
-                                <a href="<?php echo $l['contact'] ?>" class="btn btn-primary col-xs-6 col-xs-offset-3">
+                                <a href="<?php echo $l['contact'] ?>" class="btn btn-primary col-sm-6 col-sm-offset-3 col-xs-12">
                                     <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> 
                                     <?php echo $t['why']['conc']['cbtn'] ?>
                                 </a>
@@ -170,7 +170,7 @@ require('header.php');
                             <h2><?php echo $t['why']['conc']['stitle'] ?></h2>
                             <p><?php echo $t['why']['conc']['sp3'] ?></p>
                             <p class="clearfix">
-                                <a class="btn btn-soutenir col-xs-6 col-xs-offset-3" href="<?php echo $l['S'] ?>">
+                                <a class="btn btn-soutenir col-sm-6 col-sm-offset-3 col-xs-12" href="<?php echo $l['S'] ?>">
                                     <i class="fa fa-w fa-heart" aria-hidden="true"></i>
                                     <?php echo $t['why']['conc']['sbtn'] ?>
                                 </a>
