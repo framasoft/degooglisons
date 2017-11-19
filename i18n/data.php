@@ -545,7 +545,7 @@ $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b cla
 $d[$k]['name']   = 'Slack';
 $d[$k]['eq']     = '';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://rizzoma.com/">Rizzoma</a>, <a href="https://rocket.chat/">Rocket.chat</a>';
+$d[$k]['altOff'] = $d[$k]['S'].', <a href="https://riot.im/">Riot</a>, <a href="https://rizzoma.com/">Rizzoma</a>, <a href="https://rocket.chat/">Rocket.chat</a>';
 $d[$k]['pos']    = '288,456,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">2016</a>';
 $d[$k]['c1']    = 'social';
