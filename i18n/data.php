@@ -116,7 +116,7 @@ $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">pétition</b>';
 $d[$k]['name']   = 'Change.org';
 $d[$k]['eq']     = 'Avaaz';
 $d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petition">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
+$d[$k]['altOff'] = '<a href="https://github.com/WhiteHouse/petitions">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>';
 $d[$k]['pos']    = '285,615,40';
 $d[$k]['FDate']  = '2017';
 $d[$k]['c1']    = 'social';
@@ -775,7 +775,7 @@ $d[$k]['F']      = '<a href="http://piwigo.com/">Piwigo</a>';
 $d[$k]['name']   = 'Flickr';
 $d[$k]['eq']     = 'Instagram, Picasa, Tumblr, Pinterest';
 $d[$k]['altOn']  = '<a href="https://commons.wikimedia.org">Wikimedia Commons</a>, <a href="http://data.abuledu.org/wp/">Data Abulédu</a>, <a href="http://openclipart.org/">Openclipart</a>';
-$d[$k]['altOff'] = '<a href="http://piwigo.org/">Piwigo</a>, <a href="http://www.zenphoto.org/">Zenphoto</a>, <a href="http://www.mad5.de/ownstagram/">ownStagram</a>';
+$d[$k]['altOff'] = '<a href="http://piwigo.org/">Piwigo</a>, <a href="https://lychee.electerious.com/">Lychee</a>, <a href="http://www.zenphoto.org/">Zenphoto</a>, <a href="http://www.mad5.de/ownstagram/">ownStagram</a>';
 $d[$k]['c1']    = 'media';
 
 // Google Analytics
@@ -823,7 +823,7 @@ $k= 'paypal';
 $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="http://bitcoin.org/">Bitcoin</a>';
 $d[$k]['name']   = 'Paypal';
-$d[$k]['eq']     = 'Orange Contact+, Google Wallet, Apple Pay';
+$d[$k]['eq']     = 'Google Wallet, Apple Pay';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '<a href="https://litecoin.org/">Litecoin</a>';
 $d[$k]['c1']    = 'home';
