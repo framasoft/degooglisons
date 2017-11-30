@@ -210,7 +210,7 @@ $d[$k]['S']      = '<a href="https://gitlab.com/">Gitlab</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">git</b></a>';
 $d[$k]['name']   = $e['github']['fa'].'GitHub';
 $d[$k]['eq']     = $e['google']['fa'].'Google Code, SourceForge';
-$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://savannah.gnu.org/">Savannah</a>, <a href="http://gna.org/">Gna!</a>, <a href="http://tuxfamily.org/">TuxFamily</a>, <a href="https://adullact.net/">Adullact</a>';
+$d[$k]['altOn']  = $d[$k]['S'].', <a href="http://savannah.gnu.org/">Savannah</a>, <a href="http://tuxfamily.org/">TuxFamily</a>, <a href="https://adullact.net/">Adullact</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://kallithea-scm.org/">Kallithea</a>, <a href="http://gitlist.org/">Gitlist</a>';
 $d[$k]['pos']    = '409,355,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">2015</a>';
