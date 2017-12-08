@@ -121,11 +121,11 @@ foreach ($d as $k => $v) {
                     </div>
                     <div class="web-browser">
                         <div class="toolbar">
-                            <img src="img/browser-left.svg" alt="" />
+                            <img src="/img/browser-left.svg" alt="" />
                             <div class="search-bar"></div>
-                            <img src="img/browser-right.svg" alt="" />
+                            <img src="/img/browser-right.svg" alt="" />
                         </div>
-                        <img src="img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
+                        <img src="/img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
                     </div>'.
                     $v['mBody'].
                     $v['mFooter'],

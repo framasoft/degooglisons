@@ -32,11 +32,11 @@
     <link href="<?php echo $l['current'] ?>css/core.css" rel="stylesheet" type="text/css" />
     <link href="https://framasoft.org/nav/lib/font-awesome/css/font-awesome.min.css" media="all" rel="stylesheet">
     <link href="https://framasoft.org/nav/css/frama.css" media="all" rel="stylesheet">
-    <link href="css/select2.min.css" media="all" rel="stylesheet">
+    <link href="/css/select2.min.css" media="all" rel="stylesheet">
 
     <script src="https://framasoft.org/nav/lib/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="https://framasoft.org/nav/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/select2.min.js" type="text/javascript"></script>
+    <script src="/js/select2.min.js" type="text/javascript"></script>
     <script src="<?php echo $l['current'] ?>js/core.js" type="text/javascript"></script>
     <?php echo $t[$page]['js'] ?>
 </head>

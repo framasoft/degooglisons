@@ -58,7 +58,7 @@ foreach ($d as $k => $v) {
         <div class="col-md-3 col-sm-6 text-center '.$tagsClass.'">
             <h3><i class="fa fa-2x '.$v['i'].'"></i><br><p>'.$v['F'].'</p></h3>
             <p class="desc">'.$v['tDesc'].'</p>
-            <p><img class="img-responsive" src="img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
+            <p><img class="img-responsive" src="/img/screens/'.t($d[$k]['F'],'noframa').'.png" alt="" /></p>
             <div class="clearfix">
                 <a href="'.$v['FL'].'" class="btn btn-link btn-lg pull-left">'.t($t['_Use'],'U').'</a>
                 <div class="dropup pull-right">
@@ -85,11 +85,11 @@ foreach ($d as $k => $v) {
 
             '<div class="web-browser">
                 <div class="toolbar">
-                    <img src="img/browser-left.svg" alt="" />
+                    <img src="/img/browser-left.svg" alt="" />
                     <div class="search-bar"></div>
-                    <img src="img/browser-right.svg" alt="" />
+                    <img src="/img/browser-right.svg" alt="" />
                 </div>
-                <img src="img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
+                <img src="/img/screens/'.t($d[$k]['F'],'noframa').'-full.png" class="img-responsive" alt="" />
             </div>'.
             $v['mBody'],
 
