@@ -9,16 +9,16 @@
 include('data.php');
 
 // Liens
-$l['F'] = 'https://framasoft.org';
-$l['S'] = 'https://soutenir.framasoft.org';
+$l['F'] = 'https://framasoft.org/';
+$l['S'] = 'https://soutenir.framasoft.org/en';
 $l['DIo'] = 'https://degooglisons-internet.org';
-$l['DIoL'] = $l['DIo'].'/liste';
+$l['DIoL'] = $l['DIo'].'/list/?l=en';
 $l['Charte'] = 'https://framasoft.org/nav/html/charte.en.html';
 $l['contact'] = 'https://contact.framasoft.org';
 $l['participer'] = $l['contact'].'/participer';
 $l['docs'] = 'https://docs.framasoft.org/en/';
 $l['cloud'] = 'https://framacloud.org/en/cultiver-son-jardin';
-$l['chatons'] = 'https://chatons.org';
+$l['chatons'] = 'https://www.chatons.org/en';
 
 // Images
 $l['map'] = 'img/Carte2016-victoires-en.png';
@@ -27,8 +27,8 @@ $l['map'] = 'img/Carte2016-victoires-en.png';
 $t['meta']['lang']      = 'en';
 $t['meta']['title']     = 'De-google-ify Internet';
 $t['meta']['framasoft'] = 'Framasoft';
-$t['meta']['F']         = '<a href="'.$l['F'].'"><b class="violet">Frama</b><b class="orange">soft</b></a>';
-$t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">De-google-ify</b> <b class="orange">Internet</b></a>';
+$t['meta']['F']         = '<a href="'.$l['F'].'/?l=en"><b class="violet">Frama</b><b class="orange">soft</b></a>';
+$t['meta']['DIo']       = '<a href="'.$l['DIo'].'/?l=en"><b class="violet">De-google-ify</b> <b class="orange">Internet</b></a>';
 $t['meta']['start']     = 'Campaign began on 10/07/2014';
 $t['meta']['edit']      = 'Last modification on the 12/10/2017';
 $t['meta']['S']         = 'Support this project';
@@ -656,7 +656,7 @@ $d[$k]['tags']   = 'produce, mindmap, brainstorming';
 $k= 'change';
 $d[$k]['sDesc']  = 'Petitions';
 $d[$k]['lDesc']  = 'Launch your petitions without giving away the addresses of your backers';
-$d[$k]['tDesc']  = 'Launch your petitions from an ethical platform, which doesn''t exploit your supporter\'s data (alternative to Avaaz, Change.org).';
+$d[$k]['tDesc']  = 'Launch your petitions from an ethical platform, which doesn\t exploit your supporter\'s data (alternative to Avaaz, Change.org).';
 $d[$k]['hDesc']  = '';
 
 
