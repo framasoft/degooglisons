@@ -1,7 +1,6 @@
 deploy:
   stage: deploy
   before_script:
-  - apt-get update -yqq
   - apt-get install ssh git -yqq
   script:
     - mkdir "${HOME}/.ssh"
