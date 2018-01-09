@@ -2,7 +2,7 @@ deploy:
   stage: deploy
   before_script:
   - apt-get update -yqq
-  - apt-get install ssh git -yqq
+  - DEBIAN_FRONTEND=noninteractive apt-get install ssh -yqq
   script:
     - mkdir "${HOME}/.ssh"
     - chmod 700 "${HOME}/.ssh"
