@@ -4,6 +4,8 @@ require('i18n.php');
 
 require('function.php');
 
+require('img/base64.php');
+
 $page = 'alt';
 
 $tips = '';
@@ -50,10 +52,10 @@ foreach ($d as $k => $v) {
 
     foreach($gafam as $w) {
         if ($w != '') {
-            $gafam_img = 'img/gafam/'.str_replace(' ', '-', strtolower($w)).'.png';
+            $_img = 'gafam/'.str_replace(' ', '-', strtolower($w)).'.png';
             $gafam_html .= '<li class="list-group-item">';
-            if(file_exists($gafam_img)) {
-                $gafam_html .= '<img src="'.$l['current'].$gafam_img.'" alt="" />&nbsp;';
+            if(file_exists('img/'.$_img)) {
+                $gafam_html .= '<img src="'.str_replace('\n', '', $i[$_img]).'" alt="" />&nbsp;';
             }
             $gafam_html .= $w.'</li>';
         }
@@ -170,18 +172,18 @@ foreach ($d as $k => $v) {
         } elseif ($v['F']!='') {
 
             // Frama or LEDS service online
-            $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($v['F']))).'.png';
-            if(file_exists($leds_img) && !strstr($leds_img,'frama')) {
-                $frama_img .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+            $_img = 'leds/'.str_replace(' ', '-', strtolower(strip_tags($v['F']))).'.png';
+            if(file_exists('img/'.$_img) && !strstr($_img,'frama')) {
+                $frama_img .= '<img src="'.str_replace('\n', '', $i[$_img]).'" alt="" />&nbsp;';
             }
             $frama .= '<li class="list-group-item">'.$frama_img.$v['F'].'<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i></li>';
 
         }
 
         if ($v['S'] != '') {
-            $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($v['S']))).'.png';
-            if(file_exists($leds_img)) {
-                $frama_img .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+            $_img = 'leds/'.str_replace(' ', '-', strtolower(strip_tags($v['S']))).'.png';
+            if(file_exists('img/'.$_img)) {
+                $frama_img .= '<img src="'.str_replace('\n', '', $i[$_img]).'" alt="" />&nbsp;';
             }
             $frama .= '<li class="list-group-item">'.$frama_img.$v['S'].'<i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i></li>';
         }
@@ -197,10 +199,10 @@ foreach ($d as $k => $v) {
         $leds = explode(', ', str_replace($v['S'], '', $v['altOn']));
         foreach($leds as $w) {
             if ($w != '') {
-                $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($w))).'.png';
+                $_img = 'leds/'.str_replace(' ', '-', strtolower(strip_tags($w))).'.png';
                 $leds_html .= '<li class="list-group-item">';
-                if(file_exists($leds_img)) {
-                    $leds_html .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+                if(file_exists('img/'.$_img)) {
+                    $leds_html .= '<img src="'.str_replace('\n', '', $i[$_img]).'" alt="" />&nbsp;';
                 }
                 $leds_html .= '<i class="fa fa-cloud fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) online: '].'"></i>'.$w.'</li>';
             }
@@ -210,10 +212,10 @@ foreach ($d as $k => $v) {
         $leds = explode(', ', str_replace($v['S'], '', $v['altOff']));
         foreach($leds as $w) {
             if ($w != '') {
-                $leds_img = 'img/leds/'.str_replace(' ', '-', strtolower(strip_tags($w))).'.png';
+                $_img = 'leds/'.str_replace(' ', '-', strtolower(strip_tags($w))).'.png';
                 $leds_html .= '<li class="list-group-item">';
-                if(file_exists($leds_img)) {
-                    $leds_html .= '<img src="'.$l['current'].$leds_img.'" alt="" />&nbsp;';
+                if(file_exists('img/'.$_img)) {
+                    $leds_html .= '<img src="'.str_replace('\n', '', $i[$_img]).'" alt="" />&nbsp;';
                 }
                 $leds_html .= '<i class="fa fa-server fc_g5 pull-right" data-toggle="tooltip" data-placement="top" title="'.$t['_Alternative(s) offline: '].'"></i>'.$w.'</li>';
             }
@@ -292,7 +294,7 @@ include('header.php');
                                 <?php echo $areas; ?>
                             </map>
 
-                            <video poster="<?php echo $l['map'] ?>" <!--autoplay loop--> muted id="map-video">
+                            <video poster="<?php echo $l['map'] ?>" muted id="map-video">
                                 <source src="<?php echo str_replace('romains','animation', str_replace('.png','.webm', $l['map'])) ?>" type="video/webm" />
                                 <source src="<?php echo str_replace('romains','animation', str_replace('.png','.mp4', $l['map'])) ?>" type="video/mp4">
                                 <img src="<?php echo $l['map'] ?>" alt="" style="width:100%;" />
