@@ -1518,6 +1518,10 @@ $d[$k]['sDesc']  = 'Email client';
 $k= 'ovh';
 $d[$k]['sDesc']  = 'Web hosting & cloud';
 
+// Patreon
+$k= 'patreon';
+$d[$k]['sDesc']  = 'Micropayment and crowdfunding';
+
 // Paypal
 $k= 'paypal';
 $d[$k]['sDesc']  = 'Online payments';

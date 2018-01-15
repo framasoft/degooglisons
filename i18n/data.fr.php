@@ -1526,6 +1526,10 @@ $d[$k]['sDesc']  = 'Client de courriel';
 $k= 'ovh';
 $d[$k]['sDesc']  = 'Hébergement web & cloud';
 
+// Patreon
+$k= 'patreon';
+$d[$k]['sDesc']  = 'Micropaiement et financement participatif';
+
 // Paypal
 $k= 'paypal';
 $d[$k]['sDesc']  = 'Paiements en ligne';

@@ -723,7 +723,7 @@ $k= 'aweber';
 $d[$k]['S']      = '';
 $d[$k]['F']      = '<a href="https://www.phplist.com/">PHP List</a>';
 $d[$k]['name']   = 'AWeber';
-$d[$k]['eq']     = '';
+$d[$k]['eq']     = 'Mailchimp';
 $d[$k]['altOn']  = '';
 $d[$k]['altOff'] = '<a href="https://www.phplist.com/">PHP List</a>';
 $d[$k]['c1']    = 'social';
@@ -780,7 +780,7 @@ $d[$k]['c1']    = 'media';
 
 // Google Analytics
 $k= 'ganalytics';
-$d[$k]['S']      = '<a href="http://piwik.com/">Piwik</a>';
+$d[$k]['S']      = '<a href="https://matomo.org/">Matomo (Piwik)</a>';
 $d[$k]['F']      = '';
 $d[$k]['name']   = 'Google Analytics';
 $d[$k]['eq']     = 'Xiti';
@@ -818,14 +818,24 @@ $d[$k]['altOn']  = '<a href="http://www.rhien.org/Hebergeurs,59.html">RHIEN</a>,
 $d[$k]['altOff'] = '<a href="https://cozy.io/fr/">Cozy</a>, <a href="http://yunohost.org">Yunohost</a>, <a href="https://sandstorm.io/">Sandstorm</a>, <a href="https://cloudron.io/">Cloudron</a>';
 $d[$k]['c1']    = 'site';
 
+// Patreon
+$k= 'patreon';
+$d[$k]['S']      = '';
+$d[$k]['F']      = '<a href="https://liberapay.com/">Liberapay</a>';
+$d[$k]['name']   = 'Patreon';
+$d[$k]['eq']     = 'Flattr, Tipeee';
+$d[$k]['altOn']  = '';
+$d[$k]['altOff'] = '';
+$d[$k]['c1']    = 'home';
+
 // Paypal
 $k= 'paypal';
 $d[$k]['S']      = '';
-$d[$k]['F']      = '<a href="http://bitcoin.org/">Bitcoin</a>';
+$d[$k]['F']      = '<a href="https://duniter.org/">Duniter</a>';
 $d[$k]['name']   = 'Paypal';
-$d[$k]['eq']     = 'Google Wallet, Apple Pay';
-$d[$k]['altOn']  = '';
-$d[$k]['altOff'] = '<a href="https://litecoin.org/">Litecoin</a>';
+$d[$k]['eq']     = 'Google Wallet, Apple Pay, Orange Cash';
+$d[$k]['altOn']  = '<a href="http://bitcoin.org/">Bitcoin</a>';
+$d[$k]['altOff'] = '';
 $d[$k]['c1']    = 'home';
 
 // Universalis
