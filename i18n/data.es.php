@@ -1,70 +1,69 @@
 <?php
 /*
- * $l = liens
- * $t = texte
- * $d = données camps et framaprojets
- * $e = éditeur
+ * $l = enlaces
+ * $t = texto
+ * $d = datos campos y framaproyectos
+ * $e = editor
  */
 
-include('data.php');
-
-// Liens
+// Enlaces
 $l['F'] = 'https://framasoft.org';
 $l['S'] = 'https://soutenir.framasoft.org';
 $l['DIo'] = 'https://degooglisons-internet.org';
-$l['DIoL'] = $l['DIo'].'/liste';
+$l['DIoL'] = $l['DIo'].'/lista';
 $l['Charte'] = 'https://framasoft.org/nav/html/charte.html';
 $l['contact'] = 'https://contact.framasoft.org';
-$l['participer'] = $l['contact'].'/participer';
+$l['participer'] = $l['contacto'].'/participar';
 
-// Images
+
+// Imágenes
 $l['map'] = 'img/carte-animee-fr.gif';
 
 // Meta
 $t['meta']['lang']      = 'es';
-$t['meta']['title']     = 'Dégooglisons Internet';
+$t['meta']['title']     = 'Desgooglicemos Internet';
 $t['meta']['framasoft'] = 'Framasoft';
 $t['meta']['F']         = '<a href="'.$l['F'].'"><b class="violet">Frama</b><b class="orange">soft</b></a>';
-$t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">Dégooglisons</b> <b class="orange">Internet</b></a>';
-$t['meta']['start']     = 'Campagne commencée le 07/10/2014';
-$t['meta']['edit']      = 'Dernière modification le 02/10/2015';
-$t['meta']['S']         = 'Soutenir ce projet';
-$t['meta']['lead']      = 'Une initiative du réseau '.$t['meta']['F'].' en faveur d’un internet<br/>
-                <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
-                <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>';
-// LEDS
-$t['meta']['leds']['title']   = 'Pour un Internet…';
-$t['meta']['leds']['ltitle']  = 'Libre';
-$t['meta']['leds']['ldesc']   = 'L’histoire d’Internet elle-même est une histoire de logiciels libres,
-                tant du point de vue des standards que des protocoles employés.
-                Sa popularité et son potentiel font aussi des envieux, et de grandes entreprises
-                aimeraient s’en attribuer le contrôle en imposant du code fermé dans des systèmes
-                verrouillés et non-interopérables. Pour qu’Internet reste fidèle à ses principes
-                fondateurs qui l’ont conduit à son succès, nous devons y trouver des applications
-                libres, c’est à dire dont le code source est ouvert, accessible et sous licences libres.';
-$t['meta']['leds']['dtitle']  = 'Décentralisé';
-$t['meta']['leds']['ddesc']   = 'L’intelligence d’Internet doit se situer à la périphérie du réseau dans une dynamique
-                de partage de pair à pair, pour éviter de créer un Minitel 2.0. Pour assurer l’égalité
-                de tous, citoyens comme entrepreneurs, les monopoles doivent non seulement être évités,
-                mais empêchés de s’accaparer les données personnelles ou publiques. En expliquant,
-                par des tutoriels, comment multiplier les solutions libres permettant un Internet
-                plus équitable, nous facilitons l’essaimage du code et diversifions les usages.';
-$t['meta']['leds']['etitle']  = 'Éthique';
-$t['meta']['leds']['edesc']   = 'Nous plébiscitons un Internet fait de partage et d’indépendance.
-                L’exploitation, la surveillance, la censure et l’appropriation des données sont
-                des valeurs que nous refusons au profit de la transparence (la probité),
-                de l’exposition claire des conditions d’utilisation des services, et du refus des discriminations.';
-$t['meta']['leds']['stitle']  = 'Solidaire';
-$t['meta']['leds']['sdesc']   = 'À travers les services que nous déployons, nous promouvons un modèle économique
-                fondé sur la mutualisation des coûts, le partage des ressources, et l’accessibilité au plus grand
-                nombre. Pour cette raison les abus seront évités car nous avons tous conscience
-                de la communauté des biens. Ce modèle possède aussi un caractère éducatif car nous pensons
-                qu’en documentant le déploiement des services, un grand nombre d’utilisateurs
-                seront en mesure de partager à leur tour ces ressources.';
-$t['meta']['leds']['charte']  = 'Pour en savoir plus, consultez <strong><a href="'.$l['Charte'].'">notre charte</a></strong> détaillée.';
+$t['meta']['DIo']       = '<a href="'.$l['DIo'].'"><b class="violet">Desgooglicemos</b> <b class="orange">Internet</b></a>';
+$t['meta']['start']     = 'Campaña comenzada el día 07/10/2014';
+$t['meta']['edit']      = 'Última modificación el 02/10/2015';
+$t['meta']['S']         = 'Sostener este proyecto';
+$t['meta']['lead']      = 'Una iniciativa de nuestra red '.$t['meta']['F'].' en favor de un internet<br/>
+                <a href="#leds">libre</a>, <a href="#leds">descentralizado</a>,
+                <a href="#leds">ético</a> y <a href="#leds">solidario</a>'; 
 
-// Accueil
-$t['home']['title']  = 'Accueil';
+// LEDS
+$t['meta']['leds']['title']   = 'Por un Internet…';
+$t['meta']['leds']['ltitle']  = 'Libre';
+$t['meta']['leds']['ldesc']   = 'La historia de la red Internet en sí es una historia de software libre,
+                tanto desde el punto de vista de los estándares como de los protocolos empleados.
+                Su popularidad y su potencial provocan también envidia, y algunas grandes empresas
+                bien quisieran hacerse con su control, imponiendo código cerrado en unos sistemas bloqueados
+                y no interoperables. Para que Internet siga siendo fiel a sus principios fundadores que lo han conducido al éxito,  
+               debemos encontrar en él aplicaciones de software libre, esto es, cuyo código fuente esté abierto, sea asequible y siga bajo licencias libres.';
+$t['meta']['leds']['dtitle']  = 'Descentralizado';
+$t['meta']['leds']['ddesc']   = 'La inteligencia de Internet debe situarse en la periferia de la red dentro de una dinámica 
+                de intercambio entre iguales, para impedir crear un Minitel 2.0 más. Para asegurar la igualdad
+                de todos, ciudadanos como empresarios, no sólo se deben evitar los monopolios,
+                sino que también se les debe impedir que se apoderen de los datos personales o públicos. Explicando,
+                mediante tutoriales, cómo multiplicar las soluciones libres que permitan un Internet
+                más equitativo, favorecemos la diseminación del código y  diversificamos los usos.';
+$t['meta']['leds']['etitle']  = 'Ético';
+$t['meta']['leds']['edesc']   = 'Respaldamos totalmente un Internet de intercambio y de independencia.
+                La explotación, la vigilancia, la censura y la apropiación de los datos son valores que 
+                rehusamos en provecho de la transparencia (la probidad),
+                de la exposición clara de las condiciones de uso de los servicios, y de la negación de las discriminaciones.';
+$t['meta']['leds']['stitle']  = 'Solidario';
+$t['meta']['leds']['sdesc']   = 'Gracias a los servicios que desplegamos, promovemos un modelo económico
+                basado en la mutualización de los costes, el intercambio de los recursos y la asequibilidad de la mayoría.
+                Por tanto, se evitarán los abusos porque todos tenemos conciencia de la
+                la comunidad de los bienes. También posee este modelo un carácter educativo ya que pensamos 
+                que si documentamos el depliegue de servicios, un gran número de usuarios
+               estarán a su vez en condiciones de compartir dichos recursos.';
+$t['meta']['leds']['charte']  = 'Para saber más, consulte <strong><a href="'.$l['Charte'].'">nuestra charte</a></strong> con detalles.';
+
+// Inicio
+$t['home']['title']  = 'Inicio';
 $t['home']['link']   = $l['current'];
 $t['home']['desc']   = '';
 $t['home']['css']    = '<link href="'.$l['current'].'css/home.css" rel="stylesheet" type="text/css" />';
@@ -72,283 +71,330 @@ $t['home']['js']     = '
     <script src="'.$l['current'].'js/jquery.maphilight.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/imageMapResizer.min.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/home.js" type="text/javascript"></script>';
-$t['home']['map']    = 'Cliquez sur la carte pour découvrir les alternatives…';
-$t['home']['altMap'] = 'Nous sommes en 2015 après Jésus-Christ. Toute la toile est occupée par des services centralisés…
-                Toute ? Non ! Une communauté peuplée d’irreductibles libristes résite encore et toujours à l’envahisseur.
-                Et la vie n’est pas facile pour les garnisons des camps retranchés de Fermetum, Centralisum, Espionnum et Privatum…';
-// Accueil - Camps
-$t['home']['camps']['village']     = 'Village libriste';
-$t['home']['camps']['vp1']         = 'Au milieu des multinationales tentaculaires, quelques organisations non-lucratives continuent de lutter activement
-                    pour un Web ouvert et respectueux des internautes.';
-$t['home']['camps']['vp2']         = 'En plus de '.$t['meta']['F'].', association loi 1901
-                qui mène la présente campagne, nous pouvons citer <a href="http://april.org">l’April</a>,
-                <a href="http://laquadrature.net">la Quadrature du Net</a> ou encore <a href="http://aful.org">l’Aful</a>.
-                Ces associations vivent de vos dons, n’oubliez pas de les soutenir !';
-$t['home']['camps']['fermetum']    = '<i lang="la">Fermetum</i>';
-$t['home']['camps']['fp1']         = 'Les services en ligne sont souvent fermés : une fois que vous avez commencé à les utiliser,
-                il est très difficile de s’en séparer car ces entreprises font tout pour vous garder captifs en
-                vous empêchant, par exemple, de migrer vos données ailleurs facilement.';
-$t['home']['camps']['fp2']         = 'Utiliser des services en ligne ouverts, c’est s’assurer qu’on ne sera jamais captif d’un site particulier
-                et qu’il sera toujours possible d’aller voir ailleurs.';
-$t['home']['camps']['centralisum'] = '<i lang="la">Centralisum</i>';
-$t['home']['camps']['cp1']         = 'Les services centralisés posent de nombreux problèmes : ils rendent vos données très vulnérables (un seul site
-                indisponible et plus rien n’est accessible) et facilitent énormément leur exploitation par des tiers.';
-$t['home']['camps']['cp2']         = 'Utiliser des services en ligne décentralisés, c’est avoir le choix entre utiliser une instance en ligne comme celle
-                proposée par Framasoft ou installer le service chez soi.';
-$t['home']['camps']['espionnum']   = '<i lang="la">Espionnum</i>';
-$t['home']['camps']['ep1']         = '« Si c‘est gratuit, c‘est que vous êtes le produit » : de nombreux services en ligne vivent de
-                l’exploitation de vos données personnelles en les revendant à des sociétés publicitaires.
-                De plus, la plupart de ces services sont basés aux États-Unis et obéissent aux lois américaines de type
-                PATRIOT ACT qui nient totalement votre droit à la vie privée.';
-$t['home']['camps']['ep2']         = 'Utiliser des services en ligne hébergés en Europe, c’est s’assurer de ne pas être dépendant des lois d’un autre
-                continent. De plus, en hébergeant vous-même le service, plus aucun tiers ne peut violer votre vie privée.';
-$t['home']['camps']['privatum']    = '<i lang="la">Privatum</i>';
-$t['home']['camps']['pp1']         = 'Les services privateurs (« propriétaires » dans le langage courant) ont un fonctionnement totalement opaque :
-                il est impossible de savoir exactement ce que fait le logiciel de vos données. Seul l’éditeur en a le contrôle.';
-$t['home']['camps']['pp2']         = 'Utiliser des services en ligne libres, c’est avoir l’assurance d’un contrôle sur le fonctionnement du logiciel par la
-                communauté et la possibilité de le modifier, de l’installer ailleurs, etc.';
-$t['home']['camps']['nsa']         = '<abbr>NSA</abbr>';
-$t['home']['camps']['np1']         = 'Les révélations d’Edward Snowden sur le programme PRISM de la <abbr>NSA</abbr> ont montré que les craintes sur la violation
-                de masse de la vie privée des internautes étaient fondées.';
-$t['home']['camps']['np2']         = 'Utiliser des services centralisés revient aujourd’hui à offrir sur un plateau ses données personnelles aux
-                organisations de surveillance sans aucun moyen de contrôler l’usage qui en est fait.';
-// Accueil - Enjeux
-$t['home']['enje']['btn']   = 'Les enjeux';
-$t['home']['enje']['title'] = 'Quel sont les enjeux ?';
-$t['home']['enje']['p1']    = 'Ces dernières années ont vu se généraliser une <strong>concentration des acteurs d’Internet</strong> (Youtube appartient à Google,
-                WhatsApp à Facebook, Skype à Microsoft, etc.). Cette centralisation est nuisible, non seulement parce qu’elle freine l’innovation,
-                mais surtout parce qu’elle entraîne une perte de liberté pour les visiteurs. <strong>Les utilisateurs de ces services derniers
-                ne contrôlent plus leur vie numérique</strong> : leurs comportements sont disséqués en permanence afin de mieux être ciblés par
-                la publicité, et leurs données - pourtant privées (sites visités, mails échangés, vidéos regardées, etc.) - peuvent être analysées par des
-                services gouvernementaux.';
-$t['home']['enje']['p2']    = 'La réponse que souhaite apporter Framasoft à cette problématique est simple : mettre en valeur, pour chacun de ces
-                services privateur de liberté, une alternative Libre, Ethique, Décentralisée et Solidaire.';
+$t['home']['map']    = 'Haga clic en el mapa para descubrir las alternativas…';
+$t['home']['altMap'] = "Estamos en 2015 después de Cristo. Toda la Red está ocupada por los servicios centralizados… 
+                 ¿Toda? ¡No! Una aldea poblada por irreductibles activistas de lo libre resiste, 
+                 todavía y como siempre, al invasor. Y la vida no es fácil para las guarniciones  
+                de los reducidos campamentos de Fermetum, Centralisum, Espionnum y Privatum…' 
+               
 
-// Accueil - Dangers
-$t['home']['dang']['btn']   = 'Les dangers';
-$t['home']['dang']['title'] = 'Les dangers';
-$t['home']['dang']['intro'] = 'Les services en ligne toujours plus centralisés de géants tentaculaires comme Google, Amazon, Facebook,
-                Apple ou Microsoft (GAFAM) mettent en danger nos vies numériques.';
+// Inicio - Campamentos
+$t['home']['camps']['village']     = 'Pueblo librista';
+$t['home']['camps']['vp1']         = 'En medio de las empresas multinacionales tentaculares, 
+                una organización sin fines lucrativos continúa participando activamente en la lucha 
+                por una Red abierta y respectuosa de los internautas.';
+$t['home']['camps']['vp2']         = 'Además de '.$t['meta']['F'].', asociación sin fines lucrativos
+                que lanza esta campaña, podemos <a href="http://april.org">l’April</a>,
+                <a href="http://laquadrature.net">la Quadrature du Net</a> o también <a href="http://aful.org">l’Aful</a>.
+                Estas asociaciones viven con sus donaciones, ¡no se les olvide sostenerlas!';                
+$t['home']['camps']['fermetum']    = '<i lang="la">Fermetum</i>';
+$t['home']['camps']['fp1']         = 'Los servicios en línea están frecuentemente cerrados : cuando uno empieza a  usarlos, 
+                resulta muy difícil separarse de ellos, ya que esas empresas lo hacen todo para mantenerlo cautivo,
+                 impidiéndole migrar datos con facilidad, por ejemplo.';
+$t['home']['camps']['fp2']         = 'Utilizar los servicios abiertos es garantizar que no seguirá siendo cautivo de un servicio en particular 
+                y que siempre será facil cambiarlo.';                                
+                                
+$t['home']['camps']['centralisum'] = '<i lang="la">Centralisum</i>';
+$t['home']['camps']['cp1']         = 'Los servicios centralizados plantean numerosos problemas: crean vulnerabilidad en sus datos (solo un sitio
+                 no disponible y ya nada es accesible) y facilita a terceros su explotación..';
+$t['home']['camps']['cp2']         = 'Utilizar servicios en línea descentralizados significa tener la opción de 
+                 elegir entre utilizar una instancia en línea como la propuesta por Framasoft o instalar el servicio en casa.';
+$t['home']['camps']['espionnum']   = '<i lang="la">Espionnum</i>';
+$t['home']['camps']['ep1']         = '« Si es gratis, es porque tú eres el producto »: numerosos servicios en línea viven de
+                la explotación de sus datos personales vendiéndolos a empresas de publicidad.
+                Además, muchos servicios están en los Estados Unidos y obedecen a leyes como el 
+                PATRIOT ACT negando totalmente el derecho de cada uno a la vida privada.';
+$t['home']['camps']['ep2']         = 'Utilizar servicios en línea alojados en Europa es asegurarse de su independencia de las leyes de otro 
+                continente. Además, cuando aloja usted mismo el servicio, nadie puede  violar su vida privada.';
+
+ $t['home']['camps']['privatum']    = '<i lang="la">Privatum</i>';
+$t['home']['camps']['pp1']         = 'Los servicios privadores (« patentadores » en el lenguaje común) funcionan de manera opaca:
+                es imposible saber exactamente lo que el programa hace con su datos. Solo el editor tiene el control.';
+$t['home']['camps']['pp2']         = 'Utilizar servicios en línea libres supone un control del funcionamiento del programa por parte de la
+                comunidad y la posibildad de modificarlo, de instalarlo en otro dispositivo, etc.';
+$t['home']['camps']['nsa']         = '<abbr>NSA</abbr>';
+$t['home']['camps']['np1']         = 'Las revelaciones de Edward Snowden sobre el programa PRISM de la <abbr>NSA</abbr> han mostrado que es acertado temer la violación
+                masiva de la vida privada de los internautas, es algo fundado.';
+$t['home']['camps']['np2']         = 'Utilizar servicios centralizados supone en la actualidad brindar en bandeja sus datos personales a  las
+                organizaciones de control sin posibilidad de conocer el uso al que van destinados';        
+
+// Accueil - Enjeux
+$t['home']['enje']['btn']   = 'Los desafíos';
+$t['home']['enje']['title'] = '¿Cuáles son los desafíos ?';
+$t['home']['enje']['p1']    = 'Los últimos años han visto generalizarse una<strong>concentración de los actores de Internet</strong> (Youtube pertenece a Google,
+                WhatsApp a Facebook, Skype a Microsoft, etc.). Esta centralización es perjudicial, no sólo porque frena la innovación,
+                sino también y sobre todo porque lleva consigo una pérdida de libertad  para los usuarios. <strong>Los usuarios de dichos servicios 
+                ya no controlan su vida digital</strong> : se disecan sus comportamientos de manera permanente con el 
+                fin de que la publicidad se centre  en ellos, y sus datos -privados sin embargo (sitios visitados, intercambios de mails, vídeos 
+                visionados, etc.) - pueden ser analizados por servicios gubernamentales.';
+$t['home']['enje']['p2']    = 'La respuesta que desea traer Framasoft a esta problemática es sencilla : valorizar, para cada
+                uno de esos servicios privadores de libertad, una alternativa Libre Ética, Descentralizada y Solidaria.';
+
+// Accueil - Peligros
+$t['home']['dang']['btn']   = 'Los peligros';
+$t['home']['dang']['title'] = 'Los peligros';
+$t['home']['dang']['intro'] = 'Los servicios en línea  siempre más centralizados de gigantes tentaculares como Google, Amazon, Facebook,
+                Apple o Microsoft (GAFAM) ponen en peligro nuestras vidas digitales.';
     // EPCF (Espionnum, Privatum, Centralisum, Fermetum)
-$t['home']['dang']['e']     = 'Espionnage';
-$t['home']['dang']['ep']    = 'Sous le prétexte de fournir une « meilleure expérience utilisateur », nos comportements sur Internet sont espionnés en
-                permanence. Ces informations peuvent servir à afficher de la publicité ciblée, mais les révélations de l’affaire Snowden
-                ont aussi prouvé que les géants de l’Internet étaient contraints de communiquer ces données (parfois extrêmement privées :
-                emails échangés sur GMail, photos partagées sur Facebook, conversations Skype, géolocalisation des téléphones, etc.)
-                à des services gouvernementaux. <strong>Sous prétexte de lutte contre le terrorisme</strong>, les états sont capables
-                aujourd’hui d’obtenir bien plus d’informations qu’un « Big Brother » ne l’aurait jamais rêvé.';
+$t['home']['dang']['e']     = 'Espionaje';
+$t['home']['dang']['ep']    = 'Con la  coartada de suministrar una «mejor experiencia de usuario», se espían permanentemente
+                nuestros comportamientos en Internet . Estas informaciones pueden servir para enseñar 
+                publicidad dirigida, pero las revelaciones del caso Snowden también han demostrado que los gigantes de Internet
+                estaban obligados a comunicar estos datos (a veces muy privados : intercambios de emails en Gmail, 
+                fotos intercambiadas en Facebook, conversaciones por Skype, geolocalización de teléfonos, etc.) 
+                a los servicios gubernamentales.  <strong>Con el pretexto de la lucha contra el terrorismo</strong>,
+                los estados son capaces de conseguir mucha más  información más de la que un «Big Brother» hubiera  soñado tener.';
 $t['home']['dang']['erefs'] = '
-                <ul>
-                    <li>Numerama, le 13/05/2014 : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">La NSA accusée d’avoir piégé les routeurs américains</a></li>
-                    <li>Numerama, le 12/09/2014 : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">Yahoo révèle le chantage des USA pour espionner les internautes</a></li>
-                    <li>Numerama, le 04/07/2013 : <a href="http://www.numerama.com/magazine/26435-prism-l-allemagne-qui-espionne-aussi-deconseille-le-web-americain.html">PRISM : l’Allemagne, qui espionne aussi, déconseille le web américain</a></li>
-                    <li>Le Monde, le 27/06/2013: <a href="http://www.lemonde.fr/sciences/article/2013/06/27/il-est-temps-de-parler-des-metadonnees_3437125_1650684.html">Il est temps de parler des métadonnées</a></li>
-                    <li>Atlantico, le 25/11/2013, <a href="http://www.atlantico.fr/pepites/espionnage-etat-veut-attaquer-nos-donnees-personnelles-908758.html">Espionnage : l’Etat veut s’attaquer à nos données personnelles</a></li>
-                    <li>Le Monde, le 20/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/20/dgse-orange-des-liaisons-incestueuses_4386264_3210.html">Espionnage : comment Orange et les services secrets coopèrent</a></li>
-                        <li>Le Monde, le 15/09/2014: <a href="http://www.lemonde.fr/proche-orient/article/2014/09/15/terrorisme-un-projet-de-loi-dangereux_4487639_3218.html">Terrorisme : un projet de loi dangereux</a></li>
-                        <li>Présumés Terroristes, septembre 2014 : <a href="https://presumes-terroristes.fr/">Loi Terrorisme. Sacrifier les libertés sous prétexte de lutte contre le terrorisme ? NON !</a></li>
-                        <li>Europe1, le 12/02/2014 : <a href="http://www.europe1.fr/high-tech/et-si-samsung-se-mettait-a-espionner-ses-propres-smartphones-1799713">Et si Samsung se mettait à "espionner" ses propres smartphones?</a></li>
-                        <li>Rue89, le 13/12/2008 :<a href="http://rue89.nouvelobs.com/2008/12/13/ecoutes-ce-qui-est-possible-avec-votre-telephone-portable">Ecoutes : ce qui est possible avec votre téléphone portable</a></li>
-                        <li>Le Monde, le 21/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/21/la-france-suspectee-de-cyberattaque_4387232_3210.html">La France suspectée de cyberespionnage</a></li>
-                        <li>Pixels (Le Monde), le 14/09/2014 : <a href="http://www.lemonde.fr/pixels/article/2014/09/13/la-nsa-et-le-gchq-auraient-pirate-cinq-operateurs-telecom-allemands_4487181_4408996.html">La NSA et le GCHQ auraient piraté cinq opérateurs télécom allemands</a></li>
-                        <li>Pixels (Le Monde), le 16/09/2014 :  <a href="http://www.lemonde.fr/pixels/breve/2014/09/16/tim-cook-estime-que-les-etats-unis-sont-alles-trop-loin-dans-la-collecte-des-donnees_4488172_4408996.html">Tim Cook estime que les Etats-Unis sont allés trop loin dans la collecte des données</a></li>
-                        <li>Liberation, le 01/07/2014 :  <a href="http://www.liberation.fr/monde/2014/07/01/la-nsa-espionnait-193-pays-et-aussi-l-ue-et-le-fmi_1054881">La NSA espionnait 193 pays</a></li>
-                        <li>Numerama, le 24/07/2014 : <a href="http://www.numerama.com/magazine/30101-des-backdoors-sur-ios-tout-ce-qu-il-faut-savoir.html">Des backdoors sur iOS ? Tout ce qu’il faut savoir</a></li>
-                        <li>Bug Brother (Le Monde), le 11/02/2014 : <a href="http://bugbrother.blog.lemonde.fr/2014/02/11/le-gif-qui-revele-la-paranoia-de-la-nsaqui-espionne-donc-aussi-vos-enfants-parents-amis/">Le .gif qui révèle la paranoïa de la NSA, et pourquoi elle espionne aussi vos parents & amis</a></li>
-                        <li>Rue89, le 15/08/2013 :  <a href="http://rue89.nouvelobs.com/2013/08/15/les-messages-envoyes-compte-gmail-peuvent-etre-interceptes-alors-244954">Les e-mails envoyés sur Gmail peuvent être interceptés. Et alors ?</a></li>
-                        <li>Écrans.fr, le 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">Le FBI a accès aux comptes Facebook, Google, Yahoo!…</a></li>
-                        <li>Le Monde.fr, le 27/01/2014 : <a href="http://www.lemonde.fr/technologies/article/2014/01/27/des-applications-mobiles-utilisees-par-la-nsa-et-son-homologue-britannique_4355371_651865.html">Des applications de smartphones "mises sur écoute" par la NSA</a></li>
+
+<ul>
+                    <li>Numerama, le 13/05/2014 : <a href="http://www.numerama.com/magazine/29353-la-nsa-accusee-d-avoir-piege-les-routeurs-americains.html">[FR] La NSA acusada de haber puesto trampas dentro de los rúteres americanos</a></li>
+                    <li>Numerama, le 12/09/2014 : <a href="http://www.numerama.com/magazine/30539-yahoo-revele-le-chantage-des-usa-pour-espionner-les-internautes.html">[FR] Yahoo revela el chantaje de los Estados Unidos para espiar a los internautas</a></li>
+                    <li>Numerama, le 04/07/2013 : <a href="http://www.numerama.com/magazine/26435-prism-l-allemagne-qui-espionne-aussi-deconseille-le-web-americain.html">[FR] PRISM : Alemania, que espía también, desaconseja la web americana</a></li>
+                    <li>Le Monde, le 27/06/2013: <a href="http://www.lemonde.fr/sciences/article/2013/06/27/il-est-temps-de-parler-des-metadonnees_3437125_1650684.html">[FR] Ya es tiempo de hablar de los metadatos</a></li>
+                    <li>Atlantico, le 25/11/2013, <a href="http://www.atlantico.fr/pepites/espionnage-etat-veut-attaquer-nos-donnees-personnelles-908758.html">[FR] Espionaje : el Estado quiere atacarse a nuestros datos personales </a></li>
+                    <li>Le Monde, le 20/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/20/dgse-orange-des-liaisons-incestueuses_4386264_3210.html">[FR] Espionaje : cómo Orange y los servicios secretos cooperan</a></li>
+                        <li>Le Monde, le 15/09/2014: <a href="http://www.lemonde.fr/proche-orient/article/2014/09/15/terrorisme-un-projet-de-loi-dangereux_4487639_3218.html">[FR] Terrorismo : un proyecto de ley peligroso</a></li>
+                        <li>Présumés Terroristes, septembre 2014 : <a href="https://presumes-terroristes.fr/">[FR] Ley Terrorismo. ¿Sacrificar las libertades bajo el pretexto de luchar contra el terrorismo ? ¡NO!</a></li>
+                        <li>Europe1, 12/02/2014 : <a href="http://www.europe1.fr/high-tech/et-si-samsung-se-mettait-a-espionner-ses-propres-smartphones-1799713">[FR] ¿Y si Samsung se pusiera a "espiar" sus propios teléfonos inteligentes?</a></li>
+                        <li>Rue89, 13/12/2008 :<a href="http://rue89.nouvelobs.com/2008/12/13/ecoutes-ce-qui-est-possible-avec-votre-telephone-portable">[FR] Escuchas telefónicas: lo que es posible con su teléfono móvil</a></li>
+                        <li>Le Monde, 21/03/2014 : <a href="http://www.lemonde.fr/international/article/2014/03/21/la-france-suspectee-de-cyberattaque_4387232_3210.html">[FR] Francia sospechada de ataques cibernéticos</a></li>
+                        <li>Pixels (Le Monde), 14/09/2014 : <a href="http://www.lemonde.fr/pixels/article/2014/09/13/la-nsa-et-le-gchq-auraient-pirate-cinq-operateurs-telecom-allemands_4487181_4408996.html">[FR] La NSA y el GCHQ habrían hackeado a cinco compañías telefónicas alemanas</a></li>
+                        <li>Pixels (Le Monde), 16/09/2014:  <a href="http://www.lemonde.fr/pixels/breve/2014/09/16/tim-cook-estime-que-les-etats-unis-sont-alles-trop-loin-dans-la-collecte-des-donnees_4488172_4408996.html">[FR] Tim Cook estima que Estados Unidos ha ido demasiado lejos en la recogida de datos</a></li>
+                        <li>Liberation, 01/07/2014 :  <a href="http://www.liberation.fr/monde/2014/07/01/la-nsa-espionnait-193-pays-et-aussi-l-ue-et-le-fmi_1054881">[FR] La NSA espiaba a 193 países</a></li>
+                        <li>Numerama, 24/07/2014 : <a href="http://www.numerama.com/magazine/30101-des-backdoors-sur-ios-tout-ce-qu-il-faut-savoir.html">[FR] ¿Puertas traseras en  iOS? Todo lo que se debe saber</a></li>
+                        <li>Bug Brother (Le Monde), 11/02/2014 : <a href="http://bugbrother.blog.lemonde.fr/2014/02/11/le-gif-qui-revele-la-paranoia-de-la-nsaqui-espionne-donc-aussi-vos-enfants-parents-amis/">[FR] La imagen .gif que revela la paranoia de la NSA, y por qué la NSA espía también a nuestros parientes y amigos</a></li>
+                        <li>Rue89, 15/08/2013 :  <a href="http://rue89.nouvelobs.com/2013/08/15/les-messages-envoyes-compte-gmail-peuvent-etre-interceptes-alors-244954">[FR] Los mensajes enviados en Gmail pueden ser interceptados. ¿Y qué?</a></li>
+                        <li>Écrans.fr, 07/06/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/06/07/le-fbi-a-acces-aux-comptes-facebook-google-yahoo_909023">[FR] ¡EL FBI tiene acceso a las cuentas Facebook, Google, Yahoo!…</a></li>
+                        <li>Le Monde.fr,  27/01/2014 : <a href="http://www.lemonde.fr/technologies/article/2014/01/27/des-applications-mobiles-utilisees-par-la-nsa-et-son-homologue-britannique_4355371_651865.html">[FR] Ciertas aplicaciones de smartphones  "pinchadas" por la NSA</a></li>
                     </ul>';
-$t['home']['dang']['p']     = 'Vie privée';
-$t['home']['dang']['pp']    = 'Nos données sont une extension de nous-mêmes. Elles peuvent indiquer où nous sommes, avec qui, notre orientation politique
-                    ou sexuelle, les sites que nous avons visités, notre recette préférée, les sujets qui nous intéressent, etc.<br/>
-                    Si une donnée seule, prise indépendamment, n’est pas forcément sensible, un ensemble de données peut le devenir
-                    (par exemple si vous avez fait des recherches sur le cancer avant de souscrire à une assurance-vie).<br/>
-                    Dans un monde où tout devient numérique (lecture, TV, téléphonie, musique, réseau social, etc.), <strong>notre vie privée
-                    est un élément essentiel de ce qui fait de nous une personne singulière</strong>. Une personne malveillante qui aurait accès à votre
-                    smartphone peut en apprendre suffisamment sur vous en quelques minutes pour vous causer des torts très importants (usurpation d’identité sur
-                    Facebook, détournement d’informations professionnelles, achats effectués sans votre accord, etc.).';
+
+                    
+  
+$t['home']['dang']['p']     = 'Vida privada;
+$t['home']['dang']['pp']    = 'Nuestros datos son una extensión de nosotros mismos. Pueden indicar dónde estamos,  
+        con quién, nuestra orientación política o sexual, los sitios internet que hemos visitado, nuestra receta predilecta, los
+   temas que nos interesan, etc.<br/>
+                    Si un solo dato, tomado independientemente, no es forzosamente sensible, en cambio un conjunto de datos
+                    puede serlo (por ejemplo si usted hizo búsquedas sobre el cáncer justo antes de suscribir una póliza de
+                     seguro de vida).<br/>
+                    En un mundo donde todo se vuelve digital (lectura, TV, telefonía, música, red social, etc.), <strong>nuestra vida privada
+                    es un elemento esencial de lo que hace de nosotros personas singulares</strong>. Una persona malévola que tendría acceso a su
+                    smartphone puede aprender en unos minutos sobre usted lo bastante para perjudicarle de manera considerable 
+                    (usurpación de identidad en Facebook, uso indebido de informaciones profesionales, compras hechas sin su
+                     acuerdo, etc.).';
 $t['home']['dang']['prefs'] = '
                     <ul>
-                        <li>Numerama, le 17/05/2014 : <a href="http://www.numerama.com/magazine/29400-et-maintenant-google-lit-vos-factures.html">Et maintenant Google lit vos factures</a></li>
-                        <li>Numerama, le 06/02/2014 : <a href="http://www.numerama.com/magazine/28299-yahoo-transfere-votre-vie-privee-en-irlande.html">Yahoo transfère votre vie privée en Irlande</a></li>
-                        <li>L’Expansion, le 16/01/2014 : <a href="http://lexpansion.lexpress.fr/high-tech/e-commerce-vos-donnees-personnelles-sont-en-danger_1326103.html">E-commerce: vos données personnelles sont en danger</a></li>
-                        <li>Numerama, le 21/02/2014 : <a href="http://www.numerama.com/magazine/28515-donnees-personnelles-la-chute-de-confiance.html">Données personnelles : la chute de confiance</a></li>
-                        <li>INRIA, le 12/04/2013 : <a href="http://hal.inria.fr/hal-00812734">Internet du futur : performances et respect de la vie privée</a></li>
-                        <li>Numerama, le 04/08/2014 : <a href="http://www.numerama.com/magazine/30187-google-a-signale-un-usager-qui-avait-envoye-des-photos-pedopornographiques-par-mail.html">Google a signalé un usager qui avait envoyé des photos pédopornographiques par mail</a></li>
-                        <li>Rue89, le 03/07/2013 : <a href="http://rue89.nouvelobs.com/2013/07/31/payer-carte-sans-code-sans-contact-sans-risque-244508">Payer par carte mais sans code : le "sans contact", pas sans risque</a></li>
-                        <li>Slate, le 03/10/2014 : <a href="http://www.slate.fr/story/92887/apple-google-facebook-sante">Après Apple et Google, Facebook se penche aussi sur notre santé</a></li>
-                        <li>CNIL, mai 2014 : <a href="http://www.cnil.fr/fileadmin/documents/La_CNIL/publications/DEIP/CNIL_CAHIERS_IP2_WEB.pdf ">Le corps, nouvel objet connecté (Cahiers IP num. 2)</a></li>
-                        <li>Numerama, le 22/08/2014 : <a href="http://www.numerama.com/magazine/30323-apple-approche-les-mutuelles-pour-divulguer-le-comportement-des-assures.html">Apple approche les mutuelles pour divulguer le comportement des assurés</a></li>
-                        <li>JDN, le 23/01/2014 : <a href="http://www.journaldunet.com/ebusiness/le-net/iwatch-apple-incroyable.shtml">Apple embauche des experts en contrôles sanguins</a></li>
-                        <li>Challenges, le 06/06/2014 : <a href="http://www.challenges.fr/entreprise/20140606.CHA4685/comment-l-assureur-axa-va-surveiller-votre-conduite.html">Comment l’assureur Axa va surveiller votre conduite</a></li>
-                        <li>UFC-Que-Choisir, le 25/03/2014 : <a href="http://www.quechoisir.org/telecom-multimedia/internet/communique-donnees-personnelles-l-ufc-que-choisir-attaque-les-reseaux-sociaux-et-appelle-les-consommateurs-a-garder-la-main-sur-leurs-donnees"> L’UFC-Que Choisir attaque les réseaux sociaux et appelle les consommateurs à garder la main sur leurs données</a></li>
-                        <li>Ecrans.fr, le 22/01/2011 :  <a href="http://ecrans.liberation.fr/ecrans/2011/10/22/facebook-la-memoire-cachee_956055">Facebook: la mémoire cachée</a></li>
-                        <li>Clubic, le 25/03/2013 : <a href="http://www.clubic.com/internet/google/actualite-549552-google-reader-fermeture-liee-problematiques-vie-privee.html">Google Reader : une fermeture liée aux problématiques de vie privée ?</a></li>
-                        <li>Rue89, le 14/01/2014 : <a href="http://rue89.nouvelobs.com/2014/01/14/google-lance-les-objets-connectes-sincruste-chez-249023">Google se lance dans les objets connectés et s’incruste chez vous</a></li>
-                        <li>Numerama le 30/06/2014 : <a href="http://www.numerama.com/magazine/29852-facebook-a-teste-sa-capacite-de-manipulation-mentale-des-foules.html">Facebook a testé sa capacité de manipulation mentale des foules</a></li>
-                        <li>Numerama, le 18/08/2014 : <a href="http://www.numerama.com/magazine/30290-comment-chrome-envoie-tous-vos-mots-de-passe-a-google.html">Comment Chrome envoie tous vos mots de passe à Google</a></li>
-                        <li>Rue89, le 29/08/2014 : <a href="http://rue89.nouvelobs.com/2014/08/29/iphone-6-apres-lempreinte-digitale-apple-veut-ficher-etat-sante-254496">iPhone 6 : après l’empreinte digitale, Apple veut ficher votre état de santé</a></li>
-                        <li>LDN, le 17/04/2014 : <a href="http://ldn-fai.net/je-nai-rien-a-cacher/">Je n’ai rien à cacher</a></li>
-                        <li>Numerama, le 26/09/2014 : <a href="http://www.numerama.com/magazine/30707-facebook-sait-ou-vous-passez-votre-lune-de-miel-maj.html">Même si vous dites rien, Facebook sait où vous passez votre lune de miel</a></li>
-                        <li>Journal du Net, le 16/07/14 : <a href="http://www.journaldunet.com/ebusiness/le-net/informations-rassemblees-par-google.shtml">Soyons honnêtes, la quantité  d’informations que Google rassemble à notre sujet est effrayante</a></li>
-                        <li>Big Browser, le 18/11/14 : <a href="http://bigbrowser.blog.lemonde.fr/2014/11/18/comment-avoir-bonne-presse-un-dirigeant-duber-propose-de-fouiller-la-vie-privee-des-journalistes-trop-critiques/">Comment avoir bonne presse ? Un dirigeant d’Uber propose de fouiller la vie privée des journalistes trop critiques</a></li>
+                        <li>Numerama, 17/05/2014 : <a href="http://www.numerama.com/magazine/29400-et-maintenant-google-lit-vos-factures.html">[FR] Y ahora Google lee sus facturas</a></li>
+                        <li>Numerama, 06/02/2014 : <a href="http://www.numerama.com/magazine/28299-yahoo-transfere-votre-vie-privee-en-irlande.html">[FR] Yahoo transfiere nuestras vidas privadas en Irlanda</a></li>
+                        <li>L’Expansion,  16/01/2014 : <a href="http://lexpansion.lexpress.fr/high-tech/e-commerce-vos-donnees-personnelles-sont-en-danger_1326103.html">[FR] E-comercio: sus datos personales están en peligro</a></li>
+                        <li>Numerama, 21/02/2014 : <a href="http://www.numerama.com/magazine/28515-donnees-personnelles-la-chute-de-confiance.html">[FR] Datos personales : la pérdida de confianza</a></li>
+                        <li>INRIA,  12/04/2013 : <a href="http://hal.inria.fr/hal-00812734">[FR] Internet del futuro : rendimiento y respeto de la vida privada</a></li>
+                        <li>Numerama,  04/08/2014 : <a href="http://www.numerama.com/magazine/30187-google-a-signale-un-usager-qui-avait-envoye-des-photos-ps-par-mail.html">Google denunció a un usuario por haber mandado fotos pedopornográficas por mail</a></li>
+                        <li>Rue89,  03/07/2013 : <a href="http://rue89.nouvelobs.com/2013/07/31/payer-carte-sans-code-sans-contact-sans-risque-244508">[FR] Pagar con la tarjeta pero sin número de identificación personal : el modo "sin contacto", pero no sin riesgo</a></li>
+                        <li>Slate, 03/10/2014 : <a href="http://www.slate.fr/story/92887/apple-google-facebook-sante">[FR] Después 
+                        de  Apple y Google, Facebook reflexiona también sobre nuestra salud</a></li>
+                        <li>CNIL, mayo 2014 : <a href="http://www.cnil.fr/fileadmin/documents/La_CNIL/publications/DEIP/CNIL_CAHIERS_IP2_WEB.pdf ">[FR] El cuerpo, nuevo objeto conectado (Cahiers IP num. 2)</a></li>
+                        <li>Numerama, 22/08/2014 : <a href="http://www.numerama.com/magazine/30323-apple-approche-les-mutuelles-pour-divulguer-le-comportement-des-assures.html">[FR] Apple se acerca a las Mutuas para divulgar el comportamiento de los aseguradosl</a></li>
+                        <li>JDN, 23/01/2014 : <a href="http://www.journaldunet.com/ebusiness/le-net/iwatch-apple-incroyable.shtml">[FR] Apple contrata a unos expertos en grupos sanguíneos</a></li>
+                        <li>Challenges, 06/06/2014 : <a href="http://www.challenges.fr/entreprise/20140606.CHA4685/comment-l-assureur-axa-va-surveiller-votre-conduite.html">[FR] Cómo el seguro Axa va a vigilar su modo de conducir</a></li>
+                        <li>UFC-Que-Choisir,  25/03/2014 : <a href="http://www.quechoisir.org/telecom-multimedia/internet/communique-donnees-personnelles-l-ufc-que-choisir-attaque-les-reseaux-sociaux-et-appelle-les-consommateurs-a-garder-la-main-sur-leurs-donnees">[FR]  La UFC-Que Choisir ataca a las redes sociales y pide a los consumidores que se mantengan dueños de sus datos</a></li>
+                        <li>Ecrans.fr, 22/01/2011 :  <a href="http://ecrans.liberation.fr/ecrans/2011/10/22/facebook-la-memoire-cachee_956055">[FR] Facebook: la memoria escondida</a></li>
+                        <li>Clubic, 25/03/2013 : <a href="http://www.clubic.com/internet/google/actualite-549552-google-reader-fermeture-liee-problematiques-vie-privee.html">[FR] Google Reader : ¿un cierre relacionado con las problemáticas de vida privada ?</a></li>
+                        <li>Rue89, 14/01/2014 : <a href="http://rue89.nouvelobs.com/2014/01/14/google-lance-les-objets-connectes-sincruste-chez-249023">[FR] Google se dedicará a los objetos conectados y se cuela en la vida de uno</a></li>
+                        <li>Numerama 30/06/2014 : <a href="http://www.numerama.com/magazine/29852-facebook-a-teste-sa-capacite-de-manipulation-mentale-des-foules.html">[FR] Facebook ha tanteado su capacidad de manipulación mental de las muchedumbres</a></li>
+                        <li>Numerama, 18/08/2014 : <a href="http://www.numerama.com/magazine/30290-comment-chrome-envoie-tous-vos-mots-de-passe-a-google.html">[FR] Cómo Chrome manda todas las contraseñas de uno  a Google</a></li>
+                        <li>Rue89, 29/08/2014 : <a href="http://rue89.nouvelobs.com/2014/08/29/iphone-6-apres-lempreinte-digitale-apple-veut-ficher-etat-sante-254496">[FR] iPhone 6: después de la huella digital, Apple quiere fichar  su estado de salud</a></li>
+                        <li>LDN, 17/04/2014 : <a href="http://ldn-fai.net/je-nai-rien-a-cacher/">[FR] No tengo nada que esconderr</a></li>
+                        <li>Numerama, 26/09/2014 : <a href="http://www.numerama.com/magazine/30707-facebook-sait-ou-vous-passez-votre-lune-de-miel-maj.html">[FR] Aunque no diga nada Facebook sabe donde usted  pasa la luna de miel</a></li>
+                        <li>Journal du Net, 16/07/14 : <a href="http://www.journaldunet.com/ebusiness/le-net/informations-rassemblees-par-google.shtml">[FR] Seamos honestos, la cantidad de informaciones que Google recopila sobre nosotros es aterradora</a></li>
+                        <li>Big Browser, 18/11/14 : <a href="http://bigbrowser.blog.lemonde.fr/2014/11/18/comment-avoir-bonne-presse-un-dirigeant-duber-propose-de-fouiller-la-vie-privee-des-journalistes-trop-critiques/">[FR] Cómo tener buena fama ? Un dirigente  de Uber propone hurgar en la vida privada de los periodistas demasiado críticos</a></li>
                     </ul>';
-$t['home']['dang']['c']     = 'Centralisation';
-$t['home']['dang']['cp']    = 'Les acteurs majeurs de l’internet sont devenus de véritables pieuvres : Facebook possède WhatsApp et Instagram,
-                    Google détient Youtube et Waze, Microsoft distribue Skype, etc.<br/> Cette concentration des acteurs pose de
-                    multiples problèmes : que se passera-t-il si Facebook met la clé sous la porte ? Comment faire des recherches si Google subit une panne ?
-                    <strong>Nous devenons peu à peu dépendants de services fournis par un petit nombre d’acteurs.</strong> Par exemple, Apple (iPhone),
-                    Google (Android) et Microsoft (Windows Phone) se partagent la quasi-totalité du marché des systèmes d’exploitation pour smartphones.<br/>
-                    Par ailleurs, la taille de ces acteurs bride l’innovation : difficile de lancer une start-up face à Apple ou Google
-                    (respectivement première et deuxième capitalisations boursièresmondiale).<br/>
-                    Enfin, le manque de diversité de ces géants leur donne aussi la possibilité non seulement de collecter facilement
-                    des informations personnelles, mais aussi d’altérer l’information qu’ils diffusent (une recherche Google sur le mot « nucléaire »
-                    n’affichera pas les mêmes liens suivant que Google vous perçoit comme un militant écologiste ou un pro-nucléaire).';
+
+     
+$t['home']['dang']['c']     = 'Centralización';
+$t['home']['dang']['cp']    = 'Las mayores empresas actrices de Internet se han vuelto unos verdaderos calamares gigantes : Facebook posee WhatsApp e Instagram, Google tiene Youtube y Waze, Microsoft distribuye Skype, etc.<br/> Esta concentración de los actores plantea problemas múltiples: 
+                    ¿qué pasará si Facebook cierra el chiringuito ? Cómo hacer búsquedas si Google tiene una avería ?
+                <strong>Nos vamos volviendo poco a poco dependientes de unos servicios suministrados por un 
+   pequeño número de actores .</strong> Por ejemplo, Apple (iPhone), Google (Android) y Microsoft (Windows Phone) se reparten la 
+   casi totalidad del mercado de los sistemas operativos para smatphones.<br/>
+                    Por otra parte, el tamaño de dichos actores frena la innovación: es difícil crear una empresa emergente 
+                    frente a Apple o Google (respectivamente primera y segunda capitalizaciones bursátiles mundiales ).<br/>
+                    Por fin, la falta de diversidad de estos gigantes también les da la posibilidad no sólo de recoger fácilmente
+                    informaciones personales, sino también de falsificar la información que difunden (una búsqueda en Google sobre la 
+                    palabra "nuclear" no le dará los mismos enlaces si Google le percibe a usted como un militante ecologista  o como un partidario de
+                    la energía nuclear).';
 $t['home']['dang']['crefs'] = '
                     <ul>
-                        <li>NextInpact, le 14/06/2014 : <a href="http://www.nextinpact.com/news/88112-les-geants-net-generent-nouveaux-rapports-force.htm">Les géants du Net génèrent de nouveaux rapports de force</a></li>
-                        <li>Numerama, le 09/03/2013 : <a href="http://www.nextinpact.com/news/78092-edito-la-domination-et-centralisation-ennemis-numero-web.htm">La domination et la centralisation, les ennemis numéro un du web</a></li>
-                        <li>Droit et Technologies, le 25/02/2013 : <a href="http://www.droit-technologie.org/actuality-1577/cloud-la-perte-totale-des-donnees-est-possible-la-preuve-par-2e2-et.html">Cloud : la perte totale des données est possible. La preuve par 2e2 et Megaupload.</a></li>
-                        <li>INRIA, le 27/09/2011: <a href="http://www.inria.fr/actualite/actualites-inria/massification-du-web-les-consequences">La « massification » du web transforme les relations sociales</a></li>
-                        <li>INRIA, le 13/03/2013 : <a href="http://www.inria.fr/centre/lille/agenda/data-et-big-data-le-nouvel-or-noir">Data et Big Data : le nouvel or noir?</a></li>
-                        <li>Le Monde, le 12/06/2013: <a href="http://www.lemonde.fr/technologies/chat/2013/06/12/surveillance-d-internet-peut-on-encore-proteger-notre-vie-privee_3428413_651865.html">Pourquoi stocker toutes nos vies sur des serveurs aux Etats-Unis?</a></li>
-                        <li>Rue89, le 17/07/2009 : <a href="http://rue89.nouvelobs.com/rue69/2009/07/13/pour-sauver-la-vertu-de-son-iphone-apple-censure-a-tout-va">Pour sauver la vertu de son iPhone, Apple censure à tout va</a></li>
-                        <li>Nextinpact, le 08/04/2013 :  <a href="http://www.nextinpact.com/news/78883-appgratis-supprime-app-store-pour-son-reperage-promotions.htm">AppGratis supprimé de l’App Store pour son repérage des promotions</a></li>
-                        <li>Ecrans.fr, le 25/04/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/04/25/google-devoile-une-flambee-de-la-censure_957911">Google dévoile une flambée de la censure</a></li>
-                        <li>Nextinpact, le 24/04/2014 : <a href="http://www.nextinpact.com/news/87203-comment-etats-unis-veulent-enterrer-neutralite-net.htm">Comment les États-Unis veulent enterrer la neutralité du net</a></li>
+                        <li>NextInpact, 14/06/2014 : <a href="http://www.nextinpact.com/news/88112-les-geants-net-generent-nouveaux-rapports-force.htm">[FR] Los gigantes de Internet crean nuevas relaciones de poder</a></li>
+                        <li>Numerama, 09/03/2013 : <a href="http://www.nextinpact.com/news/78092-edito-la-domination-et-centralisation-ennemis-numero-web.htm">[FR] La dominación y la centralización, los enemigos número uno de la web</a></li>
+                        <li>Droit et Technologies, 25/02/2013 : <a href="http://www.droit-technologie.org/actuality-1577/cloud-la-perte-totale-des-donnees-est-possible-la-preuve-par-2e2-et.html">[FR] Informática en la nube: es posible perder totalmente los propios datos. Lo demuestran 2e2 y Megaupload.</a></li>
+                        <li>INRIA,  27/09/2011: <a href="http://www.inria.fr/actualite/actualites-inria/massification-du-web-les-consequences">[FR] La «masificación» de la web transforma les relaciones sociales </a></li>
+                        <li>INRIA, 13/03/2013 : <a href="http://www.inria.fr/centre/lille/agenda/data-et-big-data-le-nouvel-or-noir">[FR] Data y Big Data: ¿el nuevo orden?</a></li>
+                        <li>Le Monde, 12/06/2013: <a href="http://www.lemonde.fr/technologies/chat/2013/06/12/surveillance-d-internet-peut-on-encore-proteger-notre-vie-privee_3428413_651865.html">[FR] ¿Por qué almacenar nuestras vidas enteras en los servidores de Estados Unidos?</a></li>
+                        <li>Rue89, 17/07/2009 : <a href="http://rue89.nouvelobs.com/rue69/2009/07/13/pour-sauver-la-vertu-de-son-iphone-apple-censure-a-tout-va">[FR] Para salvar la virtud de su iPhone, Apple censura a lo loco</a></li>
+                        <li>Nextinpact, 08/04/2013 :  <a href="http://www.nextinpact.com/news/78883-appgratis-supprime-app-store-pour-son-reperage-promotions.htm">[FR] AppGratis cancelado  de App Store porque rastreaba las rebajas</a></li>
+                        <li>Ecrans.fr,  25/04/2013 : <a href="http://ecrans.liberation.fr/ecrans/2013/04/25/google-devoile-une-flambee-de-la-censure_957911">[FR] Google revela un aumento súbito de la censura</a></li>
+                        <li>Nextinpact, 24/04/2014 : <a href="http://www.nextinpact.com/news/87203-comment-etats-unis-veulent-enterrer-neutralite-net.htm">[FR] Cómo Estados Unidos quiere enterrar la neutralidad de Internet</a></li>
                     </ul>';
-$t['home']['dang']['f']     = 'Fermeture';
-$t['home']['dang']['fp']    = 'Les services web affichés sur votre ordinateur ou votre smartphone sont généralement exécutés dans le
-                    « cloud » : des serveurs dispersés sur la planète, stockant à la fois vos données (mails, photos, fichiers, etc.) mais aussi le code
-                    des applications.<br>
-                    Pour les données, cela pose le problème de leur pérennité (que deviennent vos fichiers si Dropbox ferme demain ?)
-                    mais aussi de votre capacité à changer de services (comment faire pour récupérer l’ensemble de vos photos sur Facebook ou Picasa, et les
-                    réinsérer avec les commentaires dans un autre service ?).<br>
-                    Pour les applications, cela implique que <strong>vous êtes à la merci de changements impromptus selon le bon vouloir du fournisseur</strong>
-                    (ajout de publicité, modification de l’interface, etc.), mais surtout que vous n’avez quasiment aucun contrôle sur ce que l’application peut
-                    faire. Ce sont des « boîtes noires » qui peuvent agir de façon malveillante (envoyer des SMS à votre insu, exécuter du code indésirable, etc.).<br>
-                    Bref, ces sociétés nous enferment dans des cages dorées, certes, mais des cages malgré tout !';
+              
+                   
+         
+$t['home']['dang']['f']     = 'Código cerrado';
+$t['home']['dang']['fp']    = 'Los servicios web que usted usa en su computadora o su smartphone se ejecutan normalmente en la «nube» :
+                    algunos servidores diseminados por el planeta , que almacenan tanto sus datos (mails, fotos, archivos, etc.) como el 
+                    código de las aplicaciones<br>
+                    Para los datos, se plantea el problema de su perennidad (¿qué será en efecto de sus ficheros archivos si Dropbox cierra mañana?)
+                    pero también el de la capacidad de usted de cambiar de servicio (¿cómo hará para recuperar la totalidad de sus fotos en
+                     Facebook o Picasa, y volver a insertarlas con los comentarios dentro de otro servicio?).<br>
+                    En cuanto a las aplicaciones, ello implica que <strong>usted queda a merced de cambios imprevistos según los caprichos de su proveedor </strong>(incorporación de publicidad, modificación de la interfaz, etc.), pero sobre todo que no tiene casi ningún control sobre lo
+                    que la aplicación puede hacer. Son «cajas negras» que pueden actuar de manera maliciosa (mandar SMS a sus espaldas, 
+                    ejecutar código indeseable, etc.).<br>
+                    Para terminar, estas compañías nos encierran en jaulas doradas, es cierto, ¡pero jaulas a pesar de todo!';
 $t['home']['dang']['frefs'] = '
                     <ul>
-                        <li>CNIL, le 03/01/2014 : <a href="http://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000028450267&fastReqId=2000051504&fastPos=1">Exemple de sanction de la CNIL à l’encontre de Google</a></li>
-                        <li>01Net, le 23/11/2012 : <a href="http://www.01net.com/editorial/580825/securite-le-cloud-est-plus-dangereux-que-les-virus/">Sécurité : le cloud est plus dangereux que les virus</a></li>
-                        <li>CNIL, le 25/06/2012 : <a href="http://www.cnil.fr/fileadmin/images/la_cnil/actualite/Recommandations_pour_les_entreprises_qui_envisagent_de_souscrire_a_des_services_de_Cloud.pdf">Recommandations pour les entreprises qui envisagent de souscrire à des services de Cloud computing</a></li>
-                        <li>INRIA, le 13/12/2013 : <a href="http://hal.inria.fr/hal-00918398">Quand les terminaux mobiles jouent les mouchards de poche</a></li>
-                        <li>INAGlobal, le 04/02/2014 : <a href="http://www.inaglobal.fr/numerique/article/facebook-nen-fais-pas-une-affaire-de-donnees-personnelles">Facebook, n’en fais pas une affaire de données personnelles!</a></li>
-                        <li>Rue89, le 03/02/2013 : <a href="http://rue89.nouvelobs.com/2013/02/03/qui-appartiennent-vos-donnees-sur-internet-mauvaises-nouvelles-et-conseils-239198">A qui appartiennent vos données sur Internet ? Mauvaises nouvelles et conseils</a></li>
-                        <li>Atlantico, le 16/06/2014 : <a href="http://www.atlantico.fr/decryptage/quelle-cible-publicitaire-etes-pourquoi-avez-peut-etre-interet-utiliser-fonctions-facebook-et-google-pour-connaitre-que-geants-1617661.html">Quelle cible publicitaire êtes-vous?</a></li>
-                        <li>Nextinpact, le 22/07/2009 : <a href="http://www.nextinpact.com/archive/52115-amazon-kindle-ebook-disparaitre-orwell.htm">Des ouvrages d’Orwell supprimés du Kindle par Amazon</a></li>
-                        <li>Rue89, le 18/11/2013 : <a href="http://rue89.nouvelobs.com/2013/11/18/google-facebook-apple-superpuissances-ont-privatise-internet-247615">Google, Facebook, Apple… : ces superpuissances ont privatisé Internet</a></li>
-                        <li>Liberation.fr, le 07/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/07/la-fin-du-porno-sur-vine-un-espace-de-liberte-en-moins_985232">La fin du porno sur Vine, un espace de liberté en moins</a></li>
-                        <li>Liberation.fr, le 14/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/14/apple-censure-un-roman-francais-pour-cause-de-seins-nus_987120">Apple censure un roman français pour cause de seins nus</a></li>
-                        <li>Rue89, le 29/05/2014 : <a href="http://rue89.nouvelobs.com/2014/05/29/chantage-google-apple-amazon-les-tontons-ecrabouilleurs-252521">Chantage : Google, Apple et Amazon, les tontons écrabouilleurs</a></li>
-                        <li>Numerama, le 09/08/2014 : <a href="http://www.numerama.com/magazine/30226-quand-facebook-est-en-panne-le-trafic-des-sites-baisse.html">Quand Facebook est en panne, le trafic des sites baisse</a></li>
-                        <li>NextInpact, le 22/08/2014 : <a href="http://www.nextinpact.com/news/89379-quand-twitter-deraille-avec-timeline-ses-utilisateurs.htm">Quand Twitter déraille avec la timeline de ses utilisateurs</a></li>
+                        <li>CNIL,  03/01/2014 : <a href="http://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000028450267&fastReqId=2000051504&fastPos=1">[FR] Ejemplo de sanción de la CNIL contra Google</a></li>
+                        <li>01Net, 23/11/2012 : <a href="http://www.01net.com/editorial/580825/securite-le-cloud-est-plus-dangereux-que-les-virus/">[FR] Seguridad: la computación en la nube más peligrosa que los virus</a></li>
+                        <li>CNIL, 25/06/2012 : <a href="http://www.cnil.fr/fileadmin/images/la_cnil/actualite/Recommandations_pour_les_entreprises_qui_envisagent_de_souscrire_a_des_services_de_Cloud.pdf">[FR] Recomendaciones para las empresas que proyectan suscribir servicios de computación en la nube</a></li>
+                        <li>INRIA, 13/12/2013 : <a href="http://hal.inria.fr/hal-00918398">[FR] Cuando los terminales móviles se hacen los soplones
+                        de bolsillo</a></li>
+                        <li>INAGlobal, 04/02/2014 : <a href="http://www.inaglobal.fr/numerique/article/facebook-nen-fais-pas-une-affaire-de-donnees-personnelles">[FR] ¡No hagas de Facebook un asunto de datos personales!</a></li>
+                        <li>Rue89,  03/02/2013 : <a href="http://rue89.nouvelobs.com/2013/02/03/qui-appartiennent-vos-donnees-sur-internet-mauvaises-nouvelles-et-conseils-239198">[FR] ¿A quién pertenecen sus datos en Internet? Malas noticias y consejos</a></li>
+                        <li>Atlantico,  16/06/2014 : <a href="http://www.atlantico.fr/decryptage/quelle-cible-publicitaire-etes-pourquoi-avez-peut-etre-interet-utiliser-fonctions-facebook-et-google-pour-connaitre-que-geants-1617661.html">[FR] ¿Qué blanco publicitario es usted?</a></li>
+                        <li>Nextinpact, 22/07/2009 : <a href="http://www.nextinpact.com/archive/52115-amazon-kindle-ebook-disparaitre-orwell.htm">[FR] Unas obras de Orwell canceladas del  Kindle por Amazon</a></li>
+                        <li>Rue89,  18/11/2013 : <a href="http://rue89.nouvelobs.com/2013/11/18/google-facebook-apple-superpuissances-ont-privatise-internet-247615">[FR] Google, Facebook, Apple… : esas superpotencias han privatizado Internet</a></li>
+                        <li>Liberation.fr, 07/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/07/la-fin-du-porno-sur-vine-un-espace-de-liberte-en-moins_985232">[FR] El fin de la pornografía en Vine, un espacio menos de libertad</a></li>
+                        <li>Liberation.fr, 14/03/2014 : <a href="http://next.liberation.fr/sexe/2014/03/14/apple-censure-un-roman-francais-pour-cause-de-seins-nus_987120">[FR] Apple censura una novela francesa por causa de senos desnudos</a></li>
+                        <li>Rue89, 29/05/2014 : <a href="http://rue89.nouvelobs.com/2014/05/29/chantage-google-apple-amazon-les-tontons-ecrabouilleurs-252521">[FR] Chantaje : Google, Apple y Amazon, los agentes secretos que lo apabullan todo</a></li>
+                        <li>Numerama, 09/08/2014 : <a href="http://www.numerama.com/magazine/30226-quand-facebook-est-en-panne-le-trafic-des-sites-baisse.html">[FR] Cuando Facebook deja de funcionar, el tráfico de los sitios disminuye</a></li>
+                        <li>NextInpact, 22/08/2014 : <a href="http://www.nextinpact.com/news/89379-quand-twitter-deraille-avec-timeline-ses-utilisateurs.htm">[FR] Cuando Twitter descarrila con la línea de tiempo de sus usuarios</a></li>
                     </ul>';
-// Accueil - Nos propositions
-$t['home']['prop']['btn']   = 'Nos propositions';
-$t['home']['prop']['title'] = 'Ce que nous proposons';
-$t['home']['prop']['intro'] = 'Framasoft souhaite faire face à ces dangers menaçant nos vies numériques en proposant des services libres, éthiques,
-                décentralisés et solidaires.';
-    // LEDS (Libre, Éthique, Décentralisé, Solidaire)
-$t['home']['prop']['l']     = 'Liberté';
-$t['home']['prop']['lp1']   = 'L’histoire d’Internet elle-même est une histoire de logiciels libres, tant du point de vue des standards que des protocoles employés.
-                Sa popularité et son potentiel font aussi des envieux, et de grandes entreprises aimeraient s’en attribuer le contrôle en imposant
-                du code fermé dans des systèmes verrouillés et non-interopérables.';
-$t['home']['prop']['lp2']   = 'Pour qu’Internet reste fidèle à ses principes fondateurs qui l’ont conduit à son succès, nous devons y trouver des applications libres,
-                c’est-à-dire dont le code source est ouvert, accessible et sous licences libres.';
-$t['home']['prop']['lp3']   = 'Framasoft s’engage à n’utiliser que des logiciels au code source « libre ».';
-$t['home']['prop']['e']     = 'Éthique';
-$t['home']['prop']['ep1']   = 'Nous plébiscitons un Internet fait de partage et d’indépendance.';
-$t['home']['prop']['ep2']   = 'L’exploitation, la surveillance, la censure et l’appropriation des données sont
-                des valeurs que nous refusons au profit de la transparence (la probité), de l’exposition
-                claire des conditions d’utilisation des services, et du refus des discriminations.';
-$t['home']['prop']['ep3']   = 'Framasoft s’engage à ne pas exploiter les données des utilisateurs de ses services, et à promouvoir un Web ouvert et équitable.';
-$t['home']['prop']['d']     = 'Décentralisation';
-$t['home']['prop']['dp1']   = 'L’intelligence d’Internet doit reposer sur chaque acteur du réseau dans une
-                dynamique de partage de pair à pair, pour éviter de créer un Minitel 2.0.';
-$t['home']['prop']['dp2']   = 'Pour assurer l’égalité de tous, citoyens comme entrepreneurs, les monopoles doivent
-                non seulement être évités, mais empêchés de s’accaparer les données personnelles ou publiques.';
-$t['home']['prop']['dp3']   = 'En expliquant, par des tutoriels, comment multiplier les solutions libres permettant un
-                Internet plus équitable, nous facilitons l’essaimage du code et diversifions les usages.';
-$t['home']['prop']['dp4']   = 'Framasoft s’engage à faciliter l’auto-hébergement et l’interopérabilité, afin de ne pas «&nbsp;enfermer&nbsp;» ses utilisateurs.';
-$t['home']['prop']['s']     = 'Solidarité';
-$t['home']['prop']['sp1']   = 'À travers les services que nous déployons, nous promouvons un modèle économique
-                fondé sur la mutualisation des coûts, le partage des ressources, et l’accessibilité
-                au plus grand nombre.';
-$t['home']['prop']['sp2']   = 'Ce modèle possède aussi un caractère éducatif car nous pensons qu’en documentant
-                le déploiement des services, un grand nombre d’utilisateurs seront en mesure de partager
-                à leur tour ces ressources.';
-$t['home']['prop']['sp3']   = 'Nous pensons que ne pas infantiliser les utilisateurs et faire partager la responsabilité de l’utilisation des services permettra de réguler les abus.';
-$t['home']['prop']['sp4']   = 'Framasoft s’engage à promouvoir le respect et l’autonomie de ces utilisateurs (tant que la réciproque sera vraie).';
+           
+// Accueil - Nuestros proyectos
+$t['home']['prop']['btn']   = 'Nuestros proyectos';
+$t['home']['prop']['title'] = 'Lo que proponemos';
+$t['home']['prop']['intro'] = 'Framasoft desea enfrentarse a esos peligros que amenazan nuestras vidas digitales proponiendo servicios libres, éticos,
+                descentralizados y solidarios.';
+    // LEDS (Libre, Ético, Descentralizado, Solidario)
+$t['home']['prop']['l']     = 'Libertad';
+$t['home']['prop']['lp1']   = 'La historia de Internet es en sí una historia de software libre, desde el punto de vista de los estándares así como 
+de los protocolos utilizados.
+                Su popularidad y su potencial crean envidiosos, y algunas grandes empresas bien quisieran controlarlos imponiendo 
+                código cerrado dentro de unos sistemas bloqueados y no interoperables.';
+$t['home']['prop']['lp2']   = 'Para que Internet quede fiel a sus principios fundadores que lo han conducido al éxito, debemos encontrar en él 
+               aplicaciones de software libre, esto es,  cuyo código fuente esté abierto, asequible y bajo licencias libres.';
+$t['home']['prop']['lp3']   = 'Framasoft se compromete a no utilizar sino  programas de código fuente « libre ».';
+$t['home']['prop']['e']     = 'Ético';
+$t['home']['prop']['ep1']   = 'Respaldamos totalmente un Internet de intercambio y de independencia.';
+$t['home']['prop']['ep2']   = 'La explotación, la vigilancia, la censura y la apropiación de los datos son valores que 
+                        rehusamos en provecho de la transparencia (la probidad), de la exposición clara de las condiciones 
+                        de uso de los servicios, y de la negación de las discriminaciones.';
+$t['home']['prop']['ep3']   = 'Framasoft se compromete a no explotar los datos de los usuarios de sus servicios,
+               y a promover una web abierta y equitativa.';
+$t['home']['prop']['d']     = 'Descentralización';
+$t['home']['prop']['dp1']   = 'La inteligencia de Internet debe apoyarse en cada actor de la red dentro de una
+                dinámica de intercambio de  igual a igual, para impedir crear un Minitel 2.0 más.';
+$t['home']['prop']['dp2']   = 'Para asegurar la igualdad de todos, ciudadanos como empresarios, no sólo se deben evitar los monopolios,
+                sino que también se debe impedirles que se apoderen de los datos personales o públicos.';
+$t['home']['prop']['dp3']   = 'Explicando, mediante tutoriales, cómo multiplicar las soluciones libres que permitan un Internet
+                más equitativo, favorecemos la diseminación del código y  diversificamos los usos.';
+$t['home']['prop']['dp4']   = 'Framasoft se compromete a facilitar el auto-alojamiento y la interoperabilidad, con el fin de no
+ «&nbsp;encerrar&nbsp;» a sus usuarios.';
+$t['home']['prop']['s']     = 'Solidaridad';
+$t['home']['prop']['sp1']   = 'Gracias a los servicios que desplegamos, promovemos un modelo económico
+                basado en la mutualización de los costes, el intercambio de los recursos, y la asequibilidad de la mayoría.';
+$t['home']['prop']['sp2']   = 'También posee este modelo un carácter educativo ya que pensamos 
+               que si documentamos el depliegue de servicios, un gran número de usuarios
+               quedarán a su vez en medida de compartir dichos recursos.';
+$t['home']['prop']['sp3']   = 'Pensamos que no infantilizar a los usuarios y hacer que compartan la responsabilidad  del uso de los servicios
+          permitirá regular los abusos.';
+$t['home']['prop']['sp4']   = 'Framasoft se compromete a promover el respeto y la autonomía de dichos usuarios (siempre que haya reciprocidad al respecto).';
     // Service & Charte
-$t['home']['prop']['s&c']   = 'Services et Charte';
-$t['home']['prop']['s&cp']  = 'Vous pouvez retrouver en ligne la liste des services que nous proposons déjà (et ceux en préparation) ainsi que notre charte :';
-$t['home']['prop']['charte'] = 'Charte des services';
+$t['home']['prop']['s&c']   = 'Servicios y Carta';
+$t['home']['prop']['s&cp']  = 'Pueden encontrar en línea la lista de servicios que ya proponemos (y los que se preparan) y también nuestra Carta :';
+$t['home']['prop']['charte'] = 'Carta de los servicios';
 
 // Accueil - Concrètement
-$t['home']['conc']['btn']   = 'Concrètement';
-$t['home']['conc']['title'] = 'Concrètement';
-$t['home']['conc']['p1']    = 'Le projet « Dégooglisons Internet » - qui ne concerne d’ailleurs pas que Google - consiste à <strong>proposer des services
-                alternatifs face à un maximum de services que nous évaluons comme menaçants pour nos vies numériques</strong>.';
-$t['home']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, et bien d’autres sont des
-                services extrêment pratiques, mais <strong>ils sont devenus bien trop gros et nous ont rendus dépendants</strong>.
-                Framasoft souhaite entrer en résistance, et propose un plan de mise en place d’applications alternatives sur plusieurs années.';
-$t['home']['conc']['p3']    = 'Ces services sont libres, gratuits, ouverts à tous (dans la limite de nos capacités techniques et financières), tels
-                des <strong><a href="http://fr.wikipedia.org/wiki/Biens_communs" title="Bien communs">biens communs</a> numériques</strong>.
-                Dans un souci de décentralisation d’internet et de promotion de l’auto-hébergement, nous ferons le maximum afin que chacun
-                puisse installer ses propres services (pour soi, pour son association, son entreprise).';
-$t['home']['conc']['p4']    = 'Évidemment, nous n’avons pas la prétention de <em>concurrencer</em> ces services, nous souhaitons juste proposer un espace numérique
-                neutre, non-commercial et non-agressif envers ses utilisateurs.';
-$t['home']['conc']['p5']    = 'Accéder à la liste des services que nous proposons déjà (et ceux en préparation) :';
-$t['home']['conc']['stitle'] = 'Soutenir';
-$t['home']['conc']['sp1']   = 'Un projet d’une telle envergure ne peut se faire sans <strong>votre soutien</strong>.';
-$t['home']['conc']['sp2']   = 'Si vous êtes développeur, graphiste, ergonome, administrateur système, etc, vous pouvez nous contacter pour participer
-                activement au projet.';
-$t['home']['conc']['cbtn']  = 'Contacter Framasoft';
-$t['home']['conc']['sp3']     = 'Mais le moyen le plus simple et le plus rapide de nous aider reste de nous soutenir financièrement : cela nous permet
-                de payer l’infrastructure (serveurs), et les permanents dédiés à la réussite de ce projet ambitieux. Framasoft est une association
-                d’intérêt général : un don de 100€ vous reviendra, après défiscalisation, à 34€.';
-$t['home']['conc']['sbtn']  = 'Faire un don<br />à Framasoft';
+$t['home']['conc']['btn']   = 'Concretamente';
+$t['home']['conc']['title'] = 'Concretamente';
+$t['home']['conc']['p1']    = 'El proyecto « Desgooglicemos Internet » - que no afecta sólo a Google - consiste en <strong>proponer servicios
+                alternativos frente a la mayor parte de los servicios que consideramos como  amenazadores para nuestras vidas digitales</strong>.';
+$t['home']['conc']['p2']    = 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube, Doodle, Yahoo! Groups, y muchos más
+                 son servicios muy prácticos, pero <strong>se han vuelto demasiado gigantes y nos han hecho dependientes</strong>.
+                Framasoft desea entrar en resistencia, y propone un plan de creación de aplicaciones alternativas en varios años.';
+$t['home']['conc']['p3']    = 'Estos servicios son libres, gratuitos, abiertos a todos (dentro de los límites de nuestras capacidades técnicas y financieras), 
+                como <strong><a href="http://fr.wikipedia.org/wiki/Biens_communs" title="Bienes comunes">bienes comunes</a> digitales</strong>.
+          Y siempre con la preocupación de la descentralización de Internet y de promover auto-alojamiento, nos esforzaremos por que cada
+          uno pueda instalar sus propios servicios (para si, para su asociación, su empresa).';
+$t['home']['conc']['p4']    = 'Claro, no pretendemos  en ningún modo<em>competir</em> con esos grandes servicios, sólo queremos proponer un espacio digital neutral, no-comercial y desprovisto de agresividad con sus usuarios.';
+$t['home']['conc']['p5']    = 'Acceder a la lista de los servicios que proponemos ya (y de los que preparamos) :';
+$t['home']['conc']['stitle'] = 'Contribuir';
+$t['home']['conc']['sp1']   = 'Un proyecto de tal alcance no puede realizarse sin <strong>su ayuda</strong>.';
+$t['home']['conc']['sp2']   = 'Si es programador, diseñador gráfico, ergónomo, administrador de sistema, etc, puede ponerse 
+                en contacto con nosotros para participar activamente en el proyecto.';
+$t['home']['conc']['cbtn']  = 'Contactar con Framasoft';
+$t['home']['conc']['sp3']     = 'Pero el medio más simple y rápido de ayudarnos es apoyándonos financieramente: nos permitirá 
+                costear la infraestructua (servidores), y pagar a los empleados dedicados al éxito de este ambicioso proyecto. 
+                Framasoft es una asociación de interés general: una donación de 100€, aplicando la exención fiscal, le costará  en realidad 34€.';
+$t['home']['conc']['sbtn']  = 'Donar<br />a Framasoft';
 
-// Liste des services
-$t['list']['title']      = 'Liste des services';
-$t['list']['roadmap']    = 'Feuille de route';
+// Lista de servicios
+$t['list']['title']      = 'Lista de servicios';
+$t['list']['roadmap']    = 'Indicaciones;
 $t['list']['link']       = $l['current'].'liste';
-$t['list']['desc']       = 'Liste des services en ligne libres, éthiques, décentralisé et solidaires que Framasoft propose (ou qui sont en préparation) pour dégoogliser Internet';
+$t['list']['desc']       = 'Lista de servicios en línea libres, éticos, descentralizados y solidarios que Framasoft propone (o que están en preparación) para desgooglizar Internet';
 $t['list']['css']        = '
     <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['list']['js']         = '
     <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
     <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+    
+   
+// Lista de los servicios
+$t['list']['title']      = 'Lista de servicios';
+$t['list']['roadmap']    = 'Indicaciones';
+$t['list']['link']       = $l['current'].'lista';
+$t['list']['desc']       = 'Lista de servicios en línea lbres, éticos, descentralizados y solidarios que Framasoft propone (también los que se preparan) para desgooglizar Internet';
+$t['list']['css']        = '
+    <link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
+$t['list']['js']         = '
+    <script src="'.$l['current'].'js/list.js" type="text/javascript"></script>
+    <script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
+ 
 
-// Espace médias
-$t['medias']['title']    = 'Espace médias';
-$t['medias']['link']     = $l['current'].'medias';
+// Espacio medios de difusión
+$t['medias']['title']    = 'Espacio medios de difusión';
+$t['medias']['link']     = $l['current'].'medios de difusión';
 $t['medias']['desc']     = '';
 $t['medias']['css']      = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
 $t['medias']['js']       = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
 
-$t['medias']['subtitle']    = '5 octobre 2015 : an 2 de la Dégooglisation d’Internet.';
-$t['medias']['intro']       = 'Pour entamer la deuxième année de sa campagne de propositions d’alternatives aux services de Google & consorts, l’association Framasoft annonce, dès le 5 octobre, cinq nouveaux services issus de logiciels libres.';
-$t['medias']['btnCPtxt']    = 'Télécharger le<br/>communiqué de presse';
+
+                        
+$t['medias']['subtitle']    = '5 de octubre de 2015 : año 2 de la Desgooglización de Internet.';
+$t['medias']['intro']       = 'Para comenzar el segundo año de su campaña de proyectos de alternativas a los servicios de
+ Google y semejantes, la asociación Framasoft anuncia, desde el 5 de octubre, cinco nuevos servicios realizados con software libre.';
+$t['medias']['btnCPtxt']    = 'Descargar el<br/>comunicado de prensa';
 $t['medias']['btnCPurl']    = 'img/2015_communique_degooglisons_Framasoft.odt';
-$t['medias']['btnDPtxt']    = 'Télécharger le<br/>dossier de presse';
+$t['medias']['btnDPtxt']    = 'Descargar el<br/>dossier de prensa';
 $t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2015.pdf';
-$t['medias']['1title']      = 'Articles sur le Framablog';
-$t['medias']['1intro']      = 'Le <a href="http://framablog.org">Framablog</a> est notre principal outil de communication envers le grand public. Chacune des 5 nouveautés proposées durant le lancement de cette campagne y seront présentées au cours de la semaine du 5 octobre 2015.';
+$t['medias']['1title']      = 'Artículos en el Framablog';
+$t['medias']['1intro']      = 'El <a href="http://framablog.org">Framablog</a> es nuestro principal medio de comunicación con el público. 
+Durante la semana del 5 de octubre de 2015, se presentará en el blog cada una de las cinco novedades propuestas durante el lanzamiento de esta campaña.';
 $t['medias']['1list']       = '
                         <ul>
-                            <li><em>Lundi 5/10</em> : Présentation de <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">l’an 2 de la campagne Dégooglisons Internet</a>.</li>
-                            <li><em>Lundi 5/10</em> : <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternative à Dropbox et Google Drive.</li>
-                            <li><em>Mardi 6/10</em> : <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternative à GoogleDocs.</li>
-                            <li><em>Mercredi 7/10</em> : <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a> alternative à Trello.</li>
-                            <li><em>Jeudi 8/10</em> : <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternative à Doodle.</li>
-                            <li><em>Vendredi 9/10</em> : <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a> alternative à WeTransfer.</li>
+                                            
+   
+<li><em>Lundi 5/10</em> : Presentación del <a href="http://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait">el año 2 de la campaña Desgooglicemos Internet</a>.</li>
+                            <li><em>Lundi 5/10</em> : <a href="http://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs">Framadrive</a>, alternativa a Dropbox y Google Drive.</li>
+                            <li><em>Mardi 6/10</em> : <a href="http://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs">Framapad + Mypads</a>, alternativa a GoogleDocs.</li>
+                            <li><em>Mercredi 7/10</em> : <a href="http://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux">Framaboard</a> alternativa a Trello.</li>
+                            <li><em>Jeudi 8/10</em> : <a href="http://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris">Framadate</a>, alternativa a Doodle.</li>
+                            <li><em>Vendredi 9/10</em> : <a href="http://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite">Framadrop</a> alternativa a WeTransfer.</li>
                         </ul>';
-$t['medias']['2title']      = 'Liens vers les services';
-$t['medias']['2intro']      = 'Bien qu’elles soient présentées tout au long de la semaine sur notre blog, ces cinq nouveautés seront en ligne dès le 5 octobre. Cliquez sur le nom du service pour l’essayer.';
+                                 
+$t['medias']['2title']      = 'enlaces con los servicios';
+$t['medias']['2intro']      = 'Aunque las presentamos a lo largo de toda la semana en nuestro blog, estas cinco novedades estarán en línea a 
+partir del 5 de octubre . Haga clic en el nombre de un servicio para probarlo.';
 $t['medias']['2list']       = '
                         <ul>
                             <li><a href="https://framadrive.org"><b class="violet">Frama</b><b class="vert">drive</b></a></li>
@@ -357,47 +403,49 @@ $t['medias']['2list']       = '
                             <li><a href="https://framadate.org"><b class="violet">Frama</b><b class="vert">date</b></a></li>
                             <li><a href="https://framadrop.org"><b class="violet">Frama</b><b class="vert">drop</b></a></li>
                         </ul>';
-
-$t['medias']['tabstitle']   = 'Visuels de la campagne Dégooglisons an 2.';
-$t['medias']['tabsintro']   = 'Sauf mention contraire, tous nos visuels sont réalisés par <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> et sont librement réutilisables sous la licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> Ces visuels sont en grand format (contrairement aux apparences). Néanmoins, si vous avez besoin d’une plus haute résolution, n’hésitez pas à nous contacter.';
-$t['medias']['tabssaveas']  = 'Clic droit sur l’image et « Enregistrer l’image sous » pour la réutiliser';
+                
+$t['medias']['tabstitle']   = 'Imágenes de la campaña Desgooglicemos año 2.';
+$t['medias']['tabsintro']   = 'A menos que se indique lo contrario, todas nuestras imágenes, las realiza <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> y se pueden volver a utilizar bajo la licencia <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> Estas imágenes son de formato grande (a pesar de las apariencias). 
+Sin embargo, si usted necesita una resolución más alta, no dude en contactar con nosotros.';
+$t['medias']['tabssaveas']  = 'Haga un clic  derecho« Guardar la imagen como » para utilizarla de nuevo';
 
 $t['medias']['t1']          = 'Cartes';
-$t['medias']['t1i1txt']     = 'Carte « Avant »';
+$t['medias']['t1i1txt']     = 'Mapa « Antes »';
 $t['medias']['t1i1url']     = 'img/Carte2015-romains.png';
-$t['medias']['t1i1desc']    = 'Carte de la France envahie par les services GAFAM (oct 2014)';
-$t['medias']['t1i2txt']     = 'Carte « Après »';
+$t['medias']['t1i1desc']    = 'Mapa de Francia invadida por los servicios GAFAM (oct 2014)';
+$t['medias']['t1i2txt']     = 'Mapa « Despues »';
 $t['medias']['t1i2url']     = 'img/Carte2015-victoires.png';
-$t['medias']['t1i2desc']    = 'Carte de la France avec les alternatives Framasoft (oct 2015)';
-$t['medias']['t1i3txt']     = 'Carte animée';
+$t['medias']['t1i2desc']    = 'Mapa de Francia con las alternativas Framasoft (oct 2015)';
+$t['medias']['t1i3txt']     = 'Mapa animado';
 $t['medias']['t1i3url']     = 'img/Carte2015-animation.gif';
-$t['medias']['t1i3desc']    = 'Animation de la reconquête des services GAFAM (format .gif)';
+$t['medias']['t1i3desc']    = 'Animación de la reconquista de los servicios GAFAM (format .gif)';
 
 $t['medias']['t2']          = 'Dessins';
-$t['medias']['t2i1txt']     = 'Dessin « Verrouillage »';
+$t['medias']['t2i1txt']     = 'Dessin « Verrouillage »';
 $t['medias']['t2i1url']     = 'img/stevusjobus.png';
-$t['medias']['t2i2txt']     = 'Dessin « Cyber Police »';
+$t['medias']['t2i2txt']     = 'Dessin « Cyber Police »';
 $t['medias']['t2i2url']     = 'img/cyberpolicus.png';
-$t['medias']['t2i3txt']     = 'Dessin « Espions »';
+$t['medias']['t2i3txt']     = 'Dessin « Espions »';
 $t['medias']['t2i3url']     = 'img/bourrepifix.png';
-$t['medias']['t2i4txt']     = 'Dessin « Stallman »';
+$t['medias']['t2i4txt']     = 'Dessin « Stallman »';
 $t['medias']['t2i4url']     = 'img/stallmanoramix.png';
-$t['medias']['t2i5txt']     = 'Dessin « Flicage »';
+$t['medias']['t2i5txt']     = 'Dessin « Flicage »';
 $t['medias']['t2i5url']     = 'img/village.png';
-$t['medias']['t2i6txt']     = 'Dessin « GAFAM »';
+$t['medias']['t2i6txt']     = 'Dessin « GAFAM »';
 $t['medias']['t2i6url']     = 'img/GAFAM.png';
 
-$t['medias']['t3']          = 'Vidéos';
-$t['medias']['t3intro']     = 'Nous avons pu expliquer notre projet lors de conférences. Nous avons sélectionné ces deux captations vidéos (et leur code d’intégration) pour que vous puissiez librement les réutiliser sur vos sites webs.';
-$t['medias']['t3v1txt']     = 'Version courte (17mn)';
+$t['medias']['t3']          = 'Vídeos';
+$t['medias']['t3intro']     = 'Hemos podido explicar nuestro proyecto en unas conferencias. Hemos escogido estos dos vídeos (y su código
+de integración) para que puedan ustedes volver a utilizarlos en sus propios sitios web.';
+$t['medias']['t3v1txt']     = 'Versión corta (17mn)';
 $t['medias']['t3v1img']     = 'https://framatube.org/images/media/925l.jpg';
 $t['medias']['t3v1mp4']     = 'https://framatube.org/blip/gosset-owf-dio.mp4';
 $t['medias']['t3v1webm']    = 'https://framatube.org/blip/gosset-owf-dio.webm';
-$t['medias']['t3v2txt']     = 'Version longue (54mn)';
+$t['medias']['t3v2txt']     = 'Versión larga (54mn)';
 $t['medias']['t3v2img']     = 'https://framatube.org/blip/gosset-degooglisons-internet.png';
 $t['medias']['t3v2mp4']     = 'https://framatube.org/blip/gosset-degooglisons-internet.mp4';
 $t['medias']['t3v2webm']    = 'https://framatube.org/blip/gosset-degooglisons-internet.webm';
-$t['medias']['t4']          = 'Capture d’écran';
+$t['medias']['t4']          = 'Captura de pantalla';
 
 $t['medias']['t5']          = 'Animations';
 $t['medias']['t5i1txt']     = '<b class="violet">Frama</b><b class="vert">drive</b>';
@@ -413,212 +461,233 @@ $t['medias']['t5i5url']     = 'img/anim_framadrop.gif';
 $t['medias']['t5i6txt']     = '<b class="violet">Dégooglisons</b> <b class="orange">Internet</b>';
 $t['medias']['t5i6url']     = 'img/anim_dio'; // .mp4 et .webm
 
-$t['medias']['t6']          = 'Présentation';
-$t['medias']['t6url']       = 'presentation/';
+$t['medias']['t6']          = 'Presentación';
+$t['medias']['t6url']       = 'presentación';
 
-$t['medias']['presstitle']  = 'Revue de presse';
-$t['medias']['pressintro']  = 'La campagne « Dégooglisons Internet » a déjà fait parler d’elle durant sa première année. Voici quelques extraits de notre <a href="https://wiki.framasoft.org/speakabout">revue de presse</a>.';
-$t['medias']['pressth1']    = 'Date';
-$t['medias']['pressth2']    = 'Média';
-$t['medias']['pressth3']    = 'Liens';
+
+$t['medias']['presstitle']  = 'Revista de prensa';
+$t['medias']['pressintro']  = 'La campaña « Desgooglicemos Internet » ya ha dado que hablar a lo largo del primer año de su creación . 
+Aquí tenemos unos extractos de nuestra <a href="https://wiki.framasoft.org/speakabout">revista de prensa</a>.';
+$t['medias']['pressth1']    = 'fecha';
+$t['medias']['pressth2']    = 'Medio';
+$t['medias']['pressth3']    = 'Enlaces';
 $t['medias']['presslist']   = [
-    ['17/08/2015', 'France Culture (Du grain à moudre)',
+    ['17/08/2015', 'France Culture (Du grain à moudre)',[FR] 
     'http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3',
-    'Lien vers le podcast'],
-    ['24/05/2015', 'Le Soir (Belgique)',
+    'Enlace con el podcast'],
+    ['24/05/2015', 'Le Soir (Belgique)',[FR] 
     'http://www.lesoir.be/886985/article/economie/vie-du-net/2015-05-23/google-vivre-sans-c-est-parfois-possible',
-    'Lien vers l’article (abonnés)'],
-    ['29/04/2015', 'Canal + (La Nouvelle Édition)',
+    'Enlace con el artículo (suscriptores)'],
+    ['29/04/2015', 'Canal + (La Nouvelle Édition)',[FR] 
     'http://www.canalplus.fr/c-emissions/c-la-nouvelle-edition/pid6850-la-nouvelle-edition.html?vid=1249359',
-    'Lien vers la vidéo'],
-    ['03/02/2015', 'L’Humanité',
+    'Enlace con el vídeo'],
+    ['03/02/2015', 'L’Humanité',[FR] 
     'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
-    'Lien vers l’article'],
-    ['02/11/2014', 'Libération',
+    'Enlace con el artículo'],
+    ['02/11/2014', 'Libération',[FR] 
     'http://www.liberation.fr/ecrans/2014/11/02/avec-framasoft-l-appli-fait-de-la-resistance_1134654',
-    'Lien vers l’article'],
-    ['01/11/2014', 'France Inter (Comme un buit qui court)',
+    'Enlace con el artículo'],
+    ['01/11/2014', 'France Inter (Comme un buit qui court)',[FR] 
     'http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
-    'Lien vers la page d’écoute']
+    'Enlace con la página del programa de radio']
 ];
-$t['medias']['framatitle']  = 'Framasoft en quelques liens…';
+
+
+$t['medias']['framatitle']  = 'Framasoft en pocos enlaces…';
 $t['medias']['framalist']   = '
                         <ul>
-                            <li><a href="https://contact.framasoft.org/#questions">Nous contacter</a> (le formulaire renvoie direcement à notre service presse).</li>
-                            <li><a href="https://fr.wikipedia.org/wiki/Framasoft">Page wikipédia</a> consacrée à Framasoft.</li>
-                            <li><a href="https://soutenir.framasoft.org/association">Présentation complète</a> de Framasoft.</li>
-                            <li><a href="https://wiki.framasoft.org/speakabout">Revue de presse</a> (et de web) de Framasoft.</li>
+                            <li><a href="https://contact.framasoft.org/#questions">Contacto</a> (el formulario manda directamente a nuestro servicio de prensa).</li>
+                            <li><a href="https://fr.wikipedia.org/wiki/Framasoft">Página de wikipédia</a> dedicada a Framasoft.</li>
+                            <li><a href="https://soutenir.framasoft.org/association">Presentación completa</a> de Framasoft.</li>
+                            <li><a href="https://wiki.framasoft.org/speakabout">Revista de prensa</a> (y de Internet) de Framasoft.</li>
                         </ul>';
-$t['medias']['framap1']     = 'Framasoft est un réseau d’éducation populaire, issu du monde éducatif, se consacrant à promouvoir et diffuser le logiciel et la culture libre.';
-$t['medias']['framap2']     = 'Trait d’union entre le monde du Libre et le grand public, l’association propose une galaxie de projets (annuaire de logiciels, maison d’édition, moteur de recherche, etc.) rassemblés en 3 axes : logiciels libres, culture libre et services libres.';
-$t['medias']['framap3']     = '<em>Le logo est une œuvre de JosephK sous licence <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
+$t['medias']['framap1']     = 'Framasoft es una red de educación popular, que procede del mundo educativo y se dedica a promover y difundir el software y la cultura libres.';
+$t['medias']['framap2']     = 'Vínculo entre el mundo de lo Libre y lo público en general, la asociación propone un sinnúmero de proyectos
+ (guía de software, editorial, motor de búsqueda, etc.) reunidos según 3 ejes: software libre, cultura libre y servicios libres.';
+$t['medias']['framap3']     = '<em>El logotipo es obra de JosephK bajo licencia <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em>';
 
-// Texte générique
-$t['_Close']            = 'Fermer';
-$t['_More']             = '+ d’infos';
-$t['_Support']          = 'Soutenir';
-$t['_Use']              = 'Utiliser';
-$t['_Install']          = 'Installer';
-$t['_Project updated']  = 'Projet mis à jour';
-$t['_Project loading']  = 'Projet en cours';
-$t['_Project running']  = 'Projet actif';
-$t['_ is an instance based on '] = ' est une instance basée sur le logiciel libre ';
-$t['_Read more']        = 'En savoir plus';
-$t['_Some examples ?']  = 'Des exemples ?';
-$t['_Back to top']      = 'Retour en haut';
-$t['_Editor: ']         = 'Éditeur : ';
-$t['_Equivalent(s): ']          = 'Équivalent(s) : ';
-$t['_Alternative(s) online: ']  = 'Alternative(s) en ligne';
-$t['_Alternative(s) offline: '] = 'Alternative(s) à installer';
-$t['_Framasoft service: ']      = 'Service Framasoft : ';
-$t['_release planned on ']      = 'sortie en ';
-$t['_Select the language']      = 'Choisir la langue';
-$t['_Change the language']      = 'Changer la langue';
+// Text genérico
+$t['_Close']            = 'Cerrar';
+$t['_More']             = 'Más información';
+$t['_Support']          = 'Ayudar';
+$t['_Use']              = 'Utilizar';
+$t['_Install']          = 'Instalar';
+$t['_Project updated']  = 'Proyecto puesto al día';
+$t['_Project loading']  = 'Proyecto en curso';
+$t['_Project running']  = 'Proyecto activo';
+$t['_ is an instance based on '] = ' es una instancia basada en software libre ';
+$t['_Read more']        = 'Saber más';
+$t['_Some examples ?']  = '¿Unos ejemplos?';
+$t['_Back to top']      = 'Volver al comienzo de página';
+$t['_Editor: ']         = 'Éditorr : ';
+$t['_Equivalent(s): ']          = 'Equivalencia(s) : ';
+$t['_Alternative(s) online: ']  = 'Alternativa(s) en línea';
+$t['_Alternative(s) offline: '] = 'Alternativa(s) que instalar';
+$t['_Framasoft service: ']      = 'Servicio Framasoft : ';
+$t['_release planned on ']      = 'publicación en  ';
+$t['_Select the language']      = 'Escoger la lengua';
+$t['_Change the language']      = 'Cambiar de lengua';
 $t['_OK']                       = 'OK';
-$t['_since']                    = 'depuis';
+$t['_since']                    = 'desde';
 $t['_GAFAM']                    = 'GAFAM';
 $t['_& co']                     = '& cie';
-$t['_Software']                 = 'Logiciels';
+$t['_Software']                 = 'S';
 $t['_LEDS']                     = 'LEDS';
-$t['_Libre, Éthique, Décentralisé et Solidaire'] = 'Libre, Éthique, Décentralisé et Solidaire';
-$t['_ with your help']          = ' avec votre aide';
+$t['_Libre, Éthique, Décentralisé et Solidaire'] = 'Libre, Ético, Descentralizado y Solidario';
+$t['_ with your help']          = 'con su ayuda';
 
-/*************
- * Objectifs *
+
+* Objetivos *
  *************/
 $d['tip2017'] = [
-    'name'  => '180 000€ + 1 250 donateurs récurrents',
-    'F'     => '11 permanents',
-    'mBody' => '<p>Nous toucherons au but ! Il restera encore des services « sensibles » à mettre en place, notamment les services liés à la messagerie (liste de diffusion, et bien entendu emails).</p>
-                <p>Non seulement ces services sont les plus coûteux à mettre en place (il est plus simple de gérer un site qui fait un million de visites par jour que de gérer 10 000 boîtes mails), mais il faudra aussi (surtout !) assurer le bon fonctionnement (maintenance, mise à jour, support, etc.) des projets mis en place depuis 2011.</p>
-                <p>Cela nécessitera le recrutement de 3 nouvelles personnes (essentiellement sur les aspects techniques).</p>
-                <p>Pour vous donner une échelle de nos besoins, notre objectif 2017 (180 000€ et 1 250 donateurs récurrents) représente le coût de 54 mètres d’autoroute, ou 0,0006% du C.A. annuel de Google</p>'
+    'name'  => '180 000€ + 1 250 donantes recurrentes',
+    'F'     => '11 empleados permanentes',
+    'mBody' => '<p>¡Ya estaremos alcanzando la meta! Quedarán aún servicios «sensibles» para poner en marcha, especialmente aquellos relacionados con la mensajería (lista de correo y, claro, el correo electrónico).</p>
+                <p>No sólo estos servicios son los más caros para poner en marcha (es más sencillo manejar un sitio con un millón de visitas al día
+                que administrar 10 000 buzones), pero también (¡sobre todo!) habrá que asegurar el buen funcionamiento
+                (mantenimiento, actualización, soporte, etc.) de los proyectos ya creados desde 2011.</p>
+                <p>Se necesitará la contratación de 3 nuevas personas (esencialmente para los aspectos técnicos).</p>
+                <p>Para darles una idea de las necesidades que tenemos, nuestro objetivo 2017 (180 000€ y 1 250 donantes
+                recurrentes) corresponde al coste de  54 metros de autopista, o al 0,0006% del volumen de negocios anual de Google</p>'
 ];
+
 $d['tip2016'] = [
-    'name'  => '130 000€ + 1 080 donateurs récurrents',
-    'F'     => '8 permanents',
-    'mBody' => '<p>Début 2016, Framasoft comptera déjà plus d’une vingtaine de services en ligne. Mais nous ne comptons pas nous arrêter là ! Nous souhaitons en effet proposer de nouvelles alternatives libres aux applications des géants d’Internet. Notamment :</p>
+    'name'  => '130 000€ + 1 080 donantes recurrentes',
+    'F'     => '8 empleados permanentes',
+    'mBody' => '<p>A principios de 2016, Framasoft contará ya con más de unos veinte servicios en línea. ¡Pero no pensamos pararnos ahí!
+    Deseamos en efecto proponer nuevas alternativas libres a las aplicaciones de los gigantes de Internet. En especial :</p>
                 <ul>
-                    <li>un service d’agenda partagé (en alternative à Google Agenda)</li>
-                    <li>un service de microblogging (en alternative à Twitter)</li>
-                    <li>un service d’hébergement de vidéos libres (en alternative à Youtube)</li>
+                    <li>un servicio de calendario compartido (como alternativa a Google Agenda)</li>
+                    <li>un servicio de microbitácoras (como alternativa a Twitter)</li>
+                    <li>un servicio de alojamiento de vídeos libres (como alternativa a Youtube)</li>
                 </ul>
-                <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l’association aura besoin de recruter 3 nouvelles personnes (un développeur, un second adminsys, et un administrateur). </p>
-                <p>Afin de ne pas systématiquement solliciter nos gentils donnateurs, une partie de la somme nécessaire pourra provenir de subventions.</p>
-                <p>Pour vous donner une échelle de nos besoins, notre objectif 2016 (130 000€ et 1 080 donateurs récurrents) représente le coût de 38 mètres d’autoroute, ou 0,0004% du C.A. annuel de Google</p>'
+                <p>Para asegurar la creación de tales proyectos y también para mantener los proyectos existentes, nuestra asociación tendrá que reclutar a tres personas más (un programador, un segundo administrador de sistema, y un administrador). </p>
+                <p>Para no solicitar de manera sistemática a nuestros amables donantes, parte del importe necesario podrá proceder de ayudas públicas.</p>
+                <p>Para que tengan una idea de nuestras necesidades, nuestro objetivo 2016 (130 000€ y 1 080 donantes recurrentes) corresponde
+                al costo de 38 metros de autopista, o al 0,0004% del volumen de negocios anual de Google</p>'
 ];
 $d['tip2015'] = [
-    'name'  => '70 000€ + 780 donateurs récurrents',
-    'F'     => '5 permanents',
-    'mBody' => '<p>Framasoft souhaite mettre à disposition plusieurs services en ligne importants en 2015 :</p>
+    'name'  => '70 000€ + 780 donantes recurrentes',
+    'F'     => '5 empleados permanentes',
+    'mBody' => '<p>Framasoft desea poner a disposición varios servicios en línea importantes en 2015 :</p>
                 <ul>
-                    <li>un service de d’hébergement de documents (en alternative à Dropbox)</li>
-                    <li>un service d’envoi de gros fichiers (en alternative à WeTransfer)</li>
-                    <li>un service de présentations/diaporama en ligne (un « PowerPoint en ligne », si vous préférez)</li>
-                    <li>un service de visioconférence (en alternative à Skype), directement depuis votre navigateur, sans installation de logiciel</li>
+                    <li>un servicio de alojamiento de documentos (como alternativa a  Dropbox)</li>
+                    <li>un servicio de envío de arhivos grandes (como alternativa a WeTransfer)</li>
+                    <li>un servicio de software de presentación/diaporama en línea (un « PowerPoint en línea », si prefieren ustedes)</li>
+                    <li>un servicio de videoconferencia (como alternativa a Skype), directamente desde su navegador web, sin instalación de software</li>
                 </ul>
-                <p>Pour assurer la mise en place de ces projets ainsi que maintenir les projets existants, l’association aura besoin d’embaucher, en plus de ses permanents actuels, un administrateur systèmes à temps plein, ainsi que 2 stagiaires. </p>
-                <p>Pour vous donner une échelle de nos besoins, notre objectif 2015 (70 000€ et 780 donateurs récurrents) représente le coût de 21 mètres d’autoroute, ou 0,0002% du C.A. annuel de Google</p>'
+                <p>Para asegurar la creación de tales proyectos y también para mantener los existentes, la asociación necesitará contratar, 
+                además de sus empledos actuales, a un administrador de sistema a tiempo completo y también a 2 trabajadores en prácticas. </p>
+                <p>Para darles una idea de nuestras necesidades, nuestro objetivo 2015 (70 000€ y 780 donantes recurrentes) corresponde
+                al costo de 21 metros de autopista o al 0,0002% del volumen anual de negocios de Google</p>'
 ];
+
 $d['tip2014'] = [
-    'name'  => '35 000€ + 550 donateurs récurrents',
-    'F'     => '3 permanents',
-    'mBody' => '<p>L’année 2014 aura été une année particulièrement chargée pour l’association Framasoft, puisqu’il aura fallu mettre au point notre plan de bataille pour vous permettre de résister à Google, Facebook et autres…</p>
-                <p>L’association à notamment investi (en temps et en argent) dans l’infrastructure technique qui permet d’héberger les services actuels et nous permettront d’accueillir confortablement les applications que nous vous proposeront dans les prochaines années.</p>
-                <p>Nous avons besoin de votre aide pour :</p>
+    'name'  => '35 000€ + 550 donantes recurrentes',
+    'F'     => '3 empleos permanentes',
+    'mBody' => '<p>El año 2014 ha sido un año particularmente intenso para la asociación Framasoft, ya que hemos tenido que elaborar el plan de batalla que les permita a ustedes resistir a  Google, Facebook y otros…</p>
+                <p>La asociación ha invertido particularmente (tiempo y dinero) en la infrestructura técnica que permite alojar los servicios actuales
+                y nos permitirá acoger confortablemente las aplicaciones  que les propondremos en los años venideros.</p>
+                <p>Necesitamos su ayuda para :</p>
                 <ul>
-                    <li>accroître la taille de notre infrastructure technique (augmenter la puissance de calcul et le stockage de notre cluster de machines virtuelles)</li>
-                    <li>assurer les salaires de nos deux permanents</li>
-                    <li>permettre l’embauche d’un troisième salarié (chargé de communication)</li>
-                    <li>financer le développement d’améliorations de certains services proposés (Framadate et Framindmap, notamment)</li>
-                    <li>assurer la coordination de l’ensemble du projet "Dégooglisons Internet"</li>
+                    <li>acrecentar el tamaño de nuestra infraestructura técnica (aumentar la potencia de cálculo y almacenamiento de nuestro 
+                    clúster de máquinas virtuales)</li>
+                    <li>garantizar los salarios de nuestros empleados permanentes</li>
+                    <li>facilitar la contratación de un tercer asalariado (encargado de comunicación)</li>
+                    <li>financiar el desarrollo de mejoras de ciertos servicios propuestos (Framadate y Framindmap, en particular)</li>
+                    <li>asegurar la coordinación del conjunto del proyecto "Desgooglicemos Internet"</li>
                 </ul>
-                <p>L’objectif fixé est de passer de 400 à 550 donateurs récurrents, ainsi que de récolter 35 000€ en dons ponctuels sur l’année.</p>
-                <p>Nous vous rappelons que Framasoft est une association largement autofinancée par ses donateurs. Pour vous donner une échelle de nos besoins, notre objectif 2014 (35 000€ et 550 donateurs récurrents) représente le coût de 8 mètres d’autoroute, ou 0,000083% du C.A. annuel de Google.</p>'
-];
+                <p>Nuestro objetivo consiste en pasar de 400 a 550 donantes recurrentes, y en recaudar 35 000€ bajo forma de donaciones aisladas a lo largo del año.</p>
+                <p>Les recordamos que Framasoft es una asociación en su mayor parte autofinanciada por sus donantes. Para darles una idea de 
+                nuestras necesidades, nuestro objetivo para 2014 (35 000€ y 550 donantes recurrentes) corresponde al costo de 8 metros de autopista,  o a un  0,000083% del volumen de negocios anual de Google.</p>'
 for ($i=2014; $i<2018; $i++) {
     $d['tip'.$i]['FDate']   = $i;
-    $d['tip'.$i]['sDesc']   = 'Objectifs';
-    $d['tip'.$i]['lDesc']   = 'Pour mener à bien ces projets, nous avons besoin de votre aide !';
-    $d['tip'.$i]['mTitle']  = 'Nos objectifs pour '.$i;
-    $d['tip'.$i]['mFooter'] = '<a href="'.$l['S'].'" class="btn btn-soutenir"><i class="fa fa-fw fa-heart"></i> Soutenir</a>';
+    $d['tip'.$i]['sDesc']   = 'Objetivos';
+    $d['tip'.$i]['lDesc']   = 'Para realizar estos proyectos, ¡necesitamos su ayuda!';
+    $d['tip'.$i]['mTitle']  = 'Nuestros objetivos para '.$i;
+    $d['tip'.$i]['mFooter'] = '<a href="'.$l['S'].'" class="btn btn-soutenir"><i class="fa fa-fw fa-heart"></i> Ayudar</a>';
 }
-
-/****************
- * Services web *
+* Servicios web *
  ****************
 
-$k = 'id';                                                              // pour la carte : id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte) et pour la liste : associer modales à chaque post-it
+$k = 'id';                                                              // para el mapa: id="a-avaaz" (area), id="o-avaaz" (option), id="t-avaaz" (texte) y para la lista: asociar modales a cada post-it
 
 ---- Facultatif : déjà dans data.php -----------------------------------
-$d[$k]['FL']      = '';                                                 // lien pour le bouton « Utiliser » + $d[$k]['F']
-$d[$k]['CL']      = '';                                                 // lien pour le bouton « Installer » (Framacloud)
-$d[$k]['S']       = '<a href="*">*</a>';                                // lien et nom du logiciel que Frama utilise
+$d[$k]['FL']      = '';                                                 // enlace con el botón «Utilizar» + $d[$k]['F']
+$d[$k]['CL']      = '';                                                 // enlace con el botón «Instalar» (Framacloud)
+$d[$k]['S']       = '<a href="*">*</a>';                                // enlace y nombre del software que utiliza Framasoft
 $d[$k]['F']       = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">*</b></a>';
-$d[$k]['name']    = '';                                                 // Nom du service proprio sur la carte
-$d[$k]['eq']      = '';                                                 // Équivalents
-$d[$k]['altOn']   = '';                                                 // Alternatives en ligne
-$d[$k]['altOff']  = '';                                                 // Alternatives hors ligne / à installer sur un serveur (doit y avoir au moins $d[$k]['S'])
-$d[$k]['pos']     = '';                                                 // Coordonnées sur la carte : 'x, y, R'
-$d[$k]['FDate']   = '201*';                                             // date ou article du Framablog (contient la date dans l'url)
+$d[$k]['name']    = '';                                                 // Nombre del servicio privativo en el mapa
+$d[$k]['eq']      = '';                                                 // Equivalencias
+$d[$k]['altOn']   = '';                                                 // Alternativas en línea
+$d[$k]['altOff']  = '';                                                 // Alternativas en modo desconectado / para instalar en un servidor (doit y avoir au moins $d[$k]['S'])
+$d[$k]['pos']     = '';                                                 // Coordenadas en el mapa : 'x, y, R'
+$d[$k]['FDate']   = '201*';                                             // fecha o artículo del  Framablog (contiene la fecha en el URL)
 
 ---- À remplir ici : data.xx.php ---------------------------------------
-$d[$k]['sDesc']   = '';                                                 // Description courte (en titre sur carte et post-it)
-$d[$k]['lDesc']   = '';                                                 // Description longue (au dos du post-it)
+$d[$k]['sDesc']   = '';                                                 // Descripción corta (en titre sur carte et post-it)
+$d[$k]['lDesc']   = '';                                                 // Descripción larga (au dos du post-it)
 $d[$k]['mTitle']  = '';                                                 // Modale ↓
 $d[$k]['mBody']   = '<p>
                         '.$d[$k]['F'].' vous permet de…
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> …
+                        <b class="violet">Fonctionnement :</b> …
                     </p>';
 
 ---- Facultatif : déjà dans list.php (l.23-26)--------------------------
 $d[$k]['mFooter'] = '<p class="precisions">'.$d[$k]['F'].' est une instance basée sur le logiciel libre '.$d[$k]['S'].'</p>';
 
 */
-
+                   
+          
 // Avaaz
 $k= 'avaaz';
-$d[$k]['sDesc']  = 'Pétitions';
-$d[$k]['lDesc']  = 'Lancez vos pétitions sans offrir les adresses de vos soutiens';
-$d[$k]['mTitle'] = 'Libérez vos pétitions';
+$d[$k]['sDesc']  = 'Peticiones';
+$d[$k]['lDesc']  = 'Lance sus peticiones sin ofrecer las direcciones de sus apoyos';
+$d[$k]['mTitle'] = 'Libere sus peticiones';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de lancer des pétitions sur les sujets qui vous tiennent à cœur. En quelques clics, votre pétition est publiée et les adresses de vos soutiens ne seront pas exploités par des régies publicitaires.
+                        '.$d[$k]['F'].'le permite lanzar peticiones sobre asuntos que le preocupan. Con pocos clics, su petición ya está publicada
+y las direcciones de sus apoyos, no las podrá utilizar  ninguna empresa de publicidad.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> Inscrivez-vous, lancez une nouvelle pétition en suivant les instructions. Votre sondage sera créé. Vos soutiens n’aurons pas besoin de s’inscrire pour pouvoir y participer.
+                        <b class="violet">Cómo funciona :</b> Inscríbase, lance una nueva petición siguiendo las instrucciones. Su sondeo quedará creado.Sus apoyos no necesitarán inscribirse para poder participar. 
                     </p>';
-
+          
+                    
+    
 // Bit.ly
 $k= 'bitly';
-$d[$k]['sDesc']  = 'Réduction d’URL';
-$d[$k]['lDesc']  = 'Des adresses plus courtes en toute discrétion';
-$d[$k]['mTitle'] = 'Finies les adresses trop longues';
+$d[$k]['sDesc']  = 'Redución de URL';
+$d[$k]['lDesc']  = 'Las direcciones más cortas muy discretamente';
+$d[$k]['mTitle'] = 'Ya se acabaron las direcciones  demasiado largas';
 $d[$k]['mBody']  = '<p>
-                        Avec '.$d[$k]['F'].' ou <a href="https://huit.re">Huit.re</a>, il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
-                        Sur les réseaux sociaux et le microblogging, disposer d’une adresse raccourcie permet d’économiser de l’espace et gagner en clarté.
+                        Con '.$d[$k]['F'].' o <a href="https://huit.re">Huit.re</a>, es posible acortar las direcciones web demasiado largas pero sin rastrear su uso.
+                        En las redes sociales y el microblogueo, disponer de una dirección acortada  permite ahorrar espacio y favorece la claridad.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> entrez l’adresse dans sa version originale et Frama.link la raccourcira.
+                        <b class="violet">Cómo funciona :</b> teclee la versión original de la dirección y Frama.link la acortará.
                     </p>';
 
 // Blogger
 $k= 'blogger';
-$d[$k]['sDesc']  = 'Hébergement de sites';
+$d[$k]['sDesc']  = 'alojamiento de sitios';
 $d[$k]['lDesc']  = '';
 $d[$k]['FL']     = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
+                         
+  
 // Bubbl.us
 $k= 'bubblus';
 $d[$k]['name']   = 'Bubbl.us';
-$d[$k]['sDesc']  = 'Cartes heuristiques';
-$d[$k]['lDesc']  = 'Fabriquez vos cartes mentales';
-$d[$k]['mTitle'] = 'Pourquoi créer une carte mentale ?';
+$d[$k]['sDesc']  = 'mapas heurísticos';
+$d[$k]['lDesc']  = 'Fabrique sus mapas mentales';
+$d[$k]['mTitle'] = '¿Por qué crear un mapa mental ?';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet d’organiser un brainstorming, ordonner vos idées à plusieurs, apprendre et faire apprendre une leçon, réaliser des classifications, identifier les éléments importants.
+                        '.$d[$k]['F'].'les permite a varias personas crear una lluvia de ideas/tormenta de ideas (brainstorming), ordenarlas, 
+aprender y hacer que se aprenda una lección, identificar los elementos importantes y clasificarlos.
                     </p>
                        <p><video controls="controls" preload="none"
                         width="420" height="248" poster="https://framatube.org/images/media/866l.jpg">
@@ -626,387 +695,398 @@ $d[$k]['mBody']  = '<p>
                         <source src="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm" type="video/webm"></source>
                           </video>
                        </p>
-                       <p><small><em>Tutoriel réalisé par Claire Cassaigne</em> - La <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vidéo</a> au format webm</small></p>
+                       <p><small><em>Tutorial realizado por Claire Cassaigne</em> - El <a href="https://framatube.org/files/1229-framindmap-creer-une-carte-mentale.webm">vídeo</a> en formato webm</small></p>
 
                     <p>
-                        <b class="violet">Pourquoi utiliser Framindmap ?</b> Il est utilisable en ligne, sans installation, aucune inscription n’est requise, vous pouvez exporter
-                        votre document sous forme d’image, c’est un logiciel libre et gratuit, les données vous appartiennent.
+                        <b class="violet">¿ Por qué utilizar Framindmap ?</b> Se puede utilizar en línea, sin instalación, no es obligatoria ninguna inscripción, 
+puede exportar su documento como imagen, es software libre y gratuito, sus datos le pertenecen totalmente.
                     </p>';
-
-// Doodle
+                  // Doodle
 $k= 'doodle';
-$d[$k]['sDesc']  = 'Réunions et sondages';
-$d[$k]['lDesc']  = 'Convenir d’une réunion et créer un sondage';
-$d[$k]['mTitle'] = 'Organiser des rendez-vous simplement et librement';
+$d[$k]['sDesc']  = 'Reuniones y sondeos';
+$d[$k]['lDesc']  = 'Acordar la celebración de una reunión y crear un sondeo';
+$d[$k]['mTitle'] = 'Organizar citas sencilla y libremente';
 $d[$k]['mBody']  = '<p>
-                        Avec '.$d[$k]['F'].' vous serez en mesure de planifier un rendez-vous à plusieurs ou créer un sondage en ligne. Framadate ne stocke
-                        pas vos données !
+                        Con '.$d[$k]['F'].' podrá usted planificar una cita de varias personas o crear un sondeo en línea. ¡ Framadate no almacena sus datos !
                     </p>
-                    <p class="violet">Fonctionnalités :</p>
+                    <p class="violet">Funcionalidades :</p>
                     <ul>
-                        <li>envoi de courriel à chaque réponse</li>
-                        <li>modification du sondage en cours</li>
-                        <li>planification d’une dead-line</li>
-                        <li>nommez votre sondage et communiquez l’adresse à vos collaborateurs</li>
+                        <li>envío de correo electrónico después de cada respuesta </li>
+                        <li>modificación del sondeo en progreso</li>
+                        <li>planificación del final del proyecto</li>   
+                        <li>Déle un nombre a su sondeo y mándeles la dirección a sus colaboradores</li>
                     </ul>';
+
 
 // Dropbox
 $k= 'dropbox';
-$d[$k]['sDesc']  = 'Stockage de documents';
-$d[$k]['lDesc']  = 'Héberger ses documents en ligne';
-$d[$k]['mTitle'] = 'Héberger ses documents en ligne';
+$d[$k]['sDesc']  = 'Almacenamiento de documentos';
+$d[$k]['lDesc']  = 'Alojar los propios documentos en línea';
+$d[$k]['mTitle'] = 'Alojar los propios documentos en línea';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de stocker en ligne de manière chiffrée vos documents, de les synchroniser sur vos ordinateurs, tablettes, téléphones, etc et de les partager avec qui vous voulez…
+                        '.$d[$k]['F'].' le permite almacenar en línea de manera encriptada sus documentos, sincronizarlos en sus ordenadores, tabletas, teléfonos, etc y compartirlos son quien quiera…
                     </p>';
-
-// Evernote
+           // Evernote
 $k= 'evernote';
-$d[$k]['sDesc']  = 'Prise de notes';
+$d[$k]['sDesc']  = 'toma de notas';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
 // Facebook
 $k= 'facebook';
-$d[$k]['sDesc']  = 'Réseau social';
-$d[$k]['lDesc']  = 'Un réseau social éthique et décentralisé';
-$d[$k]['mTitle'] = 'Rejoignez vos amis en zone libre';
+$d[$k]['sDesc']  = 'Red social';
+$d[$k]['lDesc']  = 'Una red social ética y descentralizada';
+$d[$k]['mTitle'] = 'Júntese con sus amigos en zona libre';
 $d[$k]['mBody']  = '<p>
-                        Sur '.$d[$k]['F'].', vous pouvez retrouver un réseau social qui respecte vos données. Framasphère est un nœud (appelé <i>pod</i>)
-                        du réseau social libre Diaspora*.
+                        Sur '.$d[$k]['F'].', puede encontrar una red social que respeta sus datos. Framasphère es un nodo (llamado <i>pod</i>)
+                        de la red social libre Diaspora*.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> échanger des messages et photos avec n’importe quelle autre personne du réseau Diaspora*, gérer vos contacts, tags,
-                        mentions, repartages… Vous pouvez aussi publier sur d’autres réseaux sociaux (Facebook, Twitter, Tumblr ou Wordpress).
+                        <b class="violet">Cómo funciona :</b> intercambie mensajes y fotos con cualquier otra persona de la red Diaspora*, 
+                        gestione sus contactos, tags, menciones, vuelva a compartir algo ya compartido… También puede publicar en otras redes sociales (Facebook, Twitter, Tumblr o Wordpress).
                     </p>';
-
+                   
+  
 // Github
 $k= 'github';
-$d[$k]['sDesc']  = 'Hébergement de code';
-$d[$k]['lDesc']  = 'Du code libre c’est bien. Sur une plateforme libre c’est mieux !';
-$d[$k]['mTitle'] = 'Hébergement de code libre';
+$d[$k]['sDesc']  = 'Alojamiento de código';
+$d[$k]['lDesc']  = 'El código abierto es cosa buena. ¡ En una plataforma libre, es mejor !';
+$d[$k]['mTitle'] = 'Alojamiento de código abierto';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' est un outil qui s’adresse avant tout aux développeurs. Il permet la création de 42 dépôts maximum par compte (si vous avez besoin de plus, songez sérieusement à vous auto-héberger). Et, petit plus par rapport à GitHub, vous pouvez créer des dépôts privés.</p>
+                        '.$d[$k]['F'].' es una herramienta que se dirige ante todo a los programadores. Permite la creación de 42 repositorios al máximo por cuenta, (si necesita más, piense seriamente en auto-alojarse). Y, algo mejor que en GitHub, también puede crear repositorios privados.</p>
                     </p>
-                    <p>Il est également possible de « mirrorer » automatiquement vos dépôts sur GitHub : vous continuez à « engraisser la bête », mais vous êtes déjà moins dépendant, et vous conservez une visibilité auprès des presque 10 millions d’inscrits sur GitHub. Votre dépôt sur notre Framagit est automatiquement poussé sur votre dépôt Github. C’est d’ailleurs la solution retenue par Framasoft, qui dispose toujours d’un compte GitHub, alors que les développements sont réalisés sur notre forge.</p>';
-
+                    <p>También es posible crear  « espejos  » automáticos de sus repositorios en GitHub : continúa a « llenarle la panza a la bestia », pero ya queda menos dependiente, y sigue visible por los casi 10 millones de inscritos en GitHub. Su repositorio en nuestro Framagit queda automáticamente replicado en su repositorio Github. De hecho, es la solución adoptada por Framasoft, que sigue disponiendo de una cuenta  GitHub, mientras que nuestros desarrollos de software se realizan en nuestra forja.</p>';
+                  
 // Gmail
 $k= 'gmail';
-$d[$k]['sDesc']  = 'Service de messagerie';
-$d[$k]['lDesc']  = 'Vos mails, sans la NSA dedans';
-$d[$k]['mTitle'] = 'Votre courrier, dans une enveloppe blindée';
+$d[$k]['sDesc']  = 'Servicio de correo electrónico';
+$d[$k]['lDesc']  = 'Sus mensajes , sin la NSA dentro';
+$d[$k]['mTitle'] = 'Su correo, dentro de un sobre blindado';
 $d[$k]['mBody']  = '';
 
 // Google Agenda
 $k= 'gagenda';
-$d[$k]['sDesc']  = 'Agenda partagé';
+$d[$k]['sDesc']  = 'Calendario compartido';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
 // Google Books
 $k= 'gbooks';
-$d[$k]['sDesc']  = 'Livres en ligne';
-$d[$k]['lDesc']  = 'Une bibliothèque de plusieurs milliers d’ouvrages';
-$d[$k]['mTitle'] = 'Catalogue d’ouvrages accessibles pour tous';
+$d[$k]['sDesc']  = 'Libros en línea';
+$d[$k]['lDesc']  = 'Una biblioteca de varios millones de obras';
+$d[$k]['mTitle'] = 'Catálogo de obras accesibles a todos';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' est le catalogue <abbr>OPDS</abbr> de Framasoft. « Euh… Oui, mais encore ? », nous direz-vous. Un catalogue <abbr>OPDS</abbr> est un site auquel vous pouvez vous abonner avec un logiciel supportant cette fonctionnalité (certaines liseuses en embarquent un, pour Android, il existe Aldiko et bien d’autres), vous donnant accès rapidement et simplement à tout une bibliothèque depuis votre ordinateur, smartphone ou tablette.
+                        '.$d[$k]['F'].' es el catálogo <abbr>OPDS</abbr> de Framasoft. « Pues… sí, pero ¿ algo más ? », nos dirá usted. Un catálogo <abbr>OPDS</abbr> es un sitio al que puede suscribirse con un programa que soporte esa funcionalidad (algunas pantallas electrónicas llevan consigo uno a bordo, para Android, existe Aldiko y otros más), dándole acceso rápida y sencillamente a una entera biblioteca a partir de su ordenador, smartphone o tableta.
                     </p>
-                    <p>Le catalogue <abbr>OPDS</abbr> de Framasoft vous donne accès à des centaines d’ouvrages non protégés par « copyright ».</p>';
+                    <p>El catálogo <abbr>OPDS</abbr> de Framasoft le da acceso a cientos de obras no protegidas por  « copyright ».</p>';
 
+      
 // Google Docs
 $k= 'gdocs';
-$d[$k]['sDesc']  = 'Rédaction collaborative';
-$d[$k]['lDesc']  = 'Du traitement de texte en ligne et à plusieurs !';
-$d[$k]['mTitle'] = 'Outil de rédaction collaborative';
+$d[$k]['sDesc']  = 'Redacción colaborativa';
+$d[$k]['lDesc']  = '¡ El procesador de texto en línea y en colaboración  !';
+$d[$k]['mTitle'] = 'Herramienta de redacción colaborativa';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' est un service de rédaction collaborative en ligne basé sur le logiciel
+                        '.$d[$k]['F'].' es un servicio de redacción colaborativa en línea basado en el programa 
                         '.$d[$k]['S'].'.
                     </p>
                     <p>
-                        Un « pad » est un éditeur de texte en ligne. Son vrai plus ? L’édition collaborative : les contributions de chaque
-                        utilisateur apparaissent immédiatement dans les pads de tous les participants, signalées par un code couleur.
+                        Un « pad » es un editor de texto en línea. ¿ Su verdadera ventaja ? La edición colaborativa : las contribuciones de cada usuario
+                       aparecen en seguida en los pads de todos los participantes, indicadas por un color diferente.
                     </p>
-                    <p class="violet">Fonctionnalités :</p>
+                    <p class="violet">Cómo funciona :</p>
                     <ul>
-                        <li>Ouvrir un pad public ou privé</li>
-                        <li>Rédiger votre document</li>
-                        <li>Inviter des collaborateurs</li>
-                        <li>Un code couleur pour chacun</li>
-                        <li>Tchat intégré</li>
-                        <li>Historique des versions</li>
-                        <li>Exporter votre travail</li>
-                        <li>Et bientôt : gérer des sessions et des groupes avec MyPads !</li>
+                        <li>Abra un pad público o privado</li>
+                        <li>Redacte su documento</li>
+                        <li>Invite a otros colaboradores</li>
+                        <li>Un color para cada uno</li>
+                        <li>Chat integrado</li>
+                        <li>Histórico de las versiones</li>
+                        <li>Exporte su trabajo</li>
+                        <li>Y dentro de poco: ¡ gestión de las sesiones y de los grupos con MyPads !</li>
                     </ul>';
-
+              
+          
 // Google Form
 $k= 'gforms';
-$d[$k]['sDesc']  = 'Questionnaires en ligne';
-$d[$k]['lDesc']  = 'Créez simplement des questionnaires';
-$d[$k]['mTitle'] = 'Création de questionaires';
+$d[$k]['sDesc']  = 'Cuestionarios en línea';
+$d[$k]['lDesc']  = 'Cree cuestionarios fácilmente ';
+$d[$k]['mTitle'] = 'Creación de cuestionarios';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de créer les questionaires dont vous avez besoin, que ce soit dans un cadre scolaire, familial ou associatif. Créez vos questions en fonction de vos besoins, des formulaires à choix multiples aux champs de texte libre.
+                        '.$d[$k]['F'].' le permite crear los cuestionarios que necesita, tanto en el ámbito escolar como familiar o asociativo. Cree sus
+preguntas en función de sus necesidades, desde los formularios de selección múltiple hasta los campos de texto libre.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement</b> : créez un compte sur Framaforms et lancez-vous dans la création des questionnaires, en fonction de vos besoins. Vos sondés n’ont pas besoin de s’inscrire pour pouvoir répondre. Vous disposez d’une synthèse des réponses.
+                        <b class="violet">Cómo funciona</b> : cree una cuenta en Framaforms y comience la creación de los cuestionarios en función de sus necesidades. Las personas sondeadas no necesitan cuenta para poder contestar. Y usted dispone así de una síntesis de las respuestas.
                     </p>';
-
+          
 // Google Groupes
 $k= 'ggroups';
-$d[$k]['sDesc']  = 'Listes de diffusion';
+$d[$k]['sDesc']  = 'Listas de correo';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
+         
 // Google Maps
 $k= 'gmaps';
-$d[$k]['sDesc']  = 'Cartographie';
-$d[$k]['lDesc']  = 'Créer vos cartes personnalisées en ligne';
-$d[$k]['mTitle'] = 'Créez vos cartes personnalisées en ligne';
+$d[$k]['sDesc']  = 'Cartografía';
+$d[$k]['lDesc']  = 'Cree sus mapas personalizados en línea';
+$d[$k]['mTitle'] = 'Cree sus mapas personalizados en línea';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' permet de créer des cartes personnalisées sur des fonds OpenStreetMap et de les afficher dans votre site.
+                        '.$d[$k]['F'].' le permite crear mapas personalizados en los mapas básicos de OpenStreetMap y visualizarlos en su sitio.
                     </p>
-                    <p><b class="violet">Fonctionnement :</b></p>
+                    <p><b class="violet">Cómo funciona :</b></p>
                     <ul>
-                        <li>Choisir les fonds de carte</li>
-                        <li>Ajouter des POI: marqueurs, lignes, polygones…</li>
-                        <li>Choisir la couleur et les icônes</li>
-                        <li>Gérer les options de la carte: afficher une minicarte, géolocaliser l’utilisateur…</li>
-                        <li>Import des données géographiques en masse (geojson, gpx, kml, osm…)</li>
-                        <li>Choisir la licence de vos données</li>
-                        <li>Exporter et partager votre carte</li>
+                        <li>Seleccionar los mapas básicos</li>
+                        <li>Añadir los PDI (o en inglés POI): marcadores, líneas, polígonos…</li>
+                        <li>Seleccionar los colores y los iconos</li>
+                        <li>Gestionar las opciones del mapa: visualizar un minimapa, localizar las coordinadas del utilizador…</li>
+                        <li>Importar gran cantidad de datos geográficos (geojson, gpx, kml, osm…)</li>
+                        <li>Escoger la licencia de sus datos</li>
+                        <li>Exportar y compartir el propio mapa</li>
                     </ul>';
 
+                 
 // Google Reader
 $k= 'greader';
-$d[$k]['sDesc']  = 'Lecteur de flux';
-$d[$k]['lDesc']  = 'Suivez l’actualité et faites vos choix librement';
-$d[$k]['mTitle'] = 'Toujours au courant, jamais en retard';
+$d[$k]['sDesc']  = 'Lector de noticias';
+$d[$k]['lDesc']  = 'Siga la actualidad y escoja libremente';
+$d[$k]['mTitle'] = 'Esté siempre al corriente, sin retraso ';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous propose un lecteur de flux RSS en ligne, vous permettant d’être toujours au courant de l’actualité à partir des flux RSS de vos sites préférés !
+                        '.$d[$k]['F'].' ¡ le propone un lector de noticias RSS en línea, que le permitirá estar siempre al tanto de la actualidad a partir de las fuentes RSS de sus sitios preferidos !
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> après avoir créé votre compte, enregistrez vos flux RSS et suivez-les.
-                        Comment faire plus simple ?
+                        <b class="violet">Cómo funciona:</b> después de haber creado su cuenta, guarde sus fuentes RSS y sígalas.
+                        ¿ Cómo hacer más sencillo ?
                     </p>';
+          
 
+           
 // Google Search
 $k= 'gsearch';
-$d[$k]['sDesc']  = 'Moteur de recherche';
-$d[$k]['lDesc']  = 'Et si vos recherches n’étaient plus fichées par Google ?';
-$d[$k]['mTitle'] = 'Une recherche anonyme';
+$d[$k]['sDesc']  = 'Motor de búsqueda';
+$d[$k]['lDesc']  = '¿Y si Google ya no fichara las búsquedas de uno ?';
+$d[$k]['mTitle'] = 'Una búsqueda anónima';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' est un meta-moteur de recherche anonyme. Cela signifie que vos recherches effectuées au travers de ce moteur sont envoyées à différents moteurs, avant d’être affichées dans votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait alors office d’intermédiaire entre vous et Google (ou les autres moteurs). Votre adresse IP n’est donc pas enregistrée chez eux. </p>
-                        <p>Evidemment, vous devez avoir confiance en Framasoft/Framabee si vous souhaitez l’utiliser, c’est pourquoi nous proposons une <a href="'.$l['Charte'].'">charte</a>.
+                        '.$d[$k]['F'].' es un metabuscador de búsqueda anónimo. Significa que las búsquedas que haga usted con este metabuscador se mandan a diferentes motores antes de aparecer en su  navegador web. Lo interesante es que nuestro motor hace entonces de intermediario entre usted y Google (u otros motores). Su dirección IP no se graba entonces en los servidores de Google u otros. </p>
+                        <p>Claro, debe confiar en Framasoft/Framabee si desea utilizarlo, por eso proponemos una  <a href="'.$l['Charte'].'">carta</a>.
                     </p>';
-
+         
 // Google Slides
 $k= 'gslides';
-$d[$k]['sDesc']  = 'Présentations';
-$d[$k]['lDesc']  = 'Des diaporamas de haute qualité sans se fatiguer';
-$d[$k]['mTitle'] = 'Une application pour vos diaporamas';
+$d[$k]['sDesc']  = 'Presentaciones';
+$d[$k]['lDesc']  = 'Unos diaporamas de alta calidad sin pena';
+$d[$k]['mTitle'] = 'Un programa de presentación para sus diaporamas';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permettra
-                        de réaliser facilement et intuitivement vos diaporamas.
-                        Grâce à cette application dans votre navigateur, nul besoin
-                        de charger des logiciels lourds et compliqués.
+                        '.$d[$k]['F'].' le permitirá
+                        realizar de manera fácil e intuitiva sus diaporamas.
+                        Gracias a este programa dentro de su navegador web, ninguna necesidad 
+                        de cargar programas pesados y complicados.
                     </p>
-                    <p class="violet">Fonctionnalités :</p>
+                    <p class="violet">Cómo funciona :</p>
                     <ul>
-                        <li>une interface claire et intuitive &mdash; insertion facile de texte, d’images, de vidéos et de site web</li>
-                        <li>sauvegarde en local de la version HTML prête à l’emploi.</li>
+                        <li>una interfaz  &mdash; inserción fácil de texto, de imágenes, de vídeos y de sitio web</li>
+                        <li>salvaguardia local de la versión HTML lista para el empleo.</li>
                     </ul>
-                    <p><b class="violet">Pour plus tard,</b> si nos finances le permettent :</p>
+                    <p><b class="violet">Para más tarde, </b> si nos lo permiten nuestras financias :</p>
                     <ul>
-                        <li>la sauvegarde dans les nuages dans une boîte privée</li>
-                        <li>une fonction d’édition collaborative…</li>
+                        <li>se hará la salvaguardia en la nube  de una empresa privada</li>
+                        <li>una función de edición colaborativa…</li>
                     </ul>';
-
+                 
+     
 // Google Spreadsheet
 $k= 'gspreadsheet';
-$d[$k]['sDesc']  = 'Tableur collaboratif';
-$d[$k]['lDesc']  = 'Partagez vos tableaux et collaborez !';
-$d[$k]['mTitle'] = 'Un tableur en ligne';
+$d[$k]['sDesc']  = 'Hoja de cálculo colaborativa';
+$d[$k]['lDesc']  = '¡ Comparta sus tablas y colabore !';
+$d[$k]['mTitle'] = 'Una hoja de cálculo en línea';
 $d[$k]['mBody']  = '<p>
-                        Avec '.$d[$k]['F'].', vos données sont automatiquement sauvegardées sur Internet. Vous et vos collaborateurs pouvez collaborer sur
-                        le document en même temps. Visualisez tous les changements en temps réel et travaillez ensemble sur vos inventaires, vos calculs, vos données, vos statistiques,
-                        et bien plus !
+                        Con '.$d[$k]['F'].', sus datos se salvaguardan automáticamente en Internet. Usted y sus colaboradores  pueden colaborar en el 
+documento al mismo tiempo. Visualice todos los cambios en tiempo real y trabajen juntos sobre sus inventarios, sus cálculos, sus datos , sus estadísticas,
+                        ¡ y mucho más !
                     </p>
-                    <p class="violet">Fonctionnalités :</p>
+                    <p class="violet">Cómo funciona :</p>
                     <ul>
-                        <li>Édition collaborative (plusieurs utilisateurs connectés à la même feuille de calcul)</li>
-                        <li>Nombreuses fonctions disponibles (statistiques, financières, mathématiques, texte, etc.)</li>
-                        <li>Possibilité de commenter des cellules</li>
-                        <li>Sauvegarde automatique</li>
-                        <li>Graphiques de base (histogramme, lignes, points)</li>
-                        <li>Export HTML</li>
-                        <li>Taille du document : jusqu’à 100 000 lignes.</li>
+                        <li>Edición colaborativa (varios utilizadores conectados a la misma hoja de cálculo)</li>
+                        <li>Numerosas funciones disponibles (de estadísticas, de finanzas, de matemáticas, texto, etc.)</li>
+                        <li>Posibilidad de comentar las celdas</li>
+                        <li>Salvaguardia automática</li>
+                        <li>Gráficos de base(histograma, líneas, pointsuntos)</li>
+                        <li>Exportación HTML</li>
+                        <li>Taille du document : jusqu’à 100 000 lignes.</li>
                     </ul>';
-
+            
+       
 // Img.ur
 $k= 'imgur';
-$d[$k]['sDesc']  = 'Envoi d’images';
-$d[$k]['lDesc']  = 'Partagez vos images anonymement';
-$d[$k]['mTitle'] = 'Partagez vos images facilement';
+$d[$k]['sDesc']  = 'Envío de imágenes';
+$d[$k]['lDesc']  = 'Comparta sus imágenes de manera anónima';
+$d[$k]['mTitle'] = 'Comparta sus imágenes fácilmente';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de partager facilement des images, par exemple pour les partager sur Twitter, Facebook, ou … Framasphère !
+                        '.$d[$k]['F'].' le permite compartir fácilmente imágenes, por ejemplo para intercambiarlas en Twitter, Facebook, o … Framasphère !
                     </p>
-                    <p>Attention, ce service n’est pas un équivalent de flickr ou instagram : il ne s’agit pas d’un service d’hébergement de photos d’utilisateurs, mais bien d’un service d’hébergement d’images anonymes (même nous, nous n’avons pas accès au contenu, qui est chiffré).</p>
+                    <p>Cuidado, este servicio no es un equivalente de  flickr o instagram : no se trata de un servicio de alojamiento de fotos de usuarios
+                     sino de un servicio de alojamiento de imágenes anónimas (ni siquiera nosotros tenemos acceso al contenido que viene cifrado).</p>
                     <p>
-                        '.$d[$k]['FL'].' permet d’envoyer des images de façon anonyme. Vous pouvez décider du moment de leur suppression (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
+                        '.$d[$k]['FL'].' permite mandar imágenes de manera anónima. Puede decidir del momento de su supresión (desde su primera visualización , las 24 horas del día, los 7 días de la semana, los 30 días del mes, 1 año después de haberlas puesto en línea).
                     </p>';
-
+            
 // Meetup
 $k= 'meetup';
-$d[$k]['sDesc']  = 'Événements communautaires';
+$d[$k]['sDesc']  = 'Eventos comunitarios';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
-
+   
 // Pastebin
 $k= 'pastebin';
-$d[$k]['sDesc']  = 'Notes anonymes';
-$d[$k]['lDesc']  = 'Rédigez et partagez en toute discrétion';
-$d[$k]['mTitle'] = 'Communiquez des données chiffrées';
+$d[$k]['sDesc']  = 'Notas anónimas';
+$d[$k]['lDesc']  = 'Redacte y comparta con toda discreción';
+$d[$k]['mTitle'] = 'Comunique datos cifrados';
 $d[$k]['mBody']  = '<p>
-                        Avec '.$d[$k]['F'].' vous pouvez partager des informations dont seuls vous et votre correspondant aurez le pouvoir de déchiffrer, et surtout de
-                        manière très simple. Vous pouvez même choisir la durée de validité de l’accès !
+                        Con '.$d[$k]['F'].' puede compartir informaciones que sólo usted y su correspondiente podrán descifrar  y todo ello de manera muy sencilla. ¡ Hasta podrá escoger la duración de la validez del acceso !
                     </p>
                     <p>
-                        <b class="violet">Pour quels usages ?</b> Vous pouvez avoir besoin de communiquer une ou plusieurs informations sans vouloir passer par la voie classique
-                        du courriel ou du petit bout de papier. Framabin vous permet d’envoyer une adresse et donner accès à ces informations en toute sécurité et simplicité. Le
-                        serveur stocke des données illisibles pour lui.
+                        <b class="violet">¿ Para qué usos ?</b> Puede que necesite comunicar un o más informaciones sin querer pasar por la vía clásica del correo electrónico o del pedacito de papel escrito. Framabin le permite mandar una dirección para dar acceso a esas informaciones con toda seguridad y sencillez à ces informations en toute sécurité et simplicité. El
+                        servidor almacena datos que él mismo no puede leer .
                     </p>';
-
+       
 // Pocket
 $k= 'pocket';
-$d[$k]['sDesc']  = 'Sauvegarde de contenu';
-$d[$k]['lDesc']  = 'Sauvegardez et lisez plus tard';
-$d[$k]['mTitle'] = 'Sauvegardez, lisez plus tard';
+$d[$k]['sDesc']  = 'Salvaguardia de contenido';
+$d[$k]['lDesc']  = 'Salvaguarde y lea más tarde';
+$d[$k]['mTitle'] = 'Salvaguarde, lea más tarde';
 $d[$k]['mBody']  = '<p>
-                        Avec '.$d[$k]['F'].', vous ne perdrez plus les contenus du Web qui vous intéressent mais que vous n’avez pas le temps de
-                        parcourir. D’un clic, vous enregistrez votre sélection et vous la lirez quand vous voudrez. L’application sauvegarde votre sélection pour vous permettre d’en
-                        profiter quand vous en aurez le temps.
+                        Avec '.$d[$k]['F'].', ya no se le perderán más los contenidos de la Web que le interesan pero que no ha leído por falta de tiempo. Con un solo clic guarde su selección y la leerá cuando quiera. La aplicación salvaguarda su selección para permitirle
+                         aprovecharla cuando tenga tiempo.
                     </p>
                     <p>
-                        Framabag est un <b class="violet">service de sauvegarde de pages web</b>. Vous stockez sur le serveur les contenus qui vous intéressent, textes et images
-                        comprises. Vous pouvez aussi partager vos articles et utiliser des extensions pour Firefox, Chrome, Android…
-                    </p>';
-
+                        Framabag es un <b class="violet">servicio de salvaguardia de páginas web</b>. Almacena en el servidor los contenidos que le interesan, textos e imágenes 
+                        incluídas. También puede compartir sus artículos y utilizar complementos para Firefox, Chrome, Android...
+                     </p>';
+               
 // Shrtct
 $k= 'loomio';
-$d[$k]['sDesc']  = 'Prise de décision';
-$d[$k]['lDesc']  = 'Un outil pour mieux gérer les prises de décisions collectives';
-$d[$k]['mTitle'] = 'Décidez ensembles,';
+$d[$k]['sDesc']  = 'Toma de decisión';
+$d[$k]['lDesc']  = 'Una herramienta para gestionar mejor las tomas de decisiones colectivas';
+$d[$k]['mTitle'] = 'Decidan juntos,';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous aide à prendre des décisions communautaires. Discutez, échangez, mettez-vous d’accord et passez à l’action, le tout dans les délais que vous fixés au départ.
+                        '.$d[$k]['F'].' les ayuda a tomar decisiones comunitarias. Discutan, intercambien, pónganse de acuerdo y pasen a la acción, en los plazos que hayan determinado al principio.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> Lancez une discussion, et invitez les personnes concernées à venir apporter leur point de vue. Développez les idées, échangez quelque soit votre point de vue. Les avis peuvent tous s’exprimer, se partager et murir. Décidez ensemble et sortez une proposition finale, dans les délais définis.
+                        <b class="violet">Cómo funciona :</b> Inicie una discusión, e invite las personas interesadas a aportar su punto de vista. Desarrolle sus ideas, intercambie sea cual sea su punto de vista. Todas las opiniones pueden expresarse, intercambiarse, compartirse y madurar. Decidan juntos y redacten una propuesta final dentro de los plazos definidos.
                     </p>';
-
-// Skype
+ 
+/ Skype
 $k= 'skype';
-$d[$k]['sDesc']  = 'Visioconférence';
-$d[$k]['lDesc']  = 'Discutez librement avec vos amis';
-$d[$k]['mTitle'] = 'Vidéoconférence';
+$d[$k]['sDesc']  = 'Videoconferencia';
+$d[$k]['lDesc']  = 'Converse libremente con sus amigos';
+$d[$k]['mTitle'] = 'Videoconferencia';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de discuter simplement avec vos amis, sans installation complexe de logiciel. Vous discutez simplement, sans aucune analyse des données liées aux conversations. Tout se passe entre vous et vos amis.
+                        '.$d[$k]['F'].' le permite conversar libremente con sus amigos, sin instalación compleja de software. Converse simplemente, sin ningún análisis de datos relacionados con la conversación. Todo pasa entre usted y sus amigos. 
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> Directement à partir de votre navigateur web, vous êtes mis en relation avec vos amis, sans devoir installer de logiciel supplémentaire. Une fois connecté, donnez l’autorisation à votre navigateur d’utiliser votre micro et votre webcam, et profitez de la discussion en toute simplicité.
+                        <b class="violet">Cómo funciona :</b> Directamente a partir de su navegador web, se pone en relación con sus amigos sin necesidad de instalar ningún programa más, sans devoir installer de logiciel supplémentaire. Una vez conectado, dé  permiso a su navegador para que utilice su micrófono y su cámara de web y aproveche plenamente la charla sin complicaciones.
                     </p>';
 
+                 
+ 
 // Trello
 $k= 'trello';
-$d[$k]['sDesc']  = 'Gestion de projets';
-$d[$k]['lDesc']  = 'Gestionnaire de projets';
-$d[$k]['mTitle'] = 'Gestionnaire de projets';
+$d[$k]['sDesc']  = 'Gestión de proyectos;
+$d[$k]['lDesc']  = 'Gestor de proyectos';
+$d[$k]['mTitle'] = 'Gestor de proyectos';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' est un gestionnaire de tâches visuel. Il permet de gérer des projets de manière collaborative, en suivant la méthode Kanban. Son système visuel permet de s’y retrouver au premier coup d’œil, quelque soit votre habitude à utiliser ce genre d’outil.
+                        '.$d[$k]['F'].' es un gestor de tareas visual. Permite gestionar proyectos de manera colaborativa, según el método Kanban. Su sistema visual le permite a uno orientarse a primera vista esté o no esté acostumbrado a usar este tipo de herramienta.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> Lancez votre projet, et commencez à le gérer collectivement, tâche par tâche. Assignez une personne à chaque tache, définissez des fonctions, des avancements et des délais. Cette gestion visuelle vous permettra de voir l’état du projet en un coup d’œil.
+                        <b class="violet">Cómo funciona :</b> Inicie su proyecto y comience a gestionarlo de manera colectiva, tarea tras tarea. Asigne a cada tarea una persona, defina funciones, progresos y plazos. Esta gestión visual le permitirá ver el estado del proyecto en una ojeada.
                     </p>';
-
+                   
+             
 // Twitter
 $k= 'twitter';
 $d[$k]['sDesc']  = 'Microblogging';
-$d[$k]['lDesc']  = 'Gazouillez sur Internet';
-$d[$k]['mTitle'] = 'Le microblogage libre';
+$d[$k]['lDesc']  = 'Trine en Internet';
+$d[$k]['mTitle'] = 'El microblogueo libre';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' vous permet de suivre des flux de microblogage et entretenir vos propres flux de manière décentralisée en utilisant le protocole P2P.
+                        '.$d[$k]['F'].' le permite seguir fuentes de microblogueo y mantener las propias fuentes de manera descentralizada utilizando el protocolo P2P.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> utilisez un client de connexion, ouvrez un compte, abonnez-vous à des flux et tweetez à votre tour.
+                        <b class="violet">Cómo funciona :</b> utilice un cliente de conexión, abra una cuenta, suscríbase a una fuentes de web y tuitee a su vez.
                     </p>';
-
+      
+              
 // WeTransfer
 $k= 'wetransfer';
-$d[$k]['sDesc']  = 'Envoi de gros fichiers';
+$d[$k]['sDesc']  = 'Envío de archivos voluminosos';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
 
+
+  
 // Youtube
 $k= 'youtube';
-$d[$k]['sDesc']  = 'Hébergement de vidéos';
-$d[$k]['lDesc']  = 'Partagez vos vidéos et conservez vos droits';
-$d[$k]['mTitle'] = 'Libérez vos vidéos';
+$d[$k]['sDesc']  = 'Alojamiento de vídeos';
+$d[$k]['lDesc']  = 'Comparta sus vídeos y conserve sus derechos';
+$d[$k]['mTitle'] = 'Libere sus vídeos';
 $d[$k]['mBody']  = '<p>
-                        Sur '.$d[$k]['FL'].', vous pouvez télécharger vos vidéos, les partager avec votre entourage ou les ouvrir en lecture publique.
-                        C’est le meilleur moyen de partager des vidéos sans céder vos droits.
+                        Sur '.$d[$k]['FL'].', puede descargar sus vídeos, compartirlos con la personas que le rodean o abrirlos en lectura pública.
+                        Es el mejor medio de compartir sus vídeos sin ceder sus derechos.
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> ouvrez un compte et téléchargez vos vidéos. Vous gardez vos droits et la liberté de modifier vos téléchargements.
+                        <b class="violet">Cómo funciona:</b> abra una cuenta y suba sus vídeos. Usted conserva sus derechos y la libertad de modificar sus subidas.
                     </p>';
+               
 
 /********************
  * Pas sur la carte
  ********************/
 // JS Fiddle
 $k= 'jsfiddle';
-$d[$k]['sDesc']  = 'Partage de code';
+$d[$k]['sDesc']  = 'Código compartido';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
-
 // Kongregate
 $k= 'kongregate';
-$d[$k]['sDesc']  = 'Jeux';
-$d[$k]['lDesc']  = 'Une compilation de jeux libre';
-$d[$k]['mTitle'] = 'Faites une pose, jouez quelques instants';
+$d[$k]['sDesc']  = 'Juegos';
+$d[$k]['lDesc']  = 'Una recopilación de juegos libres';
+$d[$k]['mTitle'] = 'Tómese un respiro, juegue unos instantes';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].', vous propose un certain nombre de jeux libres, disponibles aussi bien pour une utilisation en ligne qu’hors ligne. Faites une pause et profitez de l’un des jeux proposés.
-                        <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">contrairement à Angry Birds</a>, la NSA ne vous espionnera pas ;) )</small>
+                        '.$d[$k]['F'].', le propone cierta cantidad de juegos libres, disponibles tanto para  el uso en línea como fuera de línea. Tómese un respiro y aproveche uno de los juegos propuestos.
+                        <small>(y <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">al contrario de Angry Birds</a>, la NSA no le espiará ;) )</small>
                     </p>
                     <p>
-                        <b class="violet">Fonctionnement :</b> Chacun des jeux est directement utilisable sur le site ou téléchargeable pour une utilisation hors ligne. Sélectionnez votre jeu et lancez-vous.
+                        <b class="violet">Cómo funciona :</b> Cada uno de los juegos ofrece la posibilidad del uso directo en el sitio o la descarga para un uso fuera de línea.  Escoja su juego y ¡ a jugar !.
                     </p>';
-$d[$k]['mFooter']= '<p class="precisions">Framagames est une compilation de jeux libres. Les crédits sont indiqués sur le site.</p>';
-
+$d[$k]['mFooter']= '<p class="precisiones">Framagames es una recopilación de juegos libres. Los créditos están indicados en el sitio.</p>';
 // Padlet
 $k= 'padlet';
-$d[$k]['sDesc']  = 'Organisation d’idées';
+$d[$k]['sDesc']  = 'Organización de ideas';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
-
+  
 // Pixlr
 $k= 'pixlr';
-$d[$k]['sDesc']  = 'Dessin vectoriel';
-$d[$k]['lDesc']  = 'Créez rapidement des images vectorielles au format SVG';
-$d[$k]['mTitle'] = 'Créez rapidement des images vectorielles au format SVG';
+$d[$k]['sDesc']  = 'Gráfico vectorial';
+$d[$k]['lDesc']  = 'Cree rápidamente imágenes en formato SVG';
+$d[$k]['mTitle'] = 'Cree rápidamente imágenes vectoriales de formato SVG';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].', est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
+                        '.$d[$k]['F'].', es un program de gráfico muy simple (¿ quién dijo que simplista ?).
                     </p>
-                    <p><b class="violet">Fonctionnalités :</b></p>
+                    <p><b class="violet">Características :</b></p>
                     <ul>
-                        <li>Utilisable en ligne, sans installation</li>
-                        <li>Pas d’inscription requise</li>
-                        <li>Possibilité d’exporter votre document sous forme d’image bitmap ou vectorielles</li>
-                        <li>Logiciel libre et gratuit, ouvert à tous</li>
-                        <li>Ethique : aucune conservation de vos données</li>
+                        <li>Se utiliza en línea, sin instalación</li>
+                        <li>No se requiere inscripción</li>
+                        <li>Posibilidad de exportar el documento en cuanto imagen de mapa de bits o en cuanto imagen vectorial</li>
+                        <li>Software libre y gratuito, abierto a todos</li>
+                        <li>Ética: no se conservan sus datos</li>
                     </ul>
                     <div style="text-align:center">
                     <video controls="controls" preload="none" width="620" height="360" poster="https://framatube.org/images/media/864l.jpg">
@@ -1014,31 +1094,30 @@ $d[$k]['mBody']  = '<p>
                         <source src="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm" type="video/webm"></source>
                     </video>
                     </div>
-                    <p> La <a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">vidéo</a> au format webm <small>(Pour l’instant la vidéo est en anglais. Désolé.)</small></p>';
-
-// Scribd
+                    <p> El <a href="https://framatube.org/files/1228-introduction-a-svg-editjpg.webm">vídeo</a> en formato webm <small>(Por el momento el vídeo es en inglés. Lo sentimos mucho.)</small></p>';
+               // Scribd
 $k= 'scribd';
-$d[$k]['sDesc']  = 'Partage de PDF/ODP';
+$d[$k]['sDesc']  = 'Intercambio de PDF/ODP';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
-
 // Transifex
 $k= 'transifex';
-$d[$k]['sDesc']  = 'Traduction de logiciels';
+$d[$k]['sDesc']  = 'Traducción de software';
 $d[$k]['lDesc']  = '';
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
+
 
 /****************
  * Mises à jour *
  ****************/
 // Etherpad Lite
-$k = 'up-padlite'; $ko = 'gdocs';    // prefixe "up-" obligatoire ; $ko est l'id du projet initial
-$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copier/Coller
+$k = 'up-padlite'; $ko = 'gdocs';    // prefijo "up-" obligatorio ; $ko es la identificación del proyecto inicial
+$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copiar/Pegar
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'];
-$d[$k]['name']   = 'Remplacement d’Etherpad par la version « Lite » pour les pads publics';
+$d[$k]['name']   = 'se reemplaza Etherpad por la versión « Lite » para los pads públicos';
 
 // Wisemapping
 $k = 'up-framindmap2'; $ko = 'bubblus';
@@ -1046,19 +1125,18 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-        <b class="violet">Mise à jour :</b> le logiciel qui propulse Framindmap sera Wisemapping (et non plus Mindmaps). Ce logiciel est plus complet, permet de lier des documents aux noeuds ou d’enregistrer vos cartes pour les retrouver et les partager facilement sur internet.
+        <b class="violet">Actualización :</b> el programa que impulsa Framindmap será  Wisemapping (y ya no Mindmaps). Este programa es más completo, permite relacionar los documentos con los nodos o grabar sus mapas para encontrarlos de nuevo y compartirlos fácilmente en internet.
     </p>';
-$d[$k]['name']   = 'Mindmaps remplacé par Wisemapping';
-
+$d[$k]['name']   = 'Mindmaps reemplazado por Wisemapping';
 // Framadate 0.8
 $k = 'up-framadate2'; $ko = 'doodle';
 $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-        <b class="violet">Mise à jour</b> : la mise à jour de Framadate concerne une refonte graphique et technique du service. L’interface est plus claire, plus ergonomique. Et il sera désormais possible de répondre "peut-être" à un choix de sondage.
+        <b class="violet">Actualización</b> : la actualización de Framadate interesa una revisión gráfica y técnica del servicio. La interfaz queda más clara, más ergonómica. Y ya será posible contestar ""quizás" a una pregunta de sondeo
     </p>';
-$d[$k]['name']   = 'Développement axé sur l’ergonomie et l’accessibilité';
+$d[$k]['name']   = 'Desarrollo cuyos ejes son la ergonomía y la accesibilidad';
 
 // MyPads
 $k = 'up-mypads'; $ko = 'gdocs';
@@ -1066,8 +1144,8 @@ $d[$k]['lDesc']  = $d[$ko]['lDesc'];
 $d[$k]['mTitle'] = $d[$ko]['mTitle'];
 $d[$k]['mBody']  = $d[$ko]['mBody'].'
     <p>
-        <b class="violet">Mise à jour</b> : cette mise à jour de Framapad sera conséquente, car en plus de bénéficier d’instances dédiées (par exemple à l’éducation ou aux sciences), vous pourrez (enfin !) gérer des pads privés (gestion par groupe ou par mot de passe).
+        <b class="violet">Actualización</b> : esta actualización de Framapad será importante, ya que, además de beneficiarse de foros dedicados  (por ejemplo a la educación o a las ciencias), usted podrá (¡ por fin !) manejar pads privados (gestión por grupo o por contraseña).
     </p>';
-$d[$k]['name']    = 'Développement et intégration du plugin Mypads';
+$d[$k]['name']    = 'Desarrollo e integración del plugin Mypads';
 
 ?>
