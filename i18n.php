@@ -2,7 +2,7 @@
     $langs = [
         'fr' => 'Français',
         'en' => 'English',
-        //'es' => 'Español',
+        'es' => 'Español',
     ];
 
     session_set_cookie_params(365*24*60*60);

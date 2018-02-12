@@ -105,7 +105,6 @@ $t['map']['camps']['np1']         = 'Edward Snowden’s revelations about the PR
 $t['map']['camps']['np2']         = 'Using centralized services
                 amounts to offering your personal data to surveillance organizations without any means to control what they do with it.';
 
-
 // Accueil
 $t['why']['title']  = 'Main Page';
 $t['why']['link']   = $l['current'];
@@ -139,7 +138,7 @@ $t['why']['more']['b3']    = 'KITTENS';
 
 $t['why']['why']['h2']     = 'Why?';
 $t['why']['why']['p0']     = 'These services are software, but this software is set up on
-                               someone else\'s computer (on what\'s called "servers").
+                              someone else\'s computer (on what\'s called "servers").
                               Using services offered by Google, Apple, Facebook, Amazon, Microsoft...
                               ("GAFAM") means giving them your data,
                               the parts of your life that you put on the Internet.
@@ -151,14 +150,14 @@ $t['why']['why']['p1']     = 'This trust has allowed a handful of companies (GAF
                               economic, technological, cultural...';
 $t['why']['why']['b1']     = 'Stakes and dangers';
 $t['why']['why']['p2']     = '<strong>Our approach</strong> is simple and consists
-                               in determining the self-imposed conditions that may justify such trust.
-                               We aim to offer alternatives that respect people and diversity while
-                               making it impossible to reproduce such monopolies.';
+                              in determining the self-imposed conditions that may justify such trust.
+                              We aim to offer alternatives that respect people and diversity while
+                              making it impossible to reproduce such monopolies.';
 $t['why']['why']['b2']     = 'What we offer';
 $t['why']['why']['p3']     = 'In order for you to determine whether you can trust us,
-                                         we have published an introduction to our Framasoft network
-                                         (and to the non-profit that supports it), together with our reports
-                                         and administrative documention under <strong>Who are we?</strong>';
+                              we have published an introduction to our Framasoft network
+                              (and to the non-profit that supports it), together with our reports
+                              and administrative documention under <strong>Who are we?</strong>';
 $t['why']['why']['b3']     = 'Who are we?';
 
 // Pourquoi - Enjeux
@@ -333,41 +332,11 @@ $t['alt']['altp4']       = 'So when we use Internet, we must necessarily <b>trus
 // Espace médias
 $t['medias']['title']   = 'Media area';
 $t['medias']['link']    = 'medias';
-$t['medias']['desc']    = '';
-$t['medias']['css']     = '<link href="'.$l['current'].'css/list.css" rel="stylesheet" type="text/css" />';
-$t['medias']['js']      = '<script src="'.$l['current'].'js/leds.js" type="text/javascript"></script>';
-
 $t['medias']['subtitle']    = 'History of the De-google-ify Internet campaign';
-$t['medias']['intro']       = 'To begin this third year of its campaign of alternative proposals for services provided by Google & co, Framasoft is launching six new services based on free software as of 3 October.';
-$t['medias']['btnCPtxt']    = 'Read the<br/>press release';
-$t['medias']['btnCPurl']    = 'img/2016_communique_degooglisons_Framasoft.html';
-$t['medias']['btnDPtxt']    = 'Download the<br/>press release';
-$t['medias']['btnDPurl']    = 'img/dossier_presse-Degooglisons_internet-2016.pdf';
-$t['medias']['1title']      = 'Posts on the Framablog';
-$t['medias']['1intro']      = '<a href="http://framablog.org">Framablog</a> is our main tool for communicating with the general public. All six of the new services launching our campaign will be presented during the week of 3 October 2016.';
-$t['medias']['1list']       = '
-                        <ul>
-                            <li><em>Monday 03/10</em> : [FRENCH] <a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">3rd Year De-google-ify Internet Campain </a>présentation.</li>
-                            <li><em>Monday 03/10</em> : <a href="http://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google">Framalistes</a>, alternative to Google Groups.</li>
-                            <li><em>Tuesday 04/10</em> : <a href="http://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever">Framanotes</a>, alternative to Evernote.</li>
-                            <li><em>Wednesday 05/10</em> : <a href="http://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google">Framaforms</a> alternative to Google Forms.</li>
-                            <li><em>Thursday 06/10</em> : <a href="http://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie">Framatalk</a>, alternative to Skype.</li>
-                            <li><em>Friday 07/10</em> : <a href="http://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-et-vos-contacts-avec-la-nsa">Framagenda</a> alternative to Google Agenda & Contacts.</li>
-                            <li><em>Monday 10/10</em> : <a href="http://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous">MyFrama</a> alternative to Del.icio.us &  Google Notes and account.</li>
-                        </ul>';
-$t['medias']['2title']      = 'Link to services';
-$t['medias']['2intro']      = 'Even though they will be presented throughout the week on our blog, these six new services will be online as early as 3 October. Click on the name of the service to try it.';
-$t['medias']['2list']       = '
-                        <ul>
-                            <li><a href="https://framalistes.org"><b class="violet">Frama</b><b class="vert">listes</b></a></li>
-                            <li><a href="https://framanotes.org"><b class="violet">Frama</b><b class="vert">notes</b></a></li>
-                            <li><a href="https://framaforms.org"><b class="violet">Frama</b><b class="vert">forms</b></a></li>
-                            <li><a href="https://framatalk.org"><b class="violet">Frama</b><b class="vert">talk</b></a></li>
-                            <li><a href="https://framagenda.org"><b class="violet">Fram</b><b class="vert">agenda</b></a></li>
-                            <li><a href="https://my.framasoft.org"><b class="violet">My</b><b class="vert">Frama</b></a></li>
-                        </ul>';
-
-$t['medias']['tabstitle']   = 'Visuals for de-google-ify year 3';
+$t['medias']['intro']    = 'Dégooglisons Internet est une campagne qui a duré trois ans (oct. 2014 - oct. 2017), mais qui s’inscrit dans un cheminement plus général de Framasoft. <br/>Parcourez de la molette la fresque ci-dessous pour en découvrir les dates-clés (plein écran <a href="https://degooglisons-internet.org/fresque">disponible ici</a>).';
+$t['medias']['desc']    = '';
+$t['medias']['js']      = '';
+$t['medias']['tabstitle']   = 'Visuals for the de-google-ify campain';
 $t['medias']['tabsintro']   = 'Unless otherwise stated, all our visuals are made by <a href="http://ptilouk.net">Simon « Gee » Giraudot</a> and are freely reusable under the licence <a href="http://creativecommons.org/licenses/by-sa/4.0/"><span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0</a>.</em> These visuals are in large size (contrary to appearances). However, if you need a higher resolution, feel free to contact us.';
 $t['medias']['tabssaveas']  = 'To reuse the picture, right click on the image and “save image as”';
 
@@ -484,9 +453,6 @@ $t['medias']['presslist']   = [
     ['24/05/2015', 'Le Soir (Belgique)',
     'http://www.lesoir.be/886985/article/economie/vie-du-net/2015-05-23/google-vivre-sans-c-est-parfois-possible',
     'Lien vers l’article (abonnés)'],
-    ['29/04/2015', 'Canal + (La Nouvelle Édition)',
-    'http://www.canalplus.fr/c-emissions/c-la-nouvelle-edition/pid6850-la-nouvelle-edition.html?vid=1249359',
-    'Lien vers la vidéo'],
     ['03/02/2015', 'L’Humanité',
     'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
     'Lien vers l’article'],
@@ -499,8 +465,8 @@ $t['medias']['presslist']   = [
 ];
 $t['medias']['framatitle']  = 'Framasoft in a few links';
 $t['medias']['framalist']   = '
-                        <ul >
-                              <li><a href="https://contact.framasoft.org/#questions">Contact us</a> (This form relates directly to our press service).</li>
+                        <ul>
+                            <li><a href="https://contact.framasoft.org/#questions">Contact us</a> (This form relates directly to our press service).</li>
                             <li><a href="https://fr.wikipedia.org/wiki/Framasoft">Wikipedia page</a> dedicated to Framasoft.</li>
                             <li>Framasoft <a href="https://soutenir.framasoft.org/association">Complete presentation</a>.</li>
                             <li>Framasoft <a href="https://wiki.framasoft.org/speakabout">Press release</a>.</li>
@@ -631,6 +597,7 @@ $d[$k]['tags']   = 'site, homepage, web, html';
 $k= 'bubblus';
 $d[$k]['sDesc']  = 'Mind Map';
 $d[$k]['lDesc']  = 'Create your mind maps';
+
 $d[$k]['tDesc']  = 'Design, publish and share mind maps easily, on your own or with others in turn (alternative to Bubbl.us).';
 $d[$k]['hDesc']  = 'Interface fluide et intuitive pour créer rapidement et
                     simplement des cartes heuristiques à même votre navigateur.
@@ -656,9 +623,9 @@ $d[$k]['tags']   = 'produce, mindmap, brainstorming';
 $k= 'change';
 $d[$k]['sDesc']  = 'Petitions';
 $d[$k]['lDesc']  = 'Launch your petitions without giving away the addresses of your backers';
-$d[$k]['tDesc']  = 'Launch your petitions from an ethical platform, which doesn\t exploit your supporter\'s data (alternative to Avaaz, Change.org).';
-$d[$k]['hDesc']  = '';
 
+$d[$k]['tDesc']  = 'Launch your petitions from an ethical platform, which doesn\'t exploit your supporter\'s data (alternative to Avaaz, Change.org).';
+$d[$k]['hDesc']  = '';
 
 $d[$k]['mTitle'] = 'Free your petitions';
 $d[$k]['mBody']  = '<p>
@@ -705,6 +672,7 @@ $d[$k]['tags']   = 'share, store, links';
 $k= 'doodle';
 $d[$k]['sDesc']  = 'Meetings and polls';
 $d[$k]['lDesc']  = 'Schedule a meeting or create an opinion poll';
+
 $d[$k]['tDesc']  = 'Collaboratively decide the best date and time for a meeting, or create a simple poll with ease (alternative to Doodle).';
 $d[$k]['hDesc']  = 'Framadate is a bit like Doodle but libre software.
                     It couldn\'t be easier to invite your collaborators to organize
@@ -1074,9 +1042,9 @@ $d[$k]['tags']   = 'share, images, gallery, encryption';
 $k= 'meetup';
 $d[$k]['sDesc']  = 'Community events';
 $d[$k]['lDesc']  = 'Organise meetings and special interest groups';
-$d[$k]['hDesc']  = '';
 
 $d[$k]['tDesc']  = '';
+$d[$k]['hDesc']  = '';
 
 $d[$k]['mTitle'] = 'Keep control over the meetings that you organize';
 $d[$k]['mBody']  = '<p>
@@ -1275,9 +1243,7 @@ $d[$k]['lDesc']  = 'Share your files anonymously';
 
 $d[$k]['tDesc']  = 'Share web file with a web link, confidentialy with end to end encryption  (alternative to WeTransfer).';
 $d[$k]['hDesc']  = 'With Framadrop, no more issue with attachment too big 
-
-    impairing you to send files by <span lang="en">email</span>.
-
+                    impairing you to send files by <span lang="en">email</span>.
                     This Free service allow you to easily and securily share files. ';
 
 $d[$k]['mTitle'] = 'Share your files easily';
@@ -1316,9 +1282,9 @@ $d[$k]['mBody']  = '<p>
 $k= 'jsfiddle';
 $d[$k]['sDesc']  = 'Share Code';
 $d[$k]['lDesc']  = '';
-$d[$k]['hDesc']  = '';
 
 $d[$k]['tDesc']  = '';
+$d[$k]['hDesc']  = '';
 
 $d[$k]['mTitle'] = '';
 $d[$k]['mBody']  = '';
@@ -1391,9 +1357,9 @@ $d[$k]['mBody']  = '<p>
 $k= 'transifex';
 $d[$k]['sDesc']  = 'Software translation';
 $d[$k]['lDesc']  = 'Create a new translation project for your software';
-$d[$k]['hDesc']  = '';
 
 $d[$k]['tDesc']  = '';
+$d[$k]['hDesc']  = '';
 
 $d[$k]['mTitle'] = 'Make your code multilingual!';
 $d[$k]['mBody']  = '<p>
@@ -1422,54 +1388,6 @@ $d[$k]['mBody']  = '<p>
                     <p>
                          <b class="violet">How does it work?</b> Choose a client, open an account, then subscribe to various feeds and tweet.
                     </p>';
-
-/****************
- * Mises à jour *
- ****************/
-// Etherpad Lite
-$k = 'up-padlite'; $ko = 'gdocs';    // prefix "up-" compulsory ; $ko is the id of the initial project
-$d[$k]['lDesc']  = $d[$ko]['lDesc']; // Copy/Paste
-
-
-$d[$k]['mTitle'] = $d[$ko]['mTitle'];
-$d[$k]['mBody']  = $d[$ko]['mBody'];
-$d[$k]['name']   = 'Replacing Etherpad by the “lite” version for public pads';
-
-// Wisemapping
-$k = 'up-framindmap2'; $ko = 'bubblus';
-$d[$k]['lDesc']  = $d[$ko]['lDesc'];
-
-
-$d[$k]['mTitle'] = $d[$ko]['mTitle'];
-$d[$k]['mBody']  = $d[$ko]['mBody'].'
-    <p>
-           <b class="violet">Update:</b> the software underlying Framindmap is now Wisemapping rather than Mindmaps. This software is more complete, allowing you to bind documents at the nodes or save your work in such a way that it can easily be found and shared on the internet.
-    </p>';
-$d[$k]['name']   = 'Mindmaps replaced by Wisemapping';
-
-// Framadate 0.8
-$k = 'up-framadate2'; $ko = 'doodle';
-$d[$k]['lDesc']  = $d[$ko]['lDesc'];
-
-
-$d[$k]['mTitle'] = $d[$ko]['mTitle'];
-$d[$k]['mBody']  = $d[$ko]['mBody'].'
-    <p>
-           <b class="violet">Update:</b> this update of Framadate involves a graphic and technical overhaul of the service. The interface is clearer and more ergonomic. It’s now possible to answer a survey option by “maybe”.
-    </p>';
-$d[$k]['name']   = 'Development axis: ergonomy and accessibility';
-
-// MyPads
-$k = 'up-mypads'; $ko = 'gdocs';
-$d[$k]['lDesc']  = $d[$ko]['lDesc'];
-
-
-$d[$k]['mTitle'] = $d[$ko]['mTitle'];
-$d[$k]['mBody']  = $d[$ko]['mBody'].'
-    <p>
-          <b class="violet">Update:</b> This update is important. You can now have dedicated instances (for science or education, for example). Moreover, you can now manage private pads (by groups or passwords).
-          </p>';
-$d[$k]['name']    = 'Development and integration of Mypads plugin';
 
 /**********************
  * Projets hors Frama *
@@ -1552,7 +1470,4 @@ $c2['share']['name']   = 'Share links and files';
 $c2['tools']['name']   = 'Synchronise and share';
 $c2['search']['name']  = 'Improved web experience';
 $c2['games']['name']   = 'Have fun with free software';
-
-
-
 ?>
