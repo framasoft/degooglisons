@@ -30,7 +30,7 @@
 
     <link href="https://framasoft.org/nav/lib/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet">
     <link href="<?php echo $l['current'] ?>css/core.css" rel="stylesheet" type="text/css" />
-    <link href="https://framasoft.org/nav/lib/font-awesome/css/font-awesome.min.css" media="all" rel="stylesheet">
+    <link href="https://framasoft.org/nav/lib/fork-awesome/css/fork-awesome.min.css" media="all" rel="stylesheet">
     <link href="https://framasoft.org/nav/css/frama.css" media="all" rel="stylesheet">
     <link href="/css/select2.min.css" media="all" rel="stylesheet">
 
@@ -48,7 +48,7 @@
                     <h1><?php echo $t['meta']['DIo'] ?>
                         <div class="pull-right">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" 
+                                <button type="button" class="btn btn-default dropdown-toggle"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                     title="<?php echo $t['_Change the language'] ?>">
                                     <i class="fa fa-lg fa-language" aria-hidden="true"></i> Langue <span class="caret"></span>
