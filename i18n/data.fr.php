@@ -21,7 +21,7 @@ $l['cloud'] = 'https://framacloud.org/fr/cultiver-son-jardin';
 $l['chatons'] = 'https://chatons.org';
 
 // Images
-$l['map'] = $l['DIo'].'img/Carte2016-romains.png';
+$l['map'] = $l['DIo'].'/img/Carte2016-romains.png';
 
 // Meta
 $t['meta']['lang']      = 'fr';
