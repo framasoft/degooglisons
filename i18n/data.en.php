@@ -21,7 +21,7 @@ $l['cloud'] = 'https://framacloud.org/en/cultiver-son-jardin';
 $l['chatons'] = 'https://www.chatons.org/en';
 
 // Images
-$l['map'] = 'img/Carte2016-romains-en.png';
+$l['map'] = $l['DIo'].'/img/Carte2016-romains-en.png';
 
 // Meta
 $t['meta']['lang']      = 'en';
@@ -40,16 +40,16 @@ $t['meta']['lead']      = 'An initiative of the '.$t['meta']['F'].' network for 
 $t['meta']['leds']['title']   = 'For an Internet…';
 
 $t['meta']['leds']['ltitle']  = 'Free';
-$t['meta']['leds']['ldesc']   = 'As far as standards and protocols are concerned, the story of 
-                the Internet is one of free software. But its popularity and potential make big firms jealous. 
-                They would like to claim control of it by establishing closed code in locked systems 
-                that are not interoperable. 
-                To keep the Internet faithful to the founding principles which led to its success, 
-                it is important that there should be free apps on the Internet, that is to say, 
+$t['meta']['leds']['ldesc']   = 'As far as standards and protocols are concerned, the story of
+                the Internet is one of free software. But its popularity and potential make big firms jealous.
+                They would like to claim control of it by establishing closed code in locked systems
+                that are not interoperable.
+                To keep the Internet faithful to the founding principles which led to its success,
+                it is important that there should be free apps on the Internet, that is to say,
                 apps with opensource codes, accessible under free licence.';
 
 $t['meta']['leds']['dtitle']  = 'Decentralized';
-$t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at the margins of the network 
+$t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at the margins of the network
                 in a peer-to-peer sharing dynamic, to avoid creating a Minitel 2.0. To insure equality
                 for all concerned, from citizens to businesses, monopolies must not only be excluded, but also
                 prevented from monopolizing personal or public data. Through clear
@@ -59,15 +59,15 @@ $t['meta']['leds']['ddesc']   = 'The genius of the Internet must dwell at the ma
 $t['meta']['leds']['etitle']  = 'Ethics';
 $t['meta']['leds']['edesc']   = 'We wish to support a participative and
                 independent Internet. Exploitation, surveillance, censorship, and data
-                appropriation are trends we refuse in favor of transparency (integrity), 
+                appropriation are trends we refuse in favor of transparency (integrity),
                 clearly displayed policies for users of the various services, and the refusal of all forms of discrimination.';
 
 $t['meta']['leds']['stitle']  = 'Solidarity';
-$t['meta']['leds']['sdesc']   = 'Through the services we provide, we promote a model 
-                based on cost participation, resource sharing, and accessibility 
-                for the largest number of people. 
-                Any abuse will thus be avoided, for we all remain fully aware of our common interests. 
-                This model also has an educational purpose since, as we document the roll-out of services, 
+$t['meta']['leds']['sdesc']   = 'Through the services we provide, we promote a model
+                based on cost participation, resource sharing, and accessibility
+                for the largest number of people.
+                Any abuse will thus be avoided, for we all remain fully aware of our common interests.
+                This model also has an educational purpose since, as we document the roll-out of services,
                 many users will in their turn be able to share those resources.';
 
 $t['meta']['leds']['charte']  = 'To find out more about this, feel free to read <strong><a href="'.$l['Charte'].'">our detailed charter</a></strong>.';
@@ -125,11 +125,11 @@ $t['why']['choice']['alt3'] = 'Discover free alternatives<br> to replace it.';
 $t['why']['more']['h2']    = 'Go further';
 $t['why']['more']['p0']    = 'On the way to your digital independance... ? The road is clear!<br>
                               De-google-ify Internet offers you the possibility to follow it in several steps.';
-$t['why']['more']['p1']    = 'Discover and use free alternatives (hosted by Framasoft), 
+$t['why']['more']['p1']    = 'Discover and use free alternatives (hosted by Framasoft),
                               with the help of our collaborative <strong>documentation</strong> to learn
                               how they work, how to log in, how to use their fonctions, etc..';
 $t['why']['more']['b1']    = 'Documentation';
-$t['why']['more']['p2']    = 'If you have the possibility, freely host the same software 
+$t['why']['more']['p2']    = 'If you have the possibility, freely host the same software
                               directly on your school/association/company/organization
                               thanks to our self-hosting tutorial found in the  <strong>Framacloud</strong>.';
 $t['why']['more']['b2']    = 'Framacloud';
@@ -275,8 +275,8 @@ $t['why']['conc']['cbtn']  = 'Contact Framasoft';
 $t['why']['conc']['stitle'] = 'Support us';
 $t['why']['conc']['sp3']     = 'Like all our actions, our services are not free of charge:
                 they are financed by donations from people who support us through a
-                one off or regular donation. 
-                About 90% of Framasoft\'s revenues 
+                one off or regular donation.
+                About 90% of Framasoft\'s revenues
                 comes from the donation economy and is used to finance:
                 </p><ul>
                     <li>our permanent staff\'s salaries;</li>
@@ -643,27 +643,27 @@ $d[$k]['lDesc']  = 'Easily find your links and your Framasoft services';
 
 $d[$k]['tDesc']  = 'sort and preserve your web link (including links to Frama-services) in a web folder (alternative to Del.icio.us/Diigo).';
 $d[$k]['hDesc']  = 'MyFrama is a digital catch-all, allowing you to store and
-                     retrieve all your beloved links, like diigo or del.ico.us ! 
-                    with a tag system and automatic sorting , you can easily 
-                    store your tabs and bookmarks, using the MyFrama button to 
+                     retrieve all your beloved links, like diigo or del.ico.us !
+                    with a tag system and automatic sorting , you can easily
+                    store your tabs and bookmarks, using the MyFrama button to
                     access directly the Frama services you are currently using !';
 
 $d[$k]['mTitle'] = ' Sort all the Web if you want (it might take a while)';
 $d[$k]['mBody']  = '<p>
                         '.$d[$k]['F'].' is a digital catch-all, allowing you to keep and
-                     retrieve all your beloved links, like diigo or del.ico.us ! 
-                    With its tag system and automatic sorting, you can easily 
-                    store your tabs and bookmarks, using the MyFrama button to 
+                     retrieve all your beloved links, like diigo or del.ico.us !
+                    With its tag system and automatic sorting, you can easily
+                    store your tabs and bookmarks, using the MyFrama button to
                     access directly the Frama services you are currently using!
                     </p>
                     <p>
-                      <b class="violet">Working method :</b> Create your 
+                      <b class="violet">Working method :</b> Create your
                       account, add the Bookmarklet to your browser\'s bookmark bar.
-                      Use it to store an  (<abbr>URL</abbr>) link, adding its title, 
+                      Use it to store an  (<abbr>URL</abbr>) link, adding its title,
                       description and tag.
-                     Use the MyFrama button on our site store a link to the services: 
+                     Use the MyFrama button on our site store a link to the services:
                      it\'s all automatically sorted !
-                      Consider creating your own sorting rule to add your chosen 
+                      Consider creating your own sorting rule to add your chosen
                       tag to your web links!
                     </p>';
 $d[$k]['tags']   = 'share, store, links';
@@ -786,7 +786,7 @@ $d[$k]['sDesc']  = 'Shared calendar';
 $d[$k]['lDesc']  = 'You choose who sees your timetable';
 
 $d[$k]['tDesc']  = 'Create personal or professional, confidential or public, agendas, on your own or in collaboration, and synchronise them across devicess.';
-$d[$k]['hDesc']  = 'With Framagenda you can create personal or professional 
+$d[$k]['hDesc']  = 'With Framagenda you can create personal or professional
                     agendas, the timetable for a room or the activities
                     of your organisation, and share them freely.
                     You stay incharge of your data, and you choose
@@ -905,7 +905,7 @@ $d[$k]['sDesc']  = 'Cartography';
 $d[$k]['lDesc']  = 'Create you own maps online';
 
 $d[$k]['tDesc']  = 'Customize and add to maps, on your own or in collaboration, and share them with ease (alternative to Google Maps).';
-$d[$k]['hDesc']  = 'Framacarte allows you to add to, customize, color, 
+$d[$k]['hDesc']  = 'Framacarte allows you to add to, customize, color,
                     annotate… the maps of
                     <a href="https://fr.wikipedia.org/wiki/Openstreetmap">OpenStreetMap</a>
                     and then display them on your own websiteor print them.';
@@ -1242,7 +1242,7 @@ $d[$k]['sDesc']  = 'Send large files';
 $d[$k]['lDesc']  = 'Share your files anonymously';
 
 $d[$k]['tDesc']  = 'Share web file with a web link, confidentialy with end to end encryption  (alternative to WeTransfer).';
-$d[$k]['hDesc']  = 'With Framadrop, no more issue with attachment too big 
+$d[$k]['hDesc']  = 'With Framadrop, no more issue with attachment too big
                     impairing you to send files by <span lang="en">email</span>.
                     This Free service allow you to easily and securily share files. ';
 
@@ -1378,7 +1378,7 @@ $d[$k]['lDesc']  = 'Express yourself on the Internet';
 $d[$k]['tDesc']  = 'Communicate through short messages in a public, confidential or private way with this ethical and decentralized alternative to Twitter.';
 $d[$k]['hDesc']  = 'Framapiaf is a free <b>microblogging</b> service,
                     based on the decentralized software Mastodon.
-                    Find your friends on Framapiaf - or other Mastodon, 
+                    Find your friends on Framapiaf - or other Mastodon,
                     GNU Social, Friendica instances - and communicate with them without being tracked.';
 
 $d[$k]['mTitle'] = 'Free microblogging';

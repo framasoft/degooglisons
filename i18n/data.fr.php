@@ -21,7 +21,7 @@ $l['cloud'] = 'https://framacloud.org/fr/cultiver-son-jardin';
 $l['chatons'] = 'https://chatons.org';
 
 // Images
-$l['map'] = 'img/Carte2016-romains.png';
+$l['map'] = $l['DIo'].'img/Carte2016-romains.png';
 
 // Meta
 $t['meta']['lang']      = 'fr';
@@ -47,7 +47,7 @@ $t['meta']['leds']['ldesc']   = 'L’histoire d’Internet elle-même est une hi
                 verrouillés et non-interopérables. Pour qu’Internet reste fidèle à ses principes
                 fondateurs qui l’ont conduit à son succès, nous devons y trouver des applications
                 libres, c’est à dire dont le code source est ouvert, accessible et sous licences libres.';
-                
+
 $t['meta']['leds']['dtitle']  = 'Décentralisé';
 $t['meta']['leds']['ddesc']   = 'L’intelligence d’Internet doit se situer à la périphérie du réseau dans une dynamique
                 de partage de pair à pair, pour éviter de créer un Minitel 2.0. Pour assurer l’égalité
@@ -55,13 +55,13 @@ $t['meta']['leds']['ddesc']   = 'L’intelligence d’Internet doit se situer à
                 mais empêchés de s’accaparer les données personnelles ou publiques. En expliquant,
                 par des tutoriels, comment multiplier les solutions libres permettant un Internet
                 plus équitable, nous facilitons l’essaimage du code et diversifions les usages.';
-                
+
 $t['meta']['leds']['etitle']  = 'Éthique';
 $t['meta']['leds']['edesc']   = 'Nous plébiscitons un Internet fait de partage et d’indépendance.
                 L’exploitation, la surveillance, la censure et l’appropriation des données sont
                 des valeurs que nous refusons au profit de la transparence (la probité),
                 de l’exposition claire des conditions d’utilisation des services, et du refus des discriminations.';
-                
+
 $t['meta']['leds']['stitle']  = 'Solidaire';
 $t['meta']['leds']['sdesc']   = 'À travers les services que nous déployons, nous promouvons un modèle économique
                 fondé sur la mutualisation des coûts, le partage des ressources, et l’accessibilité au plus grand
@@ -69,7 +69,7 @@ $t['meta']['leds']['sdesc']   = 'À travers les services que nous déployons, no
                 de la communauté des biens. Ce modèle possède aussi un caractère éducatif car nous pensons
                 qu’en documentant le déploiement des services, un grand nombre d’utilisateurs
                 seront en mesure de partager à leur tour ces ressources.';
-                
+
 $t['meta']['leds']['charte']  = 'Pour en savoir plus, consultez <strong><a href="'.$l['Charte'].'">notre charte</a></strong> détaillée.';
 
 // Carte
@@ -135,42 +135,42 @@ $t['why']['choice']['alt3'] = 'Découvrez les alternatives libres<br> pour le re
 $t['why']['more']['h2']    = 'Aller plus loin';
 $t['why']['more']['p0']    = 'En route vers votre indépendance numérique...? La voie est libre !<br>
                               Dégooglisons Internet vous propose de la cheminer en plusieurs étapes.';
-$t['why']['more']['p1']    = 'Découvrez et utilisez des services alternatifs (hébergés par Framasoft), 
-                              en vous aidant de notre <strong>documentation</strong> collaborative pour apprendre 
-                              comment ils fonctionnent, comment s’y connecter, 
+$t['why']['more']['p1']    = 'Découvrez et utilisez des services alternatifs (hébergés par Framasoft),
+                              en vous aidant de notre <strong>documentation</strong> collaborative pour apprendre
+                              comment ils fonctionnent, comment s’y connecter,
                               comment utiliser leurs fonctionnalités, etc.';
 $t['why']['more']['b1']    = 'Documentation';
-$t['why']['more']['p2']    = 'Si cela vous est disponible, hébergez librement les mêmes logiciels 
-                              directement sur les serveurs de votre école/association/entreprise/collectif/etc., 
+$t['why']['more']['p2']    = 'Si cela vous est disponible, hébergez librement les mêmes logiciels
+                              directement sur les serveurs de votre école/association/entreprise/collectif/etc.,
                               grâce à nos tutoriels d’auto-hébergement regroupés sur le <strong>Framacloud</strong>.';
 $t['why']['more']['b2']    = 'Framacloud';
-$t['why']['more']['p3']    = 'Vous pouvez aussi chercher, près de chez vous, un hébergeur de confiance 
-                              et local parmi les membres du Collectif d’Hébergeurs Alternatifs, 
+$t['why']['more']['p3']    = 'Vous pouvez aussi chercher, près de chez vous, un hébergeur de confiance
+                              et local parmi les membres du Collectif d’Hébergeurs Alternatifs,
                               Transparents, Ouverts, Neutres et Solidaires : les <strong>CHATONS</strong> !';
 $t['why']['more']['b3']    = 'CHATONS';
 
 $t['why']['why']['h2']     = 'Pourquoi ?';
-$t['why']['why']['p0']     = 'Les services sont des logiciels, mais qui sont installés sur le cloud, 
-                              donc sur l’ordinateur de quelqu’un d’autre (les fameux « serveurs »). 
-                              Utiliser les services de Google, Apple, Facebook, Amazon, Microsoft... 
-                              (les « GAFAM »), signifie que vous leur confiez vos données, 
-                              les traces de votre vie que vous laissez sur Internet. 
+$t['why']['why']['p0']     = 'Les services sont des logiciels, mais qui sont installés sur le cloud,
+                              donc sur l’ordinateur de quelqu’un d’autre (les fameux « serveurs »).
+                              Utiliser les services de Google, Apple, Facebook, Amazon, Microsoft...
+                              (les « GAFAM »), signifie que vous leur confiez vos données,
+                              les traces de votre vie que vous laissez sur Internet.
                               C’est donc une question de confiance.';
-$t['why']['why']['p1']     = 'Cette confiance a permis à une poignée d’acteurs, les GAFAM, 
-                              d’obtenir un quasi-monopole sur nos vies numériques en centralisant 
-                              les données d’une immense partie de la population. 
-                              Les <strong>enjeux et dangers</strong> sont triples : 
+$t['why']['why']['p1']     = 'Cette confiance a permis à une poignée d’acteurs, les GAFAM,
+                              d’obtenir un quasi-monopole sur nos vies numériques en centralisant
+                              les données d’une immense partie de la population.
+                              Les <strong>enjeux et dangers</strong> sont triples :
                               économiques, technologiques, culturels...';
 $t['why']['why']['b1']     = 'Enjeux et dangers';
-$t['why']['why']['p2']     = '<strong>Nos propositions</strong> sont simples : 
+$t['why']['why']['p2']     = '<strong>Nos propositions</strong> sont simples :
                               trouver quelles conditions s’imposer pour que cette confiance soit justifiée.
-                               Il s’agit de proposer des alternatives à la fois respectueuses de 
-                               nos êtres et nos diversités, mais qui en plus rendent impossible 
+                               Il s’agit de proposer des alternatives à la fois respectueuses de
+                               nos êtres et nos diversités, mais qui en plus rendent impossible
                                la reproduction de tels monopoles.';
 $t['why']['why']['b2']     = 'Nos propositions';
-$t['why']['why']['p3']     = 'Pour que vous puissiez déterminer si vous pouvez nous faire confiance, 
-                              nous publions une présentation du réseau Framasoft (et de l’association loi 1901 qui le soutient), 
-                              accompagnée de nos rapports et documents administratifs, 
+$t['why']['why']['p3']     = 'Pour que vous puissiez déterminer si vous pouvez nous faire confiance,
+                              nous publions une présentation du réseau Framasoft (et de l’association loi 1901 qui le soutient),
+                              accompagnée de nos rapports et documents administratifs,
                               dans la partie <strong>Qui sommes-nous ?</strong>';
 $t['why']['why']['b3']     = 'Qui sommes-nous ?';
 
@@ -234,7 +234,7 @@ $t['why']['dang']['fp']    = 'Les services web affichés sur votre ordinateur ou
                     faire. Ce sont des « boîtes noires » qui peuvent agir de façon malveillante (envoyer des SMS à votre insu, exécuter du code indésirable, etc.).<br>
                     Bref, ces sociétés nous enferment dans des cages dorées, certes, mais des cages malgré tout !';
 $t['why']['dang']['frefs'] = 'https://my.framasoft.org/u/degooglisons/?searchtags=fermeture';
-                    
+
 // Pourquoi - Nos propositions
 $t['why']['prop']['btn']   = 'Nos propositions';
 $t['why']['prop']['title'] = 'Ce que nous proposons';
@@ -294,8 +294,8 @@ $t['why']['conc']['p5']    = 'Accéder à la liste des services que nous proposo
 
 /* Bloc Nous contacter */
 $t['why']['conc']['ctitle'] = 'Nous contacter';
-$t['why']['conc']['sp1']   = 'Nous sommes une petite association 
-                (moins de 40 membres, moins de 10 salarié·e·s) 
+$t['why']['conc']['sp1']   = 'Nous sommes une petite association
+                (moins de 40 membres, moins de 10 salarié·e·s)
                 qui répond à des demandes très variées :
                 </p><ul>
                     <li>Invitations à des événements ;</li>
@@ -311,8 +311,8 @@ $t['why']['conc']['cbtn']  = 'Contacter Framasoft';
 $t['why']['conc']['stitle'] = 'Nous soutenir';
 $t['why']['conc']['sp3']     = 'Comme toutes nos actions, nos services ne sont pas gratuits :
                 ils sont financés par les dons des personnes qui nous soutiennent par un don,
-                ponctuel ou régulier. 
-                Environ 90 % des revenus de l’association Framasoft 
+                ponctuel ou régulier.
+                Environ 90 % des revenus de l’association Framasoft
                 provient de l’économie du don et servent à financer :
                 </p><ul>
                     <li>les salaires de nos permanent·e·s ;</li>
