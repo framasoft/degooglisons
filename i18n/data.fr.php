@@ -874,7 +874,7 @@ $d[$k]['mBody']  = '<p>
                     <p class="violet">Fonctionnalités :</p>
                     <ul>
                         <li>création de multiples agendas</li>
-                        <li>listes de contacts et de taches</li>
+                        <li>listes de contacts et de tâches</li>
                         <li>synchronisation sur vos appareils</li>
                         <li>partager des agendas</li>
                         <li>inviter (par email) des participants à des rendez-vous</li>
@@ -1143,8 +1143,8 @@ $k= 'minecraft';
 $d[$k]['sDesc']  = 'Jeu éducatif';
 $d[$k]['lDesc']  = 'Découvrez le jeu éducatif à creuser';
 
-$d[$k]['tDesc']  = 'Jouer à construire ensemble dans ce un monde ouvert qui a de nombreuses applications pédagogiques (alternative à Minecraft).';
-$d[$k]['hDesc']  = 'Framinetestest un serveur du jeu Minetest, un jeu « bac à sable »
+$d[$k]['tDesc']  = 'Jouer à construire ensemble dans ce jeu un monde ouvert qui a de nombreuses applications pédagogiques (alternative à Minecraft).';
+$d[$k]['hDesc']  = 'Framinetestest est un serveur du jeu Minetest, un jeu « bac à sable »
                     dont vous construisez et décomposez les blocs pour le modifier et
                     avec lequel vous pouvez réaliser vos propres applications pédagogiques.';
 
@@ -1228,7 +1228,7 @@ $d[$k]['tDesc']  = '';
 
 $d[$k]['mTitle'] = 'Votre lectorat aussi a des droits';
 $d[$k]['mBody']  = '<p>
-                        '.$d[$k]['F'].' permet d´héberger des documents PDF et des présentations (ODP) afin de les donner à lire au grand public. Votre lectorat n´aura pas besoin de créer un compte ni de subir punblicités et traquages, et pourra se concentreer sur ce que vous partagez.
+                        '.$d[$k]['F'].' permet d´héberger des documents PDF et des présentations (ODP) afin de les donner à lire au grand public. Votre lectorat n´aura pas besoin de créer un compte ni de subir publicités et traquages, et pourra se concentrer sur ce que vous partagez.
                     </p>
                     <p>
                         <b class="violet">Fonctionnement :</b> Créez un compte, téléversez vos documents et utilisez le lien de partage (ou le code d´affichage pour votre site).
@@ -1259,7 +1259,7 @@ $k= 'skype';
 $d[$k]['sDesc']  = 'Visioconférence';
 $d[$k]['lDesc']  = 'Échangez en audio-vidéo en trois clics seulement';
 
-$d[$k]['tDesc']  = 'Obtenir ou rejoindre un salon de vidéoconférence (avec tchat et partage d’écran) en 3 clics, depuis son navigateur web (alternative à Skype).';
+$d[$k]['tDesc']  = 'Créer ou rejoindre un salon de vidéoconférence (avec tchat et partage d’écran) en 3 clics, depuis son navigateur web (alternative à Skype).';
 $d[$k]['hDesc']  = 'Framatalk vous permet de discuter avec vos amis sans
                     installation complexe de logiciel ni inscription.
                     Tout se passe entre vous et vos amis, directement depuis
@@ -1327,7 +1327,7 @@ $d[$k]['tDesc']  = 'Partager de lourds fichiers avec une adresse web, de manièr
 $d[$k]['hDesc']  = 'Avec Framadrop, fini les pièces jointes trop lourdes qui
                     empêchent l’envoi d’un <span lang="en">email</span>.
                     Ce service libre vous permet de partager facilement des
-                    fichiers de manière sécurisé.';
+                    fichiers de manière sécurisée.';
 
 $d[$k]['mTitle'] = 'Partagez vos fichiers facilement';
 $d[$k]['mBody']  = '<p>
@@ -1398,7 +1398,7 @@ $d[$k]['tags']   = 'jeu';
 // Maestro
 $k= 'maestro';
 $d[$k]['sDesc']  = 'Collaboration flexible';
-$d[$k]['lDesc']  = 'Ochestrez vos projets collaboratifs';
+$d[$k]['lDesc']  = 'Orchestrez vos projets collaboratifs';
 
 $d[$k]['tDesc']  = 'Rassembler un pad, une vidéo-conférence et bien d’autres outils en une seule fenêtre et seule une adresse web : idéal pour les réunions.';
 $d[$k]['hDesc']  = 'Besoin en même temps d’un pad pour prendre des notes,
@@ -1445,7 +1445,7 @@ $d[$k]['tags']   = 'images, dessiner';
 // Transifex
 $k= 'transifex';
 $d[$k]['sDesc']  = 'Traduction de logiciels';
-$d[$k]['lDesc']  = 'Ouvrez un espace de traduction à voter logiciel';
+$d[$k]['lDesc']  = 'Ouvrez un espace de traduction à votre logiciel';
 $d[$k]['hDesc']  = '';
 
 $d[$k]['tDesc']  = '';
