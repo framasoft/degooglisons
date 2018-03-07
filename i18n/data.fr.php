@@ -1144,7 +1144,7 @@ $d[$k]['sDesc']  = 'Jeu éducatif';
 $d[$k]['lDesc']  = 'Découvrez le jeu éducatif à creuser';
 
 $d[$k]['tDesc']  = 'Jouer à construire ensemble dans ce jeu un monde ouvert qui a de nombreuses applications pédagogiques (alternative à Minecraft).';
-$d[$k]['hDesc']  = 'Framinetestest est un serveur du jeu Minetest, un jeu « bac à sable »
+$d[$k]['hDesc']  = 'Framinetest est un serveur du jeu Minetest, un jeu « bac à sable »
                     dont vous construisez et décomposez les blocs pour le modifier et
                     avec lequel vous pouvez réaliser vos propres applications pédagogiques.';
 
