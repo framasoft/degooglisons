@@ -671,7 +671,7 @@ $d[$k]['S']      = '<a href="https://github.com/tootsuite/mastodon">Mastodon</a>
 $d[$k]['F']      = '<b class="violet">Frama</b><b class="vert">piaf</b>';
 $d[$k]['name']   = $e['twitter']['fa'].'Twitter';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = '<a href="https://instances.mastodon.xyz">Instances Mastodon</a>, <a href="https://babytwit.fr/">Babytwit</a>, <a href="https://quitter.se/">Quitter</a>';
+$d[$k]['altOn']  = '<a href="https://instances.mastodon.xyz">Instances Mastodon</a>, <a href="https://edutwit.fr/">Édutwit</a>, <a href="https://quitter.se/">Quitter</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="https://gnu.io/social/">GNUSocial</a>, <a href="http://twister.net.co/">Twister</a>';
 $d[$k]['pos']    = '';//500,605,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2017/04/12/plus-de-chatons-plus-de-confiance-en-mastodon">2017</a>';
