@@ -305,7 +305,7 @@ $d[$k]['S']      = '<a href="http://www.sympa.org/">Sympa</a>';
 $d[$k]['F']      = '<a href="'.$d[$k]['FL'].'"><b class="violet">Frama</b><b class="vert">listes</b></a>';
 $d[$k]['name']   = $e['google']['fa'].'Google Groupes';
 $d[$k]['eq']     = '';
-$d[$k]['altOn']  = '<a href="http://riseup.net/">Riseup</a>, <a href="https://www.ouvaton.org/">Ouvaton</a>, <a href="https://www.sud-ouest.org/">Sud-Ouest</a>, <a href="https://www.fdn.fr/Listes-de-diffusion.html">FDN</a>';
+$d[$k]['altOn']  = '<a href="http://riseup.net/">Riseup</a>, <a href="https://www.ouvaton.org/">Ouvaton</a>, <a href="https://www.sud-ouest.org/">Sud-Ouest</a>';
 $d[$k]['altOff'] = $d[$k]['S'].', <a href="http://www.gnu.org/software/mailman/">Mailman</a>';
 $d[$k]['pos']    = '660,485,40';
 $d[$k]['FDate']  = '<a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google">2016</a>';
