@@ -1,0 +1,36 @@
+meta:
+  lang: en
+  title: De-google-ify Internet
+  baseURL: https://degooglisons-internet.org
+  f: Framasoft
+  dio: De-google-ify Internet
+  fname: <b class="violet">Frama</b><b class="orange">soft</b>
+  dioname: <b class="violet">De-google-ify</b> <b class="orange">Internet</b>
+  F: <a href="@:msg.link.F">@:msg.meta.fname</a>
+  DIo: <a href="@:msg.link.DIo">@:msg.meta.dioname</a>
+  lead: |
+    An initiative of the @:msg.meta.F network for a<br/>
+    <a href="#leds">Free</a>, <a href="#leds" >Decentralized</a>,
+    <a href="#leds">Ethical</a> Internet built on <a href="#leds">Solidarity</a>
+  start: Campaign began on 10/07/2014
+  edit: Last modification on the 12/10/2017
+  support: Support this project
+
+nav:
+  langChange: Change the language
+  lang: Language
+
+link:
+  F: https://framasoft.org/en/
+  S: https://soutenir.framasoft.org/en/
+  DIo: https://degooglisons-internet.org/en/
+  DIoL: https://degooglisons-internet.org/en/list
+  charte: https://framasoft.org/nav/html/charte-en.html
+  contact: https://contact.framasoft.org
+  participer: https://participer.framasoft.org/en/
+  docs: https://docs.framasoft.org/en/
+  cloud: https://framacloud.org/en/cultivate-your-garden
+  chatons: https://chatons.org/en/
+
+img:
+  map: /img/Carte2016-romains-en.png

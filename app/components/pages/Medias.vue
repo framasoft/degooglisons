@@ -1,0 +1,228 @@
+<template>
+  <main id="medias">
+    <div class="container ombre">
+      <header-component />
+      <div class="clearfix">
+        <h2>{{ $t('msg.medias.title') }}</h2>
+        <p v-html="$t('msg.medias.intro')"></p>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" :title="$t('msg.medias.timeline')" src="./timeline" height="400">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <!-- Visuels-->
+        <h2>{{ $t('msg.medias.tabs.title') }}</h2>
+        <p v-html="$t('msg.medias.tabs.intro')"></p>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#cartes" aria-controls="cartes" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab1.title')"></a></li>
+          <li role="presentation"><a href="#dessins" aria-controls="dessins" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab2.title')"></a></li>
+          <li role="presentation"><a href="#dessins-peha" aria-controls="dessins-peha" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab6.title')"></a></li>
+          <li role="presentation"><a href="#stickers" aria-controls="stickers" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab5.title')"></a></li>
+          <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab3.title')"></a></li>
+          <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab4.title')"></a></li>
+          <li role="infographie"><a href="#infographie" aria-controls="infographie" role="tab" data-toggle="tab" v-html="$t('msg.medias.tabs.tab7.title')"></a></li>
+        </ul>
+
+        <div class="tab-content">
+
+          <!-- Cartes -->
+          <div role="tabpanel" class="tab-pane active" id="cartes">
+            <p v-html="$t('msg.medias.tabs.tab1.intro')"></p>
+            <div class="row">
+              <div class="col-sm-4" v-for="(img, index) in $t('msg.medias.tabs.tab1.img')">
+                <div class="thumbnail text-center">
+                  <h3>{{ $t('msg.medias.tabs.tab1.img[' + index + '][0]') }}</h3>
+                  <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                    :title="$t('msg.medias.tabs.saveas')" alt=""
+                    :src="baseImg + $t('msg.medias.tabs.tab1.img[' + index + '][1]')" />
+                  <p class="text-center">{{ $t('msg.medias.tabs.tab1.img[' + index + '][2]') }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dessins Gee-->
+          <div role="tabpanel" class="tab-pane" id="dessins">
+            <p v-html="$t('msg.medias.tabs.tab2.intro')"></p>
+            <div class="row">
+              <div class="col-sm-4" v-for="(img, index) in $t('msg.medias.tabs.tab2.img')">
+                <div class="thumbnail text-center">
+                  <h3>{{ $t('msg.medias.tabs.tab2.img[' + index + '][0]') }}</h3>
+                  <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                    :title="$t('msg.medias.tabs.saveas')" alt=""
+                    :src="baseImg + $t('msg.medias.tabs.tab2.img[' + index + '][1]')" />
+                </div>
+              </div>
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="thumbnail text-center">
+                  <h3 v-html="$t('msg.medias.tabs.tab2.video[0][0]')"></h3>
+                  <video controls="controls" width="540" height="360">
+                    <source :src="baseImg + $t('msg.medias.tabs.tab2.video[0][1]') + '.webm'" type="video/webm" />
+                    <source :src="baseImg + $t('msg.medias.tabs.tab2.video[0][1]') + '.mp4'" type="video/mp4" />
+                  </video>
+                  <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="{{ baseImg + $t('msg.medias.tabs.tab2.video[0][1]') }}.webm" type="video/webm" /&gt;&lt;source src="{{ baseImg + $t('msg.medias.tabs.tab2.video[0][1]') }}.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dessins Péhä-->
+          <div role="tabpanel" class="tab-pane" id="dessins-peha">
+            <p v-html="$t('msg.medias.tabs.tab6.intro')"></p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="thumbnail text-center">
+                  <h3>{{ $t('msg.medias.tabs.tab6.img[4][0]') }}</h3>
+                  <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                    :title="$t('msg.medias.tabs.saveas')" alt=""
+                    :src="baseImg + $t('msg.medias.tabs.tab6.img[4][1]')" />
+                </div>
+              </div>
+              <div class="col-sm-6" v-for="(img, index) in $t('msg.medias.tabs.tab6.img')" v-if="index != 4">
+                <div class="thumbnail text-center">
+                  <h3>{{ $t('msg.medias.tabs.tab6.img[' + index + '][0]') }}</h3>
+                  <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                    :title="$t('msg.medias.tabs.saveas')" alt=""
+                    :src="baseImg + $t('msg.medias.tabs.tab6.img[' + index + '][1]')" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Stickers -->
+          <div role="tabpanel" class="tab-pane" id="stickers">
+            <div class="row">
+              <div class="col-sm-4" v-for="(img, index) in $t('msg.medias.tabs.tab5.img')">
+                <div class="thumbnail text-center">
+                  <h3>{{ $t('msg.medias.tabs.tab5.img[' + index + '][0]') }}</h3>
+                  <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                    :title="$t('msg.medias.tabs.saveas')" alt=""
+                    :src="baseImg + $t('msg.medias.tabs.tab5.img[' + index + '][1]')" />
+                  <p class="text-center" v-html="$t('msg.medias.tabs.tab5.img[' + index + '][2]')"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Vidéos -->
+          <div role="tabpanel" class="tab-pane" id="videos">
+            <p v-html="$t('msg.medias.tabs.tab3.intro')"></p>
+            <div class="row">
+              <div class="col-md-6">
+                <h3 v-html="$t('msg.medias.tabs.tab3.video[0][0]')"></h3>
+                <p class="text-center"><iframe width="560" height="315" :src="$t('msg.medias.tabs.tab3.video[0][1]')" allowfullscreen></iframe></p>
+                <pre>&lt;iframe width="560" height="315" src="{{ $t('msg.medias.tabs.tab3.video[0][1]') }}" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+              </div>
+              <div class="col-md-6">
+                <h3 v-html="$t('msg.medias.tabs.tab3.video[1][0]')"></h3>
+                <p class="text-center"><iframe width="560" height="315" :src="$t('msg.medias.tabs.tab3.video[1][1]')" allowfullscreen></iframe></p>
+                <pre>&lt;iframe width="560" height="315" src="{{ $t('msg.medias.tabs.tab3.video[1][1]') }}" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+              </div>
+             </div>
+          </div>
+          <!-- Présentation -->
+          <div role="tabpanel" class="tab-pane" id="presentation">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="text-center">
+                  <h3 v-html="$t('msg.medias.tabs.tab4.title')"></h3>
+                  <p class="text-center"><iframe :src="$t('msg.medias.tabs.tab4.link')" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+                  <pre>&lt;iframe src="{{ $t('msg.medias.tabs.tab4.link') }}" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Infographie G Dorne -->
+          <div role="tabpanel" class="tab-pane" id="infographie">
+            <p v-html="$t('msg.medias.tabs.tab7.intro')"></p>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="thumbnail text-center">
+                  <h3 v-html="$t('msg.medias.tabs.tab7.title')"></h3>
+                  <p><a :href="baseImg + $t('msg.medias.tabs.tab7.img[1][1]')">{{ $t('msg.medias.tabs.tab7.img[1][0]') }}</a></p>
+                  <img class="img-responsive" data-toggle="tooltip" data-placement="top"
+                     :title="$t('msg.medias.tabs.saveas')" alt=""
+                     :src="baseImg + $t('msg.medias.tabs.tab7.img[0][1]')" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <!-- Revue de web-->
+        <h2>{{ $t('msg.medias.press.title') }}</h2>
+        <p v-html="$t('msg.medias.press.intro')"></p>
+        <div class="col-sm-8 col-sm-offset-2 well">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>{{ $t('msg.medias.press.th1') }}</th>
+                <th>{{ $t('msg.medias.press.th2') }}</th>
+                <th>{{ $t('msg.medias.press.th3') }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(item, index) in $t('msg.medias.press.list')">
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td><a :href="item[2]">{{ item[3] }}</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="clearfix">
+        <h2>{{ $t('msg.medias.frama.title') }}</h2>
+        <div class="col-sm-8">
+          <ul v-html="$t('msg.medias.frama.list')"></ul>
+          <p class="text-center">
+            <img :src="baseImg + 'biglogo.png'" alt="" style="width:220px; margin:10px 30px"/>
+            <img :src="baseImg + 'biglogo-noir.png'" alt="" style="width:220px; margin:10px 30px"/>
+          </p>
+        </div>
+
+        <div class="col-sm-4 well">
+          <p v-html="$t('msg.medias.frama.text1')"></p>
+          <p v-html="$t('msg.medias.frama.text2')"></p>
+          <p v-html="$t('msg.medias.frama.text3')"></p>
+        </div>
+      </div>
+    <Signature />
+    </div>
+    <BackTop />
+  </main>
+</template>
+<script>
+import HeaderComponent from '../partials/Header.vue';
+import Signature from '../partials/Signature.vue';
+import BackTop from '../partials/BackTop.vue';
+
+export default {
+  name: 'Medias',
+  components: {
+    HeaderComponent,
+    Signature,
+    BackTop,
+  },
+  data() {
+    const { lang } = document.getElementsByTagName('html')[0];
+    const base = (window.location.href.split('/')[3] !== lang) ? `/${window.location.href.split('/')[3]}` : '';
+    return {
+      base: base,
+      baseImg: `${base}/img/`,
+    };
+  },
+  mounted () {
+    document.querySelector('a[href="#presentation"]').onclick = () => {
+      const prez = document.querySelector('#presentation iframe');
+      prez.src = `${prez.src.replace('/#/', '/')}#/`;
+    };
+  },
+}
+</script>
