@@ -130,272 +130,24 @@ iframe {
   border: none;
 }
 
-/* ~~~~ Landing Page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-body.index #mainHeader {
-  display: none;
-}
+@import 'landing';
+@import 'list';
 
-.landing {
-  background-image: url("../img/Peha-Banquet-CC-By-1920.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.landing h1 b {
-  color: #fff;
-}
-
-.landing .container:not(.ombre) {
-  padding: 50px;
-  min-height: 700px;
-}
-
-.landing .col-sm-4 {
-  min-height: 457px;
-}
-
-.landing .container:not(.ombre) .well a {
-  border: none;
-  color: #fff;
-}
-
-.landing .container:not(.ombre) .well {
-  background: #677835;
-  font-size: 18px;
-  line-height: 22px;
-  border: none;
-  color: #fff;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin: 40% auto 15%;
-  box-shadow: 0px 2px 2px #000;
-  visibility: hidden;
-  opacity: 0.9;
-}
-
-.landing .container:not(.ombre) .well:hover {
-  opacity: 1;
-}
-
-.landing .container:not(.ombre) .col-sm-4:first-child .well {
-  margin-left: -15px;
-  margin-top: 60%;
-  background: #CC2D18;
-  padding-top: 29px;
-  animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-}
-
-.landing .container:not(.ombre) .col-sm-4:nth-of-type(2) .well {
-  animation: 2s fadeIn;
-  animation-fill-mode: forwards;
-}
-
-.landing .container:not(.ombre) .col-sm-4:last-child .well {
-  margin-right: -15px;
-  margin-top: 60%;
-  background: #6A5687;
-  padding-top: 34px;
-  animation: 3s fadeIn;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-  99% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-
-.landing h1{
-  font-size: 69px;
-  text-align: center;
-  text-shadow: 0px 0px 10px #000;
-  margin-top: 7%;
-}
-
-@media (max-width:768px) {
-  .landing h1{
-    font-size: 36px;
-  }
-}
-
-.landing .container:not(.ombre) .col-md-8 {
-  margin-top: 10%;
-  margin-bottom: 15%;
-}
-
-.choice {
-  padding: 0 !important;
-}
-
-.choice img {
-  max-width: 300px;
-  margin-top: 10px;
-}
-
-.choice .btn {
-  color: #fff;
-  font-weight: bold;
-}
-
-.choice .btn-soutenir {
-  font-size: 14px;
-}
-
-/* ~~~~ Aller plus loin / Pourquoi ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.more .well {
-  margin-top: 30px;
-}
-
-.more a:not(.btn) {
-  border: none;
-}
-
-.more h2 {
-  border-bottom: 8px solid #eee;
-}
-
-.accroche {
-  font-weight: bold;
-}
-
-.text-chatons a {
-  color: #DBA306;
-}
-.text-chatons a:hover,
-.text-chatons a:focus,
-.text-chatons a:active {
-  color: #C48a1b;
-}
-
-/* ~~~~ Revue de presse ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#speakabout,#speakabout .container {
-  background: #444;
-  box-shadow: none;
-}
-#speakabout a:not(.btn) {
-  color: #fff;
-  border: none;
-  font-size: 16px;
-}
-#speakabout h2 {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-#speakabout ul {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#speakabout img {
-  margin: 5px;
-}
-
-/* ~~~~ Enjeux Dangers Solutions Concrètement ~~~~~~~~~~~~~~~~~~~~~~~ */
-#enjeux {
-  background: #A81400;
-}
-
-#solutions {
-  background: #677835;
-}
-
-#enjeux .container,
-#dangers .container,
-#solutions .container,
-#concret .container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 30px;
-}
-
-#enjeux img {
-  max-width: 300px;
-  margin: auto;
-}
-
-/* ~~~~ Liste des services ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.list .panel {
-  border-radius: 0;
-  border-bottom: 5px solid #eee;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 20px;
-}
-
-.list .panel-heading {
-  background: #fff;
-}
-
-.list .panel-heading h2 {
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: 300;
-}
-
-@media (min-width: 992px) {
-  .list .panel > div.clearfix:not(#results) .col-md-3:nth-child(n+8) {
-    display: none;
-  }
-}
-
-.dropup li {
-  text-align: center;
-  font-size: 18px;
-}
-.dropup li a {
-  border: none;
-  padding: 15px;
-}
-.dropup ul.dropdown-menu {
-  padding: 0;
-  margin-bottom: -46px;
-}
-
-@media (min-width:768px) {
-  .desc {
-    min-height: 150px;
-    overflow: auto;
-    font-size: 16px;
-    font-weight: 300;
-  }
-}
-@media (min-width:1200px) {
-  .desc {
-    min-height: 110px;
-    overflow: auto;
-    font-size: 16px;
-    font-weight: 300;
-  }
-}
-
-.list .panel h3 i.fa {
-  font-size: 50px;
-  margin-bottom: 1rem;
-}
 
 /* Modal List/Alt */
-.list .modal-header h1,
+#list .modal-header h1,
 .alt .modal-header h1 {
   font-size: 32px;
   margin: 0 20px !important;
 }
 
-.list .modal-header img,
+#list .modal-header img,
 .alt .modal-header img {
   margin-right: 30px;
   width: 96px;
 }
 
-.list .modal-header {
+#list .modal-header {
   background: #EDE6F5;
   border: none;
 }
@@ -404,18 +156,18 @@ body.index #mainHeader {
   border: none;
 }
 
-.list .modal-header span,
+#list .modal-header span,
 .alt .modal-header span {
   line-height: 42px;
 }
 
-.list .modal-header .desc,
+#list .modal-header .desc,
 .alt .modal-header .desc {
   font-size: 24px;
   font-weight: 300;
 }
 
-.list .modal-footer,
+#list .modal-footer,
 .alt .modal-footer {
   border: none;
   padding-top: 0;

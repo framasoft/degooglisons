@@ -193,7 +193,7 @@
           <p v-html="$t('msg.medias.frama.text3')"></p>
         </div>
       </div>
-    <Signature />
+      <Signature />
     </div>
     <BackTop />
   </main>

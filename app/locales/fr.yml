@@ -782,9 +782,10 @@ timeline:
 # Generic text ---------------------------------------------------------
 txt:
   close: Fermer
-  more: + d’infos
+  more: En savoir plus
   support: Soutenir
   use: Utiliser
+  plus: plus
   docs: Documentation
   framacloud: Framacloud
   chatons: Chatons
@@ -842,6 +843,12 @@ cat2:
   search: Mieux profiter du web
   games: Se divertir librement
 
+tags:
+  calendar: calendrier
+  encryption: chiffrement
+  social: social
+  share: partager
+  game: jeu
 
 # Services -------------------------------------------------------------
 services:
