@@ -14,11 +14,13 @@
     "bootstrap": "^3.3.7",
     "fork-awesome": "^1.1.0",
     "jquery": "^3.3.1",
-    "uiv": "^0.23.0",
+    "uiv": "^0.23.1",
     "vue": "^2.5.16",
     "vue-headful": "^2.0.1",
     "vue-i18n": "^7.6.0",
-    "vue-router": "^2.8.1"
+    "vue-router": "^2.8.1",
+    "vue-scrollto": "^2.11.0",
+    "vue-select": "^2.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",

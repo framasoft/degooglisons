@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="pull-right">
     <dropdown ref="dropdown" menu-right>
       <btn type="button" class="btn btn-default dropdown-toggle"

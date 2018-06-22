@@ -3,7 +3,7 @@
     <section class="intro">
       <div class="container">
         <h1 class="box">
-          <img alt="" :src="baseImg + 'smalllogo.png'" /></span>
+          <img alt="" :src="$t('baseImg') + 'smalllogo.png'" /></span>
           <span class="text" v-html="$t('msg.timeline.title')"></span>
         </h1>
         <hr>
@@ -11,10 +11,10 @@
     </section>
     <section class="timeline">
       <ul>
-        <li v-for="(event, index) in $t('msg.timeline.events')" :class="'li-' + $t('msg.timeline.events[' + index + '][0]')">
-          <div :class="'fond-' + $t('msg.timeline.events[' + index + '][0]')">
-            <time>{{ $t('msg.timeline.events[' + index + '][1]') }}</time>
-            <p v-html="$t('msg.timeline.events[' + index + '][2]')"></p>
+        <li v-for="(event, index) in $t('data.timeline.events')" :class="'li-' + event[0]" v-if="event[1] !== undefined">
+          <div :class="'fond-' + event[0]">
+            <time>{{ (new Intl.DateTimeFormat($t('lang'), $t('data.timeline.format')).format(new Date(event[1]))) }}</time>
+            <p v-html="$t('msg.timeline.events[' + index + ']')"></p>
           </div>
         </li>
       </ul>
@@ -25,16 +25,6 @@
 <script>
 export default {
   name: 'Timeline',
-  data() {
-    const { lang } = document.getElementsByTagName('html')[0];
-    const base = (window.location.href.split('/')[3] !== lang) ? `/${window.location.href.split('/')[3]}` : '';
-    return {
-      frama: 'frama',
-      culture: 'culture',
-      services: 'services',
-      baseImg: `${base}/img/`,
-    };
-  },
   mounted () {
     (function() {
       // check if an element is in viewport

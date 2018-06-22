@@ -41,7 +41,7 @@
                   <h3>{{ $t('msg.medias.tabs.tab1.img[' + index + '][0]') }}</h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('msg.medias.tabs.saveas')" alt=""
-                    :src="baseImg + $t('msg.medias.tabs.tab1.img[' + index + '][1]')" />
+                    :src="$t('baseImg') + $t('msg.medias.tabs.tab1.img[' + index + '][1]')" />
                   <p class="text-center">{{ $t('msg.medias.tabs.tab1.img[' + index + '][2]') }}</p>
                 </div>
               </div>
@@ -56,17 +56,17 @@
                   <h3>{{ $t('msg.medias.tabs.tab2.img[' + index + '][0]') }}</h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('msg.medias.tabs.saveas')" alt=""
-                    :src="baseImg + $t('msg.medias.tabs.tab2.img[' + index + '][1]')" />
+                    :src="$t('baseImg') + $t('msg.medias.tabs.tab2.img[' + index + '][1]')" />
                 </div>
               </div>
               <div class="col-sm-8 col-sm-offset-2">
                 <div class="thumbnail text-center">
                   <h3 v-html="$t('msg.medias.tabs.tab2.video[0][0]')"></h3>
                   <video controls="controls" width="540" height="360">
-                    <source :src="baseImg + $t('msg.medias.tabs.tab2.video[0][1]') + '.webm'" type="video/webm" />
-                    <source :src="baseImg + $t('msg.medias.tabs.tab2.video[0][1]') + '.mp4'" type="video/mp4" />
+                    <source :src="$t('baseImg') + $t('msg.medias.tabs.tab2.video[0][1]') + '.webm'" type="video/webm" />
+                    <source :src="$t('baseImg') + $t('msg.medias.tabs.tab2.video[0][1]') + '.mp4'" type="video/mp4" />
                   </video>
-                  <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="{{ baseImg + $t('msg.medias.tabs.tab2.video[0][1]') }}.webm" type="video/webm" /&gt;&lt;source src="{{ baseImg + $t('msg.medias.tabs.tab2.video[0][1]') }}.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
+                  <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="{{ $t('baseImg') + $t('msg.medias.tabs.tab2.video[0][1]') }}.webm" type="video/webm" /&gt;&lt;source src="{{ $t('baseImg') + $t('msg.medias.tabs.tab2.video[0][1]') }}.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
                   <h3>{{ $t('msg.medias.tabs.tab6.img[4][0]') }}</h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('msg.medias.tabs.saveas')" alt=""
-                    :src="baseImg + $t('msg.medias.tabs.tab6.img[4][1]')" />
+                    :src="$t('baseImg') + $t('msg.medias.tabs.tab6.img[4][1]')" />
                 </div>
               </div>
               <div class="col-sm-6" v-for="(img, index) in $t('msg.medias.tabs.tab6.img')" v-if="index != 4">
@@ -88,7 +88,7 @@
                   <h3>{{ $t('msg.medias.tabs.tab6.img[' + index + '][0]') }}</h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('msg.medias.tabs.saveas')" alt=""
-                    :src="baseImg + $t('msg.medias.tabs.tab6.img[' + index + '][1]')" />
+                    :src="$t('baseImg') + $t('msg.medias.tabs.tab6.img[' + index + '][1]')" />
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
                   <h3>{{ $t('msg.medias.tabs.tab5.img[' + index + '][0]') }}</h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('msg.medias.tabs.saveas')" alt=""
-                    :src="baseImg + $t('msg.medias.tabs.tab5.img[' + index + '][1]')" />
+                    :src="$t('baseImg') + $t('msg.medias.tabs.tab5.img[' + index + '][1]')" />
                   <p class="text-center" v-html="$t('msg.medias.tabs.tab5.img[' + index + '][2]')"></p>
                 </div>
               </div>
@@ -142,10 +142,10 @@
               <div class="col-sm-10 col-sm-offset-1">
                 <div class="thumbnail text-center">
                   <h3 v-html="$t('msg.medias.tabs.tab7.title')"></h3>
-                  <p><a :href="baseImg + $t('msg.medias.tabs.tab7.img[1][1]')">{{ $t('msg.medias.tabs.tab7.img[1][0]') }}</a></p>
+                  <p><a :href="$t('baseImg') + $t('msg.medias.tabs.tab7.img[1][1]')">{{ $t('msg.medias.tabs.tab7.img[1][0]') }}</a></p>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                      :title="$t('msg.medias.tabs.saveas')" alt=""
-                     :src="baseImg + $t('msg.medias.tabs.tab7.img[0][1]')" />
+                     :src="$t('baseImg') + $t('msg.medias.tabs.tab7.img[0][1]')" />
                 </div>
               </div>
             </div>
@@ -167,12 +167,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(item, index) in $t('msg.medias.press.list')">
-                <td>{{ item[0] }}</td>
-                <td>{{ item[1] }}</td>
-                <td><a :href="item[2]">{{ item[3] }}</a></td>
-              </tr>
-            </tbody>
+                  <tr v-for="item in $t('data.medias.press.list')" :key="item[3]" v-if="item[0] === $t('lang') || (item[0] === 'en' && $t('lang') !== 'fr')">
+                    <td>{{ (new Intl.DateTimeFormat($t('lang')).format(new Date(item[1]))) }}</td>
+                    <td>{{ item[2] }}</td>
+                    <td><a :href="item[3]" :hreflang="item[0]">{{ $t(item[4]) }}</a></td>
+                  </tr>
+                </tbody>
           </table>
         </div>
       </div>
@@ -182,8 +182,8 @@
         <div class="col-sm-8">
           <ul v-html="$t('msg.medias.frama.list')"></ul>
           <p class="text-center">
-            <img :src="baseImg + 'biglogo.png'" alt="" style="width:220px; margin:10px 30px"/>
-            <img :src="baseImg + 'biglogo-noir.png'" alt="" style="width:220px; margin:10px 30px"/>
+            <img :src="$t('baseImg') + 'biglogo.png'" alt="" style="width:220px; margin:10px 30px"/>
+            <img :src="$t('baseImg') + 'biglogo-noir.png'" alt="" style="width:220px; margin:10px 30px"/>
           </p>
         </div>
 
@@ -209,14 +209,6 @@ export default {
     HeaderComponent,
     Signature,
     BackTop,
-  },
-  data() {
-    const { lang } = document.getElementsByTagName('html')[0];
-    const base = (window.location.href.split('/')[3] !== lang) ? `/${window.location.href.split('/')[3]}` : '';
-    return {
-      base: base,
-      baseImg: `${base}/img/`,
-    };
   },
   mounted () {
     document.querySelector('a[href="#presentation"]').onclick = () => {

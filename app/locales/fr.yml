@@ -1,19 +1,15 @@
 meta:
-  lang: fr
   title: Dégooglisons Internet
-  baseURL: https://degooglisons-internet.org
-  f: Framasoft
   dio: Dégooglisons Internet
-  fname: <b class="violet">Frama</b><b class="orange">soft</b>
   dioname: <b class="violet">Dégooglisons</b> <b class="orange">Internet</b>
-  F: <a href="@:msg.link.F">@:msg.meta.fname</a>
+  F: <a href="@:msg.link.F">@:data.meta.fname</a>
   DIo: <a href="@:msg.link.DIo">@:msg.meta.dioname</a>
   lead: |
     Une initiative du réseau @:msg.meta.F en faveur d’un internet<br/>
     <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
     <a href="#leds">éthique</a> et <a href="#leds">solidaire</a>
-  start: Campagne commencée le 07/10/2014
-  edit: Dernière modification le 12/10/2017
+  start: Campagne commencée le
+  edit: Dernière modification le
   support: Soutenir ce projet
 
 nav:
@@ -637,43 +633,11 @@ medias:
     th1: Date
     th2: Média
     th3: Liens
-    list:
-    - ['30/07/2017', 'Usbek & Rica',
-       'https://usbeketrica.com/article/framasoft-une-amap-du-logiciel-libre',
-       'Lien vers l’article']
-    - ['05/02/2017', 'France 24 / Mashable',
-       'http://mashable.france24.com/tech-business/20170204-chatons-collectif-hebergeurs-framasoft?ref=tw_i',
-       'Lien vers l’article']
-    - ['15/12/2016', 'Next Inpact',
-       'http://www.nextinpact.com/news/102539-degooglisons-internet-framasoft-fait-bilan-son-action.htm',
-       'Lien vers l’article']
-    - ['10/12/2016', 'Le Monde',
-       'http://www.lemonde.fr/pixels/article/2016/12/10/framasoft-des-chatons-armes-de-logiciels-libres-pour-contrer-google_5046752_4408996.html?xtmc=framasoft&xtcr=1',
-       'Lien vers l’article']
-    - ['10/12/2016', 'Le Figaro',
-       'http://www.lefigaro.fr/secteur/high-tech/2016/11/30/32001-20161130ARTFIG00001-les-defenseurs-du-logiciel-libre-decourages-par-l-education-nationale.php',
-       'Lien vers l’article']
-    - ['28/11/2016', 'L’Âge de Faire (n°114)',
-       'http://www.lagedefaire-lejournal.fr/geants-net-coupons-cordon/',
-       'Lien vers le sommaire du numéro']
-    - ['05/11/2016', 'France Culture',
-        'https://www.franceculture.fr/emissions/le-numerique-et-nous/surveillance-sur-le-web-comment-retrouver-le-pouvoir-dagir',
-        'Lien vers le podcast']
-    - ['19/10/2016', 'Korben.info',
-       'http://korben.info/framasoft-complete-arsenal-perforer-gafam.html',
-       'Lien vers l’article']
-    - ['03/10/2016', 'Libération',
-       'http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262',
-       'Lien vers l’article']
-    - ['10/10/2016', 'France Info',
-       'http://www.francetvinfo.fr/replay-radio/nouveau-monde/nouveau-monde-est-il-possible-de-degoogliser-le-web_1854529.html',
-       'Lien vers la page d’écoute']
-    - ['24/05/2015', 'Le Soir (Belgique)',
-       'http://www.lesoir.be/886985/article/economie/vie-du-net/2015-05-23/google-vivre-sans-c-est-parfois-possible',
-       'Lien vers l’article (abonnés)']
-    - ['03/02/2015', 'L’Humanité',
-       'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
-       'Lien vers l’article']
+    lArticle: Lien vers l’article
+    lPaywall: Lien vers l’article (abonnés)
+    lSummary: Lien vers le sommaire du numéro
+    lPodcast: Lien vers le podcast
+    lListen: Lien vers la page d’écoute
 
   frama:
     title: Framasoft en quelques liens…
@@ -698,85 +662,47 @@ medias:
 
 timeline:
   title: '@:msg.meta.DIo, la timeline'
+  launch: Lancement de
   events:
-  - ['@:culture', 'Juin 2013',
-     'Révélations d’<a href="https://fr.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> sur les programmes d’espionnage de masse américains et britanniques.']
-  - ['@:frama', 'Septembre 2013 à septembre 2014',
-     '<a href="https://framablog.org/2014/01/23/manger-la-patee-de-son-chien/">Dégooglisation de Framasoft</a><br>(voir la <a href="https://rmll.ubicast.tv/videos/quitter-google-lexperience-de-lassociation-framasoft/">conférence des RMLL 2014</a>)']
-  - ['@:services', '5 février 2014',
-     '<a href="https://framablog.org/2014/02/05/framabag-service-libre-gratuit-interview-developpeur/">Lancement de Framabag</a>']
-  - ['@:frama', 'Juillet 2014',
-     '<a href="https://rmll.ubicast.tv/videos/quelles-alternatives-a-google-retours-sur-lexperience-framacloud/">Pré-annonce de la campagne Dégooglisons Internet</a> aux RMLL de Montpellier']
-  - ['@:frama', '7 octobre 2014',
-     '<a href="https://framablog.org/2014/10/07/degooglisons-internet/">Annonce de la campagne</a>']
-  - ['@:services', '7 octobre 2014',
-     '<a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">Lancement du service Framasphère</a>']
-  - ['@:services', '11 novembre 2014',
-     '<a href="https://framablog.org/2014/11/11/des-cartes-mentales-libres-avec-framindmap/">Annonce de Framindmap</a>']
-  - ['@:services', '26 nov 2014',
-     '<a href="https://framablog.org/2014/11/26/framadate-nouvelle-version-accessible/">Nouvelle version de Framadate</a>']
-  - ['@:frama', '11 décembre 2014',
-     '<a href="https://framablog.org/2014/12/11/mypads-le-developpement-est-lance/">Lancement de la campagne de financement de MyPads</a>']
-  - ['@:services', '13 mars 2015',
-     '<a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/ ">Lancement de Framagit</a>']
-  - ['@:services', '16 mars 2015',
-     '<a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">Lancement de Frama.link, Framapic et Framabin</a>']
-  - ['@:services', '5 mai 2015',
-     '<a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">Lancement de Framabee</a>']
-  - ['@:services', '18 juin 2015',
-     '<a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">Lancement de Framagames</a>']
-  - ['@:services', '22 juin 2015',
-     '<a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">Lancement de Framabookin</a>']
-  - ['@:frama', '7 juillet 2015',
-     '<a href="https://rmll.ubicast.tv/videos/google-facebook-etc-pourquoi-et-comment-decoloniser-internet/">Point d’étape aux RMLL de Beauvais</a>']
-  - ['@:frama', '5 octobre 2015',
-     '<a href="https://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait/">Annonce de la saison 2 de Dégooglisons Internet</a>']
-  - ['@:services', '5 octobre 2015',
-     '<a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">Lancement de Framadrive</a>']
-  - ['@:services', '6 octobre 2015',
-     '<a href="https://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs/">Annonce de MyPads</a>']
-  - ['@:services', '7 octobre 2016',
-     '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">Lancement Framaboard</a>']
-  - ['@:services', '8 octobre 2015',
-     '<a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">Lancement de la nouvelle version de Framadate</a>']
-  - ['@:services', '9 octobre 2015',
-     '<a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">Lancement de Framadrop</a>']
-  - ['@:frama', '23 octobre 2015',
-     '<a href="https://framablog.org/2015/10/23/les-nouveaux-loups-du-web-lavant-premiere/">Partenariat de promotion du documentaire « Les Nouveaux Loups du Web »</a>']
-  - ['@:services', '23 décembre 2015',
-     '<a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">Lancement de Framacarte</a>']
-  - ['@:services', '10 mai 2016',
-     '<a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">Lancement de Framateam</a>']
-  - ['@:services', '7 juin 2016',
-     '<a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">Lancement de Framavox</a>']
-  - ['@:frama', '24 juin 2016',
-     '<a href="https://framablog.org/2016/06/13/operation-degooglisons-a-nevers-24-25-26-juin/">Opération « Dégooglisons » à Nevers</a>']
-  - ['@:services', '1er septembre 2016',
-     '<a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">Lancement de Framinetest</a>']
-  - ['@:services', '9 septembre 2016',
-     '<a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">Lancement de Framemo</a>']
-  - ['@:frama', '3 octobre 2016',
-     '<a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">Annonce de la saison 3 de Dégooglisons Internet</a>']
-  - ['@:services', '3 octobre 2016',
-     '<a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">Lancement de Framalistes</a>']
-  - ['@:services', '4 octobre 2016',
-     '<a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">Lancement de Framanotes</a>']
-  - ['@:services', '5 octobre 2016',
-     '<a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">Lancement de Framaforms</a>']
-  - ['@:services', '6 octobre 2016',
-     '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">Lancement de Framatalk</a>']
-  - ['@:services', '7 octobre 2016',
-     '<a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">Lancement de Framagenda</a>']
-  - ['@:services', '10 octobre 2016',
-     '<a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">Lancement de MyFrama</a>']
-  - ['@:frama', '12 octobre 2016',
-     '<a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Naissance du collectif CHATONS</a>']
-  - ['@:services', '11 janvier 2017',
-     '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">Lancement de Framaestro</a>']
-  - ['@:services', '22 Mars 2017',
-     '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">Lancement de Framaslides</a>']
-  - ['@:frama', '12 juin 2017',
-     '<a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">Lancement de docs.framasoft.org</a>']
+  - 'Révélations d’<a href="https://fr.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> sur les programmes d’espionnage de masse américains et britanniques.'
+  - '<a href="https://framablog.org/2014/01/23/manger-la-patee-de-son-chien/">Dégooglisation de Framasoft</a><br>(voir la <a href="https://rmll.ubicast.tv/videos/quitter-google-lexperience-de-lassociation-framasoft/">conférence des RMLL 2014</a>)'
+  - '<a href="https://framablog.org/2014/02/05/framabag-service-libre-gratuit-interview-developpeur/">@:msg.timeline.launch Framabag</a>'
+  - '<a href="https://rmll.ubicast.tv/videos/quelles-alternatives-a-google-retours-sur-lexperience-framacloud/">Pré-annonce de la campagne Dégooglisons Internet</a> aux RMLL de Montpellier'
+  - '<a href="https://framablog.org/2014/10/07/degooglisons-internet/">Annonce de la campagne</a>'
+  - '<a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">Lancement du service Framasphère</a>'
+  - '<a href="https://framablog.org/2014/11/11/des-cartes-mentales-libres-avec-framindmap/">Annonce de Framindmap</a>'
+  - '<a href="https://framablog.org/2014/11/26/framadate-nouvelle-version-accessible/">Nouvelle version de Framadate</a>'
+  - '<a href="https://framablog.org/2014/12/11/mypads-le-developpement-est-lance/">@:msg.timeline.launch la campagne de financement de MyPads</a>'
+  - '<a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/ ">@:msg.timeline.launch Framagit</a>'
+  - '<a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">@:msg.timeline.launch Frama.link, Framapic et Framabin</a>'
+  - '<a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">@:msg.timeline.launch Framabee</a>'
+  - '<a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">@:msg.timeline.launch Framagames</a>'
+  - '<a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">@:msg.timeline.launch Framabookin</a>'
+  - '<a href="https://rmll.ubicast.tv/videos/google-facebook-etc-pourquoi-et-comment-decoloniser-internet/">Point d’étape aux RMLL de Beauvais</a>'
+  - '<a href="https://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait/">Annonce de la saison 2 de Dégooglisons Internet</a>'
+  - '<a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:msg.timeline.launch Framadrive</a>'
+  - '<a href="https://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs/">Annonce de MyPads</a>'
+  - '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">Lancement Framaboard</a>'
+  - '<a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:msg.timeline.launch la nouvelle version de Framadate</a>'
+  - '<a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:msg.timeline.launch Framadrop</a>'
+  - '<a href="https://framablog.org/2015/10/23/les-nouveaux-loups-du-web-lavant-premiere/">Partenariat de promotion du documentaire « Les Nouveaux Loups du Web »</a>'
+  - '<a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">@:msg.timeline.launch Framacarte</a>'
+  - '<a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">@:msg.timeline.launch Framateam</a>'
+  - '<a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">@:msg.timeline.launch Framavox</a>'
+  - '<a href="https://framablog.org/2016/06/13/operation-degooglisons-a-nevers-24-25-26-juin/">Opération « Dégooglisons » à Nevers</a>'
+  - '<a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">@:msg.timeline.launch Framinetest</a>'
+  - '<a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">@:msg.timeline.launch Framemo</a>'
+  - '<a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">Annonce de la saison 3 de Dégooglisons Internet</a>'
+  - '<a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">@:msg.timeline.launch Framalistes</a>'
+  - '<a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">@:msg.timeline.launch Framanotes</a>'
+  - '<a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">@:msg.timeline.launch Framaforms</a>'
+  - '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:msg.timeline.launch Framatalk</a>'
+  - '<a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:msg.timeline.launch Framagenda</a>'
+  - '<a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:msg.timeline.launch MyFrama</a>'
+  - '<a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Naissance du collectif CHATONS</a>'
+  - '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:msg.timeline.launch Framaestro</a>'
+  - '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:msg.timeline.launch Framaslides</a>'
+  - '<a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:msg.timeline.launch docs.framasoft.org</a>'
 
 
 # Generic text ---------------------------------------------------------
@@ -813,7 +739,7 @@ txt:
   LEDS: Libre, Éthique, Décentralisé et Solidaire
   withHelp:  avec votre aide
   searchAlt: Chercher une alternative à un service propriétaire
-  searchTags: Recherche par mots-clés
+  searchByTags: Recherche par mots-clés
   results: Résultats
   allServices: Tous les services
   backToMap: Retour à la carte

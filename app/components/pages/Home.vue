@@ -7,14 +7,23 @@
           <h1 v-html="$t('msg.meta.DIo')"></h1>
           <div class="row">
             <div class="col-sm-4 hidden-xs">
-              <p class="text-center well"><a href="#enjeux" v-html="$t('msg.home.intro.bubble1')"></a></p>
-            </div>
-            <div class="col-sm-4 hidden-xs">
-              <p class="text-center well"><a href="#solutions" v-html="$t('msg.home.intro.bubble2')"></a></p>
+              <p class="text-center well">
+                <a href="#enjeux"
+                  v-html="$t('msg.home.intro.bubble1')"
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));"
+                ></a>
+                </p>
             </div>
             <div class="col-sm-4 hidden-xs">
               <p class="text-center well">
-                <router-link :to="'/' + $t('msg.meta.lang') + '/list'"
+                <a href="#solutions"
+                  v-html="$t('msg.home.intro.bubble2')"
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));"
+                ></a></p>
+            </div>
+            <div class="col-sm-4 hidden-xs">
+              <p class="text-center well">
+                <router-link :to="'/' + $t('lang') + '/list'"
                   v-html="$t('msg.home.intro.bubble3')">
                 </router-link>
               </p>
@@ -24,14 +33,14 @@
 
         <div class="container ombre choice">
           <div class="row text-center">
-            <router-link :to="'/' + $t('msg.meta.lang') + '/list'">
+            <router-link :to="'/' + $t('lang') + '/list'">
               <div class="col-md-6 fb_f6 h3 fc_light" style="margin:0 ; padding:5%">
                 <p class="fc_light">{{ $t('msg.home.intro.btnList1') }}</p>
                 <p><small><i class="fc_light">{{ $t('msg.home.intro.btnList2') }}</i></small></p>
                 <p class="btn-lg btn-default" v-html="$t('msg.home.intro.btnList3')"></p>
               </div>
             </router-link>
-            <router-link :to="'/' + $t('msg.meta.lang') + '/alternatives'">
+            <router-link :to="'/' + $t('lang') + '/alternatives'">
               <div class="col-md-6 fb_o6 h3" style="margin:0 ; padding:5%">
                 <p class="fc_light">{{ $t('msg.home.intro.btnAlt1') }}</p>
                 <p><small><i class="fc_light">{{ $t('msg.home.intro.btnAlt2') }}</i></small></p>
@@ -104,7 +113,8 @@
           <div class="row">
             <div class="col-sm-4">
               <p class="text-center text-danger" aria-hidden="true">
-                <a href="#enjeux">
+                <a href="#enjeux"
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
                     <i class="fa fa-user-secret fa-stack-1x"></i>
@@ -113,14 +123,16 @@
               </p>
               <p v-html="$t('msg.home.why.explain.desc')"></p>
               <p>
-                <a href="#enjeux" class="btn btn-xs btn-default">
+                <a href="#enjeux" class="btn btn-xs btn-default"
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   {{ $t('msg.home.why.explain.btn') }}
                 </a>
               </p>
             </div>
             <div class="col-sm-4">
               <p class="text-center text-success" aria-hidden="true">
-                <a href="#solutions">
+                <a href="#solutions"
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
                     <i class="fa fa-shield fa-stack-1x"></i>
@@ -129,7 +141,9 @@
               </p>
               <p v-html="$t('msg.home.why.props.desc')"></p>
               <p>
-                <a href="#solutions" class="btn btn-xs btn-default">
+                <a
+                  href="#solutions" class="btn btn-xs btn-default"
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   {{ $t('msg.home.why.props.btn') }}
                 </a>
               </p>
@@ -188,19 +202,19 @@
       <div class="container ombre text-center">
         <h2>{{ $t('msg.home.speakabout.title') }}</h2>
         <ul class="list-inline">
-          <li v-for="media in medias">
-            <a :href="media.url"><img :src="baseMedias+media.img" :alt="media.alt"></a>
+          <li v-for="media in $t('data.home.medias')">
+            <a :href="media[0]"><img :src="$t('baseImg') +'medias/' + media[1]" :alt="media[2]"></a>
           </li>
         </ul>
         <p>
-          <router-link :to="'/' + $t('msg.meta.lang') + '/medias'" class="btn btn-default btn-lg"
+          <router-link :to="'/' + $t('lang') + '/medias'" class="btn btn-default btn-lg"
             v-html="$t('msg.home.speakabout.btn')">
           </router-link>
         </p>
       </div>
     </div>
 
-    <div class="row" id="enjeux">
+    <div class="row" id="enjeux" v-show="explain">
       <div class="container ombre">
         <h2>{{ $t('msg.home.explain.stakes.title') }}</h2>
         <p v-html="$t('msg.home.explain.stakes.text1')"></p>
@@ -223,7 +237,7 @@
                 </a>
               </p>
               <p class="text-center">
-                <img :src="baseImg + $t('msg.medias.tabs.tab2.img[1][1]')" alt="" />
+                <img :src="$t('baseImg') + $t('msg.medias.tabs.tab2.img[1][1]')" alt="" />
               </p>
             </div>
             <div class="col-sm-6">
@@ -262,7 +276,7 @@
               </p>
             </div>
             <p class="col-sm-12 text-center">
-              <img :src="baseImg + $t('msg.medias.tabs.tab2.img[0][1]')" alt="" />
+              <img :src="$t('baseImg') + $t('msg.medias.tabs.tab2.img[0][1]')" alt="" />
             </p>
             <modal
               id="myFramaModal"
@@ -290,7 +304,7 @@
       </div>
     </div>
 
-    <div class="row" id="solutions">
+    <div class="row" id="solutions" v-show="explain">
       <div class="container ombre">
         <div class="clearfix">
           <div class="col-sm-12">
@@ -325,7 +339,7 @@
           </div>
         </div>
         <p class="col-sm-12 text-center">
-          <img :src="baseImg + $t('msg.medias.tabs.tab2.img[4][1]')" alt="" />
+          <img :src="$t('baseImg') + $t('msg.medias.tabs.tab2.img[4][1]')" alt="" />
         </p>
         <div class="clearfix">
           <h2>{{ $t('msg.home.explain.concrete.title') }}</h2>
@@ -335,12 +349,12 @@
           <p v-html="$t('msg.home.explain.concrete.text4')"></p>
           <p v-html="$t('msg.home.explain.concrete.text5')"></p>
           <p class="text-center">
-            <router-link :to="'/' + $t('msg.meta.lang') + '/list'"
+            <router-link :to="'/' + $t('lang') + '/list'"
               class="btn btn-warning btn-lg"
-              v-html="$t('msg.list.title') + ' ' + $t('msg.meta.f')">
+              v-html="$t('msg.list.title') + ' ' + $t('data.meta.f')">
             </router-link>
           </p>
-          <p><img :src="baseImg + 'img/cloud.jpg'" alt="" class="center-block img-responsive" /></p>
+          <p><img :src="$t('baseImg') + 'img/cloud.jpg'" alt="" class="center-block img-responsive" /></p>
         </div>
         <Signature />
       </div>
@@ -364,81 +378,15 @@ export default {
     BackTop,
   },
   data() {
-    const { lang } = document.getElementsByTagName('html')[0];
-    const base = (window.location.href.split('/')[3] !== lang) ? `/${window.location.href.split('/')[3]}` : '';
     return {
       modal: {
         open: false,
       },
-      baseImg: `${base}/img/`,
-      baseMedias : `${base}/img/medias/`,
-      medias: [
-        {
-          url: 'https://web.archive.org/web/20150417064442/http://www.canalplus.fr:80/c-emissions/c-la-nouvelle-edition/pid6850-la-nouvelle-edition.html',
-          img: 'canal_nb.png',
-          alt: 'Canal+',
-        },
-        {
-          url: 'http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3',
-          img: 'france_culture_nb.png',
-          alt: 'France Culture',
-        },
-        {
-          url: 'http://www.francetvinfo.fr/replay-radio/nouveau-monde/nouveau-monde-est-il-possible-de-degoogliser-le-web_1854529.html',
-          img: 'france_info_nb.png',
-          alt: 'France Info',
-        },
-        {
-          url: 'http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
-          img: 'france_inter_nb.png',
-          alt: 'France Inter',
-        },
-        {
-          url: 'http://www.lagedefaire-lejournal.fr/framasoft-services-libres-faciliter-nos-echanges/',
-          img: 'age_de_faire_nb.png',
-          alt: 'L’âge de faire',
-        },
-        {
-          url: 'http://www.latribune.fr/technos-medias/internet/les-chatons-toutes-griffes-dehors-face-aux-geants-du-net-557084.html',
-          img: 'la_tribune_nb.png',
-          alt: 'La Tribune',
-        },
-        {
-          url: 'http://www.lefigaro.fr/secteur/high-tech/pratique/2016/10/05/32002-20161005ARTFIG00176-des-solutions-alternatives-pour-vivre-sans-google-facebook-et-microsoft.php',
-          img: 'le_figaro_nb.png',
-          alt: 'Le Figaro',
-        },
-        {
-          url: 'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
-          img: 'l_humanite_nb.png',
-          alt: 'L’Humanité',
-        },
-        {
-          url: 'http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262',
-          img: 'liberation_nb.png',
-          alt: 'Libération',
-        },
-        {
-          url: 'http://www.nextinpact.com/news/96764-degooglisons-internet-saison-2-framasoft-lance-produit-par-jour-cette-semaine.htm',
-          img: 'next_inpact_nb.png',
-          alt: 'Next Inpact',
-        }
-      ]
+      explain: false,
     }
   },
   mounted () {
-    $('a:has(b)').css('text-decoration','none');
-
-    const target = [
-      '#t2-espionnum', '#t2-fermetum', '#t2-privatum', '#t2-centralisum',
-      '#dangers', '#leds', '#enjeux', '#solutions', '#concret'
-    ];
-
-    $(target.join()).hide();
-
-    $(`a[href="${target.join('"], a[href="')}"]`).on('click', () => {
-      $(target.join()).show();
-    });
+    $('a:has(b)').css('text-decoration', 'none');
   }
 }
 </script>

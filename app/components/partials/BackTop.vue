@@ -1,5 +1,5 @@
 <template>
-  <a href="#" id="back-to-top" :title="$t('msg.txt.backToTop')" >
+  <a href="#" id="back-to-top" :title="$t('msg.txt.backToTop')" v-scroll-to="'#app'" >
     <i class="fa fa-fw fa-arrow-up" aria-hidden="true"></i>
     <span class="sr-only">$t('msg.txt.backToTop')</span>
   </a>
