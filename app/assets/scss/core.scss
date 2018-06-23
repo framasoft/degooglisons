@@ -242,9 +242,9 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: 3000px;
   margin-left: 12px;
   margin-top: 0px;
+  transition: left 1s linear;
 }
 
 #sticky[style*="relative"] li:first-child {
@@ -260,6 +260,8 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
   color: #757575;
   vertical-align: middle;
   text-transform: uppercase;
+  white-space: nowrap;
+  float:none;
 }
 
 .nav-tabs li.active {

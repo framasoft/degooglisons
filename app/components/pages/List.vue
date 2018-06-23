@@ -5,19 +5,29 @@
       <div id="tips" class="row">
 
         <div id="sticky" class="hidden-xs cats">
-          <div class="scroller scroller-left">
+          <div
+            class="scroller scroller-left"
+            v-if="scrollMenu.btnLeft"
+            @click="scrollMenu.left += scrollMenu.visibleWidth;scrollMenuRefresh();">
             <i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
           </div>
-          <div class="scroller scroller-right">
+          <div
+            class="scroller scroller-right"
+            v-if="scrollMenu.btnRight"
+            @click="scrollMenu.left -= scrollMenu.visibleWidth;scrollMenuRefresh();">
             <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
           </div>
           <nav class="navbar navbar-default nav-cats" role="navigation">
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav nav-tabs" role="tablist">
-                <li><a href="#tagssearch" :title="$t('msg.txt.searchByTags')">
-                  <i class="fa fa-lg fa-search" aria-hidden="true"></i>
-                  <span class="sr-only">{{ $t('msg.txt.searchByTags') }}</span>
-                </a></li>
+              <ul
+                class="nav navbar-nav nav-tabs" role="tablist"
+                :style="'left: ' + scrollMenu.left + 'px'">
+                <li>
+                  <a href="#tagssearch" :title="$t('msg.txt.searchByTags')">
+                    <i class="fa fa-lg fa-search" aria-hidden="true"></i>
+                    <span class="sr-only">{{ $t('msg.txt.searchByTags') }}</span>
+                  </a>
+                </li>
                 <li><a href="#all">{{ $t('msg.txt.allServices') }}</a></li>
                 <li v-for="(icon, cat) in data.cat2.icons">
                   <a :href="'#' + cat" :title="$t('msg.cat2.' + cat)">{{ $t('msg.cat2.' + cat) }}</a></li>
@@ -64,6 +74,7 @@
             <div id="results" class="clearfix" >
               <article
                 v-for="(service, key) in data.services"
+                v-if="(data.fight.indexOf(key) > -1)"
                 v-show="isInResults($t('msg.services.' + key + '.tags'), results)"
                 class="col-md-3 col-sm-6 text-center">
                 <h3>
@@ -71,7 +82,7 @@
                   <p v-html="service.F"></p>
                 </h3>
                 <p class="desc" v-html="$t('msg.services.' + key + '.tDesc')"></p>
-                <p><img class="img-responsive" :src="$t('baseImg') + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
+                <p><img class="img-responsive" :src="$t('/img/') + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                 <div class="clearfix">
                   <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('msg.txt.use') }}</a>
 
@@ -86,8 +97,6 @@
                         @click="modal.open = true; modal.key = key;"
                         >{{ $t('msg.txt.more') }}</a></li>
                       <li><a :href="$t('msg.link.docs') + stripTags(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
-                      <!--<li><a href="'.$v['CL'].'">Installer</a></li>
-                      <li><a href="https://chatons.org">Chatons</a></li>-->
                     </template>
                   </dropdown>
 
@@ -104,14 +113,16 @@
                 </h2>
               </div>
               <div class="clearfix">
-                <article v-for="(service, key) in data.services" v-if="(service.c2 === cat)"
+                <article
+                  v-for="(service, key) in data.services"
+                  v-if="data.fight.indexOf(key) > -1 && service.c2 === cat"
                   :class="'col-md-3 col-sm-6 text-center ' + tagsClass(key)">
                   <h3>
                     <i :class="'fa fa-2x fa-' + service.i"></i><br>
                     <p v-html="service.F"></p>
                   </h3>
                   <p class="desc" v-html="$t('msg.services.' + key + '.tDesc')"></p>
-                  <p><img class="img-responsive" :src="$t('baseImg') + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
+                  <p><img class="img-responsive" :src="$t('/img/') + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                   <div class="clearfix">
                     <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('msg.txt.use') }}</a>
 
@@ -126,8 +137,6 @@
                           @click="modal.open = true; modal.key = key;"
                           >{{ $t('msg.txt.more') }}</a></li>
                         <li><a :href="$t('msg.link.docs') + stripTags(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
-                        <!--<li><a href="'.$v['CL'].'">Installer</a></li>
-                        <li><a href="https://chatons.org">Chatons</a></li>-->
                       </template>
                     </dropdown>
 
@@ -155,12 +164,12 @@
             </div>
             <div class="web-browser">
               <div class="toolbar">
-                <img :src="$t('baseImg') + 'browser-left.png'" alt="" />
+                <img :src="$t('/img/') + 'browser-left.png'" alt="" />
                 <div class="search-bar"></div>
-                <img :src="$t('baseImg') + 'browser-right.png'" alt="" />
+                <img :src="$t('/img/') + 'browser-right.png'" alt="" />
               </div>
               <img
-                :src="$t('baseImg') + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
+                :src="$t('/img/') + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
                 class="img-responsive" alt=""
               />
             </div>
@@ -197,7 +206,7 @@
             <div class="clearfix">
               <ul class="list-inline">
                 <li class="col-xs-4 col-sm-3 col-md-2 text-center" style="padding:20px"
-                  v-for="(service, key) in data.services" v-if="(fight.indexOf(key) > -1)">
+                  v-for="(service, key) in data.services" v-if="(data.fight.indexOf(key) > -1)">
                   <a :href="service.FL" class="btn btn-default btn-block"
                     :title="$t('msg.services.' + key + '.sDesc')"
                     rel="popover" data-placement="bottom"
@@ -231,6 +240,60 @@ export default {
     Modal, Dropdown, Btn,
     Signature,
     BackTop,
+  },
+  data() {
+    const hash = window.location.hash;
+    const tags = [];
+    if (hash && hash.indexOf('#tag-') > -1) {
+      tags.push(hash.replace('#tag-', ''));
+    }
+    return {
+      modal: {
+        open: false,
+        key: 'bitly',
+      },
+      results: tags,
+      data: require('../../data.yml'), // eslint-disable-line
+      scrollMenu: {
+        bar: 40,
+        left: 0,
+        listWidth: 0,
+        visibleWidth: 0,
+        btnLeft: false,
+        btnRight: true,
+      }
+    }
+  },
+  mounted() {
+    this.scrollMenuRefresh();
+    window.onresize = () => {
+      this.scrollMenuRefresh();
+    };
+
+    $(document).ready(function() {
+
+      $('a:has(b)').css('text-decoration','none');
+
+      // Sticky
+      $('body').attr({
+        'data-spy': 'scroll',
+        'data-target': '#sticky .navbar'
+      });
+    });
+
+    $(window).scroll(() => {
+      const $sticky = $('#sticky');
+      if ($(window).scrollTop() > 240) {
+        $('#sticky').css({'position': 'fixed', 'width': $('#tips').width()});
+      } else {
+        $('#sticky').css('position', 'relative');
+      };
+      if ($(window).scrollTop() > 640) {
+        $('#sticky.cats').css({'position': 'fixed', 'width': $('#tips').width()});
+      } else {
+        $('#sticky.cats').css('position', 'relative');
+      };
+    });
   },
   methods: {
     stripTags(html) {
@@ -302,112 +365,22 @@ export default {
       });
       return seen;
     },
-  },
-  data() {
-    const hash = window.location.hash;
-    const tags = [];
-    if (hash && hash.indexOf('#tag-' > -1)) {
-      tags.push(hash.replace('#tag-',''));
-    }
-    return {
-      modal: {
-        open: false,
-        key: 'bitly',
-      },
-      results: tags,
-      data: require('../../data.yml'), // eslint-disable-line
-      fight: ['bitly', 'bubblus', 'delicious', 'doodle', 'dropbox', 'evernote',
-            'facebook', 'github', 'gagenda', 'gbooks', 'gdocs', 'gforms',
-            'ggroups', 'gmaps', 'greader', 'gspreadsheet', 'gsearch', 'gslides', 'imgur',
-            'kongregate', 'loomio', 'maestro', 'minecraft', 'padlet', 'pastebin', 'pixlr',
-            'pocket', 'skype', 'slack', 'trello', 'twitter', 'youtube', 'wetransfer'],
-    }
-  },
-  mounted() {
-    $(document).ready(function() {
-
-      $('a:has(b)').css('text-decoration','none');
-
-     /*
-      // Sticky
-      $('body').attr({
-        'data-spy': 'scroll',
-        'data-target': '#sticky .navbar'
-      });
-      $('header').append($('#sticky:has(.nav-year)'));
-
-      // Horizontal scroll
-      /*const scrollBarWidths = 40;
-
-      const widthOfList = () => {
-        let itemsWidth = 0;
-        $('.nav-cats .nav-tabs li').each(() => {
-          itemsWidth += $(this).outerWidth();
-        });
-        return itemsWidth;
+    scrollMenuRefresh() {
+      this.scrollMenu.listWidth = document.querySelector('.nav-cats .nav-tabs').offsetWidth;
+      this.scrollMenu.visibleWidth = document.querySelector('.nav-cats').offsetWidth;
+      if (this.scrollMenu.visibleWidth - this.scrollMenu.left < this.scrollMenu.listWidth) {
+        this.scrollMenu.btnRight = true;
+      } else {
+        this.scrollMenu.btnRight = false;
+        this.scrollMenu.left = this.scrollMenu.visibleWidth - this.scrollMenu.listWidth;
       };
-
-      const widthOfHidden = () => {
-        return (($('.nav-cats').outerWidth()) - widthOfList() - getLeftPosi()) - scrollBarWidths;
-      };
-
-      const getLeftPosi = () => {
-        return $('.nav-cats .nav-tabs').position().left;
-      };
-
-      const reAdjust = () => {
-        if (($('.nav-cats').outerWidth()) < widthOfList()) {
-          $('.scroller-right').show();
-        }
-        else {
-          $('.scroller-right').hide();
-        }
-
-        if (getLeftPosi() < 0) {
-          $('.scroller-left').show();
-        }
-        else {
-          $('.nav-cats .item').animate({left:'-=' + getLeftPosi() + 'px'},'slow');
-          $('.scroller-left').hide();
-        }
+      if (this.scrollMenu.left < 0) {
+        this.scrollMenu.btnLeft = true;
+      } else {
+        this.scrollMenu.btnLeft = false;
+        this.scrollMenu.left = 0;
       }
-
-      reAdjust();
-
-      $(window).on('resize', () => {
-        reAdjust();
-      });
-
-      $('.scroller-right').click(() => {
-
-        $('.scroller-left').fadeIn('slow');
-        $('.scroller-right').fadeOut('slow');
-
-        $('.nav-tabs').animate({left:'+=' + widthOfHidden() + 'px'},'slow');
-      });
-
-      $('.scroller-left').click(() => {
-
-        $('.scroller-right').fadeIn('slow');
-        $('.scroller-left').fadeOut('slow');
-
-        $('.nav-tabs').animate({left:'-=' + getLeftPosi() + 'px'},'slow');
-      });*/
-    });
-
-    $(window).scroll(() => {
-        const $sticky = $('#sticky');
-        if ($(window).scrollTop() > 240) {
-          $('#sticky').css({'position': 'fixed', 'width': $('#tips').width()});
-        } else {
-          $('#sticky').css('position', 'relative');
-        };
-        if ($(window).scrollTop() > 640) {
-          $('#sticky.cats').css({'position': 'fixed', 'width': $('#tips').width()});
-        } else {
-          $('#sticky.cats').css('position', 'relative');
-        };
-    });
-  }
+    }
+  },
 }
 </script>

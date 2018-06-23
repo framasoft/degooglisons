@@ -3,7 +3,7 @@
     <section class="intro">
       <div class="container">
         <h1 class="box">
-          <img alt="" :src="$t('baseImg') + 'smalllogo.png'" /></span>
+          <img alt="" :src="$t('/img/') + 'smalllogo.png'" /></span>
           <span class="text" v-html="$t('msg.timeline.title')"></span>
         </h1>
         <hr>

@@ -156,6 +156,12 @@ cat2:
     games: gamepad
 
 # Services -------------------------------------------------------------
+fight: ['bitly', 'bubblus', 'delicious', 'doodle', 'dropbox', 'evernote',
+        'facebook', 'github', 'gagenda', 'gbooks', 'gdocs', 'gforms',
+        'ggroups', 'gmaps', 'greader', 'gspreadsheet', 'gsearch', 'gslides', 'imgur',
+        'kongregate', 'loomio', 'maestro', 'minecraft', 'padlet', 'pastebin', 'pixlr',
+        'pocket', 'skype', 'slack', 'trello', 'twitter', 'youtube', 'wetransfer']
+
 services:
   bitly:
     FL: https://frama.link
