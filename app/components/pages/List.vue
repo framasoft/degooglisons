@@ -4,17 +4,17 @@
       <header-component/>
       <div id="tips" class="row">
 
-        <div id="sticky" class="hidden-xs cats">
+        <div id="sticky" class="hidden-xs cats" :style="scrollMenu.sticky">
           <div
             class="scroller scroller-left"
             v-if="scrollMenu.btnLeft"
-            @click="scrollMenu.left += scrollMenu.visibleWidth;scrollMenuRefresh();">
+            @click="scrollMenu.left += scrollMenu.visibleWidth; scrollMenuRefresh();">
             <i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
           </div>
           <div
             class="scroller scroller-right"
             v-if="scrollMenu.btnRight"
-            @click="scrollMenu.left -= scrollMenu.visibleWidth;scrollMenuRefresh();">
+            @click="scrollMenu.left -= scrollMenu.visibleWidth; scrollMenuRefresh();">
             <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
           </div>
           <nav class="navbar navbar-default nav-cats" role="navigation">
@@ -261,38 +261,28 @@ export default {
         visibleWidth: 0,
         btnLeft: false,
         btnRight: true,
-      }
+        sticky: 'position: relative;'
+      },
     }
   },
   mounted() {
     this.scrollMenuRefresh();
     window.onresize = () => {
       this.scrollMenuRefresh();
+      this.stickyCSS();
+    };
+    window.onscroll = () => {
+      this.stickyCSS();
     };
 
     $(document).ready(function() {
-
       $('a:has(b)').css('text-decoration','none');
 
-      // Sticky
+      // Sticky (to replace by https://uiv.wxsm.space/scroll-spy/)
       $('body').attr({
         'data-spy': 'scroll',
         'data-target': '#sticky .navbar'
       });
-    });
-
-    $(window).scroll(() => {
-      const $sticky = $('#sticky');
-      if ($(window).scrollTop() > 240) {
-        $('#sticky').css({'position': 'fixed', 'width': $('#tips').width()});
-      } else {
-        $('#sticky').css('position', 'relative');
-      };
-      if ($(window).scrollTop() > 640) {
-        $('#sticky.cats').css({'position': 'fixed', 'width': $('#tips').width()});
-      } else {
-        $('#sticky.cats').css('position', 'relative');
-      };
     });
   },
   methods: {
@@ -380,7 +370,13 @@ export default {
         this.scrollMenu.btnLeft = false;
         this.scrollMenu.left = 0;
       }
-    }
+    },
+    stickyCSS() {
+      this.scrollMenu.sticky = 'position: relative;';
+      if (document.documentElement.scrollTop > 640) {
+        this.scrollMenu.sticky = `position: fixed; width: ${document.querySelector('#tips').offsetWidth}px;`;
+      }
+    },
   },
 }
 </script>
