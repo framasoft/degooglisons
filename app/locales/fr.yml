@@ -29,7 +29,7 @@ link:
   chatons: https://chatons.org
 
 img:
-  map: /img/Carte2016-romains.png
+  map: Carte2016-romains.png
 
 leds:
   title: Pour un Internet…
@@ -707,6 +707,8 @@ timeline:
 
 # Generic text ---------------------------------------------------------
 txt:
+  play: Lecture
+  pause: Pause
   close: Fermer
   more: En savoir plus
   support: Soutenir
@@ -738,7 +740,7 @@ txt:
   software: Logiciels
   LEDS: Libre, Éthique, Décentralisé et Solidaire
   withHelp:  avec votre aide
-  searchAlt: Chercher une alternative à un service propriétaire
+  searchByAlt: Chercher une alternative à un service propriétaire
   searchByTags: Recherche par mots-clés
   results: Résultats
   allServices: Tous les services
