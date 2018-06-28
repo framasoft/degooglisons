@@ -32,9 +32,21 @@ Vue.use(vueScrollto);
 const defaultLocale = 'fr';
 const locales = [];
 // Import locales list
-const req = require.context('./locales/', true, /\.yml$/);
+let req = require.context('./locales/', true, /\.yml$/);
 req.keys().forEach((key) => {
   locales.push(key.replace(/\.\/(.*)\.yml/, '$1'));
+});
+
+// Import logos list
+const gafam = [];
+const leds = [];
+req = require.context('./assets/img/gafam/', true, /\.png$/);
+req.keys().forEach((key) => {
+  gafam.push(key.replace(/\.\/(.*)\.png/, '$1'));
+});
+req = require.context('./assets/img/leds/', true, /\.png$/);
+req.keys().forEach((key) => {
+  leds.push(key.replace(/\.\/(.*)\.png/, '$1'));
 });
 
 const lang = window.location.href
@@ -64,6 +76,8 @@ for (let i = 0; i < locales.length; i += 1) {
     messages[locales[i]]['/'] = `/${process.env.BASE_URL.replace(/(.+)/, '$1/')}`;
     messages[locales[i]]['/img/'] = `${messages[locales[i]].base}img/`;
     messages[locales[i]].data = require('./data.yml');
+    messages[locales[i]].data.png.gafam = gafam;
+    messages[locales[i]].data.png.leds = leds;
   }).catch((err) => {
     console.error(err);
   });

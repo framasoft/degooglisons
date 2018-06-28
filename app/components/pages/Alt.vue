@@ -221,7 +221,9 @@
                         <li class="list-group-item"
                           v-for="gafam in gafam(data.services[key])"
                           >
-                          <img :src="$t('/img/') + 'gafam/' + gafam.replace(' ', '-').toLowerCase() + '.png'" alt="" />
+                          <img
+                            v-if="data.png.gafam.indexOf(gafam.replace(' ', '-').toLowerCase()) > -1"
+                            :src="$t('/img/') + 'gafam/' + gafam.replace(' ', '-').toLowerCase() + '.png'" alt="" />
                           {{ gafam }}
                         </li>
                       </ul>
@@ -231,7 +233,9 @@
                         <li class="list-group-item"
                           v-if="service.F"
                           >
-                          <img :src="$t('/img/') + 'leds/' + stripTags($t('data.services.' + key + '.F')).toLowerCase() + '.png'" alt="" />
+                          <img
+                            v-if="data.png.leds.indexOf(stripTags($t('data.services.' + key + '.F')).toLowerCase()) > -1"
+                            :src="$t('/img/') + 'leds/' + stripTags($t('data.services.' + key + '.F')).toLowerCase() + '.png'" alt="" />
                           <span v-html="$t('data.services.' + key + '.F')"></span>
                           <i class="fa fa-cloud fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -240,7 +244,9 @@
                         <li class="list-group-item"
                           v-if="service.S"
                           >
-                          <img :src="$t('/img/') + 'leds/' + stripTags($t('data.services.' + key + '.S')).toLowerCase() + '.png'" alt="" />
+                          <img
+                            v-if="data.png.leds.indexOf(stripTags($t('data.services.' + key + '.S')).toLowerCase()) > -1"
+                            :src="$t('/img/') + 'leds/' + stripTags($t('data.services.' + key + '.S')).toLowerCase() + '.png'" alt="" />
                           <span v-html="$t('data.services.' + key + '.S')"></span>
                           <i class="fa fa-server fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -252,7 +258,9 @@
                           v-for="alt in leds(service.altOn)"
                           v-if="alt !== ''"
                           >
-                          <img :src="$t('/img/') + 'leds/' + stripTags(alt).toLowerCase() + '.png'" alt="" />
+                          <img
+                            v-if="data.png.leds.indexOf(stripTags(alt).toLowerCase()) > -1"
+                            :src="$t('/img/') + 'leds/' + stripTags(alt).toLowerCase() + '.png'" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-cloud fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -262,7 +270,9 @@
                           v-for="alt in leds(service.altOff)"
                           v-if="alt !== ''"
                           >
-                          <img :src="$t('/img/') + 'leds/' + stripTags(alt).toLowerCase() + '.png'" alt="" />
+                          <img
+                            v-if="data.png.leds.indexOf(stripTags(alt).toLowerCase()) > -1"
+                            :src="$t('/img/') + 'leds/' + stripTags(alt).toLowerCase() + '.png'" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-server fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -404,8 +414,8 @@ export default {
         .replace(/\@:e\.[a-z]+ /g, '')
         .replace(/^, /, '')
         .split(', ')
-        .sort()
-        .filter((v, i, a) => a.indexOf(v) === i);
+        .sort() // alphabetic order
+        .filter((v, i, a) => a.indexOf(v) === i); // remove duplicate
     },
     tagsClass(key) {
       let tags = '';

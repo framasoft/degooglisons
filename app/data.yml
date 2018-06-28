@@ -162,6 +162,10 @@ fight: ['bitly', 'bubblus', 'delicious', 'doodle', 'dropbox', 'evernote',
         'kongregate', 'loomio', 'maestro', 'minecraft', 'padlet', 'pastebin', 'pixlr',
         'pocket', 'skype', 'slack', 'trello', 'twitter', 'youtube', 'wetransfer']
 
+png:
+  gafam: []
+  leds: []
+
 services:
   bitly:
     FL: https://frama.link
