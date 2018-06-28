@@ -122,13 +122,11 @@ timeline:
 
 editors:
   icons:
-      google: google
-      apple: apple
-      facebook: facebook
-      amazon: amazon
-      microsoft: windows
-      dropbox: dropbox
-      twitter: twitter
+      g: google
+      ap: apple
+      f: facebook
+      am: amazon
+      m: windows
 
 # Categories -----------------------------------------------------------
 cat1:
@@ -166,6 +164,36 @@ png:
   gafam: []
   leds: []
 
+camps:
+  village:
+    pos: 175,125,70
+    highlight: village
+    img: village
+  fermetum:
+    pos: 100,225,55
+    highlight: camps
+    img: stevusjobus
+    more: true
+  centralisum:
+    pos: 175,270,55
+    highlight: camps
+    img: cyberpolicus
+    more: true
+  espionnum:
+    pos: 250,245,55
+    highlight: camps
+    img: stevusjobus
+    more: true
+  privatum:
+    pos: 275,155,55
+    highlight: camps
+    img: cyberpolicus
+    more: true
+  nsa:
+    pos: 485,315,50
+    highlight: camps
+    img: nsa
+
 services:
   bitly:
     FL: https://frama.link
@@ -173,10 +201,17 @@ services:
     i: link
     S: <a href="https://git.framasoft.org/luc/lstu"><abbr>Lstu</abbr></a>
     F: <a href="@:FL"><b class="violet">Frama</b>.<b class="vert">link</b></a>
-    name: Bit.ly
-    eq: '@:e.google goo.gl, @:e.twitter t.co, tinyurl.com'
-    altOn: <a href="http://lstu.fr/">LSTU</a>, <a href="http://ur1.ca/">ur1.ca</a>
-    altOff: '@:S, <a href="http://yourls.org/">YOURLS</a>, <a href="http://lilurl.sourceforge.net/">LilURL</a>'
+    gafam:
+    - Bit.ly
+    - '@:e.g goo.gl'
+    - '@:e.twitter t.co'
+    - tinyurl.com
+    altOn:
+    - <a href="http://lstu.fr/">LSTU</a>
+    - <a href="http://ur1.ca/">ur1.ca</a>
+    altOff:
+    - <a href="http://yourls.org/">YOURLS</a>
+    - <a href="http://lilurl.sourceforge.net/">LilURL</a>
     pos: 650,320,40
     FDate: <a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">2015</a>
     c1: web
@@ -188,10 +223,17 @@ services:
     i:
     S: <a href="https://getgrav.org/">Grav</a>
     F: <b class="violet">Frama</b><b class="vert">sites</b>
-    name: '@:e.google Blogger'
-    eq: Pages Jaunes, OverBlog, Skyblog
-    altOn: <a href="http://wordpress.com">Wordpress</a>
-    altOff: '@:S, <a href="http://www.pluxml.org/">PluXML</a>, <a href="https://www.spip.net/">Spip</a>, <a href="http://wordpress.org">Wordpress</a>'
+    gafam:
+    - '@:e.g Blogger'
+    - Pages Jaunes
+    - OverBlog
+    - Skyblog
+    altOn:
+    - <a href="http://wordpress.com">Wordpress</a>
+    altOff:
+    - <a href="http://www.pluxml.org/">PluXML</a>
+    - <a href="https://www.spip.net/">Spip</a>
+    - <a href="http://wordpress.org">Wordpress</a>
     pos: 650,605,40
     FDate: 2017
     c1: site
@@ -202,10 +244,13 @@ services:
     i: sitemap
     S: <a href="http://wisemapping.com">Wisemapping</a>
     F: <a href="https://framindmap.org"><b class="violet">Fra</b><b class="vert">mindmap</b></a>
-    name: Bubbl.us
-    eq:
-    altOn: '@:S, <a href="https://www.mindmup.com">Mindmup</a>'
-    altOff: '@:S, <a href="https://github.com/drichard/mindmaps">Mindmaps</a>, <a href="https://github.com/mindmup/mindmup">Mindmup</a>'
+    gafam:
+    - Bubbl.us
+    altOn:
+    - <a href="https://www.mindmup.com">Mindmup</a>
+    altOff:
+    - <a href="https://github.com/drichard/mindmaps">Mindmaps</a>
+    - <a href="https://github.com/mindmup/mindmup">Mindmup</a>
     pos: 414,183,40
     FDate: <a href="https://framablog.org/2012/10/16/framindmap-carte-mentale">2012</a>
     c1: office
@@ -217,10 +262,14 @@ services:
     i:
     S: <a href="https://www.drupal.org/project/webform">WebForm</a>
     F: <b class="violet">Frama</b><b class="vert">pétition</b>
-    name: Change.org
-    eq: Avaaz
+    gafam:
+    - Change.org
+    - Avaaz
     altOn:
-    altOff: <a href="https://github.com/WhiteHouse/petitions">WeThePeople</a>, <a href="https://github.com/mysociety/petitions">MySociety</a>, <a href="https://www.drupal.org/project/webform">WebForm</a>
+    altOff:
+    - <a href="https://github.com/WhiteHouse/petitions">WeThePeople</a>
+    - <a href="https://github.com/mysociety/petitions">MySociety</a>
+    - <a href="https://www.drupal.org/project/webform">WebForm</a>
     pos: 285,615,40
     FDate: 2017
     c1: social
@@ -231,10 +280,13 @@ services:
     i: star
     S: <a href="http://sebsauvage.net/wiki/doku.php?id=php:shaarli">Shaarli</a>
     F: <a href="@:FL"><b class="violet">My</b><b class="vert">Frama</b></a>
-    name: Del.icio.us
-    eq: '@:e.google Google Bookmarks, Xmarks'
-    altOn: <a href="https://www.shaarli.fr">Shaarli</a>
-    altOff: '@:S'
+    gafam:
+    - Del.icio.us
+    - '@:e.g Google Bookmarks'
+    - Xmarks
+    altOn:
+    - <a href="https://www.shaarli.fr">Shaarli</a>
+    altOff:
     pos: 441,540,40
     FDate: <a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous">2016</a>
     c1: web
@@ -246,10 +298,12 @@ services:
     i: calendar-check-o
     S: <a href="https://framagit.org/framasoft/framadate">Framadate</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">date</b></a>
-    name: Doodle
-    eq:
+    gafam:
+    - Doodle
     altOn:
-    altOff: '@:S, <a href="http://kyela.net/">Kyélà</a>, <a href="https://dudle.inf.tu-dresden.de/">Dudle</a>'
+    altOff:
+    - <a href="http://kyela.net/">Kyélà</a>
+    - <a href="https://dudle.inf.tu-dresden.de/">Dudle</a>
     pos: 455,81,40
     FDate: <a href="https://framablog.org/2011/06/28/Planifier-vos-rendez-vous-avec-Framadate">2011</a>
     c1: social
@@ -261,10 +315,17 @@ services:
     i: cloud-upload
     S: <a href="https://nextcloud.com/">Nextcloud</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">drive</b></a>
-    name: '@:e.dropbox Dropbox'
-    eq: '@:e.google Google Drive, @:e.apple iCloud Drive, @:e.microsoft OneDrive'
-    altOn: <a href="http://owncloud.org/providers/#free">OwnCloud</a>, <a href="https://seacloud.cc">Seacloud</a>
-    altOff: '@:S, <a href="https://pyd.io/">Pyd.io</a>, <a href="http://www.seafile.com">Seafile</a>'
+    gafam:
+    - Dropbox
+    - '@:e.g Google Drive'
+    - '@:e.ap iCloud Drive'
+    - '@:e.m OneDrive'
+    altOn:
+    - <a href="http://owncloud.org/providers/#free">OwnCloud</a>
+    - <a href="https://seacloud.cc">Seacloud</a>
+    altOff:
+    - <a href="https://pyd.io/">Pyd.io</a>
+    - <a href="http://www.seafile.com">Seafile</a>
     pos: 367,495,40
     FDate: <a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">2015</a>
     c1: files
@@ -276,10 +337,12 @@ services:
     i: sticky-note
     S: <a href="https://turtlapp.com/">Turtl</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">notes</b></a>
-    name: Evernote
-    eq:
+    gafam:
+    - Evernote
     altOn:
-    altOff: '@:S, <a href="https://laverna.cc/">Laverna</a>, <a href="http://www.tagspaces.org/">Tagspaces</a>'
+    altOff:
+    - <a href="https://laverna.cc/">Laverna</a>
+    - <a href="http://www.tagspaces.org/">Tagspaces</a>
     pos: 590,540,40
     FDate: <a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever">2016</a>
     c1: office
@@ -291,10 +354,18 @@ services:
     i: diaspora
     S: <a href="https://diasporafoundation.org/">Diaspora*</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">sphère</b></a>
-    name: '@:e.facebook Facebook'
-    eq: '@:e.microsoft LinkedIn, Viadeo, @:e.google Google+'
-    altOn: <a href="http://the-federation.info/">Pods Diaspora*</a>, <a href="https://pod.movim.eu">Pods Movim</a>
-    altOff: '@:S, <a href="https://movim.eu/">Movim</a>, <a href="http://salut-a-toi.org">Salut à Toi</a>, <a href="http://friendica.com">Friendica</a>'
+    gafam:
+    - '@:e.f Facebook'
+    - '@:e.m LinkedIn'
+    - Viadeo
+    - '@:e.g Google+'
+    altOn:
+    - <a href="http://the-federation.info/">Pods Diaspora*</a>
+    - <a href="https://pod.movim.eu">Pods Movim</a>
+    altOff:
+    - <a href="https://movim.eu/">Movim</a>
+    - <a href="http://salut-a-toi.org">Salut à Toi</a>
+    - <a href="http://friendica.com">Friendica</a>
     pos: 665,245,40
     FDate: <a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit">2014</a>
     c1: social
@@ -306,10 +377,17 @@ services:
     i: git
     S: <a href="https://gitlab.com/">Gitlab</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">git</b></a>
-    name: '@:e.microsoft GitHub'
-    eq: '@:e.google Google Code, SourceForge'
-    altOn: '@:S, <a href="http://savannah.gnu.org/">Savannah</a>, <a href="http://tuxfamily.org/">TuxFamily</a>, <a href="https://adullact.net/">Adullact</a>'
-    altOff: '@:S, <a href="http://kallithea-scm.org/">Kallithea</a>, <a href="http://gitlist.org/">Gitlist</a>'
+    gafam:
+    - '@:e.m GitHub'
+    - '@:e.g Google Code'
+    - SourceForge
+    altOn:
+    - <a href="http://savannah.gnu.org/">Savannah</a>
+    - <a href="http://tuxfamily.org/">TuxFamily</a>
+    - <a href="https://adullact.net/">Adullact</a>
+    altOff:
+    - <a href="http://kallithea-scm.org/">Kallithea</a>
+    - <a href="http://gitlist.org/">Gitlist</a>
     pos: 409,355,40
     FDate: <a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/">2015</a>
     c1: dev
@@ -321,10 +399,20 @@ services:
     i: mail
     S: <a href="https://www.caliopen.org/">Caliopen</a>
     F: <b class="violet">Frama</b><b class="vert">mail</b>
-    name: '@:e.google GMail'
-    eq: '@:e.microsoft Outlook, Yahoo Mail, Orange'
-    altOn: <a href="https://www.protonmail.com/">ProtonMail</a>, <a href="https://tutanota.com/fr/">Tutanota</a>, <a href="https://sud-ouest.org">Sud-Ouest</a>
-    altOff: <a href="https://blue-mind.net">Blue-mind</a>, <a href="https://kolab.org/">Kolab</a>, <a href="https://roundcube.net/">Roundcube</a>, <a href="http://www.rainloop.net/">Rainloop</a>
+    gafam:
+    - '@:e.g GMail'
+    - '@:e.m Outlook'
+    - Yahoo Mail
+    - Orange
+    altOn:
+    - <a href="https://www.protonmail.com/">ProtonMail</a>
+    - <a href="https://tutanota.com/fr/">Tutanota</a>
+    - <a href="https://sud-ouest.org">Sud-Ouest</a>
+    altOff:
+    - <a href="https://blue-mind.net">Blue-mind</a>
+    - <a href="https://kolab.org/">Kolab</a>
+    - <a href="https://roundcube.net/">Roundcube</a>
+    - <a href="http://www.rainloop.net/">Rainloop</a>
     pos: 650,760,40
     FDate: 2042
     c1: social
@@ -335,10 +423,13 @@ services:
     i: calendar
     S: <a href="https://nextcloud.com/">Nextcloud</a>
     F: <a href="@:FL"><b class="violet">Fram</b><b class="vert">agenda</b></a>
-    name: '@:e.google Google Agenda'
-    eq:
+    gafam:
+    - '@:e.g Google Agenda'
     altOn:
-    altOff: '@:S, <a href="http://www.zkoss.org/product/">ZK Calendar</a>, <a href="http://baikal-server.com/">Baïkal</a>, <a href="http://www.k5n.us/webcalendar.php">Webcalendar</a>'
+    altOff:
+    - <a href="http://www.zkoss.org/product/">ZK Calendar</a>
+    - <a href="http://baikal-server.com/">Baïkal</a>
+    - <a href="http://www.k5n.us/webcalendar.php">Webcalendar</a>
     pos: 361,588,40
     FDate: <a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-et-vos-contacts-avec-la-nsa">2016</a>
     c1: office
@@ -350,10 +441,16 @@ services:
     i: coffee
     S: <a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="rouge">bookin</b></a>
-    name: '@:e.google Google Books'
-    eq: '@:e.amazon Amazon'
-    altOn: <a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>, <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>, <a href="https://inventaire.io">Inventaire</a>
-    altOff: '@:S, <a href="https://github.com/seblucas/cops">Cops</a>, <a href="http://calibre2opds.com/">Calibre2OPDS</a>'
+    gafam:
+    - '@:e.g Google Books'
+    - '@:e.am Amazon'
+    altOn:
+    - <a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>
+    - <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>
+    - <a href="https://inventaire.io">Inventaire</a>
+    altOff:
+    - <a href="https://github.com/seblucas/cops">Cops</a>
+    - <a href="http://calibre2opds.com/">Calibre2OPDS</a>
     pos: 566,338,40
     FDate: <a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon">2015</a>
     c1: media
@@ -365,10 +462,12 @@ services:
     i: align-left
     S: <a href="http://etherpad.org/">Etherpad</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">pad</b></a>
-    name: '@:e.google Google Docs'
-    eq: '@:e.microsoft Office 365, Zoho Office'
+    gafam:
+    - '@:e.g Google Docs'
+    - '@:e.m Office 365'
+    - Zoho Office
     altOn:
-    altOff: '@:S'
+    altOff:
     pos: 380,42,40
     FDate: <a href="https://framablog.org/2011/03/28/framapad-collaboration-en-ligne">2011</a>
     c1: office
@@ -380,10 +479,14 @@ services:
     i: list-ul
     S: <a href="https://www.drupal.org/project/webform">Webform</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">forms</b></a>
-    name: '@:e.google Google Forms'
-    eq:
-    altOn: <a href="https://www.limeservice.com/en/">LimeService</a>, <a href="http://webform.com">Webform</a>
-    altOff: <a href="https://www.limesurvey.org/en/">LimeSurvey</a>, <a href="https://github.com/spiral-project/daybed">DayBed</a>
+    gafam:
+    - '@:e.g Google Forms'
+    altOn:
+    - <a href="https://www.limeservice.com/en/">LimeService</a>
+    - <a href="http://webform.com">Webform</a>
+    altOff:
+    - <a href="https://www.limesurvey.org/en/">LimeSurvey</a>
+    - <a href="https://github.com/spiral-project/daybed">DayBed</a>
     pos: 215,555,40
     FDate: <a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google">2016</a>
     c1: office
@@ -395,10 +498,15 @@ services:
     i: group
     S: <a href="http://www.sympa.org/">Sympa</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">listes</b></a>
-    name: '@:e.google Google Groupes'
-    eq:
-    altOn: <a href="http://riseup.net/">Riseup</a>, <a href="https://www.ouvaton.org/">Ouvaton</a>, <a href="https://www.sud-ouest.org/">Sud-Ouest</a>, <a href="https://www.fdn.fr/Listes-de-diffusion.html">FDN</a>
-    altOff: '@:S, <a href="http://www.gnu.org/software/mailman/">Mailman</a>'
+    gafam:
+    - '@:e.g Google Groupes'
+    altOn:
+    - <a href="http://riseup.net/">Riseup</a>
+    - <a href="https://www.ouvaton.org/">Ouvaton</a>
+    - <a href="https://www.sud-ouest.org/">Sud-Ouest</a>
+    - <a href="https://www.fdn.fr/Listes-de-diffusion.html">FDN</a>
+    altOff:
+    - <a href="http://www.gnu.org/software/mailman/">Mailman</a>
     pos: 660,485,40
     FDate: <a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google">2016</a>
     c1: social
@@ -410,12 +518,17 @@ services:
     i: map
     S: <a href="https://github.com/umap-project/umap/">uMap</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">carte</b></a>
-    name: '@:e.google Google Maps'
-    eq: '@:e.microsoft Bing Maps, ViaMichelin, Mappy'
-    altOn: <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="http://umap.openstreetmap.fr">uMap</a>
-    altOff: '@:S'
+    gafam:
+    - '@:e.g Google Maps'
+    - '@:e.m Bing Maps'
+    - ViaMichelin
+    - Mappy
+    altOn:
+    - <a href="https://www.openstreetmap.org/">OpenStreetMap</a>
+    - <a href="http://umap.openstreetmap.fr">uMap</a>
+    altOff:
     pos: 565,465,40
-    FDate: <a href="https://framablog.org/2015/12/">2015</a>'
+    FDate: <a href="https://framablog.org/2015/12/">2015</a>
     c1: geo
     c2: prod
 
@@ -425,10 +538,13 @@ services:
     i: newspaper-o
     S: <a href="http://tt-rss.org/">TinyTinyRSS</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">news</b></a>
-    name: '@:e.google Google Reader'
-    eq: Feedly
+    gafam:
+    - '@:e.g Google Reader'
+    - Feedly
     altOn:
-    altOff: '@:S, <a href="http://freshrss.org/">FreshRSS</a>, <a href="https://miniflux.net/">Miniflux</a>'
+    altOff:
+    - <a href="http://freshrss.org/">FreshRSS</a>
+    - <a href="https://miniflux.net/">Miniflux</a>
     pos: 677,171,40
     FDate: <a href="https://framablog.org/2013/06/27/framanews-rss-google-reader">2013</a>
     c1: web
@@ -440,10 +556,18 @@ services:
     i: search
     S: <a href="https://github.com/asciimoo/searx">Searx</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">bee</b></a>
-    name: '@:e.google Google Search'
-    eq: '@:e.microsoft Bing, Yahoo'
-    altOn: <a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://search.disconnect.me">Disconnect</a>, <a href="https://github.com/asciimoo/searx/wiki/Searx-instances">Instances de Searx</a>
-    altOff: '@:S, <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>, <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>, <a href="http://codingteam.net/project/mysearch">MySearch</a>'
+    gafam:
+    - '@:e.g Google Search'
+    - '@:e.m Bing'
+    - Yahoo
+    altOn:
+    - <a href="https://duckduckgo.com/">DuckDuckGo</a>
+    - <a href="https://search.disconnect.me">Disconnect</a>
+    - <a href="https://github.com/asciimoo/searx/wiki/Searx-instances">Instances de Searx</a>
+    altOff:
+    - <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>
+    - <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>
+    - <a href="http://codingteam.net/project/mysearch">MySearch</a>
     pos: 637,395,40
     FDate: <a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">2015</a>
     c1: web
@@ -455,10 +579,10 @@ services:
     i: pie-chart
     S: <a href="http://strut.io/">Strut</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">slides</b></a>
-    name: '@:e.google Google Slides'
-    eq:
-    altOn: '@:S'
-    altOff: '@:S'
+    gafam:
+    - '@:e.g Google Slides'
+    altOn:
+    altOff:
     pos: 195,630,40
     FDate: <a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">2017</a>
     c1: office
@@ -470,10 +594,11 @@ services:
     i: th
     S: <a href="https://ethercalc.org/">Ethercalc</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">calc</b></a>
-    name: '@:e.google Google Spreadsheet'
-    eq:
+    gafam:
+    - '@:e.g Google Spreadsheet'
     altOn:
-    altOff: '@:S, <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>'
+    altOff:
+    - <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>
     pos: 364,122,40
     FDate: <a href="https://framablog.org/2012/10/03/framacalc-tableur-sur-internet">2012</a>
     c1: office
@@ -485,10 +610,15 @@ services:
     i: photo
     S: <a href="https://framagit.org/luc/lutim">Lutim</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">pic</b></a>
-    name: Img.ur
-    eq: '@:e.facebook Instagram'
-    altOn: <a href="http://pix.toile-libre.org/">Toile libre</a>, <a href="https://lut.im">Lutim</a>
-    altOff: '@:S, <a href="http://www.mad5.de/ownstagram/">ownStagram</a>, <a href="https://coquelicot.potager.org/">Coquelicot</a>'
+    gafam:
+    - Img.ur
+    - '@:e.f Instagram'
+    altOn:
+    - <a href="http://pix.toile-libre.org/">Toile libre</a>
+    - <a href="https://lut.im">Lutim</a>
+    altOff:
+    - <a href="http://www.mad5.de/ownstagram/">ownStagram</a>
+    - <a href="https://coquelicot.potager.org/">Coquelicot</a>
     pos: 435,263,40
     FDate: <a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">mars 2015</a>
     c1: files
@@ -500,10 +630,11 @@ services:
     i:
     S: <a href="https://github.com/psycojoker/wanawana">WanaWana</a>
     F: <b class="violet">Frama</b><b class="vert">meet</b>
-    name: Meetup
-    eq: '@:e.facebook Facebook Event'
+    gafam:
+    - Meetup
+    - '@:e.f Facebook Event'
     altOn:
-    altOff: '@:S'
+    altOff:
     pos: 545,620,40
     FDate: 2018
     c1: social
@@ -514,10 +645,10 @@ services:
     i: cube
     S: <a href="http://www.minetest.net/">Minetest</a>
     F: <a href="@:FL"><b class="violet">Fra</b><b class="vert">minetest</b></a>
-    name: '@:e.microsoft Minecraft'
-    eq:
+    gafam:
+    - '@:e.m Minecraft'
     altOn:
-    altOff: '@:S'
+    altOff:
     pos: 291,525,40
     FDate: <a href="https://framablog.org/2016/05/28/minetest-piochez-en-lberte/">2016</a>
     c1: hobbies
@@ -529,10 +660,10 @@ services:
     i: object-group
     S: <a href="http://scrumblr.ca/">Scrumblr</a>
     F: <a href="@:FL"><b class="violet">Fra</b><b class="vert">memo</b></a>
-    name: Padlet
-    eq:
+    gafam:
+    - Padlet
     altOn:
-    altOff: '@:S'
+    altOff:
     pos: 490,480,40
     FDate: <a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">2016</a>
     c1: office
@@ -544,10 +675,11 @@ services:
     i: paste
     S: <a href="https://privatebin.info">Privatebin</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">bin</b></a>
-    name: Pastebin
-    eq:
+    gafam:
+    - Pastebin
     altOn:
-    altOff: '@:S, <a href="http://0bin.net/">0bin</a>'
+    altOff:
+    - <a href="http://0bin.net/">0bin</a>
     pos: 345,315,40
     FDate: <a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">2015</a>
     c1: files
@@ -559,10 +691,10 @@ services:
     i: briefcase
     S: <a href="https://www.wallabag.org/">Wallabag</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">bag</b></a>
-    name: '@:e.pocket Pocket'
-    eq:
+    gafam:
+    - Pocket
     altOn:
-    altOff: '@:S'
+    altOff:
     pos: 370,244,40
     FDate: <a href="https://framablog.org/2014/02/05/Framabag-service-libre-gratuit-interview-developpeur">2014</a>
     c1: web
@@ -574,10 +706,10 @@ services:
     i:
     S: <a href="http://webodf.org/">WebODF</a> ou <a href="https://pdf.yt/">PDFy</a>
     F: <b class="violet">Frama</b><b class="vert">xxx</b>
-    name: Scribd
-    eq:
+    gafam:
+    - Scribd
     altOn:
-    altOff: '@:S'
+    altOff:
     pos: 350,675,40
     FDate: 2018
     c1: files
@@ -588,10 +720,12 @@ services:
     i: bullhorn
     S: <a href="https://www.loomio.org">Loomio</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">vox</b></a>
-    name: Shrtct
-    eq: 1000minds
-    altOn: '@:S'
-    altOff: '@:S, <a href="http://liquidfeedback.org/">LiquidFeedback</a>'
+    gafam:
+    - Shrtct
+    - 1000minds
+    altOn:
+    altOff:
+    - <a href="http://liquidfeedback.org/">LiquidFeedback</a>
     pos: 205,465,40
     FDate: <a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix">2016</a>
     c1: social
@@ -603,10 +737,16 @@ services:
     i: video-camera
     S: <a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">talk</b></a>
-    name: '@:e.microsoft Skype'
-    eq: '@:e.google Hangouts'
-    altOn: '@:S, <a href="https://vroom.im/">Vroom.im</a>, <a href="https://hubl.in/">Hubl.in</a>'
-    altOff: <a href="https://jitsi.org/">Jitsi</a>, <a href="https://tox.chat/">Tox</a>, <a href="https://ring.cx">Ring</a>
+    gafam:
+    - '@:e.m Skype'
+    - '@:e.g Hangouts'
+    altOn:
+    - <a href="https://vroom.im/">Vroom.im</a>
+    - <a href="https://hubl.in/">Hubl.in</a>
+    altOff:
+    - <a href="https://jitsi.org/">Jitsi</a>
+    - <a href="https://tox.chat/">Tox</a>
+    - <a href="https://ring.cx">Ring</a>
     pos: 506,560,40
     FDate: <a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie">2016</a>
     c1: social
@@ -618,10 +758,13 @@ services:
     i: comments-o
     S: <a href="http://www.mattermost.org/">Mattermost</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">team</b></a>
-    name: Slack
-    eq:
+    gafam:
+    - Slack
     altOn:
-    altOff: '@:S, <a href="https://matrix.org/">matrix</a>, <a href="https://rizzoma.com/">Rizzoma</a>, <a href="https://rocket.chat/">Rocket.chat</a>'
+    altOff:
+    - <a href="https://matrix.org/">matrix</a>
+    - <a href="https://rizzoma.com/">Rizzoma</a>
+    - <a href="https://rocket.chat/">Rocket.chat</a>
     pos: 288,456,40
     FDate: <a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">2016</a>
     c1: social
@@ -633,10 +776,11 @@ services:
     i: dashboard
     S: <a href="http://kanboard.net/">Kanboard</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">board</b></a>
-    name: '@:e.trello Trello'
-    eq:
+    gafam:
+    - Trello
     altOn:
-    altOff: '@:S, <a href="http://wekan.io/">Wekan</a>'
+    altOff:
+    - <a href="http://wekan.io/">Wekan</a>
     pos: 378,428,40
     FDate: <a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">2015</a>
     c1: office
@@ -648,10 +792,13 @@ services:
     i: send
     S: <a href="https://framagit.org/luc/lufi">Lufi</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">drop</b></a>
-    name: Wetransfer
-    eq: Dropsend
+    gafam:
+    - Wetransfer
+    - Dropsend
     altOn:
-    altOff: '@:S, <a href="https://coquelicot.potager.org/">Coquelicot</a>, <a href="https://gitlab.com/mojo42/Jirafeau">Jirafeau</a>'
+    altOff:
+    - <a href="https://coquelicot.potager.org/">Coquelicot</a>
+    - <a href="https://gitlab.com/mojo42/Jirafeau">Jirafeau</a>
     pos: 535,395,40
     FDate: <a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">2015</a>
     c1: files
@@ -663,10 +810,19 @@ services:
     i: peertube
     S: <a href="https://github.com/Chocobozzz/PeerTube">PeerTube</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="rouge">tube</b></a>
-    name: '@:e.google Youtube'
-    eq: Vimeo, Dailymotion, Netflix
+    gafam:
+    - '@:e.g Youtube'
+    - Vimeo
+    - Dailymotion
+    - Netflix
     altOn:
-    altOff: '@:S, <a href="http://butterproject.org/">Butter (PopcornTime)</a>, <a href="http://mediagoblin.org/">Mediagoblin</a>, <a href="http://cumulusclips.org/">CumulusClips</a>, <a href="http://www.kaltura.org/">Kaltura</a>, <a href="http://plumi.org/">Plumi</a>, <a href="http://mediadrop.net/">Mediadrop</a>'
+    altOff:
+    - <a href="http://butterproject.org/">Butter (PopcornTime)</a>
+    - <a href="http://mediagoblin.org/">Mediagoblin</a>
+    - <a href="http://cumulusclips.org/">CumulusClips</a>
+    - <a href="http://www.kaltura.org/">Kaltura</a>
+    - <a href="http://plumi.org/">Plumi</a>
+    - <a href="http://mediadrop.net/">Mediadrop</a>
     pos: 440,635,40
     FDate: 2018
     c1: media
@@ -678,10 +834,12 @@ services:
     i:
     S: <a href="http://jsbin.com/">JS Bin</a>
     F: <b class="violet">Frama</b><b class="vert">xxx</b>
-    name: jsFiddle
-    eq: Codepen
+    gafam:
+    - jsFiddle
+    - Codepen
     altOn:
-    altOff: '@:S, <a href="http://dabblet.com/">Dabblet</a>'
+    altOff:
+    - <a href="http://dabblet.com/">Dabblet</a>
     pos:
     FDate: 2018
     c1: dev
@@ -692,8 +850,10 @@ services:
     i: gamepad
     S: divers
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">games</b></a>
-    name: Kongregate
-    eq: Angry Bird, Candy Crush
+    gafam:
+    - Kongregate
+    - Angry Bird
+    - Candy Crush
     altOn:
     altOff:
     pos:
@@ -707,8 +867,8 @@ services:
     i: magic
     S: <a href="https://framagit.org/framasoft/framaestro">Framaestro</a>
     F: <a href="@:FL"><b class="violet">Fra</b><b class="vert">maestro</b></a>
-    name: —
-    eq:
+    gafam:
+    - —
     altOn:
     altOff:
     pos:
@@ -722,8 +882,10 @@ services:
     i: paint-brush
     S: <a href="https://code.google.com/p/svg-edit/">SVG-Edit</a>
     F: <a href="@:FL"><b class="violet">Frama</b><b class="vert">vectoriel</b></a>
-    name: Pixlr
-    eq: Picozu, @:e.google Google Drawing
+    gafam:
+    - Pixlr
+    - Picozu
+    - '@:e.g Google Drawing'
     pos:
     FDate: <a href="https://framablog.org/2012/10/23/framavectoriel">2012</a>
     c1: office
@@ -735,10 +897,15 @@ services:
     i: mastodon
     S: <a href="https://github.com/tootsuite/mastodon">Mastodon</a>
     F: <b class="violet">Frama</b><b class="vert">piaf</b>
-    name: '@:e.twitter Twitter'
-    eq:
-    altOn: <a href="https://instances.mastodon.xyz">Instances Mastodon</a>, <a href="https://babytwit.fr/">Babytwit</a>, <a href="https://quitter.se/">Quitter</a>
-    altOff: '@:S, <a href="https://gnu.io/social/">GNUSocial</a>, <a href="http://twister.net.co/">Twister</a>'
+    gafam:
+    - Twitter
+    altOn:
+    - <a href="https://instances.mastodon.xyz">Instances Mastodon</a>
+    - <a href="https://babytwit.fr/">Babytwit</a>
+    - <a href="https://quitter.se/">Quitter</a>
+    altOff:
+    - <a href="https://gnu.io/social/">GNUSocial</a>
+    - <a href="http://twister.net.co/">Twister</a>
     FDate: <a href="https://framablog.org/2017/04/12/plus-de-chatons-plus-de-confiance-en-mastodon">2017</a>
     c1: social
     c2: com
@@ -749,10 +916,11 @@ services:
     i: language
     S: <a href="http://pootle.translatehouse.org/">Pootle</a>
     F: <b class="violet">Frama</b><b class="vert">poulpe</b>
-    name: Transifex
-    eq:
-    altOn: <a href="https://launchpad.net/launchpad">Rosetta (Launchpad)</a>
-    altOff: '@:S'
+    gafam:
+    - Transifex
+    altOn:
+    - <a href="https://launchpad.net/launchpad">Rosetta (Launchpad)</a>
+    altOff:
     pos:
     FDate: 2018
     c1: dev
@@ -761,26 +929,30 @@ services:
   airbnb:
     S:
     F: <a href="http://www.bewelcome.org/">BeWelcome</a>
-    name: AirBnB
-    eq:
-    altOn: <a href="https://www.trustroots.org/">Trustroots</a>
-    altOff: <a href="http://trac.bewelcome.org/">BW Rox</a>
+    gafam:
+    - AirBnB
+    altOn:
+    - <a href="https://www.trustroots.org/">Trustroots</a>
+    altOff:
+    - <a href="http://trac.bewelcome.org/">BW Rox</a>
     c1: hobbies
 
   aweber:
     S:
     F: <a href="https://www.phplist.com/">PHP List</a>
-    name: AWeber
-    eq: Mailchimp
+    gafam:
+    - AWeber
+    - Mailchimp
     altOn:
-    altOff: <a href="https://www.phplist.com/">PHP List</a>
+    altOff:
+    - <a href="https://www.phplist.com/">PHP List</a>
     c1: social
 
   blablacar:
     S:
     F: <a href="http://www.covoiturage-libre.fr/">Covoiturage Libre</a>
-    name: Blablacar
-    eq:
+    gafam:
+    - Blablacar
     altOn:
     altOff:
     c1: hobbies
@@ -788,80 +960,129 @@ services:
   routard:
     S:
     F: <a href="https://fr.wikivoyage.org">Wikivoyage</a>
-    name: Guide du Routard
-    eq: Petit Futé, Voyage Michelin
-    altOn: <a href="http://camptocamp.org">CampToCamp</a>
-    altOff: <a href="https://github.com/c2corg/camptocamp.org">CampToCamp</a>
+    gafam:
+    - Guide du Routard
+    - Petit Futé
+    - Voyage Michelin
+    altOn:
+    - <a href="http://camptocamp.org">CampToCamp</a>
+    altOff:
+    - <a href="https://github.com/c2corg/camptocamp.org">CampToCamp</a>
     c1: hobbies
 
   gchrome:
     S:
     F: <a href="https://www.mozilla.org/fr/firefox/products/">Firefox</a>
-    name: Google Chrome
-    eq: Edge (Internet Explorer), Safari, Opera
+    gafam:
+    - '@:e.g Google Chrome'
+    - '@:e.m Edge (Internet Explorer)'
+    - '@:e.ap Safari'
+    - Opera
     altOn:
-    altOff: <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a>, <a href="http://www.qupzilla.com/">Qupzilla</a>, <a href="http://www.midori-browser.org/">Midori</a>
+    altOff:
+    - <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a>
+    - <a href="http://www.qupzilla.com/">Qupzilla</a>
+    - <a href="http://www.midori-browser.org/">Midori</a>
     c1: home
 
   deezer:
     S:
     F: <a href="http://dogmazic.net">Dogmazic</a>
-    name: Deezer
-    eq: Spotify, Soundcloud
-    altOn: <a href="http://jamendo.com">Jamendo</a>
+    gafam:
+    - Deezer
+    - Spotify
+    - Soundcloud
+    altOn:
+    - <a href="http://jamendo.com">Jamendo</a>
     altOff:
     c1: media
 
   flickr:
     S:
     F: <a href="http://piwigo.com/">Piwigo</a>
-    name: Flickr
-    eq: Instagram, Picasa, Tumblr, Pinterest
-    altOn: <a href="https://commons.wikimedia.org">Wikimedia Commons</a>, <a href="http://data.abuledu.org/wp/">Data Abulédu</a>, <a href="http://openclipart.org/">Openclipart</a>
-    altOff: <a href="http://piwigo.org/">Piwigo</a>, <a href="https://lychee.electerious.com/">Lychee</a>, <a href="http://www.zenphoto.org/">Zenphoto</a>, <a href="http://www.mad5.de/ownstagram/">ownStagram</a>
+    gafam:
+    - Flickr
+    - '@:e.f Instagram'
+    - '@:e.g Picasa'
+    - Tumblr
+    - Pinterest
+    altOn:
+    - <a href="https://commons.wikimedia.org">Wikimedia Commons</a>
+    - <a href="http://data.abuledu.org/wp/">Data Abulédu</a>
+    - <a href="http://openclipart.org/">Openclipart</a>
+    altOff:
+    - <a href="http://piwigo.org/">Piwigo</a>
+    - <a href="https://lychee.electerious.com/">Lychee</a>
+    - <a href="http://www.zenphoto.org/">Zenphoto</a>
+    - <a href="http://www.mad5.de/ownstagram/">ownStagram</a>
     c1: media
 
   ganalytics:
     S: <a href="https://matomo.org/">Matomo (Piwik)</a>
     F:
-    name: Google Analytics
-    eq: Xiti
+    gafam:
+    - '@:e.g Google Analytics'
+    - Xiti
     altOn:
-    altOff: <a href="http://www.openwebanalytics.com/">Open Web Analytics</a>
+    altOff:
+    - <a href="http://www.openwebanalytics.com/">Open Web Analytics</a>
     c1: site
 
   orange:
     S:
     F: <a href="https://www.ffdn.org/fr/membres">FFDN</a>
-    name: Orange
-    eq: SFR, Free, OVH
+    gafam:
+    - Orange
+    - SFR
+    - Free
+    - OVH
     altOn:
-    altOff: <a href="https://www.fdn.fr/">FDN</a>, <a href="http://tetaneutral.net/">Tetaneutral</a>, <a href="http://neutrinet.be/">Neutrinet</a>, <a href="http://www.illyse.net/">Illyse</a>, <a href="http://www.franciliens.net/">Franciliens.net</a>
+    altOff:
+    - <a href="https://www.fdn.fr/">FDN</a>
+    - <a href="http://tetaneutral.net/">Tetaneutral</a>
+    - <a href="http://neutrinet.be/">Neutrinet</a>
+    - <a href="http://www.illyse.net/">Illyse</a>
+    - <a href="http://www.franciliens.net/">Franciliens.net</a>
     c1: home
 
   outlook:
     S:
     F: <a href="https://www.mozilla.org/thunderbird">Thunderbird</a> + <a href="https://enigmail.net/">Enigmail</a>
-    name: Outlook
-    eq: Apple Mail
+    gafam:
+    - '@:e.m Outlook'
+    - '@:e.ap Apple Mail'
     altOn:
-    altOff: <a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>, <a href="http://userbase.kde.org/KMail/fr">KMail</a>, <a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a>
+    altOff:
+    - <a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>
+    - <a href="http://userbase.kde.org/KMail/fr">KMail</a>
+    - <a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a>
     c1: home
 
   ovh:
     S:
     F: <a href="http://chatons.org"><abbr title="Collectif des Hébergeurs Alternatifs Transparents Ouverts Neutres et Solidaires">CHATONS</abbr></a>
-    name: OVH
-    eq: Online
-    altOn: <a href="http://www.rhien.org/Hebergeurs,59.html">RHIEN</a>, <a href="https://indiehosters.net/">IndieHosters</a>, <a href="https://www.zaclys.com/">La mère Zaclys</a>, <a href="http://www.infini.fr/">Infini</a>
-    altOff: <a href="https://cozy.io/fr/">Cozy</a>, <a href="http://yunohost.org">Yunohost</a>, <a href="https://sandstorm.io/">Sandstorm</a>, <a href="https://cloudron.io/">Cloudron</a>
+    gafam:
+    - OVH
+    - Online
+    altOn:
+    - <a href="http://www.rhien.org/Hebergeurs,59.html">RHIEN</a>
+    - <a href="https://indiehosters.net/">IndieHosters</a>
+    - <a href="https://www.zaclys.com/">La mère Zaclys</a>
+    - <a href="http://www.infini.fr/">Infini</a>
+    altOff:
+    - <a href="https://cozy.io/fr/">Cozy</a>
+    - <a href="http://yunohost.org">Yunohost</a>
+    - <a href="https://sandstorm.io/">Sandstorm</a>
+    - <a href="https://cloudron.io/">Cloudron</a>
     c1: site
 
   patreon:
     S:
     F: <a href="https://liberapay.com/">Liberapay</a>
-    name: Patreon
-    eq: Flattr, Tipeee
+    gafam:
+    - Patreon
+    - Flattr
+    - Tipeee
     altOn:
     altOff:
     c1: home
@@ -869,17 +1090,26 @@ services:
   paypal:
     S:
     F: <a href="https://duniter.org/">Duniter</a>
-    name: Paypal
-    eq: Google Wallet, Apple Pay, Orange Cash
-    altOn: <a href="http://bitcoin.org/">Bitcoin</a>
+    gafam:
+    - Paypal
+    - '@:e.g Google Wallet'
+    - '@:e.ap Apple Pay'
+    - Orange Cash
+    altOn:
+    - <a href="http://bitcoin.org/">Bitcoin</a>
     altOff:
     c1: home
 
   universalis:
     S:
     F: <a href="http://wikipedia.org">Wikipedia</a>
-    name: Universalis
-    eq:
-    altOn: <a href="http://fr.vikidia.org/">Vikidia</a>, <a href="http://www.appropedia.org">Appropedia</a>
-    altOff: <a href="http://www.okawix.com/">Okawix</a>, <a href="https://www.dokuwiki.org/">Dokuwiki</a>, <a href="https://www.mediawiki.org/">Mediawiki</a>
+    gafam:
+    - Universalis
+    altOn:
+    - <a href="http://fr.vikidia.org/">Vikidia</a>
+    - <a href="http://www.appropedia.org">Appropedia</a>
+    altOff:
+    - <a href="http://www.okawix.com/">Okawix</a>
+    - <a href="https://www.dokuwiki.org/">Dokuwiki</a>
+    - <a href="https://www.mediawiki.org/">Mediawiki</a>
     c1: media

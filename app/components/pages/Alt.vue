@@ -7,57 +7,29 @@
           <h2 class="h3">{{ $t('msg.map.title') }}</h2>
           <div id="map-container">
               <img :src="$t('/img/') + 'ghost.png'" :alt="$t('msg.map.alt')" id="carte" usemap="#cartemap" />
-              <map id="cartemap" name="cartemap" style="position:absolute; top:0; width:100%; z-index:15">
-                <!-- Village -->
-                <area id="a-village" coords="175,125,70" class="village"
-                  :alt="$t('msg.camps.village')" :title="$t('msg.camps.village')"
-                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight.village)"
-                  href="#village" tabindex="-1"
-                  @click="modal.open = true; modal.key = 'village';"
-                >
-                <!-- Big camps -->
-                <area id="a-fermetum" coords="100,225,55"
-                  :alt="stripTags($t('msg.camps.fermetum'))" :title="stripTags($t('msg.camps.fermetum'))"
-                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight.camps)"
-                  href="#fermetum" tabindex="-1"
-                  @click="modal.open = true; modal.key = 'fermetum';"
-                >
-                <area id="a-centralisum" coords="175,270,55"
-                  :alt="stripTags($t('msg.camps.centralisum'))" :title="stripTags($t('msg.camps.centralisum'))"
-                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight.camps)"
-                  href="#centralisum" tabindex="-1"
-                  @click="modal.open = true; modal.key = 'centralisum';"
-                >
-                <area id="a-espionnum" coords="250,245,55"
-                  :alt="stripTags($t('msg.camps.espionnum'))" :title="stripTags($t('msg.camps.espionnum'))"
-                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight.camps)"
-                  href="#espionnum" tabindex="-1"
-                  @click="modal.open = true; modal.key = 'espionnum';"
-                >
-                <area id="a-privatum" coords="275,155,55"
-                  :alt="stripTags($t('msg.camps.privatum'))" :title="stripTags($t('msg.camps.privatum'))"
-                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight.camps)"
-                  href="#privatum" tabindex="-1"
-                  @click="modal.open = true; modal.key = 'privatum';"
-                >
-                <!-- NSA -->
-                <area id="a-nsa" coords="485,315,50" alt="NSA" title="NSA"
-                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight.camps)"
-                  href="#nsa" tabindex="-1"
-                  @click="modal.open = true; modal.key = 'nsa';"
+              <map id="cartemap" name="cartemap">
+                <!-- Village, Big camps, NSA-->
+                <area
+                  v-for="(camp, key)  in data.camps"
+                  :id="'a-' + key" :coords="camp.pos" :class="key"
+                  :alt="text($t('msg.camps.' + key + '.title'))"
+                  :title="text($t('msg.camps.' + key + '.title'))"
+                  shape="circle" :data-maphilight="JSON.stringify(mapHighlight[camp.highlight])"
+                  href="javascript:void(0);" tabindex="-1"
+                  @click="modal2.open = true; modal2.key = key;"
                 >
                 <!-- Little camps -->
                 <area
                   v-for="(service, key) in data.services"
                   v-if="(service.pos)"
-                  :id="'a-' + key"  :alt="stripTags(service.name)"
+                  :id="'a-' + key"  :alt="text(service.name)"
                   :coords="service.pos" shape="circle"
                   :data-maphilight="JSON.stringify(mapHighlight.services)"
-                  :href="'#' + key"
+                  href="javascript:void(0);"
                   @click="modal.open = true; modal.key = key;"
                   tabindex="-1" >
               </map>
-              <video :poster="$t('/img/') + $t('msg.img.map')" autoplay muted ref="mapVideo" id="mapVideo">
+              <video :poster="$t('/img/') + $t('msg.img.map')" autoplay muted loop ref="mapVideo" id="mapVideo">
                 <source :src="$t('/img/') + $t('msg.img.map').replace('romains', 'animation').replace('.png','.webm')" type="video/webm" />
                 <source :src="$t('/img/') + $t('msg.img.map').replace('romains', 'animation').replace('.png','.mp4')" type="video/mp4">
                 <img :src="$t('/img/') + $t('msg.img.map')" alt="" style="width:100%;" />
@@ -82,15 +54,17 @@
         <div class="col-lg-4">
           <!-- Recherche -->
           <div class="well clearfix" style="margin:60px auto">
-            <label class="col-xs-1 text-right" for="c-select">
+            <label class="col-xs-1 text-right" for="tags-select">
               <i class="fa fa-2x fa-search"></i>
               <span class="sr-only">{{ $t('msg.txt.searchByAlt') }}</span>
             </label>
             <div class="col-xs-11">
               <v-select id="tags-select"
-                :options="tags(data.services, 'gafam')"
+                label="gafam"
+                :options="tags(data.services)"
                 :placeholder="$t('msg.txt.searchByAlt')"
                 v-model="results"
+                @input="modal.key = results.key ; modal.open = (results.key !== undefined && results.key !== ''); "
               ></v-select>
             </div>
           </div>
@@ -119,6 +93,7 @@
       aria-labelledby="FramaLabel"
       aria-hidden="true"
       size="lg"
+      v-if="modal.key"
     >
       <div slot="title">
         <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
@@ -143,21 +118,53 @@
             v-for="(tag) in $t('msg.services.' + modal.key +'.tags').split(', ')"
             v-if="tag !== '' && tag !== ' '">
             <a
-              :href="$t('/') + $t('lang') + '/list#tag-' + tag.replace(' ', '-').toLowerCase()"
-              class="btn btn-xs btn-default"
-              @click="modal.open = false; (results.indexOf(tag) === -1) ? results.push(tag) : results.pop(tag) ;"
-              v-scroll-to="'#results_wrapper'">
-              {{ tag.replace(/ /, '').toLowerCase() }}
+              :href="$t('/') + $t('lang') + '/list#tag-' + sanitize(tag)"
+              class="btn btn-xs btn-default">
+              {{ sanitize(tag) }}
             </a></li>
         </ul>
         <div class="col-md-6 text-right">
-          <a :href="$t('msg.link.docs') + stripTags(data.services[modal.key].S.toLowerCase())"
+          <a :href="$t('msg.link.docs') + sanitize(data.services[modal.key].S)"
             class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.docs') }}</a>
           <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.use') }}</a>
         </div>
       </div>
     </modal>
     <!-- </modal> -------------------------------------------- -->
+
+    <!-- <modal2> --------------------------------------------- -->
+    <modal
+      id="CampsModal"
+      v-model="modal2.open"
+      :ok-text="$t('msg.txt.close')"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="CampsLabel"
+      aria-hidden="true"
+    >
+      <div slot="title">
+        <h1 id="CampsLabel" class="text-center" v-html="$t('msg.camps.' + modal2.key + '.title')"></h1>
+      </div>
+      <p v-html="$t('msg.camps.' + modal2.key + '.text1')"></p>
+      <p v-html="$t('msg.camps.' + modal2.key + '.text2')"></p>
+      <p class="text-center">
+        <img :src="$t('/img/') + $t(data.camps[modal2.key].img) + '.png'" alt="" />
+      </p>
+      <div slot="footer">
+        <div class="text-right">
+          <a v-if="data.camps[modal2.key].more" :href="$t('/') + $t('lang') + '/#enjeux'"
+            class="btn btn-lg btn-link text-uppercase">
+            {{ $t('msg.txt.more') }}
+          </a>
+          <a href="javascript:void(0);"
+            @click="modal2.open = false;"
+            class="btn btn-lg btn-link text-uppercase">
+            {{ $t('msg.txt.close') }}
+          </a>
+        </div>
+      </div>
+    </modal>
+    <!-- </modal2> -------------------------------------------- -->
 
     <!-- Listes des alternatives -->
     <div id="tips" class="row">
@@ -219,12 +226,12 @@
                       </h3>
                       <ul class="list-group">
                         <li class="list-group-item"
-                          v-for="gafam in gafam(data.services[key])"
+                          v-for="gafam in data.services[key].gafam"
                           >
                           <img
-                            v-if="data.png.gafam.indexOf(gafam.replace(' ', '-').toLowerCase()) > -1"
-                            :src="$t('/img/') + 'gafam/' + gafam.replace(' ', '-').toLowerCase() + '.png'" alt="" />
-                          {{ gafam }}
+                            v-if="data.png.gafam.indexOf(sanitize(gafam)) > -1"
+                            :src="$t('/img/') + 'gafam/' + sanitize(gafam) + '.png'" alt="" />
+                          {{ gafam.replace(/@:[.a-z]+ /g, '') }}
                         </li>
                       </ul>
                     </td>
@@ -234,8 +241,8 @@
                           v-if="service.F"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(stripTags($t('data.services.' + key + '.F')).toLowerCase()) > -1"
-                            :src="$t('/img/') + 'leds/' + stripTags($t('data.services.' + key + '.F')).toLowerCase() + '.png'" alt="" />
+                            v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.F'))) > -1"
+                            :src="$t('/img/') + 'leds/' + sanitize($t('data.services.' + key + '.F')) + '.png'" alt="" />
                           <span v-html="$t('data.services.' + key + '.F')"></span>
                           <i class="fa fa-cloud fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -245,8 +252,8 @@
                           v-if="service.S"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(stripTags($t('data.services.' + key + '.S')).toLowerCase()) > -1"
-                            :src="$t('/img/') + 'leds/' + stripTags($t('data.services.' + key + '.S')).toLowerCase() + '.png'" alt="" />
+                            v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.S'))) > -1"
+                            :src="$t('/img/') + 'leds/' + sanitize($t('data.services.' + key + '.S')) + '.png'" alt="" />
                           <span v-html="$t('data.services.' + key + '.S')"></span>
                           <i class="fa fa-server fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -255,24 +262,24 @@
                       </ul>
                       <ul class="list-group">
                         <li class="list-group-item"
-                          v-for="alt in leds(service.altOn)"
+                          v-for="alt in service.altOn"
                           v-if="alt !== ''"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(stripTags(alt).toLowerCase()) > -1"
-                            :src="$t('/img/') + 'leds/' + stripTags(alt).toLowerCase() + '.png'" alt="" />
+                            v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
+                            :src="$t('/img/') + 'leds/' + sanitize(alt) + '.png'" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-cloud fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOnline')"></i>
                         </li>
                         <li class="list-group-item"
-                          v-for="alt in leds(service.altOff)"
+                          v-for="alt in service.altOff"
                           v-if="alt !== ''"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(stripTags(alt).toLowerCase()) > -1"
-                            :src="$t('/img/') + 'leds/' + stripTags(alt).toLowerCase() + '.png'" alt="" />
+                            v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
+                            :src="$t('/img/') + 'leds/' + sanitize(alt) + '.png'" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-server fc_g5 pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -296,6 +303,7 @@ import { Modal, Dropdown, Btn } from 'uiv';
 import HeaderComponent from '../partials/Header.vue';
 import Signature from '../partials/Signature.vue';
 import BackTop from '../partials/BackTop.vue';
+import { rmDiacritics, text, sanitize, noFrama } from '../../tools';
 
 export default {
   name: 'Alt',
@@ -310,6 +318,10 @@ export default {
       modal: {
         open: false,
         key: 'bitly',
+      },
+      modal2: {
+        open: false,
+        key: 'village',
       },
       play: true,
       results: '',
@@ -375,52 +387,40 @@ export default {
     });
   },
   methods: {
-    stripTags(html) {
-      const tmp = document.createElement('div');
-      tmp.innerHTML = html;
-      let text = tmp.textContent || tmp.innerText || '';
-      return text || '';
+    text(html) {
+      return text(html)
+    },
+    sanitize(html) {
+      return sanitize(rmDiacritics(text(html)))
     },
     noFrama(html) {
-      let text = this.stripTags(html);
-      text = text.toLowerCase()
-        .replace('framand', 'and')
-        .replace('framage', 'age')
-        .replace('framae', 'mae')
-        .replace('framin', 'min')
-        .replace('frame', 'me')
-        .replace('frama', '')
-        .replace('.', '')
-        .replace(/[èé]/g, 'e')
-        .replace('my', 'myframa');
-      return text;
+      return noFrama(this.sanitize(html))
     },
-    tags(services, type) {
-      let tags = '';
-      if (type === 'gafam') {
-        Object.keys(services).forEach((k) => {
-          if (typeof services[k].eq === 'string') {
-            tags += `, ${services[k].name}, ${services[k].eq}`;
-          }
-        });
-      } else {
-        Object.keys(services).forEach((k) => {
-          if (typeof services[k].tags === 'string') {
-            tags += `, ${services[k].tags}`;
-          }
-        });
-      }
-      return tags
-        .replace(/\@:e\.[a-z]+ /g, '')
-        .replace(/^, /, '')
-        .split(', ')
-        .sort() // alphabetic order
-        .filter((v, i, a) => a.indexOf(v) === i); // remove duplicate
+    tags(services) {
+      let tags = [];
+      Object.keys(services).forEach((k) => {
+        if (Array.isArray(services[k].gafam) && services[k].pos) {
+          const main = services[k].gafam[0].replace(/\@:e\.[a-z]+ /g, '');
+          const others = services[k].gafam
+            .join(', ')
+            .replace(/\@:e\.[a-z]+ /g, '')
+            .replace(`${main}`, '')
+            .replace(/^, ?/, '')
+            .replace(/^/, '(')
+            .replace(/$/, ')')
+            .replace('()', '');
+          tags.push({
+            key: k,
+            gafam: `${main} ${others}`
+          });
+        }
+      });
+      return tags;
     },
     tagsClass(key) {
       let tags = '';
       if (typeof this.data.services[key].eq === 'string') {
-        tags += `, ${this.data.services[key].name}, ${this.data.services[key].eq}`;
+        tags += `, ${this.data.services[key].gafam.join(', ')}`;
       }
       if (typeof this.$t('msg.services.' + key + '.tags') === 'string') {
         tags += `, ${this.$t('msg.services.' + key + '.tags')}`;
@@ -434,31 +434,6 @@ export default {
         .join(' tag-')
         .replace(/^/, 'tag-')
         .toLowerCase();
-    },
-    isInResults(tags, results) {
-      let seen = false;
-      results.forEach((val) => {
-        if (tags.indexOf(val) > -1) {
-          seen = true;
-        }
-      });
-      return seen;
-    },
-    gafam(service) {
-      const gafam = (typeof service.eq === 'string' && service.eq !== '')
-        ? this.stripTags(service.eq).split(', ')
-        : [];
-      gafam.unshift(this.stripTags(service.name));
-      for (let i = 0; i < gafam.length; i += 1) {
-        gafam[i] = gafam[i].replace(/@:[^ ]+ /, '');
-      }
-      return gafam;
-    },
-    leds(alt) {
-      const leds = (typeof alt === 'string' && alt !== '')
-        ? alt.replace(/@:S(, )?/, '').split(', ')
-        : [];
-      return leds;
     },
     scrollMenuRefresh() {
       this.scrollMenu.listWidth = document.querySelector('.nav-cats .nav-tabs').offsetWidth;

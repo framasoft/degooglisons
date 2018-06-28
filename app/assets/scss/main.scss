@@ -902,9 +902,9 @@ fieldset[disabled] .btn-link:focus {
 
 .play-pause {
   position: absolute;
-  top:10px;
-  left:10px;
-  text-align:center;
+  top: 10px;
+  left: 10px;
+  text-align: center;
 
   button {
     cursor: pointer;
@@ -1017,10 +1017,6 @@ a.bg-primary:focus {
 
 cite {
   font-style:italic;
-}
-
-.modal-open .modal-backdrop {
-  z-index: 9 !important;
 }
 
 @import "core";

@@ -379,10 +379,14 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 #bloc-carte {
   margin-bottom: 30px;
 }
+
 #bloc-carte h2 {
   margin-top: 0;
 }
 
+#tags-select .clear {
+  display: none;
+}
 
 .btn-warning.center-block {
   font-size: 24px;
@@ -434,6 +438,13 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 
 .btn-alt {
   margin-top: 5px;
+}
+
+#cartemap {
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index: 15;
 }
 
 /* Panels Alt */
