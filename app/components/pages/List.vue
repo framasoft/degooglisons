@@ -173,7 +173,7 @@
                 class="img-responsive" alt=""
               />
             </div>
-            <div v-html="$t('msg.services.' + modal.key + '.mBody')"></div>
+            <div v-html="$t('msg.services.' + modal.key + '.mBody').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></div>
             <div slot="footer">
               <ul class="list-inline col-md-6 text-left">
                 <li

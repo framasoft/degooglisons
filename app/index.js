@@ -78,6 +78,10 @@ for (let i = 0; i < locales.length; i += 1) {
     messages[locales[i]].data = require('./data.yml');
     messages[locales[i]].data.png.gafam = gafam;
     messages[locales[i]].data.png.leds = leds;
+    Object.keys(messages[locales[i]].data.services).forEach((k) => {
+      messages[locales[i]].data.services[k].F =
+        `<a href="${messages[locales[i]].data.services[k].FL}">${messages[locales[i]].data.services[k].F}</a>`;
+    });
   }).catch((err) => {
     console.error(err);
   });

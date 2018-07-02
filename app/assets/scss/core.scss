@@ -131,13 +131,13 @@ iframe {
 
 /* Modal List/Alt */
 #list .modal-header h1,
-.alt .modal-header h1 {
+#alt .modal-header h1 {
   font-size: 32px;
   margin: 0 20px !important;
 }
 
 #list .modal-header img,
-.alt .modal-header img {
+#alt .modal-header img {
   margin-right: 30px;
   width: 96px;
 }
@@ -146,24 +146,24 @@ iframe {
   background: #EDE6F5;
   border: none;
 }
-.alt .modal-header {
+#alt .modal-header {
   background: #FAEBE8;
   border: none;
 }
 
 #list .modal-header span,
-.alt .modal-header span {
+#alt .modal-header span {
   line-height: 42px;
 }
 
 #list .modal-header .desc,
-.alt .modal-header .desc {
+#alt .modal-header .desc {
   font-size: 24px;
   font-weight: 300;
 }
 
 #list .modal-footer,
-.alt .modal-footer {
+#alt .modal-footer {
   border: none;
   padding-top: 0;
 }
@@ -191,9 +191,10 @@ iframe {
 }
 
 .precisions {
-  font-size: small !important;
+  font-size: small;
   color: #767676;
-  line-height: 20px !important;
+  line-height: 20px;
+  margin-left: 15px;
 }
 
 a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
@@ -214,7 +215,6 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
   color: #949494;
   border: none;
 }
-
 
 /* Barre de navigation List/Alt */
 #sticky {
@@ -355,23 +355,23 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
   padding: 4px 2px 2px;
 }
 
-#modal-t-change .web-browser,
-#modal-t-scribd .web-browser,
-#modal-t-youtube .web-browser,
-#modal-t-meetup .web-browser,
-#modal-t-blogger .web-browser,
-#modal-t-change h1 img,
-#modal-t-scribd h1 img,
-#modal-t-meetup h1 img,
-#modal-t-blogger h1 img,
-#modal-t-change .modal-footer .btn-default:nth-child(2),
-#modal-t-change .modal-footer .btn-link,
-#modal-t-scribd .modal-footer .btn-default:nth-child(2),
-#modal-t-scribd .modal-footer .btn-link,
-#modal-t-youtube .modal-footer .btn-default:nth-child(2),
-#modal-t-youtube .modal-footer .btn-link,
-#modal-t-meetup .modal-footer .btn-default:nth-child(2),
-#modal-t-meetup .modal-footer .btn-link {
+.m-change .web-browser,
+.m-scribd .web-browser,
+.m-youtube .web-browser,
+.m-meetup .web-browser,
+.m-blogger .web-browser,
+.m-change h1 img,
+.m-scribd h1 img,
+.m-meetup h1 img,
+.m-blogger h1 img,
+.m-change .modal-footer .btn-default:nth-child(2),
+.m-change .modal-footer .btn-link,
+.m-scribd .modal-footer .btn-default:nth-child(2),
+.m-scribd .modal-footer .btn-link,
+.m-youtube .modal-footer .btn-default:nth-child(2),
+.m-youtube .modal-footer .btn-link,
+.m-meetup .modal-footer .btn-default:nth-child(2),
+.m-meetup .modal-footer .btn-link {
   display: none;
 }
 /* ~~~~ Liste des alternatives ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

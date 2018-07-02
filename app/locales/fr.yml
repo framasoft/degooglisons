@@ -718,10 +718,11 @@ txt:
   framacloud: Framacloud
   chatons: Chatons
   install: Installer
+  installOnServer: Installer sur un serveur
   updated: Projet mis à jour
   loading: Projet en cours
   running: Projet actif
-  basedon :  est une instance basée sur le logiciel libre
+  basedOn :  est une instance basée sur le logiciel libre
   readMore: En savoir plus
   examples: Des exemples ?
   backToTop: Retour en haut
@@ -732,7 +733,7 @@ txt:
   framaservice: 'Service Framasoft :'
   wePropNow: Nous proposons le service
   weWillProp: Nous proposerons
-  releasedOn : sortie prévue en
+  releaseOn : sortie prévue en
   otherAlt: Autres alternatives libres
   since: depuis
   GAFAM: GAFAM
@@ -747,6 +748,7 @@ txt:
   backToMap: Retour à la carte
   asAltTo : Comme alternative aux services des
   like: ', tels :'
+  howTo: Découvrir comment l’
 
 # Categories -----------------------------------------------------------
 cat1:
@@ -794,7 +796,7 @@ services:
     mTitle: Finies les adresses trop longues
     mBody: |
       <p>
-        Avec @:framaservice ou <a href="https://huit.re">Huit.re</a>,
+        Avec @:data.services.bitly.F ou <a href="https://huit.re">Huit.re</a>,
         il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
         Sur les réseaux sociaux et le microblogging, disposer d’une adresse
         raccourcie permet d’économiser de l’espace et gagner en clarté.
@@ -815,7 +817,7 @@ services:
     mTitle: Votre site web en quelques clics
     mBody: |
       <p>
-        @:framaservice vous permet de créer un site web facilement, avec
+        @:data.services.blogger.F vous permet de créer un site web facilement, avec
         des outils libres et de l’héberger sur nos serveurs.
         Aucune publicité ni traquage ne portera atteinte aux données
         de vos visiteurs et visiteuses.
@@ -840,7 +842,7 @@ services:
     mTitle: Pourquoi créer une carte mentale ?
     mBody: |
       <p>
-        @:framaservice vous permet d’organiser un brainstorming,
+        @:data.services.bubblus.F vous permet d’organiser un brainstorming,
         ordonner vos idées à plusieurs, apprendre et faire apprendre une
         leçon, réaliser des classifications, identifier les éléments importants.
       </p>
@@ -866,7 +868,7 @@ services:
     mTitle: Libérez vos pétitions
     mBody: |
       <p>
-        @:framaservice vous permet de lancer des pétitions sur les sujets
+        @:data.services.change.F vous permet de lancer des pétitions sur les sujets
         qui vous tiennent à cœur. En quelques clics, votre pétition est
         publiée et les adresses de vos soutiens ne seront pas exploités
         par des régies publicitaires.
@@ -894,7 +896,7 @@ services:
     mTitle: Triez tout le web si vous voulez (mais c´est long)
     mBody: |
       <p>
-        @:framaservice est un petit fourre-tout numérique,
+        @:data.services.delicious.F est un petit fourre-tout numérique,
         qui vous permet de conserver et retrouver les
         liens que vous aimez à la manière de del.ico.us !
         Avec un système d´étiquettes et de tri automatique,
@@ -930,7 +932,7 @@ services:
     mTitle: Organiser des rendez-vous simplement et librement
     mBody: |
       <p>
-        Avec @:framaservice vous serez en mesure de
+        Avec @:data.services.doodle.F vous serez en mesure de
         planifier un rendez-vous à plusieurs ou créer
         un sondage en ligne. Framadate ne stocke
         pas vos données !
@@ -957,7 +959,7 @@ services:
     mTitle: Héberger ses documents en ligne
     mBody: |
       <p>
-        @:framaservice vous permet de stocker en ligne
+        @framaservice vous permet de stocker en ligne
         vos documents, de les synchroniser sur vos
         ordinateurs, tablettes, téléphones, etc et de
         les partager avec qui vous voulez…
@@ -989,7 +991,7 @@ services:
     mTitle: Vos notes ne regardent que vous.
     mBody: |
       <p>
-        Avec @:framaservice vous pouvez prendre et conserver des notes,
+        Avec @framaservice vous pouvez prendre et conserver des notes,
         images, liens… et même des fichiers&nbsp;; et les synchroniser
         avec tous vos appareils (voire les partager avec des ami-e-s).
       </p>
@@ -1016,7 +1018,7 @@ services:
     mTitle: Rejoignez vos amis en zone libre
     mBody: |
       <p>
-        Sur @:framaservice, vous pouvez retrouver un réseau social qui
+        Sur @framaservice, vous pouvez retrouver un réseau social qui
         respecte vos données. Framasphère est un nœud (appelé <i>pod</i>)
         du réseau social libre Diaspora*.
       </p>
@@ -1041,7 +1043,7 @@ services:
     mTitle: Hébergement de code libre
     mBody: |
       <p>
-        @:framaservice est un outil qui s’adresse avant tout aux développeurs.
+        @framaservice est un outil qui s’adresse avant tout aux développeurs.
         Il permet la création de 42 dépôts maximum par compte (si vous avez
         besoin de plus, songez sérieusement à vous auto-héberger).
         Et, petit plus par rapport à GitHub, vous pouvez créer des dépôts privés.</p>
@@ -1081,7 +1083,7 @@ services:
     mTitle: Vos rendez-vous vous appartiennent
     mBody: |
       <p>
-        Avec @:framaservice vous pouvez créer des agendas personnels,
+        Avec @framaservice vous pouvez créer des agendas personnels,
         professionnels, le planning d´une salle ou des activités de votre
         organisation, et les partager librement.
         Vous restez maîtres de vos données, et vous choisissez auprès de
@@ -1113,7 +1115,7 @@ services:
     mTitle: Catalogue d’ouvrages accessibles pour tous
     mBody: |
       <p>
-        @:framaservice est le catalogue <abbr>OPDS</abbr> de Framasoft.
+        @framaservice est le catalogue <abbr>OPDS</abbr> de Framasoft.
         « Euh… Oui, mais encore ? », nous direz-vous. Un catalogue
         <abbr>OPDS</abbr> est un site auquel vous pouvez vous abonner
         avec un logiciel supportant cette fonctionnalité (certaines
@@ -1139,7 +1141,7 @@ services:
     mTitle: Outil de rédaction collaborative
     mBody: |
       <p>
-        @:framaservice est un service de rédaction collaborative en ligne
+        @framaservice est un service de rédaction collaborative en ligne
         basé sur le logiciel Etherpad
       </p>
       <p>
@@ -1176,7 +1178,7 @@ services:
     mTitle: Création de questionaires
     mBody: |
       <p>
-        @:framaservice vous permet de créer les questionnaires qu´il vous
+        @framaservice vous permet de créer les questionnaires qu´il vous
         faut, que ce soit dans un cadre scolaire, familial ou associatif.
         Créez vos questions en fonction de vos besoins, des formulaires
         à choix multiples aux champs de texte libre.
@@ -1204,7 +1206,7 @@ services:
     mTitle: Échangez sans être lus par Big Brother
     mBody: |
       <p>
-        @:framaservice vous permet de créer des liste de diffusion emails :
+        @framaservice vous permet de créer des liste de diffusion emails :
         toute personne s´abonnant à votre liste pourra recevoir les emails
         qui y sont envoyés, et y participer à son tour.
         À vous de choisir si cette liste est publique, semi-privée ou privée.
@@ -1231,7 +1233,7 @@ services:
     mTitle: Créez vos cartes personnalisées en ligne
     mBody: |
       <p>
-        @:framaservice permet de créer des cartes personnalisées sur des
+        @framaservice permet de créer des cartes personnalisées sur des
         fonds OpenStreetMap et de les afficher dans votre site.
       </p>
       <p><b class="violet">Fonctionnement :</b></p>
@@ -1258,7 +1260,7 @@ services:
     mTitle: Toujours au courant, jamais en retard
     mBody: |
       <p>
-        @:framaservice vous propose un lecteur de flux RSS en ligne,
+        @framaservice vous propose un lecteur de flux RSS en ligne,
         vous permettant d’être toujours au courant de l’actualité à partir
         des flux RSS de vos sites préférés !
       </p>
@@ -1286,7 +1288,7 @@ services:
     mTitle: Une recherche anonyme
     mBody: |
       <p>
-        @:framaservice est un meta-moteur de recherche anonyme.
+        @framaservice est un meta-moteur de recherche anonyme.
         Cela signifie que vos recherches effectuées au travers de ce moteur
         sont envoyées à différents moteurs, avant d’être affichées dans
         votre navigateur. L’intérêt, c’est que c’est notre moteur qui fait
@@ -1310,7 +1312,7 @@ services:
     mTitle: Une application pour vos diaporamas
     mBody: |
       <p>
-        @:framaservice vous permettra
+        @framaservice vous permettra
         de réaliser facilement et intuitivement vos diaporamas.
         Grâce à cette application dans votre navigateur, nul besoin
         de charger des logiciels lourds et compliqués.
@@ -1341,7 +1343,7 @@ services:
     mTitle: Un tableur en ligne
     mBody: |
       <p>
-        Avec @:framaservice, vos données sont automatiquement sauvegardées
+        Avec @framaservice, vos données sont automatiquement sauvegardées
         sur Internet. Vous et vos collaborateurs pouvez collaborer sur
         le document en même temps. Visualisez tous les changements en
         temps réel et travaillez ensemble sur vos inventaires, vos calculs,
@@ -1372,7 +1374,7 @@ services:
     mTitle: Partagez vos images facilement
     mBody: |
       <p>
-        @:framaservice vous permet de partager facilement des images,
+        @framaservice vous permet de partager facilement des images,
         par exemple pour les partager sur Twitter, Facebook, ou … Framasphère !
       </p>
       <p>Attention, ce service n’est pas un équivalent de flickr ou instagram :
@@ -1380,7 +1382,7 @@ services:
       mais bien d’un service d’hébergement d’images anonymes (même nous,
       nous n’avons pas accès au contenu, qui est chiffré).</p>
       <p>
-        @:framaservice permet d’envoyer des images de façon anonyme.
+        @framaservice permet d’envoyer des images de façon anonyme.
         Vous pouvez décider du moment de leur suppression
         (dès la première visualisation, 24H/7j/30j/1an après leur mise en ligne).
       </p>
@@ -1395,7 +1397,7 @@ services:
     mTitle: Gardez le contrôle sur les rencontres que vous organisez
     mBody: |
       <p>
-        @:framaservice vous permet de proposer des événements et rencontres,
+        @framaservice vous permet de proposer des événements et rencontres,
         et de garder le contact avec la communauté qui partage vos intérêts !
       </p>
       <p>
@@ -1416,7 +1418,7 @@ services:
     mTitle: Construisez vos propres applications pédagogiques
     mBody: |
       <p>
-        @:framaservice est un serveur du jeu Minetest, un jeu "bac à sable"
+        @framaservice est un serveur du jeu Minetest, un jeu "bac à sable"
         dont vous construisez et décomposez les blocs pour le modifier.
       </p>
       <p>
@@ -1439,7 +1441,7 @@ services:
     mTitle: Tempête de post-it libres
     mBody: |
       <p>
-        @:framaservice vous permet de créer un tableau à colonnes où
+        @framaservice vous permet de créer un tableau à colonnes où
         quiconque peut venir y déposer des notes colorées.
         Tel <a href="https://framapad.org><b class="violet>Frama</b><b class="vert">pad</b></a>,
         aucune inscription n´est requise, et les modifications se voient
@@ -1465,7 +1467,7 @@ services:
     mTitle: Communiquez des données chiffrées
     mBody: |
       <p>
-        Avec @:framaservice vous pouvez partager des informations dont
+        Avec @framaservice vous pouvez partager des informations dont
         seuls vous et votre correspondant aurez le pouvoir de déchiffrer, et surtout de
         manière très simple. Vous pouvez même choisir la durée de validité de l’accès !
       </p>
@@ -1490,7 +1492,7 @@ services:
     mTitle: Sauvegardez, lisez plus tard
     mBody: |
       <p>
-        Avec @:framaservice, vous ne perdrez plus les contenus du Web
+        Avec @framaservice, vous ne perdrez plus les contenus du Web
         qui vous intéressent mais que vous n’avez pas le temps de
         parcourir. D’un clic, vous enregistrez votre sélection et vous
         la lirez quand vous voudrez. L’application sauvegarde votre
@@ -1514,7 +1516,7 @@ services:
     mTitle: Votre lectorat aussi a des droits
     mBody: |
       <p>
-        @:framaservice permet d´héberger des documents PDF et des présentations (ODP)
+        @framaservice permet d´héberger des documents PDF et des présentations (ODP)
         afin de les donner à lire au grand public. Votre lectorat n´aura pas
         besoin de créer un compte ni de subir publicités et traquages,
         et pourra se concentrer sur ce que vous partagez.
@@ -1538,7 +1540,7 @@ services:
     mTitle: Décidez ensembles,
     mBody: |
       <p>
-        @:framaservice vous aide à prendre des décisions communautaires.
+        @framaservice vous aide à prendre des décisions communautaires.
         Discutez, échangez, mettez-vous d’accord et passez à l’action,
         le tout dans les délais que vous fixés au départ.
       </p>
@@ -1565,7 +1567,7 @@ services:
     mTitle: Vidéoconférence
     mBody: |
       <p>
-        @:framaservice vous permet de discuter simplement avec vos amis,
+        @framaservice vous permet de discuter simplement avec vos amis,
         sans installation complexe de logiciel.
         Vous échangez sans aucune analyse des données liées aux conversations.
         Tout se passe entre vous et vos amis.
@@ -1618,7 +1620,7 @@ services:
     mTitle: Gestionnaire de projets
     mBody: |
       <p>
-        @:framaservice est un gestionnaire de tâches visuel.
+        @framaservice est un gestionnaire de tâches visuel.
         Il permet de gérer des projets de manière collaborative, en suivant la méthode Kanban.
         Son système visuel permet de s’y retrouver au premier coup d’œil,
         quelque soit votre habitude à utiliser ce genre d’outil.
@@ -1646,7 +1648,7 @@ services:
     mTitle: Partagez vos fichiers facilement
     mBody: |
       <p>
-        @:framaservice vous permet de partager facilement des fichiers
+        @framaservice vous permet de partager facilement des fichiers
         comme, par exemple, lorsque vous voulez envoyez une pièce jointe
         par email et que le fichier dépasse la taille maximale autorisée.
       </p>
@@ -1656,7 +1658,7 @@ services:
       mais bien d’un service d’envoi de fichiers anonymes (le contenu est
       automatiquement chiffré avant envoi, nous n’y avons pas accès).</p>
       <p>
-        @:framaservice permet d’envoyer des fichiers de façon anonyme.
+        @framaservice permet d’envoyer des fichiers de façon anonyme.
         Vous pouvez décider du moment de leur suppression (dès le premier
         téléchargement, 24H/7j/30j/60j après leur mise en ligne).
       </p>
@@ -1674,7 +1676,7 @@ services:
     mTitle: Libérez vos vidéos
     mBody: |
       <p>
-        Sur @:framaservice, vous pouvez télécharger vos vidéos, les partager
+        Sur @framaservice, vous pouvez télécharger vos vidéos, les partager
         avec votre entourage ou les ouvrir en lecture publique.
         C’est le meilleur moyen de partager des vidéos sans céder vos droits.
       </p>
@@ -1707,7 +1709,7 @@ services:
     mTitle: Faites une pose, jouez quelques instants
     mBody: |
       <p>
-        @:framaservice, vous propose un certain nombre de jeux libres,
+        @framaservice, vous propose un certain nombre de jeux libres,
         disponibles aussi bien pour une utilisation en ligne qu’hors ligne.
         Faites une pause et profitez de l’un des jeux proposés.
         <small>(et <a href="https://fr.wikipedia.org/wiki/Angry_Birds#Collecte_de_donn.C3.A9es_par_la_NSA">
@@ -1739,7 +1741,7 @@ services:
       <p>
         Besoin en même temps d’un pad pour prendre des notes, d’un tableau
         d’organisation, et d’une vidéo-conférence ?
-        Avec @:framaservice, c’est vous qui organisez les outils qu’il
+        Avec @framaservice, c’est vous qui organisez les outils qu’il
         vous faut, sur une seule et unique page web.
       </p>
     tags: collaborer
@@ -1756,7 +1758,7 @@ services:
     mTitle: Créez rapidement des images vectorielles au format SVG
     mBody: |
       <p>
-        @:framaservice, est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
+        @framaservice, est un logiciel de dessin extrêmement simple (qui a dit simpliste ?).
       </p>
       <p><b class="violet">Fonctionnalités :</b></p>
       <ul>
@@ -1781,7 +1783,7 @@ services:
     mTitle: Pour que votre code devienne polyglotte !
     mBody: |
       <p>
-        @:framaservice vous offre une interface de traduction simple pour
+        @framaservice vous offre une interface de traduction simple pour
         traduire les chaînes de caractères de votre code de manière collaborative.
       </p>
       <p>
@@ -1804,7 +1806,7 @@ services:
     mTitle: Le microblogage libre
     mBody: |
       <p>
-        @:framaservice vous permet de suivre des flux de microblogage et
+        @framaservice vous permet de suivre des flux de microblogage et
         entretenir vos propres flux de manière décentralisée.
       </p>
       <p>

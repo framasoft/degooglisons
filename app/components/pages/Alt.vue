@@ -92,6 +92,7 @@
       role="dialog"
       aria-labelledby="FramaLabel"
       aria-hidden="true"
+      :class="'m-' + modal.key"
       size="lg"
       v-if="modal.key"
     >
@@ -99,6 +100,50 @@
         <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
         <span class="frama" v-html="data.services[modal.key].F"></span><br>
         <span class="desc" v-html="$t('msg.services.' + modal.key + '.lDesc')"></span>
+      </div>
+      <div class="well">
+        <p>
+          {{ $t('msg.txt.asAltTo') }}
+          <span title="Google, Apple, Facebook, Amazon, Microsoft">
+            <i class="fa fa-fw fa-google" aria-hidden="true"></i>
+            <i class="fa fa-fw fa-apple" aria-hidden="true"></i>
+            <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-fw fa-amazon" aria-hidden="true"></i>
+            <i class="fa fa-fw fa-windows" aria-hidden="true"></i>
+          </span>
+          <span class="sr-only">GAFAM</span>
+          {{ $t('msg.txt.andCo') }}{{ $t('msg.txt.like') }}
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item"
+            v-for="gafam in data.services[modal.key].gafam"
+            >
+            <img
+              v-if="data.png.gafam.indexOf(sanitize(gafam)) > -1"
+              :src="$t('/img/') + 'gafam/' + sanitize(gafam) + '.png'" alt="" />
+            {{ gafam.replace(/@:[.a-z]+ /g, '') }}
+          </li>
+        </ul>
+        <p v-if="data.services[modal.key].FDate.length === 4"
+          class="wip">
+          {{ $t('msg.txt.weWillProp') }}
+          <span v-html="$t('data.services.' + modal.key + '.F')"></span>
+          <span class="small">
+            {{ $t('msg.txt.releaseOn') }}
+            {{ $t('data.services.' + modal.key + '.FDate') }}
+            {{ $t('msg.txt.withHelp') }}
+            <a :href="$t('msg.link.S')"
+              class="btn btn-xs btn-soutenir" :title="$t('msg.meta.support')">
+              <i class="fa fa-fw fa-heart" aria-hidden="true"></i>
+              <span class="sr-only">{{ $t('msg.meta.support') }}</span>
+            </a>
+          </span>
+        </p>
+        <p v-else>
+          {{ $t('msg.txt.wePropNow') }}
+          <span v-html="$t('data.services.' + modal.key + '.F')"></span>
+          <span class="small" v-html="$t('msg.txt.since') + ' ' + $t('data.services.' + modal.key + '.FDate')"></span>
+        </p>
       </div>
       <div class="web-browser">
         <div class="toolbar">
@@ -111,21 +156,25 @@
           class="img-responsive" alt=""
         />
       </div>
-      <div v-html="$t('msg.services.' + modal.key + '.mBody')"></div>
+      <div v-html="$t('msg.services.' + modal.key + '.mBody').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></div>
       <div slot="footer">
-        <ul class="list-inline col-md-6 text-left">
-          <li
-            v-for="(tag) in $t('msg.services.' + modal.key +'.tags').split(', ')"
-            v-if="tag !== '' && tag !== ' '">
-            <a
-              :href="$t('/') + $t('lang') + '/list#tag-' + sanitize(tag)"
-              class="btn btn-xs btn-default">
-              {{ sanitize(tag) }}
-            </a></li>
-        </ul>
-        <div class="col-md-6 text-right">
+        <p class="precisions text-left" v-if="!data.services[modal.key].mFooter">
+          <span v-html="$t('data.services.' + modal.key + '.F')"></span>
+          {{ $t('msg.txt.basedOn') }}
+          <span v-html="$t('data.services.' + modal.key + '.S')"></span>
+          <span v-if="data.services[modal.key].CL">
+            <br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
+            {{ $t('msg.txt.howTo') }}<a :href="$t('data.services.' + modal.key + '.CL')" class="text-success">{{ $t('msg.txt.installOnServer') }}</a>
+          </span>
+        </p>
+        <div class="col-md-6 text-left">
+          <a :href="'#' + modal.key" class="btn btn-alt btn-default">
+            {{ $t('msg.txt.otherAlt') }}</a>
           <a :href="$t('msg.link.docs') + sanitize(data.services[modal.key].S)"
-            class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.docs') }}</a>
+            class="btn btn-alt btn-default">{{ $t('msg.txt.docs') }}</a>
+        </div>
+        <div class="col-md-6 text-right">
+
           <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.use') }}</a>
         </div>
       </div>
