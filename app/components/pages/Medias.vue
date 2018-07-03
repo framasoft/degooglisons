@@ -180,7 +180,9 @@
       <div class="clearfix">
         <h2>{{ $t('msg.medias.frama.title') }}</h2>
         <div class="col-sm-8">
-          <ul v-html="$t('msg.medias.frama.list')"></ul>
+          <ul>
+            <li v-for="item in $t('msg.medias.frama.list')" v-html="item"></li>
+          </ul>
           <p class="text-center">
             <img :src="$t('/img/') + 'biglogo.png'" alt="" style="width:220px; margin:10px 30px"/>
             <img :src="$t('/img/') + 'biglogo-noir.png'" alt="" style="width:220px; margin:10px 30px"/>

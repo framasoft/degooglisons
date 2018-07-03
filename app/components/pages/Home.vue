@@ -172,7 +172,9 @@
             <div class="col-sm-6">
               <h2>{{ $t('msg.home.contact.title') }}</h2>
               <p v-html="$t('msg.home.contact.text1')"></p>
-              <ul v-html="$t('msg.home.contact.text2')"></ul>
+              <ul>
+                <li v-for="item in $t('msg.home.contact.text2')" v-html="item"></li>
+              </ul>
               <p v-html="$t('msg.home.contact.text3')"></p>
               <p class="clearfix">
                 <a :href="$t('msg.link.contact')" class="btn btn-primary col-sm-6 col-sm-offset-3 col-xs-12">
@@ -184,7 +186,9 @@
             <div class="col-sm-6">
               <h2>{{ $t('msg.home.support.title') }}</h2>
               <p v-html="$t('msg.home.support.text1')"></p>
-              <ul v-html="$t('msg.home.support.text2')"></ul>
+              <ul>
+                <li v-for="item in $t('msg.home.support.text2')" v-html="item"></li>
+              </ul>
               <p v-html="$t('msg.home.support.text3')"></p>
               <p class="clearfix">
                 <a class="btn btn-soutenir col-sm-6 col-sm-offset-3 col-xs-12" :href="$t('msg.link.S')">

@@ -1,24 +1,19 @@
 /* Modales content */
-.m-change .web-browser,
-.m-scribd .web-browser,
-.m-youtube .web-browser,
-.m-meetup .web-browser,
-.m-blogger .web-browser,
-.m-change h1 img,
-.m-scribd h1 img,
-.m-meetup h1 img,
-.m-blogger h1 img,
-.m-change .modal-footer .btn-default:nth-child(2),
-.m-change .modal-footer .btn-link,
-.m-scribd .modal-footer .btn-default:nth-child(2),
-.m-scribd .modal-footer .btn-link,
-.m-youtube .modal-footer .btn-default:nth-child(2),
-.m-youtube .modal-footer .btn-link,
-.m-meetup .modal-footer .btn-default:nth-child(2),
-.m-meetup .modal-footer .btn-link {
-  display: none;
+.m-change,
+.m-scribd,
+.m-meetup,
+.m-blogger {
+  .web-browser,
+  h4 img,
+  .modal-footer .btn-default:nth-child(2),
+  .modal-footer .btn-link {
+    display: none;
+  }
 }
 
+.m-youtube .web-browser {
+  display: none;
+}
 /* WIP Framaservices in alternatives */
 .alt-jsfiddle,
 .alt-scribd,

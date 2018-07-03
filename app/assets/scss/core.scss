@@ -131,6 +131,16 @@ iframe {
 
 /* Modal List/Alt */
 #list, #alt {
+  .modal-dialog h4 {
+    font-size: 24px;
+  }
+
+  @media (min-width:768px) {
+    .modal-dialog {
+      margin: 100px auto;
+    }
+  }
+
   .modal-header {
     border: none;
 
@@ -154,6 +164,22 @@ iframe {
     }
   }
 
+  .modal-body {
+    padding: 15px 30px;
+
+    li,
+    p {
+      color: #767676;
+      font-size: 19px;
+      line-height: 30px;
+    }
+
+    iframe {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
   .modal-footer {
     border: none;
     padding-top: 0;
@@ -172,28 +198,6 @@ iframe {
 
 #list .modal-header { background: #EDE6F5; }
 #alt .modal-header { background: #FAEBE8; }
-
-.modal-dialog h4 {
-  font-size: 24px;
-}
-
-@media (min-width:768px) {
-  .modal-dialog {
-    margin: 100px auto;
-  }
-}
-
-.modal-body {
-  padding: 15px 30px;
-
-}
-
-.modal-body li,
-.modal-body p {
-  color: #767676;
-  font-size: 19px;
-  line-height: 30px;
-}
 
 .precisions {
   font-size: small;
@@ -347,4 +351,9 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
   background-color: #FAEBE8;
 }
 
+/* Fix & cleaning */
 @import 'hidden';
+
+.modal-backdrop {
+    z-index: 10 !important;
+}

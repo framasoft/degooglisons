@@ -96,11 +96,14 @@
       size="lg"
       v-if="modal.key && modal.key !== 'gmail'"
     >
+      <!-- modal-header -->
       <div slot="title">
         <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
         <span class="frama" v-html="data.services[modal.key].F"></span><br>
         <span class="desc" v-html="$t('msg.services.' + modal.key + '.lDesc')"></span>
       </div>
+
+      <!-- alternative to -->
       <div class="well">
         <p>
           {{ $t('msg.txt.asAltTo') }}
@@ -145,6 +148,8 @@
           <span class="small" v-html="$t('msg.txt.since') + ' ' + $t('data.services.' + modal.key + '.FDate')"></span>
         </p>
       </div>
+
+      <!-- web-screen -->
       <div class="web-browser">
         <div class="toolbar">
           <img :src="$t('/img/') + 'browser-left.png'" alt="" />
@@ -156,8 +161,32 @@
           class="img-responsive" alt=""
         />
       </div>
-      <div v-html="$t('msg.services.' + modal.key + '.mBody').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></div>
+
+      <!-- desc -->
+      <p v-html="$t('msg.services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></p>
+
+      <!-- video / desc -->
+      <p v-if="$t('msg.services.' + modal.key + '.mBody.more') !== 'msg.services.' + modal.key + '.mBody.more'"
+         v-html="$t('msg.services.' + modal.key + '.mBody.more').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></p>
+
+      <!-- features -->
+      <div v-if="$t('msg.services.' + modal.key + '.mBody.feat') !== 'msg.services.' + modal.key + '.mBody.feat'">
+        <h5 class="h3 violet">{{ $t('msg.txt.features') }}</h5>
+        <ul v-if="Array.isArray($t('msg.services.' + modal.key + '.mBody.feat'))">
+          <li
+            v-for="(item) in $t('msg.services.' + modal.key + '.mBody.feat')"
+            v-html="item.replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"
+          ></li>
+        </ul>
+        <p
+          v-else
+          v-html="$t('msg.services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))">
+        </p>
+      </div>
+
+      <!-- modal-footer -->
       <div slot="footer">
+        <!-- source / framacloud -->
         <p class="precisions text-left" v-if="!data.services[modal.key].mFooter">
           <span v-html="$t('data.services.' + modal.key + '.F')"></span>
           {{ $t('msg.txt.basedOn') }}
@@ -167,6 +196,7 @@
             {{ $t('msg.txt.howTo') }}<a :href="$t('data.services.' + modal.key + '.CL')" class="text-success">{{ $t('msg.txt.installOnServer') }}</a>
           </span>
         </p>
+        <!-- alt / docs -->
         <div class="col-md-6 text-left">
           <a :href="'#' + modal.key" class="btn btn-alt btn-default"
             @click="modal.open = false;">
@@ -174,6 +204,7 @@
           <a :href="$t('msg.link.docs') + sanitize(data.services[modal.key].S)"
             class="btn btn-alt btn-default">{{ $t('msg.txt.docs') }}</a>
         </div>
+        <!-- use -->
         <div class="col-md-6 text-right">
           <a :href="data.services[modal.key].FL"
             class="btn btn-lg btn-link text-uppercase">
