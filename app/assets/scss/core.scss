@@ -354,6 +354,6 @@ a.anchor{display: block; position: relative; top: -70px; visibility: hidden;}
 /* Fix & cleaning */
 @import 'hidden';
 
-.modal-backdrop {
-    z-index: 10 !important;
+.modal-open .modal-backdrop {
+  z-index: 10 !important;
 }
