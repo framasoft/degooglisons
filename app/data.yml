@@ -197,7 +197,7 @@ camps:
 services:
   bitly:
     FL: https://frama.link
-    CL: http://framacloud.org/cultiver-son-jardin/installation-de-lstu/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/lstu.html
     i: link
     S: <a href="https://git.framasoft.org/luc/lstu"><abbr>Lstu</abbr></a>
     F: <b class="violet">Frama</b>.<b class="vert">link</b></a>
@@ -218,9 +218,9 @@ services:
     c2: tools
 
   blogger:
-    FL:
-    CL:
-    i:
+    FL: https://frama.site
+    CL: https://framacloud.org/fr/cultiver-son-jardin/grav.html
+    i: globe
     S: <a href="https://getgrav.org/">Grav</a>
     F: <b class="violet">Frama</b><b class="vert">sites</b>
     gafam:
@@ -235,12 +235,12 @@ services:
     - <a href="https://www.spip.net/">Spip</a>
     - <a href="http://wordpress.org">Wordpress</a>
     pos: 650,605,40
-    FDate: '2017'
+    FDate: <a href="https://framablog.org/2017/10/12/frama-site-testons-la-contribution/">2017</a>
     c1: site
 
   bubblus:
     FL: https://framindmap.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-wisemapping/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/wisemapping.html
     i: sitemap
     S: <a href="http://wisemapping.com">Wisemapping</a>
     F: <a href="https://framindmap.org"><b class="violet">Fra</b><b class="vert">mindmap</b></a>
@@ -257,9 +257,9 @@ services:
     c2: prod
 
   change:
-    FL:
+    FL: https://wip.framasoft.org/
     CL:
-    i:
+    i: balance-scale
     S: <a href="https://www.drupal.org/project/webform">WebForm</a>
     F: <b class="violet">Frama</b><b class="vert">pétition</b>
     gafam:
@@ -269,14 +269,13 @@ services:
     altOff:
     - <a href="https://github.com/WhiteHouse/petitions">WeThePeople</a>
     - <a href="https://github.com/mysociety/petitions">MySociety</a>
-    - <a href="https://www.drupal.org/project/webform">WebForm</a>
     pos: 285,615,40
     FDate: '2017'
     c1: social
 
   delicious:
     FL: https://my.framasoft.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-shaarli/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/shaarli.html
     i: star
     S: <a href="http://sebsauvage.net/wiki/doku.php?id=php:shaarli">Shaarli</a>
     F: <b class="violet">My</b><b class="vert">Frama</b></a>
@@ -294,7 +293,7 @@ services:
 
   doodle:
     FL: https://framadate.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-framadate/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/framadate.html
     i: calendar-check-o
     S: <a href="https://framagit.org/framasoft/framadate">Framadate</a>
     F: <b class="violet">Frama</b><b class="vert">date</b></a>
@@ -311,7 +310,7 @@ services:
 
   dropbox:
     FL: https://framadrive.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-nextcloud/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/nextcloud.html
     i: cloud-upload
     S: <a href="https://nextcloud.com/">Nextcloud</a>
     F: <b class="violet">Frama</b><b class="vert">drive</b></a>
@@ -333,7 +332,7 @@ services:
 
   evernote:
     FL: https://framanotes.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-turtl/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/turtl.html
     i: sticky-note
     S: <a href="https://turtlapp.com/">Turtl</a>
     F: <b class="violet">Frama</b><b class="vert">notes</b></a>
@@ -373,7 +372,7 @@ services:
 
   github:
     FL: https://framagit.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/gitlab.html
     i: git
     S: <a href="https://gitlab.com/">Gitlab</a>
     F: <b class="violet">Frama</b><b class="vert">git</b></a>
@@ -394,14 +393,14 @@ services:
     c2: tools
 
   gmail:
-    FL:
+    FL: https://wip.framasoft.org/
     CL:
     i: mail
     S: <a href="https://www.caliopen.org/">Caliopen</a>
     F: <b class="violet">Frama</b><b class="vert">mail</b>
     gafam:
-    - '@:e.g GMail'
-    - '@:e.m Outlook'
+    - GMail
+    - Outlook
     - Yahoo Mail
     - Orange
     altOn:
@@ -419,7 +418,7 @@ services:
 
   gagenda:
     FL: https://framagenda.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-nextcloud/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/nextcloud.html
     i: calendar
     S: <a href="https://nextcloud.com/">Nextcloud</a>
     F: <b class="violet">Fram</b><b class="vert">agenda</b></a>
@@ -437,7 +436,7 @@ services:
 
   gbooks:
     FL: https://framabookin.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-d-un-serveur-opds/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/bicbucstriim.html
     i: coffee
     S: <a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>
     F: <b class="violet">Frama</b><b class="rouge">bookin</b></a>
@@ -458,7 +457,7 @@ services:
 
   gdocs:
     FL: https://framapad.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-detherpad/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/etherpad.html
     i: align-left
     S: <a href="http://etherpad.org/">Etherpad</a>
     F: <b class="violet">Frama</b><b class="vert">pad</b></a>
@@ -475,7 +474,7 @@ services:
 
   gforms:
     FL: https://framaforms.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-framaforms/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/framaforms.html
     i: list-ul
     S: <a href="https://www.drupal.org/project/webform">Webform</a>
     F: <b class="violet">Frama</b><b class="vert">forms</b></a>
@@ -494,7 +493,7 @@ services:
 
   ggroups:
     FL: https://framalistes.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-sympa/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/sympa.html
     i: group
     S: <a href="http://www.sympa.org/">Sympa</a>
     F: <b class="violet">Frama</b><b class="vert">listes</b></a>
@@ -514,7 +513,7 @@ services:
 
   gmaps:
     FL: https://framacarte.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-umap/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/umap.html
     i: map
     S: <a href="https://github.com/umap-project/umap/">uMap</a>
     F: <b class="violet">Frama</b><b class="vert">carte</b></a>
@@ -534,7 +533,7 @@ services:
 
   greader:
     FL: https://framanews.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-tinytinyrss/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/ttrss.html
     i: newspaper-o
     S: <a href="http://tt-rss.org/">TinyTinyRSS</a>
     F: <b class="violet">Frama</b><b class="vert">news</b></a>
@@ -552,7 +551,7 @@ services:
 
   gsearch:
     FL: https://framabee.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-searx/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/searx.html
     i: search
     S: <a href="https://github.com/asciimoo/searx">Searx</a>
     F: <b class="violet">Frama</b><b class="vert">bee</b></a>
@@ -606,7 +605,7 @@ services:
 
   imgur:
     FL: https://framapic.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-lutim/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/lutim.html
     i: photo
     S: <a href="https://framagit.org/luc/lutim">Lutim</a>
     F: <b class="violet">Frama</b><b class="vert">pic</b></a>
@@ -625,7 +624,7 @@ services:
     c2: share
 
   meetup:
-    FL:
+    FL: https://wip.framasoft.org/
     CL:
     i:
     S: <a href="https://github.com/psycojoker/wanawana">WanaWana</a>
@@ -641,7 +640,7 @@ services:
 
   minecraft:
     FL: https://framinetest.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-minetest/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/minetest.html
     i: cube
     S: <a href="http://www.minetest.net/">Minetest</a>
     F: <b class="violet">Fra</b><b class="vert">minetest</b></a>
@@ -656,7 +655,7 @@ services:
 
   padlet:
     FL: https://framemo.org/
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-scrumblr/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/scrumblr.html
     i: object-group
     S: <a href="http://scrumblr.ca/">Scrumblr</a>
     F: <b class="violet">Fra</b><b class="vert">memo</b></a>
@@ -687,7 +686,7 @@ services:
 
   pocket:
     FL: https://framabag.org
-    CL:
+    CL: https://framacloud.org/fr/cultiver-son-jardin/wallabag.html
     i: briefcase
     S: <a href="https://www.wallabag.org/">Wallabag</a>
     F: <b class="violet">Frama</b><b class="vert">bag</b></a>
@@ -701,7 +700,7 @@ services:
     c2: search
 
   scribd:
-    FL:
+    FL: https://wip.framasoft.org/
     CL:
     i:
     S: <a href="http://webodf.org/">WebODF</a> ou <a href="https://pdf.yt/">PDFy</a>
@@ -716,7 +715,7 @@ services:
 
   loomio:
     FL: https://framavox.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-loomio/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/loomio.html
     i: bullhorn
     S: <a href="https://www.loomio.org">Loomio</a>
     F: <b class="violet">Frama</b><b class="vert">vox</b></a>
@@ -733,7 +732,7 @@ services:
 
   skype:
     FL: https://framatalk.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-jitsi-meet/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/jitsi-meet.html
     i: video-camera
     S: <a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a>
     F: <b class="violet">Frama</b><b class="vert">talk</b></a>
@@ -754,7 +753,7 @@ services:
 
   slack:
     FL: https://framateam.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-gitlab-et-mattermost/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/gitlab.html
     i: comments-o
     S: <a href="http://www.mattermost.org/">Mattermost</a>
     F: <b class="violet">Frama</b><b class="vert">team</b></a>
@@ -772,7 +771,7 @@ services:
 
   trello:
     FL: https://framaboard.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-kanboard/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/kanboard.html
     i: dashboard
     S: <a href="http://kanboard.net/">Kanboard</a>
     F: <b class="violet">Frama</b><b class="vert">board</b></a>
@@ -788,7 +787,7 @@ services:
 
   wetransfer:
     FL: https://framadrop.org
-    CL: https://framacloud.org/cultiver-son-jardin/installation-de-lufi/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/lufi.html
     i: send
     S: <a href="https://framagit.org/luc/lufi">Lufi</a>
     F: <b class="violet">Frama</b><b class="vert">drop</b></a>
@@ -815,6 +814,7 @@ services:
     - Vimeo
     - Dailymotion
     - Netflix
+    - '@:e.f Facebook Videos'
     altOn:
     altOff:
     - <a href="http://butterproject.org/">Butter (PopcornTime)</a>
@@ -822,14 +822,13 @@ services:
     - <a href="http://cumulusclips.org/">CumulusClips</a>
     - <a href="http://www.kaltura.org/">Kaltura</a>
     - <a href="http://plumi.org/">Plumi</a>
-    - <a href="http://mediadrop.net/">Mediadrop</a>
     pos: 440,635,40
-    FDate: '2018'
+    FDate: <a href="https://framablog.org/2018/03/21/peertube-beta-une-graine-dalternative-a-youtube-vient-declore/">2018</a>
     c1: media
 
 # Not on map -----------------------------------------------------------
   jsfiddle:
-    FL:
+    FL: https://wip.framasoft.org/
     CL:
     i:
     S: <a href="http://jsbin.com/">JS Bin</a>
@@ -911,19 +910,38 @@ services:
     c2: com
 
   transifex:
-    FL:
+    FL: https://trad.framasoft.org/
     CL:
     i: language
-    S: <a href="http://pootle.translatehouse.org/">Pootle</a>
-    F: <b class="violet">Frama</b><b class="vert">poulpe</b>
+    S: <a href="http://zanata.org/">Zanata</a>
+    F: <b class="violet">Frama</b><b class="vert">trad</b>
     gafam:
     - Transifex
     altOn:
+    - <a href="https://translate.zanata.org">Zanata</a>
     - <a href="https://launchpad.net/launchpad">Rosetta (Launchpad)</a>
     altOff:
+    - <a href="http://pootle.translatehouse.org/">Pootle</a>
+    - <a herf="https://weblate.org">Weblate</a>
     pos:
-    FDate: '2018'
+    FDate: '2018 '
     c1: dev
+
+  ganalytics:
+    FL: https://framaclic.org/
+    CL: https://framacloud.org/fr/cultiver-son-jardin/dolomon.html
+    i: hand-pointer-o
+    S: <a href="https://framagit.org/luc/dolomon">Dolomon</a>
+    F: <b class="violet">Frama</b><b class="vert">clic</b>
+    gafam:
+    - '@:e.g Google Analytics'
+    - Xiti
+    altOn:
+    altOff:
+    - <a href="https://matomo.org/">Matomo (Piwik)</a>
+    - <a href="http://www.openwebanalytics.com/">Open Web Analytics</a>
+    FDate: <a href="https://framablog.org/2018/04/03/framaclic-un-nouveau-service-qui-compte/">2018</a>
+    c1: site
 
 # Hors frama -----------------------------------------------------------
   airbnb:
@@ -1016,17 +1034,6 @@ services:
     - <a href="http://www.zenphoto.org/">Zenphoto</a>
     - <a href="http://www.mad5.de/ownstagram/">ownStagram</a>
     c1: media
-
-  ganalytics:
-    S: <a href="https://matomo.org/">Matomo (Piwik)</a>
-    F:
-    gafam:
-    - '@:e.g Google Analytics'
-    - Xiti
-    altOn:
-    altOff:
-    - <a href="http://www.openwebanalytics.com/">Open Web Analytics</a>
-    c1: site
 
   orange:
     S:

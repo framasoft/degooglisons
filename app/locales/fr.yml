@@ -1064,8 +1064,8 @@ services:
     hDesc: |
     mTitle:
     mBody: |
-      @:msg.meta.F ne proposera pas d’alternative à , mais <a href="#gmail" class="btn-alt">
-      il existe d’autres acteurs</a> qui proposent des services d’email.
+      @:msg.meta.F ne proposera pas d’alternative à @gafamservices, mais
+      il existe d’autres acteurs qui proposent des services d’email libre.
     tags:
 
   gagenda:

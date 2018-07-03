@@ -1,0 +1,31 @@
+/* Modales content */
+.m-change .web-browser,
+.m-scribd .web-browser,
+.m-youtube .web-browser,
+.m-meetup .web-browser,
+.m-blogger .web-browser,
+.m-change h1 img,
+.m-scribd h1 img,
+.m-meetup h1 img,
+.m-blogger h1 img,
+.m-change .modal-footer .btn-default:nth-child(2),
+.m-change .modal-footer .btn-link,
+.m-scribd .modal-footer .btn-default:nth-child(2),
+.m-scribd .modal-footer .btn-link,
+.m-youtube .modal-footer .btn-default:nth-child(2),
+.m-youtube .modal-footer .btn-link,
+.m-meetup .modal-footer .btn-default:nth-child(2),
+.m-meetup .modal-footer .btn-link {
+  display: none;
+}
+
+/* WIP Framaservices in alternatives */
+.alt-jsfiddle,
+.alt-scribd,
+.alt-meetup,
+.alt-gmail,
+.alt-change {
+  td:nth-of-type(2) ul:nth-of-type(1) .list-group-item:nth-of-type(1) {
+    display: none;
+  }
+}

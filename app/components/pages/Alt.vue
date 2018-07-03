@@ -54,7 +54,7 @@
         <div class="col-lg-4">
           <!-- Recherche -->
           <div class="well clearfix" style="margin:60px auto">
-            <label class="col-xs-1 text-right" for="tags-select">
+            <label class="col-xs-1 text-right" style="padding: 0" for="tags-select">
               <i class="fa fa-2x fa-search"></i>
               <span class="sr-only">{{ $t('msg.txt.searchByAlt') }}</span>
             </label>
@@ -94,7 +94,7 @@
       aria-hidden="true"
       :class="'m-' + modal.key"
       size="lg"
-      v-if="modal.key"
+      v-if="modal.key && modal.key !== 'gmail'"
     >
       <div slot="title">
         <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
@@ -168,16 +168,39 @@
           </span>
         </p>
         <div class="col-md-6 text-left">
-          <a :href="'#' + modal.key" class="btn btn-alt btn-default">
+          <a :href="'#' + modal.key" class="btn btn-alt btn-default"
+            @click="modal.open = false;">
             {{ $t('msg.txt.otherAlt') }}</a>
           <a :href="$t('msg.link.docs') + sanitize(data.services[modal.key].S)"
             class="btn btn-alt btn-default">{{ $t('msg.txt.docs') }}</a>
         </div>
         <div class="col-md-6 text-right">
-
-          <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.use') }}</a>
+          <a :href="data.services[modal.key].FL"
+            class="btn btn-lg btn-link text-uppercase">
+            {{ $t('msg.txt.use') }}</a>
         </div>
       </div>
+    </modal>
+    <modal
+      id="FramaModalGmail"
+      v-model="modal.open"
+      :ok-text="$t('msg.txt.close')"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="FramaLabel"
+      aria-hidden="true"
+      :class="'m-' + modal.key"
+      v-if="modal.key && modal.key === 'gmail'"
+    >
+      <div slot="title">
+        <h1><span class="desc" v-html="$t('msg.services.' + modal.key + '.lDesc')"></span></h1>
+      </div>
+      <p class="alert alert-warning" v-html="$t('msg.services.' + modal.key + '.mBody').replace('@gafamservices', data.services[modal.key].gafam.join(', '))"></p>
+      <div slot="footer">
+        <a :href="'#' + modal.key" class="btn btn-alt btn-default"
+          @click="modal.open = false;">
+          {{ $t('msg.txt.otherAlt') }}</a>
+        </div>
     </modal>
     <!-- </modal> -------------------------------------------- -->
 
@@ -255,7 +278,7 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h2 class="panel-title text-center">
-                  <i class="'fa fa-fw fa-' + icon" aria-hidden="true"></i>
+                  <i :class="'fa fa-fw fa-' + icon" aria-hidden="true"></i>
                   <span>{{ $t('msg.cat1.' + cat) }}</span>
                 </h2>
               </div>
@@ -267,7 +290,8 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(service, key) in data.services" v-if="service.c1 === cat">
+                  <tr v-for="(service, key) in data.services" v-if="service.c1 === cat"
+                    :class="'alt-' + key">
                     <td>
                       <a class="anchor" :id="key" rel="nofollow"></a>
                       <h3 class="h5">
@@ -293,7 +317,7 @@
                             v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.F'))) > -1"
                             :src="$t('/img/') + 'leds/' + sanitize($t('data.services.' + key + '.F')) + '.png'" alt="" />
                           <span v-html="$t('data.services.' + key + '.F')"></span>
-                          <i class="fa fa-cloud fc_g5 pull-right" aria-hidden="true"
+                          <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOnline')"></i>
                         </li>
@@ -304,7 +328,7 @@
                             v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.S'))) > -1"
                             :src="$t('/img/') + 'leds/' + sanitize($t('data.services.' + key + '.S')) + '.png'" alt="" />
                           <span v-html="$t('data.services.' + key + '.S')"></span>
-                          <i class="fa fa-server fc_g5 pull-right" aria-hidden="true"
+                          <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOffline')"></i>
                         </li>
@@ -318,7 +342,7 @@
                             v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
                             :src="$t('/img/') + 'leds/' + sanitize(alt) + '.png'" alt="" />
                           <span v-html="alt"></span>
-                          <i class="fa fa-cloud fc_g5 pull-right" aria-hidden="true"
+                          <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOnline')"></i>
                         </li>
@@ -330,7 +354,7 @@
                             v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
                             :src="$t('/img/') + 'leds/' + sanitize(alt) + '.png'" alt="" />
                           <span v-html="alt"></span>
-                          <i class="fa fa-server fc_g5 pull-right" aria-hidden="true"
+                          <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOffline')"></i>
                         </li>
@@ -343,7 +367,9 @@
           </div>
         </div>
       </div>
+      <Signature />
     </div>
+    <BackTop />
   </main>
 </template>
 
@@ -376,7 +402,6 @@ export default {
       results: '',
       data: require('../../data.yml'), // eslint-disable-line
       scrollMenu: {
-        bar: 40,
         left: 0,
         listWidth: 0,
         visibleWidth: 0,
@@ -466,24 +491,6 @@ export default {
       });
       return tags;
     },
-    tagsClass(key) {
-      let tags = '';
-      if (typeof this.data.services[key].eq === 'string') {
-        tags += `, ${this.data.services[key].gafam.join(', ')}`;
-      }
-      if (typeof this.$t('msg.services.' + key + '.tags') === 'string') {
-        tags += `, ${this.$t('msg.services.' + key + '.tags')}`;
-      }
-      return tags
-        .replace(/\@:e\.[a-z]+ /g, '')
-        .replace(/^, /, '')
-        .split(', ')
-        .sort()
-        .filter((v, i, a) => a.indexOf(v) === i)
-        .join(' tag-')
-        .replace(/^/, 'tag-')
-        .toLowerCase();
-    },
     scrollMenuRefresh() {
       this.scrollMenu.listWidth = document.querySelector('.nav-cats .nav-tabs').offsetWidth;
       this.scrollMenu.visibleWidth = document.querySelector('.nav-cats').offsetWidth;
@@ -503,7 +510,7 @@ export default {
     stickyCSS() {
       this.scrollMenu.sticky = 'position: relative;';
       if (document.documentElement.scrollTop > 640) {
-        this.scrollMenu.sticky = `position: fixed; width: ${document.querySelector('#tips').offsetWidth}px;`;
+        this.scrollMenu.sticky = `position: fixed; width: ${document.querySelector('#tips .ombre').offsetWidth}px;`;
       }
     },
   },

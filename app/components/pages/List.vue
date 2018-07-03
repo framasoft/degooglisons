@@ -75,7 +75,7 @@
               <article
                 v-for="(service, key) in data.services"
                 v-if="(data.fight.indexOf(key) > -1)"
-                v-show="isInResults($t('msg.services.' + key + '.tags'), results)"
+                v-show="isInResults($t('msg.services.' + key + '.tags') + ', ' + $t('data.services.' + key + '.gafam[0]'), results)"
                 class="col-md-3 col-sm-6 text-center">
                 <h3>
                   <i :class="'fa fa-2x fa-' + service.i"></i><br>
@@ -96,7 +96,7 @@
                       <li><a href="javascript:void(0);" data-toggle="modal" :data-target="'#modal-t-' + key"
                         @click="modal.open = true; modal.key = key;"
                         >{{ $t('msg.txt.more') }}</a></li>
-                      <li><a :href="$t('msg.link.docs') + stripTags(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
+                      <li><a :href="$t('msg.link.docs') + text(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
                     </template>
                   </dropdown>
 
@@ -116,7 +116,7 @@
                 <article
                   v-for="(service, key) in data.services"
                   v-if="data.fight.indexOf(key) > -1 && service.c2 === cat"
-                  :class="'col-md-3 col-sm-6 text-center ' + tagsClass(key)">
+                  class="col-md-3 col-sm-6 text-center">
                   <h3>
                     <i :class="'fa fa-2x fa-' + service.i"></i><br>
                     <p v-html="service.F"></p>
@@ -136,7 +136,7 @@
                         <li><a href="javascript:void(0);" data-toggle="modal" :data-target="'#modal-t-' + key"
                           @click="modal.open = true; modal.key = key;"
                           >{{ $t('msg.txt.more') }}</a></li>
-                        <li><a :href="$t('msg.link.docs') + stripTags(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
+                        <li><a :href="$t('msg.link.docs') + text(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
                       </template>
                     </dropdown>
 
@@ -188,7 +188,7 @@
                   </a></li>
               </ul>
               <div class="col-md-6 text-right">
-                <a :href="$t('msg.link.docs') + stripTags(data.services[modal.key].S.toLowerCase())"
+                <a :href="$t('msg.link.docs') + text(data.services[modal.key].S.toLowerCase())"
                   class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.docs') }}</a>
                 <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.use') }}</a>
               </div>
@@ -232,6 +232,7 @@ import { Modal, Dropdown, Btn } from 'uiv';
 import HeaderComponent from '../partials/Header.vue';
 import Signature from '../partials/Signature.vue';
 import BackTop from '../partials/BackTop.vue';
+import { rmDiacritics, text, sanitize, noFrama } from '../../tools';
 
 export default {
   name: 'List',
@@ -255,7 +256,6 @@ export default {
       results: tags,
       data: require('../../data.yml'), // eslint-disable-line
       scrollMenu: {
-        bar: 40,
         left: 0,
         listWidth: 0,
         visibleWidth: 0,
@@ -286,32 +286,21 @@ export default {
     });
   },
   methods: {
-    stripTags(html) {
-      const tmp = document.createElement('div');
-      tmp.innerHTML = html;
-      let text = tmp.textContent || tmp.innerText || '';
-      return text || '';
+    text(html) {
+      return text(html)
+    },
+    sanitize(html) {
+      return sanitize(rmDiacritics(text(html)))
     },
     noFrama(html) {
-      let text = this.stripTags(html);
-      text = text.toLowerCase()
-        .replace('framand', 'and')
-        .replace('framage', 'age')
-        .replace('framae', 'mae')
-        .replace('framin', 'min')
-        .replace('frame', 'me')
-        .replace('frama', '')
-        .replace('.', '')
-        .replace(/[èé]/g, 'e')
-        .replace('my', 'myframa');
-      return text;
+      return noFrama(this.sanitize(html))
     },
     tags(services, type) {
       let tags = '';
       if (type === 'gafam') {
         Object.keys(services).forEach((k) => {
-          if (typeof services[k].eq === 'string') {
-            tags += `, ${services[k].name}, ${services[k].eq}`;
+          if (Array.isArray(services[k].gafam) && this.data.fight.indexOf(k) > -1) {
+            tags += `, ${services[k].gafam[0].replace(/\@:e\.[a-z]+ /g, '')}`;
           }
         });
       } else {
@@ -327,24 +316,6 @@ export default {
         .split(', ')
         .sort()
         .filter((v, i, a) => a.indexOf(v) === i);
-    },
-    tagsClass(key) {
-      let tags = '';
-      if (typeof this.data.services[key].eq === 'string') {
-        tags += `, ${this.data.services[key].name}, ${this.data.services[key].eq}`;
-      }
-      if (typeof this.$t('msg.services.' + key + '.tags') === 'string') {
-        tags += `, ${this.$t('msg.services.' + key + '.tags')}`;
-      }
-      return tags
-        .replace(/\@:e\.[a-z]+ /g, '')
-        .replace(/^, /, '')
-        .split(', ')
-        .sort()
-        .filter((v, i, a) => a.indexOf(v) === i)
-        .join(' tag-')
-        .replace(/^/, 'tag-')
-        .toLowerCase();
     },
     isInResults(tags, results) {
       let seen = false;
