@@ -5,7 +5,7 @@ meta:
   F: <a href="@:msg.link.F">@:data.meta.fname</a>
   DIo: <a href="@:msg.link.DIo">@:msg.meta.dioname</a>
   lead: '
-   Une initiative du réseau @:msg.meta.F en faveur d’un internet<br/>
+   Une initiative du réseau @:msg.meta.F en faveur d’un internet<br>
 
     <a href="#leds">libre</a>, <a href="#leds">décentralisé</a>,
 
@@ -459,7 +459,7 @@ home:
 
           ou sexuelle, les sites que nous avons visités, notre recette
 
-          préférée, les sujets qui nous intéressent, etc.<br/>
+          préférée, les sujets qui nous intéressent, etc.<br>
 
           Si une donnée seule, prise indépendamment, n’est pas forcément
 
@@ -467,7 +467,7 @@ home:
 
           si vous avez fait des recherches sur le cancer avant de souscrire
 
-          à une assurance-vie).<br/>
+          à une assurance-vie).<br>
 
           Dans un monde où tout devient numérique (lecture, TV, téléphonie,
 
@@ -493,7 +493,7 @@ home:
 
           pieuvres : Facebook possède WhatsApp et Instagram, Google détient
 
-          Youtube et Waze, Microsoft distribue Skype, etc.<br/>
+          Youtube et Waze, Microsoft distribue Skype, etc.<br>
 
           Cette concentration des acteurs pose de multiples problèmes :
 
@@ -507,13 +507,13 @@ home:
 
           Google (Android) et Microsoft (Windows Phone) se partagent
 
-          la quasi-totalité du marché des systèmes d’exploitation pour smartphones.<br/>
+          la quasi-totalité du marché des systèmes d’exploitation pour smartphones.<br>
 
           Par ailleurs, la taille de ces acteurs bride l’innovation :
 
           difficile de lancer une start-up face à Apple ou Google (respectivement
 
-          première et deuxième capitalisations boursières mondiale).<br/>
+          première et deuxième capitalisations boursières mondiale).<br>
 
           Enfin, le manque de diversité de ces géants leur donne aussi
 
@@ -768,15 +768,15 @@ alt:
   text3: '
     Dans cette liste, chaque service est généralement composé d’<b>un
 
-    site web complexe</b> <span aria-hidden="true">( <i class="fa fa-cloud"></i> )</span>
+    site web complexe</b> <span aria-hidden="true">(<i class="fa fa-cloud"></i>)</span>
 
     qui communique avec un <b>logiciel installé sur un ordinateur</b>
 
-    <span aria-hidden="true">( <i class="fa fa-server"></i> )</span>
+    <span aria-hidden="true">(<i class="fa fa-server"></i>)</span>
 
     où se trouvent les données personnelles et auxquels on accède via divers
 
-    <b>outils installés chez soi</b> <span aria-hidden="true">( <i class="fa fa-home"></i> )</span>.
+    <b>outils installés chez soi</b> <span aria-hidden="true">(<i class="fa fa-home"></i>)</span>.
     '
   text4: '
     Ainsi, lorsque nous utilisons internet, nous devons <b>accorder
@@ -800,11 +800,12 @@ medias:
   subtitle: Historique de la campagne Dégooglisons Internet
   intro: '
     Dégooglisons Internet est une campagne qui a duré trois ans (oct. 2014 - oct. 2017),
-    mais qui s’inscrit dans un cheminement plus général de Framasoft.<br/>
+
+    mais qui s’inscrit dans un cheminement plus général de Framasoft.<br>
 
     Parcourez de la molette la fresque ci-dessous pour en découvrir les
 
-    dates-clés (plein écran <a href="@:msg.link.dio/fresque">disponible ici</a>).
+    dates-clés (plein écran <a href="@:msg.link.dio/fr/fresque">disponible ici</a>).
     '
   timeline: Fresque Dégooglisons Internet
 
@@ -813,7 +814,7 @@ medias:
     intro: '
       Les visuels ci dessous sont sous licence libre, les crédits sont
 
-      précisés sous chaque onglet.<br/>Contrairement aux apparences,
+      précisés sous chaque onglet.<br>Contrairement aux apparences,
 
       ces visuels sont en grand format (clic droit + « Enregistrer la
 
@@ -1008,7 +1009,7 @@ timeline:
   - '<a href="https://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait/">Annonce de la saison 2 de Dégooglisons Internet</a>'
   - '<a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:msg.timeline.launch Framadrive</a>'
   - '<a href="https://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs/">Annonce de MyPads</a>'
-  - '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">Lancement Framaboard</a>'
+  - '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">@:msg.timeline.launch Framaboard</a>'
   - '<a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:msg.timeline.launch la nouvelle version de Framadate</a>'
   - '<a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:msg.timeline.launch Framadrop</a>'
   - '<a href="https://framablog.org/2015/10/23/les-nouveaux-loups-du-web-lavant-premiere/">Partenariat de promotion du documentaire « Les Nouveaux Loups du Web »</a>'
