@@ -33,3 +33,659 @@ link:
 
 img:
   map: /img/Carte2016-romains-en.png
+
+leds:
+  title: For an Internet…
+  libre:
+    title: Free
+    desc: '
+      As far as standards and protocols are concerned, the story of
+
+      the Internet is one of free software. But its popularity and potential make big firms jealous.
+
+      They would like to claim control of it by establishing closed code in locked systems
+
+      that are not interoperable.
+
+      To keep the Internet faithful to the founding principles which led to its success,
+
+      it is important that there should be free apps on the Internet, that is to say,
+
+      apps with opensource codes, accessible under free licence.
+      '
+  ethic:
+    title: Ethics
+    desc: '
+      We wish to support a participative and
+
+      independent Internet. Exploitation, surveillance, censorship, and data
+
+      appropriation are trends we refuse in favor of transparency (integrity),
+
+      clearly displayed policies for users of the various services, and the refusal of all forms of discrimination.
+      '
+  decent:
+    title: Decentralized
+    desc: '
+      The genius of the Internet must dwell at the margins of the network
+
+      in a peer-to-peer sharing dynamic, to avoid creating a Minitel 2.0. To insure equality
+
+      for all concerned, from citizens to businesses, monopolies must not only be excluded, but also
+
+      prevented from monopolizing personal or public data. Through clear
+
+      tutorials explaining how to propagate free solutions for establishing a fairer Internet,
+
+      we intend to facilitate the spreading of codes and a diversification of usages.
+      '
+  solid:
+    title: Solidarity
+    desc: '
+      Through the services we provide, we promote a model
+
+      based on cost participation, resource sharing, and accessibility
+
+      for the largest number of people.
+
+      Any abuse will thus be avoided, for we all remain fully aware of our common interests.
+
+      This model also has an educational purpose since, as we document the roll-out of services,
+
+      many users will in their turn be able to share those resources.
+      '
+  charte: To find out more about this, feel free to read <strong><a href="@:msg.link.charte">our detailed charter</a></strong>.
+
+map:
+  title: Click on the map to discover all alternatives…
+  alt: '
+    The year is 2016 AD. The whole web is occupied by centralized services… Well… not entirely. One small village
+
+    of indomitable Free Software lovers still holds out against the invaders. And life is not easy for the
+
+    legionaries who garrison the fortified camps of Closedum, Centralizum, Trackum, and Proprietarum.
+    '
+
+camps:
+  village:
+    title: In the freedom defenders’ village
+    text1: '
+      Engulfed in sprawling multinational firms, a few non-profit organizations keep up the struggle for an
+
+      open web respectful of internet users.
+      '
+    text2: '
+      In addition to @:msg.meta.F, the non-profit association
+
+      leading the campaign described here, we may also mention <a href="http://april.org">l’April</a>,
+
+      <a href="http://laquadrature.net">la Quadrature du Net</a> or <a href="http://aful.org">l’Aful</a>.
+
+      These organizations can only keep going with the help of your donations, so don’t forget to support them!
+      '
+  fermetum:
+    title: <i lang="la">Closedum</i>
+    text1: '
+      Online services are often
+
+      closed-source: once you start using them, it is very difficult
+
+      to leave, because these companies do everything to keep you captive by
+
+      preventing you, for example, from migrating your data elsewhere.
+      '
+    text2: '
+      Using open source services means making sure that you will never be controlled by a particular website,
+
+      but also that you can always migrate your data elsewhere.
+      '
+  centralisum:
+    title: <i lang="la">Centralizum</i>
+    text1: '
+      Centralized services raise many problems: they make your data very vulnerable (one inaccessible website
+
+      and everything is down) and make it very easy for third parties to exploit your data.
+      '
+    text2: '
+      Using decentralized online services means maintaining a choice between using an online resource such as
+
+      those proposed by Framasoft or installing/managing the service yourself.
+      '
+  espionnum:
+    title: <i lang="la">Trackum</i>
+    text1: '
+      “If it’s free, you are the product”: many online services make a living by exploiting your personal data,
+
+      i.e., selling it to advertising companies. Furthermore, most of these services are based in the United
+
+      States and obey US laws like the PATRIOT ACT which deny all rights to privacy.
+      '
+    text2: '
+      Using online services hosted in Europe means ensuring that you are not dependent on the laws of another
+
+      continent. In addition, by hosting the service yourself, no third party can violate your privacy.
+      '
+  privatum:
+    title: <i lang="la">Proprietarum</i>
+    text1: '
+      Freedom-depriving services ("proprietary" in everyday language) are totally opaque: it is impossible to
+
+      know exactly what the software does with your data. Only the publisher has control over it.
+      '
+    text2: '
+      Using Free online services means being sure the community has control over the software and maintains the
+
+      ability to modify it, to install it elsewhere, etc.
+      '
+  nsa:
+    title: <abbr title="National Security Agency" lang="en">NSA</abbr>
+    text1: '
+      Edward Snowden’s revelations about the PRISM program of the
+
+      @:msg.camps.nsa.title showed that fears about massive violations of users’ privacy were well-founded.
+      '
+    text2: '
+      Using centralized services
+
+      amounts to offering your personal data to surveillance organizations without any means to control what they do with it.
+      '
+
+# Home -----------------------------------------------------------------
+home:
+  title: Main Page
+  intro:
+    bubble1: The web giants <strong>centralize our digital lives</strong> in exchange for their services
+    bubble2: The <strong>Free Software</strong> community offers <strong>alternative ethical services</strong>
+    bubble3: The <strong>Framasoft</strong> network intends to <strong>prove it</strong><br>by <strong>hosting</strong> them
+
+    btnList1: Are you looking for a specific tool?
+    btnList2: (file sharing, communication, collaborative work...)'
+    btnList3: Find the free service<br>to meet your needs.
+    btnAlt1: You use a particular service?
+    btnAlt2: (from Google, Apple, Facebook, Amazon, Microsoft…)
+    btnAlt3: Discover free alternatives<br> to replace it.
+
+  more:
+    title: Go further
+    desc: '
+      On the way to your digital independance... ? The road is clear!<br>
+
+      De-google-ify Internet offers you the possibility to follow it in several steps.
+      '
+    docs:
+      btn: Documentation
+      desc: '
+        Discover and use free alternatives (hosted by Framasoft),
+
+        with the help of our collaborative <strong>documentation</strong> to learn
+
+        how they work, how to log in, how to use their fonctions, etc..
+        '
+    cloud:
+      btn: Framacloud
+      desc: '
+        If you have the possibility, freely host the same software
+
+        directly on your school/association/company/organization
+
+        thanks to our self-hosting tutorial found in the  <strong>Framacloud</strong>.
+        '
+    chatons:
+      btn: KITTENS
+      desc: '
+        You can also look for a trustworthy local webhosting service
+
+        among the <strong>KITTENS</strong>, Keen Internet Talented Teams Engaged in Network Services!
+        '
+
+  why:
+    title: Why?
+    desc: '
+      These services are software, but this software is set up on
+
+      someone else's computer (on what's called "servers").
+
+      Using services offered by Google, Apple, Facebook, Amazon, Microsoft…
+
+      ("GAFAM") means giving them your data,
+
+      the parts of your life that you put on the Internet.
+
+      So it's a matter of trust.
+      '
+    explain:
+      btn: Stakes and dangers
+      desc: '
+        This trust has allowed a handful of companies (GAFAM)
+
+        to centralize data from a huge part of the population,
+
+        holding a near-monopoly on our digital lives (an oligopoly).
+
+        The <strong>dangers and stakes</strong> are threefold:
+
+        economic, technological, cultural...
+        '
+    props:
+      btn: Nos propositions
+      desc: '
+        <strong>Our approach</strong> is simple and consists
+
+        in determining the self-imposed conditions that may justify such trust.
+
+        We aim to offer alternatives that respect people and diversity while
+
+        making it impossible to reproduce such monopolies.
+        '
+    who:
+      btn: Who are we?
+      desc: '
+        In order for you to determine whether you can trust us,
+
+        we have published an introduction to our Framasoft network
+
+        (and to the non-profit that supports it), together with our reports
+
+        and administrative documention under <strong>Who are we?</strong>
+        '
+
+  contact:
+    title: Contact us
+    text1: '
+      We are a small-scale non-profit (under 40 members, under 10 employees)
+
+      that has to deal with many different types of requests:
+      '
+    text2:
+    - taking part in various events ;
+    - answering the press and media ;
+    - providing assistance with our services ;
+    - sharing technical experience ;
+    - providing all types of explanation…
+    text3: '
+      In order to answer you in the most human, personal fashion, we
+
+      have designed a single page that enables us to find
+
+      the most suitable person for your particular query as quickly as possible.
+
+      We promise we'll do our best, but there are only 24 hours to a day ;).
+      '
+    btn: Contact Framasoft
+
+  support:
+    title: Support us
+    text1: '
+      Like all our actions, our services are not free of charge:
+
+      they are financed by donations from people who support us through a
+
+      one off or regular donation.
+
+      About 90% of Framasoft\'s revenues
+
+      comes from the donation economy and is used to finance:
+      '
+    text2:
+    - our permanent staff\'s salaries ;
+    - servers and technical expenses ;
+    - travel, flyers and communications ;
+    - our participation in the world of free software/libre culture, etc.
+    text3: '
+      Framasoft being an association of general interest,
+
+      a donation of 100€ in France will cost you 34€ after tax exemption.
+
+      We have set up a unique site to support us,
+
+      consult our reports (validated by an auditor),
+
+      and learn more about the donations received.
+      '
+    btn: Support Framasoft
+
+  speakabout:
+    title: Ils pralent de nous…
+    btn: Espace médias
+
+  explain:
+    stakes:
+      btn: Stakes
+      title: What is at stake?
+      text1: '
+        In recent years, we have witnessed <strong> the widespread corporate concentration
+
+        of Internet actors</strong>  (Youtube belonging to Google,
+
+        WhatsApp to Facebook, Skype to Microsoft, etc.).
+
+        This centralisation is detrimental, not only because it
+
+        curbs innovation, but also because it results in a
+
+        loss of freedom for users,
+
+        <strong>who no longer control their digital existence</strong>:
+
+        their behaviour is continually dissected and analysed so that they can be better targeted by
+
+        publicity, and their data – which should be private (sites visited,
+
+        emails exchanged, videos watched, etc.) – can be analysed
+
+        by government services.
+        '
+      text2: '
+        The way that Framasoft would like to deal with this issue
+
+        is simple: to highlight and provide a Free, Ethical, Decentralised and Solidarity-based alternative
+
+        to each of these services which deprive users of their freedom.
+        '
+    danger:
+      btn: Threats
+      title: Threats
+      text: '
+        The increasingly centralized online services provided by sprawling giants
+
+         like Google, Amazon, Facebook, Apple, or Microsoft (GAFAM)
+
+         pose a threat to our digital lives.
+        '
+      espionum:
+        title: Surveillance
+        desc: '
+          These services track us everywhere, while claiming to give us a better “user experience”.
+
+          But our behaviour is under constant surveillance.
+
+          This information can be used to display targeted adverts,
+
+          but the revelations of the Snowden case have also shown
+
+          that Internet giants have been forced to communicate
+
+          this data (sometimes extremely private: emails from Gmail,
+
+          photos shared on Facebook, Skype conversations,
+
+          smartphone locations, etc.) to government services.
+
+          <strong>Under the pretense of fighting terrorism</strong>,
+
+          states are able to gather much more intelligence
+
+          than a "Big Brother" would ever have dreamed of.
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=espionnage
+      privatum:
+        title: Privacy
+        desc: '
+          Our data is an extension of ourselves. It tells
+
+          third-parties where we are, who we are with, our political
+
+          and sexual orientations, sites we have visited, our favorite recipes,
+
+          our favorite topics of interest, and so on.<br/>
+
+          While a single data point is not always
+
+          sensitive, the loss of large amounts of aggregated data can be dangerous (for example
+
+          if you browse topics about cancer before subscribing
+
+          to a life insurance).<br/>
+
+          In a world where everything has been digitized (ebooks, TV, phones,
+
+          music, social networks, etc.), <strong>your private life
+
+          is an essential part of your individuality</strong>.
+
+          It would only take a malicious hacker with access to your smartphone
+
+          a few minutes to cause you serious harm
+
+          taking control of your identity on
+
+          Facebook, consulting your professional or medical information, making
+
+          purchases without your authorisation, etc.).
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=vie-privee
+      centralisum:
+        title: Centralization
+        desc: '
+          Major actors of the Internet have become real
+
+          giants: Facebook has acquired WhatsApp and Instagram, Google owns
+
+          Youtube and Waze, Microsoft distributes Skype, etc.<br/>
+
+          This concentration of actors creates multiple issues:
+
+          what if Facebook were suddenly shut down?
+
+          And how could we browse the Web if Google went down?
+
+          <strong>We rely more and more on services provided
+
+          by a small group of suppliers.</strong> For example, Apple (iPhone),
+
+          Google (Android) and Microsoft (Windows Phone) dominate
+
+          almost the entire mobile OS industry.<br/>
+
+          Furthermore, the size of these actors impedes innovation:
+
+          it’s hard to launch a startup that can match up to Apple or Google
+
+          (the first and second worldwide market capitalisations, respectively).<br/>
+
+          Finally, The lack of diversity of the giants means
+
+          they can track many people who are unaware that there may be alternatives,
+
+          and it can influence the kind of data you receive
+
+          (a Google search will produce different results for the term “nuclear power”
+
+          depending on whether Google considers you to be an
+
+          environmentalist or pro-nuclear power).
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=centralisation
+      fermetum:
+        title: Termination
+        desc: '
+          Web services used on your computer,
+
+          smartphone, tablets (and other devices)are usually hosted on the “cloud”:
+
+          servers spread across the planet, that host not only your data
+
+          (emails, pictures, files, etc.), but also the application code.<br>
+
+          For your data, this raises the issue of sustainability
+
+          (what would become of your files if Dropbox were to close tomorrow?) and of
+
+          your ability to switch easily between services (how would
+
+          you recover your data from Facebook or Picasa and
+
+          import it, with all the adjoining comments, into another service?). <br>
+
+          For applications, this means that <strong>you are
+
+          completely at the mercy of your service provider</strong>
+
+          when it comes to proliferation of advertisements, changes to the user interface, etc., and
+
+          that you have hardly any control over the way an application
+
+          works. It is a “black box” that can exhibit
+
+          malicious behaviour (sending spam SMS without your knowledge, executing malicious code, and so on).<br>
+
+          In short, these companies trap us in gilded cages: gilded yes,
+
+          but cages nonetheless!
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=fermeture
+
+    props:
+      btn: Our proposals
+      title: Our proposals
+      text: '
+        Framasoft wishes to face the threats to our digital lives
+
+        by offering free, ethical, decentralised, and solidarity-based services.
+        '
+      libre:
+        title: Freedom
+        text1: '
+          The story of the Internet itself is one of free software,
+
+          and this goes for standards as well as protocols.
+
+          Its potential and popularity are a cause for envy, and
+
+          large companies would like nothing better than to control it by imposing
+
+          closed-source, locked-down, and non-interoperable systems.
+          '
+        text2: '
+          For the Internet to stay true to its founding principles, those
+
+          which have led to its success, users must be able to choose free software,
+
+          that is to say, software whose source code remains open and accessible and is covered by a free software license.
+          '
+        text3: '
+          Framasoft is thus committed to using only software with “free” source code.
+          '
+      ethic:
+        title: Ethics
+        text1: '
+          We promote an Internet based on independence and sharing.
+          '
+        text2: '
+          We oppose the exploitation, surveillance, censorship and appropriation of data
+
+          in favour of transparency (probity),
+
+          clear presentation of services’ terms of use and refusing discrimination.
+          '
+        text3: '
+          Framasoft undertakes not to exploit its users’ data, and to promote a fair and open Web.
+          '
+      decent:
+        title: Decentralization
+        text1: '
+          Internet intelligence must remain with each individual player on the network, in a spirit of
+
+          sharing among peers, to avoid creating a Minitel (a pre-Internet videotext terminal and service) version 2.0.
+          '
+        text2: '
+          To ensure equality for all, whether citizens or businesses, not only is it essential to avoid monopolies,
+
+          but large organizations must be prevented from grabbing personal or public data.
+          '
+        text3: '
+          Using tutorials to explain how to increase the use of free solutions that will allow
+
+          a fairer Internet, we help to distribute codes and diversify usage.
+          '
+        text4: '
+          Framasoft is thus committed to facilitating self-hosting and interoperability,
+
+          so that its users don’t get “locked in”.
+          '
+      solid:
+        title: Solidarity
+        text1: '
+          Through the services we deploy, we promote an economic model
+
+          based on sharing costs and resources, and providing
+
+          widespread access.
+          '
+        text2: '
+          This model also has an educational aspect because we believe that by documenting
+
+          ways to setup services, many users will
+
+          in turn be able to share these resources.
+          '
+        text3: '
+          We think that, by not infantilizing users and by
+
+          sharing responsibility for the use of services, it will be possible to regulate abuse.
+          '
+        text4: '
+          Framasoft is thus committed to promoting respect and autonomy
+          for its users (as long as this is reciprocated).
+          '
+
+      charte:
+        title: Services and Charter
+        desc: '
+          You can find online the list of the services we
+
+          already offer (and those yet to come), together with our charter:
+          '
+        btn: Framasoft service charter
+
+    concrete:
+      title: In practice
+      text1: '
+        The “de-google-ify Internet” project - which does not exclusively concern
+
+        Google - consists in <strong> offering as many alternative services
+
+        as possible to those we consider a threat
+
+        to our digital lives</strong>.
+        '
+      text2: '
+        Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda,
+
+        Youtube, Doodle, Yahoo! Groups, and many others,
+
+        are extremely convenient services but <strong>they have become far too
+
+        large and have made us dependent on them</strong>.
+
+        Framasoft wishes to resist this trend and is putting forward a roadmap
+
+        for setting up alternative services over several years.
+        '
+      text3: '
+        These services are free, gratis, open to all (insofar
+
+        as our technical and financial capabilities allow us), as <strong>
+
+        <a href="http://en.wikipedia.org/wiki/Commons" title="digital commons">digital commons</a>
+
+        </strong>.
+
+        With the goal of decentralising the Internet and promoting
+
+        self-hosting, we will do our best to ensure that everyone
+
+        can install their own services (for themselves, for
+
+        their organisation, or their company).
+        '
+      text4: '
+        Of course, We are not aiming <em>to compete with</em>
+
+        these services, We merely wish to offer a space
+
+        that is neutral, non-commercial, and in no way aggressive towards its users.
+        '
+      text5: '
+        See the list of services we are already offering (and those that we are preparing):
+        '
