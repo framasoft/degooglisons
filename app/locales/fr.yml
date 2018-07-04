@@ -1129,7 +1129,7 @@ services:
     mTitle: Finies les adresses trop longues
     mBody:
       desc: '
-        Avec @:data.services.bitly.F ou <a href="https://huit.re">Huit.re</a>,
+        Avec @framaservice ou <a href="https://huit.re">Huit.re</a>,
 
         il est possible de raccourcir des adresses web trop longues sans toutefois en tracer l’utilisation.
 
@@ -1154,7 +1154,7 @@ services:
     mTitle: Votre site web en quelques clics
     mBody:
       desc: '
-        @:data.services.blogger.F vous permet de créer un site web facilement, avec
+        @framaservice vous permet de créer un site web facilement, avec
 
         des outils libres et de l’héberger sur nos serveurs.
 
@@ -1170,7 +1170,6 @@ services:
     tags: site, vitrine, web, html
 
   bubblus:
-    name: Bubbl.us
     sDesc: Cartes heuristiques
     lDesc: Fabriquez vos cartes mentales
     tDesc: '
@@ -1188,7 +1187,7 @@ services:
     mTitle: Pourquoi créer une carte mentale ?
     mBody:
       desc: '
-        @:data.services.bubblus.F vous permet d’organiser un brainstorming,
+        @framaservice vous permet d’organiser un brainstorming,
 
         ordonner vos idées à plusieurs, apprendre et faire apprendre une
 
@@ -1224,7 +1223,7 @@ services:
     mTitle: Libérez vos pétitions
     mBody:
       desc: '
-        @:data.services.change.F vous permet de lancer des pétitions sur les sujets
+        @framaservice vous permet de lancer des pétitions sur les sujets
 
         qui vous tiennent à cœur. En quelques clics, votre pétition est
 
@@ -1265,7 +1264,7 @@ services:
     mTitle: Triez tout le web si vous voulez (mais c´est long)
     mBody:
       desc: '
-        @:data.services.delicious.F est un petit fourre-tout numérique,
+        @framaservice est un petit fourre-tout numérique,
 
         qui vous permet de conserver et retrouver les
 
@@ -1280,9 +1279,7 @@ services:
         services Framasoft que vous utilisez !
         '
       feat: '
-        Créez votre
-
-        compte, puis ajoutez le marque-pages interactif
+        Créez votre compte, puis ajoutez le marque-pages interactif
 
         (Bookmarklet) à la barre personelle de voter navigateur.
 
@@ -1322,7 +1319,7 @@ services:
     mTitle: Organiser des rendez-vous simplement et librement
     mBody:
       desc: '
-        Avec @:data.services.doodle.F vous serez en mesure de
+        Avec @framaservice vous serez en mesure de
 
         planifier un rendez-vous à plusieurs ou créer
 
@@ -1372,9 +1369,7 @@ services:
 
         vous pouvez aller chercher un hébergement chez les
 
-        <a href="https://chatons.org">CHATONS</a> dont notre
-
-        partenaire <a href="https://indiehosters.net">Indie Hosters</a>
+        <a href="https://chatons.org">CHATONS</a>
 
         (ou vous essayer à l´auto hébergement avec
 
@@ -1410,11 +1405,11 @@ services:
 
         avec tous vos appareils (voire les partager avec des ami-e-s).
         '
-    feat:
-    - prise de notes synchronisées
-    - mise en page facilitée (syntaxe Markdown)
-    - hébergement d´images et de fichiers (légers)
-    - possibilité de partager un « Tableau de notes » avec d´autres utilisateurs
+      feat:
+      - prise de notes synchronisées
+      - mise en page facilitée (syntaxe Markdown)
+      - hébergement d´images et de fichiers (légers)
+      - possibilité de partager un « Tableau de notes » avec d´autres utilisateurs
     tags: noter, partager, chiffrement
 
   facebook:
@@ -1491,7 +1486,7 @@ services:
 
         C’est d’ailleurs la solution retenue par Framasoft, qui dispose
 
-        toujours d’un compte GitHub, alors que les développements sont réalisés sur notre forge.</p>
+        toujours d’un compte GitHub, alors que les développements sont réalisés sur notre forge.
         '
     tags: coder, forge, développement
 
@@ -1614,7 +1609,7 @@ services:
       desc: '
         @framaservice est un service de rédaction collaborative en ligne
 
-        basé sur le logiciel Etherpad
+        basé sur le logiciel Etherpad.
         '
       more: '
         Un « pad » est un éditeur de texte en ligne. Son vrai plus ?
@@ -1633,7 +1628,7 @@ services:
       - Tchat intégré
       - Historique des versions
       - Exporter votre travail
-      - 'Et bientôt : gérer des sessions et des groupes avec MyPads !'
+      - Gérer des sessions et des groupes avec MyPads !
     tags: document, texte, collaborer
 
   gforms:
@@ -1753,10 +1748,12 @@ services:
     lDesc: Suivez l’actualité et faites vos choix librement
     tDesc: '
       Rassembler les flux d’actualité (RSS, Atom) de blogs, chaînes
+
       vidéos, etc. en un seul lieu de consultation (alternative à Google Reader).
       '
     hDesc: '
       En vous abonnant aux flux RSS de vos sites préférés,
+
       restez informés de toutes leurs actualités avec Framanews !
       '
     mTitle: Toujours au courant, jamais en retard
@@ -2094,10 +2091,8 @@ services:
   scribd:
     sDesc: Partage de d’écrits
     lDesc: Affichez et partagez vos documents
-    hDesc: '
-
-    tDesc: '
-
+    hDesc:
+    tDesc:
     mTitle: Votre lectorat aussi a des droits
     mBody:
       desc: '
@@ -2182,13 +2177,11 @@ services:
         Tout se passe entre vous et vos amis.
         '
       feat: '
-        Directement à partir de
+        Directement à partir de votre navigateur web,
 
-        votre navigateur web, vous êtes mis en relation avec vos amis,
+        vous êtes mis en relation avec vos amis, sans devoir installer de logiciel supplémentaire.
 
-        sans devoir installer de logiciel supplémentaire. Une fois connecté,
-
-        donnez l’autorisation à votre navigateur d’utiliser votre micro
+        Une fois connecté, donnez l’autorisation à votre navigateur d’utiliser votre micro
 
         et votre webcam, et profitez de la discussion en toute simplicité.
         '
@@ -2212,7 +2205,7 @@ services:
     mTitle: Discutez avec votre équipe sur un tchat boosté aux stéroïdes
     mBody:
       desc: '
-        <b class="violet">Frama</b><b class="vert">team</b> est un service de <b>tchat</b>
+        @framaservice est un service de <b>tchat</b>
 
         libre qui permet de communiquer avec son équipe en notifiant ses collègues,
 
@@ -2528,7 +2521,6 @@ services:
 
   orange:
     sDesc: Fournisseur d’Accès à Internet
-
 
   outlook:
     sDesc: Client de courriel
