@@ -6,6 +6,7 @@ pages:
   stage: deploy
   script:
   - npm install
+  - ./base64.sh
   - npm run preview
   - mv -f public/$CI_PROJECT_NAME/* public
   artifacts:
@@ -19,6 +20,7 @@ production:
   stage: deploy
   script:
   - npm install
+  - ./base64.sh
   - npm run prod
   - mkdir "${HOME}/.ssh"
   - chmod 700 "${HOME}/.ssh"

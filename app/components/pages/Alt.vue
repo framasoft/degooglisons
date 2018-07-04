@@ -6,7 +6,7 @@
         <div class="map col-lg-8 clearfix">
           <h2 class="h3">{{ $t('msg.map.title') }}</h2>
           <div id="map-container">
-              <img :src="$t('/img/') + 'ghost.png'" :alt="$t('msg.map.alt')" id="carte" usemap="#cartemap" />
+              <img :src="img['ghost.png']" :alt="$t('msg.map.alt')" id="carte" usemap="#cartemap" />
               <map id="cartemap" name="cartemap">
                 <!-- Village, Big camps, NSA-->
                 <area
@@ -123,7 +123,7 @@
             >
             <img
               v-if="data.png.gafam.indexOf(sanitize(gafam)) > -1"
-              :src="$t('/img/') + 'gafam/' + sanitize(gafam) + '.png'" alt="" />
+              :src="img.gafam[sanitize(gafam) + '.png']" alt="" />
             {{ gafam.replace(/@:[.a-z]+ /g, '') }}
           </li>
         </ul>
@@ -334,7 +334,7 @@
                           >
                           <img
                             v-if="data.png.gafam.indexOf(sanitize(gafam)) > -1"
-                            :src="$t('/img/') + 'gafam/' + sanitize(gafam) + '.png'" alt="" />
+                            :src="img.gafam[sanitize(gafam) + '.png']" alt="" />
                           {{ gafam.replace(/@:[.a-z]+ /g, '') }}
                         </li>
                       </ul>
@@ -346,7 +346,7 @@
                           >
                           <img
                             v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.F'))) > -1"
-                            :src="$t('/img/') + 'leds/' + sanitize($t('data.services.' + key + '.F')) + '.png'" alt="" />
+                            :src="img.leds[sanitize($t('data.services.' + key + '.F')) + '.png']" alt="" />
                           <span v-html="$t('data.services.' + key + '.F')"></span>
                           <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -357,7 +357,7 @@
                           >
                           <img
                             v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.S'))) > -1"
-                            :src="$t('/img/') + 'leds/' + sanitize($t('data.services.' + key + '.S')) + '.png'" alt="" />
+                            :src="img.leds[sanitize($t('data.services.' + key + '.S')) + '.png']" alt="" />
                           <span v-html="$t('data.services.' + key + '.S')"></span>
                           <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -371,7 +371,7 @@
                           >
                           <img
                             v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
-                            :src="$t('/img/') + 'leds/' + sanitize(alt) + '.png'" alt="" />
+                            :src="img.leds[sanitize(alt) + '.png']" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -383,7 +383,7 @@
                           >
                           <img
                             v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
-                            :src="$t('/img/') + 'leds/' + sanitize(alt) + '.png'" alt="" />
+                            :src="img.leds[sanitize(alt) + '.png']" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -432,6 +432,7 @@ export default {
       play: true,
       results: '',
       data: require('../../data.yml'), // eslint-disable-line
+      img: require('../../img.yml'), // eslint-disable-line
       scrollMenu: {
         left: 0,
         listWidth: 0,
