@@ -1,11 +1,19 @@
-echo -e "gafam:\r"  > app/img.yml
+#!/bin/sh
+echo "{\n  \"gafam\": {\r"  > app/assets/img/img.json
 for image in app/assets/img/gafam/*.png
 do
-  echo -e "  '$(basename $image)': 'data:image/png;base64,\n$(base64 $image)'\n" >> app/img.yml
+  name=${image##*/}
+  name=${name%.*}
+  echo "    \"$name\": \"data:image/png;base64,$(base64 --wrap=0 $image)\"," >> app/assets/img/img.json
 done
-echo -e "leds:\r"  >> app/img.yml
+truncate -s-2 app/assets/img/img.json
+echo "\n  },\n  \"leds\": {\r"  >> app/assets/img/img.json
 for image in app/assets/img/leds/*.png
 do
-  echo -e "  '$(basename $image)': 'data:image/png;base64,\n$(base64 $image)'\n" >> app/img.yml
+  name=${image##*/}
+  name=${name%.*}
+  echo "    \"$name\": \"data:image/png;base64,$(base64 --wrap=0 $image)\"," >> app/assets/img/img.json
 done
-echo -e "'ghost.png': 'data:image/png;base64,\n$(base64 app/assets/img/ghost.png)'\n" >> app/img.yml
+truncate -s-2 app/assets/img/img.json
+echo "\n  }\n}" >> app/assets/img/img.json
+

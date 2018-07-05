@@ -12,7 +12,7 @@ import '../node_modules/fork-awesome/css/fork-awesome.css';
 import App from './App.vue';
 import Home from './components/pages/Home.vue';
 import List from './components/pages/List.vue';
-// import Alt from './components/pages/Alt.vue';
+import Alt from './components/pages/Alt.vue';
 import Medias from './components/pages/Medias.vue';
 import Timeline from './components/pages/Timeline.vue';
 
@@ -89,7 +89,7 @@ for (let i = 0; i < locales.length; i += 1) {
   routes.push(
     { path: `/${locales[i]}`, component: Home },
     { path: `/${locales[i]}/list`, component: List },
-    // { path: `/${locales[i]}/alternatives`, component: Alt },
+    { path: `/${locales[i]}/alternatives`, component: Alt },
     { path: `/${locales[i]}/medias`, component: Medias },
     { path: `/${locales[i]}/timeline`, component: Timeline },
   );
