@@ -149,6 +149,7 @@ if (process.env.NODE_ENV !== 'development') {
       routes,
       renderer: new Renderer({
         headless: true,
+        renderAfterTime: 5000,
         renderAfterDocumentEvent: 'render-event',
         injectProperty: 'vuefsPrerender',
         inject: {
