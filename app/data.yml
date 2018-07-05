@@ -203,8 +203,8 @@ services:
     F: <b class="violet">Frama</b>.<b class="vert">link</b></a>
     gafam:
     - Bit.ly
-    - '@:e.g goo.gl'
-    - '@:e.twitter t.co'
+    - goo.gl
+    - t.co
     - tinyurl.com
     altOn:
     - <a href="http://lstu.fr/">LSTU</a>
@@ -224,7 +224,7 @@ services:
     S: <a href="https://getgrav.org/">Grav</a>
     F: <b class="violet">Frama</b><b class="vert">sites</b>
     gafam:
-    - '@:e.g Blogger'
+    - Blogger
     - Pages Jaunes
     - OverBlog
     - Skyblog
@@ -281,7 +281,7 @@ services:
     F: <b class="violet">My</b><b class="vert">Frama</b></a>
     gafam:
     - Del.icio.us
-    - '@:e.g Google Bookmarks'
+    - Google Bookmarks
     - Xmarks
     altOn:
     - <a href="https://www.shaarli.fr">Shaarli</a>
@@ -316,9 +316,9 @@ services:
     F: <b class="violet">Frama</b><b class="vert">drive</b></a>
     gafam:
     - Dropbox
-    - '@:e.g Google Drive'
-    - '@:e.ap iCloud Drive'
-    - '@:e.m OneDrive'
+    - Google Drive
+    - iCloud Drive
+    - OneDrive
     altOn:
     - <a href="http://owncloud.org/providers/#free">OwnCloud</a>
     - <a href="https://seacloud.cc">Seacloud</a>
@@ -354,10 +354,10 @@ services:
     S: <a href="https://diasporafoundation.org/">Diaspora*</a>
     F: <b class="violet">Frama</b><b class="vert">sphère</b></a>
     gafam:
-    - '@:e.f Facebook'
-    - '@:e.m LinkedIn'
+    - Facebook
+    - LinkedIn
     - Viadeo
-    - '@:e.g Google+'
+    - Google+
     altOn:
     - <a href="http://the-federation.info/">Pods Diaspora*</a>
     - <a href="https://pod.movim.eu">Pods Movim</a>
@@ -377,8 +377,8 @@ services:
     S: <a href="https://gitlab.com/">Gitlab</a>
     F: <b class="violet">Frama</b><b class="vert">git</b></a>
     gafam:
-    - '@:e.m GitHub'
-    - '@:e.g Google Code'
+    - GitHub
+    - Google Code
     - SourceForge
     altOn:
     - <a href="http://savannah.gnu.org/">Savannah</a>
@@ -423,7 +423,7 @@ services:
     S: <a href="https://nextcloud.com/">Nextcloud</a>
     F: <b class="violet">Fram</b><b class="vert">agenda</b></a>
     gafam:
-    - '@:e.g Google Agenda'
+    - Google Agenda
     altOn:
     altOff:
     - <a href="http://www.zkoss.org/product/">ZK Calendar</a>
@@ -441,8 +441,8 @@ services:
     S: <a href="https://github.com/rvolz/BicBucStriim">BicBucStriim</a>
     F: <b class="violet">Frama</b><b class="rouge">bookin</b></a>
     gafam:
-    - '@:e.g Google Books'
-    - '@:e.am Amazon'
+    - Google Books
+    - Amazon
     altOn:
     - <a href="http://fr.wikisource.org/wiki/Wikisource:Accueil">WikiSource</a>
     - <a href="http://gallica.bnf.fr/html/livres/livres">Gallica</a>
@@ -462,8 +462,8 @@ services:
     S: <a href="http://etherpad.org/">Etherpad</a>
     F: <b class="violet">Frama</b><b class="vert">pad</b></a>
     gafam:
-    - '@:e.g Google Docs'
-    - '@:e.m Office 365'
+    - Google Docs
+    - Office 365
     - Zoho Office
     altOn:
     altOff:
@@ -479,7 +479,7 @@ services:
     S: <a href="https://www.drupal.org/project/webform">Webform</a>
     F: <b class="violet">Frama</b><b class="vert">forms</b></a>
     gafam:
-    - '@:e.g Google Forms'
+    - Google Forms
     altOn:
     - <a href="https://www.limeservice.com/en/">LimeService</a>
     - <a href="http://webform.com">Webform</a>
@@ -498,7 +498,7 @@ services:
     S: <a href="http://www.sympa.org/">Sympa</a>
     F: <b class="violet">Frama</b><b class="vert">listes</b></a>
     gafam:
-    - '@:e.g Google Groupes'
+    - Google Groupes
     altOn:
     - <a href="http://riseup.net/">Riseup</a>
     - <a href="https://www.ouvaton.org/">Ouvaton</a>
@@ -518,8 +518,8 @@ services:
     S: <a href="https://github.com/umap-project/umap/">uMap</a>
     F: <b class="violet">Frama</b><b class="vert">carte</b></a>
     gafam:
-    - '@:e.g Google Maps'
-    - '@:e.m Bing Maps'
+    - Google Maps
+    - Bing Maps
     - ViaMichelin
     - Mappy
     altOn:
@@ -538,7 +538,7 @@ services:
     S: <a href="http://tt-rss.org/">TinyTinyRSS</a>
     F: <b class="violet">Frama</b><b class="vert">news</b></a>
     gafam:
-    - '@:e.g Google Reader'
+    - Google Reader
     - Feedly
     altOn:
     altOff:
@@ -556,8 +556,8 @@ services:
     S: <a href="https://github.com/asciimoo/searx">Searx</a>
     F: <b class="violet">Frama</b><b class="vert">bee</b></a>
     gafam:
-    - '@:e.g Google Search'
-    - '@:e.m Bing'
+    - Google Search
+    - Bing
     - Yahoo
     altOn:
     - <a href="https://duckduckgo.com/">DuckDuckGo</a>
@@ -579,7 +579,7 @@ services:
     S: <a href="http://strut.io/">Strut</a>
     F: <b class="violet">Frama</b><b class="vert">slides</b></a>
     gafam:
-    - '@:e.g Google Slides'
+    - Google Slides
     altOn:
     altOff:
     pos: 195,630,40
@@ -594,7 +594,7 @@ services:
     S: <a href="https://ethercalc.org/">Ethercalc</a>
     F: <b class="violet">Frama</b><b class="vert">calc</b></a>
     gafam:
-    - '@:e.g Google Spreadsheet'
+    - Google Spreadsheet
     altOn:
     altOff:
     - <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>
@@ -611,7 +611,7 @@ services:
     F: <b class="violet">Frama</b><b class="vert">pic</b></a>
     gafam:
     - Img.ur
-    - '@:e.f Instagram'
+    - Instagram
     altOn:
     - <a href="http://pix.toile-libre.org/">Toile libre</a>
     - <a href="https://lut.im">Lutim</a>
@@ -631,7 +631,7 @@ services:
     F: <b class="violet">Frama</b><b class="vert">meet</b>
     gafam:
     - Meetup
-    - '@:e.f Facebook Event'
+    - Facebook Event
     altOn:
     altOff:
     pos: 545,620,40
@@ -645,7 +645,7 @@ services:
     S: <a href="http://www.minetest.net/">Minetest</a>
     F: <b class="violet">Fra</b><b class="vert">minetest</b></a>
     gafam:
-    - '@:e.m Minecraft'
+    - Minecraft
     altOn:
     altOff:
     pos: 291,525,40
@@ -737,8 +737,8 @@ services:
     S: <a href="https://jitsi.org/Projects/JitsiMeet">Jitsi Meet</a>
     F: <b class="violet">Frama</b><b class="vert">talk</b></a>
     gafam:
-    - '@:e.m Skype'
-    - '@:e.g Hangouts'
+    - Skype
+    - Hangouts
     altOn:
     - <a href="https://vroom.im/">Vroom.im</a>
     - <a href="https://hubl.in/">Hubl.in</a>
@@ -810,11 +810,11 @@ services:
     S: <a href="https://github.com/Chocobozzz/PeerTube">PeerTube</a>
     F: <b class="violet">Frama</b><b class="rouge">tube</b></a>
     gafam:
-    - '@:e.g Youtube'
+    - Youtube
     - Vimeo
     - Dailymotion
     - Netflix
-    - '@:e.f Facebook Videos'
+    - Facebook Videos
     altOn:
     altOff:
     - <a href="http://butterproject.org/">Butter (PopcornTime)</a>
@@ -884,7 +884,7 @@ services:
     gafam:
     - Pixlr
     - Picozu
-    - '@:e.g Google Drawing'
+    - Google Drawing
     pos:
     FDate: <a href="https://framablog.org/2012/10/23/framavectoriel">2012</a>
     c1: office
@@ -934,7 +934,7 @@ services:
     S: <a href="https://framagit.org/luc/dolomon">Dolomon</a>
     F: <b class="violet">Frama</b><b class="vert">clic</b>
     gafam:
-    - '@:e.g Google Analytics'
+    - Google Analytics
     - Xiti
     altOn:
     altOff:
@@ -992,9 +992,9 @@ services:
     S:
     F: <a href="https://www.mozilla.org/fr/firefox/products/">Firefox</a>
     gafam:
-    - '@:e.g Google Chrome'
-    - '@:e.m Edge (Internet Explorer)'
-    - '@:e.ap Safari'
+    - Google Chrome
+    - Edge (Internet Explorer)
+    - Safari
     - Opera
     altOn:
     altOff:
@@ -1020,8 +1020,8 @@ services:
     F: <a href="http://piwigo.com/">Piwigo</a>
     gafam:
     - Flickr
-    - '@:e.f Instagram'
-    - '@:e.g Picasa'
+    - Instagram
+    - Picasa
     - Tumblr
     - Pinterest
     altOn:
@@ -1056,8 +1056,8 @@ services:
     S:
     F: <a href="https://www.mozilla.org/thunderbird">Thunderbird</a> + <a href="https://enigmail.net/">Enigmail</a>
     gafam:
-    - '@:e.m Outlook'
-    - '@:e.ap Apple Mail'
+    - Outlook
+    - Apple Mail
     altOn:
     altOff:
     - <a href="https://trac.torproject.org/projects/tor/wiki/torbirdy">Tor Birdy</a>
@@ -1099,8 +1099,8 @@ services:
     F: <a href="https://duniter.org/">Duniter</a>
     gafam:
     - Paypal
-    - '@:e.g Google Wallet'
-    - '@:e.ap Apple Pay'
+    - Google Wallet
+    - Apple Pay
     - Orange Cash
     altOn:
     - <a href="http://bitcoin.org/">Bitcoin</a>

@@ -75,14 +75,14 @@
               <article
                 v-for="(service, key) in data.services"
                 v-if="(data.fight.indexOf(key) > -1)"
-                v-show="isInResults($t('msg.services.' + key + '.tags') + ', ' + $t('data.services.' + key + '.gafam[0]'), results)"
+                v-show="isInResults($t('msg.services.' + key + '.tags') + ', ' + data.services[key].gafam[0], results)"
                 class="col-md-3 col-sm-6 text-center">
                 <h3>
                   <i :class="'fa fa-2x fa-' + service.i"></i><br>
                   <p v-html="service.F"></p>
                 </h3>
                 <p class="desc" v-html="$t('msg.services.' + key + '.tDesc')"></p>
-                <p><img class="img-responsive" :src="$t('/img/') + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
+                <p><img class="img-responsive" :src="data['/img/'] + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                 <div class="clearfix">
                   <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('msg.txt.use') }}</a>
 
@@ -122,7 +122,7 @@
                     <p v-html="service.F"></p>
                   </h3>
                   <p class="desc" v-html="$t('msg.services.' + key + '.tDesc')"></p>
-                  <p><img class="img-responsive" :src="$t('/img/') + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
+                  <p><img class="img-responsive" :src="data['/img/'] + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                   <div class="clearfix">
                     <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('msg.txt.use') }}</a>
 
@@ -167,22 +167,22 @@
             <!-- web-screen -->
             <div class="web-browser">
               <div class="toolbar">
-                <img :src="$t('/img/') + 'browser-left.png'" alt="" />
+                <img :src="data['/img/'] + 'browser-left.png'" alt="" />
                 <div class="search-bar"></div>
-                <img :src="$t('/img/') + 'browser-right.png'" alt="" />
+                <img :src="data['/img/'] + 'browser-right.png'" alt="" />
               </div>
               <img
-                :src="$t('/img/') + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
+                :src="data['/img/'] + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
                 class="img-responsive" alt=""
               />
             </div>
 
             <!-- desc -->
-            <p v-html="$t('msg.services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></p>
+            <p v-html="$t('msg.services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, data.services[modal.key].F)"></p>
 
             <!-- video / desc -->
             <p v-if="$t('msg.services.' + modal.key + '.mBody.more') !== 'msg.services.' + modal.key + '.mBody.more'"
-               v-html="$t('msg.services.' + modal.key + '.mBody.more').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></p>
+               v-html="$t('msg.services.' + modal.key + '.mBody.more').replace(/@framaservice/g, data.services[modal.key].F)"></p>
 
             <!-- features -->
             <div v-if="$t('msg.services.' + modal.key + '.mBody.feat') !== 'msg.services.' + modal.key + '.mBody.feat'">
@@ -190,12 +190,12 @@
               <ul v-if="Array.isArray($t('msg.services.' + modal.key + '.mBody.feat'))">
                 <li
                   v-for="(item) in $t('msg.services.' + modal.key + '.mBody.feat')"
-                  v-html="item.replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"
+                  v-html="item.replace(/@framaservice/g, data.services[modal.key].F)"
                 ></li>
               </ul>
               <p
                 v-else
-                v-html="$t('msg.services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))">
+                v-html="$t('msg.services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, data.services[modal.key].F)">
               </p>
             </div>
 
@@ -282,7 +282,7 @@ export default {
         key: 'bitly',
       },
       results: tags,
-      data: require('../../data.yml'), // eslint-disable-line
+      data: this.$i18n.messages.data,
       scrollMenu: {
         left: 0,
         listWidth: 0,
@@ -328,7 +328,7 @@ export default {
       if (type === 'gafam') {
         Object.keys(services).forEach((k) => {
           if (Array.isArray(services[k].gafam) && this.data.fight.indexOf(k) > -1) {
-            tags += `, ${services[k].gafam[0].replace(/\@:e\.[a-z]+ /g, '')}`;
+            tags += `, ${services[k].gafam[0]}`;
           }
         });
       } else {
@@ -339,7 +339,6 @@ export default {
         });
       }
       return tags
-        .replace(/\@:e\.[a-z]+ /g, '')
         .replace(/^, /, '')
         .split(', ')
         .sort()

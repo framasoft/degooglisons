@@ -206,8 +206,8 @@
       <div class="container ombre text-center">
         <h2>{{ $t('msg.home.speakabout.title') }}</h2>
         <ul class="list-inline">
-          <li v-for="media in $t('data.home.medias')">
-            <a :href="media[0]"><img :src="$t('/img/') +'medias/' + media[1]" :alt="media[2]"></a>
+          <li v-for="media in data.home.medias">
+            <a :href="media[0]"><img :src="data['/img/'] +'medias/' + media[1]" :alt="media[2]"></a>
           </li>
         </ul>
         <p>
@@ -241,7 +241,7 @@
                 </a>
               </p>
               <p class="text-center">
-                <img :src="`${$t('/img/')}${$t('msg.medias.tabs.tab2.img[1][1]')}`" alt="" />
+                <img :src="`${data['/img/']}${$t('msg.medias.tabs.tab2.img[1][1]')}`" alt="" />
               </p>
             </div>
             <div class="col-sm-6">
@@ -280,7 +280,7 @@
               </p>
             </div>
             <p class="col-sm-12 text-center">
-              <img :src="`${$t('/img/')}${$t('msg.medias.tabs.tab2.img[0][1]')}`" alt="" />
+              <img :src="`${data['/img/']}${$t('msg.medias.tabs.tab2.img[0][1]')}`" alt="" />
             </p>
             <modal
               id="myFramaModal"
@@ -343,7 +343,7 @@
           </div>
         </div>
         <p class="col-sm-12 text-center">
-          <img :src="`${$t('/img/')}${$t('msg.medias.tabs.tab2.img[4][1]')}`" alt="" />
+          <img :src="`${data['/img/']}${$t('msg.medias.tabs.tab2.img[4][1]')}`" alt="" />
         </p>
         <div class="clearfix">
           <h2>{{ $t('msg.home.explain.concrete.title') }}</h2>
@@ -355,10 +355,10 @@
           <p class="text-center">
             <router-link :to="'/' + $t('lang') + '/list'"
               class="btn btn-warning btn-lg"
-              v-html="$t('msg.list.title') + ' ' + $t('data.meta.f')">
+              v-html="$t('msg.list.title') + ' ' + data.meta.f">
             </router-link>
           </p>
-          <p><img :src="`${$t('/img/')}cloud.jpg`" alt="" class="center-block img-responsive" /></p>
+          <p><img :src="`${data['/img/']}cloud.jpg`" alt="" class="center-block img-responsive" /></p>
         </div>
         <Signature />
       </div>
@@ -387,6 +387,7 @@ export default {
         open: false,
       },
       explain: false,
+      data: this.$i18n.messages.data,
     }
   },
   mounted () {

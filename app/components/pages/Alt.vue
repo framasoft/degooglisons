@@ -32,10 +32,10 @@
                   @click="modal.open = true; modal.key = key;"
                   tabindex="-1" >
               </map>
-              <video :poster="$t('/img/') + $t('msg.img.map')" autoplay muted loop ref="mapVideo" id="mapVideo">
-                <source :src="$t('/img/') + $t('msg.img.map').replace('romains', 'animation').replace('.png','.webm')" type="video/webm" />
-                <source :src="$t('/img/') + $t('msg.img.map').replace('romains', 'animation').replace('.png','.mp4')" type="video/mp4">
-                <img :src="$t('/img/') + $t('msg.img.map')" alt="" style="width:100%;" />
+              <video :poster="data['/img/'] + $t('msg.img.map')" autoplay muted loop ref="mapVideo" id="mapVideo">
+                <source :src="data['/img/'] + $t('msg.img.map').replace('romains', 'animation').replace('.png','.webm')" type="video/webm" />
+                <source :src="data['/img/'] + $t('msg.img.map').replace('romains', 'animation').replace('.png','.mp4')" type="video/mp4">
+                <img :src="data['/img/'] + $t('msg.img.map')" alt="" style="width:100%;" />
               </video>
               <div class="play-pause" v-if="play">
                 <button :title="$t('msg.txt.pause')"
@@ -133,10 +133,10 @@
         <p v-if="data.services[modal.key].FDate.length === 4"
           class="wip">
           {{ $t('msg.txt.weWillProp') }}
-          <span v-html="$t('data.services.' + modal.key + '.F')"></span>
+          <span v-html="data.services[modal.key].F"></span>
           <span class="small">
             {{ $t('msg.txt.releaseOn') }}
-            {{ $t('data.services.' + modal.key + '.FDate') }}
+            {{ data.services[modal.key].FDate }}
             {{ $t('msg.txt.withHelp') }}
             <a :href="$t('msg.link.S')"
               class="btn btn-xs btn-soutenir" :title="$t('msg.meta.support')">
@@ -147,30 +147,30 @@
         </p>
         <p v-else>
           {{ $t('msg.txt.wePropNow') }}
-          <span v-html="$t('data.services.' + modal.key + '.F')"></span>
-          <span class="small" v-html="$t('msg.txt.since') + ' ' + $t('data.services.' + modal.key + '.FDate')"></span>
+          <span v-html="data.services[modal.key].F"></span>
+          <span class="small" v-html="$t('msg.txt.since') + ' ' + data.services[modal.key].FDate"></span>
         </p>
       </div>
 
       <!-- web-screen -->
       <div class="web-browser">
         <div class="toolbar">
-          <img :src="$t('/img/') + 'browser-left.png'" alt="" />
+          <img :src="data['/img/'] + 'browser-left.png'" alt="" />
           <div class="search-bar"></div>
-          <img :src="$t('/img/') + 'browser-right.png'" alt="" />
+          <img :src="data['/img/'] + 'browser-right.png'" alt="" />
         </div>
         <img
-          :src="$t('/img/') + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
+          :src="data['/img/'] + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
           class="img-responsive" alt=""
         />
       </div>
 
       <!-- desc -->
-      <p v-html="$t('msg.services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></p>
+      <p v-html="$t('msg.services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, data.services[modal.key].F)"></p>
 
       <!-- video / desc -->
       <p v-if="$t('msg.services.' + modal.key + '.mBody.more') !== 'msg.services.' + modal.key + '.mBody.more'"
-         v-html="$t('msg.services.' + modal.key + '.mBody.more').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"></p>
+         v-html="$t('msg.services.' + modal.key + '.mBody.more').replace(/@framaservice/g, data.services[modal.key].F)"></p>
 
       <!-- features -->
       <div v-if="$t('msg.services.' + modal.key + '.mBody.feat') !== 'msg.services.' + modal.key + '.mBody.feat'">
@@ -178,12 +178,12 @@
         <ul v-if="Array.isArray($t('msg.services.' + modal.key + '.mBody.feat'))">
           <li
             v-for="(item) in $t('msg.services.' + modal.key + '.mBody.feat')"
-            v-html="item.replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))"
+            v-html="item.replace(/@framaservice/g, data.services[modal.key].F)"
           ></li>
         </ul>
         <p
           v-else
-          v-html="$t('msg.services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, $t('data.services.' + modal.key + '.F'))">
+          v-html="$t('msg.services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, data.services[modal.key].F)">
         </p>
       </div>
 
@@ -191,12 +191,12 @@
       <div slot="footer">
         <!-- source / framacloud -->
         <p class="precisions text-left" v-if="!data.services[modal.key].mFooter">
-          <span v-html="$t('data.services.' + modal.key + '.F')"></span>
+          <span v-html="data.services[modal.key].F"></span>
           {{ $t('msg.txt.basedOn') }}
-          <span v-html="$t('data.services.' + modal.key + '.S')"></span>
+          <span v-html="data.services[modal.key].S"></span>
           <span v-if="data.services[modal.key].CL">
             <br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
-            {{ $t('msg.txt.howTo') }}<a :href="$t('data.services.' + modal.key + '.CL')" class="text-success">{{ $t('msg.txt.installOnServer') }}</a>
+            {{ $t('msg.txt.howTo') }}<a :href="data.services[modal.key].CL" class="text-success">{{ $t('msg.txt.installOnServer') }}</a>
           </span>
         </p>
         <!-- alt / docs -->
@@ -254,11 +254,11 @@
       <p v-html="$t('msg.camps.' + modal2.key + '.text1')"></p>
       <p v-html="$t('msg.camps.' + modal2.key + '.text2')"></p>
       <p class="text-center">
-        <img :src="$t('/img/') + $t(data.camps[modal2.key].img) + '.png'" alt="" />
+        <img :src="data['/img/'] + $t(data.camps[modal2.key].img) + '.png'" alt="" />
       </p>
       <div slot="footer">
         <div class="text-right">
-          <a v-if="data.camps[modal2.key].more" :href="$t('/') + $t('lang') + '/#enjeux'"
+          <a v-if="data.camps[modal2.key].more" :href="data['/'] + $t('lang') + '/#enjeux'"
             class="btn btn-lg btn-link text-uppercase">
             {{ $t('msg.txt.more') }}
           </a>
@@ -295,7 +295,7 @@
                 :style="'left: ' + scrollMenu.left + 'px'">
                 <li><a href="#bloc-carte" :title="$t('msg.txt.backToMap')"
                   data-toggle="tooltip" data-placement="bottom">
-                  <img :src="$t('/img/') + 'carte_petite.png'" :alt="$t('msg.txt.backToMap')" />
+                  <img :src="data['/img/'] + 'carte_petite.png'" :alt="$t('msg.txt.backToMap')" />
                 </a></li>
                 <li v-for="(icon, cat) in data.cat1.icons">
                   <a :href="'#' + cat" :title="$t('msg.cat1.' + cat)"
@@ -320,7 +320,7 @@
                 <thead>
                   <tr>
                     <th class="text-center" scope="col" v-html="$t('msg.alt.table.th1')">'.$t['alt']['alt1'].'</th>
-                    <th class="text-center" scope="col" v-html="$t('data.meta.fname') + ' ' + $t('msg.alt.table.th2')"></th>
+                    <th class="text-center" scope="col" v-html="data.meta.fname + ' ' + $t('msg.alt.table.th2')"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -348,9 +348,9 @@
                           v-if="service.F"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.F'))) > -1"
-                            :src="img.leds[sanitize($t('data.services.' + key + '.F'))]" alt="" />
-                          <span v-html="$t('data.services.' + key + '.F')"></span>
+                            v-if="data.png.leds.indexOf(sanitize(data.services[key].F)) > -1"
+                            :src="img.leds[sanitize(data.services[key].F)]" alt="" />
+                          <span v-html="data.services[key].F"></span>
                           <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOnline')"></i>
@@ -359,9 +359,9 @@
                           v-if="service.S"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(sanitize($t('data.services.' + key + '.S'))) > -1"
-                            :src="img.leds[sanitize($t('data.services.' + key + '.S'))]" alt="" />
-                          <span v-html="$t('data.services.' + key + '.S')"></span>
+                            v-if="data.png.leds.indexOf(sanitize(data.services[key].S)) > -1"
+                            :src="img.leds[sanitize(data.services[key].S)]" alt="" />
+                          <span v-html="data.services[key].S"></span>
                           <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('msg.txt.altOffline')"></i>
@@ -400,8 +400,8 @@
             </div>
           </div>
         </div>
+        <Signature v-if="cat === 'dev'"/>
       </div>
-      <Signature />
     </div>
     <BackTop />
   </main>
@@ -434,7 +434,7 @@ export default {
       },
       play: true,
       results: '',
-      data: require('../../data.yml'), // eslint-disable-line
+      data: this.$i18n.messages.data,
       img: { gafam: {}, leds: {} },
       scrollMenu: {
         left: 0,
@@ -467,6 +467,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.data); // eslint-disable-line
     this.scrollMenuRefresh();
     window.onresize = () => {
       this.scrollMenuRefresh();
@@ -509,10 +510,9 @@ export default {
       let tags = [];
       Object.keys(services).forEach((k) => {
         if (Array.isArray(services[k].gafam) && services[k].pos) {
-          const main = services[k].gafam[0].replace(/\@:e\.[a-z]+ /g, '');
+          const main = services[k].gafam[0];
           const others = services[k].gafam
             .join(', ')
-            .replace(/\@:e\.[a-z]+ /g, '')
             .replace(`${main}`, '')
             .replace(/^, ?/, '')
             .replace(/^/, '(')

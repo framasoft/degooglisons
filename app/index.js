@@ -71,15 +71,6 @@ for (let i = 0; i < locales.length; i += 1) {
   import(/* webpackChunkName: "lang-[request]" */`./locales/${locales[i]}.yml`).then((data) => {
     messages[locales[i]].msg = data;
     messages[locales[i]].lang = locales[i];
-    messages[locales[i]]['/'] = `/${process.env.BASE_URL.replace(/(.+)/, '$1/')}`;
-    messages[locales[i]]['/img/'] = `${messages[locales[i]]['/']}img/`;
-    messages[locales[i]].data = require('./data.yml');
-    messages[locales[i]].data.png.gafam = gafam;
-    messages[locales[i]].data.png.leds = leds;
-    Object.keys(messages[locales[i]].data.services).forEach((k) => {
-      messages[locales[i]].data.services[k].F =
-        `<a href="${messages[locales[i]].data.services[k].FL}">${messages[locales[i]].data.services[k].F}</a>`;
-    });
   }).catch((err) => {
     console.error(err);
   });
@@ -94,6 +85,19 @@ for (let i = 0; i < locales.length; i += 1) {
     { path: `/${locales[i]}/timeline`, component: Timeline },
   );
 }
+
+// Data import
+messages.data = {};
+messages.data = require('./data.yml'); // eslint-disable-line
+messages.data['/'] = `/${process.env.BASE_URL.replace(/(.+)/, '$1/')}`;
+messages.data['/img/'] = `${messages.data['/']}img/`;
+messages.data.png.gafam = gafam;
+messages.data.png.leds = leds;
+Object.keys(messages.data.services).forEach((k) => {
+  messages.data.services[k].F =
+    `<a href="${messages.data.services[k].FL}">${messages.data.services[k].F}</a>`;
+});
+
 // define defaultRouteLang
 for (let j = 0; j < userLang.length; j += 1) { // check if user locales
   for (let i = 0; i < locales.length; i += 1) { // matches with app locales
