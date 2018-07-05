@@ -399,8 +399,8 @@
               </table>
             </div>
           </div>
+          <Signature />
         </div>
-        <Signature v-if="cat === 'dev'"/>
       </div>
     </div>
     <BackTop />
@@ -467,7 +467,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.data); // eslint-disable-line
     this.scrollMenuRefresh();
     window.onresize = () => {
       this.scrollMenuRefresh();
