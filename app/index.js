@@ -89,7 +89,7 @@ for (let i = 0; i < locales.length; i += 1) {
   routes.push(
     { path: `/${locales[i]}`, component: Home },
     { path: `/${locales[i]}/list`, component: List },
-    { path: `/${locales[i]}/alternatives`, component: Alt },
+    // { path: `/${locales[i]}/alternatives`, component: Alt },
     { path: `/${locales[i]}/medias`, component: Medias },
     { path: `/${locales[i]}/timeline`, component: Timeline },
   );
