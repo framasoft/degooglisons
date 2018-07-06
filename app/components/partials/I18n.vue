@@ -12,6 +12,11 @@
             English
           </router-link>
         </li>
+        <li @click="changeLanguage('es')">
+          <router-link :to="'/es/' + (this.$route.path.split('/')[2] || '')">
+            Español
+          </router-link>
+        </li>
         <li @click="changeLanguage('fr')">
           <router-link :to="'/fr/' + (this.$route.path.split('/')[2] || '')">
             Français

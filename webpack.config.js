@@ -109,7 +109,7 @@ module.exports = config;
 
 if (process.env.NODE_ENV !== 'development') {
   // NODE_ENV === 'production|preview'
-  const locales = ['en', 'fr'];
+  const locales = ['en', 'es', 'fr'];
   const routes = [root];
   for (let i = 0; i < locales.length; i += 1) {
     // Localized routes
