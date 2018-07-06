@@ -10,6 +10,7 @@
               <p class="text-center well">
                 <a href="#enjeux"
                   v-html="$t('msg.home.intro.bubble1')"
+                  @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));"
                 ></a>
                 </p>
@@ -18,6 +19,7 @@
               <p class="text-center well">
                 <a href="#solutions"
                   v-html="$t('msg.home.intro.bubble2')"
+                  @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));"
                 ></a></p>
             </div>
@@ -114,6 +116,7 @@
             <div class="col-sm-4">
               <p class="text-center text-danger" aria-hidden="true">
                 <a href="#enjeux"
+                  @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -124,6 +127,7 @@
               <p v-html="$t('msg.home.why.explain.desc')"></p>
               <p>
                 <a href="#enjeux" class="btn btn-xs btn-default"
+                  @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   {{ $t('msg.home.why.explain.btn') }}
                 </a>
@@ -132,6 +136,7 @@
             <div class="col-sm-4">
               <p class="text-center text-success" aria-hidden="true">
                 <a href="#solutions"
+                  @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -143,6 +148,7 @@
               <p>
                 <a
                   href="#solutions" class="btn btn-xs btn-default"
+                  @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
                   {{ $t('msg.home.why.props.btn') }}
                 </a>
@@ -390,8 +396,5 @@ export default {
       data: this.$i18n.messages.data,
     }
   },
-  mounted () {
-    $('a:has(b)').css('text-decoration', 'none');
-  }
 }
 </script>

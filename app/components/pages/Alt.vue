@@ -408,7 +408,7 @@
 </template>
 
 <script>
-import { Modal, Dropdown, Btn } from 'uiv';
+import { Modal, Dropdown, Btn, ScrollSpy } from 'uiv';
 import HeaderComponent from '../partials/Header.vue';
 import Signature from '../partials/Signature.vue';
 import BackTop from '../partials/BackTop.vue';
@@ -482,13 +482,12 @@ export default {
     /* eslint-enable */
 
     $(document).ready(function() {
-      $('a:has(b)').css('text-decoration','none');
-
       // Init map
       $('map').imageMapResize();
       $('#carte').maphilight();
 
       // Sticky (to replace by https://uiv.wxsm.space/scroll-spy/)
+      // (works thanks to the framanav actually)
       $('body').attr({
         'data-spy': 'scroll',
         'data-target': '#sticky .navbar'

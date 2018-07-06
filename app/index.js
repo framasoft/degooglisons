@@ -20,7 +20,6 @@ import './assets/scss/main.scss';
 
 window.jQuery = jQuery;
 window.$ = jQuery;
-require('bootstrap'); // eslint-disable-line
 
 Vue.use(VueRouter);
 Vue.use(VueI18n);
