@@ -22,7 +22,7 @@
   }
 
   @media (min-width: 992px) {
-    .panel article.col-md-3:nth-of-type(n+5) {
+    .panel :not(#results) article.col-md-3:nth-of-type(n+5) {
       display: none;
     }
   }

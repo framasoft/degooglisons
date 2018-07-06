@@ -1045,7 +1045,7 @@ txt:
   framacloud: Framacloud
   chatons: Chatons
   install: Installer
-  installOnServer: Installer sur un serveur
+  installOnServer: installer sur un serveur
   updated: Projet mis à jour
   loading: Projet en cours
   running: Projet actif
