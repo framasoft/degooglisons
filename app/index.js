@@ -11,10 +11,6 @@ import '../node_modules/fork-awesome/css/fork-awesome.css';
 
 import App from './App.vue';
 import Home from './components/pages/Home.vue';
-import List from './components/pages/List.vue';
-import Alt from './components/pages/Alt.vue';
-import Medias from './components/pages/Medias.vue';
-import Timeline from './components/pages/Timeline.vue';
 
 import './assets/scss/main.scss';
 
@@ -27,15 +23,20 @@ Vue.component('vue-headful', vueHeadful);
 Vue.component('v-select', vSelect);
 Vue.use(vueScrollto);
 
-// Ready translated locale messages
 const defaultLocale = 'fr';
 const locales = [];
+const pages = [];
+
 // Import locales list
-let req = require.context('./locales/', true, /\.yml$/);
+let req = require.context('./locales/', false, /\.yml$/);
 req.keys().forEach((key) => {
   locales.push(key.replace(/\.\/(.*)\.yml/, '$1'));
 });
-
+// Import pages list
+req = require.context('./components/pages', false, /\.vue$/);
+req.keys().forEach((key) => {
+  pages.push(key.replace(/\.\/(.*)\.vue/, '$1'));
+});
 // Import logos list
 const gafam = [];
 const leds = [];
@@ -58,32 +59,8 @@ const userLang = navigator.languages ||
 let defaultRouteLang = '';
 
 const messages = {};
-
-const routes = [
-  { path: '/', component: Home },
-];
-
-for (let i = 0; i < locales.length; i += 1) {
-  messages[locales[i]] = { msg: {} };
-  // Locales import
-  /* eslint-disable */
-  import(/* webpackChunkName: "lang-[request]" */`./locales/${locales[i]}.yml`).then((data) => {
-    messages[locales[i]].msg = data;
-    messages[locales[i]].lang = locales[i];
-  }).catch((err) => {
-    console.error(err);
-  });
-  /* eslint-enable */
-
-  // Localized routes
-  routes.push(
-    { path: `/${locales[i]}`, component: Home },
-    { path: `/${locales[i]}/list`, component: List },
-    { path: `/${locales[i]}/alternatives`, component: Alt },
-    { path: `/${locales[i]}/medias`, component: Medias },
-    { path: `/${locales[i]}/timeline`, component: Timeline },
-  );
-}
+messages.locales = require('./lang.yml'); // eslint-disable-line
+messages.locales.avalaible = locales;
 
 // Data import
 messages.data = {};
@@ -96,6 +73,33 @@ Object.keys(messages.data.services).forEach((k) => {
   messages.data.services[k].F =
     `<a href="${messages.data.services[k].FL}">${messages.data.services[k].F}</a>`;
 });
+
+const routes = [
+  { path: '/', component: Home },
+];
+
+for (let i = 0; i < locales.length; i += 1) {
+  messages[locales[i]] = {};
+  // Locales import
+  /* eslint-disable */
+  import(/* webpackChunkName: "lang-[request]" */`./locales/${locales[i]}.yml`).then((data) => {
+    messages[locales[i]] = data;
+    messages[locales[i]].data = messages.data;
+    messages[locales[i]].lang = locales[i];
+  }).catch((err) => {
+    console.error(err);
+  });
+  /* eslint-enable */
+
+  // Localized routes
+  for (let j = 0; j < pages.length; j += 1) {
+    const component = require(`./components/pages/${pages[j]}.vue`); // eslint-disable-line
+    routes.push({
+      path: `/${locales[i]}${pages[j].toLowerCase().replace(/^/, '/').replace('/home', '')}`,
+      component: component.default,
+    });
+  }
+}
 
 // define defaultRouteLang
 for (let j = 0; j < userLang.length; j += 1) { // check if user locales

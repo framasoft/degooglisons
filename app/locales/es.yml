@@ -5,10 +5,10 @@ meta:
   dio: De-google-ify Internet
   fname: <b class="violet">Frama</b><b class="orange">soft</b>
   dioname: <b class="violet">Desgooglicemos</b> <b class="orange">Internet</b>
-  F: <a href="@:msg.link.F">@:msg.meta.fname</a>
-  DIo: <a href="@:msg.link.DIo">@:msg.meta.dioname</a>
+  F: <a href="@:link.F">@:meta.fname</a>
+  DIo: <a href="@:link.DIo">@:meta.dioname</a>
   lead: '
-    Una iniciativa de nuestra red @:msg.meta.F en favor de un internet<br>
+    Una iniciativa de nuestra red @:meta.F en favor de un internet<br>
 
     <a href="#leds">libre</a>, <a href="#leds">descentralizado</a>,
 
@@ -98,7 +98,7 @@ leds:
 
       estarán a su vez en condiciones de compartir dichos recursos.
       '
-  charte: Para saber más, consulte <strong><a href="@:msg.link.charte">nuestra charte</a></strong>.
+  charte: Para saber más, consulte <strong><a href="@:link.charte">nuestra charte</a></strong>.
 
 map:
   title: Haga clic en el mapa para descubrir las alternativas…
@@ -123,7 +123,7 @@ camps:
       por una Red abierta y respectuosa de los internautas.
       '
     text2: '
-      Además de @:msg.meta.F, asociación sin fines lucrativos
+      Además de @:meta.F, asociación sin fines lucrativos
 
       que lanza esta campaña, podemos <a href="http://april.org">l’April</a>,
 
@@ -192,7 +192,7 @@ camps:
     text1: '
       Las revelaciones de Edward Snowden sobre el programa PRISM de la
 
-      @:msg.camps.nsa.title han mostrado que es acertado temer la violación
+      @:camps.nsa.title han mostrado que es acertado temer la violación
 
       masiva de la vida privada de los internautas, es algo fundado.
       '
@@ -660,7 +660,7 @@ alt:
     th3: based on
 
   text1: '
-    @:msg.meta.F aims to <a href="@:msg.link.dio">
+    @:meta.F aims to <a href="@:link.dio">
 
     offer around thirty free alternative services</a>
 
@@ -719,7 +719,7 @@ medias:
 
     Browse through the fresco below to discover the
 
-    key dates (full screen <a href="@:msg.link.dio/en/fresque">available here</a>).
+    key dates (full screen <a href="@:link.dio/en/fresque">available here</a>).
     '
   timeline: Timeline De-googl-ify Internet
 
@@ -900,48 +900,48 @@ medias:
       '
 
 timeline:
-  title: '@:msg.meta.DIo, la timeline'
+  title: '@:meta.DIo, la timeline'
   launch: Launch of
   events:
   - '<a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> revelations on American and British mass espionage programs.'
   - '<a href="https://framablog.org/2014/01/23/manger-la-patee-de-son-chien/">Framasoft’s de-googl-ification</a><br>(see the <a href="https://rmll.ubicast.tv/videos/quitter-google-lexperience-de-lassociation-framasoft/">the RMLL 2014 conference</a>)'
-  - '<a href="https://framablog.org/2014/02/05/framabag-service-libre-gratuit-interview-developpeur/">@:msg.timeline.launch Framabag</a>'
+  - '<a href="https://framablog.org/2014/02/05/framabag-service-libre-gratuit-interview-developpeur/">@:timeline.launch Framabag</a>'
   - '<a href="https://rmll.ubicast.tv/videos/quelles-alternatives-a-google-retours-sur-lexperience-framacloud/">Campaign « De-googl-ify Internet » pre-announcement </a> at the RMLL of Montpellier'
   - '<a href="https://framablog.org/2014/10/07/degooglisons-internet/">Campaign Announcement</a>'
-  - '<a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">@:msg.timeline.launch Framasphère</a>'
+  - '<a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">@:timeline.launch Framasphère</a>'
   - '<a href="https://framablog.org/2014/11/11/des-cartes-mentales-libres-avec-framindmap/">Announcement of Framindmap</a>'
   - '<a href="https://framablog.org/2014/11/26/framadate-nouvelle-version-accessible/">New version of Framadate</a>'
-  - '<a href="https://framablog.org/2014/12/11/mypads-le-developpement-est-lance/">@:msg.timeline.launch the crowdfunding of MyPads</a>'
-  - '<a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/ ">@:msg.timeline.launch Framagit</a>'
-  - '<a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">@:msg.timeline.launch Frama.link, Framapic and Framabin</a>'
-  - '<a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">@:msg.timeline.launch Framabee</a>'
-  - '<a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">@:msg.timeline.launch Framagames</a>'
-  - '<a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">@:msg.timeline.launch Framabookin</a>'
+  - '<a href="https://framablog.org/2014/12/11/mypads-le-developpement-est-lance/">@:timeline.launch the crowdfunding of MyPads</a>'
+  - '<a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/ ">@:timeline.launch Framagit</a>'
+  - '<a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">@:timeline.launch Frama.link, Framapic and Framabin</a>'
+  - '<a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">@:timeline.launch Framabee</a>'
+  - '<a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">@:timeline.launch Framagames</a>'
+  - '<a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">@:timeline.launch Framabookin</a>'
   - '<a href="https://rmll.ubicast.tv/videos/google-facebook-etc-pourquoi-et-comment-decoloniser-internet/">Progress report at the RMLL of Beauvais</a>'
   - '<a href="https://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait/">« De-googl-ify Internet » season 2 announcement</a>'
-  - '<a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:msg.timeline.launch Framadrive</a>'
+  - '<a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:timeline.launch Framadrive</a>'
   - '<a href="https://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs/">Announcement of MyPads</a>'
-  - '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">@:msg.timeline.launch Framaboard</a>'
-  - '<a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:msg.timeline.launch the new version of Framadate</a>'
-  - '<a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:msg.timeline.launch Framadrop</a>'
+  - '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">@:timeline.launch Framaboard</a>'
+  - '<a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:timeline.launch the new version of Framadate</a>'
+  - '<a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:timeline.launch Framadrop</a>'
   - '<a href="https://framablog.org/2015/10/23/les-nouveaux-loups-du-web-lavant-premiere/">Partnership to promote the documentary: « Les Nouveaux Loups du Web »</a>'
-  - '<a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">@:msg.timeline.launch Framacarte</a>'
-  - '<a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">@:msg.timeline.launch Framateam</a>'
-  - '<a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">@:msg.timeline.launch Framavox</a>'
+  - '<a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">@:timeline.launch Framacarte</a>'
+  - '<a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">@:timeline.launch Framateam</a>'
+  - '<a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">@:timeline.launch Framavox</a>'
   - '<a href="https://framablog.org/2016/06/13/operation-degooglisons-a-nevers-24-25-26-juin/">Operation « De-googl-ify » in Nevers</a>'
-  - '<a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">@:msg.timeline.launch Framinetest</a>'
-  - '<a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">@:msg.timeline.launch Framemo</a>'
+  - '<a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">@:timeline.launch Framinetest</a>'
+  - '<a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">@:timeline.launch Framemo</a>'
   - '<a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">« De-googl-ify Internet » season 3 announcement</a>'
-  - '<a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">@:msg.timeline.launch Framalistes</a>'
-  - '<a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">@:msg.timeline.launch Framanotes</a>'
-  - '<a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">@:msg.timeline.launch Framaforms</a>'
-  - '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:msg.timeline.launch Framatalk</a>'
-  - '<a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:msg.timeline.launch Framagenda</a>'
-  - '<a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:msg.timeline.launch MyFrama</a>'
+  - '<a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">@:timeline.launch Framalistes</a>'
+  - '<a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">@:timeline.launch Framanotes</a>'
+  - '<a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">@:timeline.launch Framaforms</a>'
+  - '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:timeline.launch Framatalk</a>'
+  - '<a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:timeline.launch Framagenda</a>'
+  - '<a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:timeline.launch MyFrama</a>'
   - '<a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Naissance du collectif CHATONS</a>'
-  - '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:msg.timeline.launch Framaestro</a>'
-  - '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:msg.timeline.launch Framaslides</a>'
-  - '<a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:msg.timeline.launch docs.framasoft.org</a>'
+  - '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:timeline.launch Framaestro</a>'
+  - '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:timeline.launch Framaslides</a>'
+  - '<a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:timeline.launch docs.framasoft.org</a>'
 
 
 # Generic text ---------------------------------------------------------
@@ -1400,7 +1400,7 @@ services:
     hDesc:
     mTitle:
     mBody: '
-      @:msg.meta.F will not offer an alternative to @gafamservices, but
+      @:meta.F will not offer an alternative to @gafamservices, but
 
       there are other players that offer free email services.
       '
@@ -1717,7 +1717,7 @@ services:
 
         and its tools before using Framabee. This is why we wrote this
 
-        <a href="@:msg.link.charte">charte</a>.
+        <a href="@:link.charte">charte</a>.
         '
     tags: search, anonymous
 

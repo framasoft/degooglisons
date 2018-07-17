@@ -23,14 +23,14 @@
                 class="nav navbar-nav nav-tabs" role="tablist"
                 :style="'left: ' + scrollMenu.left + 'px'">
                 <li>
-                  <a href="#tagssearch" :title="$t('msg.txt.searchByTags')">
+                  <a href="#tagssearch" :title="$t('txt.searchByTags')">
                     <i class="fa fa-lg fa-search" aria-hidden="true"></i>
-                    <span class="sr-only">{{ $t('msg.txt.searchByTags') }}</span>
+                    <span class="sr-only">{{ $t('txt.searchByTags') }}</span>
                   </a>
                 </li>
-                <li><a href="#all">{{ $t('msg.txt.allServices') }}</a></li>
+                <li><a href="#all">{{ $t('txt.allServices') }}</a></li>
                 <li v-for="(icon, cat) in data.cat2.icons">
-                  <a :href="'#' + cat" :title="$t('msg.cat2.' + cat)">{{ $t('msg.cat2.' + cat) }}</a></li>
+                  <a :href="'#' + cat" :title="$t('cat2.' + cat)">{{ $t('cat2.' + cat) }}</a></li>
               </ul>
             </div>
           </nav>
@@ -42,19 +42,19 @@
             <div class="clearfix" style="margin:10px 0">
               <label class="col-sm-1 text-right" for="tags-select">
                 <i class="fa fa-2x fa-search"></i>
-                <span class="sr-only">{{ $t('msg.txt.searchByTags') }}</span>
+                <span class="sr-only">{{ $t('txt.searchByTags') }}</span>
               </label>
               <div class="col-sm-11">
                 <v-select id="tags-select" multiple
-                  :options="tags($t('msg.services')).concat(tags(data.services, 'gafam'))"
-                  :placeholder="$t('msg.txt.searchByTags')"
+                  :options="tags($t('services')).concat(tags(data.services, 'gafam'))"
+                  :placeholder="$t('txt.searchByTags')"
                   v-model="results"
                 ></v-select>
               </div>
             </div>
             <div class="clearfix h4">
               <ul class="list-inline text-center">
-                <li v-for="(tag) in $t('msg.tags')">
+                <li v-for="(tag) in $t('tags')">
                   <a :href="'#tag-' + tag" class="btn btn-xs btn-default"
                     @click="(results.indexOf(tag) === -1) ? results.push(tag) : results.pop(tag) ;"
                   >{{ tag }}</a>
@@ -68,35 +68,35 @@
           <div  id="results_wrapper" class="panel panel-default clearfix" v-show="results.length > 0">
             <div class="panel-heading">
               <h2 class="panel-title text-center h1">
-                {{ $t('msg.txt.results') }}
+                {{ $t('txt.results') }}
               </h2>
             </div>
             <div id="results" class="clearfix" >
               <article
                 v-for="(service, key) in data.services"
                 v-if="(data.fight.indexOf(key) > -1)"
-                v-show="isInResults($t('msg.services.' + key + '.tags') + ', ' + data.services[key].gafam[0], results)"
+                v-show="isInResults($t('services.' + key + '.tags') + ', ' + data.services[key].gafam[0], results)"
                 class="col-md-3 col-sm-6 text-center">
                 <h3>
                   <i :class="'fa fa-2x fa-' + service.i"></i><br>
                   <p v-html="service.F"></p>
                 </h3>
-                <p class="desc" v-html="$t('msg.services.' + key + '.tDesc')"></p>
+                <p class="desc" v-html="$t('services.' + key + '.tDesc')"></p>
                 <p><img class="img-responsive" :src="data['/img/'] + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                 <div class="clearfix">
-                  <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('msg.txt.use') }}</a>
+                  <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('txt.use') }}</a>
 
                   <dropdown dropup ref="dropdown" menu-right class="pull-right">
                     <btn type="button" class="btn btn-link btn-lg dropdown-toggle"
                       aria-haspopup="true" aria-expanded="false" :id="'dropdown-' + key">
                       <i class="fa fa-lg fa-question-circle-o" aria-hidden="true"></i>
-                      <span class="sr-only">{{ $t('msg.txt.plus') }}</span>
+                      <span class="sr-only">{{ $t('txt.plus') }}</span>
                     </btn>
                     <template slot="dropdown">
                       <li><a href="javascript:void(0);" data-toggle="modal" :data-target="'#modal-t-' + key"
                         @click="modal.open = true; modal.key = key;"
-                        >{{ $t('msg.txt.more') }}</a></li>
-                      <li><a :href="$t('msg.link.docs') + text(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
+                        >{{ $t('txt.more') }}</a></li>
+                      <li><a :href="$t('link.docs') + text(service.S).toLowerCase()">{{ $t('txt.docs') }}</a></li>
                     </template>
                   </dropdown>
 
@@ -109,7 +109,7 @@
             <div class="panel panel-default clearfix">
               <div class="panel-heading">
                 <h2 class="panel-title text-center h1">
-                  {{ $t('msg.cat2.' + cat) }}
+                  {{ $t('cat2.' + cat) }}
                 </h2>
               </div>
               <div class="clearfix">
@@ -121,22 +121,22 @@
                     <i :class="'fa fa-2x fa-' + service.i"></i><br>
                     <p v-html="service.F"></p>
                   </h3>
-                  <p class="desc" v-html="$t('msg.services.' + key + '.tDesc')"></p>
+                  <p class="desc" v-html="$t('services.' + key + '.tDesc')"></p>
                   <p><img class="img-responsive" :src="data['/img/'] + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                   <div class="clearfix">
-                    <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('msg.txt.use') }}</a>
+                    <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('txt.use') }}</a>
 
                     <dropdown dropup ref="dropdown" menu-right class="pull-right">
                       <btn type="button" class="btn btn-link btn-lg dropdown-toggle"
                         aria-haspopup="true" aria-expanded="false" :id="'dropdown-' + key">
                         <i class="fa fa-lg fa-question-circle-o" aria-hidden="true"></i>
-                        <span class="sr-only">{{ $t('msg.txt.plus') }}</span>
+                        <span class="sr-only">{{ $t('txt.plus') }}</span>
                       </btn>
                       <template slot="dropdown">
                         <li><a href="javascript:void(0);" data-toggle="modal" :data-target="'#modal-t-' + key"
                           @click="modal.open = true; modal.key = key;"
-                          >{{ $t('msg.txt.more') }}</a></li>
-                        <li><a :href="$t('msg.link.docs') + text(service.S).toLowerCase()">{{ $t('msg.txt.docs') }}</a></li>
+                          >{{ $t('txt.more') }}</a></li>
+                        <li><a :href="$t('link.docs') + text(service.S).toLowerCase()">{{ $t('txt.docs') }}</a></li>
                       </template>
                     </dropdown>
 
@@ -150,7 +150,7 @@
           <modal
             id="FramaModal"
             v-model="modal.open"
-            :ok-text="$t('msg.txt.close')"
+            :ok-text="$t('txt.close')"
             tabindex="-1"
             role="dialog"
             aria-labelledby="FramaLabel"
@@ -161,7 +161,7 @@
             <div slot="title">
               <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
               <span class="frama" v-html="data.services[modal.key].F"></span><br>
-              <span class="desc" v-html="$t('msg.services.' + modal.key + '.lDesc')"></span>
+              <span class="desc" v-html="$t('services.' + modal.key + '.lDesc')"></span>
             </div>
 
             <!-- web-screen -->
@@ -178,24 +178,24 @@
             </div>
 
             <!-- desc -->
-            <p v-html="$t('msg.services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, data.services[modal.key].F)"></p>
+            <p v-html="$t('services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, data.services[modal.key].F)"></p>
 
             <!-- video / desc -->
-            <p v-if="$t('msg.services.' + modal.key + '.mBody.more') !== 'msg.services.' + modal.key + '.mBody.more'"
-               v-html="$t('msg.services.' + modal.key + '.mBody.more').replace(/@framaservice/g, data.services[modal.key].F)"></p>
+            <p v-if="$t('services.' + modal.key + '.mBody.more') !== 'services.' + modal.key + '.mBody.more'"
+               v-html="$t('services.' + modal.key + '.mBody.more').replace(/@framaservice/g, data.services[modal.key].F)"></p>
 
             <!-- features -->
-            <div v-if="$t('msg.services.' + modal.key + '.mBody.feat') !== 'msg.services.' + modal.key + '.mBody.feat'">
-              <h5 class="h3 violet">{{ $t('msg.txt.features') }}</h5>
-              <ul v-if="Array.isArray($t('msg.services.' + modal.key + '.mBody.feat'))">
+            <div v-if="$t('services.' + modal.key + '.mBody.feat') !== 'services.' + modal.key + '.mBody.feat'">
+              <h5 class="h3 violet">{{ $t('txt.features') }}</h5>
+              <ul v-if="Array.isArray($t('services.' + modal.key + '.mBody.feat'))">
                 <li
-                  v-for="(item) in $t('msg.services.' + modal.key + '.mBody.feat')"
+                  v-for="(item) in $t('services.' + modal.key + '.mBody.feat')"
                   v-html="item.replace(/@framaservice/g, data.services[modal.key].F)"
                 ></li>
               </ul>
               <p
                 v-else
-                v-html="$t('msg.services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, data.services[modal.key].F)">
+                v-html="$t('services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, data.services[modal.key].F)">
               </p>
             </div>
 
@@ -204,7 +204,7 @@
               <!-- tags buttons -->
               <ul class="list-inline col-md-6 text-left">
                 <li
-                  v-for="(tag) in $t('msg.services.' + modal.key +'.tags').split(', ')"
+                  v-for="(tag) in $t('services.' + modal.key +'.tags').split(', ')"
                   v-if="tag !== '' && tag !== ' '">
                   <a
                     :href="'#tag-' + tag.replace(' ', '-').toLowerCase()"
@@ -216,9 +216,9 @@
               </ul>
               <!-- docs / install buttons -->
               <div class="col-md-6 text-right">
-                <a :href="$t('msg.link.docs') + text(data.services[modal.key].S.toLowerCase())"
-                  class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.docs') }}</a>
-                <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('msg.txt.use') }}</a>
+                <a :href="$t('link.docs') + text(data.services[modal.key].S.toLowerCase())"
+                  class="btn btn-lg btn-link text-uppercase">{{ $t('txt.docs') }}</a>
+                <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('txt.use') }}</a>
               </div>
             </div>
           </modal>
@@ -228,7 +228,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h2 class="panel-title text-center">
-                {{ $t('msg.txt.allServices') }}
+                {{ $t('txt.allServices') }}
               </h2>
             </div>
             <div class="clearfix">
@@ -236,9 +236,9 @@
                 <li class="col-xs-4 col-sm-3 col-md-2 text-center" style="padding:20px"
                   v-for="(service, key) in data.services" v-if="(data.fight.indexOf(key) > -1)">
                   <a :href="service.FL" class="btn btn-default btn-block"
-                    :title="$t('msg.services.' + key + '.sDesc')"
+                    :title="$t('services.' + key + '.sDesc')"
                     rel="popover" data-placement="bottom"
-                    :data-content="$t('msg.services.' + key + '.lDesc')">
+                    :data-content="$t('services.' + key + '.lDesc')">
                     <i :class="'fa fa-3x fa-fw fa-' + service.i + ' fc_g7'"></i>
                     <br/>
                     <span v-html="service.F"></span>

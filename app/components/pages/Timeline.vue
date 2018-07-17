@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="box">
           <img alt="" :src="data['/img/'] + 'smalllogo.png'" /></span>
-          <span class="text" v-html="$t('msg.timeline.title')"></span>
+          <span class="text" v-html="$t('timeline.title')"></span>
         </h1>
         <hr>
       </div>
@@ -14,7 +14,7 @@
         <li v-for="(event, index) in data.timeline.events" :class="'li-' + event[0]" v-if="event[1] !== undefined">
           <div :class="'fond-' + event[0]">
             <time>{{ (new Intl.DateTimeFormat($t('lang'), data.timeline.format).format(new Date(event[1]))) }}</time>
-            <p v-html="$t('msg.timeline.events[' + index + ']')"></p>
+            <p v-html="$t('timeline.events[' + index + ']')"></p>
           </div>
         </li>
       </ul>

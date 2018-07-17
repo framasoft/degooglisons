@@ -33,49 +33,49 @@ medias:
     list:
     - ['fr', '2017-07-30', 'Usbek & Rica',
        'https://usbeketrica.com/article/framasoft-une-amap-du-logiciel-libre',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['en', '2017-02-26', 'Konrad Lishka',
        'https://www.konradlischka.info/2017/02/blog/how-a-french-association-with-6-employees-offers-mainstream-users-free-and-libre-alternatives-to-facebook-groups-slack-skype-and-the-like/',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2017-02-05', 'France 24 / Mashable',
        'http://mashable.france24.com/tech-business/20170204-chatons-collectif-hebergeurs-framasoft?ref=tw_i',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2016-12-15', 'Next Inpact',
        'http://www.nextinpact.com/news/102539-degooglisons-internet-framasoft-fait-bilan-son-action.htm',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2016-12-10', 'Le Monde',
        'http://www.lemonde.fr/pixels/article/2016/12/10/framasoft-des-chatons-armes-de-logiciels-libres-pour-contrer-google_5046752_4408996.html?xtmc=framasoft&xtcr=1',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2016-12-10', 'Le Figaro',
        'http://www.lefigaro.fr/secteur/high-tech/2016/11/30/32001-20161130ARTFIG00001-les-defenseurs-du-logiciel-libre-decourages-par-l-education-nationale.php',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2016-11-28', 'L’Âge de Faire (n°114)',
        'http://www.lagedefaire-lejournal.fr/geants-net-coupons-cordon/',
-       'msg.medias.press.lSummary']
+       'medias.press.lSummary']
     - ['fr', '2016-11-05', 'France Culture',
         'https://www.franceculture.fr/emissions/le-numerique-et-nous/surveillance-sur-le-web-comment-retrouver-le-pouvoir-dagir',
-        'msg.medias.press.lPodcast']
+        'medias.press.lPodcast']
     - ['fr', '2016-10-19', 'Korben.info',
        'http://korben.info/framasoft-complete-arsenal-perforer-gafam.html',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['en', '2016-10-17', 'Worldcrunch',
        'http://www.worldcrunch.com/tech-science/the-open-source-group-trying-to-quotde-googlequot-the-internet',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2016-10-03', 'Libération',
        'http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2016-10-10', 'France Info',
        'http://www.francetvinfo.fr/replay-radio/nouveau-monde/nouveau-monde-est-il-possible-de-degoogliser-le-web_1854529.html',
-       'msg.medias.press.lListen']
+       'medias.press.lListen']
     - ['fr', '2015-10-24', 'Le Soir (Belgique)',
        'http://www.lesoir.be/886985/article/economie/vie-du-net/2015-05-23/google-vivre-sans-c-est-parfois-possible',
-       'msg.medias.press.lPaywall']
+       'medias.press.lPaywall']
     - ['en', '2016-08-24', 'Opensource.com',
        'https://opensource.com/business/16/8/open-source-alternatives-office-365',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
     - ['fr', '2015-02-03', 'L’Humanité',
        'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
-       'msg.medias.press.lArticle']
+       'medias.press.lArticle']
 
 timeline:
   format: { year: 'numeric', month: 'long', day: 'numeric' }

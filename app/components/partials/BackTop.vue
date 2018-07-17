@@ -1,7 +1,7 @@
 <template>
-  <a href="#" id="back-to-top" :title="$t('msg.txt.backToTop')" v-scroll-to="'#app'" >
+  <a href="#" id="back-to-top" :title="$t('txt.backToTop')" v-scroll-to="'#app'" >
     <i class="fa fa-fw fa-arrow-up" aria-hidden="true"></i>
-    <span class="sr-only">$t('msg.txt.backToTop')</span>
+    <span class="sr-only">$t('txt.backToTop')</span>
   </a>
 </template>
 

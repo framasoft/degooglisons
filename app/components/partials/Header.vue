@@ -4,8 +4,8 @@
       <div class="pull-right">
         <I18n/>
       </div>
-      <h1 v-html="$t('msg.meta.DIo')"></h1>
-      <p class="lead text-center" v-html="$t('msg.' + (this.$route.path.split('/')[2].replace('ernatives', '') || 'meta') + '.title')"></p>
+      <h1 v-html="$t('meta.DIo')"></h1>
+      <p class="lead text-center" v-html="$t((this.$route.path.split('/')[2].replace('ernatives', '') || 'meta') + '.title')"></p>
       <hr class="trait clearfix" role="presentation" />
     </header>
   </div>
@@ -17,7 +17,12 @@ export default {
   name: 'framaheader',
   components: {
     I18n,
-  }
+  },
+  data() {
+    return {
+      data: this.$i18n.messages.data,
+    }
+  },
 }
 </script>
 
