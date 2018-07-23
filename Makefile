@@ -1,5 +1,5 @@
 locales:
-	yaml2po -P --progress=none -i app/locales/en.yml -o po/accueil.pot
+	yaml2po -P --progress=none -i app/locales/en.yml -o po/$(shell basename $(CURDIR)).pot
 
 push-locales: locales
 	zanata-cli -q -B push
