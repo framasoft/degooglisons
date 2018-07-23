@@ -1,11 +1,8 @@
 meta:
   title: De-google-ify Internet
-  baseURL: https://degooglisons-internet.org
-  f: Framasoft
   dio: De-google-ify Internet
-  fname: <b class="violet">Frama</b><b class="orange">soft</b>
   dioname: <b class="violet">De-google-ify</b> <b class="orange">Internet</b>
-  F: <a href="@:link.F">@:meta.fname</a>
+  F: <a href="@:link.F">@:data.meta.fname</a>
   DIo: <a href="@:link.DIo">@:meta.dioname</a>
   lead: '
     An initiative of the @:meta.F network for a<br>
@@ -1300,7 +1297,7 @@ services:
 
   dropbox:
     sDesc: File hosting online service
-    lDesc: File hosting online service
+    lDesc: Host, synchronize and share your documents
     tDesc: '
       Obtain an online storage space for hosting, synchronizing
 
@@ -1341,7 +1338,7 @@ services:
 
         or <a href="https://cozy.io/fr/">My Cozy Cloud</a>).
         '
-    tags: store, save, files, share, agenda, calender, contacts, tasks
+    tags: store, save, files, share, agenda, calendar, contacts, tasks
 
   evernote:
     sDesc: Notetaking
@@ -1504,7 +1501,7 @@ services:
       - share agendas
       - invite (by email) participants to appointments
       - possibility to publicly show agendas
-    tags: date, organise, share, agenda, calender, contacts, tasks
+    tags: date, organise, share, agenda, calendar, contacts, tasks
 
   gbooks:
     sDesc: Online books

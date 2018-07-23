@@ -23,7 +23,7 @@ Vue.component('vue-headful', vueHeadful);
 Vue.component('v-select', vSelect);
 Vue.use(vueScrollto);
 
-const defaultLocale = 'fr';
+const defaultLocale = 'en';
 const locales = [];
 const pages = [];
 

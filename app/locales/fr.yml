@@ -54,7 +54,7 @@ leds:
       libres, c’est à dire dont le code source est ouvert, accessible et sous licences libres.
       '
   ethic:
-    title:
+    title: Éthique
     desc: '
       Nous plébiscitons un Internet fait de partage et d’indépendance.
 
@@ -377,7 +377,7 @@ home:
     btn: Soutenir Framasoft
 
   speakabout:
-    title: Ils pralent de nous…
+    title: Ils parlent de nous…
     btn: Espace médias
 
   explain:

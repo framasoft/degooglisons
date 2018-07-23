@@ -1,9 +1,6 @@
 meta:
   title: Desgooglicemos Internet
-  baseURL: https://degooglisons-internet.org
-  f: Framasoft
   dio: De-google-ify Internet
-  fname: <b class="violet">Frama</b><b class="orange">soft</b>
   dioname: <b class="violet">Desgooglicemos</b> <b class="orange">Internet</b>
   F: <a href="@:link.F">@:meta.fname</a>
   DIo: <a href="@:link.DIo">@:meta.dioname</a>
@@ -206,159 +203,60 @@ camps:
 home:
   title: Inicio
   intro:
-    bubble1: The web giants <strong>centralize our digital lives</strong> in exchange for their services
-    bubble2: The <strong>Free Software</strong> community offers <strong>alternative ethical services</strong>
-    bubble3: The <strong>Framasoft</strong> network intends to <strong>prove it</strong><br>by <strong>hosting</strong> them
+    bubble1:
+    bubble2:
+    bubble3:
 
-    btnList1: Are you looking for a specific tool?
-    btnList2: (file sharing, communication, collaborative work...)'
-    btnList3: Find the free service<br>to meet your needs.
-    btnAlt1: You use a particular service?
-    btnAlt2: (from Google, Apple, Facebook, Amazon, Microsoft…)
-    btnAlt3: Discover free alternatives<br> to replace it.
+    btnList1:
+    btnList2:
+    btnList3:
+    btnAlt1:
+    btnAlt2:
+    btnAlt3:
 
   more:
-    title: Go further
-    desc: '
-      On the way to your digital independance... ? The road is clear!<br>
-
-      De-google-ify Internet offers you the possibility to follow it in several steps.
-      '
+    title:
+    desc:
     docs:
-      btn: Documentation
-      desc: '
-        Discover and use free alternatives (hosted by Framasoft),
-
-        with the help of our collaborative <strong>documentation</strong> to learn
-
-        how they work, how to log in, how to use their fonctions, etc..
-        '
+      btn:
+      desc:
     cloud:
       btn: Framacloud
-      desc: '
-        If you have the possibility, freely host the same software
-
-        directly on your school/association/company/organization
-
-        thanks to our self-hosting tutorial found in the  <strong>Framacloud</strong>.
-        '
+      desc:
     chatons:
-      btn: KITTENS
-      desc: '
-        You can also look for a trustworthy local webhosting service
-
-        among the <strong>KITTENS</strong>, Keen Internet Talented Teams Engaged in Network Services!
-        '
+      btn:
+      desc:
 
   why:
-    title: Why?
-    desc: '
-      These services are software, but this software is set up on
-
-      someone else&quot;s computer (on what&quot;s called "servers").
-
-      Using services offered by Google, Apple, Facebook, Amazon, Microsoft…
-
-      ("GAFAM") means giving them your data,
-
-      the parts of your life that you put on the Internet.
-
-      So it&quot;s a matter of trust.
-      '
+    title:
+    desc:
     explain:
-      btn: Stakes and dangers
-      desc: '
-        This trust has allowed a handful of companies (GAFAM)
-
-        to centralize data from a huge part of the population,
-
-        holding a near-monopoly on our digital lives (an oligopoly).
-
-        The <strong>dangers and stakes</strong> are threefold:
-
-        economic, technological, cultural...
-        '
+      btn:
+      desc:
     props:
-      btn: Nos propositions
-      desc: '
-        <strong>Our approach</strong> is simple and consists
-
-        in determining the self-imposed conditions that may justify such trust.
-
-        We aim to offer alternatives that respect people and diversity while
-
-        making it impossible to reproduce such monopolies.
-        '
+      btn:
+      desc:
     who:
-      btn: Who are we?
-      desc: '
-        In order for you to determine whether you can trust us,
-
-        we have published an introduction to our Framasoft network
-
-        (and to the non-profit that supports it), together with our reports
-
-        and administrative documention under <strong>Who are we?</strong>
-        '
+      btn:
+      desc:
 
   contact:
-    title: Contact us
-    text1: '
-      We are a small-scale non-profit (under 40 members, under 10 employees)
-
-      that has to deal with many different types of requests:
-      '
+    title:
+    text1:
     text2:
-    - taking part in various events ;
-    - answering the press and media ;
-    - providing assistance with our services ;
-    - sharing technical experience ;
-    - providing all types of explanation…
-    text3: '
-      In order to answer you in the most human, personal fashion, we
-
-      have designed a single page that enables us to find
-
-      the most suitable person for your particular query as quickly as possible.
-
-      We promise we&quot;ll do our best, but there are only 24 hours to a day ;).
-      '
-    btn: Contact Framasoft
+    text3:
+    btn:
 
   support:
-    title: Support us
-    text1: '
-      Like all our actions, our services are not free of charge:
-
-      they are financed by donations from people who support us through a
-
-      one off or regular donation.
-
-      About 90% of Framasoft&quot;s revenues
-
-      comes from the donation economy and is used to finance:
-      '
+    title:
+    text1:
     text2:
-    - our permanent staff&quot;s salaries ;
-    - servers and technical expenses ;
-    - travel, flyers and communications ;
-    - our participation in the world of free software/libre culture, etc.
-    text3: '
-      Framasoft being an association of general interest,
-
-      a donation of 100€ in France will cost you 34€ after tax exemption.
-
-      We have set up a unique site to support us,
-
-      consult our reports (validated by an auditor),
-
-      and learn more about the donations received.
-      '
-    btn: Support Framasoft
+    text3:
+    btn:
 
   speakabout:
-    title: They talk about us...
-    btn: Espace medias
+    title:
+    btn:
 
   explain:
     stakes:
@@ -489,13 +387,9 @@ home:
         ref: https://my.framasoft.org/u/degooglisons/?searchtags=fermeture
 
     props:
-      btn: Our proposals
-      title: Our proposals
-      text: '
-        Framasoft wishes to face the threats to our digital lives
-
-        by offering free, ethical, decentralised, and solidarity-based services.
-        '
+      btn:
+      title:
+      text:
       libre:
         title: Libertad
         text1: '
@@ -647,110 +541,34 @@ list:
 
 # Alt ------------------------------------------------------------------
 alt:
-  title: List of alternatives
-  desc: '
-    List of free, ethical, decentralized, and
-
-    solidarity-based online alternatives recommended by Framasoft to de-google-ify Internet
-    '
+  title:
+  desc:
 
   table:
-    th1: You use
-    th2: recommends
-    th3: based on
+    th1:
+    th2:
+    th3:
 
-  text1: '
-    @:meta.F aims to <a href="@:link.dio">
-
-    offer around thirty free alternative services</a>
-
-    to provide a substitute for those services which,
-
-    once they get hold of us, proceed to feed upon our data.<br>
-
-    But there are many other players working to de-google-ify Internet and many other such services.
-    '
-  text2: '
-    You will find <a href="#tips" rel="nofollow">below</a>, a
-
-    list summarizing and supplementing the alternatives presented on the map.
-
-    It is inspired by <a href="https://prism-break.org/en/">Prism-Break</a>
-
-    which promotes other software in more specialized areas.
-    '
-  text3: '
-    In the list, each service generally includes a
-
-    <b>complex website</b> <span aria-hidden="true">(<i class="fa fa-fw fa-cloud"></i>)</span>
-
-    communicating with <b>software installed on a computer</b>
-
-    <span aria-hidden="true">(<i class="fa fa-fw fa-server"></i>)</span>
-
-    which stores personal data and which can be accessed through various
-
-    <b>home-based tools</b> <span aria-hidden="true">(<i class="fa fa-fw fa-home"></i>)</span>.
-    '
-  text4: '
-    So when we use Internet, we must necessarily <b>trust
-
-    several links in the chain</b>
-
-    joining us to our personal data online.
-
-    Unless we self-host, <b>the <i lang="en">cloud</i> is
-
-    always someone else&quote;s computer</b>.
-
-    It is therefore important to know who we are being asked to trust and
-
-    what their software is doing with our data.
-    '
+  text1:
+  text2:
+  text3:
+  text4:
 
 # Medias ---------------------------------------------------------------
 medias:
   title: Espacio medios de difusión
-  subtitle: History of the De-google-ify Internet campaign
-  intro: '
-    De-googl-ify Internet is a campaign that lasted three years (Oct. 2014 - Oct. 2017),
-
-    but which is part of a more general Framasoft journey.<br>
-
-    Browse through the fresco below to discover the
-
-    key dates (full screen <a href="@:link.dio/en/fresque">available here</a>).
-    '
-  timeline: Timeline De-googl-ify Internet
+  subtitle:
+  intro:
+  timeline:
 
   tabs:
     title: Imágenes de la campaña Desgooglicemos
-    intro: '
-      The visuals below are under free license, the credits are
-
-      specified under each tab.<br> These visuals are in large size
-
-      (contrary to appearances).
-
-      However, if you need a higher resolution,
-
-      feel free to <a href="https://contact.framasoft.org/#presse">contact us</a>.
-      '
+    intro:
     saveas: Haga un clic derecho « Guardar la imagen como » para utilizarla de nuevo
 
     tab1:
       title: Cartes
-      intro: '
-        Maps credits: <a href="http://ptilouk.net">Simon « Gee » Giraudot</a>,
-
-        freely reusable under license
-
-        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
-
-          <span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0
-
-        </a>.
-        '
+      intro:
       img:
       - ['Mapa « Antes »', 'Carte2016-romains.png',
          'Mapa de Francia invadida por los servicios GAFAM (oct 2014)']
@@ -760,18 +578,8 @@ medias:
          'Animación de la reconquista de los servicios GAFAM (format .gif)']
 
     tab2:
-      title: Drawings Gee
-      intro: '
-        Drawing credits: <a href="http://ptilouk.net">Simon « Gee » Giraudot</a>,
-
-        freely reusable under license
-
-        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
-
-          <span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0
-
-        </a>.
-        '
+      title:
+      intro:
       img:
       - ['Drawing “Closed”', 'stevusjobus.png']
       - ['Drawing “Cyber Police”', 'cyberpolicus.png']
@@ -814,17 +622,7 @@ medias:
 
     tab6:
       title: Drawings Péhä
-      intro: '
-        Drawings credits: <a href="https://lesptitsdessinsdepeha.wordpress.com/">Péhä</a>,
-
-        freely reusable under license
-
-        <a href="http://creativecommons.org/licenses/by/3.0/">
-
-          <span lang="en">Creative Commons By</span> 3.0
-
-        </a>.
-        '
+      intro:
       img:
       - ['Drawing “Files”', 'Peha-Framadrop-CC-BY.png']
       - ['Drawing “Project”', 'Peha-Framagit-CC-BY.png']
@@ -833,18 +631,8 @@ medias:
       - ['Drawing “De-googl-ify”', 'Peha-Banquet-Degooglisons-CC-By.png']
 
     tab7:
-      title: Infography Framasoft
-      intro: '
-        Infography credits: <a href="https://geoffreydorne.com/">Geoffrey Dorne</a>,
-
-        freely reusable under license
-
-        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
-
-          <span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0
-
-        </a>.
-        '
+      title:
+      intro:
       img:
       - ['Infography « Framasoft&quot;s World »',
          'infographie_Le-Monde-de-Framasoft_CC-By-SA-Geoffrey-Dorne-1920px.jpg']
@@ -900,8 +688,8 @@ medias:
       '
 
 timeline:
-  title: '@:meta.DIo, la timeline'
-  launch: Launch of
+  title:
+  launch:
   events:
   - '<a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> revelations on American and British mass espionage programs.'
   - '<a href="https://framablog.org/2014/01/23/manger-la-patee-de-son-chien/">Framasoft’s de-googl-ification</a><br>(see the <a href="https://rmll.ubicast.tv/videos/quitter-google-lexperience-de-lassociation-framasoft/">the RMLL 2014 conference</a>)'
@@ -992,1442 +780,86 @@ txt:
 
 # Categories -----------------------------------------------------------
 cat1:
-  home: At home
-  web: Web
-  office: Office
-  social: Social
-  files: File sharing
-  media: Media & culture
-  geo: Geo
-  hobbies: Hobbies
-  site: Website
-  dev: Development
+  home:
+  web:
+  office:
+  social:
+  files:
+  media:
+  geo:
+  hobbies:
+  site:
+  dev:
 
 cat2:
-  collab: Collaborate
-  prod: Design useful tools
-  orga: Organize together
-  com: Communicate with others
-  share: Share links and files
-  tools: Synchronise and share
-  search: Improved web experience
-  games: Have fun with free software
+  collab:
+  prod:
+  orga:
+  com:
+  share:
+  tools:
+  search:
+  games:
 
 tags:
-  calendar: calendar
-  encryption: encryption
-  social: social
-  share: share
-  game: game
+  calendar:
+  encryption:
+  social:
+  share:
+  game:
 
 # Services -------------------------------------------------------------
 services:
   bitly:
     sDesc: Redución de URL
     lDesc: Las direcciones más cortas muy discretamente
-    tDesc: '
-      Shorten and/or customize a web address (URL) in two clicks,
-
-      and without tracking anyone (alternative to Bit.ly or Goo.gl).
-      '
-    hDesc: '
-      With Frama.link, too long links
-
-      can be shortened. On social networks and
-
-      microblogging, a shortened link saves
-
-      space and improves clarity.
-      '
+    tDesc:
+    hDesc:
     mTitle: Ya se acabaron las direcciones demasiado largas
     mBody:
-      desc: '
-        With @framaservice or <a href="https://huit.re">Huit.re</a>,
-
-        you can shrink excessively long URLs without it being possible to track their use.
-
-        On social networks or microblogs, a shortened web address
-
-        can help save space or improve readability.
-        '
-      feat: '
-        Enter the original version of your URL: Frama.link shortens it. Copy the link.
-        '
-    tags: share, links
-
-  blogger:
-    sDesc: Weblog hosting service
-    lDesc: Create a web site which respects your visitors
-    tDesc: '
-      Create a blog, a webpage or a website which respects your visitors
-
-      and your publications (an alternative to Blogger or Tumblr).
-      '
-    hDesc:
-    mTitle: Your own website in a few clicks
-    mBody:
-      desc: '
-        @framaservice allows you to create a website easily with
-
-        free software tools and to host it on our servers.
-
-        Zero publicity, zero trackers will prejudice the data of your visitors.
-       '
-      feat: '
-        Choose your sub-domaine, the type of site
-
-        that you want to create (web page, blog) then let the service guide you.
-      '
-    tags: site, homepage, web, html
-
-  bubblus:
-    sDesc: Mind Map
-    lDesc: Create your mind maps
-    tDesc: '
-      Design, publish and share mind maps easily,
-
-      on your own or with others in turn (alternative to Bubbl.us).
-      '
-    hDesc: '
-      Interface fluide et intuitive pour créer rapidement et
-
-      simplement des cartes heuristiques à même votre navigateur.
-
-      Pertinent en situation de brainstorming ou de prise de notes.
-      '
-    mTitle: Why would you create a mind map?
-    mBody:
-      desc: '
-        @framaservice allows you to organize a brainstorming session,
-
-        to sort out and order your ideas, alone or with others, to teach or learn a
-
-        lesson, to carry out classifications, to identify key elements, etc.
-        '
-      more: '
-        <iframe src="https://framatube.org/videos/embed/468d043c-262c-47e7-9043-397cdbd16f8f"
-
-        width="560" height="315" allowfullscreen ></iframe><br>
-
-        <em>Tutorial made by Claire Cassaigne (only in french, sorry…)</em>
-        '
-      feat: '
-        This service is available online. No installation
-
-        nor registration is required. You can choose your file format for export
-
-        and save the map as an image. It is a free and open source software.
-
-        The data are yours.
-        '
-    tags: produce, mindmap, brainstorming
-
-  change:
-    sDesc: Petitions
-    lDesc: Launch your petitions without giving away the addresses of your backers
-    tDesc: '
-      Launch your petitions from an ethical platform, which doesn&quot;t exploit
-
-      your supporter&quot;s data (alternative to Avaaz, Change.org).
-      '
-    hDesc:
-    mTitle: Free your petitions
-    mBody:
-      desc: '
-        @framaservice allows you to launch petitions on issues
-
-        that matter to you. With a few clicks, your petition is
-
-        published and the addresses of your backers will not be available
-
-        for unwanted uses such as affiliate marketing.
-        '
-      feat: '
-        Sign up and launch a
-
-        new petition by simply following the instructions. Your survey will be created.
-
-        Your backers will not be required to register in order to participate.
-        '
-    tags: petition, broadcast
-
-  delicious:
-    sDesc: Bookmark
-    lDesc: Easily find your links and your Framasoft services
-    tDesc: '
-      Sort and preserve your web link (including links to Frama-services)
-
-      in a web folder (alternative to Del.icio.us/Diigo).
-      '
-    hDesc: '
-      MyFrama is a digital catch-all, allowing you to store and
-
-      retrieve all your beloved links, like diigo or del.ico.us !
-
-      with a tag system and automatic sorting , you can easily
-
-      store your tabs and bookmarks, using the MyFrama button to
-
-      access directly the Frama services you are currently using !
-      '
-    mTitle: Sort all the Web if you want (it might take a while)
-    mBody:
-      desc: '
-        @framaservice is a digital catch-all,
-
-        allowing you to keep and retrieve all your
-
-        beloved links, like diigo or del.ico.us!
-
-        With its tag system and automatic sorting,
-
-        you can easily store your tabs and bookmarks,
-
-        using the MyFrama button to access directly the
-
-        Frama services you are currently using!
-        '
-      feat: '
-        Create your account, add the Bookmarklet
-
-        to your browser&quot;s bookmark bar.
-
-        Use it to store an  (<abbr>URL</abbr>) link,
-
-        adding its title, description and tag.
-
-        Use the MyFrama button on our site store a
-
-        link to the services: it&quot;s all
-
-        automatically sorted !
-
-        Consider creating your own sorting rule
-
-        to add your chosen tag to your web links!
-        '
-    tags: share, store, links
-
-  doodle:
-    sDesc: Meetings and polls
-    lDesc: Schedule a meeting or create an opinion poll
-    tDesc: '
-      Collaboratively decide the best date and time for a meeting,
-
-      or create a simple poll with ease (alternative to Doodle).
-      '
-    hDesc: '
-      Framadate is a bit like Doodle but libre software.
-
-      It couldn&quot;t be easier to invite your collaborators to organize
-
-      a meeting or create a poll with no need to register.
-      '
-    mTitle: A simple way to organize your meetings
-    mBody:
-      desc: '
-        Using @framaservice you will be able to
-
-        plan a meeting with several others or create
-
-        an online survey. Framadate does not store your data!
-        '
+      desc:
       feat:
-      - Email notification for every answer
-      - Modifications of the current poll
-      - Planning of a deadline
-      - Naming your survey and communicating its URL to contributors
-    tags: organize, meeting, date, poll
-
-  dropbox:
-    sDesc: File hosting online service
-    lDesc: File hosting online service
-    tDesc: '
-      Obtain an online storage space for hosting, synchronizing
-
-      (or sharing) your files (alternative to Dropbox, Google Drive).
-      '
-    hDesc: '
-      Framadrive allows you to store your documents on line,
-
-      to synchronize them across your computers, mobile devices, etc…
-
-      and to share them with whoever you want.
-      '
-    mTitle: File hosting online service
-    mBody:
-      desc: '
-        @framaservice allows you to store your documents online,
-
-        to synchronize them on your computers, tablets, phones, etc.
-
-        and to share them with whoever you want…
-        '
-      more: '
-        We opened 5000 accounts with a 2 Go capacity
-
-        in order to test a free alternative…
-
-        For a bigger or more sure alternative,
-
-        you can search for a host through the
-
-        <a href="https://chatons.org">KITTENS</a> collective ers</a>
-
-        (or try self-hosting with
-
-        <a href="http://yunohost.org/">Yunohost</a>,
-
-        <a href="http://labriqueinter.net/">la Brique internet</a>
-
-        or <a href="https://cozy.io/fr/">My Cozy Cloud</a>).
-        '
-    tags: store, save, files, share, agenda, calender, contacts, tasks
-
-  evernote:
-    sDesc: Notetaking
-    lDesc: Your notes, pictures and favorite links within reach!
-    tDesc: '
-      Synchronize your notes, pictures and favorite links between devices
-
-      with all the security of encryption (an alternative to Evernote).
-      '
-    hDesc: '
-      With Framanotes you can take and conserve notes,
-
-      pictures, links… and even files; and synchronize them
-
-      with all your devices (or share them with friends).
-      '
-    mTitle: Your notes concern you alone.
-    mBody:
-      desc: '
-        With @framaservice you can take and conserve notes,
-
-        pictures, links… and even files; and synchronise them
-
-        with all your devices (or share them with friends).
-        '
-      feat:
-      - synchronised note taking
-      - facilitated formating (Markdown syntax)
-      - hosting (small) pictures and files
-      - possibility to share a "Table of notes" with other users
-    tags: note, share, encryption
-
-  facebook:
-    sDesc: An ethical and decentralized social network
-    lDesc: An ethical and decentralized social network
-    tDesc: '
-      Share on an ethical and decentralized social network, without your
-
-      profile being exploited for the benefit of advertisers (alternative to Facebook).
-      '
-    hDesc: '
-      Framasphère is a free social network, based on the
-
-      décentralized Diaspora* software.
-
-      Find your friends on Framasphère - or another Diaspora* pod -
-
-      without your exchanges being tracked.
-      '
-    mTitle: Join your friends in the libre zone
-    mBody:
-      desc: '
-        @framaservice is a social network that
-
-        respects your data and your privacy. Framasphere is a node (also called <i>pod </i>)
-
-        of Diaspora*, a free social network.
-        '
-      feat: '
-        Share messages and photos with anyone on the Diaspora* network,
-
-        manage your contacts, tags, mentions, reshares… You can also
-
-        publish on other social networks (Facebook, Twitter, Tumblr) or on WordPress.
-        '
-    tags: social, network, sharing
-
-  github:
-    sDesc: Distributed revision control (source code repository)
-    lDesc: Free code is good. On a free and open platform, it’s even better!
-    tDesc: '
-      Publish your code - preferably free software - and collaborate with
-
-      others on a free software forge (alternative to Github).
-      '
-    hDesc: '
-      Framagit is a tool mostly for developers.
-
-      It helps you host your free software projects
-
-      and collaborate with others.
-      '
-    mTitle: Hosting of Free code
-    mBody:
-      desc: '
-        @framaservice is a tool that is primarily intended for developers.
-
-        It allows you to create up to 42 repositories per account – if you need more,
-
-        you should seriously consider self-hosting.
-
-        Compared to GitHub, the little extra is that you can create private repos.
-        '
-      more: '
-        You can also mirror your repositories on GitHub automatically:
-
-        you keep “feeding the beast” but
-
-        you are less dependent, and you remain visible to the eyes
-
-        of the nearly 10 million users registered on GitHub.
-
-        Your repository on our Framagit is automatically pushed to your GitHub repository.
-
-        This is also the choice made by Framasoft: we
-
-        still have a GitHub account, while we continue to develop our projects.
-        '
-    tags: code, forge, developpement
-
-  gmail:
-    sDesc: Mailing service
-    lDesc: Your emails, without NSA inside
-    tDesc:
-    hDesc:
-    mTitle:
-    mBody: '
-      @:meta.F will not offer an alternative to @gafamservices, but
-
-      there are other players that offer free email services.
-      '
     tags:
-
-  gagenda:
-    sDesc: Shared calendar
-    lDesc: You choose who sees your timetable
-    tDesc: '
-      Create personal or professional, confidential or public, agendas,
-
-      on your own or in collaboration, and synchronise them across devicess.
-      '
-    hDesc: '
-      With Framagenda you can create personal or professional
-
-      agendas, the timetable for a room or the activities
-
-      of your organisation, and share them freely.
-
-      You stay incharge of your data, and you choose
-
-      with whom, where and when they are shown.
-      '
-    mTitle: You own your appointments
-    mBody:
-      desc: '
-        With @framaservice you can create personal or professional agendas,
-
-        the timetable for a room or the activities of your
-
-        organisation, and share them freely.
-
-        You stay incharge of your data, and you choose with
-
-        whom, where and when they are shown.
-        '
-      feat:
-      - creation of multiple agendas
-      - lists of contacts and of tasks
-      - synchronisation across devices
-      - share agendas
-      - invite (by email) participants to appointments
-      - possibility to publicly show agendas
-    tags: date, organise, share, agenda, calender, contacts, tasks
-
-  gbooks:
-    sDesc: Online books
-    lDesc: An open library which offers thousands of books
-    tDesc: '
-      Consult an online library of digital books under a
-
-      libre licence and download them freely (alternative to Google Books).
-      '
-    hDesc: '
-      Our library contains hundreds of works which are
-
-      under libre licences or in the public domain. You can
-
-      consult it online via mobile platforms. You can add it
-
-      directly to an ebook reading application thanks to the
-
-      flux <abbr>OPDS</abbr>.
-      '
-    mTitle: Catalogue d’ouvrages accessibles pour tous
-    mBody:
-      desc: '
-        @framaservice is Framasoft’s <abbr>OPDS</abbr>  catalog.
-
-        “OK, so what?” you may ask. An Open Publication Distribution System
-
-        (<abbr>OPDS</abbr>) is a website you subscribe to with a software supporting this functionality
-
-         – some E-readers embed one, such as Aldiko and others for Android.
-
-         It provides you with quick and easy access to an entire library
-
-         from your computer, smartphone, or tablet.
-        '
-      more: '
-        Framasoft’s <abbr>OPDS</abbr> catalog gives you access to
-
-        hundreds of non-copyrighted books.
-        '
-    tags: kindle, ebook, read
-
-  gdocs:
-    sDesc: Collaborative writing
-    lDesc: A collaborative real-time web-based editor
-    tDesc: '
-      Draft a text online, as a team, in real time, with the help
-
-      of a timeslider, chat, comments… (alternative to Google Docs).
-      '
-    hDesc: '
-      Let&quot;s write together in the same document in an
-
-      interface for collective online drafting.
-
-      No registration required, give yourself a nickname
-
-      and a color and you&quot;re off!
-      '
-    mTitle: Collaborative writing service
-    mBody:
-      desc: '
-        @framaservice is a collaborative online writing tool
-
-        based on Etherpad.
-        '
-      more: '
-        A “pad” is an online text editor. But the great advantage here  is
-
-        the possibility of real-time collaborative writing: your contribution
-
-        appears immediately on the screen of every other
-
-        contributor, highlighted by a colour code.
-        '
-      feat:
-      - Open a public or private pad
-      - Write a document
-      - Invite contributors
-      - A colour code for each
-      - Embedded chat
-      - Version history
-      - Export your work
-      - Manage sessions and groups with MyPads!
-    tags: document, text, collaborate
-
-  gforms:
-    sDesc: Online surveys
-    lDesc: An easy way to create your surveys
-    tDesc: '
-      Create an online survey, be it simple or complex, on a
-
-      plateform that&quot;s respectful of your data (alternative to Google Forms).
-      '
-    hDesc: '
-      Framaforms allows you to design questionnaires and surveys to
-
-      meet your own specific needs, be it for school,
-
-      amily, an association, or work. Set up questions adapted
-
-      to your own specific context, with multiple choice questions
-
-      or free text fields.
-      '
-    mTitle: Online survey creation tool
-    mBody:
-      desc: '
-        @framaservice allows you to design questionnaires and surveys
-
-        to meet your own specific needs, be it for school, family, or association.
-
-        Set up questions adapted to your own specific context,
-
-        with multiple choice questions or free text fields.
-        '
-      feat: '
-        Create your account on Framaforms and start writing questionnaires
-
-        to meet your needs. No registration is required for respondents
-
-        to post their replies. You then have access to a synopsis of the results.
-        '
-    tags: forms, survey, groups
-
-  ggroups:
-    sDesc: Mailing lists
-    lDesc: Create an email discussion group
-    tDesc: '
-      Create an email group, that&quot;s an unique email address which
-
-      will distribute emails to all of the addresses in the group (alternative to Google Groups).
-      '
-    hDesc: '
-      Framalistes allows you to create an email group:
-
-      any person subscribed to your group can
-
-      receive the emails sent to the group and can in turn
-
-      participate. It is down to you to choose whether your group
-
-      is public, semi-private or private.
-      '
-    mTitle: Exchange without being read by Big Brother
-    mBody:
-      desc: '
-        @framaservice allows you to create an email group:
-
-        any person subscribed to your group can receive the emails
-
-        sent to the group and can in turn participate.
-
-        It is down to you to choose whether your group is public, semi-private or private.
-        '
-      feat: '
-        Create an account on the Framalistes site to make, configure and manage
-
-        your email group, or simply to find
-
-        groups which interest you and manage your subscriptions.
-        '
-    tags: groups, discussion, broadcast, list
-
-  gmaps:
-    sDesc: Cartography
-    lDesc: Create you own maps online
-    tDesc: '
-      Customize and add to maps, on your own or in
-
-      collaboration, and share them with ease (alternative to Google Maps).
-      '
-    hDesc: '
-      Framacarte allows you to add to, customize, color,
-
-      annotate… the maps of
-
-      <a href="https://en.wikipedia.org/wiki/Openstreetmap">OpenStreetMap</a>
-
-      and then display them on your own websiteor print them.
-      '
-    mTitle: Create you own maps online
-    mBody:
-      desc: '
-        @framaservice allows you to create customised maps based on
-
-         OpenStreetMap and show them on your website.
-        '
-      feat:
-      - Choose the background map
-      - 'Add POI: marker, lines, polygons…'
-      - Choose colors and icons
-      - 'Manage options of the map: add a littlemap, geolocalize user,…'
-      - Import geographics data (geojson, gpx, kml, osm…)
-      - Choose a licence for your data
-      - Export and share your map
-    tags: cartography, maps
-
-  greader:
-    sDesc: Web-based feed reader
-    lDesc: Choose freely which news to follow
-    tDesc: '
-      Gather news feeds (RSS, Atom) from blogs, video
-
-      channels, etc. in a single viewing place (alternative to Google Reader).
-      '
-    hDesc: '
-      If you want to subscribe to the RSS feeds of your favorite sites,
-
-      stay informed of all their news with Framanews !
-      '
-    mTitle: Stay up to date with the latest news
-    mBody:
-      desc: '
-        @framaservice provides you with an online feed reader,
-
-        which keeps you up to date with the latest news syndicated from
-
-        the RSS feeds of your favorite websites!
-        '
-      feat: '
-        Once your account is created, save your preferred RSS feeds and start following.
-
-        It couldn’t be simpler.
-        '
-    tags: feed, rss, news, reader, follow
-
-
-  gsearch:
-    sDesc: Search engine
-    lDesc: What if your online searches weren’t tracked by Google?
-    tDesc: '
-      Do your searches on an engine which will query Google, Bing,
-
-      Yahoo, Wikipedia, etc. while making the requests anonymous and avoiding tracking.
-      '
-    hDesc: '
-      Framabee is an anonymous metasearch engine.
-
-      This means that your searches are sent to several search
-
-      engines and the results are then displayed in your web browser.
-
-      The advantage is that Framabee acts as an intermediary
-
-      between you and Google (or other search engines), so your
-
-      IP address, search history, location and profile
-
-      won’t be stored by any of them.
-      '
-    mTitle: Une recherche anonyme
-    mBody:
-      desc: '
-        @framaservice  is an anonymous metasearch engine.
-
-        This means that your searches are sent to several search engines
-
-        and the results are then displayed in your web browser.
-
-        The advantage is that Framabee acts as an
-
-        intermediary between you and Google (or other search engines),
-
-        so your IP address won’t be stored by any of them.
-        '
-      more: '
-        It goes without saying that you must trust Framasoft
-
-        and its tools before using Framabee. This is why we wrote this
-
-        <a href="@:link.charte">charte</a>.
-        '
-    tags: search, anonymous
-
-  gslides:
-    sDesc: Presentations
-    lDesc: High quality user-friendly slideshows
-    tDesc: '
-      Create online slideshows and presentations, with the
-
-      possibility of collaborating and sharing (alternative to PowerPoint365).
-      '
-    hDesc: '
-      Framaslides allows you to directly create an online
-
-      slideshow or presentation, to access it with a
-
-      simple internet connection, and to share it.
-      '
-    mTitle: An application for your slideshows
-    mBody:
-      desc: '
-        @framaservice offers you a way to create
-
-        slideshows easily and intuitively.
-
-        With this application in your browser, no need
-
-        to load heavy and sophisticated software.
-        '
-      feat:
-      - a clear and intuitive interface
-      - easy insertion of text, images, videos, and websites
-      - local storage of a ready-to-use HTML version
-    tags: slideshow, presentation, document
-
-  gspreadsheet:
-    sDesc: Collaborative spreadsheet
-    lDesc: Share your spreadsheets and work together!
-    tDesc: '
-      Collaborate online, in real time, on
-
-      spreadsheets (an alternative to Excel365, Google Spreadsheet).
-      '
-    hDesc: '
-      Framacalc is to spreadsheets what Framapad is to
-
-      wordprocessing, in other words the possibility
-
-      to simply and collectively edit
-
-      the same document online
-      '
-    mTitle: An online spreadsheet
-    mBody:
-      desc: '
-        With @framaservice, your data are automatically saved
-
-        on the Internet. You and your colleagues can contribute to
-
-        the same document at the same time. You can visualize every change in
-
-        real time and work together on lists, calculations,
-
-        data, statistics, and much, much more!
-        '
-      feat:
-      - Collaborative edition (several users connected to the same spreadsheet)
-      - Numerous features available (statistics, financial data, mathematics, text, etc.)
-      - Options available to comment cells
-      - Automated backup
-      - Entry-level graphics (histograms, lines, dots)
-      - HTML Export
-      - 'Document size: up to 100 000 lines.'
-    tags: spreadsheet, document
-
-  imgur:
-    sDesc: Sending pictures
-    lDesc: Share your pictures anonymously
-    tDesc: '
-      Send images online, share single images with a single
-
-      link or make a gallery of them (alternative to Img.ur).
-      '
-    hDesc: '
-      Framapic makes it easy to share images,
-
-      for example for publishing them on Twitter, Facebook,
-
-      or … Framasphère!
-      '
-    mTitle: An easy way to share your images
-    mBody:
-      desc: '
-        @framaservice provides a simple way to share images,
-
-        e.g., on Twitter, Facebook or … on Framasphère!
-        '
-      more: '
-        Note that this service differs significantly from flickr or instagram:
-
-        it is not a hosting service for users’ pictures.
-
-        Rather it hosts anonymous pictures and no one, including ourselves,
-
-        has access to the cyphered content.
-        '
-      feat: '
-        @framaservice enables the user to send pictures anonymously.
-
-        You can choose to suppress them at any time
-
-        (from the first viewing, 24 hours/7days/30 days/1 year after putting them on line).
-        '
-    tags: share, images, gallery, encryption
-
-  meetup:
-    sDesc: Community events
-    lDesc: Organise meetings and special interest groups
-    hDesc:
-    tDesc:
-    mTitle: Keep control over the meetings that you organize
-    mBody:
-      desc: '
-        @framaservice allows you to propose events and meetings,
-
-        and to stay in contact with the community that shares your interests!
-        '
-      feat: '
-        Coming.
-        '
-    tags:
-
-  minecraft:
-    sDesc: Educational game
-    lDesc: An educational game worth digging into
-    tDesc: '
-      Players build togetherin this open world
-
-      with numerous educational applications (alternative to Minecraft).
-      '
-    hDesc: '
-      Framinetestest is a server of the Minetest game, a "sandbox" game
-
-      in which you construct and break up blocks to modify them and
-
-      with which you can create your own educational applications.
-      '
-    mTitle: Create your own educational applications
-    mBody:
-      desc: '
-        @framaservice is a server of the Minetest game, a "sandbox" game
-
-        in which you construct and break up blocks to modify them.
-        '
-      feat: '
-        Download the client software,
-
-        connect to our server and play.
-        '
-    tags: game, education
-
-  padlet:
-    sDesc: Organizing ideas
-    lDesc: Draft ideas and share them with discretion
-    tDesc: '
-      Create a collaborative online and real time table of notes,
-
-      to animate your brainstorming sessions (alternative to Padlet).
-      '
-    hDesc: '
-      Framemo allows you to create a table of columns where collaborators
-
-      can come and leave colored notes.
-
-      Like Framapad, registration is not required, and the modifications
-
-      are visible and recorded in real time.
-      '
-    mTitle: A brainstorm of libre post-its
-    mBody:
-      desc: '
-        @framaservice allows you to create a table of columns where
-
-        collaborators can come and leave colored notes.
-
-        Like <a href="https://framapad.org><b class="violet>Frama</b><b class="vert">pad</b></a>,
-
-        registration is not required, and the modifications are visible
-
-        and recorded in real time.
-        '
-      feat: '
-        Visit the site, create a table, pick a nickname, then share the URL
-
-        (web address) with your collaborators. It&quot;s as simple as that!
-        '
-    tags: collaborate, brainstorm
-
-  pastebin:
-    sDesc: Anonymous notes
-    lDesc: Write and share confidentially
-    tDesc: '
-      Draft texts, notes and code and share them confidentially
-
-      thanks to end-to-end encryption (alternative to Pastebin).
-      '
-    hDesc: '
-      With Framabin, you can share information that
-
-      only you and your correspondant are able to decypher
-
-      and it couldn&quot;t be easier to use.
-      '
-    mTitle: Communicate cyphered data
-    mBody:
-      desc: '
-        @framaservice provides a simple way to share cyphered information
-
-         exclusively with your correspondent.
-
-         You can even choose the duration of access.
-        '
-      feat: '
-        You may need to communicate one or more pieces of confidential information
-
-        without sending a standard e-mail or paper. Framabin enables you
-
-        to send an address with simple but secure access.
-
-        The server stores the cyphered data, which remains unreadable.
-        '
-    tags: share, note, text, encryption
-
-  pocket:
-    sDesc: Content back-up
-    lDesc: Save it and read it later
-    tDesc: '
-      Put on one side blog articles and the "read later" tabs
-
-      and find them again easily across devices (alternative to Pocket).
-      '
-    hDesc: '
-      Framabag allows you to put on one side the articles
-
-      that you don&quot;t have the time to read right away.
-      '
-    mTitle: Save it and read it later
-    mBody:
-      desc: '
-        With @framaservice, you won’t lose Internet contents that interest you,
-
-        even if you don’t have time to read them right away.
-
-        With one click, you save your selection and you can read it whenever you want.
-
-        The application saves your selection so that
-
-        you can enjoy reading it when you have more time.
-        '
-      more: '
-        Framabag is a <b class="violet">back-up service for web pages</b>.
-
-        You store the relevant contents on the server, including texts and images.
-
-        You can also share your articles and use
-
-        extensions for Firefox, Chrome, Android, etc.
-        '
-    tags: watch
-
-  scribd:
-    sDesc: Sharing PDF/ODP
-    lDesc: Display and share your documents
-    hDesc:
-    tDesc:
-    mTitle: Your readers have rights too
-    mBody:
-      desc: '
-        @framaservice allows you to host PDF documents and Open Document presentations (ODP)
-
-        for reading by the public. Your readership won&quot;t
-
-        need to create an account nor have to put up with adverts or tracking,
-
-        and can concentrate on the things that you publish.
-        '
-      feat: '
-        Create an account, upload your documents
-
-        and use the sharing link (or the display code on your own site).
-        '
-    tags:
-
-  loomio:
-    sDesc: Decision-making tool
-    lDesc: Make your decisions together, collaboratively
-    tDesc: '
-      Create a team and invite in youe collaborators in order to discuss and
-
-      take group decisions with the help of diverse voting tools.
-      '
-    hDesc: '
-      Framavox helps you to make group-based decisions.
-
-      Start a discussion, share ideas, come to an agreement,
-
-      all within the deadline that you have set yourselves.
-      '
-    mTitle: Decide together
-    mBody:
-      desc: '
-        @framaservice helps you to make group-based decisions.
-
-        Start a discussion, share ideas, come to an agreement.
-
-        Every decision has a clear deadline, so you can be sure to decide on time.
-        '
-      feat: '
-        Start a discussion, and
-
-        invite the people concerned to come and bring their point of view.
-
-        Develop ideas, exchange whatever your point of view.
-
-        Opinions can all be expressed, shared and matured.
-
-        Decide together and come up with a final proposal, within the defined timeframe.
-        '
-    tags: discussion, groups, organize, decide
-
-  skype:
-    sDesc: Visioconference
-    lDesc: Chat freely with your friends
-    tDesc: '
-      Obtain or rejoin a videoconference chatroom (with text based webchat and
-
-      screen sharing) in 3 clicks, from your web browser (alternative to Skype).
-      '
-    hDesc: '
-      Framatalk  allows you to chat with your friends without
-
-      installing software or having to register.
-
-      The connection from you to your friends is direct through
-
-      your web browser.
-      '
-    mTitle: Visioconference
-    mBody:
-      desc: '
-        @framaservice allows you to chat with your friends in the simplest possible way,
-
-        without the need to set up any sophisticated software.
-
-        Discussion is completely free: no data analysis will be carried out on your conversation.
-
-        Everything stays between you and your friends.
-        '
-      feat: '
-        You are connected to your friends directly from your web browser,
-
-        without the need to set up any extra software.
-
-        Once connected, enable your web browser to use your microphone
-
-        and your webcam and simply start talking.
-        '
-    tags: discussion, video
-
-  slack:
-    sDesc: Collaborative communication
-    lDesc: Talk to your team with a chat room on steroids
-
-    tDesc: '
-      Communicate with your team without going through Facebook groups (nor Slack).
-
-      Picture sharing, public and private channels, indexing…
-      '
-    hDesc: '
-      Framateam is a libre <b>chat</b> service
-
-      that allows you to communicate with your team, sends notifications to colleagues,
-
-      stores conversations and allows searching them.
-      '
-    mTitle: Talk to your team with a chat room on steroids
-    mBody:
-      desc: '
-        @framaservice is a libre <b>chat</b> service
-
-        that allows you to communicate with your team, sends notifications to colleagues,
-
-        stores conversations and allows searching them.
-        '
-      feat:
-      - Create your team
-      - Invite your members
-      - Create your communication channels (public or private)
-    tags: discussion, groups
-
-  trello:
-    sDesc: Project management
-    lDesc: Manage your joint projects down to the smallest detail
-    tDesc: '
-      Manage your group&quot;s projects with multiple tools: teams,
-
-      task tables, schedules, reminders and emails… (alternative to Trello).
-      '
-    hDesc: '
-      Framaboard is a team based task and project
-
-      manager, incorporating the Kanban method.
-
-      It is designed so that you will know at a glance
-
-      where  to get started, no matter what task management tools
-
-      you generally use.
-      '
-    mTitle: Project management
-    mBody:
-      desc: '
-        @framaservice is a visual task manager
-
-        that handles your projects collaboratively according to the Kanban method.
-
-        It is designed so that you will know at a glance how to get started,
-
-        whatever task management tools you generally use.
-        '
-      feat: '
-        Launch your new project, identify the tasks or Work Breakdown Structure (WBS),
-
-        and start managing each task collectively one by one.
-
-        Assign a resource for each task and define functions, progress, and deadlines.
-
-        This visual management tool enables you to see at a glance where you are in your project.
-        '
-    tags: organize, calendar, agenda, task, project
-
-  wetransfer:
-    sDesc: Send large files
-    lDesc: Share your files anonymously
-    tDesc: '
-      Share web file with a web link, confidentialy
-
-      with end to end encryption (alternative to WeTransfer).
-      '
-    hDesc: '
-      With Framadrop, no more issue with attachment too big
-
-      impairing you to send files by email.
-
-      This Free service allow you to easily and securily share files.
-      '
-    mTitle: Share your files easily
-    mBody:
-      desc: '
-        @framaservice provides an easy way to share files,
-
-        for example, when you want to send an email attachment
-
-        and the file exceeds the maximum allowed size.
-        '
-      more: '
-        Note, however, that this service is not an equivalent of Dropbox or Google Drive:
-
-        it is not a file hosting service (for that
-
-        we have <b class="violet">Frama</b><b class="vert">drive</b>),
-
-        but really an anonymous file transfer service (the content is
-
-        automatically encoded before transfer, and we have no access to it).
-        '
-      feat: '
-        @framaservice can send files anonymously.
-
-        You decide when you wish to remove them (after the first
-
-        download, 24h or 7, 30, 60 days after they go online).
-        '
-    tags: share, files, encryption
-
-  youtube:
-    sDesc: Release your videos
-    lDesc: Share your videos, keep your rights
-    tDesc:
-    hDesc: '
-      Videos in French (or with French subtitles)
-
-      about Free Software and the Free movement in general.
-
-      Interviews, conferences, documentaries, TV recordings…
-
-      to get informed and also inform others.
-      '
-    mTitle: Release your videos
-    mBody:
-      desc: '
-        On @framaservice, you can upload your videos, share
-
-        them with your friends, or provide open access.
-
-        This is certainly the best way to share your videos without transferring your rights.
-        '
-      feat: '
-        Open an account and upload your videos.
-
-        You keep your rights and your freedom to change uploads.
-        '
-    tags: share, video
-
-# Not on map -----------------------------------------------------------
-  jsfiddle:
-    sDesc: Share Code
-    lDesc:
-    hDesc:
-    tDesc:
-    mTitle:
-    mBody:
-    tags:
-
-  kongregate:
-    sDesc: Games
-    lDesc: A compilation of free games
-    tDesc: '
-      Framagames is a compilation of free games you can play online,
-
-      on your PC or on your tablet… and that need no complementary software for the installation.
-      '
-    hDesc: '
-      Framagames est une compilation de jeux libres qui se
-
-      jouent en ligne, se téléchargent sur son PC, sa tablette…
-
-      et ne nécessitent aucune installation supplémentaire.
-      '
-    mTitle: Have a break and play a while
-    mBody:
-      desc: '
-        @framaservice offers you a compilation of free games,
-
-        available for both online and offline use.
-
-        Have a break and check them out!
-
-        <small>(and <a href="https://www.theguardian.com/world/2014/jan/27/nsa-gchq-smartphone-app-angry-birds-personal-data">
-
-        in contrast to Angry Birds</a>, the NSA won’t be able to spy on you ;) )</small>
-        '
-      feat: '
-        Each game can be used directly on the website
-
-        or downloaded for offline use.
-
-        Choose your game and start playing.
-        '
-    mFooter: '
-      <p class="precisions">Framagames is a compilation of free games.
-
-      All credits are available on the website.</p>
-      '
-    tags: jeu
-
-  maestro:
-    sDesc: Flexible collaboration
-    lDesc: Orchestrate your collaborative projects
-    tDesc: '
-      Merge a pad, a video conference and lots of others tools in
-
-      a single window with a single web link: ideal for meetings.
-      '
-    hDesc: '
-      Do you simultaneously need a pad for note taking,
-
-      an organisational spreasheet and a video conference?
-
-      With Framaestro, YOU get to organise the tools you need on a single web page.
-      '
-    mTitle: Orchestrate your collaborative projects
-    mBody:
-      desc: '
-        Do you simultaneously need a pad for note taking, an
-
-        organisational spreasheet and a video conference?
-
-        With @framaservice, YOU get to organise the tools
-
-        you need on a single web page.
-        '
-    tags: collaborate
-
-  pixlr:
-    sDesc: Vectorial Drawing
-    lDesc: Create vector graphics quickly on open standard SVG
-    tDesc: '
-      Create and modify shape based images (vector graphics, in the SVG format)
-
-      simply and in a few clicks. Children love it.
-      '
-    hDesc: '
-      For simple and quick creation and modification of beautiful
-
-      images online in the open SVG format. Children love it!
-      '
-    mTitle: Create vector graphics quickly on open standard SVG
-    mBody:
-      desc: '
-        @framaservice is a very simple (even simplistic) drawing software.
-        '
-      more: '
-        <iframe src="https://framatube.org/videos/embed/14e695a7-37c0-4dc9-b168-14c43c8ee78e"
-
-          width="560" height="315" allowfullscreen></iframe>
-        '
-      feat:
-      - Available online, without any installation
-      - No registration required
-      - Export your documents to bitmap or vector format
-      - Free software, open to all
-      - 'Ethics: none of your data gets stored'
-    tags: images, draw
-
-  transifex:
-    sDesc: Software translation
-    lDesc: Create a new translation project for your software
-    hDesc:
-    tDesc:
-    mTitle: Make your code multilingual!
-    mBody:
-      desc: '
-        @framaservice offers you an easy-to-use translation interface
-
-        to translate strings from your code collaboratively.
-        '
-      feat: Create a account, upload your code and moderate contributions.
-    tags:
-
-  twitter:
-    sDesc: Microblogging
-    lDesc: Express yourself on the Internet
-    tDesc: '
-      Communicate through short messages in a public, confidential or
-
-      private way with this ethical and decentralized alternative to Twitter.
-      '
-    hDesc: '
-      Framapiaf is a free <b>microblogging</b> service,
-
-      based on the decentralized software Mastodon.
-
-      Find your friends on Framapiaf - or other Mastodon,
-
-      GNU Social, Friendica instances - and communicate with them without being tracked.
-      '
-    mTitle: Free microblogging
-    mBody:
-      desc: '
-        @framaservice allows you to follow feeds and have your own feed,
-
-        with a decentralized solution.
-        '
-      feat:
-      - Choose a client,
-      - open an account,
-      - then subscribe to various feeds
-      - and tweet.
-    tags: network, social, microblogging
 
 # Hors frama -----------------------------------------------------------
   airbnb:
-    sDesc: Accommodation
+    sDesc:
 
   aweber:
-    sDesc: Newsletter
+    sDesc:
 
   blablacar:
-    sDesc: Car sharing
+    sDesc:
 
   routard:
-    sDesc: Travel guide
+    sDesc:
 
   gchrome:
-    sDesc: Web browser
+    sDesc:
 
   deezer:
-    sDesc: Music
+    sDesc:
 
   flickr:
-    sDesc: Photo album
+    sDesc:
 
   ganalytics:
-    sDesc: Web statistics
+    sDesc:
 
   orange:
-    sDesc: Internet service provider
+    sDesc:
 
   outlook:
-    sDesc: Email client
+    sDesc:
 
   ovh:
-    sDesc: Web hosting & cloud
+    sDesc:
 
   patreon:
-    sDesc: Micropayment and crowdfunding
+    sDesc:
 
   paypal:
-    sDesc: Online payments
+    sDesc:
 
   universalis:
-    sDesc: Encyclopedia
+    sDesc:
