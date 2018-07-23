@@ -1,0 +1,865 @@
+meta:
+  title: Desgooglicemos Internet
+  dio: De-google-ify Internet
+  dioname: <b class="violet">Desgooglicemos</b> <b class="orange">Internet</b>
+  F: <a href="@:link.F">@:meta.fname</a>
+  DIo: <a href="@:link.DIo">@:meta.dioname</a>
+  lead: '
+    Una iniciativa de nuestra red @:meta.F en favor de un internet<br>
+
+    <a href="#leds">libre</a>, <a href="#leds">descentralizado</a>,
+
+    <a href="#leds">ético</a> y <a href="#leds">solidario</a>
+    '
+  start: Campaña comenzada el día
+  edit: Última modificación el
+  support: Sostener este proyecto
+
+nav:
+  langChange: Cambiar de lengua
+  lang: Lengua
+
+link:
+  F: https://framasoft.org/en/
+  S: https://soutenir.framasoft.org/en/
+  DIo: https://degooglisons-internet.org/es/
+  DIoL: https://degooglisons-internet.org/es/list
+  charte: https://framasoft.org/nav/html/charte-en.html
+  contact: https://contact.framasoft.org
+  participer: https://participer.framasoft.org
+  docs: https://docs.framasoft.org/
+  cloud: https://framacloud.org/fr/cultiver-son-jardin
+  chatons: https://chatons.org/en/
+
+img:
+  map: Carte2016-romains-en.png
+
+leds:
+  title: Por un Internet…
+  libre:
+    title: Libre
+    desc: '
+      La historia de la red Internet en sí es una historia de software libre,
+
+      tanto desde el punto de vista de los estándares como de los protocolos empleados.
+
+      Su popularidad y su potencial provocan también envidia, y algunas grandes empresas
+
+      bien quisieran hacerse con su control, imponiendo código cerrado en unos sistemas bloqueados
+
+      y no interoperables. Para que Internet siga siendo fiel a sus principios fundadores que lo han conducido al éxito,
+
+      debemos encontrar en él aplicaciones de software libre, esto es,
+
+      cuyo código fuente esté abierto, sea asequible y siga bajo licencias libres.
+      '
+  ethic:
+    title: Ético
+    desc: '
+      Respaldamos totalmente un Internet de intercambio y de independencia.
+
+      La explotación, la vigilancia, la censura y la apropiación de los datos son valores que
+
+      rehusamos en provecho de la transparencia (la probidad),
+
+      de la exposición clara de las condiciones de uso de los servicios,
+
+      y de la negación de las discriminaciones.
+      '
+  decent:
+    title: Descentralizado
+    desc: '
+      La inteligencia de Internet debe situarse en la periferia de la red dentro de una dinámica
+
+      de intercambio entre iguales, para impedir crear un Minitel 2.0 más. Para asegurar la igualdad
+
+      de todos, ciudadanos como empresarios, no sólo se deben evitar los monopolios,
+
+      sino que también se les debe impedir que se apoderen de los datos personales o públicos. Explicando,
+
+      mediante tutoriales, cómo multiplicar las soluciones libres que permitan un Internet
+
+      más equitativo, favorecemos la diseminación del código y  diversificamos los usos.
+      '
+  solid:
+    title: Solidario
+    desc: '
+      Gracias a los servicios que desplegamos, promovemos un modelo económico
+
+      basado en la mutualización de los costes, el intercambio de los recursos y la asequibilidad de la mayoría.
+      Por tanto, se evitarán los abusos porque todos tenemos conciencia de la
+
+      la comunidad de los bienes. También posee este modelo un carácter educativo ya que pensamos
+
+      que si documentamos el depliegue de servicios, un gran número de usuarios
+
+      estarán a su vez en condiciones de compartir dichos recursos.
+      '
+  charte: Para saber más, consulte <strong><a href="@:link.charte">nuestra charte</a></strong>.
+
+map:
+  title: Haga clic en el mapa para descubrir las alternativas…
+  alt: '
+    Estamos en 2018 después de Cristo. Toda la Red está ocupada por los servicios centralizados…
+
+    ¿Toda? ¡No! Una aldea poblada por irreductibles activistas de lo libre resiste,
+
+    todavía y como siempre, al invasor. Y la vida no es fácil para las guarniciones
+
+    de los reducidos campamentos de Fermetum, Centralisum, Espionnum y Privatum…
+    '
+
+camps:
+  village:
+    title: Pueblo librista
+    text1: '
+      En medio de las empresas multinacionales tentaculares,
+
+      una organización sin fines lucrativos continúa participando activamente en la lucha
+
+      por una Red abierta y respectuosa de los internautas.
+      '
+    text2: '
+      Además de @:meta.F, asociación sin fines lucrativos
+
+      que lanza esta campaña, podemos <a href="http://april.org">l’April</a>,
+
+      <a href="http://laquadrature.net">la Quadrature du Net</a> o también <a href="http://aful.org">l’Aful</a>.
+
+      Estas asociaciones viven con sus donaciones, ¡no se les olvide sostenerlas!
+      '
+  fermetum:
+    title: <i lang="la">Fermetum</i>
+    text1: '
+      Los servicios en línea están frecuentemente cerrados :
+
+      cuando uno empieza a  usarlos,
+
+      resulta muy difícil separarse de ellos, ya que esas empresas lo hacen todo para mantenerlo cautivo,
+
+      impidiéndole migrar datos con facilidad, por ejemplo.
+      '
+    text2: '
+      Utilizar los servicios abiertos es garantizar que no seguirá siendo
+
+      cautivo de un servicio en particular y que siempre será facil cambiarlo.
+      '
+  centralisum:
+    title: <i lang="la">Centralisum</i>
+    text1: '
+      Los servicios centralizados plantean numerosos problemas: crean vulnerabilidad en sus datos (solo un sitio
+
+      no disponible y ya nada es accesible) y facilita a terceros su explotación.
+      '
+    text2: '
+      Utilizar servicios en línea descentralizados significa tener la opción de
+
+      elegir entre utilizar una instancia en línea como la propuesta por Framasoft o instalar el servicio en casa.
+      '
+  espionnum:
+    title: <i lang="la">Espionnum</i>
+    text1: '
+      « Si es gratis, es porque tú eres el producto »: numerosos servicios en línea viven de
+
+      la explotación de sus datos personales vendiéndolos a empresas de publicidad.
+
+      Además, muchos servicios están en los Estados Unidos y obedecen a leyes como el
+
+      PATRIOT ACT negando totalmente el derecho de cada uno a la vida privada.
+      '
+    text2: '
+      Utilizar servicios en línea alojados en Europa es asegurarse de su independencia de las leyes de otro
+
+      continente. Además, cuando aloja usted mismo el servicio, nadie puede  violar su vida privada.
+      '
+  privatum:
+    title: <i lang="la">Privatum</i>
+    text1: '
+      Los servicios privadores (« patentadores » en el lenguaje común) funcionan de manera opaca:
+
+      es imposible saber exactamente lo que el programa hace con su datos. Solo el editor tiene el control.
+      '
+    text2: '
+      Utilizar servicios en línea libres supone un control del funcionamiento del programa por parte de la
+
+      comunidad y la posibildad de modificarlo, de instalarlo en otro dispositivo, etc.
+      '
+  nsa:
+    title: <abbr title="National Security Agency" lang="en">NSA</abbr>
+    text1: '
+      Las revelaciones de Edward Snowden sobre el programa PRISM de la
+
+      @:camps.nsa.title han mostrado que es acertado temer la violación
+
+      masiva de la vida privada de los internautas, es algo fundado.
+      '
+    text2: '
+      Utilizar servicios centralizados supone en la actualidad brindar en bandeja sus datos personales a  las
+
+      organizaciones de control sin posibilidad de conocer el uso al que van destinados
+      '
+
+# Home -----------------------------------------------------------------
+home:
+  title: Inicio
+  intro:
+    bubble1:
+    bubble2:
+    bubble3:
+
+    btnList1:
+    btnList2:
+    btnList3:
+    btnAlt1:
+    btnAlt2:
+    btnAlt3:
+
+  more:
+    title:
+    desc:
+    docs:
+      btn:
+      desc:
+    cloud:
+      btn: Framacloud
+      desc:
+    chatons:
+      btn:
+      desc:
+
+  why:
+    title:
+    desc:
+    explain:
+      btn:
+      desc:
+    props:
+      btn:
+      desc:
+    who:
+      btn:
+      desc:
+
+  contact:
+    title:
+    text1:
+    text2:
+    text3:
+    btn:
+
+  support:
+    title:
+    text1:
+    text2:
+    text3:
+    btn:
+
+  speakabout:
+    title:
+    btn:
+
+  explain:
+    stakes:
+      btn: Los desafíos
+      title: ¿Cuáles son los desafíos ?
+      text1: '
+        Los últimos años han visto generalizarse una<strong>concentración de los actores de Internet</strong> (Youtube pertenece a Google,
+
+        WhatsApp a Facebook, Skype a Microsoft, etc.). Esta centralización es perjudicial, no sólo porque frena la innovación,
+
+        sino también y sobre todo porque lleva consigo una pérdida de libertad  para los usuarios. <strong>Los usuarios de dichos servicios
+
+        ya no controlan su vida digital</strong> : se disecan sus comportamientos de manera permanente con el
+
+        fin de que la publicidad se centre  en ellos, y sus datos -privados sin embargo (sitios visitados, intercambios de mails, vídeos
+
+        visionados, etc.) - pueden ser analizados por servicios gubernamentales.
+        '
+      text2: '
+        La respuesta que desea traer Framasoft a esta problemática es sencilla :
+
+        valorizar, para cada uno de esos servicios privadores de libertad,
+
+        una alternativa Libre Ética, Descentralizada y Solidaria.
+        '
+    danger:
+      btn: Los peligros
+      title: Los peligros
+      text: '
+        Los servicios en línea  siempre más centralizados de gigantes
+
+        tentaculares como Google, Amazon, Facebook, Apple o Microsoft (GAFAM)
+
+        ponen en peligro nuestras vidas digitales.
+        '
+      espionum:
+        title: Espionaje
+        desc: '
+          Con la  coartada de suministrar una «mejor experiencia de usuario», se espían permanentemente
+
+          nuestros comportamientos en Internet . Estas informaciones pueden servir para enseñar
+
+          publicidad dirigida, pero las revelaciones del caso Snowden también han demostrado que los gigantes de Internet
+
+          estaban obligados a comunicar estos datos (a veces muy privados : intercambios de emails en Gmail,
+
+          fotos intercambiadas en Facebook, conversaciones por Skype, geolocalización de teléfonos, etc.)
+
+          a los servicios gubernamentales.  <strong>Con el pretexto de la lucha contra el terrorismo</strong>,
+
+          los estados son capaces de conseguir mucha más  información más de la que un «Big Brother» hubiera  soñado tener.
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=espionnage
+      privatum:
+        title: Vida privada
+        desc: '
+          Nuestros datos son una extensión de nosotros mismos. Pueden indicar dónde estamos,
+
+          con quién, nuestra orientación política o sexual, los sitios internet que hemos visitado, nuestra receta predilecta, los
+          temas que nos interesan, etc.<br>
+
+          Si un solo dato, tomado independientemente, no es forzosamente sensible, en cambio un conjunto de datos
+
+          puede serlo (por ejemplo si usted hizo búsquedas sobre el cáncer justo antes de suscribir una póliza de
+
+          seguro de vida).<br>
+
+          En un mundo donde todo se vuelve digital (lectura, TV, telefonía, música, red social, etc.), <strong>nuestra vida privada
+
+          es un elemento esencial de lo que hace de nosotros personas singulares</strong>. Una persona malévola que tendría acceso a su
+
+          smartphone puede aprender en unos minutos sobre usted lo bastante para perjudicarle de manera considerable
+
+          (usurpación de identidad en Facebook, uso indebido de informaciones profesionales, compras hechas sin su
+
+          acuerdo, etc.).
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=vie-privee
+      centralisum:
+        title: Centralización
+        desc: '
+          Las mayores empresas actrices de Internet se han vuelto unos verdaderos calamares gigantes : Facebook posee WhatsApp e Instagram, Google tiene Youtube y Waze, Microsoft distribuye Skype, etc.<br> Esta concentración de los actores plantea problemas múltiples:
+
+          ¿qué pasará si Facebook cierra el chiringuito ? Cómo hacer búsquedas si Google tiene una avería ?
+
+          <strong>Nos vamos volviendo poco a poco dependientes de unos servicios suministrados por un
+
+          pequeño número de actores .</strong> Por ejemplo, Apple (iPhone), Google (Android) y Microsoft (Windows Phone) se reparten la
+
+          casi totalidad del mercado de los sistemas operativos para smatphones.<br>
+
+          Por otra parte, el tamaño de dichos actores frena la innovación: es difícil crear una empresa emergente
+
+          frente a Apple o Google (respectivamente primera y segunda capitalizaciones bursátiles mundiales ).<br>
+
+          Por fin, la falta de diversidad de estos gigantes también les da la posibilidad no sólo de recoger fácilmente
+
+          informaciones personales, sino también de falsificar la información que difunden (una búsqueda en Google sobre la
+
+          palabra "nuclear" no le dará los mismos enlaces si Google le percibe a usted como un militante ecologista  o como un partidario de
+
+          la energía nuclear).
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=centralisation
+      fermetum:
+        title: Código cerrado
+        desc: '
+          Los servicios web que usted usa en su computadora o su smartphone se ejecutan normalmente en la «nube» :
+
+          algunos servidores diseminados por el planeta , que almacenan tanto sus datos (mails, fotos, archivos, etc.) como el
+
+          código de las aplicaciones<br>
+
+          Para los datos, se plantea el problema de su perennidad (¿qué será en efecto de sus ficheros archivos si Dropbox cierra mañana?)
+
+          pero también el de la capacidad de usted de cambiar de servicio (¿cómo hará para recuperar la totalidad de sus fotos en
+
+          Facebook o Picasa, y volver a insertarlas con los comentarios dentro de otro servicio?).<br>
+
+          En cuanto a las aplicaciones, ello implica que <strong>usted queda a merced de cambios imprevistos según los caprichos de su proveedor </strong>(incorporación de publicidad, modificación de la interfaz, etc.), pero sobre todo que no tiene casi ningún control sobre lo
+
+          que la aplicación puede hacer. Son «cajas negras» que pueden actuar de manera maliciosa (mandar SMS a sus espaldas,
+
+          ejecutar código indeseable, etc.).<br>
+
+          Para terminar, estas compañías nos encierran en jaulas doradas, es cierto, ¡pero jaulas a pesar de todo!
+          '
+        ref: https://my.framasoft.org/u/degooglisons/?searchtags=fermeture
+
+    props:
+      btn:
+      title:
+      text:
+      libre:
+        title: Libertad
+        text1: '
+          La historia de Internet es en sí una historia de software libre,
+
+          desde el punto de vista de los estándares así como
+
+          de los protocolos utilizados. Su popularidad y su potencial crean envidiosos,
+
+          y algunas grandes empresas bien quisieran controlarlos imponiendo
+
+          código cerrado dentro de unos sistemas bloqueados y no interoperables.
+          '
+        text2: '
+          Para que Internet quede fiel a sus principios fundadores que lo han conducido al éxito,
+
+          debemos encontrar en él aplicaciones de software libre, esto es,
+
+          cuyo código fuente esté abierto, asequible y bajo licencias libres.
+          '
+        text3: '
+          Framasoft se compromete a no utilizar sino  programas de código fuente « libre ».
+          '
+      ethic:
+        title: Ético
+        text1: '
+          Respaldamos totalmente un Internet de intercambio y de independencia.
+          '
+        text2: '
+          La explotación, la vigilancia, la censura y la apropiación de los datos son valores que
+
+          rehusamos en provecho de la transparencia (la probidad), de la exposición clara de las condiciones
+
+          de uso de los servicios, y de la negación de las discriminaciones.
+          '
+        text3: '
+          Framasoft se compromete a no explotar los datos de los usuarios de sus servicios,
+
+          y a promover una web abierta y equitativa.
+          '
+      decent:
+        title: Descentralización
+        text1: '
+          La inteligencia de Internet debe apoyarse en cada actor de la red dentro de una
+
+          dinámica de intercambio de  igual a igual, para impedir crear un Minitel 2.0 más.
+          '
+        text2: '
+          Para asegurar la igualdad de todos, ciudadanos como empresarios, no sólo se deben evitar los monopolios,
+
+          sino que también se debe impedirles que se apoderen de los datos personales o públicos.
+          '
+        text3: '
+          Explicando, mediante tutoriales, cómo multiplicar las soluciones libres que permitan un Internet
+
+          más equitativo, favorecemos la diseminación del código y  diversificamos los usos.
+          '
+        text4: '
+          Framasoft se compromete a facilitar el auto-alojamiento y la interoperabilidad, con el fin de no
+
+          « encerrar » a sus usuarios.
+          '
+      solid:
+        title: Solidaridad
+        text1: '
+          Gracias a los servicios que desplegamos, promovemos un modelo económico
+
+          basado en la mutualización de los costes, el intercambio de los recursos, y la asequibilidad de la mayoría.
+          '
+        text2: '
+          También posee este modelo un carácter educativo ya que pensamos
+
+          que si documentamos el depliegue de servicios, un gran número de usuarios
+
+          quedarán a su vez en medida de compartir dichos recursos.
+          '
+        text3: '
+          Pensamos que no infantilizar a los usuarios y hacer que compartan
+
+          la responsabilidad del uso de los servicios permitirá regular los abusos.
+          '
+        text4: '
+          Framasoft se compromete a promover el respeto y la autonomía
+
+          de dichos usuarios (siempre que haya reciprocidad al respecto).
+          '
+
+      charte:
+        title: Servicios y Carta
+        desc: '
+          Pueden encontrar en línea la lista de servicios que ya proponemos
+
+          (y los que se preparan) y también nuestra Carta :
+          '
+        btn: Carta de los servicios
+
+    concrete:
+      title: Concretamente
+      text1: '
+        El proyecto « Desgooglicemos Internet » - que no afecta sólo a Google -
+
+        consiste en <strong>proponer servicios alternativos frente a la mayor parte de
+
+        los servicios que consideramos como  amenazadores para nuestras vidas digitales</strong>.
+        '
+      text2: '
+        Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube,
+
+        Doodle, Yahoo! Groups, y muchos más son servicios muy prácticos,
+
+        pero <strong>se han vuelto demasiado gigantes y nos han hecho dependientes</strong>.
+
+        Framasoft desea entrar en resistencia, y propone un plan de creación de aplicaciones
+
+        alternativas en varios años.
+        '
+      text3: '
+        Estos servicios son libres, gratuitos, abiertos a todos (dentro de los
+
+        límites de nuestras capacidades técnicas y financieras), como
+
+        <strong><a href="https://es.wikipedia.org/wiki/Bien_com%C3%BAn_(econom%C3%ADa)">bienes comunes</a> digitales</strong>.
+
+        Y siempre con la preocupación de la descentralización de Internet
+
+        y de promover auto-alojamiento, nos esforzaremos por que cada
+
+        uno pueda instalar sus propios servicios (para si, para su asociación, su empresa).
+        '
+      text4: '
+        Claro, no pretendemos  en ningún modo<em>competir</em> con esos grandes servicios,
+
+        sólo queremos proponer un espacio digital neutral, no-comercial y
+
+        desprovisto de agresividad con sus usuarios.
+        '
+      text5: '
+        Acceder a la lista de los servicios que proponemos ya :
+        '
+
+# List -----------------------------------------------------------------
+list:
+  title: Lista de servicios
+  desc: '
+    Lista de servicios en línea lbres, éticos, descentralizados y solidarios
+
+    que Framasoft propone (también los que se preparan) para desgooglizar Internet
+    '
+
+# Alt ------------------------------------------------------------------
+alt:
+  title:
+  desc:
+
+  table:
+    th1:
+    th2:
+    th3:
+
+  text1:
+  text2:
+  text3:
+  text4:
+
+# Medias ---------------------------------------------------------------
+medias:
+  title: Espacio medios de difusión
+  subtitle:
+  intro:
+  timeline:
+
+  tabs:
+    title: Imágenes de la campaña Desgooglicemos
+    intro:
+    saveas: Haga un clic derecho « Guardar la imagen como » para utilizarla de nuevo
+
+    tab1:
+      title: Cartes
+      intro:
+      img:
+      - ['Mapa « Antes »', 'Carte2016-romains.png',
+         'Mapa de Francia invadida por los servicios GAFAM (oct 2014)']
+      - ['Mapa « Despues »', 'Carte2016-victoires.png',
+         'Mapa de Francia con las alternativas Framasoft (oct 2016)']
+      - ['Mapa animado', 'Carte2016-animation.gif',
+         'Animación de la reconquista de los servicios GAFAM (format .gif)']
+
+    tab2:
+      title:
+      intro:
+      img:
+      - ['Drawing “Closed”', 'stevusjobus.png']
+      - ['Drawing “Cyber Police”', 'cyberpolicus.png']
+      - ['Drawing “Spies”', 'bourrepifix.png']
+      - ['Drawing “Stallman”', 'stallmanoramix.png']
+      - ['Drawing “Oversight”', 'village.png']
+      - ['Drawing “GAFAM”', 'GAFAM.png']
+      video:
+      - ['<b class="violet">De-google-ify</b> <b class="orange">Internet</b>',
+         'anim_dio']
+
+    tab3:
+      title: Videos
+      intro: '
+        Hemos podido explicar nuestro proyecto en unas conferencias.
+
+        Hemos escogido estos dos vídeos (y su código de integración)
+
+        para que puedan ustedes volver a utilizarlos en sus propios sitios web.
+        '
+      video:
+      - ['Versión corta (FR - 17mn)',
+         'https://framatube.org/videos/embed/b30167b7-d16b-425b-b820-4e91cac80bf5']
+      - ['Versión larga (EN - 24mn)',
+         'https://framatube.org/videos/embed/c193a2f6-8b24-48c3-a93e-f89bd71cad42']
+
+    tab4:
+      title: Presentación
+      link: https://degooglisons-internet.org/presentation/
+
+    tab5:
+      title: <span lang="en">Stickers</span>
+      img:
+      - ['GAFAM', 'stickerDiO_gafam.png', '<i lang="en">GAFAM, we &lt;3 your data!</i>']
+      - ['Google', 'stickerDiO_google.png', '<i lang="en">Warning: do not feed the Google.</i>']
+      - ['Amazon', 'stickerDiO_amazon.png', '<i lang="fr">Attention : Amazon très méchant</i>']
+      - ['Facebook', 'stickerDiO_facebook.png', '<i lang="en">Facebook is watching you.</i>']
+      - ['Apple', 'stickerDiO_apple.png', '<i lang="en">Apple: Kids, don&quot;t do drugs.</i>']
+      - ['Microsoft', 'stickerDiO_microsoft.png', '<i lang="en">Microsoft: do you need a backdoor?</i>']
+
+    tab6:
+      title: Drawings Péhä
+      intro:
+      img:
+      - ['Drawing “Files”', 'Peha-Framadrop-CC-BY.png']
+      - ['Drawing “Project”', 'Peha-Framagit-CC-BY.png']
+      - ['Drawing “Social networks”', 'Peha-Framapiaf-Framasphere-CC-BY.png']
+      - ['Drawing “Visio-conf”', 'Peha-Framatalk-CC-BY-SA.png']
+      - ['Drawing “De-googl-ify”', 'Peha-Banquet-Degooglisons-CC-By.png']
+
+    tab7:
+      title:
+      intro:
+      img:
+      - ['Infography « Framasoft&quot;s World »',
+         'infographie_Le-Monde-de-Framasoft_CC-By-SA-Geoffrey-Dorne-1920px.jpg']
+      - ['Source (.pdf file large format)', 'infographie_framasoft_2017.pdf']
+
+  press:
+    title: Revista de prensa
+    intro: '
+      La campaña « Desgooglicemos Internet » ya ha dado que hablar a lo largo del primer año de su creación.
+
+      Aquí tenemos unos extractos de nuestra
+
+      <a href="https://wiki.framasoft.org/speakabout">revista de prensa</a>.
+      '
+    th1: Fecha
+    th2: Medio
+    th3: Enlaces
+    lArticle: Enlace con el artículo
+    lPaywall: Enlace con el artículo (suscriptores)
+    lSummary: Link to the summary of the issue
+    lPodcast: Enlace con el podcast
+    lListen: Enlace con la página del programa de radio
+
+  frama:
+    title: Framasoft en pocos enlaces…
+    list:
+    - <a href="https://contact.framasoft.org/#questions">Contacto</a> (el formulario manda directamente a nuestro servicio de prensa).
+    - <a href="https://en.wikipedia.org/wiki/Framasoft">Página de wikipédia</a> dedicada a Framasoft.
+    - <a href="https://soutenir.framasoft.org/association">Presentación completa</a>de Framasoft.
+    - <a href="https://wiki.framasoft.org/speakabout">Revista de prensa</a> (y de Internet) de Framasoft.
+    text1: '
+      Framasoft es una red de educación popular, que procede del mundo
+
+      educativo y se dedica a promover y difundir el software y la cultura libres.
+      '
+    text2: '
+      Vínculo entre el mundo de lo Libre y lo público en general, la asociación
+
+      propone un sinnúmero de proyectos (guía de software, editorial,
+
+       motor de búsqueda, etc.) reunidos según 3 ejes: software libre,
+
+       cultura libre y servicios libres.
+      '
+    text3: '
+      <em>El logotipo es obra de JosephK bajo licencia
+
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+
+        <span lang="en">Creative Commons By</span>-<abbr>SA</abbr> 4.0
+
+      </a>.</em>
+      '
+
+timeline:
+  title:
+  launch:
+  events:
+  - '<a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> revelations on American and British mass espionage programs.'
+  - '<a href="https://framablog.org/2014/01/23/manger-la-patee-de-son-chien/">Framasoft’s de-googl-ification</a><br>(see the <a href="https://rmll.ubicast.tv/videos/quitter-google-lexperience-de-lassociation-framasoft/">the RMLL 2014 conference</a>)'
+  - '<a href="https://framablog.org/2014/02/05/framabag-service-libre-gratuit-interview-developpeur/">@:timeline.launch Framabag</a>'
+  - '<a href="https://rmll.ubicast.tv/videos/quelles-alternatives-a-google-retours-sur-lexperience-framacloud/">Campaign « De-googl-ify Internet » pre-announcement </a> at the RMLL of Montpellier'
+  - '<a href="https://framablog.org/2014/10/07/degooglisons-internet/">Campaign Announcement</a>'
+  - '<a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">@:timeline.launch Framasphère</a>'
+  - '<a href="https://framablog.org/2014/11/11/des-cartes-mentales-libres-avec-framindmap/">Announcement of Framindmap</a>'
+  - '<a href="https://framablog.org/2014/11/26/framadate-nouvelle-version-accessible/">New version of Framadate</a>'
+  - '<a href="https://framablog.org/2014/12/11/mypads-le-developpement-est-lance/">@:timeline.launch the crowdfunding of MyPads</a>'
+  - '<a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/ ">@:timeline.launch Framagit</a>'
+  - '<a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">@:timeline.launch Frama.link, Framapic and Framabin</a>'
+  - '<a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">@:timeline.launch Framabee</a>'
+  - '<a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">@:timeline.launch Framagames</a>'
+  - '<a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">@:timeline.launch Framabookin</a>'
+  - '<a href="https://rmll.ubicast.tv/videos/google-facebook-etc-pourquoi-et-comment-decoloniser-internet/">Progress report at the RMLL of Beauvais</a>'
+  - '<a href="https://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait/">« De-googl-ify Internet » season 2 announcement</a>'
+  - '<a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:timeline.launch Framadrive</a>'
+  - '<a href="https://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs/">Announcement of MyPads</a>'
+  - '<a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">@:timeline.launch Framaboard</a>'
+  - '<a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:timeline.launch the new version of Framadate</a>'
+  - '<a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:timeline.launch Framadrop</a>'
+  - '<a href="https://framablog.org/2015/10/23/les-nouveaux-loups-du-web-lavant-premiere/">Partnership to promote the documentary: « Les Nouveaux Loups du Web »</a>'
+  - '<a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">@:timeline.launch Framacarte</a>'
+  - '<a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">@:timeline.launch Framateam</a>'
+  - '<a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">@:timeline.launch Framavox</a>'
+  - '<a href="https://framablog.org/2016/06/13/operation-degooglisons-a-nevers-24-25-26-juin/">Operation « De-googl-ify » in Nevers</a>'
+  - '<a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">@:timeline.launch Framinetest</a>'
+  - '<a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">@:timeline.launch Framemo</a>'
+  - '<a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">« De-googl-ify Internet » season 3 announcement</a>'
+  - '<a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">@:timeline.launch Framalistes</a>'
+  - '<a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">@:timeline.launch Framanotes</a>'
+  - '<a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">@:timeline.launch Framaforms</a>'
+  - '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:timeline.launch Framatalk</a>'
+  - '<a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:timeline.launch Framagenda</a>'
+  - '<a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:timeline.launch MyFrama</a>'
+  - '<a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Naissance du collectif CHATONS</a>'
+  - '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:timeline.launch Framaestro</a>'
+  - '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:timeline.launch Framaslides</a>'
+  - '<a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:timeline.launch docs.framasoft.org</a>'
+
+
+# Generic text ---------------------------------------------------------
+txt:
+  play: Play
+  pause: Pause
+  close: Cerrar
+  more: Más información
+  support: Ayudar
+  use: Utilizar
+  plus: plus
+  docs: Documentation
+  framacloud: Framacloud
+  chatons: KITTENS
+  install: Instalar
+  installOnServer: install on a server
+  updated: Proyecto puesto al día
+  loading: Proyecto en curso
+  running: Proyecto activo
+  basedOn : es una instancia basada en software libre
+  readMore: Saber más
+  examples: ¿Unos ejemplos?
+  backToTop: Volver al comienzo de página
+  editor: 'Éditor : '
+  equiv: 'Equivalencia(s) : '
+  altOnline: Alternativa en línea
+  altOffline: Alternativa que instalar
+  framaservice: 'Servicio Framasoft : '
+  wePropNow: Service we already provide
+  weWillProp: We will provide
+  releaseOn : release planned on
+  otherAlt: Other Free alternatives
+  since: desde
+  GAFAM: GAFAM
+  andCo: '& cie'
+  software: Software
+  LEDS: Libre, Ético, Descentralizado y Solidario
+  withHelp: con su ayuda
+  searchByAlt: Find an alternative to a proprietary service
+  searchByTags: Search by keyword
+  results: Results
+  allServices: All services
+  backToMap: Return to the map
+  asAltTo : As an alternative to the services of
+  like: ', such as:'
+  howTo: Discover how to
+  features: 'Features :'
+
+# Categories -----------------------------------------------------------
+cat1:
+  home:
+  web:
+  office:
+  social:
+  files:
+  media:
+  geo:
+  hobbies:
+  site:
+  dev:
+
+cat2:
+  collab:
+  prod:
+  orga:
+  com:
+  share:
+  tools:
+  search:
+  games:
+
+tags:
+  calendar:
+  encryption:
+  social:
+  share:
+  game:
+
+# Services -------------------------------------------------------------
+services:
+  bitly:
+    sDesc: Redución de URL
+    lDesc: Las direcciones más cortas muy discretamente
+    tDesc:
+    hDesc:
+    mTitle: Ya se acabaron las direcciones demasiado largas
+    mBody:
+      desc:
+      feat:
+    tags:
+
+# Hors frama -----------------------------------------------------------
+  airbnb:
+    sDesc:
+
+  aweber:
+    sDesc:
+
+  blablacar:
+    sDesc:
+
+  routard:
+    sDesc:
+
+  gchrome:
+    sDesc:
+
+  deezer:
+    sDesc:
+
+  flickr:
+    sDesc:
+
+  ganalytics:
+    sDesc:
+
+  orange:
+    sDesc:
+
+  outlook:
+    sDesc:
+
+  ovh:
+    sDesc:
+
+  patreon:
+    sDesc:
+
+  paypal:
+    sDesc:
+
+  universalis:
+    sDesc:

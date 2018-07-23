@@ -1,2 +1,5 @@
-nav/
-img/base64.php
+node_modules/
+public/
+app/assets/img/img.json
+.zanata-cache/etag-cache.xml
+npm-debug.log

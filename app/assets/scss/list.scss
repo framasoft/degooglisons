@@ -1,0 +1,64 @@
+/* ~~~~ Liste des services ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#list {
+  .panel {
+    border-radius: 0;
+    border-bottom: 5px solid #eee;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .panel-heading {
+    background: #fff;
+  }
+
+  .panel-heading h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  @media (min-width: 992px) {
+    .panel :not(#results) article.col-md-3:nth-of-type(n+5) {
+      display: none;
+    }
+  }
+
+  .dropup li {
+    text-align: center;
+    font-size: 18px;
+  }
+  .dropup li a {
+    border: none;
+    padding: 15px;
+  }
+  .dropup ul.dropdown-menu {
+    padding: 0;
+    margin-bottom: -46px;
+  }
+
+  @media (min-width:768px) {
+    .desc {
+      min-height: 150px;
+      overflow: auto;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  @media (min-width:1200px) {
+    .desc {
+      min-height: 110px;
+      overflow: auto;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .panel h3 i.fa {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+}

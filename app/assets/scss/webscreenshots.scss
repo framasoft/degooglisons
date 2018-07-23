@@ -1,0 +1,49 @@
+.web-browser {
+  border: 2px solid #abacae;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 24px auto;
+  max-width: 100%;
+  padding: 42px 0px 0px;
+  position: relative;
+  text-align: center;
+  width: 888px;
+
+  .toolbar {
+    border-bottom: 2px solid #abacae;
+    padding: 12px;
+    padding-top: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select :none;
+    user-select: none;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .search-bar {
+      background-color: #ddd;
+      border-radius: 2px;
+      display: inline-block;
+      height: 20px;
+      margin: 0 12px;
+      width: calc(100% - 128px);
+      vertical-align: middle;
+    }
+  }
+
+  .actions {
+    margin-bottom: 0;
+  }
+
+  .img-responsive {
+    padding: 4px 2px 2px;
+  }
+}

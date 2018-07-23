@@ -1,0 +1,26 @@
+/* Modales content */
+.m-change,
+.m-scribd,
+.m-meetup,
+.m-blogger {
+  .web-browser,
+  h4 img,
+  .modal-footer .btn-default:nth-child(2),
+  .modal-footer .btn-link {
+    display: none;
+  }
+}
+
+.m-youtube .web-browser {
+  display: none;
+}
+/* WIP Framaservices in alternatives */
+.alt-jsfiddle,
+.alt-scribd,
+.alt-meetup,
+.alt-gmail,
+.alt-change {
+  td:nth-of-type(2) ul:nth-of-type(1) .list-group-item:nth-of-type(1) {
+    display: none;
+  }
+}
