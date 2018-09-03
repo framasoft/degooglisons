@@ -451,7 +451,7 @@ medias:
     tab2:
       title: Drawings Gee
       intro: 'Drawing credits: <a href="http://ptilouk.net">Simon « Gee » Giraudot</a>,
-        freely reusable under license @:data.license.ccbysa4''
+        freely reusable under license @:data.license.ccbysa4'
       img:
       - ['Drawing “Closed”', 'stevusjobus.png']
       - ['Drawing “Cyber Police”', 'cyberpolicus.png']
