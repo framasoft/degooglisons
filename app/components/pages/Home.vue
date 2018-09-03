@@ -1,6 +1,6 @@
 <template>
-  <main id="home">
-    <div class="row landing">
+  <main>
+    <section class="row landing">
       <div class="container-fluid">
         <div class="container">
           <I18n />
@@ -52,9 +52,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row more">
+    <section class="row more">
       <div class="container ombre">
         <div class="col-sm-12">
           <h2>{{ $t('home.more.title') }}</h2>
@@ -206,9 +206,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row" id="speakabout">
+    <section class="row" id="speakabout">
       <div class="container ombre text-center">
         <h2>{{ $t('home.speakabout.title') }}</h2>
         <ul class="list-inline">
@@ -222,14 +222,15 @@
           </router-link>
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="row" id="enjeux" v-show="explain">
+    <section class="row" id="enjeux" v-show="explain">
       <div class="container ombre">
-        <h2>{{ $t('home.explain.stakes.title') }}</h2>
-        <p v-html="$t('home.explain.stakes.text1')"></p>
-        <p v-html="$t('home.explain.stakes.text2')"></p>
-
+        <div class="col-sm-12">
+          <h2>{{ $t('home.explain.stakes.title') }}</h2>
+          <p v-html="$t('home.explain.stakes.text1')"></p>
+          <p v-html="$t('home.explain.stakes.text2')"></p>
+        </div>
         <div class="clearfix">
           <div class="col-sm-12">
             <h2>{{ $t('home.explain.danger.title') }}</h2>
@@ -312,9 +313,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row" id="solutions" v-show="explain">
+    <section class="row" id="solutions" v-show="explain">
       <div class="container ombre">
         <div class="clearfix">
           <div class="col-sm-12">
@@ -352,23 +353,25 @@
           <img :src="`${data['/img/']}${$t('medias.tabs.tab2.img[4][1]')}`" alt="" />
         </p>
         <div class="clearfix">
-          <h2>{{ $t('home.explain.concrete.title') }}</h2>
-          <p v-html="$t('home.explain.concrete.text1')"></p>
-          <p v-html="$t('home.explain.concrete.text2')"></p>
-          <p v-html="$t('home.explain.concrete.text3')"></p>
-          <p v-html="$t('home.explain.concrete.text4')"></p>
-          <p v-html="$t('home.explain.concrete.text5')"></p>
-          <p class="text-center">
-            <router-link :to="'/' + $t('lang') + '/list'"
-              class="btn btn-warning btn-lg"
-              v-html="$t('list.title') + ' ' + data.meta.f">
-            </router-link>
-          </p>
-          <p><img :src="`${data['/img/']}cloud.jpg`" alt="" class="center-block img-responsive" /></p>
+          <div class="sm-12">
+            <h2>{{ $t('home.explain.concrete.title') }}</h2>
+            <p v-html="$t('home.explain.concrete.text1')"></p>
+            <p v-html="$t('home.explain.concrete.text2')"></p>
+            <p v-html="$t('home.explain.concrete.text3')"></p>
+            <p v-html="$t('home.explain.concrete.text4')"></p>
+            <p v-html="$t('home.explain.concrete.text5')"></p>
+            <p class="text-center">
+              <router-link :to="'/' + $t('lang') + '/list'"
+                class="btn btn-warning btn-lg"
+                v-html="$t('list.title') + ' ' + data.meta.f">
+              </router-link>
+            </p>
+            <p><img :src="`${data['/img/']}cloud.jpg`" alt="" class="center-block img-responsive" /></p>
+          </div>
         </div>
         <Signature />
       </div>
-    </div>
+    </section>
     <BackTop />
   </main>
 </template>

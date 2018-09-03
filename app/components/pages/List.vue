@@ -1,5 +1,5 @@
 <template>
-  <main id="list">
+  <main>
     <div class="container ombre">
       <header-component/>
       <div id="tips" class="row">
@@ -9,13 +9,13 @@
             class="scroller scroller-left"
             v-if="scrollMenu.btnLeft"
             @click="scrollMenu.left += scrollMenu.visibleWidth; scrollMenuRefresh();">
-            <i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
           <div
             class="scroller scroller-right"
             v-if="scrollMenu.btnRight"
             @click="scrollMenu.left -= scrollMenu.visibleWidth; scrollMenuRefresh();">
-            <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
           <nav class="navbar navbar-default nav-cats" role="navigation">
             <div class="collapse navbar-collapse" id="navbar-collapse-1">

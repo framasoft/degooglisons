@@ -1,5 +1,5 @@
 <template>
-  <main id="timeline">
+  <main>
     <section class="intro">
       <div class="container">
         <h1 class="box">
