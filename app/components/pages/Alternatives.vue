@@ -1,5 +1,5 @@
 <template>
-  <main id="alt">
+  <main>
     <div class="container ombre">
       <header-component/>
       <div class="row" id="bloc-carte">
@@ -40,14 +40,14 @@
               <div class="play-pause" v-if="play">
                 <button :title="$t('txt.pause')"
                   @click="play=false; $refs.mapVideo.pause()">
-                  <i class="glyphicon glyphicon-pause" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-pause" aria-hidden="true"></i>
                   <span class="sr-only">{{ $t('txt.pause') }}</span>
                 </button>
               </div>
               <div class="play-pause" v-else>
                 <button :title="$t('txt.play')"
                   @click="play=true; $refs.mapVideo.play()">
-                  <i class="glyphicon glyphicon-play" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-play" aria-hidden="true"></i>
                   <span class="sr-only">{{ $t('txt.play') }}</span>
                 </button>
               </div>
@@ -280,13 +280,13 @@
             class="scroller scroller-left"
             v-if="scrollMenu.btnLeft"
             @click="scrollMenu.left += scrollMenu.visibleWidth; scrollMenuRefresh();">
-            <i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
           <div
             class="scroller scroller-right"
             v-if="scrollMenu.btnRight"
             @click="scrollMenu.left -= scrollMenu.visibleWidth; scrollMenuRefresh();">
-            <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
           <nav class="navbar navbar-default nav-cats" role="navigation">
             <div class="collapse navbar-collapse" id="navbar-collapse-1">

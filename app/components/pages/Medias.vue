@@ -1,5 +1,5 @@
 <template>
-  <main id="medias">
+  <main>
     <div class="container ombre">
       <header-component />
       <div class="clearfix">
