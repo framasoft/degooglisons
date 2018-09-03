@@ -394,7 +394,7 @@ alt:
     th2: recommends
     th3: based on
   text1: '
-    @:meta.F aims to <a href="@:link.dio">
+    @:meta.F aims to <a href="@:data.link.dio">
     offer around thirty free alternative services</a>
     to provide a substitute for those services which,
     once they get hold of us, proceed to feed upon our data.<br>
@@ -427,7 +427,7 @@ medias:
     De-googl-ify Internet is a campaign that lasted three years (Oct. 2014 - Oct. 2017),
     but which is part of a more general Framasoft journey.<br>
     Browse through the fresco below to discover the
-    key dates (full screen <a href="@:link.dio/en/fresque">available here</a>).'
+    key dates (full screen <a href="@:data.link.dio/@:lang/timeline">available here</a>).'
   timeline: Timeline De-googl-ify Internet
   tabs:
     title: Visuals for the de-google-ify campain

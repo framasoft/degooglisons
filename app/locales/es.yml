@@ -435,7 +435,7 @@ alt:
     th1: Usted utiliza
     th2: recomienda
     th3: se basa en
-  text1: '@:meta.F se ha dado como objetivo <a href="@:link.dio"> proponer una
+  text1: '@:meta.F se ha dado como objetivo <a href="@:data.link.dio"> proponer una
     treintena de servicios libres alternativos</a> frente a los servicios que se
     tragan nuestros datos y nos encierran.<br>
     Pero existen muchos otros servicios y actores que  hacen todo lo posible para desgooglizar internet.'
@@ -461,7 +461,7 @@ medias:
   intro: Desgooglicemos Internet es una campaña que ha durado tres años (oct. de 2014
     - oct. de 2017), pero que participa de una evolución más general de Framasoft.
     <br>Con la rueda del ratón recorra el fresco de más abajo para descubrir en él
-    las fechas clave (pantalla completa <a href="@:link.dio/en/fresque">disponible
+    las fechas clave (pantalla completa <a href="@:data.link.dio/@:lang/timeline">disponible
     aquí</a>).
   timeline: Timeline De-googl-ify Internet
   tabs:

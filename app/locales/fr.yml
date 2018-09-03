@@ -409,7 +409,7 @@ alt:
     th2: recommande
     th3: repose sur
   text1: '
-    @:meta.F s’est donné comme objectif de <a href="@:link.dio">
+    @:meta.F s’est donné comme objectif de <a href="@:data.link.dio">
     proposer une trentaine de services libres alternatifs</a>
     face aux services qui aspirent nos données et nous enferment.<br>
     Mais il existe bien d’autres services et acteurs qui œuvrent à dégoogliser internet.'
@@ -441,7 +441,7 @@ medias:
     Dégooglisons Internet est une campagne qui a duré trois ans (oct. 2014 - oct. 2017),
     mais qui s’inscrit dans un cheminement plus général de Framasoft.<br>
     Parcourez de la molette la fresque ci-dessous pour en découvrir les
-    dates-clés (plein écran <a href="@:link.dio/fr/fresque">disponible ici</a>).'
+    dates-clés (plein écran <a href="@:data.link.dio/@:lang/timeline">disponible ici</a>).'
   timeline: Fresque Dégooglisons Internet
   tabs:
     title: Visuels de la campagne Dégooglisons Internet
