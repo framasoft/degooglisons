@@ -14,7 +14,7 @@
         <li v-for="(event, index) in data.timeline.events" :class="'li-' + event[0]" v-if="event[1] !== undefined">
           <div :class="'fond-' + event[0]">
             <time>{{ (new Intl.DateTimeFormat($t('lang'), data.timeline.format).format(new Date(event[1]))) }}</time>
-            <p v-html="$t('timeline.events[' + index + ']')"></p>
+            <p v-html="$t('timeline.events[' + index + ']').replace('<a ', '<a target=\'_parent\' ')"></p>
           </div>
         </li>
       </ul>

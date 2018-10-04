@@ -1,18 +1,24 @@
 #timeline {
   font: normal 16px/1.5 "Open Sans", sans-serif;
-  color: #fff;
   overflow-x: hidden;
-  padding-bottom: 50px;
   margin-top: 0;
+  background-color: #fff;
 
-  a {
+  #app {
     color: #fff;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    padding-bottom: 50px;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    a:hover {
+      text-decoration-style: solid;
+    }
   }
-  a:hover {
-    text-decoration-style: solid;
-  }
+
   /* Couleur des Framatitre */
   .violet, .frama  { color: #6A5687; }
   .orange, .soft   { color: #EB7239; }

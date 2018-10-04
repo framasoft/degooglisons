@@ -530,7 +530,7 @@ medias:
       Free Culture, and Free Services.'
     text3: '<em>The logo is a realization of JosephK under license  @:data.license.ccbysa4</em>'
 timeline:
-  title: '@:meta.DIo, la timeline'
+  title: '@:meta.F, la timeline'
   launch: Launch of
   events:
   - '<a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> revelations on American and British mass espionage programs.'
