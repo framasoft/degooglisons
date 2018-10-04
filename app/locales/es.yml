@@ -566,7 +566,7 @@ medias:
       cultura libre y servicios libres. '
     text3: '<em>El logotipo es obra de JosephK bajo licencia @:data.license.ccbysa4</em>'
 timeline:
-  title: '@:meta.DIo, la timeline'
+  title: '@:meta.F, la timeline'
   launch: Launch of
   events:
   - Las revelaciones de <a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward

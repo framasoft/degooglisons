@@ -545,7 +545,7 @@ medias:
       culture libre et services libres.'
     text3: '<em>Le logo est une œuvre de JosephK sous licence @:data.license.ccbysa4</em>'
 timeline:
-  title: '@:meta.DIo, la timeline'
+  title: '@:meta.F, la timeline'
   launch: Lancement de
   events:
   - 'Révélations d’<a href="https://fr.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> sur les programmes d’espionnage de masse américains et britanniques.'
