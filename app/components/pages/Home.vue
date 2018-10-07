@@ -212,8 +212,8 @@
       <div class="container ombre text-center">
         <h2>{{ $t('home.speakabout.title') }}</h2>
         <ul class="list-inline">
-          <li v-for="media in data.home.medias">
-            <a :href="media[0]"><img :src="data['/img/'] +'medias/' + media[1]" :alt="media[2]"></a>
+          <li v-for="media in $root.home.medias">
+            <a :href="media[0]"><img :src="$root['/'] +'img/medias/' + media[1]" :alt="media[2]"></a>
           </li>
         </ul>
         <p>
@@ -248,7 +248,7 @@
                 </a>
               </p>
               <p class="text-center">
-                <img :src="`${data['/img/']}${$t('medias.tabs.tab2.img[1][1]')}`" alt="" />
+                <img :src="`${$root['/']}img/${$root.img.gee[1]}`" alt="" />
               </p>
             </div>
             <div class="col-sm-6">
@@ -287,7 +287,7 @@
               </p>
             </div>
             <p class="col-sm-12 text-center">
-              <img :src="`${data['/img/']}${$t('medias.tabs.tab2.img[0][1]')}`" alt="" />
+              <img :src="`${$root['/']}img/${$root.img.gee[0]}`" alt="" />
             </p>
             <modal
               id="myFramaModal"
@@ -350,7 +350,7 @@
           </div>
         </div>
         <p class="col-sm-12 text-center">
-          <img :src="`${data['/img/']}${$t('medias.tabs.tab2.img[4][1]')}`" alt="" />
+          <img :src="`${$root['/']}img/${$root.img.gee[4]}`" alt="" />
         </p>
         <div class="clearfix">
           <div class="sm-12">
@@ -363,10 +363,10 @@
             <p class="text-center">
               <router-link :to="'/' + $t('lang') + '/list'"
                 class="btn btn-warning btn-lg"
-                v-html="$t('list.title') + ' ' + data.meta.f">
+                v-html="$t('list.title') + ' ' + $root.meta.f">
               </router-link>
             </p>
-            <p><img :src="`${data['/img/']}cloud.jpg`" alt="" class="center-block img-responsive" /></p>
+            <p><img :src="`${$root['/']}img/cloud.jpg`" alt="" class="center-block img-responsive" /></p>
           </div>
         </div>
         <Signature />
@@ -396,7 +396,6 @@ export default {
         open: false,
       },
       explain: false,
-      data: this.$i18n.messages.data,
     }
   },
 }

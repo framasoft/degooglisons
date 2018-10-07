@@ -6,12 +6,11 @@ import vueScrollto from 'vue-scrollto';
 import vSelect from 'vue-select';
 import jQuery from 'jquery';
 
-import './assets/scss/bootstrap.scss';
-import '../node_modules/fork-awesome/css/fork-awesome.css';
-
 import App from './App.vue';
 import Home from './components/pages/Home.vue';
 
+import './assets/scss/bootstrap.scss';
+import '../node_modules/fork-awesome/css/fork-awesome.css';
 import './assets/scss/main.scss';
 
 window.jQuery = jQuery;
@@ -63,28 +62,46 @@ messages.locales = require('./lang.yml'); // eslint-disable-line
 messages.locales.avalaible = Object.keys(messages.locales).filter(n => locales.indexOf(n) > -1);
 
 // Data import
-messages.data = {};
-messages.data = require('./data.yml'); // eslint-disable-line
-messages.data['/'] = `/${process.env.BASE_URL.replace(/(.+)/, '$1/')}`;
-messages.data['/img/'] = `${messages.data['/']}img/`;
-messages.data.png.gafam = gafam;
-messages.data.png.leds = leds;
-Object.keys(messages.data.services).forEach((k) => {
-  messages.data.services[k].F =
-    `<a href="${messages.data.services[k].FL}">${messages.data.services[k].F}</a>`;
+let data = {};
+data = require('./data.yml'); // eslint-disable-line
+data['/'] = `/${process.env.BASE_URL.replace(/(.+)/, '$1/')}`;
+data.png.gafam = gafam;
+data.png.leds = leds;
+data.hash = window.location.hash.replace('#', '');
+data.txt = data.txt || {};
+data.html = data.html || {};
+Object.keys(data.color).forEach((k) => {
+  if (data.txt[k] === undefined) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = data.color[k];
+    data.txt[k] = tmp.textContent || tmp.innerText;
+  }
+});
+Object.keys(data.link).forEach((k) => {
+  if (data.html[k] === undefined) {
+    if (data.color[k] !== undefined) {
+      data.html[k] = `<a href="${data.link[k]}">${data.color[k]}</a>`;
+    } else if (data.txt[k] !== undefined) {
+      data.html[k] = `<a href="${data.link[k]}">${data.txt[k]}</a>`;
+    }
+  }
+});
+Object.keys(data.services).forEach((k) => {
+  data.services[k].F =
+    `<a href="${data.services[k].FL}">${data.services[k].F}</a>`;
 });
 
 const routes = [
-  { path: '/', component: Home, meta: { id: 'home' } },
+  { path: '/', component: Home, meta: { id: 'home', lang: defaultLocale } },
 ];
 
 for (let i = 0; i < locales.length; i += 1) {
   messages[locales[i]] = {};
   // Locales import
   /* eslint-disable */
-  import(/* webpackChunkName: "lang-[request]" */`./locales/${locales[i]}.yml`).then((data) => {
-    messages[locales[i]] = data;
-    messages[locales[i]].data = messages.data;
+  import(/* webpackChunkName: "lang-[request]" */`./locales/${locales[i]}.yml`).then((locale) => {
+    messages[locales[i]] = locale;
+    messages[locales[i]].data = data;
     messages[locales[i]].lang = locales[i];
   }).catch((err) => {
     console.error(err);
@@ -97,7 +114,7 @@ for (let i = 0; i < locales.length; i += 1) {
     routes.push({
       path: `/${locales[i]}${pages[j].toLowerCase().replace(/^/, '/').replace('/home', '')}`,
       component: component.default,
-      meta: { id: pages[j].toLowerCase() },
+      meta: { id: pages[j].toLowerCase(), lang: locales[i] },
     });
   }
 }
@@ -130,7 +147,9 @@ const i18n = new VueI18n({
 });
 
 // Framanav
-if (!window.vuefsPrerender && document.querySelectorAll('script[src$="nav.js"]').length < 1) {
+if (!window.vuefsPrerender
+  && document.querySelectorAll('script[src$="nav.js"]').length < 1
+  && process.env.NODE_ENV !== 'development') {
   const navConfig = document.createElement('script');
   navConfig.innerHTML = 'l$ = { js: { j$: \'noConflict\' } }';
   document.getElementsByTagName('head')[0].appendChild(navConfig);
@@ -150,6 +169,7 @@ new Vue({ // eslint-disable-line no-new
   el: '#app',
   router,
   i18n,
+  data,
   mounted() {
     // You'll need this for renderAfterDocumentEvent.
     document.dispatchEvent(new Event('render-event'));

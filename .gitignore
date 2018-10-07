@@ -3,3 +3,4 @@ public/
 app/assets/img/img.json
 .zanata-cache/etag-cache.xml
 npm-debug.log
+/zanata.xml

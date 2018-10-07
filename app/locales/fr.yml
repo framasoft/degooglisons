@@ -457,26 +457,20 @@ medias:
       intro: 'Crédits cartes : <a href="http://ptilouk.net">Simon « Gee » Giraudot</a>,
         librement réutilisables sous la licence @:data.license.ccbysa4'
       img:
-      - ['Carte « Avant »', 'Carte2016-romains.png',
-         'Carte de la France envahie par les services GAFAM (oct 2014)']
-      - ['Carte « Après »', 'Carte2016-victoires.png',
-         'Carte de la France avec les alternatives Framasoft (oct 2016)']
-      - ['Carte animée', 'Carte2016-animation.gif',
-         'Animation de la reconquête des services GAFAM (format .gif)']
+      - ['Carte « Avant »', 'Carte de la France envahie par les services GAFAM (oct 2014)']
+      - ['Carte « Après »', 'Carte de la France avec les alternatives Framasoft (oct 2016)']
+      - ['Carte animée', 'Animation de la reconquête des services GAFAM (format .gif)']
     tab2:
       title: Dessins Gee
       intro: 'Crédits dessins&nbsp;: <a href="http://ptilouk.net">Simon « Gee » Giraudot</a>,
         librement réutilisables sous la licence @:data.license.ccbysa4'
       img:
-      - ['Dessin « Verrouillage »', 'stevusjobus.png']
-      - ['Dessin « Cyber Police »', 'cyberpolicus.png']
-      - ['Dessin « Espions »', 'bourrepifix.png']
-      - ['Dessin « Stallman »', 'stallmanoramix.png']
-      - ['Dessin « Flicage »', 'village.png']
-      - ['Dessin « GAFAM »', 'GAFAM.png']
-      video:
-      - ['<b class="violet">Dégooglisons</b> <b class="orange">Internet</b>',
-         'anim_dio']
+      - Dessin « Verrouillage »
+      - Dessin « Cyber Police »
+      - Dessin « Espions »
+      - Dessin « Stallman »
+      - Dessin « Flicage »
+      - Dessin « GAFAM »
     tab3:
       title: Vidéos
       intro: 'Nous avons pu expliquer notre projet lors de conférences.
@@ -489,34 +483,31 @@ medias:
          'https://framatube.org/videos/embed/9ec10097-baab-4bd9-82d1-39c9afdd6b53']
     tab4:
       title: Présentation
-      link: https://degooglisons-internet.org/presentation/
     tab5:
       title: <span lang="en">Stickers</span>
       img:
-      - ['GAFAM', 'stickerDiO_gafam.png', '<i lang="en">GAFAM, we &lt;3 your data!</i>']
-      - ['Google', 'stickerDiO_google.png', '<i lang="en">Warning: do not feed the Google.</i>']
-      - ['Amazon', 'stickerDiO_amazon.png', 'Attention : Amazon très méchant']
-      - ['Facebook', 'stickerDiO_facebook.png', '<i lang="en">Facebook is watching you.</i>']
-      - ['Apple', 'stickerDiO_apple.png', '<i lang="en">Apple: Kids, don&quot;t do drugs.</i>']
-      - ['Microsoft', 'stickerDiO_microsoft.png', '<i lang="en">Microsoft: do you need a backdoor?</i>']
+      - ['GAFAM', '<i lang="en">GAFAM, we &lt;3 your data!</i>']
+      - ['Google', '<i lang="en">Warning: do not feed the Google.</i>']
+      - ['Amazon', 'Attention : Amazon très méchant']
+      - ['Facebook', '<i lang="en">Facebook is watching you.</i>']
+      - ['Apple', '<i lang="en">Apple: Kids, don&quot;t do drugs.</i>']
+      - ['Microsoft', '<i lang="en">Microsoft: do you need a backdoor?</i>']
     tab6:
       title: Dessins Péhä
       intro: 'Crédits dessins&nbsp;: <a href="https://lesptitsdessinsdepeha.wordpress.com/">Péhä</a>,
         librement réutilisables sous la licence @:data.license.ccby3'
       img:
-      - ['Dessin « Fichiers »', 'Peha-Framadrop-CC-BY.png']
-      - ['Dessin « Projet »', 'Peha-Framagit-CC-BY.png']
-      - ['Dessin « Réseaux Sociaux »', 'Peha-Framapiaf-Framasphere-CC-BY.png']
-      - ['Dessin « Visio-conf »', 'Peha-Framatalk-CC-BY-SA.png']
-      - ['Dessin « Dégooglisons »', 'Peha-Banquet-Degooglisons-CC-By.png']
+      - Dessin « Fichiers »
+      - Dessin « Projet »
+      - Dessin « Réseaux Sociaux »
+      - Dessin « Visio-conf »
+      - Dessin « Dégooglisons »
     tab7:
       title: Infographie Framasoft
       intro: 'Crédits infographie&nbsp;: <a href="https://geoffreydorne.com/">Geoffrey Dorne</a>,
         librement réutilisables sous la licence @:data.license.ccbysa4'
       img:
-      - ['Infographie « Le Monde de Framasoft »',
-         'infographie_Le-Monde-de-Framasoft_CC-By-SA-Geoffrey-Dorne-1920px-2018-fr.jpg']
-      - ['Source (fichier.pdf grand format)', 'infographie_framasoft_2017.pdf']
+      - Infographie « Le Monde de Framasoft »
   press:
     title: Revue de presse
     intro: 'La campagne « Dégooglisons Internet » a fait parler d’elle

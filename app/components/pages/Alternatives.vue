@@ -13,7 +13,7 @@
               <map id="cartemap" name="cartemap">
                 <!-- Village, Big camps, NSA-->
                 <area
-                  v-for="(camp, key)  in data.camps"
+                  v-for="(camp, key)  in $root.camps"
                   :id="'a-' + key" :coords="camp.pos" :class="key"
                   :alt="text($t('camps.' + key + '.title'))"
                   :title="text($t('camps.' + key + '.title'))"
@@ -23,7 +23,7 @@
                 >
                 <!-- Little camps -->
                 <area
-                  v-for="(service, key) in data.services"
+                  v-for="(service, key) in $root.services"
                   v-if="(service.pos)"
                   :id="'a-' + key"  :alt="text(service.name)"
                   :coords="service.pos" shape="circle"
@@ -32,10 +32,10 @@
                   @click="modal.open = true; modal.key = key;"
                   tabindex="-1" >
               </map>
-              <video :poster="data['/img/'] + $t('img.map')" autoplay muted loop ref="mapVideo" id="mapVideo">
-                <source :src="data['/img/'] + $t('img.map').replace('romains', 'animation').replace('.png','.webm')" type="video/webm" />
-                <source :src="data['/img/'] + $t('img.map').replace('romains', 'animation').replace('.png','.mp4')" type="video/mp4">
-                <img :src="data['/img/'] + $t('img.map')" alt="" style="width:100%;" />
+              <video :poster="`${$root['/']}img/${$route.meta.lang}/Carte2016-romains.png`" autoplay muted loop ref="mapVideo" id="mapVideo">
+                <source :src="`${$root['/']}img/${$route.meta.lang}/Carte2016-animation.webm`" type="video/webm" />
+                <source :src="`${$root['/']}img/${$route.meta.lang}/Carte2016-animation.mp4`" type="video/mp4">
+                <img :src="`${$root['/']}img/${$route.meta.lang}/Carte2016-romains.png`" alt="" style="width:100%;" />
               </video>
               <div class="play-pause" v-if="play">
                 <button :title="$t('txt.pause')"
@@ -64,7 +64,7 @@
             <div class="col-xs-11">
               <v-select id="tags-select"
                 label="gafam"
-                :options="tags(data.services)"
+                :options="tags($root.services)"
                 :placeholder="$t('txt.searchByAlt')"
                 v-model="results"
                 @input="modal.key = results.key ; modal.open = (results.key !== undefined && results.key !== ''); "
@@ -101,8 +101,8 @@
     >
       <!-- modal-header -->
       <div slot="title">
-        <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
-        <span class="frama" v-html="data.services[modal.key].F"></span><br>
+        <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama($root.services[modal.key].F) + '.png'">
+        <span class="frama" v-html="$root.services[modal.key].F"></span><br>
         <span class="desc" v-html="$t('services.' + modal.key + '.lDesc')"></span>
       </div>
 
@@ -122,21 +122,21 @@
         </p>
         <ul class="list-group">
           <li class="list-group-item"
-            v-for="gafam in data.services[modal.key].gafam"
+            v-for="gafam in $root.services[modal.key].gafam"
             >
             <img
-              v-if="data.png.gafam.indexOf(sanitize(gafam)) > -1"
+              v-if="$root.png.gafam.indexOf(sanitize(gafam)) > -1"
               :src="img.gafam[sanitize(gafam)]" alt="" />
             {{ gafam.replace(/@:[.a-z]+ /g, '') }}
           </li>
         </ul>
-        <p v-if="data.services[modal.key].FDate.length === 4"
+        <p v-if="$root.services[modal.key].FDate.length === 4"
           class="wip">
           {{ $t('txt.weWillProp') }}
-          <span v-html="data.services[modal.key].F"></span>
+          <span v-html="$root.services[modal.key].F"></span>
           <span class="small">
             {{ $t('txt.releaseOn') }}
-            {{ data.services[modal.key].FDate }}
+            {{ $root.services[modal.key].FDate }}
             {{ $t('txt.withHelp') }}
             <a :href="$t('link.S')"
               class="btn btn-xs btn-soutenir" :title="$t('meta.support')">
@@ -147,30 +147,30 @@
         </p>
         <p v-else>
           {{ $t('txt.wePropNow') }}
-          <span v-html="data.services[modal.key].F"></span>
-          <span class="small" v-html="$t('txt.since') + ' ' + data.services[modal.key].FDate"></span>
+          <span v-html="$root.services[modal.key].F"></span>
+          <span class="small" v-html="$t('txt.since') + ' ' + $root.services[modal.key].FDate"></span>
         </p>
       </div>
 
       <!-- web-screen -->
       <div class="web-browser">
         <div class="toolbar">
-          <img :src="data['/img/'] + 'browser-left.png'" alt="" />
+          <img :src="$root['/'] + 'img/browser-left.png'" alt="" />
           <div class="search-bar"></div>
-          <img :src="data['/img/'] + 'browser-right.png'" alt="" />
+          <img :src="$root['/'] + 'img/browser-right.png'" alt="" />
         </div>
         <img
-          :src="data['/img/'] + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
+          :src="$root['/'] + 'img/screens/' + noFrama($root.services[modal.key].F) + '-full.png'"
           class="img-responsive" alt=""
         />
       </div>
 
       <!-- desc -->
-      <p v-html="$t('services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, data.services[modal.key].F)"></p>
+      <p v-html="$t('services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, $root.services[modal.key].F)"></p>
 
       <!-- video / desc -->
       <p v-if="$t('services.' + modal.key + '.mBody.more') !== 'services.' + modal.key + '.mBody.more'"
-         v-html="$t('services.' + modal.key + '.mBody.more').replace(/@framaservice/g, data.services[modal.key].F)"></p>
+         v-html="$t('services.' + modal.key + '.mBody.more').replace(/@framaservice/g, $root.services[modal.key].F)"></p>
 
       <!-- features -->
       <div v-if="$t('services.' + modal.key + '.mBody.feat') !== 'services.' + modal.key + '.mBody.feat'">
@@ -178,25 +178,25 @@
         <ul v-if="Array.isArray($t('services.' + modal.key + '.mBody.feat'))">
           <li
             v-for="(item) in $t('services.' + modal.key + '.mBody.feat')"
-            v-html="item.replace(/@framaservice/g, data.services[modal.key].F)"
+            v-html="item.replace(/@framaservice/g, $root.services[modal.key].F)"
           ></li>
         </ul>
         <p
           v-else
-          v-html="$t('services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, data.services[modal.key].F)">
+          v-html="$t('services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, $root.services[modal.key].F)">
         </p>
       </div>
 
       <!-- modal-footer -->
       <div slot="footer">
         <!-- source / framacloud -->
-        <p class="precisions text-left" v-if="!data.services[modal.key].mFooter">
-          <span v-html="data.services[modal.key].F"></span>
+        <p class="precisions text-left" v-if="!$root.services[modal.key].mFooter">
+          <span v-html="$root.services[modal.key].F"></span>
           {{ $t('txt.basedOn') }}
-          <span v-html="data.services[modal.key].S"></span>
-          <span v-if="data.services[modal.key].CL">
+          <span v-html="$root.services[modal.key].S"></span>
+          <span v-if="$root.services[modal.key].CL">
             <br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
-            {{ $t('txt.howTo') }}<a :href="data.services[modal.key].CL" class="text-success">{{ $t('txt.installOnServer') }}</a>
+            {{ $t('txt.howTo') }}<a :href="$root.services[modal.key].CL" class="text-success">{{ $t('txt.installOnServer') }}</a>
           </span>
         </p>
         <!-- alt / docs -->
@@ -204,12 +204,12 @@
           <a :href="'#' + modal.key" class="btn btn-alt btn-default"
             @click="modal.open = false;">
             {{ $t('txt.otherAlt') }}</a>
-          <a :href="$t('link.docs') + sanitize(data.services[modal.key].S)"
+          <a :href="$t('link.docs') + sanitize($root.services[modal.key].S)"
             class="btn btn-alt btn-default">{{ $t('txt.docs') }}</a>
         </div>
         <!-- use -->
         <div class="col-md-6 text-right">
-          <a :href="data.services[modal.key].FL"
+          <a :href="$root.services[modal.key].FL"
             class="btn btn-lg btn-link text-uppercase">
             {{ $t('txt.use') }}</a>
         </div>
@@ -229,7 +229,7 @@
       <div slot="title">
         <h1><span class="desc" v-html="$t('services.' + modal.key + '.lDesc')"></span></h1>
       </div>
-      <p class="alert alert-warning" v-html="$t('services.' + modal.key + '.mBody').replace('@gafamservices', data.services[modal.key].gafam.join(', '))"></p>
+      <p class="alert alert-warning" v-html="$t('services.' + modal.key + '.mBody').replace('@gafamservices', $root.services[modal.key].gafam.join(', '))"></p>
       <div slot="footer">
         <a :href="'#' + modal.key" class="btn btn-alt btn-default"
           @click="modal.open = false;">
@@ -254,11 +254,11 @@
       <p v-html="$t('camps.' + modal2.key + '.text1')"></p>
       <p v-html="$t('camps.' + modal2.key + '.text2')"></p>
       <p class="text-center">
-        <img :src="data['/img/'] + $t(data.camps[modal2.key].img) + '.png'" alt="" />
+        <img :src="`${$root['/']}img/${$t($root.camps[modal2.key].img)}.png`" alt="" />
       </p>
       <div slot="footer">
         <div class="text-right">
-          <a v-if="data.camps[modal2.key].more" :href="data['/'] + $t('lang') + '/#enjeux'"
+          <a v-if="$root.camps[modal2.key].more" :href="$root['/'] + $t('lang') + '/#enjeux'"
             class="btn btn-lg btn-link text-uppercase">
             {{ $t('txt.more') }}
           </a>
@@ -295,9 +295,9 @@
                 :style="'left: ' + scrollMenu.left + 'px'">
                 <li><a href="#bloc-carte" :title="$t('txt.backToMap')"
                   data-toggle="tooltip" data-placement="bottom">
-                  <img :src="data['/img/'] + 'carte_petite.png'" :alt="$t('txt.backToMap')" />
+                  <img :src="$root['/'] +'img/carte_petite.png'" :alt="$t('txt.backToMap')" />
                 </a></li>
-                <li v-for="(icon, cat) in data.cat1.icons">
+                <li v-for="(icon, cat) in $root.cat1.icons">
                   <a :href="'#' + cat" :title="$t('cat1.' + cat)"
                     data-toggle="tooltip" data-placement="bottom">
                     <i :class="'fa fa-' + icon" aria-hidden="true"></i> <span>{{ $t('cat1.' + cat) }}</span></a></li>
@@ -307,7 +307,7 @@
         </div>
 
         <div class="panel-group col-xs-12">
-          <div v-for="(icon, cat) in data.cat1.icons">
+          <div v-for="(icon, cat) in $root.cat1.icons">
             <a class="anchor" :id="cat" rel="nofollow"></a>
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -320,11 +320,11 @@
                 <thead>
                   <tr>
                     <th class="text-center" scope="col" v-html="$t('alt.table.th1')">'.$t['alt']['alt1'].'</th>
-                    <th class="text-center" scope="col" v-html="data.meta.fname + ' ' + $t('alt.table.th2')"></th>
+                    <th class="text-center" scope="col" v-html="$root.meta.fname + ' ' + $t('alt.table.th2')"></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(service, key) in data.services" v-if="service.c1 === cat"
+                  <tr v-for="(service, key) in $root.services" v-if="service.c1 === cat"
                     :class="'alt-' + key">
                     <td>
                       <a class="anchor" :id="key" rel="nofollow"></a>
@@ -333,10 +333,10 @@
                       </h3>
                       <ul class="list-group">
                         <li class="list-group-item"
-                          v-for="gafam in data.services[key].gafam"
+                          v-for="gafam in $root.services[key].gafam"
                           >
                           <img
-                            v-if="data.png.gafam.indexOf(sanitize(gafam)) > -1"
+                            v-if="$root.png.gafam.indexOf(sanitize(gafam)) > -1"
                             :src="img.gafam[sanitize(gafam)]" alt="" />
                           {{ gafam.replace(/@:[.a-z]+ /g, '') }}
                         </li>
@@ -348,9 +348,9 @@
                           v-if="service.F"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(sanitize(data.services[key].F)) > -1"
-                            :src="img.leds[sanitize(data.services[key].F)]" alt="" />
-                          <span v-html="data.services[key].F"></span>
+                            v-if="$root.png.leds.indexOf(sanitize($root.services[key].F)) > -1"
+                            :src="img.leds[sanitize($root.services[key].F)]" alt="" />
+                          <span v-html="$root.services[key].F"></span>
                           <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('txt.altOnline')"></i>
@@ -359,9 +359,9 @@
                           v-if="service.S"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(sanitize(data.services[key].S)) > -1"
-                            :src="img.leds[sanitize(data.services[key].S)]" alt="" />
-                          <span v-html="data.services[key].S"></span>
+                            v-if="$root.png.leds.indexOf(sanitize($root.services[key].S)) > -1"
+                            :src="img.leds[sanitize($root.services[key].S)]" alt="" />
+                          <span v-html="$root.services[key].S"></span>
                           <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
                             :title="$t('txt.altOffline')"></i>
@@ -373,7 +373,7 @@
                           v-if="alt !== ''"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
+                            v-if="$root.png.leds.indexOf(sanitize(alt)) > -1"
                             :src="img.leds[sanitize(alt)]" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-cloud pull-right" aria-hidden="true"
@@ -385,7 +385,7 @@
                           v-if="alt !== ''"
                           >
                           <img
-                            v-if="data.png.leds.indexOf(sanitize(alt)) > -1"
+                            v-if="$root.png.leds.indexOf(sanitize(alt)) > -1"
                             :src="img.leds[sanitize(alt)]" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-server pull-right" aria-hidden="true"
@@ -434,7 +434,6 @@ export default {
       },
       play: true,
       results: '',
-      data: this.$i18n.messages.data,
       img: { gafam: {}, leds: {} },
       scrollMenu: {
         left: 0,
