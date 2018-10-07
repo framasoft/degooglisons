@@ -29,7 +29,7 @@
                   </a>
                 </li>
                 <li><a href="#all">{{ $t('txt.allServices') }}</a></li>
-                <li v-for="(icon, cat) in data.cat2.icons">
+                <li v-for="(icon, cat) in $root.cat2.icons">
                   <a :href="'#' + cat" :title="$t('cat2.' + cat)">{{ $t('cat2.' + cat) }}</a></li>
               </ul>
             </div>
@@ -46,7 +46,7 @@
               </label>
               <div class="col-sm-11">
                 <v-select id="tags-select" multiple
-                  :options="tags($t('services')).concat(tags(data.services, 'gafam'))"
+                  :options="tags($t('services')).concat(tags($root.services, 'gafam'))"
                   :placeholder="$t('txt.searchByTags')"
                   v-model="results"
                 ></v-select>
@@ -73,16 +73,16 @@
             </div>
             <div id="results" class="clearfix" >
               <article
-                v-for="(service, key) in data.services"
-                v-if="(data.fight.indexOf(key) > -1)"
-                v-show="isInResults($t('services.' + key + '.tags') + ', ' + data.services[key].gafam[0], results)"
+                v-for="(service, key) in $root.services"
+                v-if="($root.fight.indexOf(key) > -1)"
+                v-show="isInResults($t('services.' + key + '.tags') + ', ' + $root.services[key].gafam[0], results)"
                 class="col-md-3 col-sm-6 text-center">
                 <h3>
                   <i :class="'fa fa-2x fa-' + service.i"></i><br>
                   <p v-html="service.F"></p>
                 </h3>
                 <p class="desc" v-html="$t('services.' + key + '.tDesc')"></p>
-                <p><img class="img-responsive" :src="data['/img/'] + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
+                <p><img class="img-responsive" :src="$root['/'] +'img/screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                 <div class="clearfix">
                   <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('txt.use') }}</a>
 
@@ -104,7 +104,7 @@
               </article>
             </div>
           </div>
-          <section v-for="(icon, cat) in data.cat2.icons">
+          <section v-for="(icon, cat) in $root.cat2.icons">
             <a class="anchor" :id="cat" rel="nofollow"></a>
             <div class="panel panel-default clearfix">
               <div class="panel-heading">
@@ -114,15 +114,15 @@
               </div>
               <div class="clearfix">
                 <article
-                  v-for="(service, key) in data.services"
-                  v-if="data.fight.indexOf(key) > -1 && service.c2 === cat"
+                  v-for="(service, key) in $root.services"
+                  v-if="$root.fight.indexOf(key) > -1 && service.c2 === cat"
                   class="col-md-3 col-sm-6 text-center">
                   <h3>
                     <i :class="'fa fa-2x fa-' + service.i"></i><br>
                     <p v-html="service.F"></p>
                   </h3>
                   <p class="desc" v-html="$t('services.' + key + '.tDesc')"></p>
-                  <p><img class="img-responsive" :src="data['/img/'] + 'screens/' + noFrama(service.F) + '.png'" alt="" /></p>
+                  <p><img class="img-responsive" :src="$root['/'] +'img/screens/' + noFrama(service.F) + '.png'" alt="" /></p>
                   <div class="clearfix">
                     <a :href="service.FL" class="btn btn-link btn-lg pull-left text-uppercase">{{ $t('txt.use') }}</a>
 
@@ -159,30 +159,30 @@
           >
             <!-- modal-header -->
             <div slot="title">
-              <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama(data.services[modal.key].F) + '.png'">
-              <span class="frama" v-html="data.services[modal.key].F"></span><br>
+              <img class="pull-left" :src="'https://framasoft.org/nav/img/icons/' + noFrama($root.services[modal.key].F) + '.png'">
+              <span class="frama" v-html="$root.services[modal.key].F"></span><br>
               <span class="desc" v-html="$t('services.' + modal.key + '.lDesc')"></span>
             </div>
 
             <!-- web-screen -->
             <div class="web-browser">
               <div class="toolbar">
-                <img :src="data['/img/'] + 'browser-left.png'" alt="" />
+                <img :src="$root['/'] +'img/browser-left.png'" alt="" />
                 <div class="search-bar"></div>
-                <img :src="data['/img/'] + 'browser-right.png'" alt="" />
+                <img :src="$root['/'] +'img/browser-right.png'" alt="" />
               </div>
               <img
-                :src="data['/img/'] + 'screens/' + noFrama(data.services[modal.key].F) + '-full.png'"
+                :src="$root['/'] +'img/screens/' + noFrama($root.services[modal.key].F) + '-full.png'"
                 class="img-responsive" alt=""
               />
             </div>
 
             <!-- desc -->
-            <p v-html="$t('services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, data.services[modal.key].F)"></p>
+            <p v-html="$t('services.' + modal.key + '.mBody.desc').replace(/@framaservice/g, $root.services[modal.key].F)"></p>
 
             <!-- video / desc -->
             <p v-if="$t('services.' + modal.key + '.mBody.more') !== 'services.' + modal.key + '.mBody.more'"
-               v-html="$t('services.' + modal.key + '.mBody.more').replace(/@framaservice/g, data.services[modal.key].F)"></p>
+               v-html="$t('services.' + modal.key + '.mBody.more').replace(/@framaservice/g, $root.services[modal.key].F)"></p>
 
             <!-- features -->
             <div v-if="$t('services.' + modal.key + '.mBody.feat') !== 'services.' + modal.key + '.mBody.feat'">
@@ -190,12 +190,12 @@
               <ul v-if="Array.isArray($t('services.' + modal.key + '.mBody.feat'))">
                 <li
                   v-for="(item) in $t('services.' + modal.key + '.mBody.feat')"
-                  v-html="item.replace(/@framaservice/g, data.services[modal.key].F)"
+                  v-html="item.replace(/@framaservice/g, $root.services[modal.key].F)"
                 ></li>
               </ul>
               <p
                 v-else
-                v-html="$t('services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, data.services[modal.key].F)">
+                v-html="$t('services.' + modal.key + '.mBody.feat').replace(/@framaservice/g, $root.services[modal.key].F)">
               </p>
             </div>
 
@@ -216,9 +216,9 @@
               </ul>
               <!-- docs / install buttons -->
               <div class="col-md-6 text-right">
-                <a :href="$t('link.docs') + text(data.services[modal.key].S.toLowerCase())"
+                <a :href="$t('link.docs') + text($root.services[modal.key].S.toLowerCase())"
                   class="btn btn-lg btn-link text-uppercase">{{ $t('txt.docs') }}</a>
-                <a :href="data.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('txt.use') }}</a>
+                <a :href="$root.services[modal.key].FL" class="btn btn-lg btn-link text-uppercase">{{ $t('txt.use') }}</a>
               </div>
             </div>
           </modal>
@@ -234,7 +234,7 @@
             <div class="clearfix">
               <ul class="list-inline">
                 <li class="col-xs-4 col-sm-3 col-md-2 text-center" style="padding:20px"
-                  v-for="(service, key) in data.services" v-if="(data.fight.indexOf(key) > -1)">
+                  v-for="(service, key) in $root.services" v-if="($root.fight.indexOf(key) > -1)">
                   <a :href="service.FL" class="btn btn-default btn-block"
                     :title="$t('services.' + key + '.sDesc')"
                     rel="popover" data-placement="bottom"
@@ -282,7 +282,6 @@ export default {
         key: 'bitly',
       },
       results: tags,
-      data: this.$i18n.messages.data,
       scrollMenu: {
         left: 0,
         listWidth: 0,
@@ -326,7 +325,7 @@ export default {
       let tags = '';
       if (type === 'gafam') {
         Object.keys(services).forEach((k) => {
-          if (Array.isArray(services[k].gafam) && this.data.fight.indexOf(k) > -1) {
+          if (Array.isArray(services[k].gafam) && this.$root.fight.indexOf(k) > -1) {
             tags += `, ${services[k].gafam[0]}`;
           }
         });

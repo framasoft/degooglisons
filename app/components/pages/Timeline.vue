@@ -3,7 +3,7 @@
     <section class="intro">
       <div class="container">
         <h1 class="box">
-          <img alt="" :src="data['/img/'] + 'smalllogo.png'" /></span>
+          <img alt="" :src="`${$root['/']}img/smalllogo.png`" /></span>
           <span class="text" v-html="$t('timeline.title')"></span>
         </h1>
         <hr>
@@ -11,9 +11,9 @@
     </section>
     <section class="timeline">
       <ul>
-        <li v-for="(event, index) in data.timeline.events" :class="'li-' + event[0]" v-if="event[1] !== undefined">
+        <li v-for="(event, index) in $root.timeline.events" :class="'li-' + event[0]" v-if="event[1] !== undefined">
           <div :class="'fond-' + event[0]">
-            <time>{{ (new Intl.DateTimeFormat($t('lang'), data.timeline.format).format(new Date(event[1]))) }}</time>
+            <time>{{ (new Intl.DateTimeFormat($t('lang'), $root.timeline.format).format(new Date(event[1]))) }}</time>
             <p v-html="$t('timeline.events[' + index + ']').replace('<a ', '<a target=\'_parent\' ')"></p>
           </div>
         </li>
@@ -25,11 +25,6 @@
 <script>
 export default {
   name: 'Timeline',
-  data() {
-    return {
-      data: this.$i18n.messages.data,
-    }
-  },
   mounted () {
     (function() {
       // check if an element is in viewport

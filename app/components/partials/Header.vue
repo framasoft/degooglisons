@@ -18,11 +18,6 @@ export default {
   components: {
     I18n,
   },
-  data() {
-    return {
-      data: this.$i18n.messages.data,
-    }
-  },
 }
 </script>
 

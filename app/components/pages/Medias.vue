@@ -3,12 +3,15 @@
     <div class="container ombre">
       <header-component />
       <div class="clearfix">
-        <h2>{{ $t('medias.title') }}</h2>
+        <h2 v-html="$t('medias.title')"></h2>
         <p v-html="$t('medias.intro')"></p>
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" :title="$t('medias.timeline')" :src="`${data['/']}${$t('lang')}/timeline`" height="400">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item" height="400"
+                :title="$t('medias.timeline')"
+                :src="`${$root['/']}${$t('lang')}/timeline`">
               </iframe>
             </div>
           </div>
@@ -17,7 +20,7 @@
 
       <div class="clearfix">
         <!-- Visuels-->
-        <h2>{{ $t('medias.tabs.title') }}</h2>
+        <h2 v-html="$t('medias.tabs.title')"></h2>
         <p v-html="$t('medias.tabs.intro')"></p>
 
         <ul class="nav nav-tabs" role="tablist">
@@ -38,11 +41,11 @@
             <div class="row">
               <div class="col-sm-4" v-for="(img, index) in $t('medias.tabs.tab1.img')">
                 <div class="thumbnail text-center">
-                  <h3>{{ $t('medias.tabs.tab1.img[' + index + '][0]') }}</h3>
+                  <h3 v-html="$t('medias.tabs.tab1.img[' + index + '][0]')"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="data['/img/'] + $t('medias.tabs.tab1.img[' + index + '][1]')" />
-                  <p class="text-center">{{ $t('medias.tabs.tab1.img[' + index + '][2]') }}</p>
+                    :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.carte[index]}`">
+                  <p class="text-center" v-html="$t('medias.tabs.tab1.img[' + index + '][1]')"></p>
                 </div>
               </div>
             </div>
@@ -53,20 +56,20 @@
             <div class="row">
               <div class="col-sm-4" v-for="(img, index) in $t('medias.tabs.tab2.img')">
                 <div class="thumbnail text-center">
-                  <h3>{{ $t('medias.tabs.tab2.img[' + index + '][0]') }}</h3>
+                  <h3 v-html="$t('medias.tabs.tab2.img[' + index + ']')"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="data['/img/'] + $t('medias.tabs.tab2.img[' + index + '][1]')" />
+                    :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.gee[index]}`">
                 </div>
               </div>
               <div class="col-sm-8 col-sm-offset-2">
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t('medias.tabs.tab2.video[0][0]')"></h3>
+                  <h3 v-html="$t('meta.dio')"></h3>
                   <video controls="controls" width="540" height="360">
-                    <source :src="data['/img/'] + $t('medias.tabs.tab2.video[0][1]') + '.webm'" type="video/webm" />
-                    <source :src="data['/img/'] + $t('medias.tabs.tab2.video[0][1]') + '.mp4'" type="video/mp4" />
+                    <source :src="`${$root['/']}img/${$route.meta.lang}/anim_dio.webm`" type="video/webm" />
+                    <source :src="`${$root['/']}img/${$route.meta.lang}/anim_dio.mp4`" type="video/mp4" />
                   </video>
-                  <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="{{ data['/img/'] + $t('medias.tabs.tab2.video[0][1]') }}.webm" type="video/webm" /&gt;&lt;source src="{{ data['/img/'] + $t('medias.tabs.tab2.video[0][1]') }}.mp4" type="video/mp4"&gt;&lt;/video&gt;</pre>
+                  <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="{{ `${$root['/']}img/${$route.meta.lang}/anim_dio.webm` }}" type="video/webm" /&gt;&lt;source src="{{ `${$root['/']}img/${$route.meta.lang}/anim_dio.mp4` }}" type="video/mp4"&gt;&lt;/video&gt;</pre>
                 </div>
               </div>
             </div>
@@ -77,18 +80,18 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <div class="thumbnail text-center">
-                  <h3>{{ $t('medias.tabs.tab6.img[4][0]') }}</h3>
+                  <h3 v-html="$t('medias.tabs.tab6.img[4]')"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="data['/img/'] + $t('medias.tabs.tab6.img[4][1]')" />
+                    :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.peha[4]}`">
                 </div>
               </div>
               <div class="col-sm-6" v-for="(img, index) in $t('medias.tabs.tab6.img')" v-if="index != 4">
                 <div class="thumbnail text-center">
-                  <h3>{{ $t('medias.tabs.tab6.img[' + index + '][0]') }}</h3>
+                  <h3 v-html="$t('medias.tabs.tab6.img[' + index + ']')"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="data['/img/'] + $t('medias.tabs.tab6.img[' + index + '][1]')" />
+                    :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.peha[index]}`">
                 </div>
               </div>
             </div>
@@ -98,11 +101,11 @@
             <div class="row">
               <div class="col-sm-4" v-for="(img, index) in $t('medias.tabs.tab5.img')">
                 <div class="thumbnail text-center">
-                  <h3>{{ $t('medias.tabs.tab5.img[' + index + '][0]') }}</h3>
+                  <h3 v-html="$t('medias.tabs.tab5.img[' + index + '][0]')"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="data['/img/'] + $t('medias.tabs.tab5.img[' + index + '][1]')" />
-                  <p class="text-center" v-html="$t('medias.tabs.tab5.img[' + index + '][2]')"></p>
+                    :src="`${$root['/']}img/${$root.img.stickers[index]}`">
+                  <p class="text-center" v-html="$t('medias.tabs.tab5.img[' + index + '][1]')"></p>
                 </div>
               </div>
             </div>
@@ -129,8 +132,8 @@
               <div class="col-sm-10 col-sm-offset-1">
                 <div class="text-center">
                   <h3 v-html="$t('medias.tabs.tab4.title')"></h3>
-                  <p class="text-center"><iframe :src="$t('medias.tabs.tab4.link')" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
-                  <pre>&lt;iframe src="{{ $t('medias.tabs.tab4.link') }}" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;</pre>
+                  <p class="text-center"><iframe src="https://degooglisons-internet.org/presentation/" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+                  <pre>&lt;iframe src="https://degooglisons-internet.org/presentation/" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;</pre>
                 </div>
               </div>
             </div>
@@ -142,10 +145,11 @@
               <div class="col-sm-10 col-sm-offset-1">
                 <div class="thumbnail text-center">
                   <h3 v-html="$t('medias.tabs.tab7.title')"></h3>
-                  <p><a :href="data['/img/'] + $t('medias.tabs.tab7.img[1][1]')">{{ $t('medias.tabs.tab7.img[1][0]') }}</a></p>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
-                     :title="$t('medias.tabs.saveas')" alt=""
-                     :src="data['/img/'] + $t('medias.tabs.tab7.img[0][1]')" />
+                    :title="$t('medias.tabs.saveas')" alt=""
+                    :src="`${$root['/']}img/${$route.meta.lang}/infographie_Le-Monde-de-Framasoft_CC-By-SA-Geoffrey-Dorne-1920px-2018.jpg`"
+                  >
+                  <p class="text-center" v-html="$t('medias.tabs.tab7.img')"></p>
                 </div>
               </div>
             </div>
@@ -155,37 +159,37 @@
 
       <div class="clearfix">
         <!-- Revue de web-->
-        <h2>{{ $t('medias.press.title') }}</h2>
+        <h2 v-html="$t('medias.press.title')"></h2>
         <p v-html="$t('medias.press.intro')"></p>
         <div class="col-sm-8 col-sm-offset-2 well">
           <table class="table">
             <thead>
               <tr>
-                <th>{{ $t('medias.press.th1') }}</th>
-                <th>{{ $t('medias.press.th2') }}</th>
-                <th>{{ $t('medias.press.th3') }}</th>
+                <th v-html="$t('medias.press.th1')"></th>
+                <th v-html="$t('medias.press.th2')"></th>
+                <th v-html="$t('medias.press.th3')"></th>
               </tr>
             </thead>
             <tbody>
-                  <tr v-for="item in data.medias.press.list" :key="item[3]" v-if="item[0] === $t('lang') || (item[0] === 'en' && $t('lang') !== 'fr')">
-                    <td>{{ (new Intl.DateTimeFormat($t('lang')).format(new Date(item[1]))) }}</td>
-                    <td>{{ item[2] }}</td>
-                    <td><a :href="item[3]" :hreflang="item[0]">{{ $t(item[4]) }}</a></td>
-                  </tr>
-                </tbody>
+              <tr v-for="item in $root.medias.press.list" :key="item[3]" v-if="item[0] === $t('lang') || (item[0] === 'en' && $t('lang') !== 'fr')">
+                <td v-html="(new Intl.DateTimeFormat($t('lang')).format(new Date(item[1])))"></td>
+                <td v-html="item[2]"></td>
+                <td><a :href="item[3]" :hreflang="item[0]" v-html="$t(item[4])"></a></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
 
       <div class="clearfix">
-        <h2>{{ $t('medias.frama.title') }}</h2>
+        <h2 v-html="$t('medias.frama.title')"></h2>
         <div class="col-sm-8">
           <ul>
             <li v-for="item in $t('medias.frama.list')" v-html="item"></li>
           </ul>
           <p class="text-center">
-            <img :src="data['/img/'] + 'biglogo.png'" alt="" style="width:220px; margin:10px 30px"/>
-            <img :src="data['/img/'] + 'biglogo-noir.png'" alt="" style="width:220px; margin:10px 30px"/>
+            <img :src="`${$root['/']}img/biglogo.png`" alt="" style="width:220px; margin:10px 30px"/>
+            <img :src="`${$root['/']}img/biglogo-noir.png`" alt="" style="width:220px; margin:10px 30px"/>
           </p>
         </div>
 
@@ -211,11 +215,6 @@ export default {
     HeaderComponent,
     Signature,
     BackTop,
-  },
-  data() {
-    return {
-      data: this.$i18n.messages.data,
-    }
   },
   mounted () {
     document.querySelector('a[href="#presentation"]').onclick = () => {
