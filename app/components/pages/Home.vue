@@ -248,7 +248,7 @@
                 </a>
               </p>
               <p class="text-center">
-                <img :src="`${$root['/']}img/${$root.img.gee[1]}`" alt="" />
+                <img :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.gee[1]}`" alt="" />
               </p>
             </div>
             <div class="col-sm-6">
@@ -287,7 +287,7 @@
               </p>
             </div>
             <p class="col-sm-12 text-center">
-              <img :src="`${$root['/']}img/${$root.img.gee[0]}`" alt="" />
+              <img :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.gee[0]}`" alt="" />
             </p>
             <modal
               id="myFramaModal"
@@ -350,7 +350,7 @@
           </div>
         </div>
         <p class="col-sm-12 text-center">
-          <img :src="`${$root['/']}img/${$root.img.gee[4]}`" alt="" />
+          <img :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.gee[4]}`" alt="" />
         </p>
         <div class="clearfix">
           <div class="sm-12">

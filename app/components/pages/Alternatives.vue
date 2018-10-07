@@ -254,7 +254,7 @@
       <p v-html="$t('camps.' + modal2.key + '.text1')"></p>
       <p v-html="$t('camps.' + modal2.key + '.text2')"></p>
       <p class="text-center">
-        <img :src="`${$root['/']}img/${$t($root.camps[modal2.key].img)}.png`" alt="" />
+        <img :src="`${$root['/']}img/${$route.meta.lang}/${$t($root.camps[modal2.key].img)}.png`" alt="" />
       </p>
       <div slot="footer">
         <div class="text-right">
