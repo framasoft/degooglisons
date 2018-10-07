@@ -295,7 +295,10 @@
                 :style="'left: ' + scrollMenu.left + 'px'">
                 <li><a href="#bloc-carte" :title="$t('txt.backToMap')"
                   data-toggle="tooltip" data-placement="bottom">
-                  <img :src="$root['/'] +'img/carte_petite.png'" :alt="$t('txt.backToMap')" />
+                  <img
+                    :src="`${$root['/']}img/${$route.meta.lang}/carte_petite.png`"
+                    :alt="$t('txt.backToMap')"
+                  >
                 </a></li>
                 <li v-for="(icon, cat) in $root.cat1.icons">
                   <a :href="'#' + cat" :title="$t('cat1.' + cat)"
