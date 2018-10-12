@@ -332,8 +332,15 @@ timeline:
   - ['services', '2016-10-10']
   - ['frama', '2016-10-12']
   - ['services', '2017-1-11']
+  - ['frama', '2017-3-21']
   - ['services', '2017-3-22']
   - ['frama', '2017-6-12']
+  - ['services', '2017-6-16']
+  - ['frama', '2017-10-9']
+  - ['services', '2017-10-12']
+  - ['frama', '2017-11-22']
+  - ['services', '2018-4-3']
+  - ['services', '2018-5-3']
 
 editors:
   icons:
