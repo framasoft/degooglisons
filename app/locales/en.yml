@@ -523,6 +523,7 @@ medias:
 timeline:
   title: '@:meta.F, la timeline'
   launch: Launch of
+  announce: Announcement of
   events:
   - '<a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> revelations on American and British mass espionage programs.'
   - '<a href="https://framablog.org/2014/01/23/manger-la-patee-de-son-chien/">Framasoft’s de-googl-ification</a><br>(see the <a href="https://rmll.ubicast.tv/videos/quitter-google-lexperience-de-lassociation-framasoft/">the RMLL 2014 conference</a>)'
@@ -559,10 +560,17 @@ timeline:
   - '<a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:timeline.launch Framatalk</a>'
   - '<a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:timeline.launch Framagenda</a>'
   - '<a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:timeline.launch MyFrama</a>'
-  - '<a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Naissance du collectif CHATONS</a>'
+  - '<a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Birth of the CHATONS collective</a>'
   - '<a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:timeline.launch Framaestro</a>'
+  - '<a href="https://framablog.org/2017/04/04/framalibre-decouvrez-lannuaire-du-libre/">Redesign of Framalibre'
   - '<a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:timeline.launch Framaslides</a>'
   - '<a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:timeline.launch docs.framasoft.org</a>'
+  - '<a href="https://framablog.org/2017/06/16/framapic-un-nouvel-outil-pour-creer-une-galerie-photo/">Pictures gallery with Framapic</a>'
+  - '<a href="https://framablog.org/2017/10/09/contributopia-degoogliser-ne-suffit-pas/">@:timeline.launch roadmap for « Contributopia »</a>'
+  - '<a href="https://framablog.org/2017/10/12/frama-site-testons-la-contribution/">@:timeline.announce frama.site</a>'
+  - '<a href="https://framablog.org/2017/11/22/framatube-aidez-nous-a-briser-lhegemonie-de-youtube/">@:timeline.announce PeerTube</a>'
+  - '<a href="https://framablog.org/2018/04/03/framaclic-un-nouveau-service-qui-compte/">@:timeline.launch Framaclic</a>'
+  - '<a href="https://framablog.org/2018/05/03/storify-est-mort-longue-vie-a/">@:timeline.launch Framastory</a>'
 
 # Generic text ---------------------------------------------------------
 txt:

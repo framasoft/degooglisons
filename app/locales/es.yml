@@ -559,7 +559,8 @@ medias:
     text3: '<em>El logotipo es obra de JosephK bajo licencia @:data.license.ccbysa4</em>'
 timeline:
   title: '@:meta.F, la timeline'
-  launch: Launch of
+  launch: Lanzamiento de
+  announce: Anuncio de
   events:
   - Las revelaciones de <a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward
     Snowden</a> sobre el programa PRISM de la <abbr>NSA</abbr>.
@@ -571,7 +572,7 @@ timeline:
   - <a href="https://rmll.ubicast.tv/videos/quelles-alternatives-a-google-retours-sur-lexperience-framacloud/">Campaign
     « De-googl-ify Internet » pre-announcement </a> at the RMLL of Montpellier
   - <a href="https://framablog.org/2014/10/07/degooglisons-internet/">Campaign Announcement</a>
-  - <a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2014/10/07/framasphere-reseau-social-libre-et-gratuit/">@:timeline.launch
     Framasphère</a>
   - <a href="https://framablog.org/2014/11/11/des-cartes-mentales-libres-avec-framindmap/">Announcement
     of Framindmap</a>
@@ -580,65 +581,72 @@ timeline:
   - <a href="https://framablog.org/2014/12/11/mypads-le-developpement-est-lance/">@:timeline.launch
     the crowdfunding of MyPads</a>
   - <a href="https://framablog.org/2015/03/13/google-code-ferme-ses-portes-nous-on-les-ouvre/
-    ">@:timeline.lanzamiento Framagit</a>
-  - <a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">@:timeline.lanzamiento
+    ">@:timeline.launch Framagit</a>
+  - <a href="https://framablog.org/2015/03/16/huit-re-framapic-framabin-framasoft-met-les-bouchees-triples/">@:timeline.launch
     Frama.link, Framapic y Framabin</a>
-  - <a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/05/05/framabee-le-meta-moteur-qui-va-vous-butiner-le-web/">@:timeline.launch
     Framabee</a>
-  - <a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/06/18/framagames-des-jeux-pour-changer-les-idees-aux-lyceens/">@:timeline.launch
     Framagames</a>
-  - <a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/06/22/framabookin-devenez-le-concurrent-damazon/">@:timeline.launch
     Framabookin</a>
   - <a href="https://rmll.ubicast.tv/videos/google-facebook-etc-pourquoi-et-comment-decoloniser-internet/">Progress
     report at the RMLL of Beauvais</a>
   - <a href="https://framablog.org/2015/10/05/degooglisons-saison-2-ils-ne-savaient-pas-que-cetait-impossible-alors-ils-lont-fait/">« De-googl-ify
     Internet » season 2 announcement</a>
-  - <a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/10/05/framadrive-conservez-et-synchronisez-2-go-sur-nos-serveurs/">@:timeline.launch
     Framadrive</a>
   - <a href="https://framablog.org/2015/10/06/mypads-lalternative-de-framasoft-a-google-docs/">Announcement
     of MyPads</a>
-  - <a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/10/07/framaboard-les-libristes-ont-reinvente-le-tableau-blanc-mais-en-mieux/">@:timeline.launch
     Framaboard</a>
-  - <a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/10/08/framadate-createurs-de-sondages-nous-vous-avons-compris/">@:timeline.launch
     de la nueva version de Framadate</a>
-  - <a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/10/09/framadrop-emailez-de-gros-fichiers-en-toute-securite/">@:timeline.launch
     Framadrop</a>
   - '<a href="https://framablog.org/2015/10/23/les-nouveaux-loups-du-web-lavant-premiere/">Partnership
     to promote the documentary: « Les Nouveaux Loups du Web »</a>'
-  - <a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2015/12/23/framacarte-pour-liberer-vos-maps-de-google/">@:timeline.launch
     Framacarte</a>
-  - <a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/05/10/framateam-liberez-vos-equipes-des-groupes-facebook-et-de-slack/">@:timeline.launch
     Framateam</a>
-  - <a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/06/07/framavox-discutez-decidez-et-faites-entendre-votre-voix/">@:timeline.launch
     Framavox</a>
   - <a href="https://framablog.org/2016/06/13/operation-degooglisons-a-nevers-24-25-26-juin/">Operation
     « De-googl-ify » in Nevers</a>
-  - <a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/09/01/framinetest-edu-laissez-microsoft-hors-de-portee-de-nos-enfants/">@:timeline.launch
     Framinetest</a>
-  - <a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/09/09/framemo-un-tableau-pour-vos-tempetes-de-cerveaux/">@:timeline.launch
     Framemo</a>
   - <a href="https://framablog.org/2016/10/03/degooglisons-saison-3-30-services-alternatifs-aux-produits-de-google-co/">« De-googl-ify
     Internet » season 3 announcement</a>
-  - <a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/10/03/framalistes-vos-groups-nont-plus-a-appartenir-a-google/">@:timeline.launch
     Framalistes</a>
-  - <a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/10/04/framanotes-vos-notes-vous-appartiennent-for-ever/">@:timeline.launch
     Framanotes</a>
-  - <a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/10/05/framaforms-noffrez-plus-les-reponses-que-vous-collectez-a-google/">@:timeline.launch
     Framaforms</a>
-  - <a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie/">@:timeline.launch
     Framatalk</a>
-  - <a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/10/07/framagenda-ne-partagez-plus-votre-planning-ni-vos-contacts-avec-la-nsa/">@:timeline.launch
     Framagenda</a>
-  - <a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2016/10/10/myframa-vos-favoris-et-framasofteries-partout-avec-vous-rien-qua-vous/">@:timeline.launch
     MyFrama</a>
   - <a href="https://framablog.org/2016/10/12/naissance-du-collectif-chatons/">Naissance
     du collectif CHATONS</a>
-  - <a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:timeline.launch
     Framaestro</a>
-  - <a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:timeline.lanzamiento
+  - '<a href="https://framablog.org/2017/04/04/framalibre-decouvrez-lannuaire-du-libre/">Rediseño de Framalibre'
+  - <a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:timeline.launch
     Framaslides</a>
-  - <a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:timeline.lanzamiento
+  - <a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:timeline.launch
     docs.framasoft.org</a>
+  - '<a href="https://framablog.org/2017/06/16/framapic-un-nouvel-outil-pour-creer-une-galerie-photo/">Galería de fotos con Framapic</a>'
+  - '<a href="https://framablog.org/2017/10/09/contributopia-degoogliser-ne-suffit-pas/">@:timeline.launch una hoja de ruta para « Contributopia »</a>'
+  - '<a href="https://framablog.org/2017/10/12/frama-site-testons-la-contribution/">@:timeline.announce frama.site</a>'
+  - '<a href="https://framablog.org/2017/11/22/framatube-aidez-nous-a-briser-lhegemonie-de-youtube/">@:timeline.announce PeerTube</a>'
+  - '<a href="https://framablog.org/2018/04/03/framaclic-un-nouveau-service-qui-compte/">@:timeline.launch Framaclic</a>'
+  - '<a href="https://framablog.org/2018/05/03/storify-est-mort-longue-vie-a/">@:timeline.launch Framastory</a>'
 txt:
   play: Play
   pause: Pause
