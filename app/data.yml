@@ -341,6 +341,7 @@ timeline:
   - ['frama', '2017-11-22']
   - ['services', '2018-4-3']
   - ['services', '2018-5-3']
+  - ['frama', '2018-10-15']
 
 editors:
   icons:
