@@ -431,7 +431,6 @@ services:
     - tinyurl.com
     altOn:
     - <a href="http://lstu.fr/">LSTU</a>
-    - <a href="http://ur1.ca/">ur1.ca</a>
     altOff:
     - <a href="http://yourls.org/">YOURLS</a>
     - <a href="http://lilurl.sourceforge.net/">LilURL</a>
