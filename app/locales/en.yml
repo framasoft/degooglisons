@@ -1429,3 +1429,5 @@ services:
     sDesc: Online payments
   universalis:
     sDesc: Encyclopedia
+  whatsapp:
+    sDesc: Instant messaging service
