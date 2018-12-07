@@ -1343,6 +1343,19 @@ services:
     - <a href="https://www.mediawiki.org/">Mediawiki</a>
     c1: media
 
+  whatsapp:
+    S:
+    F: <a href="https://signal.org/">Signal</a>
+    gafam:
+    - WhatsApp
+    - Facebook Messenger
+    altOn:
+    altOff:
+    - <a href="https://signal.org/">Signal</a>
+    - <a href="https://silence.im/">Silence</a>
+    - <a href="https://wire.com/de/">Wire</a>
+    c1: social
+
 license:
   lal: <a href="http://artlibre.org">Art Libre</a>
   cc0: <a href="https://creativecommons.org/publicdomain/zero/1.0">Creative Commons 0</a>
