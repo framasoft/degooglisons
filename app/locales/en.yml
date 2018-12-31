@@ -37,7 +37,7 @@ leds:
       that are not interoperable.
       To keep the Internet faithful to the founding principles which led to its success,
       it is important that there should be free apps on the Internet, that is to say,
-      apps with opensource codes, accessible under free licence.'
+      apps with opensource codes, accessible under free license.'
   ethic:
     title: Ethics
     desc: 'We wish to support a participative and
@@ -859,7 +859,7 @@ services:
     sDesc: Shared calendar
     lDesc: You choose who sees your timetable
     tDesc: 'Create personal or professional, confidential or public, agendas,
-      on your own or in collaboration, and synchronise them across devicess.'
+      on your own or in collaboration, and synchronise them across devices.'
     hDesc: 'With Framagenda you can create personal or professional
       agendas, the timetable for a room or the activities
       of your organisation, and share them freely.
@@ -884,9 +884,9 @@ services:
     sDesc: Online books
     lDesc: An open library which offers thousands of books
     tDesc: 'Consult an online library of digital books under a
-      libre licence and download them freely (alternative to Google Books).'
+      libre license and download them freely (alternative to Google Books).'
     hDesc: 'Our library contains hundreds of works which are
-      under libre licences or in the public domain. You can
+      under libre licenses or in the public domain. You can
       consult it online via mobile platforms. You can add it
       directly to an ebook reading application thanks to the
       flux <abbr>OPDS</abbr>.'
@@ -905,7 +905,7 @@ services:
     sDesc: Collaborative writing
     lDesc: A collaborative real-time web-based editor
     tDesc: 'Draft a text online, as a team, in real time, with the help
-      of a timeslider, chat, comments… (alternative to Google Docs).'
+      of a time slider, chat, comments… (alternative to Google Docs).'
     hDesc: 'Let’s write together in the same document in an
       interface for collective online drafting.
       No registration required, give yourself a nickname
@@ -932,7 +932,7 @@ services:
     sDesc: Online surveys
     lDesc: An easy way to create your surveys
     tDesc: 'Create an online survey, be it simple or complex, on a
-      plateform that’s respectful of your data (alternative to Google Forms).'
+      platform that’s respectful of your data (alternative to Google Forms).'
     hDesc: 'Framaforms allows you to design questionnaires and surveys to
       meet your own specific needs, be it for school,
       amily, an association, or work. Set up questions adapted
@@ -987,7 +987,7 @@ services:
       - Choose colors and icons
       - 'Manage options of the map: add a littlemap, geolocalize user,…'
       - Import geographics data (geojson, gpx, kml, osm…)
-      - Choose a licence for your data
+      - Choose a license for your data
       - Export and share your map
     tags: cartography, maps
   greader:
@@ -1108,7 +1108,7 @@ services:
   minecraft:
     sDesc: Educational game
     lDesc: An educational game worth digging into
-    tDesc: 'Players build togetherin this open world
+    tDesc: 'Players build together in this open world
       with numerous educational applications (alternative to Minecraft).'
     hDesc: 'Framinetestest is a server of the Minetest game, a "sandbox" game
       in which you construct and break up blocks to modify them and
@@ -1193,7 +1193,7 @@ services:
   loomio:
     sDesc: Decision-making tool
     lDesc: Make your decisions together, collaboratively
-    tDesc: 'Create a team and invite in youe collaborators in order to discuss and
+    tDesc: 'Create a team and invite in your collaborators in order to discuss and
       take group decisions with the help of diverse voting tools.'
     hDesc: 'Framavox helps you to make group-based decisions.
       Start a discussion, share ideas, come to an agreement,
@@ -1212,7 +1212,7 @@ services:
   skype:
     sDesc: Visioconference
     lDesc: Chat freely with your friends
-    tDesc: 'Obtain or rejoin a videoconference chatroom (with text based webchat and
+    tDesc: 'Obtain or join a videoconference chatroom (with text based web chat and
       screen sharing) in 3 clicks, from your web browser (alternative to Skype).'
     hDesc: 'Framatalk  allows you to chat with your friends without
       installing software or having to register.
@@ -1272,7 +1272,7 @@ services:
     sDesc: Send large files
     lDesc: Share your files anonymously
     tDesc: 'Share web file with a web link, confidentialy
-      with end to end encryption (alternative to WeTransfer).'
+      with end-to-end encryption (alternative to WeTransfer).'
     hDesc: 'With Framadrop, no more issue with attachment too big
       impairing you to send files by email.
       This Free service allow you to easily and securily share files.'
@@ -1340,7 +1340,7 @@ services:
     sDesc: Flexible collaboration
     lDesc: Orchestrate your collaborative projects
     tDesc: 'Merge a pad, a video conference and lots of others tools in
-      a single window with a single web link: ideal for meetings.'
+      a single window with a single web link. Ideal for meetings.'
     hDesc: 'Do you simultaneously need a pad for note taking,
       an organisational spreasheet and a video conference?
       With Framaestro, YOU get to organise the tools you need on a single web page.'
