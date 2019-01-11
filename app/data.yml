@@ -967,7 +967,7 @@ services:
     altOff:
     - <a href="https://jitsi.org/">Jitsi</a>
     - <a href="https://tox.chat/">Tox</a>
-    - <a href="https://ring.cx">Ring</a>
+    - <a href="https://jami.net/">Jami</a>
     pos: 506,560,40
     FDate: <a href="https://framablog.org/2016/10/06/framatalk-semez-la-discord-sur-skype-et-cie">2016</a>
     c1: social
