@@ -1221,7 +1221,7 @@ services:
     altOn:
     altOff:
     - <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a>
-    - <a href="http://www.qupzilla.com/">Qupzilla</a>
+    - <a href="https://www.falkon.org/">Falkon</a>
     - <a href="http://www.midori-browser.org/">Midori</a>
     c1: home
 
