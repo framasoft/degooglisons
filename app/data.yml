@@ -542,8 +542,9 @@ services:
     - iCloud Drive
     - OneDrive
     altOn:
-    - <a href="http://owncloud.org/providers/#free">OwnCloud</a>
+    - <a href="https://nextcloud.com/signup/">Nextcloud</a>
     - <a href="https://seacloud.cc">Seacloud</a>
+    - <a href="https://cozy.io">Cozy</a>
     altOff:
     - <a href="https://pyd.io/">Pyd.io</a>
     - <a href="http://www.seafile.com">Seafile</a>
@@ -1299,10 +1300,10 @@ services:
     - <a href="https://www.zaclys.com/">La mère Zaclys</a>
     - <a href="http://www.infini.fr/">Infini</a>
     altOff:
-    - <a href="https://cozy.io/fr/">Cozy</a>
+    - <a href="https://cozy.io">Cozy</a>
     - <a href="http://yunohost.org">Yunohost</a>
-    - <a href="https://sandstorm.io/">Sandstorm</a>
-    - <a href="https://cloudron.io/">Cloudron</a>
+    - <a href="https://sandstorm.io">Sandstorm</a>
+    - <a href="https://cloudron.io">Cloudron</a>
     c1: site
 
   patreon:
