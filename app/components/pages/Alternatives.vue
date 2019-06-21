@@ -195,7 +195,7 @@
           {{ $t('txt.basedOn') }}
           <span v-html="$root.services[modal.key].S"></span>
           <span v-if="$root.services[modal.key].CL">
-            <br><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
+            <br><i class="fa fa-tree" aria-hidden="true"></i>
             {{ $t('txt.howTo') }}<a :href="$root.services[modal.key].CL" class="text-success">{{ $t('txt.installOnServer') }}</a>
           </span>
         </p>

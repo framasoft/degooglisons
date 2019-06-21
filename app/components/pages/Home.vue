@@ -81,7 +81,7 @@
                 <a :href="$t('link.cloud')">
                   <span class="fa-stack fa-4x">
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="glyphicon glyphicon-tree-deciduous fa-stack-1x"></i>
+                    <i class="fa fa-tree fa-stack-1x"></i>
                   </span>
                 </a>
               </p>
