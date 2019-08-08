@@ -1153,7 +1153,7 @@ services:
     mBody:
       desc: '@framaservice vous permet de créer un tableau à colonnes où
         quiconque peut venir y déposer des notes colorées.
-        Tel <a href="https://framapad.org"><b class="violet>Frama</b><b class="vert">pad</b></a>,
+        Tel <a href="https://framapad.org"><b class="violet">Frama</b><b class="vert">pad</b></a>,
         aucune inscription n´est requise, et les modifications se voient
         et sont enregistrées en direct.'
       feat: 'Allez sur le site, créez un tableau, renseignez votre pseudonyme, puis partagez l´URL
