@@ -1339,7 +1339,7 @@ services:
     - <a href="http://fr.vikidia.org/">Vikidia</a>
     - <a href="http://www.appropedia.org">Appropedia</a>
     altOff:
-    - <a href="http://www.okawix.com/">Okawix</a>
+    - <a href="https://www.kiwix.org/fr/">Kiwix</a>
     - <a href="https://www.dokuwiki.org/">Dokuwiki</a>
     - <a href="https://www.mediawiki.org/">Mediawiki</a>
     c1: media
