@@ -1,7 +1,7 @@
 <template>
-  <a href="#" id="back-to-top" :title="$t('txt.backToTop')" v-scroll-to="'#app'" >
+  <a id="back-to-top" href="#" :title="$t('txt.backToTop')" v-scroll-to="'#app'" >
     <i class="fa fa-fw fa-arrow-up" aria-hidden="true"></i>
-    <span class="sr-only">$t('txt.backToTop')</span>
+    <span v-text="$t('txt.backToTop')" class="sr-only"></span>
   </a>
 </template>
 
@@ -41,10 +41,10 @@ export default {
   opacity: 0.4;
   color: #FFF;
   border: none;
+}
 
-  &:hover,
-  &focur {
-    opacity: 1;
-  }
+#back-to-top:hover,
+#back-to-top:focus {
+  opacity: 1;
 }
 </style>

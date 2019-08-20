@@ -1,0 +1,232 @@
+meta:
+  start: 07/10/2014
+  edit: 12/10/2017
+  baseURL: https://degooglisons-internet.org
+  f: Framasoft
+  fname: <b class="violet">Frama</b><b class="orange">soft</b>
+  author: Framasoft
+  canonical: https://degooglisons-internet.org
+  i18n: http://trad.framasoft.org/iteration/view/degooglisons/master
+
+img:
+  carte:
+  - Carte2016-romains.png
+  - Carte2016-victoires.png
+  - Carte2016-animation.gif
+  gee:
+  - stevusjobus.png
+  - cyberpolicus.png
+  - bourrepifix.png
+  - stallmanoramix.png
+  - village.png
+  - GAFAM.png
+  peha:
+  - Peha-Framadrop-CC-BY.png
+  - Peha-Framagit-CC-BY.png
+  - Peha-Framapiaf-Framasphere-CC-BY.png
+  - Peha-Framatalk-CC-BY-SA.png
+  - Peha-Banquet-Degooglisons-CC-By.png
+  stickers:
+  - stickerDiO_gafam.png
+  - stickerDiO_google.png
+  - stickerDiO_amazon.png
+  - stickerDiO_facebook.png
+  - stickerDiO_apple.png
+  - stickerDiO_microsoft.png
+
+home:
+  medias:
+  - ['https://web.archive.org/web/20150417064442/http://www.canalplus.fr:80/c-emissions/c-la-nouvelle-edition/pid6850-la-nouvelle-edition.html',
+     'canal_nb.png', 'Canal+']
+  - ['http://media.radiofrance-podcast.net/podcast09/10175-17.08.2015-ITEMA_20783026-0.mp3',
+     'france_culture_nb.png', 'France Culture']
+  - ['http://www.francetvinfo.fr/replay-radio/nouveau-monde/nouveau-monde-est-il-possible-de-degoogliser-le-web_1854529.html',
+     'france_info_nb.png', 'France Info']
+  - ['http://www.franceinter.fr/emission-comme-un-bruit-qui-court-la-libye-au-bord-du-chaos-ces-francais-qui-partent-faire-le-jihade',
+     'france_inter_nb.png', 'France Inter']
+  - ['http://www.lagedefaire-lejournal.fr/framasoft-services-libres-faciliter-nos-echanges/',
+     'age_de_faire_nb.png', 'L’âge de faire']
+  - ['http://www.latribune.fr/technos-medias/internet/les-chatons-toutes-griffes-dehors-face-aux-geants-du-net-557084.html',
+     'la_tribune_nb.png', 'La Tribune']
+  - ['http://www.lefigaro.fr/secteur/high-tech/pratique/2016/10/05/32002-20161005ARTFIG00176-des-solutions-alternatives-pour-vivre-sans-google-facebook-et-microsoft.php',
+     'le_figaro_nb.png', 'Le Figaro']
+  - ['http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
+     'l_humanite_nb.png', 'L’Humanité']
+  - ['http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262',
+     'liberation_nb.png', 'Libération']
+  - ['http://www.nextinpact.com/news/96764-degooglisons-internet-saison-2-framasoft-lance-produit-par-jour-cette-semaine.htm',
+     'next_inpact_nb.png', 'Next Inpact']
+
+medias:
+  press:
+    list:
+    - ['fr', '2017-07-30', 'Usbek & Rica',
+       'https://usbeketrica.com/article/framasoft-une-amap-du-logiciel-libre',
+       'medias.press.lArticle']
+    - ['en', '2017-02-26', 'Konrad Lishka',
+       'https://www.konradlischka.info/2017/02/blog/how-a-french-association-with-6-employees-offers-mainstream-users-free-and-libre-alternatives-to-facebook-groups-slack-skype-and-the-like/',
+       'medias.press.lArticle']
+    - ['fr', '2017-02-05', 'France 24 / Mashable',
+       'http://mashable.france24.com/tech-business/20170204-chatons-collectif-hebergeurs-framasoft?ref=tw_i',
+       'medias.press.lArticle']
+    - ['fr', '2016-12-15', 'Next Inpact',
+       'http://www.nextinpact.com/news/102539-degooglisons-internet-framasoft-fait-bilan-son-action.htm',
+       'medias.press.lArticle']
+    - ['fr', '2016-12-10', 'Le Monde',
+       'http://www.lemonde.fr/pixels/article/2016/12/10/framasoft-des-chatons-armes-de-logiciels-libres-pour-contrer-google_5046752_4408996.html?xtmc=framasoft&xtcr=1',
+       'medias.press.lArticle']
+    - ['fr', '2016-12-10', 'Le Figaro',
+       'http://www.lefigaro.fr/secteur/high-tech/2016/11/30/32001-20161130ARTFIG00001-les-defenseurs-du-logiciel-libre-decourages-par-l-education-nationale.php',
+       'medias.press.lArticle']
+    - ['fr', '2016-11-28', 'L’Âge de Faire (n°114)',
+       'http://www.lagedefaire-lejournal.fr/geants-net-coupons-cordon/',
+       'medias.press.lSummary']
+    - ['fr', '2016-11-05', 'France Culture',
+        'https://www.franceculture.fr/emissions/le-numerique-et-nous/surveillance-sur-le-web-comment-retrouver-le-pouvoir-dagir',
+        'medias.press.lPodcast']
+    - ['fr', '2016-10-19', 'Korben.info',
+       'http://korben.info/framasoft-complete-arsenal-perforer-gafam.html',
+       'medias.press.lArticle']
+    - ['en', '2016-10-17', 'Worldcrunch',
+       'http://www.worldcrunch.com/tech-science/the-open-source-group-trying-to-quotde-googlequot-the-internet',
+       'medias.press.lArticle']
+    - ['fr', '2016-10-03', 'Libération',
+       'http://www.liberation.fr/futurs/2016/10/03/framasoft-accelere-la-degooglisation-du-web_1519262',
+       'medias.press.lArticle']
+    - ['fr', '2016-10-10', 'France Info',
+       'http://www.francetvinfo.fr/replay-radio/nouveau-monde/nouveau-monde-est-il-possible-de-degoogliser-le-web_1854529.html',
+       'medias.press.lListen']
+    - ['fr', '2015-10-24', 'Le Soir (Belgique)',
+       'http://www.lesoir.be/886985/article/economie/vie-du-net/2015-05-23/google-vivre-sans-c-est-parfois-possible',
+       'medias.press.lPaywall']
+    - ['en', '2016-08-24', 'Opensource.com',
+       'https://opensource.com/business/16/8/open-source-alternatives-office-365',
+       'medias.press.lArticle']
+    - ['fr', '2015-02-03', 'L’Humanité',
+       'http://www.humanite.fr/logiciel-libre-et-ess-une-economie-lintention-de-tous-564379',
+       'medias.press.lArticle']
+
+timeline:
+  format: { year: 'numeric', month: 'long', day: 'numeric' }
+  events:
+  - ['culture', '2013-06-06']
+  - ['frama', '2013-09-01']
+  - ['services', '2014-02-05']
+  - ['frama', '2014-07-01']
+  - ['frama', '2014-10-07']
+  - ['services', '2014-10-07']
+  - ['services', '2014-11-11']
+  - ['services', '2014-11-26']
+  - ['frama', '2014-12-11']
+  - ['services', '2015-03-13']
+  - ['services', '2015-03-16']
+  - ['services', '2015-5-5']
+  - ['services', '2015-6-18']
+  - ['services', '2015-6-22']
+  - ['frama', '2015-7-7']
+  - ['frama', '2015-10-5']
+  - ['services', '2015-10-5']
+  - ['services', '2015-10-6']
+  - ['services', '2015-10-7']
+  - ['services', '2015-10-8']
+  - ['services', '2015-10-9']
+  - ['frama', '2015-10-23']
+  - ['services', '2015-12-23']
+  - ['services', '2016-5-10']
+  - ['services', '2016-6-7']
+  - ['frama', '2016-6-24']
+  - ['services', '2016-9-1']
+  - ['services', '2016-9-9']
+  - ['frama', '2016-10-3']
+  - ['services', '2016-10-3']
+  - ['services', '2016-10-4']
+  - ['services', '2016-10-5']
+  - ['services', '2016-10-6']
+  - ['services', '2016-10-7']
+  - ['services', '2016-10-10']
+  - ['frama', '2016-10-12']
+  - ['services', '2017-1-11']
+  - ['frama', '2017-3-21']
+  - ['services', '2017-3-22']
+  - ['frama', '2017-6-12']
+  - ['services', '2017-6-16']
+  - ['frama', '2017-10-9']
+  - ['services', '2017-10-12']
+  - ['frama', '2017-11-22']
+  - ['services', '2018-4-3']
+  - ['services', '2018-5-3']
+  - ['frama', '2018-10-15']
+
+editors:
+  icons:
+      g: google
+      ap: apple
+      f: facebook
+      am: amazon
+      m: windows
+
+# Categories -----------------------------------------------------------
+cat1:
+  icons:
+    home: home
+    web: globe
+    office: area-chart
+    social: group
+    files: upload
+    media: music
+    geo: compass
+    hobbies: bicycle
+    site: html5
+    dev: code-fork
+
+cat2:
+  icons:
+    collab: group
+    prod: area-chart
+    orga: building
+    com: bullhorn
+    tools: gears
+    share: share-alt
+    search: search
+    games: gamepad
+
+# Services -------------------------------------------------------------
+fight: ['bitly', 'bubblus', 'delicious', 'doodle', 'dropbox', 'evernote',
+        'facebook', 'github', 'gagenda', 'gbooks', 'gdocs', 'gforms',
+        'ggroups', 'gmaps', 'greader', 'gspreadsheet', 'gsearch', 'gslides', 'imgur',
+        'kongregate', 'loomio', 'maestro', 'minecraft', 'padlet', 'pastebin', 'pixlr',
+        'pocket', 'skype', 'slack', 'trello', 'twitter', 'youtube', 'wetransfer']
+
+png:
+  gafam: []
+  leds: []
+
+camps:
+  village:
+    pos: 175,125,70
+    highlight: village
+    img: village
+  fermetum:
+    pos: 100,225,55
+    highlight: camps
+    img: stevusjobus
+    more: true
+  centralisum:
+    pos: 175,270,55
+    highlight: camps
+    img: cyberpolicus
+    more: true
+  espionnum:
+    pos: 250,245,55
+    highlight: camps
+    img: stevusjobus
+    more: true
+  privatum:
+    pos: 275,155,55
+    highlight: camps
+    img: cyberpolicus
+    more: true
+  nsa:
+    pos: 485,315,50
+    highlight: camps
+    img: nsa

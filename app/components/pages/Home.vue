@@ -1,5 +1,8 @@
 <template>
   <main>
+    <vue-headful
+      :description="text(`${$t('home.intro.bubble1')} ${$t('home.intro.bubble2')} ${$t('home.intro.bubble3')}`)"
+    />
     <section class="row landing">
       <div class="container-fluid">
         <div class="container">
@@ -8,25 +11,29 @@
           <div class="row">
             <div class="col-sm-4 hidden-xs">
               <p class="text-center well">
-                <a href="#enjeux"
+                <a
                   v-html="$t('home.intro.bubble1')"
+                  href="#enjeux"
                   @mouseover="explain=true;"
-                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));"
-                ></a>
-                </p>
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
+                </a>
+              </p>
             </div>
             <div class="col-sm-4 hidden-xs">
               <p class="text-center well">
-                <a href="#solutions"
+                <a
                   v-html="$t('home.intro.bubble2')"
+                  href="#solutions"
                   @mouseover="explain=true;"
-                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));"
-                ></a></p>
+                  @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
+                </a>
+              </p>
             </div>
             <div class="col-sm-4 hidden-xs">
               <p class="text-center well">
-                <router-link :to="'/' + $t('lang') + '/list'"
-                  v-html="$t('home.intro.bubble3')">
+                <router-link
+                  v-html="$t('home.intro.bubble3')"
+                  :to="`/${$t('lang')}/list`">
                 </router-link>
               </p>
             </div>
@@ -35,18 +42,18 @@
 
         <div class="container ombre choice">
           <div class="row text-center">
-            <router-link :to="'/' + $t('lang') + '/list'">
+            <router-link :to="`/${$t('lang')}/list`">
               <div class="col-md-6 fb_f6 h3 fc_light" style="margin:0 ; padding:5%">
-                <p class="fc_light">{{ $t('home.intro.btnList1') }}</p>
-                <p><small><i class="fc_light">{{ $t('home.intro.btnList2') }}</i></small></p>
-                <p class="btn-lg btn-default" v-html="$t('home.intro.btnList3')"></p>
+                <p v-html="$t('home.intro.btnList1')" class="fc_light"></p>
+                <p><small><i v-html="$t('home.intro.btnList2')" class="fc_light"></i></small></p>
+                <p v-html="$t('home.intro.btnList3')" class="btn-lg btn-default"></p>
               </div>
             </router-link>
-            <router-link :to="'/' + $t('lang') + '/alternatives'">
+            <router-link :to="`/${$t('lang')}/alternatives`">
               <div class="col-md-6 fb_o6 h3" style="margin:0 ; padding:5%">
-                <p class="fc_light">{{ $t('home.intro.btnAlt1') }}</p>
-                <p><small><i class="fc_light">{{ $t('home.intro.btnAlt2') }}</i></small></p>
-                <p class="btn-lg btn-default" v-html="$t('home.intro.btnAlt3')"></p>
+                <p v-html="$t('home.intro.btnAlt1')" class="fc_light"></p>
+                <p><small><i v-html="$t('home.intro.btnAlt2')" class="fc_light"></i></small></p>
+                <p v-html="$t('home.intro.btnAlt3')" class="btn-lg btn-default"></p>
               </div>
             </router-link>
           </div>
@@ -57,8 +64,8 @@
     <section class="row more">
       <div class="container ombre">
         <div class="col-sm-12">
-          <h2>{{ $t('home.more.title') }}</h2>
-          <p class="accroche" v-html="$t('home.more.desc')"></p>
+          <h2 v-html="$t('home.more.title')"></h2>
+          <p v-html="$t('home.more.desc')" class="accroche"></p>
           <div class="row">
             <div class="col-sm-4">
               <p class="text-center text-primary" aria-hidden="true">
@@ -71,8 +78,10 @@
               </p>
               <p v-html="$t('home.more.docs.desc')"></p>
               <p>
-                <a :href="$t('link.docs')" class="btn btn-xs btn-default">
-                  {{ $t('home.more.docs.btn') }}
+                <a
+                  v-html="$t('home.more.docs.btn')"
+                  :href="$t('link.docs')"
+                  class="btn btn-xs btn-default">
                 </a>
               </p>
             </div>
@@ -87,8 +96,10 @@
               </p>
               <p v-html="$t('home.more.cloud.desc')"></p>
               <p>
-                <a :href="$t('link.cloud')" class="btn btn-xs btn-default">
-                  {{ $t('home.more.cloud.btn') }}
+                <a
+                  v-html="$t('home.more.cloud.btn')"
+                  :href="$t('link.cloud')"
+                  class="btn btn-xs btn-default">
                 </a>
               </p>
             </div>
@@ -103,14 +114,16 @@
               </p>
               <p v-html="$t('home.more.chatons.desc')"></p>
               <p>
-                <a :href="$t('link.chatons')" class="btn btn-xs btn-default">
-                  {{ $t('home.more.chatons.btn') }}
+                <a
+                  v-html="$t('home.more.chatons.btn')"
+                  :href="$t('link.chatons')"
+                  class="btn btn-xs btn-default">
                 </a>
               </p>
             </div>
           </div>
 
-          <h2>{{ $t('home.why.title') }}</h2>
+          <h2 v-html="$t('home.why.title')"></h2>
           <p class="accroche" v-html="$t('home.why.desc')"></p>
           <div class="row">
             <div class="col-sm-4">
@@ -126,10 +139,12 @@
               </p>
               <p v-html="$t('home.why.explain.desc')"></p>
               <p>
-                <a href="#enjeux" class="btn btn-xs btn-default"
+                <a
+                  v-html="$t('home.why.explain.btn')"
+                  href="#enjeux"
+                  class="btn btn-xs btn-default"
                   @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
-                  {{ $t('home.why.explain.btn') }}
                 </a>
               </p>
             </div>
@@ -147,10 +162,10 @@
               <p v-html="$t('home.why.props.desc')"></p>
               <p>
                 <a
+                  v-html="$t('home.why.props.btn')"
                   href="#solutions" class="btn btn-xs btn-default"
                   @mouseover="explain=true;"
                   @click="explain=true; $scrollTo($event.currentTarget.href.replace(/(.*)(#.*)/, '$2'));">
-                  {{ $t('home.why.props.btn') }}
                 </a>
               </p>
             </div>
@@ -165,8 +180,10 @@
               </p>
               <p v-html="$t('home.why.who.desc')"></p>
               <p>
-                <a :href="$t('link.S') + '/association'" class="btn btn-xs btn-default">
-                  {{ $t('home.why.who.btn') }}
+                <a
+                  v-html="$t('home.why.who.btn')"
+                  :href="`${$t('link.S')}/association`"
+                  class="btn btn-xs btn-default">
                 </a>
               </p>
             </div>
@@ -176,30 +193,38 @@
         <div class="col-sm-12 well">
           <div class="row">
             <div class="col-sm-6">
-              <h2>{{ $t('home.contact.title') }}</h2>
+              <h2 v-html="$t('home.contact.title')"></h2>
               <p v-html="$t('home.contact.text1')"></p>
               <ul>
-                <li v-for="item in $t('home.contact.text2')" v-html="item"></li>
+                <li
+                  v-for="item in $t('home.contact.text2')"
+                  :key="item"
+                  v-html="item">
+                </li>
               </ul>
               <p v-html="$t('home.contact.text3')"></p>
               <p class="clearfix">
                 <a :href="$t('link.contact')" class="btn btn-primary col-sm-6 col-sm-offset-3 col-xs-12">
                   <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> 
-                  {{ $t('home.contact.btn') }}
+                  <span v-html="$t('home.contact.btn')"></span>
                 </a>
               </p>
             </div>
             <div class="col-sm-6">
-              <h2>{{ $t('home.support.title') }}</h2>
+              <h2 v-html="$t('home.support.title')"></h2>
               <p v-html="$t('home.support.text1')"></p>
               <ul>
-                <li v-for="item in $t('home.support.text2')" v-html="item"></li>
+                <li
+                  v-for="item in $t('home.support.text2')"
+                  :key="item"
+                  v-html="item">
+                </li>
               </ul>
               <p v-html="$t('home.support.text3')"></p>
               <p class="clearfix">
                 <a class="btn btn-soutenir col-sm-6 col-sm-offset-3 col-xs-12" :href="$t('link.S')">
                   <i class="fa fa-w fa-heart" aria-hidden="true"></i>
-                  {{ $t('home.support.btn') }}
+                  <span v-html="$t('home.support.btn')"></span>
                 </a>
               </p>
             </div>
@@ -208,43 +233,49 @@
       </div>
     </section>
 
-    <section class="row" id="speakabout">
+    <section id="speakabout" class="row">
       <div class="container ombre text-center">
-        <h2>{{ $t('home.speakabout.title') }}</h2>
+        <h2 v-html="$t('home.speakabout.title')"></h2>
         <ul class="list-inline">
-          <li v-for="media in $root.home.medias">
-            <a :href="media[0]"><img :src="$root['/'] +'img/medias/' + media[1]" :alt="media[2]"></a>
+          <li v-for="media in $root.home.medias" :key="media">
+            <a :href="media[0]"><img :src="`${$root['/']}img/medias/${media[1]}`" :alt="media[2]"></a>
           </li>
         </ul>
         <p>
-          <router-link :to="'/' + $t('lang') + '/medias'" class="btn btn-default btn-lg"
-            v-html="$t('home.speakabout.btn')">
+          <router-link
+            v-html="$t('home.speakabout.btn')"
+            :to="`/${$t('lang')}/medias`"
+            class="btn btn-default btn-lg">
           </router-link>
         </p>
       </div>
     </section>
 
-    <section class="row" id="enjeux" v-show="explain">
+    <section v-show="explain" id="enjeux" class="row">
       <div class="container ombre">
         <div class="col-sm-12">
-          <h2>{{ $t('home.explain.stakes.title') }}</h2>
+          <h2 v-html="$t('home.explain.stakes.title')"></h2>
           <p v-html="$t('home.explain.stakes.text1')"></p>
           <p v-html="$t('home.explain.stakes.text2')"></p>
         </div>
         <div class="clearfix">
           <div class="col-sm-12">
-            <h2>{{ $t('home.explain.danger.title') }}</h2>
+            <h2 v-html="$t('home.explain.danger.title')"></h2>
             <p v-html="$t('home.explain.danger.text')"></p>
           </div>
           <div class="clearfix">
             <div class="col-sm-6">
-              <h3 id="t2-espionnum"><span class="fa fa-fw fa-eye"></span> {{ $t('home.explain.danger.espionum.title') }}</h3>
+              <h3 id="t2-espionnum">
+                <i class="fa fa-fw fa-eye" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.danger.espionum.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.danger.espionum.desc')"></p>
               <p>
-                <a :href="$t('home.explain.danger.espionum.ref')"
+                <a
+                  v-html="$t('txt.examples')"
+                  :href="$t('home.explain.danger.espionum.ref')"
                   class="btn btn-primary btn-xs" onclick="return false;"
                   @click="modal.open = true; modal.href = $t('home.explain.danger.espionum.ref'); modal.title = $t('home.explain.danger.espionum.title')">
-                  {{ $t('txt.examples') }}
                 </a>
               </p>
               <p class="text-center">
@@ -252,37 +283,49 @@
               </p>
             </div>
             <div class="col-sm-6">
-              <h3 id="t2-privatum"><span class="fa fa-fw fa-user"></span> {{ $t('home.explain.danger.privatum.title') }}</h3>
+              <h3 id="t2-privatum">
+                <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.danger.privatum.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.danger.privatum.desc')"></p>
               <p>
-                <a :href="$t('home.explain.danger.privatum.ref')"
+                <a
+                  v-html="$t('txt.examples')"
+                  :href="$t('home.explain.danger.privatum.ref')"
                   class="btn btn-primary btn-xs" onclick="return false;"
                   @click="modal.open = true; modal.href = $t('home.explain.danger.privatum.ref'); modal.title = $t('home.explain.danger.privatum.title')">
-                  {{ $t('txt.examples') }}
                 </a>
               </p>
             </div>
           </div>
           <div class="clearfix">
             <div class="col-sm-6">
-              <h3 id="t2-centralisum"><span class="fa fa-fw fa-dot-circle-o"></span> {{ $t('home.explain.danger.centralisum.title') }}</h3>
+              <h3 id="t2-centralisum">
+                <i class="fa fa-fw fa-dot-circle-o" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.danger.centralisum.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.danger.centralisum.desc')"></p>
               <p>
-                <a :href="$t('home.explain.danger.centralisum.ref')"
+                <a
+                  v-html="$t('txt.examples')"
+                  :href="$t('home.explain.danger.centralisum.ref')"
                   class="btn btn-primary btn-xs" onclick="return false;"
                   @click="modal.open = true; modal.href = $t('home.explain.danger.centralisum.ref'); modal.title = $t('home.explain.danger.centralisum.title')">
-                  {{ $t('txt.examples') }}
                 </a>
               </p>
             </div>
             <div class="col-sm-6">
-              <h3 id="t2-fermetum"><span class="fa fa-fw fa-lock"></span> {{ $t('home.explain.danger.fermetum.title') }}</h3>
+              <h3 id="t2-fermetum">
+                <i class="fa fa-fw fa-lock" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.danger.fermetum.title')"></span> 
+              </h3>
               <p v-html="$t('home.explain.danger.fermetum.desc')"></p>
               <p>
-                <a :href="$t('home.explain.danger.fermetum.ref')"
+                <a
+                  v-html="$t('txt.examples')"
+                  :href="$t('home.explain.danger.fermetum.ref')"
                   class="btn btn-primary btn-xs" onclick="return false;"
                   @click="modal.open = true; modal.href = $t('home.explain.danger.fermetum.ref'); modal.title = $t('home.explain.danger.fermetum.title')">
-                  {{ $t('txt.examples') }}
                 </a>
               </p>
             </div>
@@ -298,15 +341,15 @@
               role="dialog"
               aria-labelledby="myFramaLabel"
               aria-hidden="true"
-              size="lg"
-            >
+              size="lg">
               <div class="embed-responsive embed-responsive-4by3">
                 <iframe class="embed-responsive-item" :src="modal.href"></iframe>
               </div>
               <div slot="footer">
                 <button
+                  v-html="$t('txt.close')"
                   class="btn btn-default"
-                  @click="modal.open = false">{{ $t('txt.close') }}
+                  @click="modal.open = false">
                 </button>
               </div>
             </modal>
@@ -315,21 +358,30 @@
       </div>
     </section>
 
-    <section class="row" id="solutions" v-show="explain">
+    <section v-show="explain" id="solutions" class="row">
       <div class="container ombre">
         <div class="clearfix">
           <div class="col-sm-12">
-            <h2><a id="leds"></a>{{ $t('home.explain.props.title') }}</h2>
+            <h2>
+              <a id="leds"></a>
+              <span v-html="$t('home.explain.props.title')"></span>
+            </h2>
             <p v-html="$t('home.explain.props.text')"></p>
           </div>
           <div class="col-sm-6">
-              <h3><span class="fa fa-fw fa-unlock"></span> {{ $t('home.explain.props.libre.title') }}</h3>
+              <h3>
+                <i class="fa fa-fw fa-unlock" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.props.libre.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.props.libre.text1')"></p>
               <p v-html="$t('home.explain.props.libre.text2')"></p>
               <p><strong v-html="$t('home.explain.props.libre.text3')"></strong></p>
           </div>
           <div class="col-sm-6">
-              <h3><span class="fa fa-fw fa-eye-slash"></span> {{ $t('home.explain.props.ethic.title') }}</h3>
+              <h3>
+                <i class="fa fa-fw fa-eye-slash" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.props.ethic.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.props.ethic.text1')"></p>
               <p v-html="$t('home.explain.props.ethic.text2')"></p>
               <p><strong v-html="$t('home.explain.props.ethic.text3')"></strong></p>
@@ -337,13 +389,19 @@
         </div>
         <div class="clearfix">
           <div class="col-sm-6">
-              <h3><span class="fa fa-fw fa-share-alt"></span> {{ $t('home.explain.props.decent.title') }}</h3>
+              <h3>
+                <i class="fa fa-fw fa-share-alt" aria-hidden="true"></i>
+                <span v-html="$t('home.explain.props.decent.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.props.decent.text1')"></p>
               <p v-html="$t('home.explain.props.decent.text2')"></p>
               <p><strong v-html="$t('home.explain.props.decent.text3')"></strong></p>
           </div>
           <div class="col-sm-6">
-              <h3><span class="fa fa-fw fa-users"></span> {{ $t('home.explain.props.solid.title') }}</h3>
+              <h3>
+                <i class="fa fa-fw fa-users" aria-hidden=""></i>
+                <span v-html="$t('home.explain.props.solid.title')"></span>
+              </h3>
               <p v-html="$t('home.explain.props.solid.text1')"></p>
               <p v-html="$t('home.explain.props.solid.text2')"></p>
               <p><strong v-html="$t('home.explain.props.solid.text3')"></strong></p>
@@ -354,16 +412,17 @@
         </p>
         <div class="clearfix">
           <div class="sm-12">
-            <h2>{{ $t('home.explain.concrete.title') }}</h2>
+            <h2 v-html="$t('home.explain.concrete.title')"></h2>
             <p v-html="$t('home.explain.concrete.text1')"></p>
             <p v-html="$t('home.explain.concrete.text2')"></p>
             <p v-html="$t('home.explain.concrete.text3')"></p>
             <p v-html="$t('home.explain.concrete.text4')"></p>
             <p v-html="$t('home.explain.concrete.text5')"></p>
             <p class="text-center">
-              <router-link :to="'/' + $t('lang') + '/list'"
-                class="btn btn-warning btn-lg"
-                v-html="$t('list.title') + ' ' + $root.meta.f">
+              <router-link
+                v-html="`${$t('list.title')} ${$root.meta.f}`"
+                :to="`/${$t('lang')}/list`"
+                class="btn btn-warning btn-lg">
               </router-link>
             </p>
             <p><img :src="`${$root['/']}img/cloud.jpg`" alt="" class="center-block img-responsive" /></p>
