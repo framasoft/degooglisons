@@ -3,7 +3,7 @@
     <section class="intro">
       <div class="container">
         <h1 class="box">
-          <img alt="" :src="`${$root['/']}img/smalllogo.png`" /></span>
+          <img alt="" :src="`${$root['/']}img/smalllogo.png`" />
           <span class="text" v-html="$t('timeline.title')"></span>
         </h1>
         <hr>
@@ -11,10 +11,13 @@
     </section>
     <section class="timeline">
       <ul>
-        <li v-for="(event, index) in $root.timeline.events" :class="'li-' + event[0]" v-if="event[1] !== undefined">
-          <div :class="'fond-' + event[0]">
-            <time>{{ (new Intl.DateTimeFormat($t('lang'), $root.timeline.format).format(new Date(event[1]))) }}</time>
-            <p v-html="$t('timeline.events[' + index + ']').replace('<a ', '<a target=\'_parent\' ')"></p>
+        <li
+          v-for="(event, index) in $root.timeline.events"
+          :key="index"
+          :class="`li-${event[0]}`">
+          <div :class="`fond-${event[0]}`">
+            <time v-text="(new Intl.DateTimeFormat($t('lang'), $root.timeline.format).format(new Date(event[1])))"></time>
+            <p v-html="$t(`timeline.events[${index}]`).replace('<a ', '<a target=\'_parent\' ')"></p>
           </div>
         </li>
       </ul>
