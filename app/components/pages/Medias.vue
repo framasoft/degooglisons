@@ -1,5 +1,9 @@
 <template>
   <main>
+    <vue-headful
+      :title="text(`${$t('meta.title')} - ${$t('medias.title')}`)"
+      :description="$t('map.alt')"
+    />
     <div class="container ombre">
       <header-component />
       <div class="clearfix">
@@ -23,40 +27,36 @@
         <h2 v-html="$t('medias.tabs.title')"></h2>
         <p v-html="$t('medias.tabs.intro')"></p>
 
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#cartes" aria-controls="cartes" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab1.title')"></a></li>
-          <li role="presentation"><a href="#dessins" aria-controls="dessins" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab2.title')"></a></li>
-          <li role="presentation"><a href="#dessins-peha" aria-controls="dessins-peha" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab6.title')"></a></li>
-          <li role="presentation"><a href="#stickers" aria-controls="stickers" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab5.title')"></a></li>
-          <li role="presentation"><a href="#videos" aria-controls="videos" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab3.title')"></a></li>
-          <li role="presentation"><a href="#presentation" aria-controls="presentation" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab4.title')"></a></li>
-          <li role="infographie"><a href="#infographie" aria-controls="infographie" role="tab" data-toggle="tab" v-html="$t('medias.tabs.tab7.title')"></a></li>
-        </ul>
-
-        <div class="tab-content">
-
+        <tabs>
           <!-- Cartes -->
-          <div role="tabpanel" class="tab-pane active" id="cartes">
+          <tab id="cartes" :title="$t('medias.tabs.tab1.title')" :html-title="true">
             <p v-html="$t('medias.tabs.tab1.intro')"></p>
             <div class="row">
-              <div class="col-sm-4" v-for="(img, index) in $t('medias.tabs.tab1.img')">
+              <div
+                v-for="index in Object.keys($t('medias.tabs.tab1.img'))"
+                :key="index"
+                class="col-sm-4" >
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t('medias.tabs.tab1.img[' + index + '][0]')"></h3>
+                  <h3 v-html="$t(`medias.tabs.tab1.img[${index}][0]`)"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
                     :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.carte[index]}`">
-                  <p class="text-center" v-html="$t('medias.tabs.tab1.img[' + index + '][1]')"></p>
+                  <p class="text-center" v-html="$t(`medias.tabs.tab1.img[${index}][1]`)"></p>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Dessins Gee-->
-          <div role="tabpanel" class="tab-pane" id="dessins">
+          </tab>
+
+          <!-- Dessins Gee -->
+          <tab id="dessins" :title="$t('medias.tabs.tab2.title')" :html-title="true">
             <p v-html="$t('medias.tabs.tab2.intro')"></p>
             <div class="row">
-              <div class="col-sm-4" v-for="(img, index) in $t('medias.tabs.tab2.img')">
+              <div
+                v-for="index in Object.keys($t('medias.tabs.tab2.img'))"
+                :key="index"
+                class="col-sm-4" >
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t('medias.tabs.tab2.img[' + index + ']')"></h3>
+                  <h3 v-html="$t(`medias.tabs.tab2.img[${index}]`)"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
                     :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.gee[index]}`">
@@ -69,13 +69,16 @@
                     <source :src="`${$root['/']}img/${$route.meta.lang}/anim_dio.webm`" type="video/webm" />
                     <source :src="`${$root['/']}img/${$route.meta.lang}/anim_dio.mp4`" type="video/mp4" />
                   </video>
-                  <pre>&lt;video controls="controls" width="540" height="360"&gt;&lt;source src="{{ `${$root['/']}img/${$route.meta.lang}/anim_dio.webm` }}" type="video/webm" /&gt;&lt;source src="{{ `${$root['/']}img/${$route.meta.lang}/anim_dio.mp4` }}" type="video/mp4"&gt;&lt;/video&gt;</pre>
+                  <pre
+                    v-text="`&lt;video controls=&quot;controls&quot; width=&quot;540&quot; height=&quot;360&quot;&gt;&lt;source src=&quot;${$root.link.dio}/img/${$route.meta.lang}/anim_dio.webm&quot; type=&quot;video/webm&quot; /&gt;&lt;source src=&quot;${$root.link.dio}/img/${$route.meta.lang}/anim_dio.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;`">
+                  </pre>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Dessins Péhä-->
-          <div role="tabpanel" class="tab-pane" id="dessins-peha">
+          </tab>
+
+          <!-- Dessins Péhä -->
+          <tab id="dessins-peha" :title="$t('medias.tabs.tab6.title')" :html-title="true">
             <p v-html="$t('medias.tabs.tab6.intro')"></p>
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
@@ -86,60 +89,71 @@
                     :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.peha[4]}`">
                 </div>
               </div>
-              <div class="col-sm-6" v-for="(img, index) in $t('medias.tabs.tab6.img')" v-if="index != 4">
+              <div
+                v-for="index in Object.keys($t('medias.tabs.tab6.img')).filter(i => i != 4)"
+                :key="index"
+                class="col-sm-6" >
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t('medias.tabs.tab6.img[' + index + ']')"></h3>
+                  <h3 v-html="$t(`medias.tabs.tab6.img[${index}]`)"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
                     :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.peha[index]}`">
                 </div>
               </div>
             </div>
-          </div>
+          </tab>
+
           <!-- Stickers -->
-          <div role="tabpanel" class="tab-pane" id="stickers">
+          <tab id="stickers" :title="$t('medias.tabs.tab5.title')" :html-title="true">
             <div class="row">
-              <div class="col-sm-4" v-for="(img, index) in $t('medias.tabs.tab5.img')">
+              <div
+                v-for="index in Object.keys($t('medias.tabs.tab5.img'))"
+                :key="index"
+                class="col-sm-4" >
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t('medias.tabs.tab5.img[' + index + '][0]')"></h3>
+                  <h3 v-html="$t(`medias.tabs.tab5.img[${index}][0]`)"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
                     :src="`${$root['/']}img/${$root.img.stickers[index]}`">
-                  <p class="text-center" v-html="$t('medias.tabs.tab5.img[' + index + '][1]')"></p>
+                  <p class="text-center" v-html="$t(`medias.tabs.tab5.img[${index}][1]`)"></p>
                 </div>
               </div>
             </div>
-          </div>
+          </tab>
+
           <!-- Vidéos -->
-          <div role="tabpanel" class="tab-pane" id="videos">
+          <tab id="videos" :title="$t('medias.tabs.tab3.title')" :html-title="true">
             <p v-html="$t('medias.tabs.tab3.intro')"></p>
             <div class="row">
-              <div class="col-md-6">
-                <h3 v-html="$t('medias.tabs.tab3.video[0][0]')"></h3>
-                <p class="text-center"><iframe width="560" height="315" :src="$t('medias.tabs.tab3.video[0][1]')" allowfullscreen></iframe></p>
-                <pre>&lt;iframe width="560" height="315" src="{{ $t('medias.tabs.tab3.video[0][1]') }}" allowfullscreen&gt;&lt;/iframe&gt;</pre>
-              </div>
-              <div class="col-md-6">
-                <h3 v-html="$t('medias.tabs.tab3.video[1][0]')"></h3>
-                <p class="text-center"><iframe width="560" height="315" :src="$t('medias.tabs.tab3.video[1][1]')" allowfullscreen></iframe></p>
-                <pre>&lt;iframe width="560" height="315" src="{{ $t('medias.tabs.tab3.video[1][1]') }}" allowfullscreen&gt;&lt;/iframe&gt;</pre>
+              <div v-for="n in 2" :key="n" class="col-md-6">
+                <h3 v-html="$t(`medias.tabs.tab3.video[${n - 1}][0]`)"></h3>
+                <p class="text-center"><iframe width="560" height="315" :src="$t(`medias.tabs.tab3.video[${n - 1}][1]`)" allowfullscreen></iframe></p>
+                <pre
+                  v-text="`&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;${$t(`medias.tabs.tab3.video[${n - 1}][1]`)}&quot; allowfullscreen&gt;&lt;/iframe&gt;`">
+                </pre>
               </div>
              </div>
-          </div>
+          </tab>
+
           <!-- Présentation -->
-          <div role="tabpanel" class="tab-pane" id="presentation">
+          <tab id="presentation" :title="$t('medias.tabs.tab4.title')" :html-title="true">
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
                 <div class="text-center">
                   <h3 v-html="$t('medias.tabs.tab4.title')"></h3>
-                  <p class="text-center"><iframe src="https://degooglisons-internet.org/presentation/" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
-                  <pre>&lt;iframe src="https://degooglisons-internet.org/presentation/" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"&gt;&lt;/iframe&gt;</pre>
+                  <p class="text-center">
+                    <iframe :src="`${$root.link.dio}/presentation/`" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                  </p>
+                  <pre
+                    v-text="`&lt;iframe src=&quot;${$root.link.dio}/presentation/&quot; width=&quot;800&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;`">
+                  </pre>
                 </div>
               </div>
             </div>
-          </div>
+          </tab>
+
           <!-- Infographie G Dorne -->
-          <div role="tabpanel" class="tab-pane" id="infographie">
+          <tab id="infographie" :title="$t('medias.tabs.tab7.title')" :html-title="true">
             <p v-html="$t('medias.tabs.tab7.intro')"></p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
@@ -149,12 +163,12 @@
                     :title="$t('medias.tabs.saveas')" alt=""
                     :src="`${$root['/']}img/${$route.meta.lang}/infographie_Le-Monde-de-Framasoft_CC-By-SA-Geoffrey-Dorne-1920px-2018.jpg`"
                   >
-                  <p class="text-center" v-html="$t('medias.tabs.tab7.img')"></p>
+                  <p class="text-center" v-html="$t('medias.tabs.tab7.img[0]')"></p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </tab>
+        </tabs>
       </div>
 
       <div class="clearfix">
@@ -171,7 +185,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="item in $root.medias.press.list" :key="item[3]" v-if="item[0] === $t('lang') || (item[0] === 'en' && $t('lang') !== 'fr')">
+              <tr
+                v-for="item in $root.medias.press.list"
+                :key="item[3]"
+                :class="!(item[0] === $t('lang') || (item[0] === 'en' && $t('lang') !== 'fr')) ? 'hidden' : ''">
                 <td v-html="(new Intl.DateTimeFormat($t('lang')).format(new Date(item[1])))"></td>
                 <td v-html="item[2]"></td>
                 <td><a :href="item[3]" :hreflang="item[0]" v-html="$t(item[4])"></a></td>
@@ -185,7 +202,11 @@
         <h2 v-html="$t('medias.frama.title')"></h2>
         <div class="col-sm-8">
           <ul>
-            <li v-for="item in $t('medias.frama.list')" v-html="item"></li>
+            <li
+              v-for="item in $t('medias.frama.list')"
+              :key="item"
+              v-html="item">
+            </li>
           </ul>
           <p class="text-center">
             <img :src="`${$root['/']}img/biglogo.png`" alt="" style="width:220px; margin:10px 30px"/>
@@ -205,6 +226,8 @@
   </main>
 </template>
 <script>
+import { Tabs, Tab } from 'uiv';
+
 import HeaderComponent from '../partials/Header.vue';
 import Signature from '../partials/Signature.vue';
 import BackTop from '../partials/BackTop.vue';
@@ -215,12 +238,7 @@ export default {
     HeaderComponent,
     Signature,
     BackTop,
-  },
-  mounted () {
-    document.querySelector('a[href="#presentation"]').onclick = () => {
-      const prez = document.querySelector('#presentation iframe');
-      prez.src = `${prez.src.replace('/#/', '/')}#/`;
-    };
+    Tabs, Tab,
   },
 }
 </script>
