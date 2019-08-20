@@ -209,6 +209,7 @@ gmail:
   - <a href="https://www.protonmail.com/">ProtonMail</a>
   - <a href="https://tutanota.com/fr/">Tutanota</a>
   - <a href="https://sud-ouest.org">Sud-Ouest</a>
+  - <a href="https://posteo.de">Posteo</a>
   altOff:
   - <a href="https://blue-mind.net">Blue-mind</a>
   - <a href="https://kolab.org/">Kolab</a>
@@ -269,6 +270,8 @@ gdocs:
   - Zoho Office
   altOn:
   altOff:
+  - <a href="https://www.onlyoffice.com">OnlyOffice</a>
+  - <a href="https://www.collaboraoffice.com/">Collabora Online</a>
   pos: 380,42,40
   FDate: <a href="https://framablog.org/2011/03/28/framapad-collaboration-en-ligne">2011</a>
   c1: office
@@ -399,6 +402,8 @@ gspreadsheet:
   - Google Spreadsheet
   altOn:
   altOff:
+  - <a href="https://www.onlyoffice.com">OnlyOffice</a>
+  - <a href="https://www.collaboraoffice.com/">Collabora Online</a>
   - <a href="http://www.zkoss.org/product/zkspreadsheet">ZK Spreadsheet</a>
   pos: 364,122,40
   FDate: <a href="https://framablog.org/2012/10/03/framacalc-tableur-sur-internet">2012</a>

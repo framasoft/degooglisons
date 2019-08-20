@@ -60,7 +60,7 @@
                           class="list-group-item">
                           <img
                             v-if="$root.png.leds.indexOf(text($root.services[key].F, 'latin sanitize')) > -1"
-                            :src="img.leds[text($root.services[key].F, 'sanitize')]" alt="" />
+                            :src="img.leds[text($root.services[key].F, 'latin sanitize')]" alt="" />
                           <span v-html="$root.services[key].F"></span>
                           <i class="fa fa-cloud pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
@@ -97,7 +97,7 @@
                           class="list-group-item">
                           <img
                             v-if="$root.png.leds.indexOf(text(alt, 'latin sanitize')) > -1"
-                            :src="img.leds[text(alt, 'sanitize')]" alt="" />
+                            :src="img.leds[text(alt, 'latin sanitize')]" alt="" />
                           <span v-html="alt"></span>
                           <i class="fa fa-server pull-right" aria-hidden="true"
                             data-toggle="tooltip" data-placement="top"
