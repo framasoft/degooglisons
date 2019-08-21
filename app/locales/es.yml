@@ -4,16 +4,12 @@ meta:
   dioname: <b class="violet">Desgooglicemos</b> <b class="orange">Internet</b>
   F: '@:data.html.soft'
   DIo: <a href="@:data.link.dio">@:meta.dioname</a>
-  lead: 'Una iniciativa de nuestra red @:data.html.soft en favor de un internet<br>
-    <a href="#leds">libre</a>, <a href="#leds">descentralizado</a>,
-    <a href="#leds">ético</a> y <a href="#leds">solidario</a>'
+  lead: Una iniciativa de nuestra red @:data.html.soft en favor de un internet<br>
+    <a href="#leds">libre</a>, <a href="#leds">descentralizado</a>, <a href="#leds">ético</a>
+    y <a href="#leds">solidario</a>
   start: Campaña comenzada el día
   edit: Última modificación el
   support: Sostener este proyecto
-nav:
-  langChange: Cambiar de lengua
-  lang: Lengua
-  translate: Traducir
 link:
   F: '@:data.link.soft'
   S: '@:data.link.soutenir'
@@ -31,112 +27,97 @@ leds:
   title: Por un Internet…
   libre:
     title: Libre
-    desc: 'La historia de la red Internet en sí es una historia de software libre,
+    desc: La historia de la red Internet en sí es una historia de software libre,
       tanto desde el punto de vista de los estándares como de los protocolos empleados.
       Su popularidad y su potencial provocan también envidia, y algunas grandes empresas
       bien quisieran hacerse con su control, imponiendo código cerrado en unos sistemas
-      bloqueados
-      y no interoperables. Para que Internet siga siendo fiel a sus principios fundadores
-      que lo han conducido al éxito,
-      debemos encontrar en él aplicaciones de software libre, esto es,
-      cuyo código fuente esté abierto, sea asequible y siga bajo licencias libres.'
+      bloqueados y no interoperables. Para que Internet siga siendo fiel a sus principios
+      fundadores que lo han conducido al éxito, debemos encontrar en él aplicaciones
+      de software libre, esto es, cuyo código fuente esté abierto, sea asequible y
+      siga bajo licencias libres.
   ethic:
     title: Ético
-    desc: 'Respaldamos totalmente un Internet de intercambio y de independencia.
-      La explotación, la vigilancia, la censura y la apropiación de los datos son
-      valores que
-      rehusamos en provecho de la transparencia (la probidad),
-      de la exposición clara de las condiciones de uso de los servicios,
-      y de la negación de las discriminaciones.'
+    desc: Respaldamos totalmente un Internet de intercambio y de independencia. La
+      explotación, la vigilancia, la censura y la apropiación de los datos son valores
+      que rehusamos en provecho de la transparencia (la probidad), de la exposición
+      clara de las condiciones de uso de los servicios, y de la negación de las discriminaciones.
   decent:
     title: Descentralizado
-    desc: 'La inteligencia de Internet debe situarse en la periferia de la red dentro
-      de una dinámica
-      de intercambio entre iguales, para impedir crear un Minitel 2.0 más. Para asegurar
-      la igualdad
-      de todos, ciudadanos como empresarios, no sólo se deben evitar los monopolios,
-      sino que también se les debe impedir que se apoderen de los datos personales
-      o públicos. Explicando,
-      mediante tutoriales, cómo multiplicar las soluciones libres que permitan un
-      Internet
-      más equitativo, favorecemos la diseminación del código y  diversificamos los
-      usos.'
+    desc: La inteligencia de Internet debe situarse en la periferia de la red dentro
+      de una dinámica de intercambio entre iguales, para impedir crear un Minitel
+      2.0 más. Para asegurar la igualdad de todos, ciudadanos como empresarios, no
+      sólo se deben evitar los monopolios, sino que también se les debe impedir que
+      se apoderen de los datos personales o públicos. Explicando, mediante tutoriales,
+      cómo multiplicar las soluciones libres que permitan un Internet más equitativo,
+      favorecemos la diseminación del código y  diversificamos los usos.
   solid:
     title: Solidario
-    desc: 'Gracias a los servicios que desplegamos, promovemos un modelo económico
+    desc: Gracias a los servicios que desplegamos, promovemos un modelo económico
       basado en la mutualización de los costes, el intercambio de los recursos y la
       asequibilidad de la mayoría. Por tanto, se evitarán los abusos porque todos
-      tenemos conciencia de la
-      la comunidad de los bienes. También posee este modelo un carácter educativo
-      ya que pensamos
-      que si documentamos el depliegue de servicios, un gran número de usuarios
-      estarán a su vez en condiciones de compartir dichos recursos.'
+      tenemos conciencia de la la comunidad de los bienes. También posee este modelo
+      un carácter educativo ya que pensamos que si documentamos el depliegue de servicios,
+      un gran número de usuarios estarán a su vez en condiciones de compartir dichos
+      recursos.
   charte: Para saber más, consulte <strong><a href="@:link.charte">nuestra charte</a></strong>.
 map:
   title: Haga clic en el mapa para descubrir las alternativas…
-  alt: 'Estamos en 2018 después de Cristo. Toda la Red está ocupada por los servicios
-    centralizados…
-    ¿Toda? ¡No! Una aldea poblada por irreductibles activistas de lo libre resiste,
-    todavía y como siempre, al invasor. Y la vida no es fácil para las guarniciones
-    de los reducidos campamentos de Fermetum, Centralisum, Espionnum y Privatum…'
+  alt: Estamos en 2018 después de Cristo. Toda la Red está ocupada por los servicios
+    centralizados… ¿Toda? ¡No! Una aldea poblada por irreductibles activistas de lo
+    libre resiste, todavía y como siempre, al invasor. Y la vida no es fácil para
+    las guarniciones de los reducidos campamentos de Fermetum, Centralisum, Espionnum
+    y Privatum…
 camps:
   village:
     title: Pueblo librista
-    text1: 'En medio de las empresas multinacionales tentaculares,
-      una organización sin fines lucrativos continúa participando activamente en la
-      lucha por una Red abierta y respectuosa de los internautas.'
-    text2: 'Además de @:meta.F, asociación sin fines lucrativos
-      que lanza esta campaña, podemos <a href="http://april.org">l’April</a>,
-      <a href="http://laquadrature.net">la Quadrature du Net</a> o también <a href="http://aful.org">l’Aful</a>.
-      Estas asociaciones viven con sus donaciones, ¡no se les olvide sostenerlas!'
+    text1: En medio de las empresas multinacionales tentaculares, una organización
+      sin fines lucrativos continúa participando activamente en la lucha por una Red
+      abierta y respectuosa de los internautas.
+    text2: Además de @:meta.F, asociación sin fines lucrativos que lanza esta campaña,
+      podemos <a href="http://april.org">l’April</a>, <a href="http://laquadrature.net">la
+      Quadrature du Net</a> o también <a href="http://aful.org">l’Aful</a>. Estas
+      asociaciones viven con sus donaciones, ¡no se les olvide sostenerlas!
   fermetum:
     title: <i lang="la">Fermetum</i>
-    text1: 'Los servicios en línea están frecuentemente cerrados :
-      cuando uno empieza a usarlos,
-      resulta muy difícil separarse de ellos, ya que esas empresas lo hacen todo para
-      mantenerlo cautivo,
-      impidiéndole migrar datos con facilidad, por ejemplo.'
-    text2: 'Utilizar los servicios abiertos es garantizar que no seguirá siendo
-      cautivo de un servicio en particular y que siempre será facil cambiarlo.'
+    text1: 'Los servicios en línea están frecuentemente cerrados : cuando uno empieza
+      a usarlos, resulta muy difícil separarse de ellos, ya que esas empresas lo hacen
+      todo para mantenerlo cautivo, impidiéndole migrar datos con facilidad, por ejemplo.'
+    text2: Utilizar los servicios abiertos es garantizar que no seguirá siendo cautivo
+      de un servicio en particular y que siempre será facil cambiarlo.
   centralisum:
     title: <i lang="la">Centralisum</i>
     text1: 'Los servicios centralizados plantean numerosos problemas: crean vulnerabilidad
-      en sus datos (solo un sitio
-      no disponible y ya nada es accesible) y facilita a terceros su explotación.'
-    text2: 'Utilizar servicios en línea descentralizados significa tener la opción
-      de
-      elegir entre utilizar una instancia en línea como la propuesta por Framasoft
-      o instalar el servicio en casa.'
+      en sus datos (solo un sitio no disponible y ya nada es accesible) y facilita
+      a terceros su explotación.'
+    text2: Utilizar servicios en línea descentralizados significa tener la opción
+      de elegir entre utilizar una instancia en línea como la propuesta por Framasoft
+      o instalar el servicio en casa.
   espionnum:
     title: <i lang="la">Espionnum</i>
-    text1: '« Si es gratis, es porque tú eres el producto »: numerosos servicios
-      en línea viven de
-      la explotación de sus datos personales vendiéndolos a empresas de publicidad.
-      Además, muchos servicios están en los Estados Unidos y obedecen a leyes como
-      el
-      PATRIOT ACT negando totalmente el derecho de cada uno a la vida privada.'
-    text2: 'Utilizar servicios en línea alojados en Europa es asegurarse de su independencia
-      de las leyes de otro
-      continente. Además, cuando aloja usted mismo el servicio, nadie puede violar
-      su vida privada.'
+    text1: '« Si es gratis, es porque tú eres el producto »: numerosos servicios en
+      línea viven de la explotación de sus datos personales vendiéndolos a empresas
+      de publicidad. Además, muchos servicios están en los Estados Unidos y obedecen
+      a leyes como el PATRIOT ACT negando totalmente el derecho de cada uno a la vida
+      privada.'
+    text2: Utilizar servicios en línea alojados en Europa es asegurarse de su independencia
+      de las leyes de otro continente. Además, cuando aloja usted mismo el servicio,
+      nadie puede violar su vida privada.
   privatum:
     title: <i lang="la">Privatum</i>
     text1: 'Los servicios privadores (« patentadores » en el lenguaje común) funcionan
-      de manera opaca:
-      es imposible saber exactamente lo que el programa hace con su datos. Solo el
-      editor tiene el control.'
-    text2: 'Utilizar servicios en línea libres supone un control del funcionamiento
-      del programa por parte de la
-      comunidad y la posibildad de modificarlo, de instalarlo en otro dispositivo,
-      etc.'
+      de manera opaca: es imposible saber exactamente lo que el programa hace con
+      su datos. Solo el editor tiene el control.'
+    text2: Utilizar servicios en línea libres supone un control del funcionamiento
+      del programa por parte de la comunidad y la posibildad de modificarlo, de instalarlo
+      en otro dispositivo, etc.
   nsa:
     title: <abbr title="National Security Agency" lang="en">NSA</abbr>
-    text1: 'Las revelaciones de Edward Snowden sobre el programa PRISM de la
-      @:camps.nsa.title han mostrado que es acertado temer la violación
-      masiva de la vida privada de los internautas, es algo fundado. '
-    text2: 'Utilizar servicios centralizados supone en la actualidad brindar en bandeja
-      sus datos personales a las
-      organizaciones de control sin posibilidad de conocer el uso al que van destinados'
+    text1: 'Las revelaciones de Edward Snowden sobre el programa PRISM de la @:camps.nsa.title
+      han mostrado que es acertado temer la violación masiva de la vida privada de
+      los internautas, es algo fundado. '
+    text2: Utilizar servicios centralizados supone en la actualidad brindar en bandeja
+      sus datos personales a las organizaciones de control sin posibilidad de conocer
+      el uso al que van destinados
 home:
   title: Inicio
   intro:
@@ -154,19 +135,19 @@ home:
     btnAlt3: Descubra las alternativas libres<br> para reemplazarlo
   more:
     title: Ir más allá
-    desc: '¿Camino de su independencia numérica…? ¡El camino está libre!<br>
-      Desgooglicemos Internet le propone recorrerlo en varias etapas.'
+    desc: ¿Camino de su independencia numérica…? ¡El camino está libre!<br> Desgooglicemos
+      Internet le propone recorrerlo en varias etapas.
     docs:
       btn: Documentación
-      desc: 'Descubra y utilice unos servicios alternativos (alojados por Framasoft),
-        valiéndose de nuestra <strong>documentación</strong>
-        colaborativa para aprender cómo funcionan, cómo conectarse a ellos,
-        cómo utilizar sus funcionalidades, etc'
+      desc: Descubra y utilice unos servicios alternativos (alojados por Framasoft),
+        valiéndose de nuestra <strong>documentación</strong> colaborativa para aprender
+        cómo funcionan, cómo conectarse a ellos, cómo utilizar sus funcionalidades,
+        etc
     cloud:
       btn: Framacloud
-      desc: 'Si está en sus manos, aloje libremente los mismos softwares
-        directamente en los servidores de su escuela/asociación/empresa/colectivo/etc.,
-        gracias a nuestros tutoriales de autoalojamiento reunidos en el <strong>Framacloud</strong>.'
+      desc: Si está en sus manos, aloje libremente los mismos softwares directamente
+        en los servidores de su escuela/asociación/empresa/colectivo/etc., gracias
+        a nuestros tutoriales de autoalojamiento reunidos en el <strong>Framacloud</strong>.
     chatons:
       btn: GATITAS
       desc: También puede buscar, cerca de su casa, un alojador de confianza y local
@@ -174,36 +155,33 @@ home:
         Abierto y Solidario, las <strong>GATITAS</strong> !
   why:
     title: ¿Por qué?
-    desc: 'Los  servicios son aplicaciones/programas informáticos, pero que están
-      instalados en la nube, es decir en la computadora de alguien más   (los famosos
-      « servidores »).
-      Utilizar los servicios de Google, Apple, Facebook, Amazon, Microsoft…  (los « GAFAM »),
-      significa que les entrega sus datos, la huellas de su vida que deja en Internet.
-      Es pues una cuestión de confianza.'
+    desc: Los  servicios son aplicaciones/programas informáticos, pero que están instalados
+      en la nube, es decir en la computadora de alguien más   (los famosos « servidores »).
+      Utilizar los servicios de Google, Apple, Facebook, Amazon, Microsoft…  (los
+      « GAFAM »), significa que les entrega sus datos, la huellas de su vida que deja
+      en Internet. Es pues una cuestión de confianza.
     explain:
       btn: Desafíos y peligros'
-      desc: 'Dicha confianza le ha permitido a un puñado de  actores, los GAFAM,
-        conseguir un casi monopolio sobre nuestras vidas digitales centralizando
-        los datos de una inmensa parte de la población.
-        Los <strong>desafíos y peligros</strong> son triples :
-        económicos, tecnológicos, culturales…'
+      desc: 'Dicha confianza le ha permitido a un puñado de  actores, los GAFAM, conseguir
+        un casi monopolio sobre nuestras vidas digitales centralizando los datos de
+        una inmensa parte de la población. Los <strong>desafíos y peligros</strong>
+        son triples : económicos, tecnológicos, culturales…'
     props:
       btn: Nuestras propuestas
-      desc: '<strong>Nuestras propuestas</strong> son sencillas : encontrar
-        qué condiciones imponer para que dicha confianza se justifique.
-        Se trata de proponer alternativas a la vez respetuosas de nuestros seres y nuestras
-        diversidades, pero que además hagan imposible la reproducción de tales
-        monopolios.'
+      desc: '<strong>Nuestras propuestas</strong> son sencillas : encontrar qué condiciones
+        imponer para que dicha confianza se justifique. Se trata de proponer alternativas
+        a la vez respetuosas de nuestros seres y nuestras diversidades, pero que además
+        hagan imposible la reproducción de tales monopolios.'
     who:
       btn: ¿Quiénes somos?
-      desc: 'Para que usted pueda determinar si puede o no confiar en nosotros,
-        publicamos una presentación de la red Framasoft (y de la asociación « ley
-        1901 » que la respalda), así como nuestros informes y documentos administrativos,
-        en la parte <strong>¿Quiénes somos?</strong>'
+      desc: Para que usted pueda determinar si puede o no confiar en nosotros, publicamos
+        una presentación de la red Framasoft (y de la asociación « ley 1901 » que
+        la respalda), así como nuestros informes y documentos administrativos, en
+        la parte <strong>¿Quiénes somos?</strong>
   contact:
     title: Contactar con nosotros
-    text1: 'Somos una pequeña asociación (menos de 40 miembros,
-      menos de 10 personas en plantilla) que responde a peticiones muy variadas:'
+    text1: 'Somos una pequeña asociación (menos de 40 miembros, menos de 10 personas
+      en plantilla) que responde a peticiones muy variadas:'
     text2:
     - invitaciones a eventos ;
     - Pedidos por parte de la prensa y los medios de comunicación ;
@@ -219,19 +197,19 @@ home:
     title: Ayudarnos
     text1: 'De la misma manera que todas nuestras acciones, nuestros servicios no
       son gratuitos : se sufragan gracias a las donaciones de las personas que nos
-      respaldan con una donación, puntual o regular.
-      Un 90 % más o menos de los ingresos de la asociación Framasoft
-      procede de la economía de la donación y sirven para sufragar:'
+      respaldan con una donación, puntual o regular. Un 90 % más o menos de los ingresos
+      de la asociación Framasoft procede de la economía de la donación y sirven para
+      sufragar:'
     text2:
     - los sueldos de nuestros empleados  ;
     - los servidores y los gastos técnicos ;
     - los desplazamientos, los volantes y otros gastos de comunicación ;
     - nuestras participaciones en mundo de lo libre, etc.
-    text3: 'Siendo Framasoft una asociación reconocida de interés general,
-      una donación de 100€ le saldrá, después de la desgravación fiscal, a 34 €.
-      Hemos instaldo un sitio único para que pueda usted ayudarnos,
-      consultar nuestros informes (aprobados por un interventor de cuentas),
-      y conseguir más información sobre la donaciones recibidas.'
+    text3: Siendo Framasoft una asociación reconocida de interés general, una donación
+      de 100€ le saldrá, después de la desgravación fiscal, a 34 €. Hemos instaldo
+      un sitio único para que pueda usted ayudarnos, consultar nuestros informes (aprobados
+      por un interventor de cuentas), y conseguir más información sobre la donaciones
+      recibidas.
     btn: Ayudar a Framasoft
   speakabout:
     title: Hablan de nosotros
@@ -241,101 +219,89 @@ home:
       btn: Los desafíos
       title: ¿Cuáles son los desafíos ?
       text1: 'Los últimos años han visto generalizarse una<strong>concentración de
-        los actores de Internet</strong> (Youtube pertenece a Google,
-        WhatsApp a Facebook, Skype a Microsoft, etc.). Esta centralización es perjudicial,
-        no sólo porque frena la innovación,
-        sino también y sobre todo porque lleva consigo una pérdida de libertad  para
-        los usuarios. <strong>Los usuarios de dichos servicios
-        ya no controlan su vida digital</strong> : se disecan sus comportamientos
-        de manera permanente con el
-        fin de que la publicidad se centre  en ellos, y sus datos -privados sin embargo
-        (sitios visitados, intercambios de mails, vídeos
+        los actores de Internet</strong> (Youtube pertenece a Google, WhatsApp a Facebook,
+        Skype a Microsoft, etc.). Esta centralización es perjudicial, no sólo porque
+        frena la innovación, sino también y sobre todo porque lleva consigo una pérdida
+        de libertad  para los usuarios. <strong>Los usuarios de dichos servicios ya
+        no controlan su vida digital</strong> : se disecan sus comportamientos de
+        manera permanente con el fin de que la publicidad se centre  en ellos, y sus
+        datos -privados sin embargo (sitios visitados, intercambios de mails, vídeos
         visionados, etc.) - pueden ser analizados por servicios gubernamentales.'
       text2: 'La respuesta que desea traer Framasoft a esta problemática es sencilla:
-        valorizar, para cada uno de esos servicios privadores de libertad,
-        una alternativa Libre Ética, Descentralizada y Solidaria.'
+        valorizar, para cada uno de esos servicios privadores de libertad, una alternativa
+        Libre Ética, Descentralizada y Solidaria.'
     danger:
       btn: Los peligros
       title: Los peligros
-      text: 'Los servicios en línea  siempre más centralizados de gigantes
-        tentaculares como Google, Amazon, Facebook, Apple o Microsoft (GAFAM)
-        ponen en peligro nuestras vidas digitales.'
+      text: Los servicios en línea  siempre más centralizados de gigantes tentaculares
+        como Google, Amazon, Facebook, Apple o Microsoft (GAFAM) ponen en peligro
+        nuestras vidas digitales.
       espionum:
         title: Espionaje
         desc: 'Con la  coartada de suministrar una «mejor experiencia de usuario»,
           se espían permanentemente  nuestros comportamientos en Internet. Estas informaciones
-          pueden servir para enseñar
-          publicidad dirigida, pero las revelaciones del caso Snowden también han
-          demostrado que los gigantes de Internet estaban obligados a comunicar estos
-          datos (a veces muy privados: intercambios de emails en Gmail, fotos intercambiadas
-          en Facebook, conversaciones por Skype, geolocalización de teléfonos, etc.)
-          a los servicios gubernamentales. <strong>Con el pretexto de la lucha contra
-          el terrorismo</strong>, los estados son capaces de conseguir mucha más información
-          de la que un «Big Brother» "Gran Hermano" hubiera  soñado tener.'
+          pueden servir para enseñar publicidad dirigida, pero las revelaciones del
+          caso Snowden también han demostrado que los gigantes de Internet estaban
+          obligados a comunicar estos datos (a veces muy privados: intercambios de
+          emails en Gmail, fotos intercambiadas en Facebook, conversaciones por Skype,
+          geolocalización de teléfonos, etc.) a los servicios gubernamentales. <strong>Con
+          el pretexto de la lucha contra el terrorismo</strong>, los estados son capaces
+          de conseguir mucha más información de la que un «Big Brother» "Gran Hermano"
+          hubiera  soñado tener.'
         ref: https://my.framasoft.org/u/degooglisons/?searchtags=espionnage
       privatum:
         title: Vida privada
-        desc: 'Nuestros datos son una extensión de nosotros mismos. Pueden indicar
-          dónde estamos,
-          con quién, nuestra orientación política o sexual, los sitios internet que
-          hemos visitado, nuestra receta predilecta, los temas que nos interesan,
-          etc.<br>
-          Si un solo dato, tomado independientemente, no es forzosamente sensible,
-          en cambio un conjunto de datos puede serlo (por ejemplo si usted hizo búsquedas
-          sobre el cáncer justo antes de suscribir una póliza de seguro de vida).<br>
-          En un mundo donde todo se vuelve digital (lectura, TV, telefonía, música,
-          red social, etc.), <strong>nuestra vida privada es un elemento esencial
+        desc: Nuestros datos son una extensión de nosotros mismos. Pueden indicar
+          dónde estamos, con quién, nuestra orientación política o sexual, los sitios
+          internet que hemos visitado, nuestra receta predilecta, los temas que nos
+          interesan, etc.<br> Si un solo dato, tomado independientemente, no es forzosamente
+          sensible, en cambio un conjunto de datos puede serlo (por ejemplo si usted
+          hizo búsquedas sobre el cáncer justo antes de suscribir una póliza de seguro
+          de vida).<br> En un mundo donde todo se vuelve digital (lectura, TV, telefonía,
+          música, red social, etc.), <strong>nuestra vida privada es un elemento esencial
           de lo que hace de nosotros personas singulares</strong>. Una persona malévola
           que tendría acceso a su smartphone puede aprender en unos minutos sobre
           usted lo bastante para perjudicarle de manera considerable (usurpación de
           identidad en Facebook, uso indebido de informaciones profesionales, compras
-          hechas sin su acuerdo, etc.).'
+          hechas sin su acuerdo, etc.).
         ref: https://my.framasoft.org/u/degooglisons/?searchtags=vie-privee
       centralisum:
         title: Centralización
         desc: 'Las mayores empresas actrices de Internet se han vuelto unos verdaderos
           calamares gigantes : Facebook posee WhatsApp e Instagram, Google tiene Youtube
           y Waze, Microsoft distribuye Skype, etc.<br> Esta concentración de los actores
-          plantea problemas múltiples:
-          ¿qué pasará si Facebook cierra el chiringuito ? Cómo hacer búsquedas si
-          Google tiene una avería ?
-          <strong>Nos vamos volviendo poco a poco dependientes de unos servicios suministrados
-          por un pequeño número de actores .</strong> Por ejemplo, Apple (iPhone), Google
-          (Android) y Microsoft (Windows Phone) se reparten la
-          casi totalidad del mercado de los sistemas operativos para smatphones.<br>
-          Por otra parte, el tamaño de dichos actores frena la innovación: es difícil
-          crear una empresa emergente
+          plantea problemas múltiples: ¿qué pasará si Facebook cierra el chiringuito ?
+          Cómo hacer búsquedas si Google tiene una avería ? <strong>Nos vamos volviendo
+          poco a poco dependientes de unos servicios suministrados por un pequeño
+          número de actores .</strong> Por ejemplo, Apple (iPhone), Google (Android)
+          y Microsoft (Windows Phone) se reparten la casi totalidad del mercado de
+          los sistemas operativos para smatphones.<br> Por otra parte, el tamaño de
+          dichos actores frena la innovación: es difícil crear una empresa emergente
           frente a Apple o Google (respectivamente primera y segunda capitalizaciones
-          bursátiles mundiales ).<br>
-          Por fin, la falta de diversidad de estos gigantes también les da la posibilidad
-          no sólo de recoger fácilmente
-          informaciones personales, sino también de falsificar la información que
-          difunden (una búsqueda en Google sobre la
-          palabra "nuclear" no le dará los mismos enlaces si Google le percibe a usted
-          como un militante ecologista  o como un partidario de
-          la energía nuclear).'
+          bursátiles mundiales ).<br> Por fin, la falta de diversidad de estos gigantes
+          también les da la posibilidad no sólo de recoger fácilmente informaciones
+          personales, sino también de falsificar la información que difunden (una
+          búsqueda en Google sobre la palabra "nuclear" no le dará los mismos enlaces
+          si Google le percibe a usted como un militante ecologista  o como un partidario
+          de la energía nuclear).'
         ref: https://my.framasoft.org/u/degooglisons/?searchtags=centralisation
       fermetum:
         title: Código cerrado
-        desc: 'Los servicios web que usted usa en su computadora o su smartphone
-          se ejecutan normalmente en la «nube» :
-          algunos servidores diseminados por el planeta , que almacenan tanto sus
-          datos (mails, fotos, archivos, etc.) como el código de las aplicaciones<br>
-          Para los datos, se plantea el problema de su perennidad (¿qué será en efecto
-          de sus ficheros archivos si Dropbox cierra mañana?)
-          pero también el de la capacidad de usted de cambiar de servicio (¿cómo hará
-          para recuperar la totalidad de sus fotos en
-          Facebook o Picasa, y volver a insertarlas con los comentarios dentro de
-          otro servicio?).<br>
+        desc: 'Los servicios web que usted usa en su computadora o su smartphone se
+          ejecutan normalmente en la «nube» : algunos servidores diseminados por el
+          planeta , que almacenan tanto sus datos (mails, fotos, archivos, etc.) como
+          el código de las aplicaciones<br> Para los datos, se plantea el problema
+          de su perennidad (¿qué será en efecto de sus ficheros archivos si Dropbox
+          cierra mañana?) pero también el de la capacidad de usted de cambiar de servicio
+          (¿cómo hará para recuperar la totalidad de sus fotos en Facebook o Picasa,
+          y volver a insertarlas con los comentarios dentro de otro servicio?).<br>
           En cuanto a las aplicaciones, ello implica que <strong>usted queda a merced
           de cambios imprevistos según los caprichos de su proveedor </strong>(incorporación
           de publicidad, modificación de la interfaz, etc.), pero sobre todo que no
-          tiene casi ningún control sobre lo
-          que la aplicación puede hacer. Son «cajas negras» que pueden actuar de manera
-          maliciosa (mandar SMS a sus espaldas,
-          ejecutar código indeseable, etc.).<br>
-          Para terminar, estas compañías nos encierran en jaulas doradas, es cierto,
-          ¡pero jaulas a pesar de todo!'
+          tiene casi ningún control sobre lo que la aplicación puede hacer. Son «cajas
+          negras» que pueden actuar de manera maliciosa (mandar SMS a sus espaldas,
+          ejecutar código indeseable, etc.).<br> Para terminar, estas compañías nos
+          encierran en jaulas doradas, es cierto, ¡pero jaulas a pesar de todo!'
         ref: https://my.framasoft.org/u/degooglisons/?searchtags=fermeture
     props:
       btn: Nuestras propuestas
@@ -344,89 +310,79 @@ home:
         proponiendo servicios libres, éticos, descentralizados y solidarios.
       libre:
         title: Libertad
-        text1: 'La historia de Internet es en sí una historia de software libre,
-          desde el punto de vista de los estándares así como
-          de los protocolos utilizados. Su popularidad y su potencial crean envidiosos,
-          y algunas grandes empresas bien quisieran controlarlos imponiendo
-          código cerrado dentro de unos sistemas bloqueados y no interoperables. '
+        text1: 'La historia de Internet es en sí una historia de software libre, desde
+          el punto de vista de los estándares así como de los protocolos utilizados.
+          Su popularidad y su potencial crean envidiosos, y algunas grandes empresas
+          bien quisieran controlarlos imponiendo código cerrado dentro de unos sistemas
+          bloqueados y no interoperables. '
         text2: 'Para que Internet quede fiel a sus principios fundadores que lo han
-          conducido al éxito,
-          debemos encontrar en él aplicaciones de software libre, esto es,
-          cuyo código fuente esté abierto, asequible y bajo licencias libres. '
-        text3: 'Framasoft se compromete a no utilizar sino programas de código fuente
-          « libre ».'
+          conducido al éxito, debemos encontrar en él aplicaciones de software libre,
+          esto es, cuyo código fuente esté abierto, asequible y bajo licencias libres. '
+        text3: Framasoft se compromete a no utilizar sino programas de código fuente
+          « libre ».
       ethic:
         title: Ético
         text1: 'Respaldamos totalmente un Internet de intercambio y de independencia. '
         text2: 'La explotación, la vigilancia, la censura y la apropiación de los
-          datos son valores que
-          rehusamos en provecho de la transparencia (la probidad), de la exposición
-          clara de las condiciones
-          de uso de los servicios, y de la negación de las discriminaciones. '
-        text3: 'Framasoft se compromete a no explotar los datos de los usuarios de
-          sus servicios,
-          y a promover una web abierta y equitativa.'
+          datos son valores que rehusamos en provecho de la transparencia (la probidad),
+          de la exposición clara de las condiciones de uso de los servicios, y de
+          la negación de las discriminaciones. '
+        text3: Framasoft se compromete a no explotar los datos de los usuarios de
+          sus servicios, y a promover una web abierta y equitativa.
       decent:
         title: Descentralización
-        text1: 'La inteligencia de Internet debe apoyarse en cada actor de la red
-          dentro de una
-          dinámica de intercambio de  igual a igual, para impedir crear un Minitel
-          2.0 más.'
-        text2: 'Para asegurar la igualdad de todos, ciudadanos como empresarios,
-          no sólo se deben evitar los monopolios,
-          sino que también se debe impedirles que se apoderen de los datos personales
-          o públicos.'
-        text3: 'Explicando, mediante tutoriales, cómo multiplicar las soluciones
-          libres que permitan un Internet
-          más equitativo, favorecemos la diseminación del código y  diversificamos
-          los usos.'
-        text4: 'Framasoft se compromete a facilitar el auto-alojamiento y la interoperabilidad,
-          con el fin de no
-          « encerrar » a sus usuarios.'
+        text1: La inteligencia de Internet debe apoyarse en cada actor de la red dentro
+          de una dinámica de intercambio de  igual a igual, para impedir crear un
+          Minitel 2.0 más.
+        text2: Para asegurar la igualdad de todos, ciudadanos como empresarios, no
+          sólo se deben evitar los monopolios, sino que también se debe impedirles
+          que se apoderen de los datos personales o públicos.
+        text3: Explicando, mediante tutoriales, cómo multiplicar las soluciones libres
+          que permitan un Internet más equitativo, favorecemos la diseminación del
+          código y  diversificamos los usos.
+        text4: Framasoft se compromete a facilitar el auto-alojamiento y la interoperabilidad,
+          con el fin de no « encerrar » a sus usuarios.
       solid:
         title: Solidaridad
-        text1: 'Gracias a los servicios que desplegamos, promovemos un modelo económico
+        text1: Gracias a los servicios que desplegamos, promovemos un modelo económico
           basado en la mutualización de los costes, el intercambio de los recursos,
-          y la asequibilidad de la mayoría.'
-        text2: 'También posee este modelo un carácter educativo ya que pensamos
-          que si documentamos el depliegue de servicios, un gran número de usuarios
-          quedarán a su vez en medida de compartir dichos recursos. '
-        text3: 'Pensamos que no infantilizar a los usuarios y hacer que compartan
-          la responsabilidad del uso de los servicios permitirá regular los abusos.'
-        text4: 'Framasoft se compromete a promover el respeto y la autonomía
-          de dichos usuarios (siempre que haya reciprocidad al respecto).'
+          y la asequibilidad de la mayoría.
+        text2: 'También posee este modelo un carácter educativo ya que pensamos que
+          si documentamos el depliegue de servicios, un gran número de usuarios quedarán
+          a su vez en medida de compartir dichos recursos. '
+        text3: Pensamos que no infantilizar a los usuarios y hacer que compartan la
+          responsabilidad del uso de los servicios permitirá regular los abusos.
+        text4: Framasoft se compromete a promover el respeto y la autonomía de dichos
+          usuarios (siempre que haya reciprocidad al respecto).
       charte:
         title: Servicios y Carta
-        desc: 'Pueden encontrar en línea la lista de servicios que ya proponemos
-          (y los que se preparan) y también nuestra Carta :'
+        desc: 'Pueden encontrar en línea la lista de servicios que ya proponemos (y
+          los que se preparan) y también nuestra Carta :'
         btn: Carta de los servicios
     concrete:
       title: Concretamente
-      text1: 'El proyecto « Desgooglicemos Internet » - que no afecta sólo a Google -
-        consiste en <strong>proponer servicios alternativos frente a la mayor parte
-        de los servicios que consideramos como  amenazadores para nuestras vidas digitales</strong>.'
+      text1: El proyecto « Desgooglicemos Internet » - que no afecta sólo a Google
+        - consiste en <strong>proponer servicios alternativos frente a la mayor parte
+        de los servicios que consideramos como  amenazadores para nuestras vidas digitales</strong>.
       text2: 'Google Docs, Skype, Dropbox, Facebook, Twitter, Google Agenda, Youtube,
-        Doodle, Yahoo! Groups, y muchos más son servicios muy prácticos,
-        pero <strong>se han vuelto demasiado gigantes y nos han hecho dependientes</strong>.
-        Framasoft desea entrar en resistencia, y propone un plan de creación de aplicaciones
+        Doodle, Yahoo! Groups, y muchos más son servicios muy prácticos, pero <strong>se
+        han vuelto demasiado gigantes y nos han hecho dependientes</strong>. Framasoft
+        desea entrar en resistencia, y propone un plan de creación de aplicaciones
         alternativas en varios años. '
-      text3: 'Estos servicios son libres, gratuitos, abiertos a todos (dentro de
-        los límites de nuestras capacidades técnicas y financieras), como
-        <strong><a href="https://es.wikipedia.org/wiki/Bien_com%C3%BAn_(econom%C3%ADa)">bienes
-        comunes</a> digitales</strong>.
-        Y siempre con la preocupación de la descentralización de Internet
-        y de promover auto-alojamiento, nos esforzaremos por que cada
+      text3: Estos servicios son libres, gratuitos, abiertos a todos (dentro de los
+        límites de nuestras capacidades técnicas y financieras), como <strong><a href="https://es.wikipedia.org/wiki/Bien_com%C3%BAn_(econom%C3%ADa)">bienes
+        comunes</a> digitales</strong>. Y siempre con la preocupación de la descentralización
+        de Internet y de promover auto-alojamiento, nos esforzaremos por que cada
         uno pueda instalar sus propios servicios (para si, para su asociación, su
-        empresa).'
-      text4: 'Claro, no pretendemos  en ningún modo<em>competir</em> con esos grandes
-        servicios,
-        sólo queremos proponer un espacio digital neutral, no-comercial y
-        desprovisto de agresividad con sus usuarios.'
+        empresa).
+      text4: Claro, no pretendemos  en ningún modo<em>competir</em> con esos grandes
+        servicios, sólo queremos proponer un espacio digital neutral, no-comercial
+        y desprovisto de agresividad con sus usuarios.
       text5: 'Acceder a la lista de los servicios que proponemos ya :'
 list:
   title: Lista de servicios
-  desc: 'Lista de servicios en línea lbres, éticos, descentralizados y solidarios
-    que Framasoft propone (también los que se preparan) para desgooglizar Internet'
+  desc: Lista de servicios en línea lbres, éticos, descentralizados y solidarios que
+    Framasoft propone (también los que se preparan) para desgooglizar Internet
 alt:
   title: Lista de las alternativas
   desc: Lista de las alternativas en línea libres, éticas, descentralizadas y solidarias
@@ -436,25 +392,24 @@ alt:
     th2: recomienda
     th3: se basa en
   text1: '@:meta.F se ha dado como objetivo <a href="@:data.link.dio"> proponer una
-    treintena de servicios libres alternativos</a> frente a los servicios que se
-    tragan nuestros datos y nos encierran.<br>
-    Pero existen muchos otros servicios y actores que  hacen todo lo posible para desgooglizar internet.'
-  text2: 'Encontrará <a href="#tips" rel="nofollow">a continuación</a> una lista
-    que recaptitula y completa las alternativas presentadas en el mapa.
-    Se ha inspirado en  <a href="https://prism-break.org/en/">Prism-Break</a>
-    que propone también otros softwares en unos campos más especializados aún.'
+    treintena de servicios libres alternativos</a> frente a los servicios que se tragan
+    nuestros datos y nos encierran.<br> Pero existen muchos otros servicios y actores
+    que  hacen todo lo posible para desgooglizar internet.'
+  text2: Encontrará <a href="#tips" rel="nofollow">a continuación</a> una lista que
+    recaptitula y completa las alternativas presentadas en el mapa. Se ha inspirado
+    en  <a href="https://prism-break.org/en/">Prism-Break</a> que propone también
+    otros softwares en unos campos más especializados aún.
   text3: En esta lista, cada servicio suele componerse de<b>un sitio web complejo</b>
     <span aria-hidden="true">( <i class="fa fa-fw fa-cloud"></i> )</span> que comunica
     con un <b>programa instalado en una computadora</b> <span aria-hidden="true">( <i
     class="fa fa-fw fa-server"></i> )</span> donde se encuentran los datos personales  y
     a los que se accede gracias a varias <b>herramientas instaladas en casa</b> <span
     aria-hidden="true">( <i class="fa fa-fw fa-home"></i> )</span>.
-  text4: 'Así, cuando utilizamos internet, debemos  <b>otorgar nuestra confianza a
-    varios eslabones de la cadena</b> que nos une a los datos personales colocados en línea.
-    A menos que uno se autoaloje, <b>el <i lang="en">cloud</i> siempre es la computadora
-    de alguien más</b>.
-    Es pues importante saber a quién le otorgamos nuestra confianza y lo que hacen
-    los softwares con nuestros datos.'
+  text4: Así, cuando utilizamos internet, debemos  <b>otorgar nuestra confianza a
+    varios eslabones de la cadena</b> que nos une a los datos personales colocados
+    en línea. A menos que uno se autoaloje, <b>el <i lang="en">cloud</i> siempre es
+    la computadora de alguien más</b>. Es pues importante saber a quién le otorgamos
+    nuestra confianza y lo que hacen los softwares con nuestros datos.
 medias:
   title: Espacio medios de difusión
   subtitle: Historia de la campaña Desgooglicemos Internet
@@ -466,23 +421,28 @@ medias:
   timeline: Timeline De-googl-ify Internet
   tabs:
     title: Imágenes de la campaña Desgooglicemos
-    intro: 'Todas nuestras imágenes tienen licencia libre.
-      Estas imágenes son de formato grande (a pesar de las apariencias).
-      Sin embargo, si usted necesita una resolución más alta, no dude en
-      <a href="@:data.link.contact/#presse">contactar con nosotros</a>.'
+    intro: Todas nuestras imágenes tienen licencia libre. Estas imágenes son de formato
+      grande (a pesar de las apariencias). Sin embargo, si usted necesita una resolución
+      más alta, no dude en <a href="@:data.link.contact/#presse">contactar con nosotros</a>.
     saveas: Haga un clic derecho « Guardar la imagen como » para utilizarla de nuevo
     tab1:
       title: Mapa
       intro: 'Maps credits: <a href="https://ptilouk.net">Simon « Gee » Giraudot</a>,
         freely reusable under license @:data.license.ccbysa4'
       img:
-      - ['Mapa « Antes »', 'Mapa de Francia invadida por los servicios GAFAM (oct 2014)']
-      - ['Mapa « Despues »', 'Mapa de Francia con las alternativas Framasoft (oct 2016)']
-      - ['Mapa animado', 'Animación de la reconquista de los servicios GAFAM (format .gif)']
+        before:
+        - Mapa « Antes »
+        - Mapa de Francia invadida por los servicios GAFAM (oct 2014)
+        after:
+        - Mapa « Despues »
+        - Mapa de Francia con las alternativas Framasoft (oct 2016)
+        anim:
+        - Mapa animado
+        - Animación de la reconquista de los servicios GAFAM (format .gif)
     tab2:
       title: Drawings Gee
-      intro: Dibujos de <a href="https://ptilouk.net">Simon « Gee » Giraudot</a>, se
-        pueden volver a utilizar bajo la licencia @:data.license.ccbysa4
+      intro: Dibujos de <a href="https://ptilouk.net">Simon « Gee » Giraudot</a>,
+        se pueden volver a utilizar bajo la licencia @:data.license.ccbysa4
       img:
       - Drawing « Closed »
       - Drawing « Cyber Police »
@@ -492,23 +452,20 @@ medias:
       - Drawing « GAFAM »
     tab3:
       title: Vídeos
-      intro: 'Hemos podido explicar nuestro proyecto en unas conferencias.
-        Hemos escogido estos dos vídeos (y su código de integración)
-        para que puedan ustedes volver a utilizarlos en sus propios sitios web.'
+      intro: Hemos podido explicar nuestro proyecto en unas conferencias. Hemos escogido
+        estos dos vídeos (y su código de integración) para que puedan ustedes volver
+        a utilizarlos en sus propios sitios web.
       video:
-      - ['Versión corta (FR - 17mn)', 'https://framatube.org/videos/embed/b30167b7-d16b-425b-b820-4e91cac80bf5']
-      - ['Versión larga (EN - 24mn)', 'https://framatube.org/videos/embed/c193a2f6-8b24-48c3-a93e-f89bd71cad42']
+        short:
+        - Versión corta (FR - 17mn)
+        - https://framatube.org/videos/embed/b30167b7-d16b-425b-b820-4e91cac80bf5
+        long:
+        - Versión larga (EN - 24mn)
+        - https://framatube.org/videos/embed/c193a2f6-8b24-48c3-a93e-f89bd71cad42
     tab4:
       title: Presentación
     tab5:
       title: <i lang="en">Stickers</i>
-      img:
-      - ['GAFAM', '<i lang="en">GAFAM, we &lt;3 your data!</i>']
-      - ['Google', '<i lang="en">Warning: do not feed the Google.</i>']
-      - ['Amazon', 'Attention : Amazon très méchant']
-      - ['Facebook', '<i lang="en">Facebook is watching you.</i>']
-      - ['Apple', '<i lang="en">Apple: Kids, don’t do drugs.</i>']
-      - ['Microsoft', '<i lang="en">Microsoft: do you need a backdoor?</i>']
     tab6:
       title: Dibujos de Péhä
       intro: 'Créditos dibujos de: <a href="https://lesptitsdessinsdepeha.wordpress.com">Péhä</a>,
@@ -524,13 +481,12 @@ medias:
       intro: 'Infography credits: <a href="https://geoffreydorne.com/">Geoffrey Dorne</a>,
         freely reusable under license @:data.license.ccbysa4'
       img:
-      - ['Infography « Framasoft’s World »']
+      - Infography « Framasoft’s World »
   press:
     title: Revista de prensa
     intro: 'La campaña « Desgooglicemos Internet » ya ha dado que hablar a lo largo
-      del primer año de su creación.
-      Aquí tenemos unos extractos de nuestra
-      <a href="https://wiki.framasoft.org/speakabout">revista de prensa</a>. '
+      del primer año de su creación. Aquí tenemos unos extractos de nuestra <a href="https://wiki.framasoft.org/speakabout">revista
+      de prensa</a>. '
     th1: Fecha
     th2: Medio
     th3: Enlaces
@@ -550,13 +506,12 @@ medias:
       Framasoft.
     - <a href="https://wiki.framasoft.org/speakabout">Revista de prensa</a> (y de
       Internet) de Framasoft.
-    text1: 'Framasoft es una red de educación popular, que procede del mundo
-      educativo y se dedica a promover y difundir el software y la cultura libres. '
+    text1: 'Framasoft es una red de educación popular, que procede del mundo educativo
+      y se dedica a promover y difundir el software y la cultura libres. '
     text2: 'Vínculo entre el mundo de lo Libre y lo público en general, la asociación
-      propone un sinnúmero de proyectos (guía de software, editorial,
-      motor de búsqueda, etc.) reunidos según 3 ejes: software libre,
-      cultura libre y servicios libres. '
-    text3: '<em>El logotipo es obra de JosephK bajo licencia @:data.license.ccbysa4</em>'
+      propone un sinnúmero de proyectos (guía de software, editorial, motor de búsqueda,
+      etc.) reunidos según 3 ejes: software libre, cultura libre y servicios libres. '
+    text3: <em>El logotipo es obra de JosephK bajo licencia @:data.license.ccbysa4</em>
 timeline:
   title: '@:meta.F, la timeline'
   launch: Lanzamiento de
@@ -636,18 +591,26 @@ timeline:
     du collectif CHATONS</a>
   - <a href="https://framablog.org/2017/01/11/framaestro-menez-vos-reunions-et-collaborations-a-la-baguette/">@:timeline.launch
     Framaestro</a>
-  - '<a href="https://framablog.org/2017/04/04/framalibre-decouvrez-lannuaire-du-libre/">Rediseño de Framalibre'
+  - <a href="https://framablog.org/2017/04/04/framalibre-decouvrez-lannuaire-du-libre/">Rediseño
+    de Framalibre
   - <a href="https://framablog.org/2017/03/22/framaslides-reprenez-en-main-votre-power-point/">@:timeline.launch
     Framaslides</a>
   - <a href="https://framablog.org/2017/06/12/docs-framasoft-org-un-site-pour-apprendre-a-utiliser-tous-nos-services/">@:timeline.launch
     docs.framasoft.org</a>
-  - '<a href="https://framablog.org/2017/06/16/framapic-un-nouvel-outil-pour-creer-une-galerie-photo/">Galería de fotos con Framapic</a>'
-  - '<a href="https://framablog.org/2017/10/09/contributopia-degoogliser-ne-suffit-pas/">@:timeline.launch una hoja de ruta para « Contributopia »</a>'
-  - '<a href="https://framablog.org/2017/10/12/frama-site-testons-la-contribution/">@:timeline.announce frama.site</a>'
-  - '<a href="https://framablog.org/2017/11/22/framatube-aidez-nous-a-briser-lhegemonie-de-youtube/">@:timeline.announce PeerTube</a>'
-  - '<a href="https://framablog.org/2018/04/03/framaclic-un-nouveau-service-qui-compte/">@:timeline.launch Framaclic</a>'
-  - '<a href="https://framablog.org/2018/05/03/storify-est-mort-longue-vie-a/">@:timeline.launch Framastory</a>'
-  - '<a href="https://framablog.org/2018/10/15/peertube-1-0-la-plateforme-de-videos-libre-et-federee">@:timeline.launch Peertube 1.0</a>'
+  - <a href="https://framablog.org/2017/06/16/framapic-un-nouvel-outil-pour-creer-une-galerie-photo/">Galería
+    de fotos con Framapic</a>
+  - <a href="https://framablog.org/2017/10/09/contributopia-degoogliser-ne-suffit-pas/">@:timeline.launch
+    una hoja de ruta para « Contributopia »</a>
+  - <a href="https://framablog.org/2017/10/12/frama-site-testons-la-contribution/">@:timeline.announce
+    frama.site</a>
+  - <a href="https://framablog.org/2017/11/22/framatube-aidez-nous-a-briser-lhegemonie-de-youtube/">@:timeline.announce
+    PeerTube</a>
+  - <a href="https://framablog.org/2018/04/03/framaclic-un-nouveau-service-qui-compte/">@:timeline.launch
+    Framaclic</a>
+  - <a href="https://framablog.org/2018/05/03/storify-est-mort-longue-vie-a/">@:timeline.launch
+    Framastory</a>
+  - <a href="https://framablog.org/2018/10/15/peertube-1-0-la-plateforme-de-videos-libre-et-federee">@:timeline.launch
+    Peertube 1.0</a>
 txt:
   play: Play
   pause: Pause
@@ -728,11 +691,10 @@ services:
       sociales los enlaces acortados liberan espacio y dan mayor claridad.
     mTitle: Ya se acabaron las direcciones demasiado largas
     mBody:
-      desc: 'Con @framaservice o <a href="https://huit.re">Huit.re</a>, es posible
+      desc: Con @framaservice o <a href="https://huit.re">Huit.re</a>, es posible
         acortar las direcciones web demasiado largas pero sin posibilidad de rastrear
-        su uso.
-        En las redes sociales y el microblogueo, disponer de una dirección
-        acortada  permite ahorrar espacio y favorece la claridad.'
+        su uso. En las redes sociales y el microblogueo, disponer de una dirección
+        acortada  permite ahorrar espacio y favorece la claridad.
       feat: teclee la versión original de la dirección y Frama.link la acortará.
     tags: share, links
   blogger:
@@ -742,9 +704,9 @@ services:
       mismo modo que lo hacen sus publicaciones (alternativa a Blogger o Tumblr).
     mTitle: Su sitio web en unos clics
     mBody:
-      desc: '@framaservice le permite a usted crear un sitio web fácilmente, con
-        herramientas libres y alojarlo en nuestro servidores. Ninguna publicidad ni
-        rastreo perjudicará los datos de sus visitantes.'
+      desc: '@framaservice le permite a usted crear un sitio web fácilmente, con herramientas
+        libres y alojarlo en nuestro servidores. Ninguna publicidad ni rastreo perjudicará
+        los datos de sus visitantes.'
       feat: Escoja su subdominio, el tipo de sitio que quiere crear (página web, blog)
         luego déjese guiar.
     tags: sitio, vitrina, web, html
@@ -753,36 +715,33 @@ services:
     lDesc: Fabrique sus mapas mentales
     tDesc: Conciba, publique y comparta fácilmente mapas mentales, para si mismo o
       con otros por turnos (alternativa a Bubbl.us).
-    hDesc: 'Interfaz fluida e intuitiva para crear rápida y sencillamente mapas
-      heurísticos a partir del mismo navegador web.
-      Pertinente en situación de lluvia de ideas o de toma de notas.'
+    hDesc: Interfaz fluida e intuitiva para crear rápida y sencillamente mapas heurísticos
+      a partir del mismo navegador web. Pertinente en situación de lluvia de ideas
+      o de toma de notas.
     mTitle: ¿Por qué crear un mapa mental?
     mBody:
       desc: '@framaservice les permite a varias personas crear una lluvia de ideas/tormenta
-        de ideas (brainstorming), ordenarlas,
-        aprender y hacer que se aprenda una lección, identificar los elementos importantes
-        y clasificarlos.'
+        de ideas (brainstorming), ordenarlas, aprender y hacer que se aprenda una
+        lección, identificar los elementos importantes y clasificarlos.'
       more: '<iframe src="https://framatube.org/videos/embed/468d043c-262c-47e7-9043-397cdbd16f8f"
-        width="560" height="315" allowfullscreen ></iframe><br>
-        <em>Tutorial realizado por Claire Cassaigne (solo en francés, disculpe…)</em> '
-      feat: 'Se puede utilizar en línea, sin instalación, no es obligatoria ninguna
-        inscripción,
-        puede exportar su documento como imagen, es software libre y gratuito, sus
-        datos le pertenecen totalmente.'
+        width="560" height="315" allowfullscreen ></iframe><br> <em>Tutorial realizado
+        por Claire Cassaigne (solo en francés, disculpe…)</em> '
+      feat: Se puede utilizar en línea, sin instalación, no es obligatoria ninguna
+        inscripción, puede exportar su documento como imagen, es software libre y
+        gratuito, sus datos le pertenecen totalmente.
     tags: produce, mindmap, brainstorming
   change:
     sDesc: Peticiones
     lDesc: Lance sus peticiones sin ofrecer las direcciones de sus apoyos
-    tDesc: 'Lance sus peticiones desde una plataforma ética, que no explota los datos
-      de tus apoyos
-      (alternativa a Avaaz, Change.org).'
+    tDesc: Lance sus peticiones desde una plataforma ética, que no explota los datos
+      de tus apoyos (alternativa a Avaaz, Change.org).
     mTitle: Libere sus peticiones
     mBody:
       desc: '@framaservice le permite lanzar peticiones sobre asuntos que le preocupan.
         Con pocos clics, su petición ya está publicada y las direcciones de sus apoyos,
         no las podrá utilizar ninguna empresa de publicidad.'
-      feat: 'Inscríbase, lance una nueva petición siguiendo las instrucciones. Su
-        sondeo quedará creado.Sus apoyos no necesitarán inscribirse para poder participar.'
+      feat: Inscríbase, lance una nueva petición siguiendo las instrucciones. Su sondeo
+        quedará creado.Sus apoyos no necesitarán inscribirse para poder participar.
     tags: petición, difusión
   delicious:
     sDesc: Marcadores de internet
@@ -790,69 +749,61 @@ services:
     tDesc: Seleccionar cuidadosamente y conservar sus direcciones web (entre las cuales
       los enlaces hacia Frama-services) dentro de una carpeta informática (alternativa
       a Del.icio.us).
-    hDesc: "¡ MyFrama es como un pequeño cajón digital, que le
-      permite conservar y volver a encontrar los enlaces que le gustan
-      al estilo de del.ico.us ! Con un sistema de etiquetas y de selección automática,
-      puede ordenar fácilmente sus pestañas y marcadores de internet, ¡y utilizar el botón
-      MyFrama para encontrar de nuevo los servicios de  Framasoft que suele utilizar!'
+    hDesc: ¡ MyFrama es como un pequeño cajón digital, que le permite conservar y
+      volver a encontrar los enlaces que le gustan al estilo de del.ico.us ! Con un
+      sistema de etiquetas y de selección automática, puede ordenar fácilmente sus
+      pestañas y marcadores de internet, ¡y utilizar el botón MyFrama para encontrar
+      de nuevo los servicios de  Framasoft que suele utilizar!
     mTitle: Seleccione todo el web si quiere (¡ pero va llevarle tiempo!)
     mBody:
-      desc: '@framaservice es un cajón digital, ¡que le permite conservar y
-        encontrar de nuevo los enlaces que le gustan al estilo de del.ico.us!
-        Con un sistema de etiquetas y de selección automática,
-        ordenar fácilmente sus pestañas y marcadores de internet,
-        ¡y utilizar el botón MyFrama para encontrar de nuevo
+      desc: '@framaservice es un cajón digital, ¡que le permite conservar y encontrar
+        de nuevo los enlaces que le gustan al estilo de del.ico.us! Con un sistema
+        de etiquetas y de selección automática, ordenar fácilmente sus pestañas y
+        marcadores de internet, ¡y utilizar el botón MyFrama para encontrar de nuevo
         los servicios de  Framasoft que suele utilizar!'
-      feat: 'Cree su cuenta, luego añádale el marcador interactivo
-        (Bookmarklet) a la barra de herramientas de marcadores de su navegador
-        web. Utilícelo para conservar un enlace (<abbr>URL</abbr>)
-        dándole un título, una descripción y etiquetas.
-        El botón MyFrama en nuestros sitios sirve para conservar el
-        enlace hacia el servicio que está usando usted: con él, ¡ todo se
-        selecciona automáticamente! ¡ Piense en crear sus propias reglas de
-        selección automática que añaden la etiqueta de su elección a los
-        fragmentos de direcciones web que identifique !'
+      feat: 'Cree su cuenta, luego añádale el marcador interactivo (Bookmarklet) a
+        la barra de herramientas de marcadores de su navegador web. Utilícelo para
+        conservar un enlace (<abbr>URL</abbr>) dándole un título, una descripción
+        y etiquetas. El botón MyFrama en nuestros sitios sirve para conservar el enlace
+        hacia el servicio que está usando usted: con él, ¡ todo se selecciona automáticamente!
+        ¡ Piense en crear sus propias reglas de selección automática que añaden la
+        etiqueta de su elección a los fragmentos de direcciones web que identifique !'
     tags: compartir, vigilancia, enlaces
   doodle:
     sDesc: Reuniones y sondeos
     lDesc: Acordar la celebración de una reunión o crear un sondeo
     tDesc: Decida en forma colaborativa la mejor fecha para una reunión, o cree un
       simple voto con facilidad (alternativa a Doodle).
-    hDesc: 'Framadate es parecido a Doodle pero con software libre.
-      Nada más  fácil para invitar a sus colaboradores, organizar una reunión
-      o crear un voto sin registrarse.'"
+    hDesc:   'Framadate es parecido a Doodle pero con software libre. Nada más  fácil
+      para invitar a sus colaboradores, organizar una reunión o crear un voto sin
+      registrarse. '
     mTitle: Organizar citas sencilla y libremente
     mBody:
-      desc: 'Con @framaservice podrá usted planificar una cita de varias personas
-        o crear un sondeo en línea. ¡ Framadate no almacena sus datos !'
-      feat:
-      - 'envío de correo electrónico después de cada respuesta '
-      - modificación del sondeo en progreso
-      - planificación del final del proyecto
-      - Déle un nombre a su sondeo y mándeles la dirección a sus colaboradores
+      desc: Con @framaservice podrá usted planificar una cita de varias personas o
+        crear un sondeo en línea. ¡ Framadate no almacena sus datos !
+      feat: 'Create your account, add the Bookmarklet to your browser’s bookmark bar.
+        Use it to store an  (<abbr>URL</abbr>) link, adding its title, description
+        and tag. Use the MyFrama button on our site store a link to the services:
+        it’s all automatically sorted ! Consider creating your own sorting rule to
+        add your chosen tag to your web links!'
     tags: organización, tareas, encuentros, date fechas, votación
   dropbox:
     sDesc: Almacenamiento de documentos
     lDesc: Alojar los propios documentos en línea
     tDesc: Consiga un espacio de almacenamiento, sincronizando (o compartiendo) sus
       archivos (alternativa a Dropbox, Google Drive).
-    hDesc: 'Framadrive le permite almacenar sus documentos en línea,
-      para sincronizarlos en sus ordenadores, aparatos móviles, etc…
-      y compartirlos con quien quiera.'
+    hDesc: Framadrive le permite almacenar sus documentos en línea, para sincronizarlos
+      en sus ordenadores, aparatos móviles, etc… y compartirlos con quien quiera.
     mTitle: Alojar los propios documentos en línea
     mBody:
       desc: '@framaservice le permite almacenar en línea de manera encriptada sus
         documentos, sincronizarlos en sus ordenadores, tabletas, teléfonos, etc y
         compartirlos con quien quiera…'
-      more: 'We opened 5000 accounts with a 2 Go capacity
-        in order to test a free alternative…
-        For a bigger or more sure alternative,
-        you can search for a host through the
-        <a href="https://chatons.org">KITTENS</a> collective ers</a>
-        (or try self-hosting with
-        <a href="http://yunohost.org/">Yunohost</a>,
-        <a href="http://labriqueinter.net/">la Brique internet</a>
-        or <a href="https://cozy.io/fr/">My Cozy Cloud</a>). '
+      more: 'We opened 5000 accounts with a 2 Go capacity in order to test a free
+        alternative… For a bigger or more sure alternative, you can search for a host
+        through the <a href="https://chatons.org">KITTENS</a> collective ers</a> (or
+        try self-hosting with <a href="http://yunohost.org/">Yunohost</a>, <a href="http://labriqueinter.net/">la
+        Brique internet</a> or <a href="https://cozy.io/fr/">My Cozy Cloud</a>). '
     tags: almacenar, guardar, archivos, compartir, calendario, contactos, tareas
   evernote:
     sDesc: Toma de notas
@@ -860,14 +811,14 @@ services:
     tDesc: Sincronizar las notas, imágenes y enlaces predilectos entre los diferentes
       dispositivos de comunicación con la seguridad que ofrece el cifrado  (alternativa
       a Evernote).
-    hDesc: 'Con @framaservice puede tomar notas y conservar notas,
-      imágenes, enlaces… y hasta archivos ; y sincronizarlos
-      con todos sus dispositivos de comunicación (y hasta compartirlos con amigos).'
+    hDesc: Con @framaservice puede tomar notas y conservar notas, imágenes, enlaces…
+      y hasta archivos ; y sincronizarlos con todos sus dispositivos de comunicación
+      (y hasta compartirlos con amigos).
     mTitle: Sus notas sólo son asunto suyo.
     mBody:
-      desc: 'Con @framaservice puede tomar notas y conservar notas,
-        imágenes, enlaces… y hasta archivos ; y sincronizarlos
-        con todos sus dispositivos de comunicación (y hasta compartirlos con amigos).'
+      desc: Con @framaservice puede tomar notas y conservar notas, imágenes, enlaces…
+        y hasta archivos ; y sincronizarlos con todos sus dispositivos de comunicación
+        (y hasta compartirlos con amigos).
       feat:
       - toma de notas sincronizadas
       - diseño facilitado (sintaxis Markdown)
@@ -879,27 +830,26 @@ services:
     lDesc: Una red social ética y descentralizada
     tDesc: Comparta en una red social ética y descentralizada, sin que su perfil sea
       explotado en beneficio de los anunciantes (alternativa a Facebook).
-    hDesc: 'Framasphère es una red social libre, basada en el software libre y
-      descentralizado Diaspora*.
-      Encuentre a sus amigos en Framasphère - o en otro Diaspora* pod -
-      sin que sus intercambios sean rastreados.'
+    hDesc: Framasphère es una red social libre, basada en el software libre y descentralizado
+      Diaspora*. Encuentre a sus amigos en Framasphère - o en otro Diaspora* pod -
+      sin que sus intercambios sean rastreados.
     mTitle: Júntese con sus amigos en zona libre
     mBody:
-      desc: 'En @framaservice puede encontrar una red social que respeta sus datos.
+      desc: En @framaservice puede encontrar una red social que respeta sus datos.
         Framasphère es un nodo (también llamado <i>pod</i>) de la red social libre
-        Diaspora'
-      feat: 'Intercambie mensajes y fotos con cualquier otra persona de la red Diaspora*,
-        gestione sus contactos, tags, menciones, vuelva a
-        compartir algo ya compartido… También puede publicar en otras redes sociales
-        (Facebook, Twitter, Tumblr o Wordpress).'
+        Diaspora
+      feat: Intercambie mensajes y fotos con cualquier otra persona de la red Diaspora*,
+        gestione sus contactos, tags, menciones, vuelva a compartir algo ya compartido…
+        También puede publicar en otras redes sociales (Facebook, Twitter, Tumblr
+        o Wordpress).
     tags: social, red, compartir
   github:
     sDesc: Alojamiento de código
     lDesc: El código abierto es cosa buena. ¡ En una plataforma libre, es mejor !
     tDesc: Publique su código - mejor si es software libre - y colabore con otros
       en una forja libre (alternativa a Github).
-    hDesc: 'Framagit es una herramienta para los programadores esencialmente.
-      Le ayuda a usted a alojar sus programas libres y a colaborar con otros.'
+    hDesc: Framagit es una herramienta para los programadores esencialmente. Le ayuda
+      a usted a alojar sus programas libres y a colaborar con otros.
     mTitle: Alojamiento de código abierto
     mBody:
       desc: '@framaservice es una herramienta que se dirige ante todo a los programadores.
@@ -916,25 +866,23 @@ services:
     tags: code, forge, developpement
   gmail:
     sDesc: Servicio de correo electrónico
-    lDesc: 'Sus mensajes , sin la NSA dentro.
-      Su correo, dentro de un sobre blindado'
-    mBody: '@:meta.F will not offer an alternative to @gafamservices, but
-      there are other players that offer free email services. '
+    lDesc: Sus mensajes , sin la NSA dentro. Su correo, dentro de un sobre blindado
+    mBody: '@:meta.F will not offer an alternative to @gafamservices, but there are
+      other players that offer free email services. '
   gagenda:
     sDesc: Calendario compartido
     lDesc: Escoja a quien verá su agenda
     tDesc: Crear agendas personales o profesionales, confidenciales o públicos, solo
       o de manera colaborativa, y sincronizarlos en sus dispositivos de comunicación.
-    hDesc: 'Con Framagenda usted puede crear agendas personales,
-      profesionales, los horarios de una sala o de las actividades
-      de su organización, y compartirlos ibremente.
-      Usted queda dueño de sus datos, y elige ante quiénes, dónde y cuándo se verán.'
+    hDesc: Con Framagenda usted puede crear agendas personales, profesionales, los
+      horarios de una sala o de las actividades de su organización, y compartirlos
+      ibremente. Usted queda dueño de sus datos, y elige ante quiénes, dónde y cuándo
+      se verán.
     mTitle: Sus citas le pertenecen
     mBody:
-      desc: 'Con @framaservice puede crear agendas personales, profesionales, los
-        horarios de una sala o de las actividades de su organización, y compartirlos
-        libremente. Usted queda dueño de sus datos, y elige ante quiénes, dónde y
-        cuándo se verán.'
+      desc: Con @framaservice puede crear agendas personales, profesionales, los horarios
+        de una sala o de las actividades de su organización, y compartirlos libremente.
+        Usted queda dueño de sus datos, y elige ante quiénes, dónde y cuándo se verán.
       feat:
       - creación de agendas múltiples
       - listas de contactos y de tareas
@@ -948,10 +896,10 @@ services:
     lDesc: Una biblioteca de varios millones de obras
     tDesc: Consulte una biblioteca de libros electrónicos bajo licencia libre y descárguelos
       libremente (alternativa a Google Books).
-    hDesc: 'Nuestra biblioteca contiene centenares de obras que están bajo licencias libres
-      o forman parte del dominio público. Usted puede consultarlos en
-      línea mediante las plataformas móviles. Puede tambien añadirlos en una applicacion
-      de lectura electrónica con la fuente <abbr>OPDS</abbr>.'
+    hDesc: Nuestra biblioteca contiene centenares de obras que están bajo licencias
+      libres o forman parte del dominio público. Usted puede consultarlos en línea
+      mediante las plataformas móviles. Puede tambien añadirlos en una applicacion
+      de lectura electrónica con la fuente <abbr>OPDS</abbr>.
     mTitle: Catálogo de obras accesibles a todos
     mBody:
       desc: '@framaservice es el catálogo <abbr>OPDS</abbr> de Framasoft. « Pues…
@@ -969,9 +917,8 @@ services:
     tDesc: Escriba el borrador del texto en línea, en colaboración, en tiempo real
       con la ayuda de un deslizador de tiempo, de un chat, de comentarios…  (alternativa
       a  Google Docs).
-    hDesc: 'Así que colaboremos en el mismo documento
-      No se requiere ninguna  inscripción, dése usted mismo un  nombre y un color
-      y déle a inicio…'
+    hDesc: Así que colaboremos en el mismo documento No se requiere ninguna  inscripción,
+      dése usted mismo un  nombre y un color y déle a inicio…
     mTitle: Herramienta de redacción colaborativa
     mBody:
       desc: '@framaservice es un servicio de redacción colaborativa en línea basado
@@ -994,9 +941,9 @@ services:
     lDesc: 'Cree cuestionarios fácilmente '
     tDesc: Cree cuestionarios fácilmente, en inea, simples o complejos, en una plataforma
       que respeta sus datos (alternativa a Google Forms).
-    hDesc: 'Framaforms permite crear cuestionarios según sus necesidades, sea para
+    hDesc: Framaforms permite crear cuestionarios según sus necesidades, sea para
       sus estudios, su familia, una asociacion o el trabajo.Puede crear cuestiones
-      adaptadas, con preguntas de selección múltiple o campos libres de texto.'
+      adaptadas, con preguntas de selección múltiple o campos libres de texto.
     mTitle: Creación de cuestionarios
     mBody:
       desc: '@framaservice le permite crear los cuestionarios que necesite, tanto
@@ -1031,10 +978,10 @@ services:
     lDesc: Cree sus mapas personalizados en línea
     tDesc: Personalice  y añada en mapa, como tales, o en colaboración, y comparta
       fácilmente (alternativa a Google Maps).
-    hDesc: 'Framacarte permite añadir, personalizar, colorizar, comentar… los mapas
-      de <a href="https://en.wikipedia.org/wiki/Openstreetmap">OpenStreetMap</a>
-      A continuación, puede imprimirlos, crear presentaciones o compartirlas con otras
-      personas por correo electrónico o exponiéndolas en un sitioweb.'
+    hDesc: Framacarte permite añadir, personalizar, colorizar, comentar… los mapas
+      de <a href="https://en.wikipedia.org/wiki/Openstreetmap">OpenStreetMap</a> A
+      continuación, puede imprimirlos, crear presentaciones o compartirlas con otras
+      personas por correo electrónico o exponiéndolas en un sitioweb.
     mTitle: Cree sus mapas personalizados en línea
     mBody:
       desc: '@framaservice le permite crear mapas personalizados en los mapas básicos
@@ -1061,14 +1008,14 @@ services:
       desc: '@framaservice ¡le propone un lector de noticias RSS en línea, que le
         permitirá estar siempre al tanto de la actualidad a partir de las fuentes
         RSS de sus sitios preferidos!'
-      feat: 'Después de haber creado su cuenta, guarde sus fuentes RSS y sígalas.
-        ¿ Cómo hacer más sencillo ?'
+      feat: Después de haber creado su cuenta, guarde sus fuentes RSS y sígalas. ¿ Cómo
+        hacer más sencillo ?
     tags: feed, fuente, rss, noticias, reader, seguir
   gsearch:
     sDesc: Motor de búsqueda
     lDesc: ¿Y si Google ya no fichara las búsquedas de uno ?
-    tDesc: 'Do your searches on an engine which will query Google, Bing,
-      Yahoo, Wikipedia, etc. while making the requests anonymous and avoiding tracking. '
+    tDesc: 'Do your searches on an engine which will query Google, Bing, Yahoo, Wikipedia,
+      etc. while making the requests anonymous and avoiding tracking. '
     hDesc: 'Framabee es un metabuscador de búsqueda anónimo. Significa que las búsquedas
       que haga usted con este metabuscador se mandan a diferentes motores antes de
       aparecer en su  navegador web. Lo interesante es que nuestro motor hace entonces
@@ -1076,22 +1023,21 @@ services:
       se graba entonces en los servidores de Google u otros. '
     mTitle: Una búsqueda anónima
     mBody:
-      desc: '@framaservice es un metabuscador de búsqueda anónimo. Significa que
-        las búsquedas que haga usted con este metabuscador se mandan a diferentes
-        motores antes de aparecer en su  navegador web. Lo interesante es que nuestro
-        motor hace entonces de intermediario entre usted y Google (u otros motores).
-        Su dirección IP no se graba entonces en los servidores de Google u otros. '
-      more: 'Claro, debe confiar en Framasoft/Framabee si desea utilizarlo, por eso
-        proponemos una <a href="@:link.charte">carta</a>.'
+      desc: '@framaservice es un metabuscador de búsqueda anónimo. Significa que las
+        búsquedas que haga usted con este metabuscador se mandan a diferentes motores
+        antes de aparecer en su  navegador web. Lo interesante es que nuestro motor
+        hace entonces de intermediario entre usted y Google (u otros motores). Su
+        dirección IP no se graba entonces en los servidores de Google u otros. '
+      more: Claro, debe confiar en Framasoft/Framabee si desea utilizarlo, por eso
+        proponemos una <a href="@:link.charte">carta</a>.
     tags: búsqueda, anónimo
   gslides:
     sDesc: Presentaciones
     lDesc: Unos diaporamas de alta calidad sin pena
-    tDesc: 'Create online slideshows and presentations, with the
-      possibility of collaborating and sharing (alternative to PowerPoint365). '
-    hDesc: 'Framaslides allows you to directly create an online
-      slideshow or presentation, to access it with a
-      simple internet connection, and to share it. '
+    tDesc: 'Create online slideshows and presentations, with the possibility of collaborating
+      and sharing (alternative to PowerPoint365). '
+    hDesc: 'Framaslides allows you to directly create an online slideshow or presentation,
+      to access it with a simple internet connection, and to share it. '
     mTitle: Un programa de presentación para sus diaporamas
     mBody:
       desc: '@framaservice le permitirá realizar de manera fácil e intuitiva sus diaporamas.
@@ -1107,15 +1053,15 @@ services:
     lDesc: ¡Comparta sus tablas y colabore!
     tDesc: Colaborar en línea, en tiempo real, en hoja de cálculo (alternativea a
       Excel365, Google Spreadsheet).
-    hDesc: 'Framacalc es a la hoja de cálculo lo que  Framapad es al tratamiento de
-      texto, en otras palabras la posibilidad sencilla y colectiva de editar
-      un documento similar en línea'
+    hDesc: Framacalc es a la hoja de cálculo lo que  Framapad es al tratamiento de
+      texto, en otras palabras la posibilidad sencilla y colectiva de editar un documento
+      similar en línea
     mTitle: Una hoja de cálculo en línea
     mBody:
-      desc: 'Con @framaservice, sus datos se salvaguardan automáticamente en Internet.
+      desc: Con @framaservice, sus datos se salvaguardan automáticamente en Internet.
         Usted y sus colaboradores  pueden colaborar en el documento al mismo tiempo.
         Visualice todos los cambios en tiempo real y trabajen juntos sobre sus inventarios,
-        sus cálculos, sus datos , sus estadísticas, ¡y mucho más!'
+        sus cálculos, sus datos , sus estadísticas, ¡y mucho más!
       feat:
       - Edición colaborativa (varios utilizadores conectados a la misma hoja de cálculo)
       - Numerosas funciones disponibles (de estadísticas, de finanzas, de matemáticas,
@@ -1129,8 +1075,8 @@ services:
   imgur:
     sDesc: Envío de imágenes
     lDesc: Comparta sus imágenes de manera anónima
-    tDesc: 'Send images online, share single images with a single
-      link or make a gallery of them (alternative to Img.ur). '
+    tDesc: 'Send images online, share single images with a single link or make a gallery
+      of them (alternative to Img.ur). '
     hDesc: Framapic le permite compartir fácilmente imágenes, por ejemplo para intercambiarlas
       en Twitter, Facebook, o … Framasphère !
     mTitle: Comparta sus imágenes fácilmente
@@ -1159,25 +1105,24 @@ services:
     lDesc: Descubra el juego educativo que explorar
     tDesc: Jugar a construir juntos en este juego un mundo abierto que tiene numerosas
       aplicaciones pedagógicas (alternativa a Minecraft).
-    hDesc: 'Framinetest es un servidor del juego Minetest, un juego « caja de arena »
-      cuyos bloques construye y descompone para modificarlo y con el que puede
-      realizar sus propias aplicaciones pedagógicas.'
+    hDesc: Framinetest es un servidor del juego Minetest, un juego « caja de arena »
+      cuyos bloques construye y descompone para modificarlo y con el que puede realizar
+      sus propias aplicaciones pedagógicas.
     mTitle: Construya sus propias aplicaciones pedagógicas
     mBody:
-      desc: '@framaservice es un servidor del juego Minetest, un juego « caja de
-        arena » cuyos bloques construye y descompone usted para modificarlo.'
+      desc: '@framaservice es un servidor del juego Minetest, un juego « caja de arena »
+        cuyos bloques construye y descompone usted para modificarlo.'
       feat: Descargue el programa cliente, conéctese a nuestro servidor y juegue.
     tags: juego, educación
   padlet:
     sDesc: Organizar ideas
     lDesc: Draft ideas and share them with discretionCree sus lluvias de ideas en
       línea y entre varios
-    tDesc: 'Crear un cuadro de notas colaborativo, en línea y en tiempo real para
-      animar sus lluvias de ideas (alternativa a Padlet).'
-    hDesc: 'Framemo le permite crear un cuadro de columnas  en el que cualquiera
-      puede colocar notas coloreadas.
-      Como  con Framapad, no se requiere ninguna suscripción,
-      las modificaciones se visualizan y guardan en vivo.'
+    tDesc: Crear un cuadro de notas colaborativo, en línea y en tiempo real para animar
+      sus lluvias de ideas (alternativa a Padlet).
+    hDesc: Framemo le permite crear un cuadro de columnas  en el que cualquiera puede
+      colocar notas coloreadas. Como  con Framapad, no se requiere ninguna suscripción,
+      las modificaciones se visualizan y guardan en vivo.
     mTitle: Lluvia de notas libres
     mBody:
       desc: '@framaservice  le permite crear un cuadro de columnas en el que cualquiera
@@ -1196,9 +1141,9 @@ services:
       tendrán el poder de desencriptar, y esto de manera muy sencilla.
     mTitle: Comunique datos cifrados
     mBody:
-      desc: 'Con @framaservice puede compartir informaciones que sólo usted y su
-        correspondiente podrán descifrar  y todo ello de manera muy sencilla. ¡ Hasta
-        podrá escoger la duración de la validez del acceso !'
+      desc: Con @framaservice puede compartir informaciones que sólo usted y su correspondiente
+        podrán descifrar  y todo ello de manera muy sencilla. ¡ Hasta podrá escoger
+        la duración de la validez del acceso !
       feat: 'Puede que necesite comunicar una o más informaciones confidenciales sin
         querer pasar por la vía clásica del correo electrónico o del pedacito de papel
         escrito. Framabin le permite mandar una dirección para dar acceso a esas informaciones
@@ -1274,8 +1219,8 @@ services:
   slack:
     sDesc: Comunicación colaborativa
     lDesc: Converse con su equipo en un chat mejorado con esteroides
-    tDesc: 'Comunicar con su equipo sin pasar por Facebook (ni Slack). Imágenes compartidas,
-      canales públicos y privados, indización…'
+    tDesc: Comunicar con su equipo sin pasar por Facebook (ni Slack). Imágenes compartidas,
+      canales públicos y privados, indización…
     hDesc: Framateam es un servicio de <b>tchat</b> libre que le permite comunicar
       con su equipo diciéndoles a sus colegas,  que conserven las charlas y hagan
       búsquedas en ellas.
@@ -1296,9 +1241,9 @@ services:
       de tareas, horarios, recordatorios y correos electrónicos… (alternativa a Trello)
       cuadros de tareas, horarios, recordatorios y correos electrónicos… (alternativa
       a Trello)'
-    hDesc: 'Framaboard es un gestor colaborativo de tareas y de proyectos, siguiendo el método Kanban.
-      Su sistema visual le permite a uno ubicarse a la primera ojeada, esté o
-      no esté acostumbrado a usar este tipo de herramienta.'
+    hDesc: Framaboard es un gestor colaborativo de tareas y de proyectos, siguiendo
+      el método Kanban. Su sistema visual le permite a uno ubicarse a la primera ojeada,
+      esté o no esté acostumbrado a usar este tipo de herramienta.
     mTitle: Gestión de proyectos
     mBody:
       desc: '@framaservice es un gestor de tareas visual. Permite gestionar proyectos
@@ -1315,19 +1260,19 @@ services:
     lDesc: Comparta sus archivos  de manera confidencial
     tDesc: Comparta archivos voluminosos, de manera confidencial con el cifrado desde
       el principio hasta el fin (alternativa a WeTransfer).
-    hDesc: 'Con Framadrop, se acabaron los documentos adjuntos demasiado voluminosos
-      que impiden el envío de un <i lang="en">email</i>.
-      Este servicio libre le permite compartir fácilmente archivos con toda seguridad.'
+    hDesc: Con Framadrop, se acabaron los documentos adjuntos demasiado voluminosos
+      que impiden el envío de un <i lang="en">email</i>. Este servicio libre le permite
+      compartir fácilmente archivos con toda seguridad.
     mTitle: Comparta sus archivos fácilmente
     mBody:
       desc: '@framaservice le permite compartir archivos fácilmente como, por ejemplo,
         cuando quiere mandar un documento adjunto por correo electrónico y que el
         archivo excede el tamaño máximo permitido.'
       more: 'Cuidado, este servicio no es el equivalente de Dropbox o Google Drive :
-        no se trata de un servicio de alojamiento de archivos  (para eso está <b
-        class="violet">Frama</b><b class="vert">drive</b>), sino de un servicio de
-        envío de archivos anónimos (el contenido se encripta automáticamente antes
-        del envío, no podemos acceder a dicho contenio).'
+        no se trata de un servicio de alojamiento de archivos  (para eso está <b class="violet">Frama</b><b
+        class="vert">drive</b>), sino de un servicio de envío de archivos anónimos
+        (el contenido se encripta automáticamente antes del envío, no podemos acceder
+        a dicho contenio).'
       feat: '@framaservice permite mandar archivos de manera anónima. Puede decidir
         del momento de su supresión (desde la primera descarga, 24 horas, 7,30, 60
         días después de su puesta en línea).'
@@ -1341,9 +1286,9 @@ services:
       los demás.
     mTitle: Libere sus vídeos
     mBody:
-      desc: 'Con @framaservice, puede descargar sus vídeos, compartirlos con la personas
-        que le rodean o abrirlos en lectura pública.
-        Es el mejor medio de compartir sus vídeos sin ceder sus derechos.'
+      desc: Con @framaservice, puede descargar sus vídeos, compartirlos con la personas
+        que le rodean o abrirlos en lectura pública. Es el mejor medio de compartir
+        sus vídeos sin ceder sus derechos.
       feat: abra una cuenta y suba sus vídeos. Usted conserva sus derechos y la libertad
         de modificar sus subidas.
     tags: share, video
@@ -1354,15 +1299,14 @@ services:
     lDesc: Una recopilación de juegos libres
     tDesc: Volver a encontrar una selección de juegos bajo licencia libre, para jugar
       en línea o instalar en el propio ordenador (alternativa a Kongregate).
-    hDesc: 'Framagames es una colección de juegos libres a los que
-      se juega en línea, o que se descargan en el ordenador o la tableta…
-      y no necesitan ninguna instalación adicional.'
+    hDesc: Framagames es una colección de juegos libres a los que se juega en línea,
+      o que se descargan en el ordenador o la tableta… y no necesitan ninguna instalación
+      adicional.
     mTitle: Tómese un respiro, juegue unos instantes
     mBody:
       desc: '@framaservice le propone cierta cantidad de juegos libres, disponibles
         tanto para  el uso en línea como fuera de línea. Tómese un respiro y aproveche
-        uno de los juegos propuestos.
-        <small>(y <a href="https://www.theguardian.com/world/2014/jan/27/nsa-gchq-smartphone-app-angry-birds-personal-data"
+        uno de los juegos propuestos. <small>(y <a href="https://www.theguardian.com/world/2014/jan/27/nsa-gchq-smartphone-app-angry-birds-personal-data"
         >al contrario de Angry Birds</a>, la NSA no le espiará ;) )</small>'
       feat: Cada uno de los juegos ofrece la posibilidad del uso directo en el sitio
         o la descarga para un uso fuera de línea.  Escoja su juego y ¡ a jugar !.
@@ -1374,16 +1318,14 @@ services:
     lDesc: Orqueste sus proyectos colaborativos
     tDesc: 'Reunir un pad, una videoconferencia, y muchas herramientas más en una
       sola ventana y una única dirección web: ideal para las reuniones.'
-    hDesc: '¿ Necesita al mismo tiempo un pad para tomar apuntes,
-      un cuadro de organización, y una videoconferencia ?
-      Con Framaestro, usted es quien organiza las herramientas que necesita
-      en una sola y única página web.'
+    hDesc: ¿ Necesita al mismo tiempo un pad para tomar apuntes, un cuadro de organización,
+      y una videoconferencia ? Con Framaestro, usted es quien organiza las herramientas
+      que necesita en una sola y única página web.
     mTitle: Orqueste sus proyectos colaborativos
     mBody:
-      desc: '¿ Necesita al mismo tiempo un pad para tomar apuntes, un cuadro de organización,
-        y una videoconferencia ?
-        Con @framaservice, USTED es quien organiza las herramientas que necesita
-        en una sola y única página web.'
+      desc: ¿ Necesita al mismo tiempo un pad para tomar apuntes, un cuadro de organización,
+        y una videoconferencia ? Con @framaservice, USTED es quien organiza las herramientas
+        que necesita en una sola y única página web.
     tags: colaborar
   pixlr:
     sDesc: Gráfico vectorial
@@ -1394,11 +1336,10 @@ services:
       abierto SVG. ¡ Les encanta a los niños !
     mTitle: Cree rápidamente imágenes vectoriales de formato SVG
     mBody:
-      desc: '@framaservice es un program de gráfico muy simple (¿ quién dijo que
-        simplista ?).'
-      more: '<iframe src="https://framatube.org/videos/embed/14e695a7-37c0-4dc9-b168-14c43c8ee78e"
+      desc: '@framaservice es un program de gráfico muy simple (¿ quién dijo que simplista ?).'
+      more: <iframe src="https://framatube.org/videos/embed/14e695a7-37c0-4dc9-b168-14c43c8ee78e"
         width="560" height="315" allowfullscreen></iframe> (Por el momento el vídeo
-        es en inglés. Lo sentimos mucho.)'
+        es en inglés. Lo sentimos mucho.)
       feat:
       - Se utiliza en línea, sin instalación
       - No se requiere inscripción

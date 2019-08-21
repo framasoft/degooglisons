@@ -33,15 +33,15 @@
             <p v-html="$t('medias.tabs.tab1.intro')"></p>
             <div class="row">
               <div
-                v-for="index in Object.keys($t('medias.tabs.tab1.img'))"
-                :key="index"
+                v-for="key in Object.keys($t('medias.tabs.tab1.img'))"
+                :key="key"
                 class="col-sm-4" >
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t(`medias.tabs.tab1.img[${index}][0]`)"></h3>
+                  <h3 v-html="$t(`medias.tabs.tab1.img.${key}[0]`)"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.carte[index]}`">
-                  <p class="text-center" v-html="$t(`medias.tabs.tab1.img[${index}][1]`)"></p>
+                    :src="`${$root['/']}img/${$route.meta.lang}/${$root.img.carte[key]}`">
+                  <p class="text-center" v-html="$t(`medias.tabs.tab1.img.${key}[1]`)"></p>
                 </div>
               </div>
             </div>
@@ -107,15 +107,15 @@
           <tab id="stickers" :title="$t('medias.tabs.tab5.title')" :html-title="true">
             <div class="row">
               <div
-                v-for="index in Object.keys($t('medias.tabs.tab5.img'))"
+                v-for="(sticker, index) in $root.img.stickers"
                 :key="index"
                 class="col-sm-4" >
                 <div class="thumbnail text-center">
-                  <h3 v-html="$t(`medias.tabs.tab5.img[${index}][0]`)"></h3>
+                  <h3 v-html="sticker[0]"></h3>
                   <img class="img-responsive" data-toggle="tooltip" data-placement="top"
                     :title="$t('medias.tabs.saveas')" alt=""
-                    :src="`${$root['/']}img/${$root.img.stickers[index]}`">
-                  <p class="text-center" v-html="$t(`medias.tabs.tab5.img[${index}][1]`)"></p>
+                    :src="`${$root['/']}img/${sticker[1]}`">
+                  <p class="text-center" v-html="sticker[2]"></p>
                 </div>
               </div>
             </div>
@@ -125,11 +125,11 @@
           <tab id="videos" :title="$t('medias.tabs.tab3.title')" :html-title="true">
             <p v-html="$t('medias.tabs.tab3.intro')"></p>
             <div class="row">
-              <div v-for="n in 2" :key="n" class="col-md-6">
-                <h3 v-html="$t(`medias.tabs.tab3.video[${n - 1}][0]`)"></h3>
-                <p class="text-center"><iframe width="560" height="315" :src="$t(`medias.tabs.tab3.video[${n - 1}][1]`)" allowfullscreen></iframe></p>
+              <div v-for="key in Object.keys($t('medias.tabs.tab3.video'))" :key="key" class="col-md-6">
+                <h3 v-html="$t(`medias.tabs.tab3.video.${key}[0]`)"></h3>
+                <p class="text-center"><iframe width="560" height="315" :src="$t(`medias.tabs.tab3.video.${key}[1]`)" allowfullscreen></iframe></p>
                 <pre
-                  v-text="`&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;${$t(`medias.tabs.tab3.video[${n - 1}][1]`)}&quot; allowfullscreen&gt;&lt;/iframe&gt;`">
+                  v-text="`&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;${$t(`medias.tabs.tab3.video.${key}[1]`)}&quot; allowfullscreen&gt;&lt;/iframe&gt;`">
                 </pre>
               </div>
              </div>
