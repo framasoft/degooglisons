@@ -10,9 +10,9 @@ meta:
 
 img:
   carte:
-  - Carte2016-romains.png
-  - Carte2016-victoires.png
-  - Carte2016-animation.gif
+    before: Carte2016-romains.png
+    after: Carte2016-victoires.png
+    anim: Carte2016-animation.gif
   gee:
   - stevusjobus.png
   - cyberpolicus.png
@@ -27,12 +27,12 @@ img:
   - Peha-Framatalk-CC-BY-SA.png
   - Peha-Banquet-Degooglisons-CC-By.png
   stickers:
-  - stickerDiO_gafam.png
-  - stickerDiO_google.png
-  - stickerDiO_amazon.png
-  - stickerDiO_facebook.png
-  - stickerDiO_apple.png
-  - stickerDiO_microsoft.png
+  - ['GAFAM', 'stickerDiO_gafam.png', '<i lang="en">GAFAM, we &lt;3 your data!</i>']
+  - ['Google', 'stickerDiO_google.png', '<i lang="en">Warning: do not feed the Google.</i>']
+  - ['Amazon', 'stickerDiO_amazon.png', '<i lang="fr">Attention : Amazon très méchant</i>']
+  - ['Facebook', 'stickerDiO_facebook.png', '<i lang="en">Facebook is watching you.</i>']
+  - ['Apple', 'stickerDiO_apple.png', '<i lang="en">Apple: Kids, don’t do drugs.</i>']
+  - ['Microsoft', 'stickerDiO_microsoft.png', '<i lang="en">Microsoft: do you need a backdoor?</i>']
 
 home:
   medias:
