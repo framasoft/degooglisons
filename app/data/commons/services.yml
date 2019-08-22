@@ -602,6 +602,7 @@ wetransfer:
   - Wetransfer
   - Dropsend
   altOn:
+  - <a href="https://send.firefox.com">Firefox Send</a>
   altOff:
   - <a href="https://coquelicot.potager.org/">Coquelicot</a>
   - <a href="https://gitlab.com/mojo42/Jirafeau">Jirafeau</a>
