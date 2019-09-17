@@ -1,3 +1,5 @@
+/* eslint-disable filenames/match-regex */
+/* eslint-disable import/no-commonjs */
 const webpack = require('webpack');
 const fs = require('fs');
 const path = require('path');
@@ -133,7 +135,7 @@ module.exports = config;
 const locales = [];
 // Import locales list
 fs.readdirSync('./app/locales')
-  .forEach(file => locales.push(file.replace(/(.*)\.yml/, '$1')));
+  .forEach(file => locales.push(file));
 
 if (process.env.NODE_ENV === 'development') {
   module.exports.plugins = (module.exports.plugins || [])

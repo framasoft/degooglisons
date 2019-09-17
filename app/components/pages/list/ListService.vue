@@ -26,7 +26,7 @@
               @click="modal.open = true; modal.key = id;">
             </a>
           </li>
-          <li><a v-text="$t('txt.docs')" :href="$t('link.docs') + text($root.services[id].S).toLowerCase()"></a></li>
+          <li><a :href="docLink(id)" v-text="$t('txt.docs')"></a></li>
         </template>
       </dropdown>
     </div>
@@ -104,10 +104,11 @@
         </ul>
         <!-- docs / install buttons -->
         <div class="col-md-6 text-right">
-          <a v-text="$t('txt.docs')"
-            :href="`${$t('link.docs')}${text($root.services[modal.key].S.toLowerCase())}`"
-            class="btn btn-lg btn-link text-uppercase">
+          <a :href="docLink(modal.key)"
+            class="btn btn-lg btn-link text-uppercase"
+            v-text="$t('txt.docs')">
           </a>
+
           <a v-text="$t('txt.use')"
             :href="$root.services[modal.key].FL"
             class="btn btn-lg btn-link text-uppercase">
@@ -143,6 +144,23 @@ export default {
         key: 'bitly',
       },
     }
-  }
+  },
+  methods: {
+    docLink(key) {
+      const service = this.$root.services[key].id || null;
+      const path = this.$root.doc[service] || false;
+      let link = this.$root.link.docs;
+      if (path) {
+        if (this.$t('lang') !== 'fr'
+          && path[1] !== undefined) {
+          link += `/${path[1]}`; // english doc by default
+        } else {
+          link += `/${path[0]}`; // fallback on french if missing
+        }
+        link += '/index.html';
+      }
+      return link;
+    }
+  },
 }
 </script>

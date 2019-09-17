@@ -213,16 +213,14 @@
         </p>
         <!-- alt / docs -->
         <div class="col-md-6 text-left">
-          <a
-            v-text="$t('txt.otherAlt')"
-            :href="`#${modal.key}`"
+          <a :href="`#${modal.key}`"
             class="btn btn-alt btn-default"
-            @click="modal.open = false;">
+            @click="modal.open = false;"
+            v-text="$t('txt.otherAlt')">
           </a>
-          <a
-            v-text="$t('txt.docs')"
-            :href="$t('link.docs') + text($root.services[modal.key].S, 'sanitize')"
-            class="btn btn-alt btn-default">
+          <a :href="docLink(modal.key)"
+            class="btn btn-alt btn-default"
+            v-text="$t('txt.docs')">
           </a>
         </div>
         <!-- use -->
@@ -383,6 +381,21 @@ export default {
       });
       return tags;
     },
+    docLink(key) {
+      const service = this.$root.services[key].id || null;
+      const path = this.$root.doc[service] || false;
+      let link = this.$root.link.docs;
+      if (path) {
+        if (this.$t('lang') !== 'fr'
+          && path[1] !== undefined) {
+          link += `/${path[1]}`; // english doc by default
+        } else {
+          link += `/${path[0]}`; // fallback on french if missing
+        }
+        link += '/index.html';
+      }
+      return link;
+    }
   },
 }
 </script>
