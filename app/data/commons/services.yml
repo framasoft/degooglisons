@@ -1,4 +1,5 @@
 bitly:
+  id: link
   FL: https://frama.link
   CL: https://framacloud.org/fr/cultiver-son-jardin/lstu.html
   i: link
@@ -20,6 +21,7 @@ bitly:
   c2: tools
 
 blogger:
+  id: site
   FL: https://frama.site
   CL: https://framacloud.org/fr/cultiver-son-jardin/grav.html
   i: globe
@@ -41,6 +43,7 @@ blogger:
   c1: site
 
 bubblus:
+  id: mindmap
   FL: https://framindmap.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/wisemapping.html
   i: sitemap
@@ -59,6 +62,7 @@ bubblus:
   c2: prod
 
 change:
+  id: petition
   FL: https://wip.framasoft.org/
   CL:
   i: balance-scale
@@ -76,6 +80,7 @@ change:
   c1: social
 
 delicious:
+  id: my
   FL: https://my.framasoft.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/shaarli.html
   i: star
@@ -94,6 +99,7 @@ delicious:
   c2: share
 
 doodle:
+  id: date
   FL: https://framadate.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/framadate.html
   i: calendar-check-o
@@ -110,6 +116,7 @@ doodle:
   c2: orga
 
 dropbox:
+  id: drive
   FL: https://framadrive.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/nextcloud.html
   i: cloud-upload
@@ -133,6 +140,7 @@ dropbox:
   c2: tools
 
 evernote:
+  id: note
   FL: https://framanotes.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/turtl.html
   i: sticky-note
@@ -150,6 +158,7 @@ evernote:
   c2: tools
 
 facebook:
+  id: sphere
   FL: https://framasphere.org
   CL:
   i: diaspora
@@ -173,6 +182,7 @@ facebook:
   c2: com
 
 github:
+  id: git
   FL: https://framagit.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/gitlab.html
   i: git
@@ -195,6 +205,7 @@ github:
   c2: tools
 
 gmail:
+  id: mail
   FL: https://wip.framasoft.org/
   CL:
   i: mail
@@ -220,6 +231,7 @@ gmail:
   c1: social
 
 gagenda:
+  id: agenda
   FL: https://framagenda.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/nextcloud.html
   i: calendar
@@ -238,6 +250,7 @@ gagenda:
   c2: orga
 
 gbooks:
+  id: bookin
   FL: https://framabookin.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/bicbucstriim.html
   i: coffee
@@ -259,6 +272,7 @@ gbooks:
   c2: games
 
 gdocs:
+  id: pad
   FL: https://framapad.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/etherpad.html
   i: align-left
@@ -278,6 +292,7 @@ gdocs:
   c2: collab
 
 gforms:
+  id: forms
   FL: https://framaforms.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/framaforms.html
   i: list-ul
@@ -297,6 +312,7 @@ gforms:
   c2: prod
 
 ggroups:
+  id: listes
   FL: https://framalistes.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/sympa.html
   i: group
@@ -317,6 +333,7 @@ ggroups:
   c2: com
 
 gmaps:
+  id: carte
   FL: https://framacarte.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/umap.html
   i: map
@@ -337,6 +354,7 @@ gmaps:
   c2: prod
 
 greader:
+  id: news
   FL: https://framanews.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/ttrss.html
   i: newspaper-o
@@ -355,6 +373,7 @@ greader:
   c2: search
 
 gsearch:
+  id: bee
   FL: https://framabee.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/searx.html
   i: search
@@ -378,6 +397,7 @@ gsearch:
   c2: search
 
 gslides:
+  id: slides
   FL: https://framaslides.org
   CL:
   i: pie-chart
@@ -393,6 +413,7 @@ gslides:
   c2: prod
 
 gspreadsheet:
+  id: calc
   FL: https://framacalc.org
   CL:
   i: th
@@ -411,6 +432,7 @@ gspreadsheet:
   c2: collab
 
 imgur:
+  id: pic
   FL: https://framapic.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/lutim.html
   i: photo
@@ -431,6 +453,7 @@ imgur:
   c2: share
 
 meetup:
+  id: mobilizon
   FL: https://wip.framasoft.org/
   CL:
   i:
@@ -446,6 +469,7 @@ meetup:
   c1: social
 
 minecraft:
+  id: minetest
   FL: https://framinetest.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/minetest.html
   i: cube
@@ -461,6 +485,7 @@ minecraft:
   c2: games
 
 padlet:
+  id: memo
   FL: https://framemo.org/
   CL: https://framacloud.org/fr/cultiver-son-jardin/scrumblr.html
   i: object-group
@@ -476,6 +501,7 @@ padlet:
   c2: collab
 
 pastebin:
+  id: bin
   FL: https://framabin.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/privatebin.html
   i: paste
@@ -492,6 +518,7 @@ pastebin:
   c2: share
 
 pocket:
+  id: bag
   FL: https://framabag.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/wallabag.html
   i: briefcase
@@ -507,6 +534,7 @@ pocket:
   c2: search
 
 scribd:
+  id:
   FL: https://wip.framasoft.org/
   CL:
   i:
@@ -521,6 +549,7 @@ scribd:
   c1: files
 
 loomio:
+  id: vox
   FL: https://framavox.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/loomio.html
   i: bullhorn
@@ -538,6 +567,7 @@ loomio:
   c2: orga
 
 skype:
+  id: talk
   FL: https://framatalk.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/jitsi-meet.html
   i: video-camera
@@ -559,6 +589,7 @@ skype:
   c2: orga
 
 slack:
+  id: team
   FL: https://framateam.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/gitlab.html
   i: comments-o
@@ -577,6 +608,7 @@ slack:
   c2: com
 
 trello:
+  id: board
   FL: https://framaboard.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/kanboard.html
   i: dashboard
@@ -593,6 +625,7 @@ trello:
   c2: orga
 
 wetransfer:
+  id: drop
   FL: https://framadrop.org
   CL: https://framacloud.org/fr/cultiver-son-jardin/lufi.html
   i: send
@@ -612,6 +645,7 @@ wetransfer:
   c2: share
 
 youtube:
+  id: tube
   FL: https://framatube.org
   CL:
   i: peertube
@@ -636,6 +670,7 @@ youtube:
 
 # Not on map -----------------------------------------------------------
 jsfiddle:
+  id:
   FL: https://wip.framasoft.org/
   CL:
   i:
@@ -652,6 +687,7 @@ jsfiddle:
   c1: dev
 
 kongregate:
+  id: games
   FL: https://framagames.org
   CL:
   i: gamepad
@@ -669,6 +705,7 @@ kongregate:
   c2: games
 
 maestro:
+  id: maestro
   FL: https://framaestro.org
   CL: https://framacloud.org/cultiver-son-jardin/installation-de-framaestro/
   i: magic
@@ -684,6 +721,7 @@ maestro:
   c2: collab
 
 pixlr:
+  id: vectoriel
   FL: https://framavectoriel.org
   CL: https://framacloud.org/cultiver-son-jardin/installation-de-svg-edit/
   i: paint-brush
@@ -699,6 +737,7 @@ pixlr:
   c2: games
 
 twitter:
+  id: piaf
   FL: https://framapiaf.org
   CL:
   i: mastodon
@@ -718,6 +757,7 @@ twitter:
   c2: com
 
 transifex:
+  id: trad
   FL: https://trad.framasoft.org/
   CL:
   i: language
@@ -736,6 +776,7 @@ transifex:
   c1: dev
 
 ganalytics:
+  id: clic
   FL: https://framaclic.org/
   CL: https://framacloud.org/fr/cultiver-son-jardin/dolomon.html
   i: hand-pointer-o
