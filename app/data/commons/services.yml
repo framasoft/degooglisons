@@ -538,7 +538,7 @@ scribd:
   FL: https://wip.framasoft.org/
   CL:
   i:
-  S: <a href="http://webodf.org/">WebODF</a> ou <a href="https://pdf.yt/">PDFy</a>
+  S: <a href="http://webodf.org/">WebODF</a> ou <a href="https://github.com/joepie91/pdfy">PDFy</a>
   F: <b class="violet">Frama</b><b class="vert">xxx</b>
   gafam:
   - Scribd
@@ -801,7 +801,7 @@ airbnb:
   altOn:
   - <a href="https://www.trustroots.org/">Trustroots</a>
   altOff:
-  - <a href="http://trac.bewelcome.org/">BW Rox</a>
+  - <a href="https://github.com/bewelcome/rox">BW Rox</a>
   c1: hobbies
 
 aweber:
@@ -817,7 +817,7 @@ aweber:
 
 blablacar:
   S:
-  F: <a href="http://www.covoiturage-libre.fr/">Covoiturage Libre</a>
+  F: <a href="https://www.mobicoop.fr/">Mobicoop</a>
   gafam:
   - Blablacar
   altOn:
@@ -850,6 +850,7 @@ gchrome:
   - <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a>
   - <a href="https://www.falkon.org/">Falkon</a>
   - <a href="http://www.midori-browser.org/">Midori</a>
+  - <a href="https://iridiumbrowser.de/">Iridium</a>
   c1: home
 
 deezer:
