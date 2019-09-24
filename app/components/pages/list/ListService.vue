@@ -41,6 +41,7 @@
       aria-labelledby="FramaLabel"
       aria-hidden="true"
       size="lg"
+      class="text-left"
     >
       <!-- modal-header -->
       <div slot="title">
