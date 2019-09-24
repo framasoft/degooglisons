@@ -384,8 +384,6 @@ gsearch:
   - Bing
   - Yahoo
   altOn:
-  - <a href="https://duckduckgo.com/">DuckDuckGo</a>
-  - <a href="https://search.disconnect.me">Disconnect</a>
   - <a href="https://github.com/asciimoo/searx/wiki/Searx-instances">Instances de Searx</a>
   altOff:
   - <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>
