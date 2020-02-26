@@ -384,7 +384,7 @@ gsearch:
   - Bing
   - Yahoo
   altOn:
-  - <a href="https://github.com/asciimoo/searx/wiki/Searx-instances">Instances de Searx</a>
+  - <a href="https://searx.space">Instances de Searx</a>
   altOff:
   - <a href="http://fr.wikipedia.org/wiki/YaCy">YaCy</a>
   - <a href="http://fr.wikipedia.org/wiki/Seeks">Seeks</a>
